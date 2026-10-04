@@ -1,12 +1,12 @@
 {
   "date": "2026-10-04",
-  "collectedAt": "2026-10-04T08:36:40.594Z",
+  "collectedAt": "2026-10-04T08:41:47.566Z",
   "stats": {
     "searches": 60,
     "google": {
       "ok": 39,
       "fail": 0,
-      "items": 608
+      "items": 609
     },
     "naver": {
       "ok": 0,
@@ -15,14 +15,14 @@
       "enabled": false
     },
     "rss": {
-      "ok": 19,
-      "fail": 2,
-      "items": 1118,
-      "kept": 319
+      "ok": 21,
+      "fail": 0,
+      "items": 1230,
+      "kept": 334
     },
-    "raw": 927,
-    "fresh": 576,
-    "clusters": 431,
+    "raw": 943,
+    "fresh": 587,
+    "clusters": 445,
     "candidates": 160,
     "perCategory": {
       "auto": 40,
@@ -31,10 +31,7 @@
       "ai": 40
     }
   },
-  "errors": [
-    "rss \"전자신문\": fetch failed",
-    "rss \"머니투데이\": fetch failed"
-  ],
+  "errors": [],
   "feeds": [
     {
       "name": "한국경제 IT",
@@ -55,7 +52,7 @@
       "url": "https://www.yna.co.kr/rss/industry.xml",
       "ok": true,
       "items": 120,
-      "kept": 32
+      "kept": 33
     },
     {
       "name": "연합뉴스 경제",
@@ -65,25 +62,18 @@
       "kept": 35
     },
     {
+      "name": "매일경제 경제",
+      "url": "https://www.mk.co.kr/rss/30100041/",
+      "ok": true,
+      "items": 50,
+      "kept": 20
+    },
+    {
       "name": "매일경제 기업",
       "url": "https://www.mk.co.kr/rss/50100032/",
       "ok": true,
       "items": 50,
       "kept": 16
-    },
-    {
-      "name": "매일경제 경제",
-      "url": "https://www.mk.co.kr/rss/30100041/",
-      "ok": true,
-      "items": 50,
-      "kept": 18
-    },
-    {
-      "name": "조선일보 경제",
-      "url": "https://www.chosun.com/arc/outboundfeeds/rss/category/economy/?outputType=xml",
-      "ok": true,
-      "items": 100,
-      "kept": 21
     },
     {
       "name": "매일경제 IT",
@@ -93,11 +83,32 @@
       "kept": 0
     },
     {
+      "name": "조선일보 경제",
+      "url": "https://www.chosun.com/arc/outboundfeeds/rss/category/economy/?outputType=xml",
+      "ok": true,
+      "items": 100,
+      "kept": 21
+    },
+    {
+      "name": "전자신문",
+      "url": "https://rss.etnews.com/Section901.xml",
+      "ok": true,
+      "items": 12,
+      "kept": 5
+    },
+    {
       "name": "동아일보 경제",
       "url": "https://rss.donga.com/economy.xml",
       "ok": true,
       "items": 50,
       "kept": 12
+    },
+    {
+      "name": "뉴시스 경제",
+      "url": "https://newsis.com/RSS/economy.xml",
+      "ok": true,
+      "items": 48,
+      "kept": 4
     },
     {
       "name": "경향신문 경제",
@@ -114,11 +125,11 @@
       "kept": 14
     },
     {
-      "name": "뉴시스 경제",
-      "url": "https://newsis.com/RSS/economy.xml",
+      "name": "머니투데이",
+      "url": "https://rss.mt.co.kr/mt_news.xml",
       "ok": true,
-      "items": 48,
-      "kept": 4
+      "items": 100,
+      "kept": 7
     },
     {
       "name": "한국보험신문",
@@ -168,18 +179,6 @@
       "ok": true,
       "items": 50,
       "kept": 36
-    },
-    {
-      "name": "전자신문",
-      "url": "https://rss.etnews.com/Section901.xml",
-      "ok": false,
-      "error": "fetch failed"
-    },
-    {
-      "name": "머니투데이",
-      "url": "https://rss.mt.co.kr/mt_news.xml",
-      "ok": false,
-      "error": "fetch failed"
     }
   ]
 }
