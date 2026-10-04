@@ -1,5 +1,5 @@
 {
-  "_comment": "분야별 뉴스 검색어. ko=한국어(구글뉴스 한국판 + 네이버), en=영어(구글뉴스 미국판). 검색어를 추가/삭제하면 다음 수집부터 반영됩니다. 검색어가 늘어도 AI 비용은 config/ai.json 의 aiCandidatesPerCategory 로 제한됩니다.",
+  "_comment": "분야별 뉴스 검색어(구글뉴스 한국판). 화면에는 한국어 기사만 표시합니다. 검색어는 후보를 넓게 모으는 그물이고, 실제로 어떤 기사를 보여줄지는 AI가 편집 기준(config/editorial.md)으로 판단합니다.",
   "lookbackHours": 36,
   "perQueryLimit": 20,
   "maxCandidatesPerCategory": 60,
@@ -14,11 +14,7 @@
         "자율주행 사고 책임",
         "車보험"
       ],
-      "en": [
-        "auto insurance",
-        "motor insurance claims",
-        "autonomous vehicle liability insurance"
-      ]
+      "en": []
     },
     "mobility": {
       "ko": [
@@ -29,13 +25,7 @@
         "도심항공교통 UAM",
         "커넥티드카"
       ],
-      "en": [
-        "robotaxi",
-        "autonomous driving",
-        "Waymo",
-        "Tesla FSD",
-        "software-defined vehicle"
-      ]
+      "en": []
     },
     "insurance": {
       "ko": [
@@ -46,11 +36,7 @@
         "인슈어테크",
         "보험사 실적"
       ],
-      "en": [
-        "insurance industry",
-        "insurtech",
-        "reinsurance market"
-      ]
+      "en": []
     },
     "ai": {
       "ko": [
@@ -60,13 +46,7 @@
         "피지컬 AI",
         "AI 로봇"
       ],
-      "en": [
-        "AI agent",
-        "large language model",
-        "physical AI robotics",
-        "OpenAI",
-        "Anthropic Claude"
-      ]
+      "en": []
     }
   },
   "excludeTitlePatterns": [
@@ -91,7 +71,7 @@
     "AD HOC NEWS"
   ],
   "_excludeSources": "품질이 낮거나 주가 자동기사 위주인 출처. 언론사 이름 그대로 적으면 해당 출처 기사는 수집하지 않습니다.",
-  "_rssFeeds": "언론사가 공식 제공하는 RSS. 분야 키워드에 맞는 기사만 남깁니다. 실행 기록(data/collected/last-run.json)의 feeds 항목에서 피드별 성공 여부를 확인할 수 있습니다.",
+  "_rssFeeds": "언론사 공식 RSS. topical=true 인 전문지(보험·자동차·AI)는 키워드와 관계없이 전부 모아 AI가 판단하고, 일반 섹션 피드는 분야 키워드가 있는 기사만 모읍니다.",
   "rssFeeds": [
     {
       "name": "연합뉴스 경제",
@@ -166,37 +146,51 @@
     {
       "name": "한국보험신문",
       "source": "한국보험신문",
-      "url": "https://www.insnews.co.kr/rss/allArticle.xml"
+      "url": "https://www.insnews.co.kr/rss/allArticle.xml",
+      "topical": true,
+      "category": "insurance"
     },
     {
       "name": "보험매일",
       "source": "보험매일",
-      "url": "https://www.fins.co.kr/rss/allArticle.xml"
+      "url": "https://www.fins.co.kr/rss/allArticle.xml",
+      "topical": true,
+      "category": "insurance"
     },
     {
       "name": "대한금융신문",
       "source": "대한금융신문",
-      "url": "https://www.kbanker.co.kr/rss/allArticle.xml"
+      "url": "https://www.kbanker.co.kr/rss/allArticle.xml",
+      "topical": true,
+      "category": "insurance"
     },
     {
       "name": "보험저널",
       "source": "보험저널",
-      "url": "https://www.insjournal.co.kr/rss/allArticle.xml"
+      "url": "https://www.insjournal.co.kr/rss/allArticle.xml",
+      "topical": true,
+      "category": "insurance"
     },
     {
       "name": "오토데일리",
       "source": "오토데일리",
-      "url": "https://www.autodaily.co.kr/rss/allArticle.xml"
+      "url": "https://www.autodaily.co.kr/rss/allArticle.xml",
+      "topical": true,
+      "category": "mobility"
     },
     {
       "name": "모터그래프",
       "source": "모터그래프",
-      "url": "https://www.motorgraph.com/rss/allArticle.xml"
+      "url": "https://www.motorgraph.com/rss/allArticle.xml",
+      "topical": true,
+      "category": "mobility"
     },
     {
       "name": "AI타임스",
       "source": "AI타임스",
-      "url": "https://www.aitimes.com/rss/allArticle.xml"
+      "url": "https://www.aitimes.com/rss/allArticle.xml",
+      "topical": true,
+      "category": "ai"
     }
   ]
 }

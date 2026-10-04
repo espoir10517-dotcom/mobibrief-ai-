@@ -24,8 +24,8 @@
   "evaluateBatchSize": 30,
   "editorCandidatesPerCategory": 25,
   "writeBatchSize": 5,
-  "maxCallsPerRun": 30,
+  "maxCallsPerRun": 40,
   "maxCostPerRunUSD": 1.0,
-  "aiCandidatesPerCategory": 60,
+  "aiCandidatesPerCategory": 100,
   "_aiCandidates": "AI가 평가할 후보 수(분야별). 주간 기사 중 규칙 점수 상위만 보내 비용을 제한합니다."
 }

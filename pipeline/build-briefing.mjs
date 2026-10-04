@@ -23,6 +23,8 @@ const GENERIC = new Set(['AI']);
 
 function pickCategory(a, hits) {
   if (hits[a.category]?.length) return a.category;
+  // 전문지 기사는 키워드가 없어도 그 분야 후보로 두고 AI 가 판단
+  if (a.topical && !Object.values(hits).some((v) => v.length)) return a.category;
   for (const c of a.categoryHints || []) if (hits[c]?.length) return c;
   const best = CATS.map((c) => [c, hits[c]?.length || 0]).sort((x, y) => y[1] - x[1])[0];
   return best[1] > 0 ? best[0] : null; // 어느 분야 키워드에도 해당하지 않으면 제외
@@ -83,6 +85,7 @@ function analyze(file, { compiled, criteria, prevTitles, recencyHours, exclude =
   const tagged = [];
   for (let a of file.articles) {
     if (exclude.some((re) => re.test(a.title))) continue; // 제외 규칙은 이미 수집된 기사에도 적용
+    if (a.lang && a.lang !== 'ko') continue; // 화면에는 한국어 기사만
     const url = normalizeUrl(a.url);
     if (!url) continue;
     a = { ...a, url, sources: (a.sources || []).map((x) => ({ ...x, url: normalizeUrl(x.url) })).filter((x) => x.url) };
@@ -142,7 +145,9 @@ function diverseTop(list, n) {
   return picked.sort((a, b) => b.total - a.total).map((a, i) => ({ ...a, rank: i + 1 }));
 }
 
-export async function buildBriefing({ log = console.log, env = process.env, outDir = path.join(root, 'public/data/live') } = {}) {
+// clientOverride: AI 호출 대신 미리 준비한 응답을 쓰는 클라이언트 (수동 실행·시험용)
+// dumpCandidates: AI 에게 보낼 후보 목록을 파일로 저장 (확인용)
+export async function buildBriefing({ log = console.log, env = process.env, outDir = path.join(root, 'public/data/live'), clientOverride, dumpCandidates } = {}) {
   const scoring = await readJson(path.join(root, 'config/scoring.json'));
   const dict = await readJson(path.join(root, 'config/keywords.json'));
   const compiled = compileDictionary(dict);
@@ -257,7 +262,26 @@ export async function buildBriefing({ log = console.log, env = process.env, outD
   // ───────── AI 키가 있으면 AI 편집국 방식으로 교체 (실패하면 위의 규칙 방식 결과를 그대로 사용) ─────────
   let aiResult = null;
   const aiCfg = await readJson(path.join(root, 'config/ai.json'));
-  const client = createClient(aiCfg, env, { log });
+  const client = clientOverride || createClient(aiCfg, env, { log });
+  if (!client && !dumpCandidates) {
+    // AI 키가 없으면: 이미 AI 로 만든 브리핑이 있으면 덮어쓰지 않음 (규칙 결과로 품질이 떨어지는 것 방지)
+    try {
+      const prev = JSON.parse(await readFile(path.join(outDir, 'briefing.json'), 'utf8'));
+      if (prev.analysis === 'ai') {
+        log('ℹ️  AI 키가 없어 이번에는 새로 발행하지 않고, 기존 AI 브리핑을 유지합니다. (수집은 계속됩니다)');
+        return prev;
+      }
+    } catch {
+      /* 기존 파일 없음 */
+    }
+  }
+  if (dumpCandidates) {
+    const perCat = aiCfg.aiCandidatesPerCategory || 60;
+    const cands = CATS.flatMap((c) => today.filter((a) => a.category === c).sort((a, b) => b.total - a.total).slice(0, perCat));
+    await writeFile(dumpCandidates, JSON.stringify(cands.map((a) => ({ id: a.id, hint: a.category, title: a.title, summary: (a.description || '').slice(0, 160), source: a.source, date: a.publishedAt.slice(5, 10), coverage: a.coverage })), null, 0));
+    log(`📝 AI 후보 ${cands.length}건을 ${dumpCandidates} 에 저장`);
+    return null;
+  }
   if (client) {
     try {
       const editorial = await readFile(path.join(root, 'config/editorial.md'), 'utf8');

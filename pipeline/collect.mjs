@@ -81,7 +81,11 @@ export async function runCollect({ now = new Date(), log = console.log, outDir =
             const hits = relevantHits(it.title, it.description, compiled);
             const best = Object.entries(hits).sort((a, b) => b[1].length - a[1].length)[0];
             if (best && best[1].length) {
-              raw.push({ ...it, category: best[0] });
+              raw.push({ ...it, category: best[0], topical: Boolean(job.feed.topical) });
+              kept++;
+            } else if (job.feed.topical) {
+              // 보험·자동차·AI 전문지는 키워드가 없어도 모아서 AI 가 판단
+              raw.push({ ...it, category: job.feed.category, topical: true });
               kept++;
             }
           }

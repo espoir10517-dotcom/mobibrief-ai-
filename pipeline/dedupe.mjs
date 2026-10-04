@@ -75,6 +75,7 @@ export function dedupe(items, { threshold = 0.5 } = {}) {
       coverage: outlets.size,
       sources: [...outlets.values()].slice(0, 6),
       firstSeenAt: group.map((g) => g.publishedAt).sort()[0],
+      topical: group.some((g) => g.topical) || undefined,
     };
   });
 }

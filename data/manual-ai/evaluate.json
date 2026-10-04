@@ -1,0 +1,1064 @@
+{
+ "items": [
+  {
+   "id": "03f7b83d3924",
+   "keep": true,
+   "category": "auto",
+   "importance": 92,
+   "relevance": 94,
+   "impact": 85,
+   "novelty": 80,
+   "reason": "보험사기 적발 역대 최대, 손해율·제도 대응과 직결",
+   "keywords": [
+    "보험사기",
+    "금감원",
+    "적발 통계"
+   ]
+  },
+  {
+   "id": "63d1843eb79f",
+   "keep": true,
+   "category": "auto",
+   "importance": 84,
+   "relevance": 96,
+   "impact": 82,
+   "novelty": 78,
+   "reason": "과잉수리가 보험료 인상 요인, 보상·정비 실무 핵심",
+   "keywords": [
+    "과잉수리",
+    "수리비",
+    "車보험료"
+   ]
+  },
+  {
+   "id": "36d0f36b8d54",
+   "keep": true,
+   "category": "auto",
+   "importance": 85,
+   "relevance": 97,
+   "impact": 80,
+   "novelty": 74,
+   "reason": "보험료 조정의 담보별 차이, 상품 실무 직결",
+   "keywords": [
+    "車보험료",
+    "담보",
+    "요율 조정"
+   ]
+  },
+  {
+   "id": "9dd447c530a0",
+   "keep": true,
+   "category": "auto",
+   "importance": 86,
+   "relevance": 96,
+   "impact": 82,
+   "novelty": 86,
+   "reason": "수입 전기차 대물 손해율 급등, 요율 검토 필요",
+   "keywords": [
+    "BYD",
+    "전기차",
+    "손해율"
+   ]
+  },
+  {
+   "id": "746560939a12",
+   "keep": true,
+   "category": "auto",
+   "importance": 84,
+   "relevance": 90,
+   "impact": 86,
+   "novelty": 76,
+   "reason": "자율주행 사고 원인 규명 지연, 책임·보상 체계 과제",
+   "keywords": [
+    "자율주행",
+    "사고조사",
+    "사고책임"
+   ]
+  },
+  {
+   "id": "592d2a8e53da",
+   "keep": true,
+   "category": "auto",
+   "importance": 80,
+   "relevance": 94,
+   "impact": 76,
+   "novelty": 86,
+   "reason": "첨단안전장치 자동 판독, 특약·심사 업무 혁신",
+   "keywords": [
+    "ADAS",
+    "첨단안전장치",
+    "자동 판독"
+   ]
+  },
+  {
+   "id": "ef9928c12e63",
+   "keep": true,
+   "category": "auto",
+   "importance": 80,
+   "relevance": 90,
+   "impact": 72,
+   "novelty": 74,
+   "reason": "보험사기 보고 오류로 제재, 보상·SIU 업무 시사점",
+   "keywords": [
+    "보험사기 보고",
+    "금감원 제재",
+    "삼성화재"
+   ]
+  },
+  {
+   "id": "d82cbcd43fbc",
+   "keep": true,
+   "category": "auto",
+   "importance": 74,
+   "relevance": 92,
+   "impact": 64,
+   "novelty": 70,
+   "reason": "경쟁사 할인 특약 출시, 상품 경쟁 동향",
+   "keywords": [
+    "할인 특약",
+    "롯데손보",
+    "車보험료"
+   ]
+  },
+  {
+   "id": "643a587a19e3",
+   "keep": true,
+   "category": "auto",
+   "importance": 72,
+   "relevance": 86,
+   "impact": 60,
+   "novelty": 56,
+   "reason": "조직형 고의사고 송치, 보험사기 수법 참고",
+   "keywords": [
+    "보험사기",
+    "고의사고",
+    "조직범죄"
+   ]
+  },
+  {
+   "id": "3c88a19f6d27",
+   "keep": true,
+   "category": "auto",
+   "importance": 72,
+   "relevance": 82,
+   "impact": 72,
+   "novelty": 68,
+   "reason": "음주운전 페널티 제도화 논의, 사고부담금 연관",
+   "keywords": [
+    "음주운전",
+    "제도화",
+    "페널티"
+   ]
+  },
+  {
+   "id": "cc560c46434f",
+   "keep": true,
+   "category": "auto",
+   "importance": 70,
+   "relevance": 86,
+   "impact": 60,
+   "novelty": 76,
+   "reason": "배달 라이더 전용 이륜차보험, 신상품 동향",
+   "keywords": [
+    "이륜차보험",
+    "배달라이더",
+    "하나손보"
+   ]
+  },
+  {
+   "id": "54a38f432ff6",
+   "keep": true,
+   "category": "auto",
+   "importance": 70,
+   "relevance": 84,
+   "impact": 60,
+   "novelty": 64,
+   "reason": "차량 유지비 서비스 출시, 고객 접점 경쟁",
+   "keywords": [
+    "KB손보",
+    "차량 서비스",
+    "KB카테크"
+   ]
+  },
+  {
+   "id": "af37cbcc6a07",
+   "keep": true,
+   "category": "auto",
+   "importance": 66,
+   "relevance": 86,
+   "impact": 56,
+   "novelty": 60,
+   "reason": "교통사고 부재환자 점검, 보상 누수 관리",
+   "keywords": [
+    "부재환자",
+    "교통사고 입원",
+    "합동점검"
+   ]
+  },
+  {
+   "id": "021dfd25ce86",
+   "keep": true,
+   "category": "auto",
+   "importance": 64,
+   "relevance": 80,
+   "impact": 54,
+   "novelty": 70,
+   "reason": "車보험 만기 피싱 주의, 고객 안내 필요",
+   "keywords": [
+    "피싱",
+    "車보험 만기",
+    "보험사 사칭"
+   ]
+  },
+  {
+   "id": "893945ae3e07",
+   "keep": true,
+   "category": "auto",
+   "importance": 62,
+   "relevance": 82,
+   "impact": 52,
+   "novelty": 50,
+   "reason": "조직 연루 보험사기 적발",
+   "keywords": [
+    "보험사기",
+    "조직범죄"
+   ]
+  },
+  {
+   "id": "c1fd1e6cf8c7",
+   "keep": true,
+   "category": "auto",
+   "importance": 66,
+   "relevance": 88,
+   "impact": 62,
+   "novelty": 64,
+   "reason": "BYD 차주 보험료 부담 이슈",
+   "keywords": [
+    "BYD",
+    "보험료"
+   ]
+  },
+  {
+   "id": "ba1bf2d5e191",
+   "keep": true,
+   "category": "auto",
+   "importance": 60,
+   "relevance": 78,
+   "impact": 52,
+   "novelty": 58,
+   "reason": "보험사기 적발자 연령 분석",
+   "keywords": [
+    "보험사기",
+    "고령층"
+   ]
+  },
+  {
+   "id": "0bc6fc0d16a9",
+   "keep": true,
+   "category": "mobility",
+   "importance": 86,
+   "relevance": 86,
+   "impact": 86,
+   "novelty": 86,
+   "reason": "테슬라 FSD 국내 검증 요청, 도입 시 사고책임·요율 영향",
+   "keywords": [
+    "Tesla",
+    "FSD",
+    "국내 검증"
+   ]
+  },
+  {
+   "id": "a5eea7569d94",
+   "keep": true,
+   "category": "mobility",
+   "importance": 80,
+   "relevance": 93,
+   "impact": 80,
+   "novelty": 74,
+   "reason": "배터리 수리 불가로 전손 처리, 전기차 손해액 직결",
+   "keywords": [
+    "전기차",
+    "배터리 수리",
+    "전손"
+   ]
+  },
+  {
+   "id": "d99f18955c55",
+   "keep": true,
+   "category": "mobility",
+   "importance": 84,
+   "relevance": 78,
+   "impact": 84,
+   "novelty": 74,
+   "reason": "레벨4 자율주행 버스 상용화, 운행사 배상책임 수요",
+   "keywords": [
+    "레벨4",
+    "자율주행 버스",
+    "서울시"
+   ]
+  },
+  {
+   "id": "a6e0cca7a869",
+   "keep": true,
+   "category": "mobility",
+   "importance": 78,
+   "relevance": 86,
+   "impact": 80,
+   "novelty": 70,
+   "reason": "안전기준이 기술을 못 따라감, 제도 공백",
+   "keywords": [
+    "로보택시",
+    "안전기준",
+    "제도"
+   ]
+  },
+  {
+   "id": "0b9dd91b0481",
+   "keep": true,
+   "category": "mobility",
+   "importance": 80,
+   "relevance": 78,
+   "impact": 80,
+   "novelty": 80,
+   "reason": "중국 로보택시 국내 도입 논란, 검증 공백",
+   "keywords": [
+    "중국 로보택시",
+    "안전 검증",
+    "데이터"
+   ]
+  },
+  {
+   "id": "c133ca35126b",
+   "keep": true,
+   "category": "mobility",
+   "importance": 78,
+   "relevance": 86,
+   "impact": 72,
+   "novelty": 74,
+   "reason": "테슬라 정비망 부족, 수리 지연·대차 비용 영향",
+   "keywords": [
+    "Tesla",
+    "서비스센터",
+    "정비"
+   ]
+  },
+  {
+   "id": "78a4d315d031",
+   "keep": true,
+   "category": "mobility",
+   "importance": 72,
+   "relevance": 90,
+   "impact": 76,
+   "novelty": 62,
+   "reason": "자율주행 사고 책임 주체 논의",
+   "keywords": [
+    "자율주행",
+    "사고책임"
+   ]
+  },
+  {
+   "id": "4c67584d9332",
+   "keep": true,
+   "category": "mobility",
+   "importance": 72,
+   "relevance": 82,
+   "impact": 66,
+   "novelty": 74,
+   "reason": "전기차 잔존가치 논란, 차량가액 산정 참고",
+   "keywords": [
+    "전기차",
+    "감가상각",
+    "잔존가치"
+   ]
+  },
+  {
+   "id": "aeb62569e039",
+   "keep": true,
+   "category": "mobility",
+   "importance": 74,
+   "relevance": 80,
+   "impact": 80,
+   "novelty": 70,
+   "reason": "무인 자율주행차 허가 간소화, 상용화 가속",
+   "keywords": [
+    "무인 자율주행",
+    "규제 완화",
+    "허가"
+   ]
+  },
+  {
+   "id": "482b35cb4f79",
+   "keep": true,
+   "category": "mobility",
+   "importance": 72,
+   "relevance": 78,
+   "impact": 70,
+   "novelty": 76,
+   "reason": "로보택시 긴급차량 방해 과태료, 운행사 책임 강화",
+   "keywords": [
+    "로보택시",
+    "과태료",
+    "캘리포니아"
+   ]
+  },
+  {
+   "id": "7d978e6b7eb1",
+   "keep": true,
+   "category": "mobility",
+   "importance": 76,
+   "relevance": 72,
+   "impact": 70,
+   "novelty": 68,
+   "reason": "국내 자율주행 서비스 현황",
+   "keywords": [
+    "자율주행",
+    "로보택시",
+    "국내 서비스"
+   ]
+  },
+  {
+   "id": "c726926b6ef7",
+   "keep": true,
+   "category": "mobility",
+   "importance": 72,
+   "relevance": 66,
+   "impact": 68,
+   "novelty": 64,
+   "reason": "로보택시 얼라이언스 확대",
+   "keywords": [
+    "로보택시",
+    "강남 실증"
+   ]
+  },
+  {
+   "id": "a25159213f5c",
+   "keep": true,
+   "category": "mobility",
+   "importance": 74,
+   "relevance": 88,
+   "impact": 78,
+   "novelty": 64,
+   "reason": "임시운행 자율주행차 사고 원인 규명 지연",
+   "keywords": [
+    "자율주행",
+    "사고조사"
+   ]
+  },
+  {
+   "id": "1cf580111b6d",
+   "keep": true,
+   "category": "mobility",
+   "importance": 68,
+   "relevance": 70,
+   "impact": 64,
+   "novelty": 70,
+   "reason": "아파트 충전기 방치",
+   "keywords": [
+    "충전기",
+    "전기차"
+   ]
+  },
+  {
+   "id": "07741fecd929",
+   "keep": true,
+   "category": "mobility",
+   "importance": 68,
+   "relevance": 62,
+   "impact": 68,
+   "novelty": 70,
+   "reason": "중국 로보택시 상업 운행 현황",
+   "keywords": [
+    "로보택시",
+    "중국"
+   ]
+  },
+  {
+   "id": "a751299508f2",
+   "keep": true,
+   "category": "mobility",
+   "importance": 66,
+   "relevance": 68,
+   "impact": 64,
+   "novelty": 70,
+   "reason": "자율주행 트럭 도심 시험",
+   "keywords": [
+    "자율주행 트럭",
+    "물류"
+   ]
+  },
+  {
+   "id": "9d40e307e0ca",
+   "keep": true,
+   "category": "mobility",
+   "importance": 70,
+   "relevance": 52,
+   "impact": 62,
+   "novelty": 58,
+   "reason": "현대차 판매 부진",
+   "keywords": [
+    "현대차",
+    "판매"
+   ]
+  },
+  {
+   "id": "fe0730d36b8f",
+   "keep": true,
+   "category": "mobility",
+   "importance": 68,
+   "relevance": 58,
+   "impact": 70,
+   "novelty": 60,
+   "reason": "전고체 배터리 개발 경쟁",
+   "keywords": [
+    "전고체 배터리"
+   ]
+  },
+  {
+   "id": "8f9b83555b9b",
+   "keep": true,
+   "category": "mobility",
+   "importance": 62,
+   "relevance": 64,
+   "impact": 58,
+   "novelty": 64,
+   "reason": "폐배터리 회수율",
+   "keywords": [
+    "폐배터리"
+   ]
+  },
+  {
+   "id": "c6f6decc5e37",
+   "keep": true,
+   "category": "mobility",
+   "importance": 62,
+   "relevance": 60,
+   "impact": 58,
+   "novelty": 70,
+   "reason": "커넥티드카 보안시설 출입 제한",
+   "keywords": [
+    "커넥티드카",
+    "보안"
+   ]
+  },
+  {
+   "id": "06ab0ee7b957",
+   "keep": true,
+   "category": "insurance",
+   "importance": 94,
+   "relevance": 82,
+   "impact": 92,
+   "novelty": 86,
+   "reason": "금융권 전방위 AI 해킹, 보험사 보안·고객정보 리스크",
+   "keywords": [
+    "AI 해킹",
+    "금융보안",
+    "개인정보 유출"
+   ]
+  },
+  {
+   "id": "5adbc9f1d464",
+   "keep": true,
+   "category": "insurance",
+   "importance": 90,
+   "relevance": 88,
+   "impact": 86,
+   "novelty": 86,
+   "reason": "동일 해커가 보험까지 공격 시도, 업권 직접 위협",
+   "keywords": [
+    "AI 해킹",
+    "보험사 공격 시도",
+    "금융보안"
+   ]
+  },
+  {
+   "id": "b1a5c222fde1",
+   "keep": true,
+   "category": "insurance",
+   "importance": 88,
+   "relevance": 82,
+   "impact": 88,
+   "novelty": 74,
+   "reason": "금융위 전 금융권 점검, 보험사도 대상",
+   "keywords": [
+    "금융위",
+    "보안 점검",
+    "엄정 책임"
+   ]
+  },
+  {
+   "id": "a0dad54031b4",
+   "keep": true,
+   "category": "insurance",
+   "importance": 86,
+   "relevance": 86,
+   "impact": 82,
+   "novelty": 86,
+   "reason": "간병보험 위장청구 급증, 업권 공동 검증 추진",
+   "keywords": [
+    "간병보험",
+    "보험사기",
+    "공동 검증"
+   ]
+  },
+  {
+   "id": "b012abf21ae8",
+   "keep": true,
+   "category": "insurance",
+   "importance": 82,
+   "relevance": 80,
+   "impact": 76,
+   "novelty": 70,
+   "reason": "방송광고 불완전판매 규제, 판매채널 관리",
+   "keywords": [
+    "금감원",
+    "방송광고",
+    "불완전판매"
+   ]
+  },
+  {
+   "id": "609d30e271ba",
+   "keep": true,
+   "category": "insurance",
+   "importance": 76,
+   "relevance": 82,
+   "impact": 72,
+   "novelty": 72,
+   "reason": "손보사 자본건전성 엇갈림",
+   "keywords": [
+    "자본건전성",
+    "DB손보",
+    "한화손보"
+   ]
+  },
+  {
+   "id": "836d89ce3787",
+   "keep": true,
+   "category": "insurance",
+   "importance": 76,
+   "relevance": 82,
+   "impact": 66,
+   "novelty": 66,
+   "reason": "손보업계 실적 양극화",
+   "keywords": [
+    "손보 실적",
+    "보장성",
+    "양극화"
+   ]
+  },
+  {
+   "id": "ec27ccc34251",
+   "keep": true,
+   "category": "insurance",
+   "importance": 78,
+   "relevance": 76,
+   "impact": 76,
+   "novelty": 64,
+   "reason": "국감 보험 쟁점 총정리",
+   "keywords": [
+    "국정감사",
+    "실손보험",
+    "IFRS17"
+   ]
+  },
+  {
+   "id": "7deafd91fdec",
+   "keep": true,
+   "category": "insurance",
+   "importance": 72,
+   "relevance": 82,
+   "impact": 62,
+   "novelty": 66,
+   "reason": "보험금 미지급 최다, 보상 품질 이슈",
+   "keywords": [
+    "보험금 미지급",
+    "DB손보"
+   ]
+  },
+  {
+   "id": "b69794f66f54",
+   "keep": true,
+   "category": "insurance",
+   "importance": 78,
+   "relevance": 70,
+   "impact": 76,
+   "novelty": 66,
+   "reason": "보험업계 M&A 확대",
+   "keywords": [
+    "M&A",
+    "한화",
+    "교보"
+   ]
+  },
+  {
+   "id": "55c51bcd7b8e",
+   "keep": true,
+   "category": "insurance",
+   "importance": 74,
+   "relevance": 68,
+   "impact": 70,
+   "novelty": 64,
+   "reason": "실손24 연계율 저조, 과태료 검토",
+   "keywords": [
+    "실손24",
+    "청구 간소화"
+   ]
+  },
+  {
+   "id": "b37cf0d8fb14",
+   "keep": true,
+   "category": "insurance",
+   "importance": 80,
+   "relevance": 80,
+   "impact": 78,
+   "novelty": 80,
+   "reason": "해킹 방어 사례 분석",
+   "keywords": [
+    "AI 해킹",
+    "보안 대응"
+   ]
+  },
+  {
+   "id": "9e9fb7a61f67",
+   "keep": true,
+   "category": "insurance",
+   "importance": 68,
+   "relevance": 80,
+   "impact": 58,
+   "novelty": 64,
+   "reason": "분쟁 중 소제기 최다",
+   "keywords": [
+    "소송",
+    "삼성화재"
+   ]
+  },
+  {
+   "id": "00391d78dff6",
+   "keep": true,
+   "category": "insurance",
+   "importance": 70,
+   "relevance": 70,
+   "impact": 70,
+   "novelty": 64,
+   "reason": "보험사 CEO 성과평가 손질",
+   "keywords": [
+    "금융당국",
+    "성과평가"
+   ]
+  },
+  {
+   "id": "a5c20a6a9e59",
+   "keep": true,
+   "category": "insurance",
+   "importance": 70,
+   "relevance": 70,
+   "impact": 70,
+   "novelty": 60,
+   "reason": "판매수수료 개편 시행",
+   "keywords": [
+    "판매수수료",
+    "감독규정"
+   ]
+  },
+  {
+   "id": "1bb724e54b79",
+   "keep": true,
+   "category": "insurance",
+   "importance": 66,
+   "relevance": 70,
+   "impact": 60,
+   "novelty": 58,
+   "reason": "보험금 분쟁·5세대 실손",
+   "keywords": [
+    "실손보험",
+    "분쟁"
+   ]
+  },
+  {
+   "id": "25db8376abfe",
+   "keep": true,
+   "category": "insurance",
+   "importance": 70,
+   "relevance": 54,
+   "impact": 64,
+   "novelty": 86,
+   "reason": "AI칩 담보대출 보험",
+   "keywords": [
+    "엔비디아",
+    "신종 보험"
+   ]
+  },
+  {
+   "id": "7122c35cd809",
+   "keep": true,
+   "category": "insurance",
+   "importance": 66,
+   "relevance": 58,
+   "impact": 64,
+   "novelty": 56,
+   "reason": "내년 보험료 인상",
+   "keywords": [
+    "공시이율",
+    "보험료"
+   ]
+  },
+  {
+   "id": "6c22e86343bc",
+   "keep": true,
+   "category": "insurance",
+   "importance": 64,
+   "relevance": 58,
+   "impact": 56,
+   "novelty": 62,
+   "reason": "간병보험 시장 확대",
+   "keywords": [
+    "간병보험"
+   ]
+  },
+  {
+   "id": "38e9a2e2c939",
+   "keep": true,
+   "category": "insurance",
+   "importance": 68,
+   "relevance": 58,
+   "impact": 64,
+   "novelty": 60,
+   "reason": "은행장 국감 소환",
+   "keywords": [
+    "국정감사",
+    "정보유출"
+   ]
+  },
+  {
+   "id": "31529872aa99",
+   "keep": true,
+   "category": "ai",
+   "importance": 92,
+   "relevance": 60,
+   "impact": 86,
+   "novelty": 92,
+   "reason": "최상위 신모델 공개, AI 경쟁 판도 변화",
+   "keywords": [
+    "Gemini 4",
+    "구글",
+    "LLM"
+   ]
+  },
+  {
+   "id": "a95a821a0506",
+   "keep": true,
+   "category": "ai",
+   "importance": 88,
+   "relevance": 62,
+   "impact": 84,
+   "novelty": 90,
+   "reason": "24시간 상시 작동 AI 에이전트 공개",
+   "keywords": [
+    "OpenAI",
+    "AI 에이전트",
+    "닷"
+   ]
+  },
+  {
+   "id": "8f65534fcc86",
+   "keep": true,
+   "category": "ai",
+   "importance": 86,
+   "relevance": 66,
+   "impact": 86,
+   "novelty": 92,
+   "reason": "통제 벗어난 AI 에이전트 정황, 안전 이슈",
+   "keywords": [
+    "OpenAI",
+    "AI 에이전트",
+    "AI 안전"
+   ]
+  },
+  {
+   "id": "1665fc234bd8",
+   "keep": true,
+   "category": "ai",
+   "importance": 84,
+   "relevance": 78,
+   "impact": 86,
+   "novelty": 84,
+   "reason": "AI 에이전트의 해킹 자동화, 금융권 위협 구조",
+   "keywords": [
+    "AI 에이전트",
+    "해킹 자동화",
+    "보안"
+   ]
+  },
+  {
+   "id": "9038a1156785",
+   "keep": true,
+   "category": "ai",
+   "importance": 82,
+   "relevance": 58,
+   "impact": 82,
+   "novelty": 86,
+   "reason": "AI 추론 비용 급락, 도입 장벽 낮아짐",
+   "keywords": [
+    "추론 비용",
+    "AI 가격"
+   ]
+  },
+  {
+   "id": "b6cdb14f4482",
+   "keep": true,
+   "category": "ai",
+   "importance": 82,
+   "relevance": 56,
+   "impact": 74,
+   "novelty": 84,
+   "reason": "GPU 1장 구동 국산 LLM",
+   "keywords": [
+    "업스테이지",
+    "솔라 미니 4",
+    "소형 LLM"
+   ]
+  },
+  {
+   "id": "ecefa7d8df60",
+   "keep": true,
+   "category": "ai",
+   "importance": 78,
+   "relevance": 72,
+   "impact": 72,
+   "novelty": 82,
+   "reason": "SUV에 LLM 에이전트 첫 탑재, 차량 AI 확산",
+   "keywords": [
+    "현대차",
+    "AI 에이전트",
+    "글레오 AI"
+   ]
+  },
+  {
+   "id": "8fb377bd9dd6",
+   "keep": true,
+   "category": "ai",
+   "importance": 72,
+   "relevance": 86,
+   "impact": 60,
+   "novelty": 72,
+   "reason": "손보사 현업의 AI 에이전트 직접 개발",
+   "keywords": [
+    "KB손보",
+    "AI 에이전트",
+    "업무혁신"
+   ]
+  },
+  {
+   "id": "c038d042f690",
+   "keep": true,
+   "category": "ai",
+   "importance": 80,
+   "relevance": 48,
+   "impact": 70,
+   "novelty": 88,
+   "reason": "아틀라스 새 로봇손 공개",
+   "keywords": [
+    "보스턴다이내믹스",
+    "아틀라스",
+    "휴머노이드"
+   ]
+  },
+  {
+   "id": "5ab3ba475acc",
+   "keep": true,
+   "category": "ai",
+   "importance": 78,
+   "relevance": 40,
+   "impact": 70,
+   "novelty": 92,
+   "reason": "AI칩 탑재 위성 발사, 우주 데이터센터",
+   "keywords": [
+    "구글",
+    "TPU",
+    "우주 데이터센터"
+   ]
+  },
+  {
+   "id": "8990cd229669",
+   "keep": true,
+   "category": "ai",
+   "importance": 74,
+   "relevance": 54,
+   "impact": 70,
+   "novelty": 80,
+   "reason": "AI 에이전트 이상행동 격리",
+   "keywords": [
+    "엔비디아",
+    "AI 안전"
+   ]
+  },
+  {
+   "id": "b985bcb19698",
+   "keep": true,
+   "category": "ai",
+   "importance": 72,
+   "relevance": 40,
+   "impact": 64,
+   "novelty": 80,
+   "reason": "중국 국산화 피지컬 AI 로봇",
+   "keywords": [
+    "피지컬 AI",
+    "중국"
+   ]
+  },
+  {
+   "id": "2c7c573297f1",
+   "keep": true,
+   "category": "ai",
+   "importance": 70,
+   "relevance": 38,
+   "impact": 68,
+   "novelty": 64,
+   "reason": "HBM4 경쟁",
+   "keywords": [
+    "HBM4",
+    "삼성"
+   ]
+  },
+  {
+   "id": "8262db7eec10",
+   "keep": true,
+   "category": "ai",
+   "importance": 64,
+   "relevance": 70,
+   "impact": 54,
+   "novelty": 64,
+   "reason": "GA 업계 AI 내부통제",
+   "keywords": [
+    "GA",
+    "AI 내부통제"
+   ]
+  },
+  {
+   "id": "548e7947c4e3",
+   "keep": true,
+   "category": "ai",
+   "importance": 64,
+   "relevance": 44,
+   "impact": 60,
+   "novelty": 60,
+   "reason": "AI 경쟁 기준 변화",
+   "keywords": [
+    "AI 경쟁"
+   ]
+  },
+  {
+   "id": "ee9bd673f188",
+   "keep": true,
+   "category": "ai",
+   "importance": 68,
+   "relevance": 44,
+   "impact": 60,
+   "novelty": 64,
+   "reason": "피지컬 AI 스타트업 가치 상승",
+   "keywords": [
+    "필드AI",
+    "피지컬 AI"
+   ]
+  }
+ ]
+}
