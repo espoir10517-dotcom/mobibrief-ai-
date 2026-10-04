@@ -1,0 +1,46 @@
+{
+  "_comment": "AI 뉴스 평가 기준과 가중치. weight 합계가 1이 아니어도 자동으로 정규화됩니다. 값을 바꾼 뒤 데이터를 다시 생성하면 종합점수와 TOP 5에 반영됩니다.",
+  "criteria": {
+    "importance": {
+      "label": "중요도",
+      "weight": 0.30,
+      "question": "산업적으로 얼마나 중요한 뉴스인가?"
+    },
+    "relevance": {
+      "label": "업무 연관도",
+      "weight": 0.25,
+      "question": "보험·자동차보험·모빌리티 업무에 얼마나 관련성이 높은가?"
+    },
+    "recency": {
+      "label": "최신성",
+      "weight": 0.15,
+      "question": "새로운 정보 또는 최근 발생한 사건인가?"
+    },
+    "impact": {
+      "label": "영향도",
+      "weight": 0.20,
+      "question": "향후 산업이나 업무에 영향을 미칠 가능성이 얼마나 높은가?"
+    },
+    "novelty": {
+      "label": "참신성",
+      "weight": 0.10,
+      "question": "기존에 반복적으로 보도된 내용이 아니라 새로운 내용인가?"
+    }
+  },
+  "selection": {
+    "topN": 5,
+    "_similarity": "두 기사의 주제 유사도(0~1)가 similarityThreshold 이상이면 같은 주제로 보고, 이미 선정된 비슷한 기사 수만큼 diversityPenalty 점수를 깎아 다양성을 확보합니다. duplicateThreshold 이상이면 사실상 같은 기사로 보고 제외합니다.",
+    "similarityThreshold": 0.34,
+    "duplicateThreshold": 0.75,
+    "diversityPenalty": 12
+  },
+  "trend": {
+    "windowDays": 7,
+    "minDaysForTrend": 14,
+    "risePercent": 20,
+    "minAbsoluteChange": 2
+  },
+  "alerts": {
+    "breakingThreshold": 85
+  }
+}

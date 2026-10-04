@@ -1,0 +1,16 @@
+{
+  "name": "mobibrief-ai",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MobiBrief AI — AI가 골라주는 오늘의 핵심 뉴스 (자동차보험·모빌리티·보험·AI 기술)",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "build:demo": "node scripts/build-demo.mjs",
+    "build:preview": "node scripts/build-preview.mjs",
+    "test": "node scripts/smoke-test.mjs"
+  }
+}
