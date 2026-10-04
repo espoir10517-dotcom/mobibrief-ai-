@@ -96,8 +96,12 @@ export async function runCollect({ now = new Date(), log = console.log, outDir =
 
   const dir = outDir;
   await mkdir(dir, { recursive: true });
-  await writeFile(path.join(dir, `${date}.json`), JSON.stringify(out, null, 2));
-  await writeFile(path.join(dir, 'latest.json'), JSON.stringify(out, null, 2));
+  // 실행 기록은 항상 남기고(문제 확인용), 기사가 없으면 기존 결과를 덮어쓰지 않음
+  await writeFile(path.join(dir, 'last-run.json'), JSON.stringify({ date, collectedAt: out.collectedAt, stats: out.stats, errors: out.errors }, null, 2));
+  if (articles.length) {
+    await writeFile(path.join(dir, `${date}.json`), JSON.stringify(out, null, 2));
+    await writeFile(path.join(dir, 'latest.json'), JSON.stringify(out, null, 2));
+  }
 
   log(`📥 수집 ${raw.length}건 → 최근 ${cfg.lookbackHours}시간 ${fresh.length}건 → 중복 묶은 뒤 ${clusters.length}개 이슈`);
   log(`🗂  분야별 후보: ${Object.entries(perCategory).map(([k, v]) => `${k} ${v}`).join(' · ')}`);
@@ -108,7 +112,15 @@ export async function runCollect({ now = new Date(), log = console.log, outDir =
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-  const out = await runCollect();
+  let out;
+  try {
+    out = await runCollect();
+  } catch (e) {
+    console.error('❌ 수집 중 오류:', e);
+    await mkdir(path.join(root, 'data/collected'), { recursive: true });
+    await writeFile(path.join(root, 'data/collected/last-run.json'), JSON.stringify({ collectedAt: new Date().toISOString(), fatal: String(e?.stack || e) }, null, 2));
+    process.exit(1);
+  }
   if (!out.articles.length) {
     console.error('❌ 수집된 기사가 없습니다. 인터넷 연결이나 API 키를 확인하세요.');
     process.exit(1);
