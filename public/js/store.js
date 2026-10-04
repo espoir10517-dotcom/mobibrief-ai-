@@ -20,7 +20,7 @@ function write(key, value) {
   }
 }
 
-const KEYS = { saved: 'mb.saved', keywords: 'mb.keywords', settings: 'mb.settings' };
+const KEYS = { saved: 'mb.saved', keywords: 'mb.keywords', settings: 'mb.settings', admin: 'mb.admin' };
 
 export const DEFAULT_SETTINGS = {
   theme: 'system', // system | light | dark
@@ -33,6 +33,14 @@ export const DEFAULT_SETTINGS = {
 // 관심 키워드는 사용자마다 각자 휴대폰에만 저장되며, 처음에는 비어 있습니다.
 // 아래는 MY NEWS 화면에서 한 번 눌러 추가할 수 있게 보여주는 '추천' 목록일 뿐, 자동 등록되지 않습니다.
 export const SUGGESTED_KEYWORDS = ['자율주행', '로보택시', '손해율', '보험사기', 'AI Agent', '전기차', 'Physical AI'];
+
+// 관리자 모드 (이 휴대폰에서만 MY NEWS 탭 표시)
+export function isAdmin() {
+  return read(KEYS.admin, false) === true;
+}
+export function setAdmin(on) {
+  write(KEYS.admin, Boolean(on));
+}
 
 export function getSettings() {
   return { ...DEFAULT_SETTINGS, ...read(KEYS.settings, {}) };

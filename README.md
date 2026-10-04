@@ -157,6 +157,16 @@ AI 방식에서 하는 일:
 - **iPhone:** iOS 16.4 이상 + **홈 화면에 추가한 앱**에서만 웹 알림을 받을 수 있습니다. Safari 탭에서는 불가합니다. 알림이 불안정하면 텔레그램 봇 알림을 대안으로 함께 제공합니다.
 - 같은 이슈에 대한 중요 뉴스 알림은 한 번만 보내도록 중복 방지 기록을 남깁니다.
 
+## 관리자 모드 (MY NEWS 탭)
+
+배포받은 사용자에게는 **HOME · CATEGORY · SAVED · SETTINGS** 4개 탭만 보이고, **MY NEWS**(관심 키워드 뉴스)는 관리자 휴대폰에서만 보입니다.
+
+- **켜기:** 앱 → SETTINGS → 맨 아래 `MobiBrief AI · v0.4` 글자를 **5번 연속** 누름 → 관리자 코드 입력 → 확인
+- **끄기:** SETTINGS → 관리자 → '관리자 모드 끄기'
+- 휴대폰(또는 브라우저)마다 따로 기억합니다. iPhone 은 Safari 와 홈 화면 앱이 저장 공간이 달라서, **홈 화면 앱에서 한 번 더** 켜야 합니다.
+- 메뉴를 숨기는 기능이며 보안 장치는 아닙니다 (MY NEWS 내용도 모두 공개 뉴스입니다).
+- **코드 바꾸기:** 터미널에서 `node -e "console.log(require('crypto').createHash('sha256').update('mobibrief:새코드').digest('hex'))"` 실행 → 나온 값을 `public/js/admin.js` 의 `ADMIN_HASH` 에 넣고 배포. (저장소에는 코드 원문이 아니라 해시값만 저장됩니다)
+
 ## 7. 배포 방법
 
 **현재 운영 주소:** https://espoir10517-dotcom.github.io/mobibrief-ai-/
