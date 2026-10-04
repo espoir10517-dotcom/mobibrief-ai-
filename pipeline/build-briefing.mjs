@@ -1,4 +1,4 @@
-// 앱에 보여줄 오늘의 브리핑 만들기 (AI 없이 규칙 기반)
+// 앱에 보여줄 주간 브리핑 만들기: 키워드 규칙으로 1차 선별 → AI 편집(평가·선정·요약). AI를 쓸 수 없으면 1차 선별 결과로 대체 발행
 // 실행: npm run build:briefing   (수집 후 실행)
 // 입력: data/collected/YYYY-MM-DD.json (날짜별 수집 결과)
 // 출력: public/data/live/briefing.json   오늘의 TOP 5 · 핵심 이슈 3 · 핵심 키워드
@@ -121,7 +121,7 @@ function analyze(file, { compiled, criteria, prevTitles, recencyHours, exclude =
   return out;
 }
 
-// AI 없이 고르는 TOP N: 이미 뽑힌 기사들이 다루지 않은 주제(키워드)를 가진 기사를 우선 선택하고,
+// 1차 선별(대체 발행용) TOP N: 이미 뽑힌 기사들이 다루지 않은 주제(키워드)를 가진 기사를 우선 선택하고,
 // 자리가 남으면 점수순으로 채움. 비슷한 내용의 기사가 TOP 5를 독차지하지 않게 합니다.
 function diverseTop(list, n) {
   const sorted = [...list].sort((a, b) => b.total - a.total);
