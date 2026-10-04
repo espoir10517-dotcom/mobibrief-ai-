@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>MobiBrief AI</title>
+  <meta name="description" content="AI가 골라주는 오늘의 핵심 뉴스 — 자동차보험·모빌리티·보험·AI 기술">
+  <meta name="theme-color" content="#F3F5F8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0B1018" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="MobiBrief">
+  <!-- @preview-strip-start -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <!-- @preview-strip-end -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+  <link rel="stylesheet" href="css/app.css">
+  <script>
+    // 화면 깜빡임 없이 저장된 테마를 먼저 적용
+    try {
+      var s = JSON.parse(localStorage.getItem('mb.settings') || '{}');
+      if (s.theme === 'light' || s.theme === 'dark') document.documentElement.setAttribute('data-theme', s.theme);
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <div id="app">
+    <div id="demo-banner" class="demo-banner" hidden>
+      <span class="demo-banner__tag">DEMO</span>
+      <span>모든 기사는 시연용 <b>가상 데이터</b>입니다</span>
+    </div>
+    <main id="view" class="view" tabindex="-1" aria-live="polite"></main>
+    <nav class="tabbar" aria-label="주요 메뉴">
+      <a class="tab" data-tab="home" href="#/home" data-nav="/home">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4.5v-6h-5v6H5a1 1 0 0 1-1-1z"/></svg>
+        <span>HOME</span>
+      </a>
+      <a class="tab" data-tab="category" href="#/category" data-nav="/category">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg>
+        <span>CATEGORY</span>
+      </a>
+      <a class="tab" data-tab="my" href="#/my" data-nav="/my">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.8"/><path d="M4.5 20c1.2-3.8 4.2-5.6 7.5-5.6s6.3 1.8 7.5 5.6"/></svg>
+        <span>MY NEWS</span>
+      </a>
+      <a class="tab" data-tab="saved" href="#/saved" data-nav="/saved">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3.8h11a1 1 0 0 1 1 1v15.4l-6.5-4.3-6.5 4.3V4.8a1 1 0 0 1 1-1z"/></svg>
+        <span>SAVED</span>
+      </a>
+      <a class="tab" data-tab="settings" href="#/settings" data-nav="/settings">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 13.5a7.6 7.6 0 0 0 0-3l2-1.6-2-3.4-2.4 1a7.5 7.5 0 0 0-2.6-1.5L14 2.5h-4l-.4 2.5A7.5 7.5 0 0 0 7 6.5l-2.4-1-2 3.4 2 1.6a7.6 7.6 0 0 0 0 3l-2 1.6 2 3.4 2.4-1a7.5 7.5 0 0 0 2.6 1.5l.4 2.5h4l.4-2.5a7.5 7.5 0 0 0 2.6-1.5l2.4 1 2-3.4z"/></svg>
+        <span>SETTINGS</span>
+      </a>
+    </nav>
+    <div id="toast" class="toast" role="status" hidden></div>
+  </div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
