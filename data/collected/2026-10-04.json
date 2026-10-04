@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-04",
-  "collectedAt": "2026-10-04T09:05:20.475Z",
+  "collectedAt": "2026-10-04T09:15:12.596Z",
   "stats": {
-    "searches": 60,
+    "searches": 44,
     "google": {
-      "ok": 39,
+      "ok": 23,
       "fail": 0,
-      "items": 606
+      "items": 308
     },
     "naver": {
       "ok": 0,
@@ -16,37 +16,39 @@
       "enabled": false
     },
     "rss": {
-      "ok": 21,
-      "fail": 0,
-      "items": 1231,
-      "kept": 340
+      "ok": 20,
+      "fail": 1,
+      "items": 1131,
+      "kept": 543
     },
-    "raw": 946,
-    "fresh": 589,
-    "clusters": 453,
-    "candidates": 226,
+    "raw": 851,
+    "fresh": 406,
+    "clusters": 278,
+    "candidates": 201,
     "perCategory": {
-      "auto": 46,
-      "mobility": 60,
+      "auto": 23,
+      "mobility": 58,
       "insurance": 60,
       "ai": 60
     }
   },
-  "errors": [],
+  "errors": [
+    "rss \"머니투데이\": fetch failed"
+  ],
   "feeds": [
-    {
-      "name": "한국경제 IT",
-      "url": "https://www.hankyung.com/feed/it",
-      "ok": true,
-      "items": 50,
-      "kept": 15
-    },
     {
       "name": "한국경제 금융",
       "url": "https://www.hankyung.com/feed/finance",
       "ok": true,
       "items": 50,
       "kept": 5
+    },
+    {
+      "name": "한국경제 IT",
+      "url": "https://www.hankyung.com/feed/it",
+      "ok": true,
+      "items": 50,
+      "kept": 15
     },
     {
       "name": "연합뉴스 경제",
@@ -63,10 +65,24 @@
       "kept": 33
     },
     {
+      "name": "매일경제 기업",
+      "url": "https://www.mk.co.kr/rss/50100032/",
+      "ok": true,
+      "items": 50,
+      "kept": 16
+    },
+    {
       "name": "매일경제 경제",
       "url": "https://www.mk.co.kr/rss/30100041/",
       "ok": true,
       "items": 50,
+      "kept": 21
+    },
+    {
+      "name": "조선일보 경제",
+      "url": "https://www.chosun.com/arc/outboundfeeds/rss/category/economy/?outputType=xml",
+      "ok": true,
+      "items": 100,
       "kept": 21
     },
     {
@@ -77,25 +93,11 @@
       "kept": 5
     },
     {
-      "name": "매일경제 기업",
-      "url": "https://www.mk.co.kr/rss/50100032/",
-      "ok": true,
-      "items": 50,
-      "kept": 16
-    },
-    {
       "name": "매일경제 IT",
       "url": "https://www.mk.co.kr/rss/50300009/",
       "ok": true,
       "items": 50,
       "kept": 0
-    },
-    {
-      "name": "조선일보 경제",
-      "url": "https://www.chosun.com/arc/outboundfeeds/rss/category/economy/?outputType=xml",
-      "ok": true,
-      "items": 100,
-      "kept": 21
     },
     {
       "name": "동아일보 경제",
@@ -112,13 +114,6 @@
       "kept": 4
     },
     {
-      "name": "지디넷코리아",
-      "url": "https://feeds.feedburner.com/zdkorea",
-      "ok": true,
-      "items": 30,
-      "kept": 14
-    },
-    {
       "name": "경향신문 경제",
       "url": "https://www.khan.co.kr/rss/rssdata/economy_news.xml",
       "ok": true,
@@ -126,60 +121,66 @@
       "kept": 11
     },
     {
-      "name": "머니투데이",
-      "url": "https://rss.mt.co.kr/mt_news.xml",
+      "name": "지디넷코리아",
+      "url": "https://feeds.feedburner.com/zdkorea",
       "ok": true,
-      "items": 100,
-      "kept": 8
+      "items": 30,
+      "kept": 14
     },
     {
       "name": "한국보험신문",
       "url": "https://www.insnews.co.kr/rss/allArticle.xml",
       "ok": true,
       "items": 50,
-      "kept": 20
-    },
-    {
-      "name": "대한금융신문",
-      "url": "https://www.kbanker.co.kr/rss/allArticle.xml",
-      "ok": true,
-      "items": 50,
-      "kept": 13
+      "kept": 50
     },
     {
       "name": "보험매일",
       "url": "https://www.fins.co.kr/rss/allArticle.xml",
       "ok": true,
       "items": 50,
-      "kept": 25
+      "kept": 50
+    },
+    {
+      "name": "대한금융신문",
+      "url": "https://www.kbanker.co.kr/rss/allArticle.xml",
+      "ok": true,
+      "items": 50,
+      "kept": 50
     },
     {
       "name": "보험저널",
       "url": "https://www.insjournal.co.kr/rss/allArticle.xml",
       "ok": true,
       "items": 50,
-      "kept": 14
+      "kept": 50
     },
     {
       "name": "오토데일리",
       "url": "https://www.autodaily.co.kr/rss/allArticle.xml",
       "ok": true,
       "items": 50,
-      "kept": 21
-    },
-    {
-      "name": "AI타임스",
-      "url": "https://www.aitimes.com/rss/allArticle.xml",
-      "ok": true,
-      "items": 50,
-      "kept": 37
+      "kept": 50
     },
     {
       "name": "모터그래프",
       "url": "https://www.motorgraph.com/rss/allArticle.xml",
       "ok": true,
       "items": 50,
-      "kept": 9
+      "kept": 50
+    },
+    {
+      "name": "AI타임스",
+      "url": "https://www.aitimes.com/rss/allArticle.xml",
+      "ok": true,
+      "items": 50,
+      "kept": 50
+    },
+    {
+      "name": "머니투데이",
+      "url": "https://rss.mt.co.kr/mt_news.xml",
+      "ok": false,
+      "error": "fetch failed"
     }
   ],
   "articles": [
@@ -220,6 +221,38 @@
     {
       "provider": "google-news",
       "lang": "ko",
+      "title": "車사고 줄었는데… 보험업계 웃지 못하는 이유",
+      "source": "파이낸셜뉴스",
+      "sourceUrl": "https://www.fnnews.com",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE50bVNsd3hxMkNYcmpRMHpnMjU3cjY2MFdkYzZFV1hpNDRpbndLR00zZE4zbVc1dUxZeHBLSWJlLXViMnZiLXhiXzdKdS15X0RZZmZzaDBZNTB5QQ?oc=5",
+      "publishedAt": "2026-10-04T09:11:46.000Z",
+      "description": "",
+      "id": "1930bff53425",
+      "category": "auto",
+      "categoryHints": [
+        "auto",
+        "insurance"
+      ],
+      "matchedQueries": [
+        "자동차보험 손해율",
+        "자동차보험료",
+        "자동차보험",
+        "車보험",
+        "보험업계"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "파이낸셜뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE50bVNsd3hxMkNYcmpRMHpnMjU3cjY2MFdkYzZFV1hpNDRpbndLR00zZE4zbVc1dUxZeHBLSWJlLXViMnZiLXhiXzdKdS15X0RZZmZzaDBZNTB5QQ?oc=5",
+          "publishedAt": "2026-10-04T09:11:46.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-04T09:11:46.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
       "title": "골목길서 슬쩍 ‘손목치기’…운전자 11명 속여 865만원 뜯은 50대",
       "source": "다음뉴스",
       "sourceUrl": "https://v.daum.net",
@@ -248,7 +281,7 @@
       "provider": "google-news",
       "lang": "ko",
       "title": "법규위반 차량만 노렸다...13차례 고의사고로 5천만원 보험금 편취, 충남경찰, 40대 오토바이 배달원 송치",
-      "source": "newsdaily.kr",
+      "source": "뉴스데일리",
       "sourceUrl": "https://www.newsdaily.kr",
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBlTlJ6X1FTQjJWQXoteU4xaC1OemNzd1hrcFVPR2dZbjVteXduTXpoeEdxOUdnQVpzVTdhQ005d0Z6amxkTmFBSV9rUU9KYUJiUnAzM3N4aWdzOVB5cDZOcUFTemgzS0paSFF3?oc=5",
       "publishedAt": "2026-10-04T03:17:28.000Z",
@@ -264,7 +297,7 @@
       "coverage": 1,
       "sources": [
         {
-          "name": "newsdaily.kr",
+          "name": "뉴스데일리",
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBlTlJ6X1FTQjJWQXoteU4xaC1OemNzd1hrcFVPR2dZbjVteXduTXpoeEdxOUdnQVpzVTdhQ005d0Z6amxkTmFBSV9rUU9KYUJiUnAzM3N4aWdzOVB5cDZOcUFTemgzS0paSFF3?oc=5",
           "publishedAt": "2026-10-04T03:17:28.000Z"
         }
@@ -286,8 +319,8 @@
         "auto"
       ],
       "matchedQueries": [
-        "자동차보험",
-        "자동차보험료"
+        "자동차보험료",
+        "자동차보험"
       ],
       "coverage": 1,
       "sources": [
@@ -325,6 +358,40 @@
         }
       ],
       "firstSeenAt": "2026-10-03T23:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "[통장잔GO] 덜 타고 안전하면 더 싸다…할인 늘리는 자동차보험",
+      "source": "데일리안",
+      "sourceUrl": "https://m.dailian.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE15STBKZkFRM2lsS0Uyb2V2YjN6LUdtX0JQaGhkRWg0OXBWbUU3Z3prZWUxM2F3ckUzYWVjOEdQZ1MzVHZRdldhVklhNEhoejBkMHZR?oc=5",
+      "publishedAt": "2026-10-03T22:08:00.000Z",
+      "description": "",
+      "id": "ea6caf8c6cdd",
+      "category": "auto",
+      "categoryHints": [
+        "auto",
+        "insurance",
+        "mobility"
+      ],
+      "matchedQueries": [
+        "자동차보험 손해율",
+        "커넥티드카",
+        "손해보험",
+        "자동차보험료",
+        "자동차보험",
+        "보험업계"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "데일리안",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE15STBKZkFRM2lsS0Uyb2V2YjN6LUdtX0JQaGhkRWg0OXBWbUU3Z3prZWUxM2F3ckUzYWVjOEdQZ1MzVHZRdldhVklhNEhoejBkMHZR?oc=5",
+          "publishedAt": "2026-10-03T22:08:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-03T22:08:00.000Z"
     },
     {
       "provider": "google-news",
@@ -449,8 +516,8 @@
         "auto"
       ],
       "matchedQueries": [
-        "자동차보험",
-        "자동차보험료"
+        "자동차보험료",
+        "자동차보험"
       ],
       "coverage": 1,
       "sources": [
@@ -587,8 +654,8 @@
         "auto"
       ],
       "matchedQueries": [
-        "자동차보험",
-        "자동차보험료"
+        "자동차보험료",
+        "자동차보험"
       ],
       "coverage": 1,
       "sources": [
@@ -751,8 +818,8 @@
         "auto"
       ],
       "matchedQueries": [
-        "자동차보험",
         "자동차보험료",
+        "자동차보험",
         "車보험"
       ],
       "coverage": 1,
@@ -764,686 +831,6 @@
         }
       ],
       "firstSeenAt": "2026-10-02T23:00:00.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "ko",
-      "title": ": 다나와 자동차",
-      "source": "다나와 자동차",
-      "sourceUrl": "https://mauto.danawa.com",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRnM5Tl9PSGhyNnlHcEJMMHR4SFUwSkFoOWlESXJNbTVWbllaZThKZXVCZDA1ZXphQTlidE55TlpHckdoS3FHcUZrNGJtZ05nd01ZeXJXRTJUZlRTUXJ2NmpYWTNCU2pIcF9HUmMzWGRTeEVLRGUydXd1Ry1YNzVxV0dFNDJFUjhqdm1vdkVibzd2MDA?oc=5",
-      "publishedAt": "2026-10-02T21:09:40.000Z",
-      "description": "",
-      "id": "c581147173ad",
-      "category": "auto",
-      "categoryHints": [
-        "auto"
-      ],
-      "matchedQueries": [
-        "자동차보험"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "다나와 자동차",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRnM5Tl9PSGhyNnlHcEJMMHR4SFUwSkFoOWlESXJNbTVWbllaZThKZXVCZDA1ZXphQTlidE55TlpHckdoS3FHcUZrNGJtZ05nd01ZeXJXRTJUZlRTUXJ2NmpYWTNCU2pIcF9HUmMzWGRTeEVLRGUydXd1Ry1YNzVxV0dFNDJFUjhqdm1vdkVibzd2MDA?oc=5",
-          "publishedAt": "2026-10-02T21:09:40.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-02T21:09:40.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "en",
-      "title": "Trump tariffs a mixed bag for US auto industry",
-      "source": "NST Online",
-      "sourceUrl": "https://www.nst.com.my",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNbEVmODJ0QzFGdmNyZW9jY0RKV3lMYlY5SWN3MW1zbHRUblU4SC1Nb2NoTUQwOFcxVWVCajJLVWprZFA5Mlh2YUJtUDgwOTd3Qnl0QXNLNDA5UmR3bmtrRVpPOVVPSzBCalFLLXpXb0ZHN3FaQnB3Sk40Ry0xR1ZKX1lTcEZ5Q2xTd3VTeE1JaXJuSEtGc1RISG81RUY0ajg?oc=5",
-      "publishedAt": "2026-10-04T03:06:45.000Z",
-      "description": "",
-      "id": "63f44f1117a6",
-      "category": "auto",
-      "categoryHints": [
-        "auto"
-      ],
-      "matchedQueries": [
-        "auto insurance"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "NST Online",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNbEVmODJ0QzFGdmNyZW9jY0RKV3lMYlY5SWN3MW1zbHRUblU4SC1Nb2NoTUQwOFcxVWVCajJLVWprZFA5Mlh2YUJtUDgwOTd3Qnl0QXNLNDA5UmR3bmtrRVpPOVVPSzBCalFLLXpXb0ZHN3FaQnB3Sk40Ry0xR1ZKX1lTcEZ5Q2xTd3VTeE1JaXJuSEtGc1RISG81RUY0ajg?oc=5",
-          "publishedAt": "2026-10-04T03:06:45.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-04T03:06:45.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "en",
-      "title": "Crash investigators check 800 motor cases yearly",
-      "source": "NST Online",
-      "sourceUrl": "https://www.nst.com.my",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPVi1fWkJkVlM0eWpYanlWSWlPdkhRR2JNUFRtVG1mcWU2ampheFhiSVpPRlVSSTZscU1Ld2V3MzZMTGc0V2pQR0MtNmdoSGtMSWdKWE91M1pJYmFMeUgzSHl1MHN2ekNoRFZaZXdLbHlsRHJRb0Z5NVdESVJvbklTdm0xSURvNS04c1ZyVWRKLWphZjRhUWhEdUxDRFVldTZvVVdBUmVn?oc=5",
-      "publishedAt": "2026-10-04T00:30:59.000Z",
-      "description": "",
-      "id": "5b44e58e1212",
-      "category": "auto",
-      "categoryHints": [
-        "auto"
-      ],
-      "matchedQueries": [
-        "motor insurance claims"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "NST Online",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPVi1fWkJkVlM0eWpYanlWSWlPdkhRR2JNUFRtVG1mcWU2ampheFhiSVpPRlVSSTZscU1Ld2V3MzZMTGc0V2pQR0MtNmdoSGtMSWdKWE91M1pJYmFMeUgzSHl1MHN2ekNoRFZaZXdLbHlsRHJRb0Z5NVdESVJvbklTdm0xSURvNS04c1ZyVWRKLWphZjRhUWhEdUxDRFVldTZvVVdBUmVn?oc=5",
-          "publishedAt": "2026-10-04T00:30:59.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-04T00:30:59.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "en",
-      "title": "Fraudulent claims cannot justify higher premiums, say consumer groups",
-      "source": "NST Online",
-      "sourceUrl": "https://www.nst.com.my",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNNG5FZFQ3bWs3QlhUMFkySk02NlJadTdVZ1VSb0pWYzFzeHZJcjlpXzAtZFFqREZaRzFFM1RoX180c0RGRmRlTDdPcTVrdzhHdmw3Vm9KSDZqaGJlRDZXbDBWOTNjY0RWajBzWHloc3Y0Qzl5NGJCQW93TkFzS3hQd2Y3WXE3cWVOZHZwZlhieVgzWTFmQUhqdG9EbENZN3F0eHl0WEdxLWd4cldFbWV4RXBVNDlmRFBzWVhMOHdJcjg?oc=5",
-      "publishedAt": "2026-10-04T00:09:57.000Z",
-      "description": "",
-      "id": "a2075658fae1",
-      "category": "auto",
-      "categoryHints": [
-        "auto"
-      ],
-      "matchedQueries": [
-        "motor insurance claims"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "NST Online",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNNG5FZFQ3bWs3QlhUMFkySk02NlJadTdVZ1VSb0pWYzFzeHZJcjlpXzAtZFFqREZaRzFFM1RoX180c0RGRmRlTDdPcTVrdzhHdmw3Vm9KSDZqaGJlRDZXbDBWOTNjY0RWajBzWHloc3Y0Qzl5NGJCQW93TkFzS3hQd2Y3WXE3cWVOZHZwZlhieVgzWTFmQUhqdG9EbENZN3F0eHl0WEdxLWd4cldFbWV4RXBVNDlmRFBzWVhMOHdJcjg?oc=5",
-          "publishedAt": "2026-10-04T00:09:57.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-04T00:09:57.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "en",
-      "title": "RM1b lost yearly to fraud, say adjusters",
-      "source": "NST Online",
-      "sourceUrl": "https://www.nst.com.my",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZEl6ZnRSYktXNlMwV1VuMldmYW9yMUVncjdYT3ltUkdOVjZSalFpRkdyMGRTa2NuZ1pvSVBOOGJtWkpKU0VsazllYnNULVVpbUt6X3huNkg2azBsZTRZQUJkeVc3MnZFaVJzWkRsWW1La3NRdjBXaVdfRmN2WFJCVFlTZVRiX2FOZ3B6ZjhVSnRONWFHWEE?oc=5",
-      "publishedAt": "2026-10-03T23:50:23.000Z",
-      "description": "",
-      "id": "e189aeaa396d",
-      "category": "auto",
-      "categoryHints": [
-        "auto"
-      ],
-      "matchedQueries": [
-        "motor insurance claims"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "NST Online",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZEl6ZnRSYktXNlMwV1VuMldmYW9yMUVncjdYT3ltUkdOVjZSalFpRkdyMGRTa2NuZ1pvSVBOOGJtWkpKU0VsazllYnNULVVpbUt6X3huNkg2azBsZTRZQUJkeVc3MnZFaVJzWkRsWW1La3NRdjBXaVdfRmN2WFJCVFlTZVRiX2FOZ3B6ZjhVSnRONWFHWEE?oc=5",
-          "publishedAt": "2026-10-03T23:50:23.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T23:50:23.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "en",
-      "title": "AI, digital forensics key tools to combat fake motor insurance claims",
-      "source": "NST Online",
-      "sourceUrl": "https://www.nst.com.my",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxORmQ1MklRczQ4SmtpYURZRWxfSS1wQURIbnN6UVJjMU91VVI4LVRLYVgxZ09uYjUtV0FqSDJaTTdzTnFNQmlGaEZ5LWp3Z2pWQktXeV9VVVpPdnhCdEJMU2hnSjF1cWh5LUpJd3BvcnpfWDJKX3hzZE5uaFAyTXpWbU1IMlFlRXRsaTJYVzZycXI2VHVfUjRKZVpKVmM5YWtWbTRRZTNoNENSUUh5RGZOSncwRi1rS1JoMjV5OVln?oc=5",
-      "publishedAt": "2026-10-03T23:20:20.000Z",
-      "description": "",
-      "id": "7c673743ec25",
-      "category": "auto",
-      "categoryHints": [
-        "auto"
-      ],
-      "matchedQueries": [
-        "motor insurance claims"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "NST Online",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxORmQ1MklRczQ4SmtpYURZRWxfSS1wQURIbnN6UVJjMU91VVI4LVRLYVgxZ09uYjUtV0FqSDJaTTdzTnFNQmlGaEZ5LWp3Z2pWQktXeV9VVVpPdnhCdEJMU2hnSjF1cWh5LUpJd3BvcnpfWDJKX3hzZE5uaFAyTXpWbU1IMlFlRXRsaTJYVzZycXI2VHVfUjRKZVpKVmM5YWtWbTRRZTNoNENSUUh5RGZOSncwRi1rS1JoMjV5OVln?oc=5",
-          "publishedAt": "2026-10-03T23:20:20.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T23:20:20.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "en",
-      "title": "Motor insurance fraud on the rise [WATCH]",
-      "source": "NST Online",
-      "sourceUrl": "https://www.nst.com.my",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNVDdtX2pPXzNwaENjZ0dNckdNNGFwdjBjS25oM05MbU02anBRMWZzRzIxaGRodURKRUduQ1R6T20wWk1QamMzNzNkR1NMT2puTFZ2LU1jU1o2S2VaZjEyd2h0dV9KeVFtN2p3X2JOMXZFMzlHcWVzWTA3ZTFJZ1NWR256MXpaeldUWWYwWXpaTTZudw?oc=5",
-      "publishedAt": "2026-10-03T23:10:27.000Z",
-      "description": "",
-      "id": "4c92f19280cc",
-      "category": "auto",
-      "categoryHints": [
-        "auto"
-      ],
-      "matchedQueries": [
-        "motor insurance claims"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "NST Online",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNVDdtX2pPXzNwaENjZ0dNckdNNGFwdjBjS25oM05MbU02anBRMWZzRzIxaGRodURKRUduQ1R6T20wWk1QamMzNzNkR1NMT2puTFZ2LU1jU1o2S2VaZjEyd2h0dV9KeVFtN2p3X2JOMXZFMzlHcWVzWTA3ZTFJZ1NWR256MXpaeldUWWYwWXpaTTZudw?oc=5",
-          "publishedAt": "2026-10-03T23:10:27.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T23:10:27.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "en",
-      "title": "California insurance commissioner: Who's running and why it matters",
-      "source": "LAist",
-      "sourceUrl": "https://laist.com",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPNU1KeDhwQ0ItclZKdWtselAtWFY3QkEzcGRDbFBKZmZlTDItR083WE9DdC1hTTRYV25FOVNPQ2xLdTdDSk9SV2JKUkRRb0ZrWXhtcFRra3VmaDUtMTM5QlY5NWxvX0N0U1RPQ0tZY005c1FpX0tDQzNkQVJpRE40NG1FR3JuYnVQVlEySU5qeDZFSmFjS2tRT0hsUGlDbDJzR2c?oc=5",
-      "publishedAt": "2026-10-03T23:03:00.000Z",
-      "description": "",
-      "id": "30392ee9fb29",
-      "category": "auto",
-      "categoryHints": [
-        "auto",
-        "insurance"
-      ],
-      "matchedQueries": [
-        "auto insurance",
-        "insurance industry"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "LAist",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPNU1KeDhwQ0ItclZKdWtselAtWFY3QkEzcGRDbFBKZmZlTDItR083WE9DdC1hTTRYV25FOVNPQ2xLdTdDSk9SV2JKUkRRb0ZrWXhtcFRra3VmaDUtMTM5QlY5NWxvX0N0U1RPQ0tZY005c1FpX0tDQzNkQVJpRE40NG1FR3JuYnVQVlEySU5qeDZFSmFjS2tRT0hsUGlDbDJzR2c?oc=5",
-          "publishedAt": "2026-10-03T23:03:00.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T23:03:00.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "en",
-      "title": "Car Insurance ON Mississauga",
-      "source": "rates.ca",
-      "sourceUrl": "https://rates.ca",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB5b1FiMTczWFhmTnFxTEhnQmgwU19qSldiYnZQSzhRdG9IYnBIeXVPa3p5VFZJa0xkUFVuMEVpa0hlc2JlYnpxSTFKNTd2eHlmNmVmSHpqR3BhYjVqeDV3?oc=5",
-      "publishedAt": "2026-10-03T22:49:51.000Z",
-      "description": "",
-      "id": "6d619c645480",
-      "category": "auto",
-      "categoryHints": [
-        "auto"
-      ],
-      "matchedQueries": [
-        "auto insurance"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "rates.ca",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB5b1FiMTczWFhmTnFxTEhnQmgwU19qSldiYnZQSzhRdG9IYnBIeXVPa3p5VFZJa0xkUFVuMEVpa0hlc2JlYnpxSTFKNTd2eHlmNmVmSHpqR3BhYjVqeDV3?oc=5",
-          "publishedAt": "2026-10-03T22:49:51.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T22:49:51.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "en",
-      "title": "UK electric vehicle (EV) registrations hit record through 2026",
-      "source": "Beinsure",
-      "sourceUrl": "https://beinsure.com",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1VWnZiVHppZXc5dVBFRHlFa01ubE05UHZsaS1OR3ZaakhzY3NGSXZZOFBXb0RuSGxuREMxNHpMU2pWSExLcmVpREV2Tzd2bW15T01nMkVpQUI5bm1jWFhyRU5TdHJmTEtPQy16ME9mS2dEX0MxVEZld3NB?oc=5",
-      "publishedAt": "2026-10-03T20:44:57.000Z",
-      "description": "",
-      "id": "4c383acd10c1",
-      "category": "auto",
-      "categoryHints": [
-        "auto",
-        "insurance"
-      ],
-      "matchedQueries": [
-        "auto insurance",
-        "insurtech"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "Beinsure",
-          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1VWnZiVHppZXc5dVBFRHlFa01ubE05UHZsaS1OR3ZaakhzY3NGSXZZOFBXb0RuSGxuREMxNHpMU2pWSExLcmVpREV2Tzd2bW15T01nMkVpQUI5bm1jWFhyRU5TdHJmTEtPQy16ME9mS2dEX0MxVEZld3NB?oc=5",
-          "publishedAt": "2026-10-03T20:44:57.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T20:44:57.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "en",
-      "title": "Insurance companies pushing to clear backlog of Melissa related claims -- IAJ",
-      "source": "jamaica-gleaner.com",
-      "sourceUrl": "http://jamaica-gleaner.com",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTUc3RURxckhtM0tTZzFObkVoZllIcVVBTTFTN3ZpTmExbGFNV1ZHQnRJY050QlAyN3dFbDFqUzk0MjRFNEQwNGE5dHNWOVV2dXkyQXdTZG5acFo3SGJvVkdVRFR6Q3F6SVJUWVhzemhUWWJRS2JQTmRibmN0U3doRGNxVC1IRVNNY2oyVWtYOWZ2UjBDMEhBRnRjUS1PUEFZcEQzVGlYUDdQUzNPZ0EycWFvMENmeE51?oc=5",
-      "publishedAt": "2026-10-03T20:30:03.000Z",
-      "description": "",
-      "id": "0ede7f820d8d",
-      "category": "auto",
-      "categoryHints": [
-        "auto"
-      ],
-      "matchedQueries": [
-        "motor insurance claims"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "jamaica-gleaner.com",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTUc3RURxckhtM0tTZzFObkVoZllIcVVBTTFTN3ZpTmExbGFNV1ZHQnRJY050QlAyN3dFbDFqUzk0MjRFNEQwNGE5dHNWOVV2dXkyQXdTZG5acFo3SGJvVkdVRFR6Q3F6SVJUWVhzemhUWWJRS2JQTmRibmN0U3doRGNxVC1IRVNNY2oyVWtYOWZ2UjBDMEhBRnRjUS1PUEFZcEQzVGlYUDdQUzNPZ0EycWFvMENmeE51?oc=5",
-          "publishedAt": "2026-10-03T20:30:03.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T20:30:03.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "en",
-      "title": "US Car Insurance Rises in Early 2026",
-      "source": "Briefs Finance",
-      "sourceUrl": "https://www.briefs.co",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOVnl4anNVVVZ4S0ROZFdzaDF3aUdhWFdfWmE0U19HNFQzbGhub1AxRF9hWUtQcE0tS1VnUlJKZE5UaEJZV3A3dElkUmpTTW44dm9RY1VfcjVVOXN0Mnhwa3liS1BYNjZvTS00bE5iVGFWZ0xZdHRMMHIteUFoQTNsQzdFTmZXUnRTdk16VnA2VUtRQQ?oc=5",
-      "publishedAt": "2026-10-03T17:35:33.000Z",
-      "description": "",
-      "id": "d1267f5e1c37",
-      "category": "auto",
-      "categoryHints": [
-        "auto"
-      ],
-      "matchedQueries": [
-        "auto insurance"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "Briefs Finance",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOVnl4anNVVVZ4S0ROZFdzaDF3aUdhWFdfWmE0U19HNFQzbGhub1AxRF9hWUtQcE0tS1VnUlJKZE5UaEJZV3A3dElkUmpTTW44dm9RY1VfcjVVOXN0Mnhwa3liS1BYNjZvTS00bE5iVGFWZ0xZdHRMMHIteUFoQTNsQzdFTmZXUnRTdk16VnA2VUtRQQ?oc=5",
-          "publishedAt": "2026-10-03T17:35:33.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T17:35:33.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "en",
-      "title": "Bombay High Court Allows Insurance Company's Appeal in Motor Accident Claim Case Due to Lack of Negligence Proof. Claimants Failed to Establish Rash and Negligent Driving by Truck Driver, Resulting in Setting Aside of Tribunal's Award.",
-      "source": "Lawtext",
-      "sourceUrl": "https://lawtext.in",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1YLUNhXzBBS2dXX3A1V3ZPbmVhdkpINDhXWUlyeFU2QmVlVzFwV2JiWHo3X0NfeXlZZEZ2NGpKT1VVUW9rYzFjbjlTWThNdlBTc1JqQjM2QTU3VU5fS1hhQ3Qta1RHdw?oc=5",
-      "publishedAt": "2026-10-03T10:49:28.000Z",
-      "description": "",
-      "id": "c81445107592",
-      "category": "auto",
-      "categoryHints": [
-        "auto"
-      ],
-      "matchedQueries": [
-        "motor insurance claims"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "Lawtext",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1YLUNhXzBBS2dXX3A1V3ZPbmVhdkpINDhXWUlyeFU2QmVlVzFwV2JiWHo3X0NfeXlZZEZ2NGpKT1VVUW9rYzFjbjlTWThNdlBTc1JqQjM2QTU3VU5fS1hhQ3Qta1RHdw?oc=5",
-          "publishedAt": "2026-10-03T10:49:28.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T10:49:28.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "en",
-      "title": "Here’s What Your First Full Year in the Villages Actually Costs - Month by Month",
-      "source": "aol.com",
-      "sourceUrl": "https://www.aol.com",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPMC1uZlRJMlBIQWlJNWhjcDRoRU90Vjc4aEpVellRLWlGNWJ1cXhLSGcyT0h6eXZzdFNrZ3g2NEF5a0d2VjNyNmJEY283WXBIRnQ0WDh4M2FVVEZkaHFOYTVsSnBfVU0tS0tYbjR3ejFnZTQwUVEtSTQtUUhaT2tTcDFJX24?oc=5",
-      "publishedAt": "2026-10-03T09:37:00.000Z",
-      "description": "",
-      "id": "4a83607f6a9f",
-      "category": "auto",
-      "categoryHints": [
-        "auto"
-      ],
-      "matchedQueries": [
-        "auto insurance"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "aol.com",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPMC1uZlRJMlBIQWlJNWhjcDRoRU90Vjc4aEpVellRLWlGNWJ1cXhLSGcyT0h6eXZzdFNrZ3g2NEF5a0d2VjNyNmJEY283WXBIRnQ0WDh4M2FVVEZkaHFOYTVsSnBfVU0tS0tYbjR3ejFnZTQwUVEtSTQtUUhaT2tTcDFJX24?oc=5",
-          "publishedAt": "2026-10-03T09:37:00.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T09:37:00.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "en",
-      "title": "Pillion Rider Not Covered Under Act-Only Motor Insurance Policy Without Additional Premium: Tripura High...",
-      "source": "Live Law",
-      "sourceUrl": "https://www.livelaw.in",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPSVIwLVVTU2lUMlRtZXd1ZEgzZVg0UFNrOGtSUTNGbUs4N3lwSGdOUGNoUmFtb1VMbS11ZmItRmt4ZE1GRnFmV2FyRlNvTmU0OWFLZ1U4RFJGVW10ZS13cHZaYU90Q09sUXdtVkg0eUcwZzNJVHktSmN2NklvSFZOZW1wb19PQUJMWWNUeTRDTHF1b2NOR21KSXdYeF9tZlZ5bF8yTDhWUkFoNk91MTNrZERpXzVVNHJxeGRjNllqaDAtNDBYNWo5UHlJNW1EVFNBcXZFSTAxQ1p3RVpSdnFtdmVJY1DSAeoBQVVfeXFMTUpQV2tmWXExVjBOUVBzZEJNTkJGSEU4aUlqSDRlZ2pmNU5JYkpieWYzUFhNMXROSkNzM0R3TXdMeENueWgxZWtVbWY4clpCNzdCSmd1Ni1UT2l3X2xKbzQ4UHRjdG40M1I0R0xQSktiMDFBdGNMQVFTby1ZeXRkSk9wcXlQZUxpc2J3YWN1RmdMYkVTSW1qR3BsMUhHMWhoZDdsUDU5RGVIamZmOUd1VllfWFlndjRtOWFPdFhGTUM2YUhvOUVaX1NlMk9UdER3cnRneWJNcEEteUYtUEdIZmNGN1RyZzZjTnJ3?oc=5",
-      "publishedAt": "2026-10-03T06:40:59.000Z",
-      "description": "",
-      "id": "b12e5c650cd5",
-      "category": "auto",
-      "categoryHints": [
-        "auto"
-      ],
-      "matchedQueries": [
-        "motor insurance claims"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "Live Law",
-          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPSVIwLVVTU2lUMlRtZXd1ZEgzZVg0UFNrOGtSUTNGbUs4N3lwSGdOUGNoUmFtb1VMbS11ZmItRmt4ZE1GRnFmV2FyRlNvTmU0OWFLZ1U4RFJGVW10ZS13cHZaYU90Q09sUXdtVkg0eUcwZzNJVHktSmN2NklvSFZOZW1wb19PQUJMWWNUeTRDTHF1b2NOR21KSXdYeF9tZlZ5bF8yTDhWUkFoNk91MTNrZERpXzVVNHJxeGRjNllqaDAtNDBYNWo5UHlJNW1EVFNBcXZFSTAxQ1p3RVpSdnFtdmVJY1DSAeoBQVVfeXFMTUpQV2tmWXExVjBOUVBzZEJNTkJGSEU4aUlqSDRlZ2pmNU5JYkpieWYzUFhNMXROSkNzM0R3TXdMeENueWgxZWtVbWY4clpCNzdCSmd1Ni1UT2l3X2xKbzQ4UHRjdG40M1I0R0xQSktiMDFBdGNMQVFTby1ZeXRkSk9wcXlQZUxpc2J3YWN1RmdMYkVTSW1qR3BsMUhHMWhoZDdsUDU5RGVIamZmOUd1VllfWFlndjRtOWFPdFhGTUM2YUhvOUVaX1NlMk9UdER3cnRneWJNcEEteUYtUEdIZmNGN1RyZzZjTnJ3?oc=5",
-          "publishedAt": "2026-10-03T06:40:59.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T06:40:59.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "en",
-      "title": "SEC Now Presented by Auto-Owners Insurance",
-      "source": "ESPN",
-      "sourceUrl": "https://www.espn.com.au",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQV2dzWTJwekwzNFVla3MwUjBMaml4cGwwVWE2bFNvN2tUMHBPSGFGWjZEMkRVWml2VWgyT3RkUUdiWEFkSlF6QXNCNzRNYUdfZHpwUnZUMFhmU0NwdUJCUmZDbUFpZTYwRUxxcHVwOW5EZEpETmc3Q0pMWjRRZ0d2M1RvZEVuS3p2c3ZvdjJQdXVVQ25uYWhSUzh3eExvRzFWM1FZZVBrMms?oc=5",
-      "publishedAt": "2026-10-03T03:13:04.000Z",
-      "description": "",
-      "id": "635fa19609fe",
-      "category": "auto",
-      "categoryHints": [
-        "auto"
-      ],
-      "matchedQueries": [
-        "auto insurance"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "ESPN",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQV2dzWTJwekwzNFVla3MwUjBMaml4cGwwVWE2bFNvN2tUMHBPSGFGWjZEMkRVWml2VWgyT3RkUUdiWEFkSlF6QXNCNzRNYUdfZHpwUnZUMFhmU0NwdUJCUmZDbUFpZTYwRUxxcHVwOW5EZEpETmc3Q0pMWjRRZ0d2M1RvZEVuS3p2c3ZvdjJQdXVVQ25uYWhSUzh3eExvRzFWM1FZZVBrMms?oc=5",
-          "publishedAt": "2026-10-03T03:13:04.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T03:13:04.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "en",
-      "title": "The Personal beats driver's bid for 14-hour psychological assessment",
-      "source": "Insurance Business",
-      "sourceUrl": "https://www.insurancebusinessmag.com",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOZzZFNktScVNZS3h3VEYzbFpxS1phS3FmbmVyc21PNkttNGlERG9xNlRhajlEOTc1d0tIUnZJLUJ5STF4VlA5RlE1aXFvTWt5ZzFXb0c1djdRclJ6LWN0TmJtSW5pcG9jN0x3VDVKRGRiWkJtTE9Yd0dXU1pJSktkb2VfVVY1WGRSdUZhY0pFdkdHYVJ5RDJFTHV0R3F6YWxPYXUyMXlBU0tsMGZZdDA0dGZOQUd0NmZCVDJkdlI3WGRGXzFlZWpJWVpGSjh1NVAwd1FRYg?oc=5",
-      "publishedAt": "2026-10-03T02:12:45.000Z",
-      "description": "",
-      "id": "982b9c9c7c12",
-      "category": "auto",
-      "categoryHints": [
-        "auto"
-      ],
-      "matchedQueries": [
-        "motor insurance claims"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "Insurance Business",
-          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOZzZFNktScVNZS3h3VEYzbFpxS1phS3FmbmVyc21PNkttNGlERG9xNlRhajlEOTc1d0tIUnZJLUJ5STF4VlA5RlE1aXFvTWt5ZzFXb0c1djdRclJ6LWN0TmJtSW5pcG9jN0x3VDVKRGRiWkJtTE9Yd0dXU1pJSktkb2VfVVY1WGRSdUZhY0pFdkdHYVJ5RDJFTHV0R3F6YWxPYXUyMXlBU0tsMGZZdDA0dGZOQUd0NmZCVDJkdlI3WGRGXzFlZWpJWVpGSjh1NVAwd1FRYg?oc=5",
-          "publishedAt": "2026-10-03T02:12:45.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T02:12:45.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "en",
-      "title": "What happens when a fake auto policy ends in a real claim",
-      "source": "Canadian Underwriter",
-      "sourceUrl": "https://canadianunderwriter.ca",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPWGdFM0ZRNTVYMkE5elV1U3QxSXFlTjh0dXFIdGNmb3Y4UFN5YW43QnZmenkxMkxfUUZ4a2NudGR4OHFXU2UzT1Z5eHRhd1Q3ODZVVWNZekkyV2VUUjBMZjQtMWNlWlRrM3N6cjIwa0JDU05Qa1FEUk04Tmh1ZWQxblh0eURQRWVINXhEMVluV2NpTHc4a3NiZF93ZGxzY0R4QVVz?oc=5",
-      "publishedAt": "2026-10-03T01:34:49.000Z",
-      "description": "",
-      "id": "18f0fc1ca518",
-      "category": "auto",
-      "categoryHints": [
-        "auto"
-      ],
-      "matchedQueries": [
-        "motor insurance claims",
-        "auto insurance"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "Canadian Underwriter",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPWGdFM0ZRNTVYMkE5elV1U3QxSXFlTjh0dXFIdGNmb3Y4UFN5YW43QnZmenkxMkxfUUZ4a2NudGR4OHFXU2UzT1Z5eHRhd1Q3ODZVVWNZekkyV2VUUjBMZjQtMWNlWlRrM3N6cjIwa0JDU05Qa1FEUk04Tmh1ZWQxblh0eURQRWVINXhEMVluV2NpTHc4a3NiZF93ZGxzY0R4QVVz?oc=5",
-          "publishedAt": "2026-10-03T01:34:49.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T01:34:49.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "en",
-      "title": "Minneapolis mayor, city council members clash over driverless robotaxis",
-      "source": "Yahoo",
-      "sourceUrl": "https://www.yahoo.com",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPQ2VSc0tCWnBlVlUxU1Qwc09MLTN6MGMyOGFOazJEbDVBNjhpUlQ2eHpmeVdXUEt0NmtaOENVVHR3UHZTYlFYbzR1azBsRGpsb2hfdzlMRnVxQ1dLN3FSTGNJYXB6TF9ZN3d5WHhnX1BxVmljTHlVODczMk9HSmtqeXJNNjdhUzJ1bG5Hdkc2cno1LWNfUC0wMDZLZk5JWkU?oc=5",
-      "publishedAt": "2026-10-03T01:07:00.000Z",
-      "description": "",
-      "id": "5effcf2b27a1",
-      "category": "auto",
-      "categoryHints": [
-        "auto"
-      ],
-      "matchedQueries": [
-        "autonomous vehicle liability insurance"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "Yahoo",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPQ2VSc0tCWnBlVlUxU1Qwc09MLTN6MGMyOGFOazJEbDVBNjhpUlQ2eHpmeVdXUEt0NmtaOENVVHR3UHZTYlFYbzR1azBsRGpsb2hfdzlMRnVxQ1dLN3FSTGNJYXB6TF9ZN3d5WHhnX1BxVmljTHlVODczMk9HSmtqeXJNNjdhUzJ1bG5Hdkc2cno1LWNfUC0wMDZLZk5JWkU?oc=5",
-          "publishedAt": "2026-10-03T01:07:00.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T01:07:00.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "en",
-      "title": "Bombay High Court Upholds Compensation Award in Motor Accident Claim — Insurance Company Liable for Owner of Goods as Passenger. Claimant's status as owner of goods established by evidence of hiring vehicle and loading grain bags, attracting cove",
-      "source": "Lawtext",
-      "sourceUrl": "https://lawtext.in",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBwN25KdFFzRE5RY2pHWUU5bmg2LWhBUXJYTmU5YU9ET3dSSS1ZMjVPOENhcGp1dXdZY0NhUUVHUkJueFVNVUNNektCYkpiQkhOdWIxc21tbkNxZk1HbTdDbC1GSGJqZw?oc=5",
-      "publishedAt": "2026-10-03T00:52:24.000Z",
-      "description": "",
-      "id": "67c24de87962",
-      "category": "auto",
-      "categoryHints": [
-        "auto"
-      ],
-      "matchedQueries": [
-        "motor insurance claims"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "Lawtext",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBwN25KdFFzRE5RY2pHWUU5bmg2LWhBUXJYTmU5YU9ET3dSSS1ZMjVPOENhcGp1dXdZY0NhUUVHUkJueFVNVUNNektCYkpiQkhOdWIxc21tbkNxZk1HbTdDbC1GSGJqZw?oc=5",
-          "publishedAt": "2026-10-03T00:52:24.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T00:52:24.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "en",
-      "title": "Bell: If Smith won't cave on UCP insurance plan, lawyers will back Alberta separatists",
-      "source": "Calgary Herald",
-      "sourceUrl": "https://calgaryherald.com",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPRXlsU3BPOW1NekdLdy1lN3VyODdfMUN6Wk1zRnlrdkhUWnJfNUV1WU9RTjNvWVlHLVlKSW1iNTJ1dHV6NFEwb0F5dzFXdUJZZ0FlcEpNaThWc2tuZWtQckI2djZ0ZHM4ajFnTFJMb1NIM1Q2cnB3OEtDRHpJM2phM3FKVWZHSG94Szh5RjVuVjl4eC1EeFdIdlpSZF8tamI5QWtLanN2dkZkTEJYTDA1NWoySUdpU3FlSDhQVk5XQjBQeWFZemJj?oc=5",
-      "publishedAt": "2026-10-03T00:04:56.000Z",
-      "description": "",
-      "id": "77e07d55e793",
-      "category": "auto",
-      "categoryHints": [
-        "auto"
-      ],
-      "matchedQueries": [
-        "auto insurance"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "Calgary Herald",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPRXlsU3BPOW1NekdLdy1lN3VyODdfMUN6Wk1zRnlrdkhUWnJfNUV1WU9RTjNvWVlHLVlKSW1iNTJ1dHV6NFEwb0F5dzFXdUJZZ0FlcEpNaThWc2tuZWtQckI2djZ0ZHM4ajFnTFJMb1NIM1Q2cnB3OEtDRHpJM2phM3FKVWZHSG94Szh5RjVuVjl4eC1EeFdIdlpSZF8tamI5QWtLanN2dkZkTEJYTDA1NWoySUdpU3FlSDhQVk5XQjBQeWFZemJj?oc=5",
-          "publishedAt": "2026-10-03T00:04:56.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T00:04:56.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "en",
-      "title": "High Court of Karnataka Allows Appeal in Motor Accident Claim — Insurance Company Liable for Third-Party Injury Despite Vehicle Not Covered by Policy. Court holds that under Section 147 of the Motor Vehicles Act, 1988, an insurance policy must cover thir",
-      "source": "Lawtext",
-      "sourceUrl": "https://lawtext.in",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5VcTVqR3ZRT3N2MFZpekZuaU9iOE1sY2xpZWhpb1VENlRxX3JmV3BHX0M5cEpPbEtzS054cnpuWF9QS3NaaWZKT2lJdVdhS0NzUEFtLW9MSEcxX2pCakVEcGNXclhaQQ?oc=5",
-      "publishedAt": "2026-10-02T22:39:49.000Z",
-      "description": "",
-      "id": "738de4abd468",
-      "category": "auto",
-      "categoryHints": [
-        "auto"
-      ],
-      "matchedQueries": [
-        "motor insurance claims"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "Lawtext",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5VcTVqR3ZRT3N2MFZpekZuaU9iOE1sY2xpZWhpb1VENlRxX3JmV3BHX0M5cEpPbEtzS054cnpuWF9QS3NaaWZKT2lJdVdhS0NzUEFtLW9MSEcxX2pCakVEcGNXclhaQQ?oc=5",
-          "publishedAt": "2026-10-02T22:39:49.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-02T22:39:49.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "en",
-      "title": "Minneapolis Mayor Jacob Frey vetoes driverless rideshare ordinance",
-      "source": "cbsnews.com",
-      "sourceUrl": "https://www.cbsnews.com",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOU2NDdDZoRWEwbTE5OEZjQVM5WC1wTC1Bb19adkpFQU5ab1l2dDY5SlNmdnpibm9sU2hTS2FiTG5NWUJqZDQ0Nmg0OFBtNkxvRF92TWJncVlzeDNheDBqVUNQbExQb3paNXAycVc0aklaNkVjcFAwNUw0OGljcE1rVWg1YktHTUNtSG5ZTzgwZGYybVIxY0g4d3FMNUVwc1FzX2htQTFRRGxSZw?oc=5",
-      "publishedAt": "2026-10-02T21:28:53.000Z",
-      "description": "",
-      "id": "1c8d5c920588",
-      "category": "auto",
-      "categoryHints": [
-        "auto"
-      ],
-      "matchedQueries": [
-        "autonomous vehicle liability insurance"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "cbsnews.com",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOU2NDdDZoRWEwbTE5OEZjQVM5WC1wTC1Bb19adkpFQU5ab1l2dDY5SlNmdnpibm9sU2hTS2FiTG5NWUJqZDQ0Nmg0OFBtNkxvRF92TWJncVlzeDNheDBqVUNQbExQb3paNXAycVc0aklaNkVjcFAwNUw0OGljcE1rVWg1YktHTUNtSG5ZTzgwZGYybVIxY0g4d3FMNUVwc1FzX2htQTFRRGxSZw?oc=5",
-          "publishedAt": "2026-10-02T21:28:53.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-02T21:28:53.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "en",
-      "title": "Auto insurance rates",
-      "source": "LAist",
-      "sourceUrl": "https://laist.com",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPcTBaRlR1UjRpZHhDMzFBX3NQell6Mkc3MjJld1FQRGJHcGxHMnczdElVYVpJcXBJeHZhZkdNVHF4ZHlOeFJPNTdXcWRCNkpDdHlEVUdSSjBOb0RmdXFBSWFXd01iMVhvY2dKRHNiVHlQQU9UUEM3Q2NOOWszTGZiMkNkT0o1aERBVE9uM2VTUmFPWHVMQ21tTHd5bjRzWFhQYm9DcWVybVkwRzVaOFBtWFNOZm04RktQSWc?oc=5",
-      "publishedAt": "2026-10-02T21:25:00.000Z",
-      "description": "",
-      "id": "1570c3ab5b5f",
-      "category": "auto",
-      "categoryHints": [
-        "auto"
-      ],
-      "matchedQueries": [
-        "auto insurance"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "LAist",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPcTBaRlR1UjRpZHhDMzFBX3NQell6Mkc3MjJld1FQRGJHcGxHMnczdElVYVpJcXBJeHZhZkdNVHF4ZHlOeFJPNTdXcWRCNkpDdHlEVUdSSjBOb0RmdXFBSWFXd01iMVhvY2dKRHNiVHlQQU9UUEM3Q2NOOWszTGZiMkNkT0o1aERBVE9uM2VTUmFPWHVMQ21tTHd5bjRzWFhQYm9DcWVybVkwRzVaOFBtWFNOZm04RktQSWc?oc=5",
-          "publishedAt": "2026-10-02T21:25:00.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-02T21:25:00.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "en",
-      "title": "Insurance Expert Tammy McNeill Outlines What Full Coverage Car Insurance Includes in HelloNation",
-      "source": "Yahoo Finance",
-      "sourceUrl": "https://finance.yahoo.com",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOWUNxcHZET1VqQjNXSVhrVlRwbzgwMER5bWNfZ3lGMkdMSjV6QkpWUlY5bEtDX0szU0IwYmRyWGJuSmNfOXRLVUV6LWFKVzh4WUtEU1NFT1I1RXB1T295ZVFtMUN0RlROcHRiY0huRWlyT3k5WlNjbV9WbEZSaUVTSHJMczdNUHpLNFVzN0Y0akxKSVJUdVJkd0x1S2VzTVJ2cDVnVHBBOA?oc=5",
-      "publishedAt": "2026-10-02T21:15:00.000Z",
-      "description": "",
-      "id": "c258a631ce02",
-      "category": "auto",
-      "categoryHints": [
-        "auto"
-      ],
-      "matchedQueries": [
-        "auto insurance"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "Yahoo Finance",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOWUNxcHZET1VqQjNXSVhrVlRwbzgwMER5bWNfZ3lGMkdMSjV6QkpWUlY5bEtDX0szU0IwYmRyWGJuSmNfOXRLVUV6LWFKVzh4WUtEU1NFT1I1RXB1T295ZVFtMUN0RlROcHRiY0huRWlyT3k5WlNjbV9WbEZSaUVTSHJMczdNUHpLNFVzN0Y0akxKSVJUdVJkd0x1S2VzTVJ2cDVnVHBBOA?oc=5",
-          "publishedAt": "2026-10-02T21:15:00.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-02T21:15:00.000Z"
     },
     {
       "provider": "rss",
@@ -1511,128 +898,6 @@
         }
       ],
       "firstSeenAt": "2026-10-03T04:49:37.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "en",
-      "title": "Elon Musk say Tesla is working to prevent robotaxis from running over gray cats on the road",
-      "source": "Business Insider",
-      "sourceUrl": "https://www.businessinsider.com",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPLTROaF9uYWpqTDl6c2haWU5iNVZzMjktbDVpLVBQQ0VReEtmSk5DYVdpcW9feXlOandmTWthazgzdkRLc1A2YU1NMFo5M09kaHNEYkw3QnNIUmI5aUhoc1dpeFRFVGFKMU1MbmVJRzdLZGU2d2UyUDJaTnVPOTkxbHhCNXB3MS0wWjZSX3JURVZlNF9Mc2pHaTRqMElZdWM?oc=5",
-      "publishedAt": "2026-10-03T17:35:00.000Z",
-      "description": "",
-      "id": "d57af6759541",
-      "category": "mobility",
-      "categoryHints": [
-        "mobility"
-      ],
-      "matchedQueries": [
-        "robotaxi",
-        "Waymo"
-      ],
-      "coverage": 2,
-      "sources": [
-        {
-          "name": "Business Insider",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPLTROaF9uYWpqTDl6c2haWU5iNVZzMjktbDVpLVBQQ0VReEtmSk5DYVdpcW9feXlOandmTWthazgzdkRLc1A2YU1NMFo5M09kaHNEYkw3QnNIUmI5aUhoc1dpeFRFVGFKMU1MbmVJRzdLZGU2d2UyUDJaTnVPOTkxbHhCNXB3MS0wWjZSX3JURVZlNF9Mc2pHaTRqMElZdWM?oc=5",
-          "publishedAt": "2026-10-03T17:35:00.000Z"
-        },
-        {
-          "name": "Business Insider Africa",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQMFVLbkJuRmtLQnpZOGlLUnh3TEFGM0MxOFBzV0haN1lTSnNzaWtzOEZCTGExUmdSX3U4eWxrVGNmY1lVUHVDNWNNVFpXLS1tellWZXpvTVEwSVoxSFpLOU5tNmJkdy0xLXM3MVJnTmRIRUJMRXpzV0pMYzR3UGUwYTFvLUdkUDZLZXNfUEZENlBHaFRlaGVpbGxFN1lHY1R5d2pIRVVQV0JRV1NfYnBJR0FUa2lLamRKSm9LakpjaVpmcDBJMW1sb1VSRQ?oc=5",
-          "publishedAt": "2026-10-03T17:35:57.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T17:35:00.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "en",
-      "title": "California announces AV regulation, fines for robotaxis that impede emergency responders",
-      "source": "Mashable SEA",
-      "sourceUrl": "https://sea.mashable.com",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNeHNFOWFucGcyZTdBOUR3cWVLYkNHQmdsbU5DQXE2eGlIX1RQNkZ6SGdUbUMxbjhDYmU0eUtIRUZlM1RmQ2R2RWlWS2ZnTnhWWl9FTGNiTzl2OVZrUmw2ZU01bDNxQ0pFOV94cHBKN2NDb1VEZkxxUXltTkVPclg3TlJYelJCR2QwRVNDWEVoWjlPVGRVeTRvT2d1ZmdBX2JWSGQ3Und1ZEtxUXlMRHQxVTJRSjdvaU1fS29wUHRMc3dqd05VRmxvUkpqSGdsUQ?oc=5",
-      "publishedAt": "2026-10-03T15:35:46.000Z",
-      "description": "",
-      "id": "c3218e111fef",
-      "category": "mobility",
-      "categoryHints": [
-        "mobility"
-      ],
-      "matchedQueries": [
-        "robotaxi",
-        "autonomous driving",
-        "Waymo"
-      ],
-      "coverage": 2,
-      "sources": [
-        {
-          "name": "Mashable",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPblpMZUNYcmctTEJOOUVKT21YdEFDZ2FnNDdqX1FHOVpFY283ODV1ZlNaLTBqRkMybDhfNjJ3UVlFVlpSa1pkYlpQdkNIdUQxSGdUZGo4ZG00SVZnRF9kMGRmUmVJLWpNRXpaTm9WR3BCZTBjYndOQ2g3QVpsaHRfenVyVUhhSVlFOEZqSEF3?oc=5",
-          "publishedAt": "2026-10-04T03:45:00.000Z"
-        },
-        {
-          "name": "Mashable SEA",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNeHNFOWFucGcyZTdBOUR3cWVLYkNHQmdsbU5DQXE2eGlIX1RQNkZ6SGdUbUMxbjhDYmU0eUtIRUZlM1RmQ2R2RWlWS2ZnTnhWWl9FTGNiTzl2OVZrUmw2ZU01bDNxQ0pFOV94cHBKN2NDb1VEZkxxUXltTkVPclg3TlJYelJCR2QwRVNDWEVoWjlPVGRVeTRvT2d1ZmdBX2JWSGQ3Und1ZEtxUXlMRHQxVTJRSjdvaU1fS29wUHRMc3dqd05VRmxvUkpqSGdsUQ?oc=5",
-          "publishedAt": "2026-10-03T15:35:46.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T15:35:46.000Z"
-    },
-    {
-      "provider": "rss",
-      "lang": "ko",
-      "title": "아일랜드, 주택용 태양광·배터리 지원 확대…국내는 마을 단위 실증",
-      "source": "AI타임스",
-      "sourceUrl": "https://www.aitimes.com",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=215871",
-      "publishedAt": "2026-10-04T09:30:00.000Z",
-      "description": "아일랜드가 주택용 태양광 보조금 대상을 확대하고 가정용 배터리 지원을 신설한다. 태양광 설치비 지원에 저장장치를 더해 낮에 생산한 전기를 저녁에도 활용하도록 한다는 계획이다.아일랜드 기후에너지환경부는 지난달 29일(현지시간) 가정용 배터리에 600유로(약 92만원)를 지원하는 에너지 지원 확대 방안을 발표했다. 지속가능에너지청(SEAI)이 운영하는 관련…",
-      "id": "d17f5dc3e928",
-      "category": "mobility",
-      "categoryHints": [
-        "mobility",
-        "ai"
-      ],
-      "matchedQueries": [
-        "AI타임스"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "AI타임스",
-          "url": "https://www.aitimes.com/news/articleView.html?idxno=215871",
-          "publishedAt": "2026-10-04T09:30:00.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-04T09:30:00.000Z"
-    },
-    {
-      "provider": "rss",
-      "lang": "ko",
-      "title": "'와' KIA 마침내 3위 도약! '한국시리즈급' 전날 35구 던지고 9회말 또 나오다니 '혼신투', 9회초 LG에 3득점 '짜릿한 역전극' [잠실 현장리뷰]",
-      "source": "머니투데이",
-      "sourceUrl": "https://www.mt.co.kr",
-      "url": "https://www.mt.co.kr/sports/2026/10/04/2026100413444098778",
-      "publishedAt": "2026-10-04T08:51:11.000Z",
-      "description": "KIA 타이거즈가 LG 트윈스에 짜릿한 역전승을 거두며 마침내 3위에 올라섰다. KIA는 4일 서울 잠실야구장에서 펼쳐진 LG와 2026 신한 SOL KBO 리그 정규시즌 원정 경기에서 6-5 승리했다. 이로써 전날(3일) 5-4로 승리했던 KIA는 이번 3연전 중 2경기를 먼저 가져갔다. 이제 KIA는 5일 오후 2시에 열리는 맞대결에서 스윕에 도전한…",
-      "id": "b208c074e11d",
-      "category": "mobility",
-      "categoryHints": [
-        "mobility"
-      ],
-      "matchedQueries": [
-        "머니투데이"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "머니투데이",
-          "url": "https://www.mt.co.kr/sports/2026/10/04/2026100413444098778",
-          "publishedAt": "2026-10-04T08:51:11.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-04T08:51:11.000Z"
     },
     {
       "provider": "rss",
@@ -1907,6 +1172,33 @@
     {
       "provider": "google-news",
       "lang": "ko",
+      "title": "한전, 외부 웹페이지에 직원 개인정보 노출 사고",
+      "source": "MTN 머니투데이방송",
+      "sourceUrl": "https://news.mtn.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1QQjlrenctUVYxYmdOdWpoLTVaVUJuODc2QzlBNndnejh1VnhDQjlib3VORS1Hd0luUlV1cjFtZHVPM0Z4M29xTjVLazZPVTZwX2JlNHpZcXNtLUdzSXRnNWRXM0c?oc=5",
+      "publishedAt": "2026-10-04T07:08:57.000Z",
+      "description": "",
+      "id": "2cc1d2339266",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "커넥티드카"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "MTN 머니투데이방송",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1QQjlrenctUVYxYmdOdWpoLTVaVUJuODc2QzlBNndnejh1VnhDQjlib3VORS1Hd0luUlV1cjFtZHVPM0Z4M29xTjVLazZPVTZwX2JlNHpZcXNtLUdzSXRnNWRXM0c?oc=5",
+          "publishedAt": "2026-10-04T07:08:57.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-04T07:08:57.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
       "title": "스위스에도 법인 설립한 웨이모..유럽 곳곳에 전초 기지 마련한 이유는?",
       "source": "dailycar.co.kr",
       "sourceUrl": "https://www.dailycar.co.kr",
@@ -1935,6 +1227,33 @@
     {
       "provider": "google-news",
       "lang": "ko",
+      "title": "\"내년 출고 확정인데\"... 스타리아 전기차 11인승, 올해 보조금 견적 헛수고?",
+      "source": "autotribune.co.kr",
+      "sourceUrl": "https://www.autotribune.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBVbkQ2dVllUkRGRlQ2cTNmekNUSXFNczNXM1I5TUJKZnVmVW9pckJEOGFsaVVUWWF2N2x4M0E0ZXVkcUNzVU0yelZQRXdaU3dXOFBaYUdSdk5jMWxaa05TYUk0VVQwTFpmZENnZVRhNHE?oc=5",
+      "publishedAt": "2026-10-04T06:00:00.000Z",
+      "description": "",
+      "id": "9a77f265626e",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "전기차 정책"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "autotribune.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBVbkQ2dVllUkRGRlQ2cTNmekNUSXFNczNXM1I5TUJKZnVmVW9pckJEOGFsaVVUWWF2N2x4M0E0ZXVkcUNzVU0yelZQRXdaU3dXOFBaYUdSdk5jMWxaa05TYUk0VVQwTFpmZENnZVRhNHE?oc=5",
+          "publishedAt": "2026-10-04T06:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-04T06:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
       "title": "“시험차량까지 제공하겠다” 테슬라, FSD 검증 정부에 요청",
       "source": "다음뉴스",
       "sourceUrl": "https://v.daum.net",
@@ -1958,33 +1277,6 @@
         }
       ],
       "firstSeenAt": "2026-10-04T05:57:06.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "ko",
-      "title": "\"이러니 다들 스포티지 사지\"... 까다로운 독일 기자들 사로잡은 '이 스펙'",
-      "source": "econmingle.com",
-      "sourceUrl": "https://econmingle.com",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5JbTlnZ0MtaFJSclFmWWllZkVwcXJNSHF4OGplN3d5V1ppZ01nVzMtV3dYbkFyRmM3TTQ5RF9YZzRHTVNENjNTZDdfN0J5ZmtGaURrVTl0eU55TGVUU0RTdTRCME5XRWJXQmljQl9VLU95TWvSAXtBVV95cUxQNDFnRXNPNlh3WHJWTXhFUXBWZm5kNlJmRlZFQlI2SEhYNnROVXktbmZoMkk3S1BWU1JueGdwRE5XVkNCTUNtdmpOLURHREZBTUxXV0xpQWMwNjVtTVAxQ0U0VGNEV19VbHBsVWxpQkp6TGk0UVdmQ1ZnMDQ?oc=5",
-      "publishedAt": "2026-10-04T05:00:00.000Z",
-      "description": "",
-      "id": "514a68b069d3",
-      "category": "mobility",
-      "categoryHints": [
-        "mobility"
-      ],
-      "matchedQueries": [
-        "커넥티드카"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "econmingle.com",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5JbTlnZ0MtaFJSclFmWWllZkVwcXJNSHF4OGplN3d5V1ppZ01nVzMtV3dYbkFyRmM3TTQ5RF9YZzRHTVNENjNTZDdfN0J5ZmtGaURrVTl0eU55TGVUU0RTdTRCME5XRWJXQmljQl9VLU95TWvSAXtBVV95cUxQNDFnRXNPNlh3WHJWTXhFUXBWZm5kNlJmRlZFQlI2SEhYNnROVXktbmZoMkk3S1BWU1JueGdwRE5XVkNCTUNtdmpOLURHREZBTUxXV0xpQWMwNjVtTVAxQ0U0VGNEV19VbHBsVWxpQkp6TGk0UVdmQ1ZnMDQ?oc=5",
-          "publishedAt": "2026-10-04T05:00:00.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-04T05:00:00.000Z"
     },
     {
       "provider": "google-news",
@@ -2097,6 +1389,33 @@
     {
       "provider": "google-news",
       "lang": "ko",
+      "title": "전기차 라인을 에너지저장장치로 전환…배터리 시험대",
+      "source": "연합뉴스TV",
+      "sourceUrl": "https://www.yonhapnewstv.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1MRDNEaElGMGtJS2ttejllQnpaMEhvRWxpYUJ2eUFXN3BZNnhLcTNnTEdIb3FEcHpIVHhZNnlXb0ZOQTVWVmlFNWRVdEo2Zl9mdGlCZ1V3Vm5CYVc1am1La3dRclNZNDQ?oc=5",
+      "publishedAt": "2026-10-04T01:22:00.000Z",
+      "description": "",
+      "id": "c2dbcc451605",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "전기차 정책"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "연합뉴스TV",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1MRDNEaElGMGtJS2ttejllQnpaMEhvRWxpYUJ2eUFXN3BZNnhLcTNnTEdIb3FEcHpIVHhZNnlXb0ZOQTVWVmlFNWRVdEo2Zl9mdGlCZ1V3Vm5CYVc1am1La3dRclNZNDQ?oc=5",
+          "publishedAt": "2026-10-04T01:22:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-04T01:22:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
       "title": "테슬라 무인택시, 밤길 주행이 최대 과제…머스크 “어두운 곳의 작은 동물까지 잡아내야”",
       "source": "제민일보",
       "sourceUrl": "https://www.jemin.com",
@@ -2121,33 +1440,6 @@
         }
       ],
       "firstSeenAt": "2026-10-04T01:15:10.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "ko",
-      "title": "美 187만대 베스트셀러의 귀환…현대차, 신형 투싼으로 북미 SUV 왕좌 굳힌다",
-      "source": "다음뉴스",
-      "sourceUrl": "https://v.daum.net",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBMWVhqaU1MYzIxR25sU0NfX2dTWnBNbm9ETUg5UzBNYzByZ1ZYd01pZ3pMUjNzazlPMmM4aWlYUUx4bzZwT2NLTVMwZWI2bEE?oc=5",
-      "publishedAt": "2026-10-04T00:59:48.000Z",
-      "description": "",
-      "id": "c94539f18064",
-      "category": "mobility",
-      "categoryHints": [
-        "mobility"
-      ],
-      "matchedQueries": [
-        "전기차 정책"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "다음뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBMWVhqaU1MYzIxR25sU0NfX2dTWnBNbm9ETUg5UzBNYzByZ1ZYd01pZ3pMUjNzazlPMmM4aWlYUUx4bzZwT2NLTVMwZWI2bEE?oc=5",
-          "publishedAt": "2026-10-04T00:59:48.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-04T00:59:48.000Z"
     },
     {
       "provider": "google-news",
@@ -2392,33 +1684,6 @@
         }
       ],
       "firstSeenAt": "2026-10-03T19:00:00.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "ko",
-      "title": "르노, 프랑스에 100억 유로 이상 재투자…전기차·저가차 확대 추진",
-      "source": "글로벌이코노믹",
-      "sourceUrl": "https://www.g-enews.com",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNb2ZYUUV4NnhjUHBtYlJCUFFNalR1TXN5WnRmOXlqN0VBV3RYbUV4c2Z4ZFlfOGFpYVlTUVJYa21FOTVTc3dDTE90RmVvQXpRc0luYmFGMjFFNjU0eHByLVVCd0xoS3lyTEZHc1ZiejdGd0VJTjJMcG10LTZfNW84VUhtS19vbEQy?oc=5",
-      "publishedAt": "2026-10-03T18:40:00.000Z",
-      "description": "",
-      "id": "cebd9f36bfc6",
-      "category": "mobility",
-      "categoryHints": [
-        "mobility"
-      ],
-      "matchedQueries": [
-        "전기차 정책"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "글로벌이코노믹",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNb2ZYUUV4NnhjUHBtYlJCUFFNalR1TXN5WnRmOXlqN0VBV3RYbUV4c2Z4ZFlfOGFpYVlTUVJYa21FOTVTc3dDTE90RmVvQXpRc0luYmFGMjFFNjU0eHByLVVCd0xoS3lyTEZHc1ZiejdGd0VJTjJMcG10LTZfNW84VUhtS19vbEQy?oc=5",
-          "publishedAt": "2026-10-03T18:40:00.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T18:40:00.000Z"
     },
     {
       "provider": "google-news",
@@ -2828,33 +2093,6 @@
     {
       "provider": "google-news",
       "lang": "ko",
-      "title": "전기차 감가상각 과다 산정 논란… T&E 분석서 내연기관과의 잔존가치 격차 80% 감소",
-      "source": "다나와 자동차",
-      "sourceUrl": "https://mauto.danawa.com",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE95LVQ5R1VxRURmWXY3Q1ZQVS1wRjhxUzJKVWFSY1BQUVBKYzV1NjBmbG1TMkJuZ0MtWV9DUDVRU0EwNF9nZ0hKLWctWUFBOExPSWZWaG9sdGNiN2w0aUNMenVFX2dmYjgydkRfLWZrOC1LaVI0QUxYS0Q2WQ?oc=5",
-      "publishedAt": "2026-10-03T06:41:40.000Z",
-      "description": "",
-      "id": "4c67584d9332",
-      "category": "mobility",
-      "categoryHints": [
-        "mobility"
-      ],
-      "matchedQueries": [
-        "전기차 정책"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "다나와 자동차",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE95LVQ5R1VxRURmWXY3Q1ZQVS1wRjhxUzJKVWFSY1BQUVBKYzV1NjBmbG1TMkJuZ0MtWV9DUDVRU0EwNF9nZ0hKLWctWUFBOExPSWZWaG9sdGNiN2w0aUNMenVFX2dmYjgydkRfLWZrOC1LaVI0QUxYS0Q2WQ?oc=5",
-          "publishedAt": "2026-10-03T06:41:40.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T06:41:40.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "ko",
       "title": "복합 적층 분리막 시장 2035년 전망: 전기차 배터리 수요가 성장 견인",
       "source": "IndexBox",
       "sourceUrl": "https://www.indexbox.io",
@@ -2963,6 +2201,33 @@
     {
       "provider": "google-news",
       "lang": "ko",
+      "title": "완성차 5사 9월 내수 19.8% 급감…추석 연휴·보조금 소진에 일제히 뒷걸음",
+      "source": "피플투데이",
+      "sourceUrl": "https://www.epeopletoday.com",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB1U2pyWVRqalRRVU9qcnhldFpuYWVKekU4MGxCQnFPYUExWWZ2aU1sZzdLUEZ3V2RfeVZtNjJpTlNGam9rZ3ppWURJNVJWQVlLdnU5SVp2d3lNUGhxQTh6TzJqLXJmVHlKRkc2RHZVTQ?oc=5",
+      "publishedAt": "2026-10-03T01:55:50.000Z",
+      "description": "",
+      "id": "7ac628940582",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "전기차 정책"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "피플투데이",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB1U2pyWVRqalRRVU9qcnhldFpuYWVKekU4MGxCQnFPYUExWWZ2aU1sZzdLUEZ3V2RfeVZtNjJpTlNGam9rZ3ppWURJNVJWQVlLdnU5SVp2d3lNUGhxQTh6TzJqLXJmVHlKRkc2RHZVTQ?oc=5",
+          "publishedAt": "2026-10-03T01:55:50.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-03T01:55:50.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
       "title": "유럽車-배터리 업계 '메이드 인 유럽' 시험대 오르다",
       "source": "디지털투데이",
       "sourceUrl": "https://www.digitaltoday.co.kr",
@@ -3044,33 +2309,6 @@
     {
       "provider": "google-news",
       "lang": "ko",
-      "title": "이영일 대한전기자동차학회 회장 “전기차, 전력망 자원으로 키워야”",
-      "source": "전기신문",
-      "sourceUrl": "https://www.electimes.com",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBRQ0ZPOVNyV1lacEhudVJSdmlQcU5OUEFER2VZZDc3MmxDLURmZlBWLWpJMVhHeE1uWVVGZkxhX1lieE9KdzJSVmFMbUVKWk9nMkk2X291UFRWMjZ6azJINzhoRFduWXBleHZXYtIBcEFVX3lxTE0xVnh4dVAtSlVER2RjcnpOQ0Yzb3VHNTZTRHpidUZobjRHYU14ZW5JZXhEZDFxVHA3dVNfYWs3TnpXT0dCZHRYQXN2UkduRHNyQ29EX0VpeGRRQ2ZTVkJ2YlBiaTRheGFrckRDejBpZWM?oc=5",
-      "publishedAt": "2026-10-02T22:00:00.000Z",
-      "description": "",
-      "id": "779e877360ae",
-      "category": "mobility",
-      "categoryHints": [
-        "mobility"
-      ],
-      "matchedQueries": [
-        "전기차 정책"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "전기신문",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBRQ0ZPOVNyV1lacEhudVJSdmlQcU5OUEFER2VZZDc3MmxDLURmZlBWLWpJMVhHeE1uWVVGZkxhX1lieE9KdzJSVmFMbUVKWk9nMkk2X291UFRWMjZ6azJINzhoRFduWXBleHZXYtIBcEFVX3lxTE0xVnh4dVAtSlVER2RjcnpOQ0Yzb3VHNTZTRHpidUZobjRHYU14ZW5JZXhEZDFxVHA3dVNfYWs3TnpXT0dCZHRYQXN2UkduRHNyQ29EX0VpeGRRQ2ZTVkJ2YlBiaTRheGFrckRDejBpZWM?oc=5",
-          "publishedAt": "2026-10-02T22:00:00.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-02T22:00:00.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "ko",
       "title": "자동 진행 기능이 있다면? 다키스트 던전 요양원 슬롯 설정 확인",
       "source": "Calgary Roughnecks",
       "sourceUrl": "https://calgaryroughnecks.com",
@@ -3094,6 +2332,87 @@
         }
       ],
       "firstSeenAt": "2026-10-02T21:53:12.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "플레이가 멈춘 것처럼 보일 때, 포커 게임 하는법 상태 표시",
+      "source": "Calgary Roughnecks",
+      "sourceUrl": "https://calgaryroughnecks.com",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAxRTRWcjlZUTlyMUZwWnl3cGJmeldPdVkyQlNSR1BMWlRqY3BTdUlnbFhuMzA1dE9lTWJrckdvOGFDS0pUalF6Q1ktNU55WXRlRmZvSnhQT0pTdWRZaEd1S2NuX20yQQ?oc=5",
+      "publishedAt": "2026-10-02T21:47:43.000Z",
+      "description": "",
+      "id": "6e34a30d6272",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "도심항공교통 UAM"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Calgary Roughnecks",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAxRTRWcjlZUTlyMUZwWnl3cGJmeldPdVkyQlNSR1BMWlRqY3BTdUlnbFhuMzA1dE9lTWJrckdvOGFDS0pUalF6Q1ktNU55WXRlRmZvSnhQT0pTdWRZaEd1S2NuX20yQQ?oc=5",
+          "publishedAt": "2026-10-02T21:47:43.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-02T21:47:43.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "부가 설명이 필요한 심벌을 모은 와이즈 스포츠 토토 참고 페이지",
+      "source": "Calgary Roughnecks",
+      "sourceUrl": "https://calgaryroughnecks.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9IN1hVbExJMmkwOF9Tb3BiSUFQRW9teUtmcVJNOU5LeHB6TnN1V1F3bGI2SjhDVjRmc3k2ZmVHczV4OWpRVXZNaEdOT0xKSDFsM21aRGJqUjF4bUdfdlVnZGdRZGNLVUVqenl3V2tUa1dBLVBvSkE?oc=5",
+      "publishedAt": "2026-10-02T21:27:01.000Z",
+      "description": "",
+      "id": "ab84ba659ba5",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "소프트웨어 중심 자동차 SDV"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Calgary Roughnecks",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9IN1hVbExJMmkwOF9Tb3BiSUFQRW9teUtmcVJNOU5LeHB6TnN1V1F3bGI2SjhDVjRmc3k2ZmVHczV4OWpRVXZNaEdOT0xKSDFsM21aRGJqUjF4bUdfdlVnZGdRZGNLVUVqenl3V2tUa1dBLVBvSkE?oc=5",
+          "publishedAt": "2026-10-02T21:27:01.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-02T21:27:01.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "여러 심벌을 묶어서 읽는 리치 마작 역 확률 배당표 구성",
+      "source": "Calgary Roughnecks",
+      "sourceUrl": "https://calgaryroughnecks.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE13RHJ3VkxmVmhfYVpwLWpNUU16Q2tKUHdIbGprbGFiRVFPMGo5eFFCLVFWTFBQM25VNm0wTDVwYkhIYndSTk03cVJSM2F5NnRvUnc5QVJWVS1jcUFlN1BqV2J6dEVGWk5iWFNvaThoV0JtdWxEZXc?oc=5",
+      "publishedAt": "2026-10-02T21:25:49.000Z",
+      "description": "",
+      "id": "6e351897744a",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "로보택시"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Calgary Roughnecks",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE13RHJ3VkxmVmhfYVpwLWpNUU16Q2tKUHdIbGprbGFiRVFPMGo5eFFCLVFWTFBQM25VNm0wTDVwYkhIYndSTk03cVJSM2F5NnRvUnc5QVJWVS1jcUFlN1BqV2J6dEVGWk5iWFNvaThoV0JtdWxEZXc?oc=5",
+          "publishedAt": "2026-10-02T21:25:49.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-02T21:25:49.000Z"
     },
     {
       "provider": "rss",
@@ -3138,40 +2457,6 @@
     {
       "provider": "rss",
       "lang": "ko",
-      "title": "[속보]이억원 \"AI 해킹공격 가능성…금융권 최고 수준 경각심 가져야\"",
-      "source": "머니투데이",
-      "sourceUrl": "https://www.mt.co.kr",
-      "url": "https://www.mt.co.kr/finance/2026/10/04/2026100414292790055",
-      "publishedAt": "2026-10-04T05:32:31.000Z",
-      "description": "4일 오후 금융위원회....",
-      "id": "f8952be1c386",
-      "category": "insurance",
-      "categoryHints": [
-        "insurance"
-      ],
-      "matchedQueries": [
-        "연합뉴스 경제",
-        "연합뉴스 산업",
-        "머니투데이"
-      ],
-      "coverage": 2,
-      "sources": [
-        {
-          "name": "연합뉴스",
-          "url": "https://www.yna.co.kr/view/AKR20261004024951002",
-          "publishedAt": "2026-10-04T06:00:25.000Z"
-        },
-        {
-          "name": "머니투데이",
-          "url": "https://www.mt.co.kr/finance/2026/10/04/2026100414292790055",
-          "publishedAt": "2026-10-04T05:32:31.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-04T05:32:31.000Z"
-    },
-    {
-      "provider": "rss",
-      "lang": "ko",
       "title": "[속보] 이억원 \"AI활용 해킹공격 가능성…민감정보 유출은 미확인\"",
       "source": "연합뉴스",
       "sourceUrl": "https://www.yna.co.kr",
@@ -3202,39 +2487,6 @@
         }
       ],
       "firstSeenAt": "2026-10-04T05:21:42.000Z"
-    },
-    {
-      "provider": "rss",
-      "lang": "ko",
-      "title": "웰컴저축은행도 정보유출 확인…법인고객 정보 2천200건 추정",
-      "source": "연합뉴스",
-      "sourceUrl": "https://www.yna.co.kr",
-      "url": "https://www.yna.co.kr/view/AKR20261004022400002",
-      "publishedAt": "2026-10-04T04:56:20.000Z",
-      "description": "(서울=연합뉴스) 배영경 강류나 기자 = 해킹공격으로 인한 금융권 정보유출 피해가 잇달아 확인되는 가운데 웰컴저축은행에서도 법인고객 정보 유출 ...",
-      "id": "8bfc808dde3a",
-      "category": "insurance",
-      "categoryHints": [
-        "insurance"
-      ],
-      "matchedQueries": [
-        "연합뉴스 경제",
-        "머니투데이"
-      ],
-      "coverage": 2,
-      "sources": [
-        {
-          "name": "연합뉴스",
-          "url": "https://www.yna.co.kr/view/AKR20261004022400002",
-          "publishedAt": "2026-10-04T04:56:20.000Z"
-        },
-        {
-          "name": "머니투데이",
-          "url": "https://www.mt.co.kr/finance/2026/10/04/2026100415192079171",
-          "publishedAt": "2026-10-04T06:33:40.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-04T04:56:20.000Z"
     },
     {
       "provider": "rss",
@@ -3335,38 +2587,6 @@
         }
       ],
       "firstSeenAt": "2026-10-04T04:22:38.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "en",
-      "title": "The Insurance Industry Is Shedding Jobs. It’s Not All About AI.",
-      "source": "Barron's",
-      "sourceUrl": "https://www.barrons.com",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE82V0x1UVplRlloV3VtLTZGbTZEbnRDYkwzbEJxb3pLVmRVX01EWGpEZF9BQ3Bzajd4NGl5dzcxZUZBbEpnMmJ6cl80cUxsb2dITFdBVHR1LVRRaFRNU2o2MURpRndGMEVfckZqem9wT1laY2pzMUVB?oc=5",
-      "publishedAt": "2026-10-03T16:03:00.000Z",
-      "description": "",
-      "id": "b060ce5c4ab9",
-      "category": "insurance",
-      "categoryHints": [
-        "insurance"
-      ],
-      "matchedQueries": [
-        "insurance industry"
-      ],
-      "coverage": 2,
-      "sources": [
-        {
-          "name": "Barron's",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE82V0x1UVplRlloV3VtLTZGbTZEbnRDYkwzbEJxb3pLVmRVX01EWGpEZF9BQ3Bzajd4NGl5dzcxZUZBbEpnMmJ6cl80cUxsb2dITFdBVHR1LVRRaFRNU2o2MURpRndGMEVfckZqem9wT1laY2pzMUVB?oc=5",
-          "publishedAt": "2026-10-03T16:03:00.000Z"
-        },
-        {
-          "name": "Moomoo",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOajNTY1dGUEJoYlh5eXNqREZjY1U0bW44TVBSTm5rNk1uU1M3R0dyWmFWNzBFVDgwUGtWbkVCTTJrakhhaklMbkZXS3lHYXo4TmQ0NzVBQzF3U1hKcFRJRld0N3BhVHNGdGxKZThOOVY3N0pmWktIZXNNMjRZTlRFVXJkWlI3R2pIaU1maXVEVDBqNDBSbnlWRS1LOGU?oc=5",
-          "publishedAt": "2026-10-03T21:26:27.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T16:03:00.000Z"
     },
     {
       "provider": "rss",
@@ -3561,60 +2781,6 @@
     {
       "provider": "rss",
       "lang": "ko",
-      "title": "가상자산·증권업계, 잇단 금융권 AI 해킹 사고에 보안 점검 나서",
-      "source": "머니투데이",
-      "sourceUrl": "https://www.mt.co.kr",
-      "url": "https://www.mt.co.kr/stock/2026/10/04/2026100416082465987",
-      "publishedAt": "2026-10-04T07:46:22.000Z",
-      "description": "은행과 저축은행, 캐피탈 등 금융권 전반에 사이버 해킹 사고가 잇따르면서 가상자산업계와 증권업계도 보안 태세를 재정비하는 것으로 확인됐다. 금융당국이 전 금융권 최고경영자(CEO)를 긴급 소집해 유사 사고가 발생하지 않도록 총력 대응할 것을 주문한 만큼 관련 업계에서도 사태를 예의주시하는 분위기다. 이재명 대통령 역시 금융기관 해킹 사고에 대해 철저한 …",
-      "id": "6e976331d46c",
-      "category": "insurance",
-      "categoryHints": [
-        "insurance"
-      ],
-      "matchedQueries": [
-        "머니투데이"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "머니투데이",
-          "url": "https://www.mt.co.kr/stock/2026/10/04/2026100416082465987",
-          "publishedAt": "2026-10-04T07:46:22.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-04T07:46:22.000Z"
-    },
-    {
-      "provider": "rss",
-      "lang": "ko",
-      "title": "AI로 고객정보 '조회해 긁는' 해킹…막아낸 금융사는 뭐가 달랐나",
-      "source": "머니투데이",
-      "sourceUrl": "https://www.mt.co.kr",
-      "url": "https://www.mt.co.kr/finance/2026/10/04/2026100416035928940",
-      "publishedAt": "2026-10-04T07:38:47.000Z",
-      "description": "최근 금융권을 덮친 해킹 공격은 DB(데이터베이스)를 직접 탈취하기보다 웹페이지나 서버에서 고객정보를 조회해 긁어가는 방식이었던 것으로 파악됐다. 수법이 유독 빠르고 반복적이어서 금융당국은 공격자가 AI(인공지능) 도구를 활용해 많은 양의 자동화된 공격을 해낸 것으로 보고 있다. 공격을 받고도 다중인증 체계를 갖추거나 알려진 취약점을 미리 보완한 금융회…",
-      "id": "b37cf0d8fb14",
-      "category": "insurance",
-      "categoryHints": [
-        "insurance"
-      ],
-      "matchedQueries": [
-        "머니투데이"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "머니투데이",
-          "url": "https://www.mt.co.kr/finance/2026/10/04/2026100416035928940",
-          "publishedAt": "2026-10-04T07:38:47.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-04T07:38:47.000Z"
-    },
-    {
-      "provider": "rss",
-      "lang": "ko",
       "title": "“ID-비번 방식은 무작위 대입 해킹 취약”…금보원 사전 경고 있었다",
       "source": "경향신문",
       "sourceUrl": "https://www.khan.co.kr",
@@ -3696,33 +2862,6 @@
     {
       "provider": "rss",
       "lang": "ko",
-      "title": "금융위, 7개 금융사 해킹 피해에 긴급회의…\"유사 사고 발생시 엄단\"",
-      "source": "머니투데이",
-      "sourceUrl": "https://www.mt.co.kr",
-      "url": "https://www.mt.co.kr/finance/2026/10/04/2026100413213585509",
-      "publishedAt": "2026-10-04T06:04:26.000Z",
-      "description": "은행과 저축은행, 캐피탈 등 주요 금융사에서 해킹 침해사고가 잇따르자 금융당국이 전 금융권 수장들을 긴급 소집했다. AI(인공지능)를 악용한 동시다발적 공격 가능성이 제기된 가운데, 금융당국은 이미 공유된 공격정보를 제대로 반영하지 않아 유사 사고가 발생하면 금융사에 엄정한 책임을 묻는다는 방침이다. 금융위원회는 4일 오후 이억원 금융위원장 주재로 '전…",
-      "id": "d864425a58d2",
-      "category": "insurance",
-      "categoryHints": [
-        "insurance"
-      ],
-      "matchedQueries": [
-        "머니투데이"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "머니투데이",
-          "url": "https://www.mt.co.kr/finance/2026/10/04/2026100413213585509",
-          "publishedAt": "2026-10-04T06:04:26.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-04T06:04:26.000Z"
-    },
-    {
-      "provider": "rss",
-      "lang": "ko",
       "title": "시중은행 해킹사고",
       "source": "매일경제",
       "sourceUrl": "https://www.mk.co.kr",
@@ -3750,6 +2889,34 @@
     {
       "provider": "rss",
       "lang": "ko",
+      "title": "이억원 \"AI활용 해킹 가능성…금융권 최고수준 경각심 가져야\"",
+      "source": "연합뉴스",
+      "sourceUrl": "https://www.yna.co.kr",
+      "url": "https://www.yna.co.kr/view/AKR20261004024900002",
+      "publishedAt": "2026-10-04T05:35:37.000Z",
+      "description": "(서울=연합뉴스) 배영경 강류나 기자 = 이억원 금융위원장은 4일 최근 금융권에서 발생한 해킹공격 정보유출 사태와 관련 \"인공지능(AI)를 활용...",
+      "id": "5f6db861ffd0",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "연합뉴스 경제",
+        "연합뉴스 산업"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20261004024951002",
+          "publishedAt": "2026-10-04T06:00:25.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-04T05:35:37.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
       "title": "금융위, 연쇄 해킹사태에 全금융권 소집…“유사 사고시 엄정 책임”",
       "source": "전자신문",
       "sourceUrl": "https://www.etnews.com",
@@ -3773,6 +2940,33 @@
         }
       ],
       "firstSeenAt": "2026-10-04T05:25:18.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "웰컴저축은행도 정보유출 확인…법인고객 정보 2천200건 추정",
+      "source": "연합뉴스",
+      "sourceUrl": "https://www.yna.co.kr",
+      "url": "https://www.yna.co.kr/view/AKR20261004022400002",
+      "publishedAt": "2026-10-04T04:56:20.000Z",
+      "description": "(서울=연합뉴스) 배영경 강류나 기자 = 해킹공격으로 인한 금융권 정보유출 피해가 잇달아 확인되는 가운데 웰컴저축은행에서도 법인고객 정보 유출 ...",
+      "id": "8bfc808dde3a",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "연합뉴스 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20261004022400002",
+          "publishedAt": "2026-10-04T04:56:20.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-04T04:56:20.000Z"
     },
     {
       "provider": "rss",
@@ -3865,6 +3059,7 @@
       "url": "http://www.fins.co.kr/news/articleView.html?idxno=110152",
       "publishedAt": "2026-10-03T20:43:42.000Z",
       "description": "금융당국이 은행권에서 시작된 해킹·개인정보 유출 사고가 저축은행과 캐피탈사 등 제2금융권으로 확산하자 전 금융업권을 긴급 소집한다.당초 금융회사별 자체 점검 결과를 보고받은 뒤 대응에 나설 예정이었지만, 연휴 기간 잇따라 새로운 피해 사례가 확인되면서 일정을 앞당긴 것이다.금융권 전반의 보안 취약점과 사고 대응체계를 동시에 점검하는 자리가 될 전망이다.…",
+      "topical": true,
       "id": "3c16fdfa9cf2",
       "category": "insurance",
       "categoryHints": [
@@ -3947,6 +3142,7 @@
       "url": "https://www.kbanker.co.kr/news/articleView.html?idxno=226068",
       "publishedAt": "2026-10-03T09:50:21.000Z",
       "description": "국회 정무위원회가 잇따른 고객 개인정보 유출 사고가 발생했던 은행장들을 국정감사에 부르기로 했다. 피해 규모가 가장 큰 신한은행을 중심으로 사고 경위와 경영진의 관리 책임이 도마에 오를 전망이다.2일 대한금융신문 취재에 따르면 정무위는 정상혁 신한은행장을 비롯한 정보유출 사고 은행장들을 오는 19일 금융감독원 국정감사에 출석시키겠다는 방침을 정한 것으로…",
+      "topical": true,
       "id": "38e9a2e2c939",
       "category": "insurance",
       "categoryHints": [
@@ -4181,6 +3377,33 @@
         }
       ],
       "firstSeenAt": "2026-10-02T21:33:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "금융권 해킹 7곳으로 번져…李, 철저 조사 지시",
+      "source": "제주교통복지신문",
+      "sourceUrl": "https://www.jejutwn.com",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE0yYnBMMm8wcjgzM0hla2RLblk4M0xyLWVOdThSV3NRQ0ZnM0NISFV2Xzh4MFkxaGJETDhmalJKcWVrT1RmeWlITEpEVTRRRXY1ejZkeGRKZ2hGSGVwOEtkSA?oc=5",
+      "publishedAt": "2026-10-04T09:10:01.000Z",
+      "description": "",
+      "id": "3493fd2f4d25",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "금융당국 보험"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "제주교통복지신문",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE0yYnBMMm8wcjgzM0hla2RLblk4M0xyLWVOdThSV3NRQ0ZnM0NISFV2Xzh4MFkxaGJETDhmalJKcWVrT1RmeWlITEpEVTRRRXY1ejZkeGRKZ2hGSGVwOEtkSA?oc=5",
+          "publishedAt": "2026-10-04T09:10:01.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-04T09:10:01.000Z"
     },
     {
       "provider": "google-news",
@@ -4512,6 +3735,33 @@
     {
       "provider": "google-news",
       "lang": "ko",
+      "title": "시중은행 이어 2금융권까지 ‘초유의 해킹’…금융당국, 오늘 긴급소집",
+      "source": "디지털데일리",
+      "sourceUrl": "https://www.ddaily.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE44NkdpRlhxRWZ4bTcxb05nRHFYdFcwXzc4RzdQaDVQTVZFQ2xRMldpNXZVaHpYMGVNSnkteU83akhVVVZldWFfZG1hS1pqNnl2dUd3Nks0ME0zbkpXQmNzZGZ1VDc?oc=5",
+      "publishedAt": "2026-10-04T03:05:01.000Z",
+      "description": "",
+      "id": "1864889174d0",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "금융당국 보험"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "디지털데일리",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE44NkdpRlhxRWZ4bTcxb05nRHFYdFcwXzc4RzdQaDVQTVZFQ2xRMldpNXZVaHpYMGVNSnkteU83akhVVVZldWFfZG1hS1pqNnl2dUd3Nks0ME0zbkpXQmNzZGZ1VDc?oc=5",
+          "publishedAt": "2026-10-04T03:05:01.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-04T03:05:01.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
       "title": "1·2금융권 무차별 AI 해킹에…금융당국 보안 대책 주목",
       "source": "뉴시스",
       "sourceUrl": "https://www.newsis.com",
@@ -4589,33 +3839,6 @@
         }
       ],
       "firstSeenAt": "2026-10-04T02:14:13.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "ko",
-      "title": "금융위, 오늘 금융권 긴급 점검회의…침해사고 확산에 일정 앞당겨",
-      "source": "다음뉴스",
-      "sourceUrl": "https://v.daum.net",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE04Ym1wb1hIZEQ5SWxMelVNdDdaYkRLZUJtdHJ2bzRyNDBJOUVlcmxkRVZzbVZKRm9TSl83ZHZPSFBmVGt4NnVDM3FzbG9hOUU?oc=5",
-      "publishedAt": "2026-10-04T02:10:53.000Z",
-      "description": "",
-      "id": "2cdfef00e296",
-      "category": "insurance",
-      "categoryHints": [
-        "insurance"
-      ],
-      "matchedQueries": [
-        "금융당국 보험"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "다음뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE04Ym1wb1hIZEQ5SWxMelVNdDdaYkRLZUJtdHJ2bzRyNDBJOUVlcmxkRVZzbVZKRm9TSl83ZHZPSFBmVGt4NnVDM3FzbG9hOUU?oc=5",
-          "publishedAt": "2026-10-04T02:10:53.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-04T02:10:53.000Z"
     },
     {
       "provider": "google-news",
@@ -4784,6 +4007,88 @@
     {
       "provider": "google-news",
       "lang": "ko",
+      "title": "홈쇼핑 보험광고에 칼 빼든 금감원…“고령층 노출 심각”",
+      "source": "서울경제TV",
+      "sourceUrl": "https://www.sentv.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9mS1NrMEVlY1hNa2Z4Q1NjX3ZQOEFIUXh4WkhqMTVaYUlCZkh2aUNWVEFPbkotN0hZdHhNamFGZm1rMHZlYWlVR3QwYjJOMURrM0F0MVNITHJSaTd2dlhJZWMyMWo?oc=5",
+      "publishedAt": "2026-10-03T23:00:06.000Z",
+      "description": "",
+      "id": "c7751d5caa30",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "손해보험",
+        "금융당국 보험"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "서울경제TV",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9mS1NrMEVlY1hNa2Z4Q1NjX3ZQOEFIUXh4WkhqMTVaYUlCZkh2aUNWVEFPbkotN0hZdHhNamFGZm1rMHZlYWlVR3QwYjJOMURrM0F0MVNITHJSaTd2dlhJZWMyMWo?oc=5",
+          "publishedAt": "2026-10-03T23:00:06.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-03T23:00:06.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "생보사 보험계약부채 1년 새 87조↓…삼성·한화·교보 3사에서만 51조 줄어",
+      "source": "CEO스코어데일리",
+      "sourceUrl": "https://www.ceoscoredaily.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9vOE15OWNqVlIyeS1UdHNXSTNfeVBsTkNxS3BCakNjWGp1dnFCRWVqUDBzeUp6ZzdGQlZVNnVsZXhORmhfWUc4Sll5WnVGa0JuLXppRTFRQlEwQ2RkX0swUzJtb2xlcUtjUGVN?oc=5",
+      "publishedAt": "2026-10-03T22:00:00.000Z",
+      "description": "",
+      "id": "d16d89d9b0d4",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "생명보험"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "CEO스코어데일리",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9vOE15OWNqVlIyeS1UdHNXSTNfeVBsTkNxS3BCakNjWGp1dnFCRWVqUDBzeUp6ZzdGQlZVNnVsZXhORmhfWUc4Sll5WnVGa0JuLXppRTFRQlEwQ2RkX0swUzJtb2xlcUtjUGVN?oc=5",
+          "publishedAt": "2026-10-03T22:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-03T22:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "금융위, 오늘 전 금융권 정보유출 긴급점검…CEO들과 대응 논의",
+      "source": "KB Think",
+      "sourceUrl": "https://kbthink.com",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5UMl9oaTFHVGdUWGJTRDFnNUZFWGNzR0F5X1F6R3ZMdUhpc1RHeUlLVXZRZFZjRS01dWVZcFo1MzZBLWFwRHRQWXl3YU9kNERHWDJhSERodUtSaVJXbHFzb2xYWEZ4eUxtNXRSZVZpUk5OQQ?oc=5",
+      "publishedAt": "2026-10-03T22:00:00.000Z",
+      "description": "",
+      "id": "aa999d954d83",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "금융당국 보험"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "KB Think",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5UMl9oaTFHVGdUWGJTRDFnNUZFWGNzR0F5X1F6R3ZMdUhpc1RHeUlLVXZRZFZjRS01dWVZcFo1MzZBLWFwRHRQWXl3YU9kNERHWDJhSERodUtSaVJXbHFzb2xYWEZ4eUxtNXRSZVZpUk5OQQ?oc=5",
+          "publishedAt": "2026-10-03T22:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-03T22:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
       "title": "LG유플러스, 구글과 손잡고 크리에이터에 생성형 AI 교육 … 콘텐츠 경쟁력 강화",
       "source": "워크투데이",
       "sourceUrl": "http://www.worktoday.co.kr",
@@ -4903,43 +4208,6 @@
       "firstSeenAt": "2026-10-02T22:00:35.000Z"
     },
     {
-      "provider": "google-news",
-      "lang": "en",
-      "title": "“The time for trial and error is over”: OpenAI safety researcher quits, says company culture is broken",
-      "source": "calcalistech.com",
-      "sourceUrl": "https://www.calcalistech.com",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5qY0hScFdXVWhVMnFRbVZ2bFVUYzMyOEp0djRNMkZUQ2REbDZRM0RLUXN6ODZYSS1CWExYZmp0bzctUTZEMjFGU0tBLXJyNUszVGVuOEtSdW9BUWZrdHZZNFR2OHhJQjQ?oc=5",
-      "publishedAt": "2026-10-03T19:25:00.000Z",
-      "description": "",
-      "id": "e95b27428232",
-      "category": "ai",
-      "categoryHints": [
-        "ai"
-      ],
-      "matchedQueries": [
-        "OpenAI"
-      ],
-      "coverage": 3,
-      "sources": [
-        {
-          "name": "Reuters",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPanBnbDA2SnluX0swT1ZpQ212VUNKRHh1T3d2Tmt0VDBieEtFVmh6blFFZEVCZlFLbjd4TnNYRnhacmtoSEdRTTFsbVdQN3RjRW5BTVd2NkJwdkdmcHNBa2czV3BZc19MYnJ1dkFvTkh1YXZQQkw1Zmtma2Y4Qm10RzlIUlhJS1ZSUHJnVVdTNlk1djVnNndqNXJBZ29hcEVJUmdkZTNWcklGWEF4TGtuZw?oc=5",
-          "publishedAt": "2026-10-03T19:27:17.000Z"
-        },
-        {
-          "name": "Latest news from Azerbaijan",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOTTRNc0dpbkNGYVJRUl9NdDM2YTdwdVdPSGxOZ2p5eTNkLVBlZjVBUlJqazlBRGQ0eHJUSWxEUFVSallmTUM0dXVibkxfOElELXRXb3RWRW16MXk1cV92dVphWldIWnJVeV94RjJXV1FBUXphMDdrSEU4MHlZTHNSbElPZzh4bHNUMGVPamloLTU?oc=5",
-          "publishedAt": "2026-10-04T07:45:45.000Z"
-        },
-        {
-          "name": "calcalistech.com",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5qY0hScFdXVWhVMnFRbVZ2bFVUYzMyOEp0djRNMkZUQ2REbDZRM0RLUXN6ODZYSS1CWExYZmp0bzctUTZEMjFGU0tBLXJyNUszVGVuOEtSdW9BUWZrdHZZNFR2OHhJQjQ?oc=5",
-          "publishedAt": "2026-10-03T19:25:00.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T19:25:00.000Z"
-    },
-    {
       "provider": "rss",
       "lang": "ko",
       "title": "KT, 휴머노이드 로봇사업 본격화⋯'두뇌 연결' 통합관제 플랫폼 승부",
@@ -4948,6 +4216,7 @@
       "url": "https://www.autodaily.co.kr/news/articleView.html?idxno=600918",
       "publishedAt": "2026-10-04T08:58:09.000Z",
       "description": "[엠투데이 이세민기자] 대한민국 대표 통신업체 KT가 휴머노이드를 비롯한 피지컬 AI 로봇 시장에 본격적으로 뛰어든다. 로봇의 초저지연 통신망과 엣지 AI와 서로 다른 제조사의 로봇을 한꺼번에 관리하는 통합관제, 그리고 제조업 공정데이터까지 하나로 묶는 ‘로봇 연결 플랫폼’을 구축사업에 승부를 건다.로보스턴다이나믹스, 테슬라 같은 로봇 전문기업들이 휴머…",
+      "topical": true,
       "id": "ef80fb97b2ff",
       "category": "ai",
       "categoryHints": [
@@ -4956,7 +4225,6 @@
         "insurance"
       ],
       "matchedQueries": [
-        "피지컬 AI",
         "AI 로봇",
         "오토데일리"
       ],
@@ -5042,36 +4310,33 @@
       "firstSeenAt": "2026-10-03T21:00:00.000Z"
     },
     {
-      "provider": "google-news",
-      "lang": "en",
-      "title": "OpenAI reveals another hack into a government agency in Australia",
-      "source": "Rural Radio Network",
-      "sourceUrl": "https://ruralradio.com",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQcDd1MWItNEJrN2s3dUlPQUx5ZDhIaUNRSklLSUd0cFNGQmdFQWpBaEpCdE1RTUkwQjBTRVlUaXpTQjJHa2lweUU0b3hxQUNpSUljRXI5WXNuMVQxelFiWUNvempMcTFyVjY0blFjbmlqNWhSM0gyQ3pldC1abTEtdm8xb1gtcU1MV3h6ZldfQUIxZWQyNWRpU0ZDajdjWEo2dWNKOXRxTURBWkQ1Y0pjZWZQaVpKNjJRRnc?oc=5",
-      "publishedAt": "2026-10-04T06:48:44.000Z",
-      "description": "",
-      "id": "af7d3c364e49",
+      "provider": "rss",
+      "lang": "ko",
+      "title": "광주 도시철도2호선, 개통 늦어진다…1단계 2028년·2단계 2035년",
+      "source": "AI타임스",
+      "sourceUrl": "https://www.aitimes.com",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215904",
+      "publishedAt": "2026-10-04T09:30:00.000Z",
+      "description": "AI 생성 영상광주 도시철도2호선 1단계 개통 목표가 2028년 12월로, 2단계 전 구간은 2035년 12월로 조정된다. 전남광주통합특별시는 2단계 가운데 양산동~첨단~수완·신가지구 11.9㎞를 2034년 4월 먼저 개통하는 방안도 추진한다.전남광주는 도시철도2호선 건설사업의 공정과 총사업비를 종합 검증한 결과를 2일 발표했다. 검증 결과 1단계 개통…",
+      "topical": true,
+      "id": "19aa16883147",
       "category": "ai",
       "categoryHints": [
-        "ai"
+        "ai",
+        "mobility"
       ],
       "matchedQueries": [
-        "OpenAI"
+        "AI타임스"
       ],
-      "coverage": 2,
+      "coverage": 1,
       "sources": [
         {
-          "name": "Rural Radio Network",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQcDd1MWItNEJrN2s3dUlPQUx5ZDhIaUNRSklLSUd0cFNGQmdFQWpBaEpCdE1RTUkwQjBTRVlUaXpTQjJHa2lweUU0b3hxQUNpSUljRXI5WXNuMVQxelFiWUNvempMcTFyVjY0blFjbmlqNWhSM0gyQ3pldC1abTEtdm8xb1gtcU1MV3h6ZldfQUIxZWQyNWRpU0ZDajdjWEo2dWNKOXRxTURBWkQ1Y0pjZWZQaVpKNjJRRnc?oc=5",
-          "publishedAt": "2026-10-04T06:48:44.000Z"
-        },
-        {
-          "name": "Cybernews",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPMHVzcnJyeTJ2N1doR0F0cmtCUGV1Slh5OUZFTVpEV0JxdnpIVkxzTjJpNG1vM2FMNUlVc3hhTmo5WmJkb293amJQUms3N01HUmRxNjRfZFNETkNFeUJMYUtmS2RySk05MjFLQkZQN0N3WlBZM1V0bC1MRlIwaG5jdw?oc=5",
-          "publishedAt": "2026-10-04T07:46:38.000Z"
+          "name": "AI타임스",
+          "url": "https://www.aitimes.com/news/articleView.html?idxno=215904",
+          "publishedAt": "2026-10-04T09:30:00.000Z"
         }
       ],
-      "firstSeenAt": "2026-10-04T06:48:44.000Z"
+      "firstSeenAt": "2026-10-04T09:30:00.000Z"
     },
     {
       "provider": "rss",
@@ -5840,6 +5105,33 @@
       "firstSeenAt": "2026-10-04T09:00:00.000Z"
     },
     {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "[인터뷰] 권오경 부산외국어대학교 총장 “사람과 기술 잇는 ‘글로벌 공존 플랫폼’ 대학으로”",
+      "source": "부산일보",
+      "sourceUrl": "https://www.busan.com",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE54aVMwalBrbzRzNkxCR3N2S0VHa3VuWi1kUFlOQUp1NElrRTBNZkVtZFhCR3VsQlBIcG53dWplQlBLU2RxQVpNT0JjSkxibzVOWnk3bExEUDR1TTRQS3k3Q3NpTEpnWE5iRlNVbG1yNVRMMmVJ?oc=5",
+      "publishedAt": "2026-10-04T08:56:03.000Z",
+      "description": "",
+      "id": "25f2c2a24c8d",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "LLM 거대언어모델"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "부산일보",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE54aVMwalBrbzRzNkxCR3N2S0VHa3VuWi1kUFlOQUp1NElrRTBNZkVtZFhCR3VsQlBIcG53dWplQlBLU2RxQVpNT0JjSkxibzVOWnk3bExEUDR1TTRQS3k3Q3NpTEpnWE5iRlNVbG1yNVRMMmVJ?oc=5",
+          "publishedAt": "2026-10-04T08:56:03.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-04T08:56:03.000Z"
+    },
+    {
       "provider": "rss",
       "lang": "ko",
       "title": "\"수술 로봇이 '의사 부족' 문제 해결…한국 투자 늘리겠다\"",
@@ -6054,6 +5346,33 @@
         }
       ],
       "firstSeenAt": "2026-10-04T08:16:41.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "숙명여자대학교, 강네코 디렉터 초청 강연···생성형 AI 시대의 K-POP 비주얼 제작법 전해",
+      "source": "한국강사신문",
+      "sourceUrl": "https://www.lecturernews.com",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5FODBVUVB5djN0aWVJWVZRLWRFZnJVYW1EcUhwaThiUmNOME9XMEYzTElXMkU4SGk4S3Y1dXdzMEo5N2pEVXRLRFlzRjV6R19NVGUtQUY1NEZFRjhUcFJZMUdxbjc4QTVrMHRSYWZvcHo?oc=5",
+      "publishedAt": "2026-10-04T08:16:29.000Z",
+      "description": "",
+      "id": "aaf37f5ef4a2",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "생성형 AI"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "한국강사신문",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5FODBVUVB5djN0aWVJWVZRLWRFZnJVYW1EcUhwaThiUmNOME9XMEYzTElXMkU4SGk4S3Y1dXdzMEo5N2pEVXRLRFlzRjV6R19NVGUtQUY1NEZFRjhUcFJZMUdxbjc4QTVrMHRSYWZvcHo?oc=5",
+          "publishedAt": "2026-10-04T08:16:29.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-04T08:16:29.000Z"
     },
     {
       "provider": "google-news",
@@ -6460,33 +5779,6 @@
         }
       ],
       "firstSeenAt": "2026-10-04T04:43:16.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "ko",
-      "title": "\"데이터 플랫폼 기업 도약\"...크리니티, 'AI페스타 2026'서 AI 워크OS '써팀' 선보여",
-      "source": "다음뉴스",
-      "sourceUrl": "https://v.daum.net",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9FOHhSVEVSNjIya0Z0YUxPMVg2TTJ1MWpUOUNuVklwZk5VZktvMzhCNTc5TEZpUjN2a2ZqSzFWMDZKMGlMT3BaWVU4UnVnREU?oc=5",
-      "publishedAt": "2026-10-04T04:42:57.000Z",
-      "description": "",
-      "id": "f09dfd18a704",
-      "category": "ai",
-      "categoryHints": [
-        "ai"
-      ],
-      "matchedQueries": [
-        "AI 에이전트"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "다음뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9FOHhSVEVSNjIya0Z0YUxPMVg2TTJ1MWpUOUNuVklwZk5VZktvMzhCNTc5TEZpUjN2a2ZqSzFWMDZKMGlMT3BaWVU4UnVnREU?oc=5",
-          "publishedAt": "2026-10-04T04:42:57.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-04T04:42:57.000Z"
     }
   ]
 }

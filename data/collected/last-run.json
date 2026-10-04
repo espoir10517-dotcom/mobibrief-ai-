@@ -1,12 +1,12 @@
 {
   "date": "2026-10-04",
-  "collectedAt": "2026-10-04T09:05:20.475Z",
+  "collectedAt": "2026-10-04T09:15:12.596Z",
   "stats": {
-    "searches": 60,
+    "searches": 44,
     "google": {
-      "ok": 39,
+      "ok": 23,
       "fail": 0,
-      "items": 606
+      "items": 308
     },
     "naver": {
       "ok": 0,
@@ -15,37 +15,39 @@
       "enabled": false
     },
     "rss": {
-      "ok": 21,
-      "fail": 0,
-      "items": 1231,
-      "kept": 340
+      "ok": 20,
+      "fail": 1,
+      "items": 1131,
+      "kept": 543
     },
-    "raw": 946,
-    "fresh": 589,
-    "clusters": 453,
-    "candidates": 226,
+    "raw": 851,
+    "fresh": 406,
+    "clusters": 278,
+    "candidates": 201,
     "perCategory": {
-      "auto": 46,
-      "mobility": 60,
+      "auto": 23,
+      "mobility": 58,
       "insurance": 60,
       "ai": 60
     }
   },
-  "errors": [],
+  "errors": [
+    "rss \"머니투데이\": fetch failed"
+  ],
   "feeds": [
-    {
-      "name": "한국경제 IT",
-      "url": "https://www.hankyung.com/feed/it",
-      "ok": true,
-      "items": 50,
-      "kept": 15
-    },
     {
       "name": "한국경제 금융",
       "url": "https://www.hankyung.com/feed/finance",
       "ok": true,
       "items": 50,
       "kept": 5
+    },
+    {
+      "name": "한국경제 IT",
+      "url": "https://www.hankyung.com/feed/it",
+      "ok": true,
+      "items": 50,
+      "kept": 15
     },
     {
       "name": "연합뉴스 경제",
@@ -62,10 +64,24 @@
       "kept": 33
     },
     {
+      "name": "매일경제 기업",
+      "url": "https://www.mk.co.kr/rss/50100032/",
+      "ok": true,
+      "items": 50,
+      "kept": 16
+    },
+    {
       "name": "매일경제 경제",
       "url": "https://www.mk.co.kr/rss/30100041/",
       "ok": true,
       "items": 50,
+      "kept": 21
+    },
+    {
+      "name": "조선일보 경제",
+      "url": "https://www.chosun.com/arc/outboundfeeds/rss/category/economy/?outputType=xml",
+      "ok": true,
+      "items": 100,
       "kept": 21
     },
     {
@@ -76,25 +92,11 @@
       "kept": 5
     },
     {
-      "name": "매일경제 기업",
-      "url": "https://www.mk.co.kr/rss/50100032/",
-      "ok": true,
-      "items": 50,
-      "kept": 16
-    },
-    {
       "name": "매일경제 IT",
       "url": "https://www.mk.co.kr/rss/50300009/",
       "ok": true,
       "items": 50,
       "kept": 0
-    },
-    {
-      "name": "조선일보 경제",
-      "url": "https://www.chosun.com/arc/outboundfeeds/rss/category/economy/?outputType=xml",
-      "ok": true,
-      "items": 100,
-      "kept": 21
     },
     {
       "name": "동아일보 경제",
@@ -111,13 +113,6 @@
       "kept": 4
     },
     {
-      "name": "지디넷코리아",
-      "url": "https://feeds.feedburner.com/zdkorea",
-      "ok": true,
-      "items": 30,
-      "kept": 14
-    },
-    {
       "name": "경향신문 경제",
       "url": "https://www.khan.co.kr/rss/rssdata/economy_news.xml",
       "ok": true,
@@ -125,60 +120,66 @@
       "kept": 11
     },
     {
-      "name": "머니투데이",
-      "url": "https://rss.mt.co.kr/mt_news.xml",
+      "name": "지디넷코리아",
+      "url": "https://feeds.feedburner.com/zdkorea",
       "ok": true,
-      "items": 100,
-      "kept": 8
+      "items": 30,
+      "kept": 14
     },
     {
       "name": "한국보험신문",
       "url": "https://www.insnews.co.kr/rss/allArticle.xml",
       "ok": true,
       "items": 50,
-      "kept": 20
-    },
-    {
-      "name": "대한금융신문",
-      "url": "https://www.kbanker.co.kr/rss/allArticle.xml",
-      "ok": true,
-      "items": 50,
-      "kept": 13
+      "kept": 50
     },
     {
       "name": "보험매일",
       "url": "https://www.fins.co.kr/rss/allArticle.xml",
       "ok": true,
       "items": 50,
-      "kept": 25
+      "kept": 50
+    },
+    {
+      "name": "대한금융신문",
+      "url": "https://www.kbanker.co.kr/rss/allArticle.xml",
+      "ok": true,
+      "items": 50,
+      "kept": 50
     },
     {
       "name": "보험저널",
       "url": "https://www.insjournal.co.kr/rss/allArticle.xml",
       "ok": true,
       "items": 50,
-      "kept": 14
+      "kept": 50
     },
     {
       "name": "오토데일리",
       "url": "https://www.autodaily.co.kr/rss/allArticle.xml",
       "ok": true,
       "items": 50,
-      "kept": 21
-    },
-    {
-      "name": "AI타임스",
-      "url": "https://www.aitimes.com/rss/allArticle.xml",
-      "ok": true,
-      "items": 50,
-      "kept": 37
+      "kept": 50
     },
     {
       "name": "모터그래프",
       "url": "https://www.motorgraph.com/rss/allArticle.xml",
       "ok": true,
       "items": 50,
-      "kept": 9
+      "kept": 50
+    },
+    {
+      "name": "AI타임스",
+      "url": "https://www.aitimes.com/rss/allArticle.xml",
+      "ok": true,
+      "items": 50,
+      "kept": 50
+    },
+    {
+      "name": "머니투데이",
+      "url": "https://rss.mt.co.kr/mt_news.xml",
+      "ok": false,
+      "error": "fetch failed"
     }
   ]
 }
