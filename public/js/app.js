@@ -2,6 +2,7 @@ import { loadData } from './data.js';
 import * as views from './views.js';
 import * as store from './store.js';
 import { toast } from './util.js';
+import * as push from './push.js';
 
 const viewEl = document.getElementById('view');
 const banner = document.getElementById('demo-banner');
@@ -220,6 +221,13 @@ async function start() {
     navigator.serviceWorker
       .register('sw.js', { updateViaCache: 'none' })
       .then((reg) => reg.update())
+      .then(async () => {
+        // 미리 알림을 켜 둔 사용자는 알림 서버가 연결되면 자동 등록
+        const st = store.getSettings();
+        if (st.pushOn) {
+          await push.autoConnect(st.pushHour || 8).catch(() => {});
+        }
+      })
       .catch((e) => console.warn('SW 등록 실패', e));
   }
 }

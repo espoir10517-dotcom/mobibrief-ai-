@@ -625,18 +625,17 @@ export function settings(data) {
         </div>
       </div>
 
-      ${PUSH_API ? `
       <div class="group" id="push-group">
         <div class="group__title">알림</div>
         <div class="list">
           <div class="row"><div class="row__text"><label class="row__label" for="sw-push">주간 브리핑 알림</label><span class="row__desc">매주 월요일, 이번 주 브리핑이 나오면 알려드려요</span></div><label class="switch"><input type="checkbox" id="sw-push" ${s.pushOn ? 'checked' : ''}><span></span></label></div>
           <div class="row"><div class="row__text"><label class="row__label" for="push-hour">받을 시간</label><span class="row__desc">월요일</span></div>
             <select class="input time-input" id="push-hour">${Array.from({ length: 16 }, (_, k) => k + 7).map((h) => `<option value="${h}" ${Number(s.pushHour) === h ? 'selected' : ''}>${h < 12 ? `오전 ${h}시` : h === 12 ? '낮 12시' : `오후 ${h - 12}시`}</option>`).join('')}</select></div>
-          <button class="row row--btn" id="push-test" type="button" ${s.pushOn ? '' : 'disabled'}>시험 알림 보내기</button>
+          <button class="row row--btn" id="push-test" type="button" ${s.pushOn && PUSH_API ? '' : 'disabled'}>시험 알림 보내기</button>
         </div>
         <p class="notice" id="push-note" hidden></p>
+        ${PUSH_API ? '' : '<p class="panel__note" id="push-pending" style="padding-left:4px">알림 연결 준비 중이에요. 지금 켜 두시면 연결되는 대로 자동으로 받게 됩니다.</p>'}
       </div>
-      ` : ''}
 
       <div class="group">
         <div class="group__title">데이터</div>
@@ -705,19 +704,20 @@ ${store.isAdmin() ? `          <div class="row"><div class="row__text"><span cla
           note.innerHTML = html;
           note.hidden = !html;
         };
+        const connected = push.pushConnected();
         const sync = (on) => {
           pushSw.checked = on;
-          testBtn.disabled = !on;
+          testBtn.disabled = !on || !connected;
           store.setSettings({ pushOn: on });
         };
         if (push.isIOS() && !push.isStandalone()) {
           pushSw.disabled = true;
           hourSel.disabled = true;
           showNote('<b>iPhone</b>은 이 앱을 <b>홈 화면에 추가</b>한 뒤, 홈 화면 아이콘으로 열어서 알림을 켜야 받을 수 있습니다 (iOS 16.4 이상).<br>Safari 하단 공유 버튼 → ‘홈 화면에 추가’');
-        } else if (!push.pushSupported()) {
+        } else if (!push.browserSupportsPush()) {
           pushSw.disabled = true;
           showNote('이 브라우저에서는 알림을 받을 수 없습니다. 휴대폰의 Chrome 또는 홈 화면 앱에서 열어 주세요.');
-        } else {
+        } else if (connected) {
           // 실제 구독 상태와 화면 맞추기 (휴대폰 설정에서 알림을 껐을 수 있음)
           push.currentSubscription().then((sub) => sync(Boolean(sub) && Notification.permission === 'granted')).catch(() => {});
         }
@@ -725,11 +725,12 @@ ${store.isAdmin() ? `          <div class="row"><div class="row__text"><span cla
           pushSw.disabled = true;
           try {
             if (pushSw.checked) {
-              await push.enablePush(Number(hourSel.value));
+              if (connected) await push.enablePush(Number(hourSel.value));
+              else await push.askPermissionOnly(); // 연결 전: 허용만 받아 두고 연결 시 자동 등록
               sync(true);
               ctx.toast(`매주 월요일 ${hourSel.options[hourSel.selectedIndex].text}에 알려드릴게요`);
             } else {
-              await push.disablePush();
+              if (connected) await push.disablePush();
               sync(false);
               ctx.toast('알림을 껐습니다');
             }
@@ -745,7 +746,7 @@ ${store.isAdmin() ? `          <div class="row"><div class="row__text"><span cla
           store.setSettings({ pushHour: Number(hourSel.value) });
           if (!pushSw.checked) return;
           try {
-            await push.updateHour(Number(hourSel.value));
+            if (connected) await push.updateHour(Number(hourSel.value));
             ctx.toast(`매주 월요일 ${hourSel.options[hourSel.selectedIndex].text}로 바꿨습니다`);
           } catch (e) {
             showNote(String(e.message || e));

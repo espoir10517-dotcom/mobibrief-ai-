@@ -4,7 +4,25 @@ import { PUSH_API } from './config.js';
 
 export const isIOS = () => /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
 export const isStandalone = () => window.matchMedia?.('(display-mode: standalone)').matches || window.navigator.standalone === true;
-export const pushSupported = () => Boolean(PUSH_API) && 'serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window;
+export const pushConnected = () => Boolean(PUSH_API); // 알림 서버 연결 여부
+export const browserSupportsPush = () => 'serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window;
+export const pushSupported = () => pushConnected() && browserSupportsPush();
+
+// 서버 연결 전: 알림 허용만 미리 받아 두기 (사용자가 누를 때만 물어볼 수 있음)
+export async function askPermissionOnly() {
+  if (!browserSupportsPush()) throw new Error('이 브라우저에서는 알림을 받을 수 없습니다');
+  const perm = await Notification.requestPermission();
+  if (perm !== 'granted') throw new Error('알림이 허용되지 않았습니다. 휴대폰 설정에서 이 앱의 알림을 허용해 주세요');
+}
+
+// 앱을 열 때: 미리 알림을 켜 둔 사람은 서버가 연결되면 자동으로 등록
+export async function autoConnect(hour) {
+  if (!pushSupported() || Notification.permission !== 'granted') return false;
+  const sub = await currentSubscription();
+  if (sub) return true;
+  await enablePush(hour);
+  return true;
+}
 
 function keyToBytes(b64u) {
   const s = atob(b64u.replace(/-/g, '+').replace(/_/g, '/') + '==='.slice((b64u.length + 3) % 4));
