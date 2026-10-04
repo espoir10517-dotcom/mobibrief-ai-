@@ -1,7 +1,7 @@
 {
   "name": "MobiBrief AI",
   "short_name": "MobiBrief",
-  "description": "AI가 골라주는 오늘의 핵심 뉴스 — 자동차보험·모빌리티·보험·AI 기술",
+  "description": "AI가 골라주는 이번 주 핵심 뉴스 — 자동차보험·모빌리티·보험·AI 기술",
   "lang": "ko",
   "start_url": "./#/home",
   "scope": "./",

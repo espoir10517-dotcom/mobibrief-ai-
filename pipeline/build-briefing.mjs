@@ -267,8 +267,10 @@ export async function buildBriefing({ log = console.log, env = process.env, outD
     // AI 키가 없으면: 이미 AI 로 만든 브리핑이 있으면 덮어쓰지 않음 (규칙 결과로 품질이 떨어지는 것 방지)
     try {
       const prev = JSON.parse(await readFile(path.join(outDir, 'briefing.json'), 'utf8'));
-      if (prev.analysis === 'ai') {
-        log('ℹ️  AI 키가 없어 이번에는 새로 발행하지 않고, 기존 AI 브리핑을 유지합니다. (수집은 계속됩니다)');
+      // 단, 6일 넘게 지난 브리핑은 유지하지 않음 (앱이 몇 주째 같은 뉴스로 멈추지 않도록 → 규칙 방식으로 새로 발행)
+      const ageDays = (Date.now() - Date.parse(prev.generatedAt)) / 86400000;
+      if (prev.analysis === 'ai' && ageDays < 6) {
+        log('ℹ️  AI 키가 없어 이번에는 새로 발행하지 않고, 이번 주에 만든 AI 브리핑을 유지합니다. (수집은 계속됩니다)');
         return prev;
       }
     } catch {
@@ -349,17 +351,30 @@ export async function buildBriefing({ log = console.log, env = process.env, outD
       archiveMap.set(a.id, { ...light, oneLiner: light.oneLiner.slice(0, 90) });
     }
   }
-  // AI 결과가 있으면: 오늘 기사 중 AI가 걸러낸 기사는 보관함에서 빼고, 선정 기사는 AI 제목·요약으로 교체
+  // AI 가 요약한 기사는 요약·분석까지 보관 → 다음 주에 검색해서 열어도 AI 요약이 그대로 보임
+  const aiFields = (a) => ({
+    id: a.id, category: a.category, title: a.title, originalTitle: a.originalTitle, source: a.source, url: a.url, publishedAt: a.publishedAt, lang: a.lang,
+    coverage: a.coverage, sources: a.sources, keywords: a.keywords, scores: a.scores, total: a.total, oneLiner: a.oneLiner, description: a.description,
+    summary3: a.summary3, keyPoints: a.keyPoints, whyImportant: a.whyImportant, perspective: a.perspective, watchNext: a.watchNext, limitedInfo: a.limitedInfo, analysis: 'ai',
+  });
+  // 지난 주들의 AI 요약 기사 이어 받기 (보관 기간 안의 것만)
+  const keepSince = Date.now() - (bcfg.archiveDays || 28) * 86400000;
+  try {
+    const prevArchive = JSON.parse(await readFile(path.join(outDir, 'archive.json'), 'utf8'));
+    for (const a of prevArchive.articles || []) if (a.analysis === 'ai' && a.summary3?.length && Date.parse(a.publishedAt) >= keepSince) archiveMap.set(a.id, a);
+  } catch {
+    /* 첫 실행 */
+  }
   if (aiResult) {
-    for (const e of aiResult.evaluated) if (!e.keep) archiveMap.delete(e.id);
-    for (const a of aiResult.articles) {
-      archiveMap.set(a.id, { id: a.id, category: a.category, title: a.title, originalTitle: a.originalTitle, source: a.source, url: a.url, publishedAt: a.publishedAt, lang: a.lang, coverage: a.coverage, keywords: a.keywords, total: a.total, oneLiner: (a.oneLiner || '').slice(0, 90), analysis: a.analysis });
-    }
+    // 이번 주 AI 가 걸러낸 기사는 보관함에서 빼고, 선정 기사는 AI 결과로 교체
+    for (const e of aiResult.evaluated) if (!e.keep && archiveMap.get(e.id)?.analysis !== 'ai') archiveMap.delete(e.id);
+    for (const a of aiResult.articles) if (a.analysis === 'ai') archiveMap.set(a.id, aiFields(a));
   }
 
   // 보관함이 너무 커지지 않도록 점수 상위만 (휴대폰 데이터 절약)
   if (archiveMap.size > (bcfg.archiveMaxArticles || 1500)) {
-    const keep = [...archiveMap.values()].sort((a, b) => (b.total || 0) - (a.total || 0)).slice(0, bcfg.archiveMaxArticles || 1500);
+    // AI 요약 기사는 우선 보관
+    const keep = [...archiveMap.values()].sort((a, b) => (b.analysis === 'ai') - (a.analysis === 'ai') || (b.total || 0) - (a.total || 0)).slice(0, bcfg.archiveMaxArticles || 1500);
     archiveMap.clear();
     for (const a of keep) archiveMap.set(a.id, a);
   }

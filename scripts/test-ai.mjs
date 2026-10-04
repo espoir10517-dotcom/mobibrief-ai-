@@ -101,5 +101,15 @@ const saved = JSON.parse(await readFile(path.join(outDir, 'briefing.json'), 'utf
 ok(!JSON.stringify(saved).includes('wrong'), '발행 파일에 API 키 없음');
 globalThis.fetch = realFetch;
 
+// 키가 없을 때: 이번 주에 만든 AI 브리핑은 유지, 오래된 AI 브리핑은 규칙 방식으로 새로 발행
+const { writeFile: wf } = await import('node:fs/promises');
+const fresh = { analysis: 'ai', generatedAt: new Date(Date.now() - 86400000).toISOString(), marker: 'keep' };
+await wf(path.join(outDir, 'briefing.json'), JSON.stringify(fresh));
+const k1 = await buildBriefing({ log: () => {}, env: {}, outDir });
+ok(k1.marker === 'keep', '키 없음: 이번 주 AI 브리핑 유지');
+await wf(path.join(outDir, 'briefing.json'), JSON.stringify({ ...fresh, generatedAt: new Date(Date.now() - 8 * 86400000).toISOString() }));
+const k2 = await buildBriefing({ log: () => {}, env: {}, outDir });
+ok(!k2.marker && k2.analysis === 'rules', '키 없음: 지난주 AI 브리핑은 새 뉴스로 교체 (앱 멈춤 방지)');
+
 console.log(fails ? `\n❌ ${fails}개 항목 실패\n` : '\n🎉 AI 편집국 점검 통과\n');
 process.exit(fails ? 1 : 0);

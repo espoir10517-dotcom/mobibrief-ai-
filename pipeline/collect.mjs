@@ -5,7 +5,7 @@
 // 순서: 분야별 검색어로 수집 → 오래된 기사·사진/인사/부고 제외 → 중복 묶기 → 분야별 후보 상위 N개만 남김
 // 남긴 후보만 Phase 3의 AI 평가로 넘어가므로, 검색어를 늘려도 AI 비용은 늘지 않습니다.
 
-import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, readdir, unlink } from 'node:fs/promises';
 import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -146,6 +146,12 @@ export async function runCollect({ now = new Date(), log = console.log, outDir =
   await mkdir(dir, { recursive: true });
   // 실행 기록은 항상 남기고(문제 확인용), 기사가 없으면 기존 결과를 덮어쓰지 않음
   if (!backfill) await writeFile(path.join(dir, 'last-run.json'), JSON.stringify({ date, collectedAt: out.collectedAt, stats: out.stats, errors: out.errors, feeds: feedResults }, null, 2));
+  // 오래된 수집 파일 정리 (keepDays 일보다 오래된 날짜 파일 삭제) — 저장소가 계속 커지지 않도록
+  if (!backfill) {
+    const keepDays = cfg.keepCollectedDays || 60;
+    const cutoff = kstDate(new Date(now.getTime() - keepDays * 86400000));
+    for (const f of await readdir(dir)) if (/^\d{4}-\d{2}-\d{2}\.json$/.test(f) && f.slice(0, 10) < cutoff) await unlink(path.join(dir, f));
+  }
   if (articles.length) {
     await writeFile(path.join(dir, `${date}.json`), JSON.stringify(out, null, 2));
     if (!backfill) await writeFile(path.join(dir, 'latest.json'), JSON.stringify(out, null, 2));

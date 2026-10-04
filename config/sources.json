@@ -192,5 +192,7 @@
       "topical": true,
       "category": "ai"
     }
-  ]
+  ],
+  "keepCollectedDays": 60,
+  "_keepCollectedDays": "수집 원본 보관 기간(일). 이보다 오래된 날짜 파일은 자동 삭제 (검색 보관함·AI 요약 기사는 별도 보관)."
 }

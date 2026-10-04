@@ -186,8 +186,13 @@ export function home(data) {
       }</p>
       ${
         weekly && b.periodStart
-          ? `<div class="masthead__date"><b>${esc(shortDate(b.periodStart))} ~ ${esc(shortDate(b.periodEnd))} 주간 브리핑</b><span>업데이트 ${esc(formatShortDate(gen))} ${esc(formatTime(gen))}</span><span>다음 ${esc(formatShortDate(nextMonday(gen)))}</span><span>핵심 뉴스 ${total}건</span></div>`
+          ? `<div class="masthead__date"><b>${esc(shortDate(b.periodStart))} ~ ${esc(shortDate(b.periodEnd))} 주간 브리핑</b><span>업데이트 ${esc(formatShortDate(gen))} ${esc(formatTime(gen))}</span><span>다음 ${esc(formatShortDate(nextMonday(new Date(Math.max(Date.now(), gen.getTime())))))}</span><span>핵심 뉴스 ${total}건</span></div>`
           : `<div class="masthead__date"><b>${esc(formatFullDate(new Date()))}</b><span>업데이트 ${esc(formatTime(gen))}${gen.toDateString() !== new Date().toDateString() ? ` (${esc(formatShortDate(gen))})` : ''}</span><span>핵심 뉴스 ${total}건</span></div>`
+      }
+      ${
+        weekly && Date.now() - gen.getTime() > 8 * 86400000
+          ? '<p class="masthead__stale">이번 주 브리핑을 준비하고 있어요. 지금은 지난 브리핑을 보여드려요.</p>'
+          : ''
       }
     </header>
 
@@ -681,7 +686,7 @@ ${store.isAdmin() ? `          <div class="row"><div class="row__text"><span cla
       </form>`
       }
 
-      <p class="footer-note"><span id="version-tap">MobiBrief AI · v0.4</span><br>공개 뉴스만 다루며, 기사 전문을 저장하지 않고 원문 링크로 연결합니다.</p>
+      <p class="footer-note"><span id="version-tap">MobiBrief AI · v0.5</span><br>공개 뉴스만 다루며, 기사 전문을 저장하지 않고 원문 링크로 연결합니다.</p>
     </div>`,
     mount(root, ctx) {
       root.querySelectorAll('[data-set]').forEach((b) =>
