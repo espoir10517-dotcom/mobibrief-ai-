@@ -648,3 +648,4 @@ select.input { appearance: none; background-image: linear-gradient(45deg, transp
 #version-tap { cursor: default; user-select: none; -webkit-user-select: none; }
 .card__one--none { color: var(--ink-3); font-size: var(--fs-xs); }
 .row--btn:disabled { color: var(--ink-3); cursor: default; }
+.masthead__stale { margin-top: 8px; font-size: var(--fs-xs); color: var(--demo); background: var(--demo-soft); border-radius: 8px; padding: 6px 10px; }
