@@ -81,5 +81,20 @@ ok(matchTerms('New EV subsidy announced', cd).mobility.includes('전기차'), "�
 ok(!matchTerms('Every driver should check', cd).mobility.includes('전기차'), "'Every' 안의 ev 는 인식하지 않음");
 ok(matchTerms('車보험 손해율 상승', cd).auto.includes('손해율'), '한국어 키워드 인식');
 
+// 언론사 RSS / Atom 읽기
+const { parseFeed } = await import('../pipeline/collectors/rss.mjs');
+const rssXml = `<?xml version="1.0"?><rss version="2.0"><channel><item><title><![CDATA[보험사, <b>자동차보험</b> 할인 특약 확대]]></title><link>https://www.example.co.kr/news/1</link><description><![CDATA[<p>손해보험사들이 자동차보험 할인 특약을 늘리고 있다.</p>]]></description><pubDate>Sun, 04 Oct 2026 09:00:00 +0900</pubDate></item><item><title>링크 없는 기사</title><pubDate>Sun, 04 Oct 2026 09:00:00 +0900</pubDate></item></channel></rss>`;
+const fr = parseFeed(rssXml, { name: '테스트 피드', source: '테스트신문' });
+ok(fr.length === 1 && fr[0].title === '보험사, 자동차보험 할인 특약 확대' && fr[0].source === '테스트신문', 'RSS 2.0 읽기 (CDATA·태그 정리, 링크 없는 항목 제외)');
+ok(fr[0].description === '손해보험사들이 자동차보험 할인 특약을 늘리고 있다.', 'RSS 요약문 정리');
+const atom = `<feed xmlns="http://www.w3.org/2005/Atom"><entry><title>Waymo expands robotaxi</title><link rel="alternate" href="https://ex.com/a"/><updated>2026-10-04T01:00:00Z</updated><summary>Short summary</summary></entry></feed>`;
+const fa = parseFeed(atom, { name: 'Atom', lang: 'en' });
+ok(fa.length === 1 && fa[0].url === 'https://ex.com/a' && fa[0].publishedAt === '2026-10-04T01:00:00.000Z', 'Atom 피드 읽기');
+const { fetchText } = await import('../pipeline/lib/http.mjs');
+const saveFetch = globalThis.fetch;
+globalThis.fetch = async () => new Response(new Uint8Array([0xc7, 0xd1, 0xb1, 0xdb]), { headers: { 'content-type': 'text/xml; charset=EUC-KR' } });
+ok((await fetchText('https://x.example')) === '한글', 'EUC-KR 인코딩 피드 한글 변환');
+globalThis.fetch = saveFetch;
+
 console.log(fails ? `\n❌ ${fails}개 항목 실패\n` : '\n🎉 수집기 점검 통과\n');
 process.exit(fails ? 1 : 0);

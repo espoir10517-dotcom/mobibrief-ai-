@@ -11,7 +11,12 @@ export async function fetchText(url, { headers = {}, timeoutMs = 15000, retries 
         signal: ctrl.signal,
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      return await res.text();
+      // 일부 국내 언론사 RSS 는 EUC-KR 인코딩 → 헤더나 XML 선언에서 문자셋을 찾아 변환
+      const buf = new Uint8Array(await res.arrayBuffer());
+      const head = new TextDecoder('latin1').decode(buf.slice(0, 300));
+      const charset = ((res.headers.get('content-type') || '').match(/charset=([\w-]+)/i) || head.match(/encoding=["']([\w-]+)["']/i) || [])[1];
+      const enc = charset && /euc-?kr|ks_c_5601|cp949/i.test(charset) ? 'euc-kr' : 'utf-8';
+      return new TextDecoder(enc).decode(buf);
     } catch (e) {
       lastErr = e;
       if (attempt < retries) await new Promise((r) => setTimeout(r, 1500));
