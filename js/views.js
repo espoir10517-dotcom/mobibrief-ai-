@@ -4,6 +4,7 @@ import { computeTrends } from './core/trend.js';
 import * as store from './store.js';
 import { verifyAdminCode } from './admin.js';
 import { PUSH_API } from './config.js';
+import * as push from './push.js';
 
 // ───────────────── components ─────────────────
 
@@ -624,17 +625,17 @@ export function settings(data) {
         </div>
       </div>
 
-      ${PUSH_API ? `
-      <div class="group">
+      <div class="group" id="push-group">
         <div class="group__title">알림</div>
         <div class="list">
-          <div class="row"><div class="row__text"><label class="row__label" for="sw-daily">정기 브리핑 알림</label><span class="row__desc">${periodOf(data.briefing).weekly ? '매주 월요일 정해진 시간에 이번 주 브리핑 도착 알림' : '매일 정해진 시간에 오늘의 뉴스 도착 알림'}</span></div>${sw('sw-daily', 'dailyBrief')}</div>
-          <div class="row"><div class="row__text"><label class="row__label" for="daily-time">알림 시간</label></div><input class="input time-input" id="daily-time" type="time" value="${esc(s.dailyTime)}" ${s.dailyBrief ? '' : 'disabled'}></div>
-          <div class="row"><div class="row__text"><label class="row__label" for="sw-breaking">중요 뉴스 알림</label><span class="row__desc">종합점수가 기준 이상인 새 뉴스가 나오면 알림 (같은 이슈는 한 번만)</span></div>${sw('sw-breaking', 'breakingAlert')}</div>
-          <div class="row row--stack"><div class="row__text"><span class="row__label">중요 뉴스 기준 점수</span></div>${seg('breakingThreshold', [['80', '80점+'], ['85', '85점+'], ['90', '90점+']])}</div>
+          <div class="row"><div class="row__text"><label class="row__label" for="sw-push">주간 브리핑 알림</label><span class="row__desc">매주 월요일, 이번 주 브리핑이 나오면 알려드려요</span></div><label class="switch"><input type="checkbox" id="sw-push" ${s.pushOn ? 'checked' : ''}><span></span></label></div>
+          <div class="row"><div class="row__text"><label class="row__label" for="push-hour">받을 시간</label><span class="row__desc">월요일</span></div>
+            <select class="input time-input" id="push-hour">${Array.from({ length: 16 }, (_, k) => k + 7).map((h) => `<option value="${h}" ${Number(s.pushHour) === h ? 'selected' : ''}>${h < 12 ? `오전 ${h}시` : h === 12 ? '낮 12시' : `오후 ${h - 12}시`}</option>`).join('')}</select></div>
+          <button class="row row--btn" id="push-test" type="button" ${s.pushOn && PUSH_API ? '' : 'disabled'}>시험 알림 보내기</button>
         </div>
+        <p class="notice" id="push-note" hidden></p>
+        ${PUSH_API ? '' : '<p class="panel__note" id="push-pending" style="padding-left:4px">알림 연결 준비 중이에요. 지금 켜 두시면 연결되는 대로 자동으로 받게 됩니다.</p>'}
       </div>
-      ` : ''}
 
       <div class="group">
         <div class="group__title">데이터</div>
@@ -693,17 +694,76 @@ ${store.isAdmin() ? `          <div class="row"><div class="row__text"><span cla
           root.querySelectorAll(`[data-set="${key}"]`).forEach((x) => x.classList.toggle('is-active', x === b));
         }),
       );
-      root.querySelectorAll('[data-toggle]').forEach((el) =>
-        el.addEventListener('change', () => {
-          store.setSettings({ [el.dataset.toggle]: el.checked });
-          if (el.dataset.toggle === 'dailyBrief') root.querySelector('#daily-time').disabled = !el.checked;
-          ctx.toast(el.checked ? '알림을 켰습니다' : '알림을 껐습니다');
-        }),
-      );
-      root.querySelector('#daily-time')?.addEventListener('change', (e) => {
-        store.setSettings({ dailyTime: e.target.value || '08:00' });
-        ctx.toast(`매일 ${e.target.value} 알림으로 저장했습니다`);
-      });
+      // ───── 알림 켜기/끄기 ─────
+      const pushSw = root.querySelector('#sw-push');
+      if (pushSw) {
+        const note = root.querySelector('#push-note');
+        const testBtn = root.querySelector('#push-test');
+        const hourSel = root.querySelector('#push-hour');
+        const showNote = (html) => {
+          note.innerHTML = html;
+          note.hidden = !html;
+        };
+        const connected = push.pushConnected();
+        const sync = (on) => {
+          pushSw.checked = on;
+          testBtn.disabled = !on || !connected;
+          store.setSettings({ pushOn: on });
+        };
+        if (push.isIOS() && !push.isStandalone()) {
+          pushSw.disabled = true;
+          hourSel.disabled = true;
+          showNote('<b>iPhone</b>은 이 앱을 <b>홈 화면에 추가</b>한 뒤, 홈 화면 아이콘으로 열어서 알림을 켜야 받을 수 있습니다 (iOS 16.4 이상).<br>Safari 하단 공유 버튼 → ‘홈 화면에 추가’');
+        } else if (!push.browserSupportsPush()) {
+          pushSw.disabled = true;
+          showNote('이 브라우저에서는 알림을 받을 수 없습니다. 휴대폰의 Chrome 또는 홈 화면 앱에서 열어 주세요.');
+        } else if (connected) {
+          // 실제 구독 상태와 화면 맞추기 (휴대폰 설정에서 알림을 껐을 수 있음)
+          push.currentSubscription().then((sub) => sync(Boolean(sub) && Notification.permission === 'granted')).catch(() => {});
+        }
+        pushSw.addEventListener('change', async () => {
+          pushSw.disabled = true;
+          try {
+            if (pushSw.checked) {
+              if (connected) await push.enablePush(Number(hourSel.value));
+              else await push.askPermissionOnly(); // 연결 전: 허용만 받아 두고 연결 시 자동 등록
+              sync(true);
+              ctx.toast(`매주 월요일 ${hourSel.options[hourSel.selectedIndex].text}에 알려드릴게요`);
+            } else {
+              if (connected) await push.disablePush();
+              sync(false);
+              ctx.toast('알림을 껐습니다');
+            }
+            showNote('');
+          } catch (e) {
+            sync(false);
+            showNote(String(e.message || e));
+          } finally {
+            pushSw.disabled = false;
+          }
+        });
+        hourSel.addEventListener('change', async () => {
+          store.setSettings({ pushHour: Number(hourSel.value) });
+          if (!pushSw.checked) return;
+          try {
+            if (connected) await push.updateHour(Number(hourSel.value));
+            ctx.toast(`매주 월요일 ${hourSel.options[hourSel.selectedIndex].text}로 바꿨습니다`);
+          } catch (e) {
+            showNote(String(e.message || e));
+          }
+        });
+        testBtn.addEventListener('click', async () => {
+          testBtn.disabled = true;
+          try {
+            await push.sendTest();
+            ctx.toast('시험 알림을 보냈습니다. 잠시 후 도착해요');
+          } catch (e) {
+            showNote(String(e.message || e));
+          } finally {
+            setTimeout(() => (testBtn.disabled = !pushSw.checked), 3000);
+          }
+        });
+      }
       // 관리자 모드: 버전 글자 5번 누르면 코드 입력칸 표시
       let taps = 0;
       let tapTimer;

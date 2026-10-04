@@ -24,10 +24,8 @@ const KEYS = { saved: 'mb.saved', keywords: 'mb.keywords', settings: 'mb.setting
 
 export const DEFAULT_SETTINGS = {
   theme: 'light', // light | dark
-  dailyBrief: true,
-  dailyTime: '08:00',
-  breakingAlert: false,
-  breakingThreshold: 85,
+  pushOn: false, // 주간 브리핑 알림
+  pushHour: 8, // 월요일 받을 시간 (7~22시)
 };
 // 관심 키워드는 사용자마다 각자 휴대폰에만 저장되며, 처음에는 비어 있습니다.
 // 아래는 MY NEWS 화면에서 한 번 눌러 추가할 수 있게 보여주는 '추천' 목록일 뿐, 자동 등록되지 않습니다.
