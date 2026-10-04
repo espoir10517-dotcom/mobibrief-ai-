@@ -10,7 +10,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { totalScore } from '../public/js/core/scoring.js';
 import { similarity } from '../public/js/core/select.js';
-import { compileDictionary, matchTerms, scoreArticle } from './rules.mjs';
+import { compileDictionary, relevantHits, scoreArticle } from './rules.mjs';
 import { normalizeTitle, bigrams, jaccard } from './lib/text.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -26,10 +26,27 @@ function pickCategory(a, hits) {
 
 // 같은 분야에서 제목이 꽤 비슷하고 주요 키워드가 같으면 같은 이슈로 묶음
 // (언론사마다 제목을 다르게 쓰는 경우를 잡기 위한 2차 묶기)
+// 제목의 고유한 단어 (조사 떼고 2글자 이상, 흔한 단어 제외)
+const JOSA = /(으로|에서|에게|까지|부터|하고|이다|에는|과의|와의|은|는|이|가|을|를|에|의|도|로|와|과|만)$/;
+const COMMON = new Set(['ai', '속보', '단독', '종합', '오늘', '내년', '올해', '위해', '대한', '관련', '확대', '추진', '강화', '본격', '국내', '글로벌', 'the', 'and', 'for', 'with']);
+function titleWords(title) {
+  const set = new Set();
+  for (let w of String(title).toLowerCase().split(/[^\p{L}\p{N}+]+/u)) {
+    if (w.length > 2) w = w.replace(JOSA, '');
+    if (w.length >= 2 && !COMMON.has(w) && !/^\d+$/.test(w)) set.add(w);
+  }
+  return set;
+}
+
 function sameIssue(a, b) {
   if (a.category !== b.category) return false;
   const sim = jaccard(a._bg, b._bg);
   if (sim >= 0.35) return true;
+  // 주요 키워드 하나 이상 + 고유 단어 2개 이상 겹치면 같은 이슈 (예: 'LG유플러스, 구글…크리에이터' / 'LG U+·구글…크리에이터')
+  const sharedKw = a.keywords.some((k) => k !== 'AI' && b.keywords.includes(k));
+  let shared = 0;
+  for (const w of a._words) if (b._words.has(w)) shared++;
+  if (sharedKw && shared >= 2) return true;
   const ka = [...a.keywords].sort().join('|');
   const kb = [...b.keywords].sort().join('|');
   return a.keywords.length >= 2 && ka === kb && sim >= 0.12;
@@ -58,12 +75,11 @@ function analyze(file, { compiled, criteria, prevTitles }) {
   const now = Date.parse(file.collectedAt);
   const tagged = [];
   for (const a of file.articles) {
-    const text = `${a.title} ${a.description || ''}`;
-    const hits = matchTerms(text, compiled);
+    const hits = relevantHits(a.title, a.description, compiled);
     const category = pickCategory(a, hits);
     if (!category) continue;
     const keywords = [...new Set([...(hits[category] || []), ...CATS.flatMap((c) => (c === category ? [] : hits[c] || []))])].slice(0, 4);
-    tagged.push({ ...a, category, keywords, _hits: hits, _bg: bigrams(normalizeTitle(a.title)) });
+    tagged.push({ ...a, category, keywords, _hits: hits, _bg: bigrams(normalizeTitle(a.title)), _words: titleWords(a.title) });
   }
   const out = [];
   for (const a of mergeIssues(tagged)) {

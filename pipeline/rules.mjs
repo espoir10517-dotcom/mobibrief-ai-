@@ -12,7 +12,7 @@ export function compileDictionary(dict) {
     cats[cat] = terms.map((t) => ({
       term: t.term,
       // 영어 단어는 단어 경계로(예: 'EV'가 'every'에 걸리지 않도록), 한글은 포함 여부로 찾음
-      res: t.aliases.map((a) => (isAscii(a) ? new RegExp(`(^|[^A-Za-z0-9])${esc(a)}($|[^A-Za-z0-9])`, /[a-z]/.test(a) ? 'i' : '') : new RegExp(esc(a), 'i'))),
+      res: t.aliases.map((a) => a.startsWith('re:') ? new RegExp(a.slice(3), 'i') : (isAscii(a) ? new RegExp(`(^|[^A-Za-z0-9])${esc(a)}($|[^A-Za-z0-9])`, /[a-z]/.test(a) ? 'i' : '') : new RegExp(esc(a), 'i'))),
     }));
   }
   const impact = (dict.impactTerms || []).map((a) => (isAscii(a) ? new RegExp(`\\b${esc(a)}\\b`, 'i') : new RegExp(esc(a))));
@@ -28,6 +28,20 @@ export function matchTerms(text, compiled) {
 }
 
 const DOMESTIC = new Set(['auto', 'insurance']);
+// 제목에 분야 키워드가 있으면 제목+요약에서 키워드를 모으고,
+// 제목에 하나도 없으면 요약에서 한 분야 키워드가 2개 이상 나올 때만 인정합니다.
+// (예: 골프 기사 요약에 후원사 'OO손해보험'이 한 번 나오는 경우 제외)
+export function relevantHits(title, description, compiled) {
+  const t = matchTerms(title, compiled);
+  const anyTitle = Object.values(t).some((v) => v.length);
+  const d = matchTerms(description || '', compiled);
+  const out = {};
+  for (const c of Object.keys(t)) {
+    out[c] = anyTitle ? [...new Set([...t[c], ...d[c]])] : d[c].length >= 2 ? d[c] : [];
+  }
+  return out;
+}
+
 const clamp = (v) => Math.max(0, Math.min(100, Math.round(v)));
 
 export function scoreArticle(a, { hits, compiled, now, isNew }) {

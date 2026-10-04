@@ -12,7 +12,7 @@ import { fileURLToPath } from 'node:url';
 import * as google from './collectors/google-news.mjs';
 import * as naver from './collectors/naver-news.mjs';
 import * as rss from './collectors/rss.mjs';
-import { compileDictionary, matchTerms } from './rules.mjs';
+import { compileDictionary, relevantHits } from './rules.mjs';
 import { dedupe } from './dedupe.mjs';
 import { kstDate } from './lib/text.mjs';
 import { sleep } from './lib/http.mjs';
@@ -65,7 +65,7 @@ export async function runCollect({ now = new Date(), log = console.log, outDir =
           // 언론사 섹션 피드: 키워드 사전에 해당하는 기사만, 가장 많이 맞는 분야로
           let kept = 0;
           for (const it of items) {
-            const hits = matchTerms(`${it.title} ${it.description}`, compiled);
+            const hits = relevantHits(it.title, it.description, compiled);
             const best = Object.entries(hits).sort((a, b) => b[1].length - a[1].length)[0];
             if (best && best[1].length) {
               raw.push({ ...it, category: best[0] });
