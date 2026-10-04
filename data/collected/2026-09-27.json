@@ -1,0 +1,4277 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-27",
+  "backfill": true,
+  "collectedAt": "2026-09-27T14:59:59.000Z",
+  "stats": {
+    "searches": 60,
+    "google": {
+      "ok": 39,
+      "fail": 0,
+      "items": 782
+    },
+    "naver": {
+      "ok": 0,
+      "fail": 0,
+      "items": 0,
+      "enabled": false
+    },
+    "rss": {
+      "ok": 21,
+      "fail": 0,
+      "items": 1231,
+      "kept": 335
+    },
+    "raw": 1117,
+    "fresh": 236,
+    "clusters": 191,
+    "candidates": 149,
+    "perCategory": {
+      "auto": 38,
+      "mobility": 40,
+      "insurance": 31,
+      "ai": 40
+    }
+  },
+  "errors": [],
+  "feeds": [
+    {
+      "name": "한국경제 금융",
+      "url": "https://www.hankyung.com/feed/finance",
+      "ok": true,
+      "items": 50,
+      "kept": 5
+    },
+    {
+      "name": "한국경제 IT",
+      "url": "https://www.hankyung.com/feed/it",
+      "ok": true,
+      "items": 50,
+      "kept": 14
+    },
+    {
+      "name": "연합뉴스 산업",
+      "url": "https://www.yna.co.kr/rss/industry.xml",
+      "ok": true,
+      "items": 120,
+      "kept": 33
+    },
+    {
+      "name": "연합뉴스 경제",
+      "url": "https://www.yna.co.kr/rss/economy.xml",
+      "ok": true,
+      "items": 120,
+      "kept": 35
+    },
+    {
+      "name": "매일경제 경제",
+      "url": "https://www.mk.co.kr/rss/30100041/",
+      "ok": true,
+      "items": 50,
+      "kept": 20
+    },
+    {
+      "name": "매일경제 IT",
+      "url": "https://www.mk.co.kr/rss/50300009/",
+      "ok": true,
+      "items": 50,
+      "kept": 0
+    },
+    {
+      "name": "매일경제 기업",
+      "url": "https://www.mk.co.kr/rss/50100032/",
+      "ok": true,
+      "items": 50,
+      "kept": 16
+    },
+    {
+      "name": "조선일보 경제",
+      "url": "https://www.chosun.com/arc/outboundfeeds/rss/category/economy/?outputType=xml",
+      "ok": true,
+      "items": 100,
+      "kept": 21
+    },
+    {
+      "name": "전자신문",
+      "url": "https://rss.etnews.com/Section901.xml",
+      "ok": true,
+      "items": 12,
+      "kept": 5
+    },
+    {
+      "name": "경향신문 경제",
+      "url": "https://www.khan.co.kr/rss/rssdata/economy_news.xml",
+      "ok": true,
+      "items": 50,
+      "kept": 12
+    },
+    {
+      "name": "동아일보 경제",
+      "url": "https://rss.donga.com/economy.xml",
+      "ok": true,
+      "items": 50,
+      "kept": 12
+    },
+    {
+      "name": "뉴시스 경제",
+      "url": "https://newsis.com/RSS/economy.xml",
+      "ok": true,
+      "items": 49,
+      "kept": 4
+    },
+    {
+      "name": "지디넷코리아",
+      "url": "https://feeds.feedburner.com/zdkorea",
+      "ok": true,
+      "items": 30,
+      "kept": 14
+    },
+    {
+      "name": "머니투데이",
+      "url": "https://rss.mt.co.kr/mt_news.xml",
+      "ok": true,
+      "items": 100,
+      "kept": 7
+    },
+    {
+      "name": "보험매일",
+      "url": "https://www.fins.co.kr/rss/allArticle.xml",
+      "ok": true,
+      "items": 50,
+      "kept": 25
+    },
+    {
+      "name": "대한금융신문",
+      "url": "https://www.kbanker.co.kr/rss/allArticle.xml",
+      "ok": true,
+      "items": 50,
+      "kept": 13
+    },
+    {
+      "name": "한국보험신문",
+      "url": "https://www.insnews.co.kr/rss/allArticle.xml",
+      "ok": true,
+      "items": 50,
+      "kept": 18
+    },
+    {
+      "name": "보험저널",
+      "url": "https://www.insjournal.co.kr/rss/allArticle.xml",
+      "ok": true,
+      "items": 50,
+      "kept": 14
+    },
+    {
+      "name": "오토데일리",
+      "url": "https://www.autodaily.co.kr/rss/allArticle.xml",
+      "ok": true,
+      "items": 50,
+      "kept": 21
+    },
+    {
+      "name": "AI타임스",
+      "url": "https://www.aitimes.com/rss/allArticle.xml",
+      "ok": true,
+      "items": 50,
+      "kept": 37
+    },
+    {
+      "name": "모터그래프",
+      "url": "https://www.motorgraph.com/rss/allArticle.xml",
+      "ok": true,
+      "items": 50,
+      "kept": 9
+    }
+  ],
+  "articles": [
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "'70대 노모 살해' 50대 중국인 여성 구속 전 피의자 심문",
+      "source": "다음뉴스",
+      "sourceUrl": "https://v.daum.net",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE15NTVlMWdlaXM3MlhLN2tubS14WnItd1pSaC1JeEZ3T2Zjd3pYNnd4MC01RFBOWFFjZmVGQ1BvQ2R4WjJBdkE?oc=5",
+      "publishedAt": "2026-09-27T09:00:51.000Z",
+      "description": "",
+      "id": "cf772ce7ba10",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "교통사고 보험사기"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "다음뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE15NTVlMWdlaXM3MlhLN2tubS14WnItd1pSaC1JeEZ3T2Zjd3pYNnd4MC01RFBOWFFjZmVGQ1BvQ2R4WjJBdkE?oc=5",
+          "publishedAt": "2026-09-27T09:00:51.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T09:00:51.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "자율주행차 사고 3년간 11건 발생…4명 부상",
+      "source": "산경일보",
+      "sourceUrl": "https://www.sankyungilbo.com",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1UWFdzM1FTRnFwZEJIbzZLVFNLWW1RMVRZNzgyYlZVZ2thUjVoTWpOd1EyOEZYaDZwMmVHVVF4TkFzOEdJUzkxQ0JqaXlxM3JCOU5wdVdrdzFlcTNsQmtyR0VTbjE1cU1DQm0tRTFnSnM?oc=5",
+      "publishedAt": "2026-09-27T07:34:19.000Z",
+      "description": "",
+      "id": "b99c1245a16d",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "자율주행 사고 책임"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "산경일보",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1UWFdzM1FTRnFwZEJIbzZLVFNLWW1RMVRZNzgyYlZVZ2thUjVoTWpOd1EyOEZYaDZwMmVHVVF4TkFzOEdJUzkxQ0JqaXlxM3JCOU5wdVdrdzFlcTNsQmtyR0VTbjE1cU1DQm0tRTFnSnM?oc=5",
+          "publishedAt": "2026-09-27T07:34:19.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T07:34:19.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "“자율주행 3년째 제자리걸음, R&D 예산은 43% 삭감”",
+      "source": "부산일보",
+      "sourceUrl": "https://mobile.busan.com",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1ZY1RnUXpHalNGY0NtWmFONzZBbGd3WlFMY3g0MnNkTi0wX3Vtbl9MWjJPREhMaU1FendMZFl6UWx0SVdnb2ZSV2laNkVCa3VTd3ctOGo5RG84TTlyWm56d1Y5X3N3dEpDaWx3VjRNbVJHU2Q5WHY2cA?oc=5",
+      "publishedAt": "2026-09-27T07:22:55.000Z",
+      "description": "",
+      "id": "0777b82f261f",
+      "category": "auto",
+      "categoryHints": [
+        "auto",
+        "mobility"
+      ],
+      "matchedQueries": [
+        "자율주행 사고 책임",
+        "로보택시"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "부산일보",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1ZY1RnUXpHalNGY0NtWmFONzZBbGd3WlFMY3g0MnNkTi0wX3Vtbl9MWjJPREhMaU1FendMZFl6UWx0SVdnb2ZSV2laNkVCa3VTd3ctOGo5RG84TTlyWm56d1Y5X3N3dEpDaWx3VjRNbVJHU2Q5WHY2cA?oc=5",
+          "publishedAt": "2026-09-27T07:22:55.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T07:22:55.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": ": 다나와 자동차",
+      "source": "다나와 자동차",
+      "sourceUrl": "https://auto.danawa.com",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOSE4zZUJjcTdCU28ySVBUcFdsN3J2U21JTTJ3S0JtMTRIbGZvMl9lZ0tIQm05cnNfejJQeGhPU2JQdDR3cVVCaFFaWEdCWHZ4RWhYSXVFMTdrSWx4UVVqZGFIR0o2bEdOM0YtYjdpRHdDa19GWVRXQTFlM2NReXhJWXh3?oc=5",
+      "publishedAt": "2026-09-27T07:00:00.000Z",
+      "description": "",
+      "id": "5cfd1a4b28da",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "자동차보험료"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "다나와 자동차",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOSE4zZUJjcTdCU28ySVBUcFdsN3J2U21JTTJ3S0JtMTRIbGZvMl9lZ0tIQm05cnNfejJQeGhPU2JQdDR3cVVCaFFaWEdCWHZ4RWhYSXVFMTdrSWx4UVVqZGFIR0o2bEdOM0YtYjdpRHdDa19GWVRXQTFlM2NReXhJWXh3?oc=5",
+          "publishedAt": "2026-09-27T07:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T07:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "자율주행 기술격차 제자리…R&D 예산 43% 감소",
+      "source": "다음뉴스",
+      "sourceUrl": "https://v.daum.net",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1jaWJkV0JFUmNnT0pKVXprNFREY3dodkhMNndTNzBfSnVSNmw4TEFPR2UzN2hEZC1UMTVndTNnM2c0LXdMa3ItN3JzNA?oc=5",
+      "publishedAt": "2026-09-27T06:21:37.000Z",
+      "description": "",
+      "id": "7c5ba967cc1b",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "자율주행 사고 책임"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "다음뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1jaWJkV0JFUmNnT0pKVXprNFREY3dodkhMNndTNzBfSnVSNmw4TEFPR2UzN2hEZC1UMTVndTNnM2c0LXdMa3ItN3JzNA?oc=5",
+          "publishedAt": "2026-09-27T06:21:37.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T06:21:37.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "한국 자율주행 기술 '뒷걸음질'…정부 R&D 예산 43% 줄어",
+      "source": "아시아타임즈",
+      "sourceUrl": "https://www.asiatime.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1mNng2UGZITkdId0ZlbUgyU0ttMmU5UHowUzItWWJPUjdiMkMwM0d0bC1UaS1oQzhXbzNSVkFPQkh4YlVPUnZrNnVNQzlWb2I5dHQ4anNNOGYtY2xBQUE?oc=5",
+      "publishedAt": "2026-09-27T04:44:00.000Z",
+      "description": "",
+      "id": "85c31e37dd58",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "자율주행 사고 책임"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "아시아타임즈",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1mNng2UGZITkdId0ZlbUgyU0ttMmU5UHowUzItWWJPUjdiMkMwM0d0bC1UaS1oQzhXbzNSVkFPQkh4YlVPUnZrNnVNQzlWb2I5dHQ4anNNOGYtY2xBQUE?oc=5",
+          "publishedAt": "2026-09-27T04:44:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T04:44:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "장종태 의원 “자율주행 기술격차 못 좁혀…R&D·안전체계 마련 시급”",
+      "source": "일간투데이",
+      "sourceUrl": "https://www.dtoday.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE14d3EteUxhTUdOUWNzbXBfS3cyUEJuWmFlOHFVbDBkZHVzd1lkSzBzZmxGRVY5MVdXaWRYWmhveWpwelVmLUFSQ2hnNTE2VURwYlRLVXJTcF9mbFVkbDhyYnhQSDhINVdpVFRj?oc=5",
+      "publishedAt": "2026-09-27T04:12:19.000Z",
+      "description": "",
+      "id": "9783b19f0468",
+      "category": "auto",
+      "categoryHints": [
+        "auto",
+        "mobility"
+      ],
+      "matchedQueries": [
+        "자율주행 사고 책임",
+        "로보택시"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "일간투데이",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE14d3EteUxhTUdOUWNzbXBfS3cyUEJuWmFlOHFVbDBkZHVzd1lkSzBzZmxGRVY5MVdXaWRYWmhveWpwelVmLUFSQ2hnNTE2VURwYlRLVXJTcF9mbFVkbDhyYnhQSDhINVdpVFRj?oc=5",
+          "publishedAt": "2026-09-27T04:12:19.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T04:12:19.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "한국 자율주행, 미국과 기술격차 13.6개월…R&D 예산 43% 감소",
+      "source": "entv.kr",
+      "sourceUrl": "https://www.entv.kr",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA4THpMSkxzWkgtZU5KRHI3UzMyVlZYb0c0aXVHWXFTSnZFMnhJczcxUHdjcmQ1eXpxcFFkVU9FXzdkMWlqUExfYkxyOXEzV0RVdy1YVXQ4Q3ZFV29BYU1YQndmR2M?oc=5",
+      "publishedAt": "2026-09-27T02:39:00.000Z",
+      "description": "",
+      "id": "3d67b9339110",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "자율주행 사고 책임"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "entv.kr",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA4THpMSkxzWkgtZU5KRHI3UzMyVlZYb0c0aXVHWXFTSnZFMnhJczcxUHdjcmQ1eXpxcFFkVU9FXzdkMWlqUExfYkxyOXEzV0RVdy1YVXQ4Q3ZFV29BYU1YQndmR2M?oc=5",
+          "publishedAt": "2026-09-27T02:39:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T02:39:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "\"자율주행 기술, 한국만 제자리걸음…정부 R&D 예산은 43% 감소\"",
+      "source": "연합뉴스",
+      "sourceUrl": "https://www.yna.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0zYnZJOFI5WEFTVXA2TWFjbm9tYkpVcDFvZFFmdldmbERXYkR5bGFPZmdTaC0yVEplUmJTalBTcGo1cE1yMjBXejYwbXVMczMxUUNrTXJWR3ZvOUXSAWBBVV95cUxPbmN0MlFMNTBzSkRLZXdEREhKejVPc0ZTdVd3UWhLWHNIT0M4aWh0TERmOGt6Skxnc3ZtaEFKb2FSU0VIeUdRS1JsenEwR3h0V29wYW5KTTZRWVRNVDJPcFk?oc=5",
+      "publishedAt": "2026-09-27T02:33:03.000Z",
+      "description": "",
+      "id": "cab658c9594b",
+      "category": "auto",
+      "categoryHints": [
+        "auto",
+        "mobility"
+      ],
+      "matchedQueries": [
+        "자율주행 사고 책임",
+        "로보택시",
+        "자율주행"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0zYnZJOFI5WEFTVXA2TWFjbm9tYkpVcDFvZFFmdldmbERXYkR5bGFPZmdTaC0yVEplUmJTalBTcGo1cE1yMjBXejYwbXVMczMxUUNrTXJWR3ZvOUXSAWBBVV95cUxPbmN0MlFMNTBzSkRLZXdEREhKejVPc0ZTdVd3UWhLWHNIT0M4aWh0TERmOGt6Skxnc3ZtaEFKb2FSU0VIeUdRS1JsenEwR3h0V29wYW5KTTZRWVRNVDJPcFk?oc=5",
+          "publishedAt": "2026-09-27T02:33:03.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T02:33:03.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "자율주행 기술, 중국은 앞서가는데…한국은 제자리",
+      "source": "megaccnews.com",
+      "sourceUrl": "https://www.megaccnews.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBFckpZUVoxOWEySDVYcFo5MkMxTTU5azBwenAtM1JFcDhoLVFhMTNQZ3ltMVFJVjhnQlRvb19VS3VlR0ktRnlfanJJdlgxRGVMUldEQ21RNjdhdnB6dnpKZFpIcGJyMzBBMEpZ?oc=5",
+      "publishedAt": "2026-09-27T01:44:08.000Z",
+      "description": "",
+      "id": "2b5dcbf985f8",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "자율주행 사고 책임"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "megaccnews.com",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBFckpZUVoxOWEySDVYcFo5MkMxTTU5azBwenAtM1JFcDhoLVFhMTNQZ3ltMVFJVjhnQlRvb19VS3VlR0ktRnlfanJJdlgxRGVMUldEQ21RNjdhdnB6dnpKZFpIcGJyMzBBMEpZ?oc=5",
+          "publishedAt": "2026-09-27T01:44:08.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T01:44:08.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "'자율주행' 경쟁 뒤처졌는데 '투자'도 줄어...R&D 예산 43% 감소",
+      "source": "chungnamilbo.co.kr",
+      "sourceUrl": "https://www.chungnamilbo.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE02QUJPSkZ2WjZNVFRRTTlpOFVteWF5aWVGSS03aWlaeklXZ29UVFJOTk5KcG9VOXNVUzZHR1hHZFQ4Ym5qQ29fVUtQZDdMWGkwMDZpNVZzTTVvcjZveTBodFVtVnFVUExkaG10R25hQkZRVms?oc=5",
+      "publishedAt": "2026-09-27T01:15:48.000Z",
+      "description": "",
+      "id": "31135dd56fe8",
+      "category": "auto",
+      "categoryHints": [
+        "auto",
+        "mobility"
+      ],
+      "matchedQueries": [
+        "자율주행 사고 책임",
+        "로보택시"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "chungnamilbo.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE02QUJPSkZ2WjZNVFRRTTlpOFVteWF5aWVGSS03aWlaeklXZ29UVFJOTk5KcG9VOXNVUzZHR1hHZFQ4Ym5qQ29fVUtQZDdMWGkwMDZpNVZzTTVvcjZveTBodFVtVnFVUExkaG10R25hQkZRVms?oc=5",
+          "publishedAt": "2026-09-27T01:15:48.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T01:15:48.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "한국 자율주행 기술 답보…중국은 유럽 제치고 질주",
+      "source": "다음뉴스",
+      "sourceUrl": "https://v.daum.net",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9tMUM1XzVfMUN1Nk5ObTZKdXNrZTRHYTQtc24wS3IxMkhOeXZJLUVhcXZHOC1QdEc3VFJpellIcG90eWZrUERIWmFhTQ?oc=5",
+      "publishedAt": "2026-09-27T01:00:04.000Z",
+      "description": "",
+      "id": "ae69bf578a24",
+      "category": "auto",
+      "categoryHints": [
+        "auto",
+        "mobility"
+      ],
+      "matchedQueries": [
+        "자율주행 사고 책임",
+        "로보택시"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "다음뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9tMUM1XzVfMUN1Nk5ObTZKdXNrZTRHYTQtc24wS3IxMkhOeXZJLUVhcXZHOC1QdEc3VFJpellIcG90eWZrUERIWmFhTQ?oc=5",
+          "publishedAt": "2026-09-27T01:00:04.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T01:00:04.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "강남 아파트 단지서 로봇 택배 3대 연쇄 충돌…소프트웨어 버그가 자율주행 안전의 허점을 드러내다",
+      "source": "얼리어답터뉴스",
+      "sourceUrl": "https://www.eanews.kr",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE54U2UwUzZZTVNZeWtVVEpWXzlzN1pVaFhzUjAwdWJkb1N4RmpVYWRKTGQ4aWd5TW9aTTNXa2tPZVZoeFZGQnhWWmVn?oc=5",
+      "publishedAt": "2026-09-26T22:09:17.000Z",
+      "description": "",
+      "id": "5f282eca7829",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "자율주행 사고 책임"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "얼리어답터뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE54U2UwUzZZTVNZeWtVVEpWXzlzN1pVaFhzUjAwdWJkb1N4RmpVYWRKTGQ4aWd5TW9aTTNXa2tPZVZoeFZGQnhWWmVn?oc=5",
+          "publishedAt": "2026-09-26T22:09:17.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-26T22:09:17.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "[성유창 CAR썰] 법은 레벨3, 도로는 레벨2…한국 자율주행, 어디까지 왔나",
+      "source": "직썰",
+      "sourceUrl": "https://www.ziksir.com",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9YSEo2QkxHV0tlbklPaWpuUGZLQkhPcjRMeTdCSWpuemo2a0pSWDFKam1mV1Fmb3dpRnBFRmxNUlpsSFJ5QjZJeDhOSnFxWlZfaHl3VWQ2N1dIMmNXMGJzVDVFd0RxcnNn0gFsQVVfeXFMTjVoUHlCTUJCQU41TEpOVUJ1NUdTU1BBbGpST0VFMzNNazAyM3FTdzB2d081WEh6YnZ0NkJ2dU02el9YR3I3Q0o5VFgxWkZfUExKRFZPQllIV1hUWGhTamVXa1VDOFE4dW55SDhV?oc=5",
+      "publishedAt": "2026-09-26T21:00:00.000Z",
+      "description": "",
+      "id": "a7665d360fe8",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "자율주행 사고 책임"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "직썰",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9YSEo2QkxHV0tlbklPaWpuUGZLQkhPcjRMeTdCSWpuemo2a0pSWDFKam1mV1Fmb3dpRnBFRmxNUlpsSFJ5QjZJeDhOSnFxWlZfaHl3VWQ2N1dIMmNXMGJzVDVFd0RxcnNn0gFsQVVfeXFMTjVoUHlCTUJCQU41TEpOVUJ1NUdTU1BBbGpST0VFMzNNazAyM3FTdzB2d081WEh6YnZ0NkJ2dU02el9YR3I3Q0o5VFgxWkZfUExKRFZPQllIV1hUWGhTamVXa1VDOFE4dW55SDhV?oc=5",
+          "publishedAt": "2026-09-26T21:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-26T21:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "통행량·사고 줄어도 적자… 車보험 '8주룰' 초반 성과 아직 미풍",
+      "source": "글로벌이코노믹",
+      "sourceUrl": "https://www.g-enews.com",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSkVKV0dXVzJjUlEzSDEydkdCcVdYNzA4aGJUME03MDBiUXVIWlFkNi00XzkzV2tRR2RRdjViMFhXMmxVdVUtMzJ2dTFKSWpvREtfQlRQQjJzTEQ0TkdkNnplbm1KalNVNnV2YkJqSGxSeWVRVjZjNHVOd0gzbG5GTVFpa0Q?oc=5",
+      "publishedAt": "2026-09-26T20:30:00.000Z",
+      "description": "",
+      "id": "90e8dc367a54",
+      "category": "auto",
+      "categoryHints": [
+        "auto",
+        "insurance"
+      ],
+      "matchedQueries": [
+        "자동차보험 손해율",
+        "자동차보험료",
+        "자동차보험",
+        "車보험",
+        "금융당국 보험"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "글로벌이코노믹",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSkVKV0dXVzJjUlEzSDEydkdCcVdYNzA4aGJUME03MDBiUXVIWlFkNi00XzkzV2tRR2RRdjViMFhXMmxVdVUtMzJ2dTFKSWpvREtfQlRQQjJzTEQ0TkdkNnplbm1KalNVNnV2YkJqSGxSeWVRVjZjNHVOd0gzbG5GTVFpa0Q?oc=5",
+          "publishedAt": "2026-09-26T20:30:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-26T20:30:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Matic secures minority investment from Primus Capital and acquires Policygenius P&C book",
+      "source": "Dealroom",
+      "sourceUrl": "https://app.dealroom.co",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQY2RCSENCLWdMT2Z4eG1TM1NfWGowcjYtbEF3NEJ5aTFCd3JCS0xMUlJidzl6VVJCRnNrLUVvcm1XTVh2T1NGQnpsMmFieXhiODRhQjBwTkZOV1pkOE9GTXo0cFliWUhsWV83Q3dXRTRXZ0lmelkyR0VXNUtiWEppUlpnZjBqMHdDSTBKOHFiYjVTUXU2MDFDYmxSQnlGdjVnTjRScUpEUC1uZmI1bWxHRlNsNENxODNrOVJwMXJTYw?oc=5",
+      "publishedAt": "2026-09-27T15:11:02.000Z",
+      "description": "",
+      "id": "52549f33bba3",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "auto insurance"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Dealroom",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQY2RCSENCLWdMT2Z4eG1TM1NfWGowcjYtbEF3NEJ5aTFCd3JCS0xMUlJidzl6VVJCRnNrLUVvcm1XTVh2T1NGQnpsMmFieXhiODRhQjBwTkZOV1pkOE9GTXo0cFliWUhsWV83Q3dXRTRXZ0lmelkyR0VXNUtiWEppUlpnZjBqMHdDSTBKOHFiYjVTUXU2MDFDYmxSQnlGdjVnTjRScUpEUC1uZmI1bWxHRlNsNENxODNrOVJwMXJTYw?oc=5",
+          "publishedAt": "2026-09-27T15:11:02.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T15:11:02.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Bombay High Court Dismisses Insurance Company's Appeal in Motor Accident Claim — Multiplier and Negligence Contentions Rejected. Deceased biker crushed under tanker wheel; court affirms tribunal's finding of sole negligence on tanker driver and uphol",
+      "source": "Lawtext",
+      "sourceUrl": "https://lawtext.in",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE40aW1OOVFYQVpIUHNWZHQ5TGh5YUI0ZG9wemJzVm8tQlhqZEJmcGFTQllZVGZDUTk1bkdjY3hnUEdNY0lQN2FuRE0wWWVuVmhlOGQyTzBTendTbFFPYjNjZFlaUkxBQQ?oc=5",
+      "publishedAt": "2026-09-27T15:10:16.000Z",
+      "description": "",
+      "id": "66d4f7eee2cc",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "motor insurance claims"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Lawtext",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE40aW1OOVFYQVpIUHNWZHQ5TGh5YUI0ZG9wemJzVm8tQlhqZEJmcGFTQllZVGZDUTk1bkdjY3hnUEdNY0lQN2FuRE0wWWVuVmhlOGQyTzBTendTbFFPYjNjZFlaUkxBQQ?oc=5",
+          "publishedAt": "2026-09-27T15:10:16.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T15:10:16.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "7 Money Moves to Make Before October 1, When Rent, Insurance and Utility Renewals All Hit at Once",
+      "source": "inkl",
+      "sourceUrl": "https://www.inkl.com",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOSm5GdEZ4UDlhX3Fabl8zRVNHVFVsLXd3eXBzY2VHUUlpQkFmUFFlc0ZxTlhNR2JKbmJ2eGxjcDZGUzNtVGNzX2lxSVc2MTVWa0JLdmFPeG9peG43Tkk1M1lWblVVcXA5N3MtSVhBT004Wi1Va21qX19lWkMwVllfT1Q5TXhwTDhDRV9sdG5fUkRJd1dKUDBOOG82TGVGM2lZNVlUVmJXMVVoMmtqeWVFVlpGX3BZc1hJLVhRajRR?oc=5",
+      "publishedAt": "2026-09-27T13:21:01.000Z",
+      "description": "",
+      "id": "0edb029374bb",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "auto insurance"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "inkl",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOSm5GdEZ4UDlhX3Fabl8zRVNHVFVsLXd3eXBzY2VHUUlpQkFmUFFlc0ZxTlhNR2JKbmJ2eGxjcDZGUzNtVGNzX2lxSVc2MTVWa0JLdmFPeG9peG43Tkk1M1lWblVVcXA5N3MtSVhBT004Wi1Va21qX19lWkMwVllfT1Q5TXhwTDhDRV9sdG5fUkRJd1dKUDBOOG82TGVGM2lZNVlUVmJXMVVoMmtqeWVFVlpGX3BZc1hJLVhRajRR?oc=5",
+          "publishedAt": "2026-09-27T13:21:01.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T13:21:01.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Homebuyer's insurance estimate jumps from $3,000 to $5,000, and Reddit says to compare quotes",
+      "source": "Yahoo Finance",
+      "sourceUrl": "https://finance.yahoo.com",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNTzZjbTRhVzZDY2ZpdklPMktEejV2djFiTG9BV29JTnBaZjBUY2VJWkowT2NPT3pKai14anNNX19uMGk5MV9vZ2FWcnhIR0x6MUhHc3B4dmM1ckNZZVFVa2hqRHRVNTlMd2RkSUdZeEJDSjh1bTNRc0U3T2hQVm51TTlFSGhPaFY2UWdhODV1X0tHQ3ZoN2VVemo1ZV9JYUtM?oc=5",
+      "publishedAt": "2026-09-27T11:00:00.000Z",
+      "description": "",
+      "id": "fb29fbd4c64a",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "auto insurance"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNTzZjbTRhVzZDY2ZpdklPMktEejV2djFiTG9BV29JTnBaZjBUY2VJWkowT2NPT3pKai14anNNX19uMGk5MV9vZ2FWcnhIR0x6MUhHc3B4dmM1ckNZZVFVa2hqRHRVNTlMd2RkSUdZeEJDSjh1bTNRc0U3T2hQVm51TTlFSGhPaFY2UWdhODV1X0tHQ3ZoN2VVemo1ZV9JYUtM?oc=5",
+          "publishedAt": "2026-09-27T11:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T11:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "13 Reasons Florida Is the Worst State To Retire",
+      "source": "aol.com",
+      "sourceUrl": "https://www.aol.com",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE12ZXNzaGE0YzYyV2JZSjBFNk1KSmFOc1NKbFNqQkUtOHlLVWM5S2lzQmdMLXRBcjZnb0g0bHNMcmdmNmE4cWYtQndtXzNWc3pSVG9JS1ZvMFZ5UmV2bkdWb2h1czI5eU05NENfcXhucjRjS1hrX3FNLXZmZFRSUmM?oc=5",
+      "publishedAt": "2026-09-27T10:00:00.000Z",
+      "description": "",
+      "id": "fa324a56c1c4",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "auto insurance"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "aol.com",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE12ZXNzaGE0YzYyV2JZSjBFNk1KSmFOc1NKbFNqQkUtOHlLVWM5S2lzQmdMLXRBcjZnb0g0bHNMcmdmNmE4cWYtQndtXzNWc3pSVG9JS1ZvMFZ5UmV2bkdWb2h1czI5eU05NENfcXhucjRjS1hrX3FNLXZmZFRSUmM?oc=5",
+          "publishedAt": "2026-09-27T10:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T10:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Dubai Police offer 10 tips to avoid online scams disguised as vehicle insurance",
+      "source": "GulfToday",
+      "sourceUrl": "https://www.gulftoday.ae",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNYVpmQkwzRW5BNS15cE5hNzItWGhGSGxvYlJBRXowdy1Gbjc1cDdzZEhVWjJXalRpR1NiSG9DNjhSRklKTE45UEFWc2FEcGJWT3ZzLTlrWXJ5c19UT1NFY2Vvd0dmSV9KMlV1Um4yTlFtVUNsS0JzZnlXcE9VckdLV2F2ekU5b0stdzczSEV1bmJQcFJ5eU13emtpQVduY1VLZUNpRHJXdjJWMW52Nm5vZ3JQVGY1QWJpNUlJMA?oc=5",
+      "publishedAt": "2026-09-27T09:26:50.000Z",
+      "description": "",
+      "id": "bde3a5d4cd6a",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "motor insurance claims"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "GulfToday",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNYVpmQkwzRW5BNS15cE5hNzItWGhGSGxvYlJBRXowdy1Gbjc1cDdzZEhVWjJXalRpR1NiSG9DNjhSRklKTE45UEFWc2FEcGJWT3ZzLTlrWXJ5c19UT1NFY2Vvd0dmSV9KMlV1Um4yTlFtVUNsS0JzZnlXcE9VckdLV2F2ekU5b0stdzczSEV1bmJQcFJ5eU13emtpQVduY1VLZUNpRHJXdjJWMW52Nm5vZ3JQVGY1QWJpNUlJMA?oc=5",
+          "publishedAt": "2026-09-27T09:26:50.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T09:26:50.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "High Court of Karnataka Upholds Compensation in Workmen's Compensation Case — Insurance Company Liable for Death of Employee in Motor Vehicle Accident. Employer-Employee Relationship Established Through Consistent Employment and Wages,",
+      "source": "Lawtext",
+      "sourceUrl": "https://lawtext.in",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE90QjVacG44aGZzUll3Q0xld3lrWDVEeWdpRVFCTzVzUVJPWmd4NXRPejhsbXpmOEZWeklOZ0wwU2xmZXdXamxKenRfSTNPTGlQYXlKYkIzN3JlaVVmVW1QYXMzdGVDdw?oc=5",
+      "publishedAt": "2026-09-27T09:12:48.000Z",
+      "description": "",
+      "id": "ce91bd56c416",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "motor insurance claims"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Lawtext",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE90QjVacG44aGZzUll3Q0xld3lrWDVEeWdpRVFCTzVzUVJPWmd4NXRPejhsbXpmOEZWeklOZ0wwU2xmZXdXamxKenRfSTNPTGlQYXlKYkIzN3JlaVVmVW1QYXMzdGVDdw?oc=5",
+          "publishedAt": "2026-09-27T09:12:48.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T09:12:48.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Renewing, buying car insurance in UAE? Dubai Police share 10 tips to avoid scams",
+      "source": "Khaleej Times",
+      "sourceUrl": "https://www.khaleejtimes.com",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5yV1RicnpCaUFhZVZzQ0hHcXlYWDc0VGpxOUQ4Nk5zc08zRjNndVFqY29aNEh2T21Xc1lWbmhEZXMwckw2bV9mVmdtY1BJLUQ0NmRveE5VOW5OSFUzYVlvcmpHUWl1SmNrQnVYVU1fN2szU0hn0gF8QVVfeXFMTmc5cGFGY1RIbmdLa2puc0FOOTd4NHlqWmUtaDlNTlZ5c05qSnYyWDNwYTdBRkxhNmdyVWRocVplSnVfVTVmdWFFY2xPcXR5R3Nab0tiUk04S0tnUzRxWjJVQjdScDZrS2hPaC10b1VJaGZxbWMzdDlqd2tNdw?oc=5",
+      "publishedAt": "2026-09-27T08:42:22.000Z",
+      "description": "",
+      "id": "f36d590e15d1",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "auto insurance"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Khaleej Times",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5yV1RicnpCaUFhZVZzQ0hHcXlYWDc0VGpxOUQ4Nk5zc08zRjNndVFqY29aNEh2T21Xc1lWbmhEZXMwckw2bV9mVmdtY1BJLUQ0NmRveE5VOW5OSFUzYVlvcmpHUWl1SmNrQnVYVU1fN2szU0hn0gF8QVVfeXFMTmc5cGFGY1RIbmdLa2puc0FOOTd4NHlqWmUtaDlNTlZ5c05qSnYyWDNwYTdBRkxhNmdyVWRocVplSnVfVTVmdWFFY2xPcXR5R3Nab0tiUk04S0tnUzRxWjJVQjdScDZrS2hPaC10b1VJaGZxbWMzdDlqd2tNdw?oc=5",
+          "publishedAt": "2026-09-27T08:42:22.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T08:42:22.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Earthquake Insurance for Washington Residents: Is It Worth It?",
+      "source": "Insurify",
+      "sourceUrl": "https://insurify.com",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5ob1dlWG5YbXJkd3YtYnd5cE9mM0ZKWXN5blpTLXVvSkZlbEVwSG1ndU9xVy1sWlBwRW1ZX0tISW1SX3ZXVzNVV094X1Nua3ZHRUNQRFkzSThVRDEzR2Y0Rk1ONXhzOVlNcjV1aldMSFdDN25sc2Q3RGhhbEtsN0k?oc=5",
+      "publishedAt": "2026-09-27T07:00:00.000Z",
+      "description": "",
+      "id": "1646e0b59a51",
+      "category": "auto",
+      "categoryHints": [
+        "auto",
+        "insurance"
+      ],
+      "matchedQueries": [
+        "auto insurance",
+        "insurance industry"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Insurify",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5ob1dlWG5YbXJkd3YtYnd5cE9mM0ZKWXN5blpTLXVvSkZlbEVwSG1ndU9xVy1sWlBwRW1ZX0tISW1SX3ZXVzNVV094X1Nua3ZHRUNQRFkzSThVRDEzR2Y0Rk1ONXhzOVlNcjV1aldMSFdDN25sc2Q3RGhhbEtsN0k?oc=5",
+          "publishedAt": "2026-09-27T07:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T07:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "New Jersey Flood Insurance: Complete Guide for Homeowners in 2026",
+      "source": "Insurify",
+      "sourceUrl": "https://insurify.com",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE80dFhudzZyS1dtZ2FNQkFkMkQ2TGYySWR2ZUtwQ2p6VjQtVFA1RDNDak5CVE8xY0dfTFF6aXZBWjlTTTdKS3lxU3g4Y2lzLWNubDViX0FWd3FXRERWMWdFREg4RGZQQ2ZrOVRXQlAxOVVLSTZWV3diVw?oc=5",
+      "publishedAt": "2026-09-27T07:00:00.000Z",
+      "description": "",
+      "id": "949072946529",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "auto insurance"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Insurify",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE80dFhudzZyS1dtZ2FNQkFkMkQ2TGYySWR2ZUtwQ2p6VjQtVFA1RDNDak5CVE8xY0dfTFF6aXZBWjlTTTdKS3lxU3g4Y2lzLWNubDViX0FWd3FXRERWMWdFREg4RGZQQ2ZrOVRXQlAxOVVLSTZWV3diVw?oc=5",
+          "publishedAt": "2026-09-27T07:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T07:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Supreme Court Partially Allows Insurance Company's Appeal in Motor Accident Claim — Reduces Dependency Compensation for Bachelor Deceased. The Court held that for a bachelor, 50% deduction for personal expenses is mandatory under Pranay Sethi,",
+      "source": "Lawtext",
+      "sourceUrl": "https://lawtext.in",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBzSVZZbVk4YXhuaUZsNllzd0hlcWhLS0dDV21xbUZKRjhpSURfWm9rQURyQzVmbi1RS3dkbzJlVkpoeUFDNTZHZGNKZXFLVXNsMkZDZnRrUzFTYVZ0SW9zZTFCM09XdFU?oc=5",
+      "publishedAt": "2026-09-27T05:51:21.000Z",
+      "description": "",
+      "id": "3ca5414d12cd",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "motor insurance claims"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Lawtext",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBzSVZZbVk4YXhuaUZsNllzd0hlcWhLS0dDV21xbUZKRjhpSURfWm9rQURyQzVmbi1RS3dkbzJlVkpoeUFDNTZHZGNKZXFLVXNsMkZDZnRrUzFTYVZ0SW9zZTFCM09XdFU?oc=5",
+          "publishedAt": "2026-09-27T05:51:21.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T05:51:21.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "High Court Modifies Compensation Award in Motor Accident Case — Additional Amount Granted. The court reassessed the compensation based on minimum wage standards and future income prospects, increasing the total compensation significantly.",
+      "source": "Lawtext",
+      "sourceUrl": "https://lawtext.in",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1IRk9GRDQza2xoUXN2VHhGM2lqZGhkX1lJS1BkdXNYUEEwWV9VREJFdkVjQkR3a0cwLWR5WUp0akQ3VUZPbjZrNjJsTlBoQ0ZyTV9NWm1nYnM0TWItcGdXWkg5elpEdw?oc=5",
+      "publishedAt": "2026-09-27T05:29:51.000Z",
+      "description": "",
+      "id": "d32726de4c2c",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "motor insurance claims"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Lawtext",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1IRk9GRDQza2xoUXN2VHhGM2lqZGhkX1lJS1BkdXNYUEEwWV9VREJFdkVjQkR3a0cwLWR5WUp0akQ3VUZPbjZrNjJsTlBoQ0ZyTV9NWm1nYnM0TWItcGdXWkg5elpEdw?oc=5",
+          "publishedAt": "2026-09-27T05:29:51.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T05:29:51.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Madras High Court Enhances Compensation for Deceased Motorcyclist's Parents in Motor Accident Claim. Insurer Remains Liable as Policy Cancellation Occurred After Accident, Contributory Negligence Reduced for Non-Wearing of Helmet but Not for Lack o",
+      "source": "Lawtext",
+      "sourceUrl": "https://lawtext.in",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE83eFRsZTZSYlZlNDdDUF9qNmdnZnRjbFczbXpUSndPUmJtcHdaeGY5LVJBYjg2NzBKc2FvY0VvcmF6bWlzUFRvQ2dweEZOdEFfWS1paW9nZVRTM2hCNnA0SUJEM2wyQUVq?oc=5",
+      "publishedAt": "2026-09-26T23:55:37.000Z",
+      "description": "",
+      "id": "c621aac219d1",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "motor insurance claims"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Lawtext",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE83eFRsZTZSYlZlNDdDUF9qNmdnZnRjbFczbXpUSndPUmJtcHdaeGY5LVJBYjg2NzBKc2FvY0VvcmF6bWlzUFRvQ2dweEZOdEFfWS1paW9nZVRTM2hCNnA0SUJEM2wyQUVq?oc=5",
+          "publishedAt": "2026-09-26T23:55:37.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-26T23:55:37.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "New 2027 Buick Enclave Sport Touring for sale in Arlington, TX - 5GAERBKS2VJ111433",
+      "source": "JD Power",
+      "sourceUrl": "https://www.jdpower.com",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNOEVMZk0xcXp5VTNtN1ZOSmJaaVVfaGZMeTZ4VnF6cXE2MmthQ0RFYmtlUXE0d3owUGJ2a1dNeFVxaXhOaUwxV1JQYzJCZFdRRFlqLV9UaFBlMjhRSjVIRHotLTFJemFoTjY3RXI1R0FFVTRzb1JubTJxQUs4N0pBRjh0V3cwRTZpQjB4bDIwZkw3YzZzOHAxMzl6Wmk2ZFdH?oc=5",
+      "publishedAt": "2026-09-26T23:25:49.000Z",
+      "description": "",
+      "id": "b02b52158fc5",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "auto insurance"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "JD Power",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNOEVMZk0xcXp5VTNtN1ZOSmJaaVVfaGZMeTZ4VnF6cXE2MmthQ0RFYmtlUXE0d3owUGJ2a1dNeFVxaXhOaUwxV1JQYzJCZFdRRFlqLV9UaFBlMjhRSjVIRHotLTFJemFoTjY3RXI1R0FFVTRzb1JubTJxQUs4N0pBRjh0V3cwRTZpQjB4bDIwZkw3YzZzOHAxMzl6Wmk2ZFdH?oc=5",
+          "publishedAt": "2026-09-26T23:25:49.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-26T23:25:49.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Neighbor’s Tree Crushes Car During Storm, But an Earlier Text Could Complicate Who Pays",
+      "source": "Yahoo",
+      "sourceUrl": "https://www.yahoo.com",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQNGl4ZUNHWVp6a1NDNi1JeTBLNzUzWHhkQlhVQWlhNG5vT0Z0QzVOZkJDbHJid0xMZ3Z2Z2xuZXdPZXVaNUxPWlEybDRWMkhtOVUzaFhFbXkzcV9rYWRDSFBqUXJOekJUTzdGWmpYalp4eEVkU2FZN1lOcnJQQ25VN2o2ZFJFNmZKTVk4cDhWbHhrUQ?oc=5",
+      "publishedAt": "2026-09-26T23:00:07.000Z",
+      "description": "",
+      "id": "55dd535114da",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "auto insurance"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Yahoo",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQNGl4ZUNHWVp6a1NDNi1JeTBLNzUzWHhkQlhVQWlhNG5vT0Z0QzVOZkJDbHJid0xMZ3Z2Z2xuZXdPZXVaNUxPWlEybDRWMkhtOVUzaFhFbXkzcV9rYWRDSFBqUXJOekJUTzdGWmpYalp4eEVkU2FZN1lOcnJQQ25VN2o2ZFJFNmZKTVk4cDhWbHhrUQ?oc=5",
+          "publishedAt": "2026-09-26T23:00:07.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-26T23:00:07.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Supreme Court Allows Insurance Claim for Truck Fire Despite Permit Technicality — National Permit Valid Without Authorization Fee for Intra-State Use. Insurance Claim Cannot Be Repudiated on Ground of Non-Payment of Authorization Fee When Vehicle W",
+      "source": "Lawtext",
+      "sourceUrl": "https://lawtext.in",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1ncnc0ZE1lOVJQa3VOTGx4c0lUQTVLcmtOVVVuQVRHekEzZGlEdUNNQTN2VHF4WDQxTGhhc2VTd05FLTRhSU4zME1tUEdDTGpuUGtrVW1wSl96XzZuM0pud3QwY3A?oc=5",
+      "publishedAt": "2026-09-26T22:41:30.000Z",
+      "description": "",
+      "id": "d017640c37c8",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "motor insurance claims"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Lawtext",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1ncnc0ZE1lOVJQa3VOTGx4c0lUQTVLcmtOVVVuQVRHekEzZGlEdUNNQTN2VHF4WDQxTGhhc2VTd05FLTRhSU4zME1tUEdDTGpuUGtrVW1wSl96XzZuM0pud3QwY3A?oc=5",
+          "publishedAt": "2026-09-26T22:41:30.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-26T22:41:30.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Trump Approves New Fuel Economy Rules, Says Car Prices Will Fall",
+      "source": "Newsweek",
+      "sourceUrl": "https://www.newsweek.com",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOLVlwcUlBR28zTkg4Y1N1cm9Gd3VKaHhYUlBVaFVxYlM0NmZQTjJyVll5TjBNQ0s1TFN1a0lYUzBOQlREbUYtVjR2amg3dllyZkZnSjNJNlY5cVBqN2tTVEhKdG9zYkx1OVI3RUM0TDFadkZuS0JFVUN6Qmw0ZWo2R0hRVGNWTW8?oc=5",
+      "publishedAt": "2026-09-26T21:20:00.000Z",
+      "description": "",
+      "id": "a44d219ecf4b",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "auto insurance"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Newsweek",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOLVlwcUlBR28zTkg4Y1N1cm9Gd3VKaHhYUlBVaFVxYlM0NmZQTjJyVll5TjBNQ0s1TFN1a0lYUzBOQlREbUYtVjR2amg3dllyZkZnSjNJNlY5cVBqN2tTVEhKdG9zYkx1OVI3RUM0TDFadkZuS0JFVUN6Qmw0ZWo2R0hRVGNWTW8?oc=5",
+          "publishedAt": "2026-09-26T21:20:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-26T21:20:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "House lawmakers consider several items during wind down to general election",
+      "source": "Michigan Public",
+      "sourceUrl": "https://www.michiganpublic.org",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOR1RkTGVZaFVEcGpvdG1ZNzd5NXBwNzI2d1dsNU5LWnZUSXdLSEJHN2F1cTlwT0ZwR3lyYnFmV3NBcDBOUm9lNVVWMVQ2cURndmNlWm1IcEQ2UmlTR3dqdUFIanlNOHdwQ1VLNmJmYU9MTUp5YlA2bVo0d1NwOVZUZUFzQnhLa1FCTWN2OGJyZWVZRUkySjc2ZnhxWGtJNUN6ZGpNbjJ2dVZyR3FKSXlrWDdfZlpFUnliZU1kdGJZN2RyVm5XbmJyZ1Y3ZldpUlZpZ1pn?oc=5",
+      "publishedAt": "2026-09-26T20:00:00.000Z",
+      "description": "",
+      "id": "1ca248aee093",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "auto insurance"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Michigan Public",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOR1RkTGVZaFVEcGpvdG1ZNzd5NXBwNzI2d1dsNU5LWnZUSXdLSEJHN2F1cTlwT0ZwR3lyYnFmV3NBcDBOUm9lNVVWMVQ2cURndmNlWm1IcEQ2UmlTR3dqdUFIanlNOHdwQ1VLNmJmYU9MTUp5YlA2bVo0d1NwOVZUZUFzQnhLa1FCTWN2OGJyZWVZRUkySjc2ZnhxWGtJNUN6ZGpNbjJ2dVZyR3FKSXlrWDdfZlpFUnliZU1kdGJZN2RyVm5XbmJyZ1Y3ZldpUlZpZ1pn?oc=5",
+          "publishedAt": "2026-09-26T20:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-26T20:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Allstate Added 708,000 Auto Policies Without Adding Premium. That Arithmetic Has to Land Somewhere.",
+      "source": "Yahoo Finance",
+      "sourceUrl": "https://finance.yahoo.com",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQSHJTR0sxSGVwYWQ5a3ZtMzZRVzk0REx2NjI3c3ZYUUt4THIyN0h1LUdRRG9zTDk0MG1Idm10Zy1vS1lzamhRRUtzSGtDWnJ3QVNWY3NEc2R4WFlFLWFYSzJfRDV0X19qcjU0NWNKWU1nTHhvcF9kV0h0cGx1ODd1S19WaDJ1OExGMkktdkxwVUFjamtsX3Rj?oc=5",
+      "publishedAt": "2026-09-26T18:15:00.000Z",
+      "description": "",
+      "id": "cb2aef346ca0",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "auto insurance"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQSHJTR0sxSGVwYWQ5a3ZtMzZRVzk0REx2NjI3c3ZYUUt4THIyN0h1LUdRRG9zTDk0MG1Idm10Zy1vS1lzamhRRUtzSGtDWnJ3QVNWY3NEc2R4WFlFLWFYSzJfRDV0X19qcjU0NWNKWU1nTHhvcF9kV0h0cGx1ODd1S19WaDJ1OExGMkktdkxwVUFjamtsX3Rj?oc=5",
+          "publishedAt": "2026-09-26T18:15:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-26T18:15:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Madras High Court Upholds Insurance Company's Liability in Load Auto Accident — Pay and Recover Principle Applied. The court held that the insurer must compensate the claimant for the death of a minor occupant of a goods vehicle, despite policy violation",
+      "source": "Lawtext",
+      "sourceUrl": "https://lawtext.in",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9Qb1dDYkdIYTgydFN4NV9peWVTMVZHbWF6dDRXY25FbGtxRnpwR2xYZzhjdXREenI4djY5VFFsNXZmX185bEhSMUlWZGtZaE1ESll0N1lBNjVMeEpPZG0tcXowZWZnQQ?oc=5",
+      "publishedAt": "2026-09-26T18:05:59.000Z",
+      "description": "",
+      "id": "4861ad19308f",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "motor insurance claims"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Lawtext",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9Qb1dDYkdIYTgydFN4NV9peWVTMVZHbWF6dDRXY25FbGtxRnpwR2xYZzhjdXREenI4djY5VFFsNXZmX185bEhSMUlWZGtZaE1ESll0N1lBNjVMeEpPZG0tcXowZWZnQQ?oc=5",
+          "publishedAt": "2026-09-26T18:05:59.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-26T18:05:59.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "High Court of Karnataka Enhances Compensation in Motor Accident Claim Case — Insurance Company's Appeal Dismissed. Computation of Future Prospects and Deduction for Personal Expenses Under Motor Vehicles Act, 1988 — Deceased was a bachelo",
+      "source": "Lawtext",
+      "sourceUrl": "https://lawtext.in",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1uMVd4cERuMUlOZzl2VGFmeG5vdE1XVVRTOHpnSHBhZGdmeDd3bm01aXdMY29lNXpHY3k0RTVhMXF2WTdnd1U3YXFhMThYMzBDTld3c3c2X1EzM1dUTllGT0J6M1IyZw?oc=5",
+      "publishedAt": "2026-09-26T15:06:36.000Z",
+      "description": "",
+      "id": "3e7aa29ffa34",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "motor insurance claims"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Lawtext",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1lVzVYdDVQbXFSOHVTeGJCWjZtVWc5OTctbnBVbThVc0I4ZnRyYTM2UEpEcFJPckU0dlNZbDlVRmNqdDhGZ01wTUoweFhyaHhuNzA4eTZoZkJFM3F5aTZ6X2lFTXU3XzVl?oc=5",
+          "publishedAt": "2026-09-27T09:16:19.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-26T15:06:36.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "New 2027 Chevrolet Traverse AWD RS for sale in Stillwater, OK - 1GNEVLKS1VJ109762",
+      "source": "JD Power",
+      "sourceUrl": "https://www.jdpower.com",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQVVNaejRxdlJLZ245YkZRZnBPQTBOdUJ3Zm13enpQbmpmMHFTNnJVRW84ODdTTjd5T3I0N0JIeEItUWlOOGhaaHJaaTd1cDVTaG0zUFpHMEV6dG9vcWRqbnctSkhwRm8wVWJCWlpOOU1mVEJRMG9IbTBtSmduNXpuc2V5aGNTcjhLX01oaWhFbDgtUFNmNE4zb1d3aGVPeVBSTnNKV1djZ2paRTg?oc=5",
+      "publishedAt": "2026-09-26T15:03:06.000Z",
+      "description": "",
+      "id": "1430616021d1",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "auto insurance"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "JD Power",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQVVNaejRxdlJLZ245YkZRZnBPQTBOdUJ3Zm13enpQbmpmMHFTNnJVRW84ODdTTjd5T3I0N0JIeEItUWlOOGhaaHJaaTd1cDVTaG0zUFpHMEV6dG9vcWRqbnctSkhwRm8wVWJCWlpOOU1mVEJRMG9IbTBtSmduNXpuc2V5aGNTcjhLX01oaWhFbDgtUFNmNE4zb1d3aGVPeVBSTnNKV1djZ2paRTg?oc=5",
+          "publishedAt": "2026-09-26T15:03:06.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-26T15:03:06.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Thieves are drilling into car gas tanks to steal fuel as prices surge at the pump — with one Texas man accused of swiping $1,800 in diesel",
+      "source": "aol.com",
+      "sourceUrl": "https://www.aol.com",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE12U0l3OHN5UGNEcHZzNFBRc1JtbzFKVURoaTd3c0pqMUl2Q29ER0Y4WnltUlJrYXhUQTgxLXJXU0lUQzd1M2F0eEpwcnhmLUk2RV9PT0dqa3N1WHZfQUlHOGJZQnBSdTh6blFoSnNLbE4zem13VHdMQWUzVmpHNmc?oc=5",
+      "publishedAt": "2026-09-26T15:00:00.000Z",
+      "description": "",
+      "id": "7e6d3de403d5",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "auto insurance"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "aol.com",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE12U0l3OHN5UGNEcHZzNFBRc1JtbzFKVURoaTd3c0pqMUl2Q29ER0Y4WnltUlJrYXhUQTgxLXJXU0lUQzd1M2F0eEpwcnhmLUk2RV9PT0dqa3N1WHZfQUlHOGJZQnBSdTh6blFoSnNLbE4zem13VHdMQWUzVmpHNmc?oc=5",
+          "publishedAt": "2026-09-26T15:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-26T15:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "이형일, 첫 경제현안간담회 가동…전기차·퇴직연금 논의",
+      "source": "뉴스1",
+      "sourceUrl": "https://www.news1.kr",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE55RDJzVDVBR1FfZVE3OVdNNkN2WFh0ZzEzTmwtSk9Ib19qVDhNMGc1bGJmUmswdDktQU40TnFqa1Etd1pReTJnTjZDbFNGb3VqTUNmSdIBWkFVX3lxTE9tUWhwMDhSam9SWlFOR0ZZNmg0R3B6TWVGVlVCcnBrOWJ6NWp6dE1NY3hxdnZIWUFBeEg3M2hwTmdNX0NvNEJLMER3UmhHcElidGpJT1FVT2lXUQ?oc=5",
+      "publishedAt": "2026-09-27T10:33:32.000Z",
+      "description": "",
+      "id": "4ea58c6515f9",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "전기차 정책"
+      ],
+      "coverage": 7,
+      "sources": [
+        {
+          "name": "연합뉴스TV",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA2RzJBSzRtWVFrV3RWRkdic0RCNjgyd2tBRy0ySUpkdnpqTG5GVkRlVHVLNFRWbjFMekFKQktraFhJc3FYVVV6RG9DYzZlRkE1WVdxNXBHZ3hTck9TREEzakJFMlF6VVU?oc=5",
+          "publishedAt": "2026-09-27T11:31:00.000Z"
+        },
+        {
+          "name": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1HRkp3MXFkUzBCanRMSFY2d3J3RGFnQnRWSFoyeUtXakdWRXk2cXZGSlQ4d0xhMjNmdFhudWxGN0cxa053dkJ2VERyc29Mc0ljX2kyYUpZSVlSLUHSAWBBVV95cUxNTUUyRlAzbS0ySkt2aGhWbEpfdE1iMTF0RFIxcEV1bWpNMzFIajVna1hFSUNBeHpEQTFEUkVuSm14ZFJodTYtQ1dTSV9qU29ZT3hzZGZXZWl6SE52UDJBOUo?oc=5",
+          "publishedAt": "2026-09-27T11:04:30.000Z"
+        },
+        {
+          "name": "한국경제",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBvSlp3VjlHa05POEZmb2JKRzJZSzNuS2VxVHdneHpoV29yNWhwUFhIOGJtXzJYZWJEdndidllGYnVZYTlxd0RNVjFoYXJMbUQzQVlTRklrZDYyZw?oc=5",
+          "publishedAt": "2026-09-27T12:00:37.000Z"
+        },
+        {
+          "name": "KBS 뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1zcjZ2WXlTQ1cwSjBYclFLZkw5RWtRQnVYZlcwdTRwUTRKUnJIc0JYYzFxX21WMHVUYWhVcEl2MjVha2dCdTYyMndKZ3RBQU9NUlFFQkxYRTNhTmM?oc=5",
+          "publishedAt": "2026-09-27T11:23:00.000Z"
+        },
+        {
+          "name": "다음뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBLOTR3VklpbXVqT0pyV0stUDZ0UlZpQmRfM0ZzWWZ3RUtLRDdFT1JHelFuWmpmdFFaMWxqRmVJMWJJVnh5aXZEM0lHaEdHckk?oc=5",
+          "publishedAt": "2026-09-27T11:25:09.000Z"
+        },
+        {
+          "name": "뉴스1",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE55RDJzVDVBR1FfZVE3OVdNNkN2WFh0ZzEzTmwtSk9Ib19qVDhNMGc1bGJmUmswdDktQU40TnFqa1Etd1pReTJnTjZDbFNGb3VqTUNmSdIBWkFVX3lxTE9tUWhwMDhSam9SWlFOR0ZZNmg0R3B6TWVGVlVCcnBrOWJ6NWp6dE1NY3hxdnZIWUFBeEg3M2hwTmdNX0NvNEJLMER3UmhHcElidGpJT1FVT2lXUQ?oc=5",
+          "publishedAt": "2026-09-27T10:33:32.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T10:33:32.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "이형일 부총리, 첫 현안간담회… 전기차·퇴직연금 논의",
+      "source": "조선일보",
+      "sourceUrl": "https://www.chosun.com",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNLW14Zmlvekc5d1llenZVS2pnVUp1UDIzOXJYWndQQ3FrV2JJSkR2blhWZVVMSHpQNHVyQ1pUQ29CeFNKSzQ3ZjBTMWJNQXRqekkzVTRndllXU05nd1h4bkFWZ3BXa3IzT2I4bWFqNkpaRHdnVE1fby04WXdkNWtJUU0yVFZkVk9DZGsxQjRR?oc=5",
+      "publishedAt": "2026-09-27T10:53:00.000Z",
+      "description": "",
+      "id": "d47075c8738e",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "전기차 정책"
+      ],
+      "coverage": 2,
+      "sources": [
+        {
+          "name": "조선일보",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNLW14Zmlvekc5d1llenZVS2pnVUp1UDIzOXJYWndQQ3FrV2JJSkR2blhWZVVMSHpQNHVyQ1pUQ29CeFNKSzQ3ZjBTMWJNQXRqekkzVTRndllXU05nd1h4bkFWZ3BXa3IzT2I4bWFqNkpaRHdnVE1fby04WXdkNWtJUU0yVFZkVk9DZGsxQjRR?oc=5",
+          "publishedAt": "2026-09-27T10:53:00.000Z"
+        },
+        {
+          "name": "아주경제",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBUVUVldGlHYjRRa1NqZjY5MmFaZUVxemk2S2RRQjV1VTZLc2UwUmI3eFRjSlREcm4zTWNvNTVWal9hS0pheko1Y3lrVHp2NEdHVGdlN3llM1hxd9IBWEFVX3lxTE5mMU0yOWlLQ0R4aVQ4WEV1ZkNFdmhaMDJsRmNQQTNoQ09CUTR5OE1MVG5tZ1JNcjBac0M5X1RHTDVJcERoblE3azlTeWRMcVBpUWFteEpRV3c?oc=5",
+          "publishedAt": "2026-09-27T12:01:35.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T10:53:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Watch Tesla FSD's New Automatic Collision Evasion Feature in Action [VIDEO]",
+      "source": "Not a Tesla App",
+      "sourceUrl": "https://www.notateslaapp.com",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOeFVzal9UTFZGZzRFdUFIODJaU0NlbEE3WHdfZ2p3TU81R05ValV2S3Z2d2ZEYmVUeW9acTczTmR2dTNJWEU1aWtaT2JUVjFOR0R3Y0kyY0ZLRERyWXNoRHU3eTBRQjZ1bEVTSVBYSGpiUUFsRWxWdmZFOTI4LWhwMU5mZGJmN2xwUVNZTzJVcmV6cGdYbnlVMVBOejd1V1FZNTdsN1M2RExFVVpvTlI0Zw?oc=5",
+      "publishedAt": "2026-09-26T15:00:00.000Z",
+      "description": "",
+      "id": "089f22492a2a",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "Tesla FSD"
+      ],
+      "coverage": 2,
+      "sources": [
+        {
+          "name": "Not a Tesla App",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOeFVzal9UTFZGZzRFdUFIODJaU0NlbEE3WHdfZ2p3TU81R05ValV2S3Z2d2ZEYmVUeW9acTczTmR2dTNJWEU1aWtaT2JUVjFOR0R3Y0kyY0ZLRERyWXNoRHU3eTBRQjZ1bEVTSVBYSGpiUUFsRWxWdmZFOTI4LWhwMU5mZGJmN2xwUVNZTzJVcmV6cGdYbnlVMVBOejd1V1FZNTdsN1M2RExFVVpvTlI0Zw?oc=5",
+          "publishedAt": "2026-09-26T15:00:00.000Z"
+        },
+        {
+          "name": "teslahubs.com",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQa1BuSjVaZENXUC1jZEljOVRlZXFYd3JaVThuX2FZanFZcjBJX3dRdWZ1TGk5YXpMemtaMUxPeW9DS2FacWoxSFltZVYxekN0YXVuZHdDeTBWVTMzdXhvZ1o4VXVJdVNsREg5NzBXcy1wbmR6SU5sckg1RjI5WURSZWRMRE1pOWtFdVhCa3Q3TEpSeldhc2RHOE9uUjl5c0RxcG5PQjFLV2k?oc=5",
+          "publishedAt": "2026-09-26T16:01:24.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-26T15:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "‘로봇·SDV’에도 ‘저평가 늪’ 헤매는 HL만도 [저PBR 숨은그림찾기]",
+      "source": "한국금융신문",
+      "sourceUrl": "https://www.fntimes.com",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5QbHAyQmdHeXVMTHBzb2l2cjhGWEVLWlcydUxlTEVOZzlnazk0ZjBKN3I1WkJBdFJDZnRoUTlQdUZLZHA1V3pQOVRnTDFaUVVWNnIwMEVFdE9yVTZwLVdpLW91eHVXaDBxTS1RbHh1N3puUnRSZ2dwZUVRVTM?oc=5",
+      "publishedAt": "2026-09-27T15:00:00.000Z",
+      "description": "",
+      "id": "3ba8e08bcc96",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "소프트웨어 중심 자동차 SDV"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "한국금융신문",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5QbHAyQmdHeXVMTHBzb2l2cjhGWEVLWlcydUxlTEVOZzlnazk0ZjBKN3I1WkJBdFJDZnRoUTlQdUZLZHA1V3pQOVRnTDFaUVVWNnIwMEVFdE9yVTZwLVdpLW91eHVXaDBxTS1RbHh1N3puUnRSZ2dwZUVRVTM?oc=5",
+          "publishedAt": "2026-09-27T15:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T15:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "프로 도박사 을 위한 필수 정보 및 팁",
+      "source": "Calgary Roughnecks",
+      "sourceUrl": "https://www.calgaryroughnecks.com",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1OaHdqZ2JpZkRFQW9iby0xN1NyMmREM2dDaXRRUDVRV2xLdUNTbElNMDd6dDNyRURpRUx2TWNhbkZJNXRiekhwVy14YmZrbmZZZzAxREdVZm5VVDZqNEkwVXBIM20tTjZPYjdLSXlFUkVXdldmY2NJ?oc=5",
+      "publishedAt": "2026-09-27T14:40:36.000Z",
+      "description": "",
+      "id": "221d06bd3678",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "커넥티드카"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Calgary Roughnecks",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1OaHdqZ2JpZkRFQW9iby0xN1NyMmREM2dDaXRRUDVRV2xLdUNTbElNMDd6dDNyRURpRUx2TWNhbkZJNXRiekhwVy14YmZrbmZZZzAxREdVZm5VVDZqNEkwVXBIM20tTjZPYjdLSXlFUkVXdldmY2NJ?oc=5",
+          "publishedAt": "2026-09-27T14:40:36.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T14:40:36.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "[태화강]부울경의 미래 ‘모빌리티 거대 산학캠퍼스’",
+      "source": "울산일보",
+      "sourceUrl": "http://www.ulsanilbo.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5pWEpMQUJFUmVCVVRPLTBwN3hlM0NxYkVBWmhjaW9DVFJzNGZkU005Z2J4cTRDQk9tNEhtR1p2RndrdUt6MXBROXFpTXZVWGgtNGlaVXVfSnU2SUdUMndHRV9nbXN0UGllcldGUm5n?oc=5",
+      "publishedAt": "2026-09-27T11:56:00.000Z",
+      "description": "",
+      "id": "7c0822a62c0e",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "도심항공교통 UAM"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "울산일보",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5pWEpMQUJFUmVCVVRPLTBwN3hlM0NxYkVBWmhjaW9DVFJzNGZkU005Z2J4cTRDQk9tNEhtR1p2RndrdUt6MXBROXFpTXZVWGgtNGlaVXVfSnU2SUdUMndHRV9nbXN0UGllcldGUm5n?oc=5",
+          "publishedAt": "2026-09-27T11:56:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T11:56:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "교통안전공단, 2026 전국 대학생 UAM 올림피아드 홍보영상 공개",
+      "source": "브릿지경제",
+      "sourceUrl": "https://www.viva100.com",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5pTmJBR3JROFM1RXVBTWxSQ043Z1NDbGczMFdja0ZBdHZVWl9uUUVZZTl6LUZ2eU1aM3N3RDZtOXJuQ2s0VUJfaE1rVVBGSTJteEVtWlI4N0JGQQ?oc=5",
+      "publishedAt": "2026-09-27T11:34:00.000Z",
+      "description": "",
+      "id": "a69c6ad00249",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "도심항공교통 UAM"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "브릿지경제",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5pTmJBR3JROFM1RXVBTWxSQ043Z1NDbGczMFdja0ZBdHZVWl9uUUVZZTl6LUZ2eU1aM3N3RDZtOXJuQ2s0VUJfaE1rVVBGSTJteEVtWlI4N0JGQQ?oc=5",
+          "publishedAt": "2026-09-27T11:34:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T11:34:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "연휴 끝자락 ‘녹실’ 연 이형일…첫 안건은 전기차ㆍ퇴직연금",
+      "source": "대한경제",
+      "sourceUrl": "https://www.dnews.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNYWlOR2xxMDI0Yng0b0xRS3dfdEwzVU4zYzdkalJqdl9jSExNWGFWR3VDT2dDeTdUbDBmS0V4M2FWZE5ORmhmUXJPMHdhZGM0NVVqQkdrMlllSENUSmNXdnZDSTF3a0lUT1FqaUJlb1JYZjFoaDhuUTdnMXNZMzlhd2l6cFpVdw?oc=5",
+      "publishedAt": "2026-09-27T11:20:04.000Z",
+      "description": "",
+      "id": "28f3539704d9",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "전기차 정책"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "대한경제",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNYWlOR2xxMDI0Yng0b0xRS3dfdEwzVU4zYzdkalJqdl9jSExNWGFWR3VDT2dDeTdUbDBmS0V4M2FWZE5ORmhmUXJPMHdhZGM0NVVqQkdrMlllSENUSmNXdnZDSTF3a0lUT1FqaUJlb1JYZjFoaDhuUTdnMXNZMzlhd2l6cFpVdw?oc=5",
+          "publishedAt": "2026-09-27T11:20:04.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T11:20:04.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "'차이나 쇼크' 현실이 됐다…중국 자동차 부품 굴기에 흔들리는 한국 제조업",
+      "source": "데일리저널",
+      "sourceUrl": "https://www.dailyjn.com",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1RMVRQME5aVmJKZDdQcUtOWkc3SUt6N2RPTVJXTTY0ODNZemlqOUQyX0JQc2hjUEpiaGZZdTlrTXlpZ1Q3ZXU3Y242VXdmQ3J3cjFON2o3SWdvcHlOekl0eDR6dF9FR3RwZ2c?oc=5",
+      "publishedAt": "2026-09-27T10:48:00.000Z",
+      "description": "",
+      "id": "d4b984205c20",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "소프트웨어 중심 자동차 SDV"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "데일리저널",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1RMVRQME5aVmJKZDdQcUtOWkc3SUt6N2RPTVJXTTY0ODNZemlqOUQyX0JQc2hjUEpiaGZZdTlrTXlpZ1Q3ZXU3Y242VXdmQ3J3cjFON2o3SWdvcHlOekl0eDR6dF9FR3RwZ2c?oc=5",
+          "publishedAt": "2026-09-27T10:48:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T10:48:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "경상북도교육청연수원, 직속기관장과 경북교육 2030 추진 과제 논의",
+      "source": "매일일보",
+      "sourceUrl": "https://www.m-i.kr",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA0Vi0ta3MzVXdjZjN0amtkUVdBMFR1SWZUazZ0b1puaWk5a1ZhWmZqeFFYbE4yQjQyQ21XU0Z2bTZ2TlF4czVGQldEM2pnUTh5dHpOMUdiSzBlWGVxd1JtcU5NYWQ?oc=5",
+      "publishedAt": "2026-09-27T08:28:49.000Z",
+      "description": "",
+      "id": "0363309b7ced",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "소프트웨어 중심 자동차 SDV"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "매일일보",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA0Vi0ta3MzVXdjZjN0amtkUVdBMFR1SWZUazZ0b1puaWk5a1ZhWmZqeFFYbE4yQjQyQ21XU0Z2bTZ2TlF4czVGQldEM2pnUTh5dHpOMUdiSzBlWGVxd1JtcU5NYWQ?oc=5",
+          "publishedAt": "2026-09-27T08:28:49.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T08:28:49.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "[포토뉴스]TS, UAM 올림피아드 참가 대학생 도전기...홍보영상 공개",
+      "source": "BBS불교방송",
+      "sourceUrl": "https://news.bbsi.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9UMjJvZ19FNWx0S1JXUkJHVmtaRmVCVmlsc045cGo4d21KYjVsb2s4NDcwS0xuVU5UVWppMTNMd2plOW5GRURBUjBUSTI3X0dWTi1NNUNVYllQOUtHek5JdlhaSks5bUtpU0JV?oc=5",
+      "publishedAt": "2026-09-27T07:50:36.000Z",
+      "description": "",
+      "id": "7516b9e12ca3",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "도심항공교통 UAM"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "BBS불교방송",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9UMjJvZ19FNWx0S1JXUkJHVmtaRmVCVmlsc045cGo4d21KYjVsb2s4NDcwS0xuVU5UVWppMTNMd2plOW5GRURBUjBUSTI3X0dWTi1NNUNVYllQOUtHek5JdlhaSks5bUtpU0JV?oc=5",
+          "publishedAt": "2026-09-27T07:50:36.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T07:50:36.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "전기차 보조금 소진...도의회 \"국비 예산 확대해야\"",
+      "source": "제주일보",
+      "sourceUrl": "https://www.jejunews.com",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1zQks1a2hEMDk1Nm1lOHB0V3dNajBwYmlLbEMxT1JtU3JwVk1NYWQzR3ZUeFVGVWpYOEVYTzRKVEVnZlVUSzNlQ2lDX1NDd2pOSUdIcHNsLTVqRXNzdk4ydHFOZHQtNWV0Vzk3UA?oc=5",
+      "publishedAt": "2026-09-27T07:48:18.000Z",
+      "description": "",
+      "id": "743b1f6b1c0d",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "전기차 정책"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "제주일보",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1zQks1a2hEMDk1Nm1lOHB0V3dNajBwYmlLbEMxT1JtU3JwVk1NYWQzR3ZUeFVGVWpYOEVYTzRKVEVnZlVUSzNlQ2lDX1NDd2pOSUdIcHNsLTVqRXNzdk4ydHFOZHQtNWV0Vzk3UA?oc=5",
+          "publishedAt": "2026-09-27T07:48:18.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T07:48:18.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "약제사 도박 게임 메커니즘 기초 설명",
+      "source": "Calgary Roughnecks",
+      "sourceUrl": "https://www.calgaryroughnecks.com",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPcUZHVGJVNnByOXpCVlBKcVpDYWpiVzBoblFneGNJM1BkWjFyS0lSb0hlb215ZDZrZ1RfU2NCTFR1YnFlLTlBdnJNcEFBU2d2RlRYM0ZrU1ZZaUNEMFM4cTBEblZhbHA2TUFHWmNFTGJPbHUtV0NaTHhLVHc0M01zX2JfZXBXVmJFUUlvYjRhSHl3R2pOR1JwM3hqd0EtcnZ5dEVuMnBQTTJNMVU?oc=5",
+      "publishedAt": "2026-09-27T07:30:07.000Z",
+      "description": "",
+      "id": "f9c668d8414a",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "로보택시"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Calgary Roughnecks",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPcUZHVGJVNnByOXpCVlBKcVpDYWpiVzBoblFneGNJM1BkWjFyS0lSb0hlb215ZDZrZ1RfU2NCTFR1YnFlLTlBdnJNcEFBU2d2RlRYM0ZrU1ZZaUNEMFM4cTBEblZhbHA2TUFHWmNFTGJPbHUtV0NaTHhLVHc0M01zX2JfZXBXVmJFUUlvYjRhSHl3R2pOR1JwM3hqd0EtcnZ5dEVuMnBQTTJNMVU?oc=5",
+          "publishedAt": "2026-09-27T07:30:07.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T07:30:07.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "전기가 남는 추석 낮…전기차 충전료 ‘반값’으로 수요를 옮긴다",
+      "source": "climatepol.com",
+      "sourceUrl": "https://www.climatepol.com",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5obmlaYzREczBISkZGQnRwZktxVjBuRTJWcGNmVkVhUFdQV0pKZGU1TDJzYjYtV1R4SnNHR2x5RXBZY09EVG1kY3kzYWZvb3I1SWhTdkZBamdZdm9yMW5sS2VIa3AtMU1hXzI1dg?oc=5",
+      "publishedAt": "2026-09-27T07:00:00.000Z",
+      "description": "",
+      "id": "f04ba12ad895",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "전기차 정책"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "climatepol.com",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5obmlaYzREczBISkZGQnRwZktxVjBuRTJWcGNmVkVhUFdQV0pKZGU1TDJzYjYtV1R4SnNHR2x5RXBZY09EVG1kY3kzYWZvb3I1SWhTdkZBamdZdm9yMW5sS2VIa3AtMU1hXzI1dg?oc=5",
+          "publishedAt": "2026-09-27T07:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T07:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "현대차·기아, 글로벌 SDV 평가서 토요타·폭스바겐 제쳤다",
+      "source": "전자신문",
+      "sourceUrl": "https://www.etnews.com",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBXUGNBWFZrT0JHbVhxN19qYlVESjZzSTNVblV5RTgwb20xWW5YVjdLMmtqWGhTNFdhZl9zY3Nkb0xRLUZtVTl2RDhkdi1DQQ?oc=5",
+      "publishedAt": "2026-09-27T07:00:00.000Z",
+      "description": "",
+      "id": "c47462db3d7c",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "소프트웨어 중심 자동차 SDV",
+        "커넥티드카"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBXUGNBWFZrT0JHbVhxN19qYlVESjZzSTNVblV5RTgwb20xWW5YVjdLMmtqWGhTNFdhZl9zY3Nkb0xRLUZtVTl2RDhkdi1DQQ?oc=5",
+          "publishedAt": "2026-09-27T07:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T07:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "4분기 '신차 대전'…SUV·세단 시장, 국산·수입 격돌",
+      "source": "전자신문",
+      "sourceUrl": "https://www.etnews.com",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE94N3RwTFhMcWtMQ3VycHZsWENPc0NiV0RqbVVfNjdOMlpVdnRqOVE1MFFaMUl3dnZNU2FXd3JXbWc0UGl2NlY1aHhESVZSQQ?oc=5",
+      "publishedAt": "2026-09-27T07:00:00.000Z",
+      "description": "",
+      "id": "acf9bc044d80",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "소프트웨어 중심 자동차 SDV"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE94N3RwTFhMcWtMQ3VycHZsWENPc0NiV0RqbVVfNjdOMlpVdnRqOVE1MFFaMUl3dnZNU2FXd3JXbWc0UGl2NlY1aHhESVZSQQ?oc=5",
+          "publishedAt": "2026-09-27T07:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T07:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "현대차 모셔널-우버, 경영진 회동… ‘완전 무인’ 로보택시 출격 임박",
+      "source": "다음뉴스",
+      "sourceUrl": "https://v.daum.net",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9nN0R2bmFNUkpFaUNEMTdGZmNRMVlBTnRBbnZlLTJZUndXTDF5ZHZsZkpWSzJfdXlRNkMybTVOU0I0dWtBd1JWOWpFcXVDZWx2LXUwRQ?oc=5",
+      "publishedAt": "2026-09-27T05:46:41.000Z",
+      "description": "",
+      "id": "e4f4fc2de676",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "로보택시"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "다음뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9nN0R2bmFNUkpFaUNEMTdGZmNRMVlBTnRBbnZlLTJZUndXTDF5ZHZsZkpWSzJfdXlRNkMybTVOU0I0dWtBd1JWOWpFcXVDZWx2LXUwRQ?oc=5",
+          "publishedAt": "2026-09-27T05:46:41.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T05:46:41.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "`옮기겠다` 한 지 4년…서대구역세권 한전 자재센터 이전은 아직, ``땅부터 팔아야`",
+      "source": "매일신문",
+      "sourceUrl": "https://www.imaeil.com",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5zbGlZTFVLdU45Sy0tMTE4WFVQZk1ZaEFwendWQTBLVjBYUUFXc0thU2hDb0haek1PMDZKTTNlVnZtSEgtMXZobWlDWm5TbVhjWW9lZE96U0lOdFN5d2djNlNn?oc=5",
+      "publishedAt": "2026-09-27T05:15:49.000Z",
+      "description": "",
+      "id": "fc1cb3596647",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "도심항공교통 UAM"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "매일신문",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5zbGlZTFVLdU45Sy0tMTE4WFVQZk1ZaEFwendWQTBLVjBYUUFXc0thU2hDb0haek1PMDZKTTNlVnZtSEgtMXZobWlDWm5TbVhjWW9lZE96U0lOdFN5d2djNlNn?oc=5",
+          "publishedAt": "2026-09-27T05:15:49.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T05:15:49.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "부산서 베일 벗은 신형 8세대 아반떼…현대차 ‘AI 자동차’ 대중화 시동 [2026 부산모빌리티쇼]",
+      "source": "kukinews.com",
+      "sourceUrl": "https://www.kukinews.com",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1tTEF4aWJaMGQ3SUxoTVRWRVlpRndDR1g2SmR6VWIzeDhfUnVpVnJ3V1VKR2pGS0xObnBEM3FwY3NCdnMzcHpiVlZfa2xJZXRXd2JFYUp1RG5Sc0d0MFh4SThscw?oc=5",
+      "publishedAt": "2026-09-27T05:04:48.000Z",
+      "description": "",
+      "id": "ed5851a281be",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "소프트웨어 중심 자동차 SDV"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "kukinews.com",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1tTEF4aWJaMGQ3SUxoTVRWRVlpRndDR1g2SmR6VWIzeDhfUnVpVnJ3V1VKR2pGS0xObnBEM3FwY3NCdnMzcHpiVlZfa2xJZXRXd2JFYUp1RG5Sc0d0MFh4SThscw?oc=5",
+          "publishedAt": "2026-09-27T05:04:48.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T05:04:48.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "엔비디아도 뛰어든 ‘무인트럭’…자율주행이 트럭에 꽂힌 이유",
+      "source": "경향신문",
+      "sourceUrl": "https://www.khan.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBQN2xLZV9QWUl5UEd1NHRyZUhBOXRHQVhKV21FM1gtTXo1Njd5RGE2ak1xLXZRdG9JSlNRSlBnOHR1Q3pZUnU3ODFEZ00zT3NRSkxsSEdYZVlMd9IBX0FVX3lxTFB5RG1hTUxXaTFWS2hqenBfS1lKQl9saHNGOW02NnNLdlJoSG4ybE1uVG5fajRva3J3RENqS0tieEhsVHhNQnE0a3hoMS16TjdpamRVcGRNSGtOOWg4NGhr?oc=5",
+      "publishedAt": "2026-09-27T04:54:00.000Z",
+      "description": "",
+      "id": "8232dc6930bb",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "자율주행"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "경향신문",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBQN2xLZV9QWUl5UEd1NHRyZUhBOXRHQVhKV21FM1gtTXo1Njd5RGE2ak1xLXZRdG9JSlNRSlBnOHR1Q3pZUnU3ODFEZ00zT3NRSkxsSEdYZVlMd9IBX0FVX3lxTFB5RG1hTUxXaTFWS2hqenBfS1lKQl9saHNGOW02NnNLdlJoSG4ybE1uVG5fajRva3J3RENqS0tieEhsVHhNQnE0a3hoMS16TjdpamRVcGRNSGtOOWg4NGhr?oc=5",
+          "publishedAt": "2026-09-27T04:54:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T04:54:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "K-수출 반도체 쏠림 심화…“제2·3 수출축 키워야”",
+      "source": "매일일보",
+      "sourceUrl": "https://www.m-i.kr",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB6YXp1VE0tdTB5djBPb0E5cmFjZk4yNEVkOE4zT2JWYjBZcUdVdUIzUnJuY19aWXk1MWNjNDBWVjdUbTNsblRYQWJjVE5ocjk2eTdtbHNsRkh1ajE5QkphcDYxSTk?oc=5",
+      "publishedAt": "2026-09-27T04:00:00.000Z",
+      "description": "",
+      "id": "06e93018973d",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "소프트웨어 중심 자동차 SDV"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "매일일보",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB6YXp1VE0tdTB5djBPb0E5cmFjZk4yNEVkOE4zT2JWYjBZcUdVdUIzUnJuY19aWXk1MWNjNDBWVjdUbTNsblRYQWJjVE5ocjk2eTdtbHNsRkh1ajE5QkphcDYxSTk?oc=5",
+          "publishedAt": "2026-09-27T04:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T04:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "[부동산전망] 추석 이후 부동산 시장, 강남 주춤·외곽 오르는 '키 맞추기' 장세",
+      "source": "매일일보",
+      "sourceUrl": "https://www.m-i.kr",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBXWVFHRk1fVXRhbUpiNE82aXhKWHZOdmowOUl0dnJpOHFzMWF3b2xIbG14bEZtLVJzLTZDSGpQMjJqbklVaWNBZTlDWGM5Zm1KWXNwUmJ4bHZSVHpicGFmNGdDWTg?oc=5",
+      "publishedAt": "2026-09-27T02:00:00.000Z",
+      "description": "",
+      "id": "16f0639a8118",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "소프트웨어 중심 자동차 SDV"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "매일일보",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBXWVFHRk1fVXRhbUpiNE82aXhKWHZOdmowOUl0dnJpOHFzMWF3b2xIbG14bEZtLVJzLTZDSGpQMjJqbklVaWNBZTlDWGM5Zm1KWXNwUmJ4bHZSVHpicGFmNGdDWTg?oc=5",
+          "publishedAt": "2026-09-27T02:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T02:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "100대 멈춰도 다시 도로로…中 자율주행에 '올인'",
+      "source": "연합뉴스",
+      "sourceUrl": "https://www.yna.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5LdVZZQ3VqdExmYnhKQURJRHc0ckZWLUZIVldELWNRNE5SWUVFU3NNbkRpOFprb0dSRlhCdEw3VUhfSVgyWHZEeklsWlVUd25oc084UTBhTExBQWPSAWBBVV95cUxPZTh3UHVEYlFjNWdUZFVGcXdMUzF4eWQ4S0ZNcWpUS2hBRmF3RzlXa05qelpJaWMxanc2aVRKWkZWc1VVak9TN2FzNXZoQ21OWVhjSzdGR0Z3UjhRN1dKM2Q?oc=5",
+      "publishedAt": "2026-09-27T01:32:37.000Z",
+      "description": "",
+      "id": "3b453b564801",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "로보택시",
+        "자율주행"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5LdVZZQ3VqdExmYnhKQURJRHc0ckZWLUZIVldELWNRNE5SWUVFU3NNbkRpOFprb0dSRlhCdEw3VUhfSVgyWHZEeklsWlVUd25oc084UTBhTExBQWPSAWBBVV95cUxPZTh3UHVEYlFjNWdUZFVGcXdMUzF4eWQ4S0ZNcWpUS2hBRmF3RzlXa05qelpJaWMxanc2aVRKWkZWc1VVak9TN2FzNXZoQ21OWVhjSzdGR0Z3UjhRN1dKM2Q?oc=5",
+          "publishedAt": "2026-09-27T01:32:37.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T01:32:37.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "주행 중 전조등 툭 꺼졌다…노트북에 털린 中 전기차",
+      "source": "경제타임스",
+      "sourceUrl": "https://ket.kr",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE40Q0R6aTJ4YkpiS1QyNHZCUFlmNXZCdndYeFp6M25HZjdLWlpVVGw1Tm41UmJMeFJHOEdtRDNLTHJUMkVyZlNjTFMtMVFOMWFES3dn?oc=5",
+      "publishedAt": "2026-09-27T01:30:47.000Z",
+      "description": "",
+      "id": "6df9a8da14e3",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "커넥티드카"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "경제타임스",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE40Q0R6aTJ4YkpiS1QyNHZCUFlmNXZCdndYeFp6M25HZjdLWlpVVGw1Tm41UmJMeFJHOEdtRDNLTHJUMkVyZlNjTFMtMVFOMWFES3dn?oc=5",
+          "publishedAt": "2026-09-27T01:30:47.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T01:30:47.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "여주시, 전기차 보조금 3차 추진…승용 200대·화물 80대 추가 공급",
+      "source": "팔당유역신문",
+      "sourceUrl": "http://www.hanaronews.kr",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBsM0pBNm5mbTNpQm9UZ2ZoVVJLY2ZJWnM1ZU1oN2xSam8yRWxnc0I0ZTNHaXB0RnZjVUQwMkZxNi04UDUzenk3bmYtNGFDdHVKSlN5cndpSzhkQ0dER3AyejNVWmdJdVhZZzh3?oc=5",
+      "publishedAt": "2026-09-27T01:27:09.000Z",
+      "description": "",
+      "id": "475644549a54",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "전기차 정책"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "팔당유역신문",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBsM0pBNm5mbTNpQm9UZ2ZoVVJLY2ZJWnM1ZU1oN2xSam8yRWxnc0I0ZTNHaXB0RnZjVUQwMkZxNi04UDUzenk3bmYtNGFDdHVKSlN5cndpSzhkQ0dER3AyejNVWmdJdVhZZzh3?oc=5",
+          "publishedAt": "2026-09-27T01:27:09.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T01:27:09.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "한 판 안에서 일어나는 변화, 마비노기 추가 스킬 슬롯",
+      "source": "Calgary Roughnecks",
+      "sourceUrl": "https://www.calgaryroughnecks.com",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9lbnJ2U3hvelU1bzUxLUdBNElEdUttYWxOSUJMNkc0YzVzOEFZSTNMSnFrMVJHVjIwVGxWT2NMZm9Bak15Vy1wdnVYcWRSMFRHTXZBUEt1MTdfU09pSERUX2ZhaFM3VnQxNlJRZk0tbXlwRjM3ZkJV?oc=5",
+      "publishedAt": "2026-09-27T00:29:12.000Z",
+      "description": "",
+      "id": "86295ff700c0",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "소프트웨어 중심 자동차 SDV"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Calgary Roughnecks",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9lbnJ2U3hvelU1bzUxLUdBNElEdUttYWxOSUJMNkc0YzVzOEFZSTNMSnFrMVJHVjIwVGxWT2NMZm9Bak15Vy1wdnVYcWRSMFRHTXZBUEt1MTdfU09pSERUX2ZhaFM3VnQxNlJRZk0tbXlwRjM3ZkJV?oc=5",
+          "publishedAt": "2026-09-27T00:29:12.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T00:29:12.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "독자 진출 대신 '우회 상륙' 선택한 중국車, '한국산 탈' 쓰는 이유",
+      "source": "starnewskorea.com",
+      "sourceUrl": "https://www.starnewskorea.com",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5STGpMNnhCU0dqTVpzeFhlYkVVRmk5a1BJREo5NFM3MTloRnF0VnF2UmpRS3BEeEM0Y190cndqNTlwRm5QSmdhdU5Tai1fWnZqQkM4ZHRGWVZCdkh2eFRhNlgwTW0tLWtlTmJaWC11N3BwcTBWTGppcUZtYnFqaGM?oc=5",
+      "publishedAt": "2026-09-27T00:27:18.000Z",
+      "description": "",
+      "id": "a2a6ef559513",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "커넥티드카"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "starnewskorea.com",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5STGpMNnhCU0dqTVpzeFhlYkVVRmk5a1BJREo5NFM3MTloRnF0VnF2UmpRS3BEeEM0Y190cndqNTlwRm5QSmdhdU5Tai1fWnZqQkM4ZHRGWVZCdkh2eFRhNlgwTW0tLWtlTmJaWC11N3BwcTBWTGppcUZtYnFqaGM?oc=5",
+          "publishedAt": "2026-09-27T00:27:18.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T00:27:18.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "트럼프, 바이든 ‘연비 규제’ 뒤집었다…전기차 확대 정책 사실상 폐기",
+      "source": "다음뉴스",
+      "sourceUrl": "https://v.daum.net",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBib3RzSW80NlAxc1JRdXQ4d3llX21UZHBiZGJnYURlaDlXZVNRS29LQ2FqdFJaamdxTFdMX1Y0bUU2Z3ZsbkFNaDFqeGU2QUE?oc=5",
+      "publishedAt": "2026-09-27T00:21:00.000Z",
+      "description": "",
+      "id": "549df5470731",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "전기차 정책"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "다음뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBib3RzSW80NlAxc1JRdXQ4d3llX21UZHBiZGJnYURlaDlXZVNRS29LQ2FqdFJaamdxTFdMX1Y0bUU2Z3ZsbkFNaDFqeGU2QUE?oc=5",
+          "publishedAt": "2026-09-27T00:21:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T00:21:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "바이든 시대 전기차 정책 지우기...트럼프, 완화된 연비 기준 승인 - 머니투데이",
+      "source": "머니투데이",
+      "sourceUrl": "https://www.mt.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBTQk5qRE9ZY1FjM2hwNU8wb3B3WnhyQ01sc29zQnd4QjFoN0c3TkNhMmNRTG0zVzVuUzlUUXhuZWJpYUE4dTNNSlQzVmgycFpYUHdqbURKOVVKOEd3Nk16QjRJZTAtZUdJ0gFuQVVfeXFMUGRTNGs3d2pMNFB3X2lsb0dIcGx6RFlobHNYV21RMzdyNDNBQW9IaXc0NGY5OXZ4T25YcWgzVkZsVzk4XzFjdUYzOF94TFdqWVFKTEZLMnB4R2JlVzFlbG1KXzFFX2xTNzAwRWNKSkE?oc=5",
+      "publishedAt": "2026-09-27T00:14:03.000Z",
+      "description": "",
+      "id": "e304354b496b",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "전기차 정책"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "머니투데이",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBTQk5qRE9ZY1FjM2hwNU8wb3B3WnhyQ01sc29zQnd4QjFoN0c3TkNhMmNRTG0zVzVuUzlUUXhuZWJpYUE4dTNNSlQzVmgycFpYUHdqbURKOVVKOEd3Nk16QjRJZTAtZUdJ0gFuQVVfeXFMUGRTNGs3d2pMNFB3X2lsb0dIcGx6RFlobHNYV21RMzdyNDNBQW9IaXc0NGY5OXZ4T25YcWgzVkZsVzk4XzFjdUYzOF94TFdqWVFKTEZLMnB4R2JlVzFlbG1KXzFFX2xTNzAwRWNKSkE?oc=5",
+          "publishedAt": "2026-09-27T00:14:03.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T00:14:03.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "모빌리티 혁신 지원책 보완…신기술 사업화 빨라질까",
+      "source": "MTN 머니투데이방송",
+      "sourceUrl": "https://news.mtn.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE55T3pjWUU0d080dExPY1FaMDhZbTVYM2RxWGRacWRTdW9UR2NzeGdsa040U3NzU1I5NG9xT1BTdlJPTWdGMThjdWVBSXQxUTlWNUZxQjFjS1hocGpId3JCTE5OUVI?oc=5",
+      "publishedAt": "2026-09-27T00:00:01.000Z",
+      "description": "",
+      "id": "df78163250e7",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "커넥티드카"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "MTN 머니투데이방송",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE55T3pjWUU0d080dExPY1FaMDhZbTVYM2RxWGRacWRTdW9UR2NzeGdsa040U3NzU1I5NG9xT1BTdlJPTWdGMThjdWVBSXQxUTlWNUZxQjFjS1hocGpId3JCTE5OUVI?oc=5",
+          "publishedAt": "2026-09-27T00:00:01.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T00:00:01.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "[차의 변화 SDV-下] 출고 뒤에도 진화…SDV가 바꿀 자동차의 미래",
+      "source": "글로벌이코노믹",
+      "sourceUrl": "https://www.g-enews.com",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPc21NMTR1bk9yZEowX3k1TDFEblg1c1FiVy12N3I1VldtX1FIbllDZW8zcUNxWGpIWEJKSjVSdGlONWlBLTdRWVNOczBPMThlSUZ5a2M2dS1RTUQ4dGdoLWFXSnVCM2dHQk9KSHpfZWM2bXltYXNjY1daUUNxSEJvajVMNWdzQQ?oc=5",
+      "publishedAt": "2026-09-27T00:00:00.000Z",
+      "description": "",
+      "id": "270820587731",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "소프트웨어 중심 자동차 SDV"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "글로벌이코노믹",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPc21NMTR1bk9yZEowX3k1TDFEblg1c1FiVy12N3I1VldtX1FIbllDZW8zcUNxWGpIWEJKSjVSdGlONWlBLTdRWVNOczBPMThlSUZ5a2M2dS1RTUQ4dGdoLWFXSnVCM2dHQk9KSHpfZWM2bXltYXNjY1daUUNxSEJvajVMNWdzQQ?oc=5",
+          "publishedAt": "2026-09-27T00:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T00:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "로보택시 허가가 우버(UBER) 투자자들에게 미칠 영향",
+      "source": "Simply Wall Street",
+      "sourceUrl": "https://simplywall.st",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQTVZlbkoycHl5cG56XzB3RWJhRk5MdUc4aURMM1R4NlRqYmZVRThTYy1SSU9xUnB1bW41X3RoYm1CZmZKOGo4WkN6QmgxMThETVljN2V1Mk0xalRLLVVTcTlpU245YmF6QlpVd1haU2hsQXVsUVNQOXd0cE9XeF9fT2p2RGxWWU9Pc3BRSXRWUFRpWDRnMjlfSXJEMlJNd1VE0gGmAUFVX3lxTFBpTHVHMjhkZWk4SzF3c01Cc1ZTYW5aMkxZcG1XV194V3RwN3BrZkRRZlcteG9fUW1tamlLNDF2bWVxdm4wRVRtZkJuYm1aLW9XV0g0dWQ1VnFBNmJHdzJjaENMVi1hLW53RUZzQ3lTWGE1T2R5eFdBcFhMNWV2REJ6bHB2cDluUmZSZHVESHpuUC1YdElkTVl1Z2E4M2FFN09QbDl2VVE?oc=5",
+      "publishedAt": "2026-09-26T21:09:30.000Z",
+      "description": "",
+      "id": "ede24225e3f6",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "로보택시"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Simply Wall Street",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQTVZlbkoycHl5cG56XzB3RWJhRk5MdUc4aURMM1R4NlRqYmZVRThTYy1SSU9xUnB1bW41X3RoYm1CZmZKOGo4WkN6QmgxMThETVljN2V1Mk0xalRLLVVTcTlpU245YmF6QlpVd1haU2hsQXVsUVNQOXd0cE9XeF9fT2p2RGxWWU9Pc3BRSXRWUFRpWDRnMjlfSXJEMlJNd1VE0gGmAUFVX3lxTFBpTHVHMjhkZWk4SzF3c01Cc1ZTYW5aMkxZcG1XV194V3RwN3BrZkRRZlcteG9fUW1tamlLNDF2bWVxdm4wRVRtZkJuYm1aLW9XV0g0dWQ1VnFBNmJHdzJjaENMVi1hLW53RUZzQ3lTWGE1T2R5eFdBcFhMNWV2REJ6bHB2cDluUmZSZHVESHpuUC1YdElkTVl1Z2E4M2FFN09QbDl2VVE?oc=5",
+          "publishedAt": "2026-09-26T21:09:30.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-26T21:09:30.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "\"미국서 벤츠도 못 판다?\"…중국차 영구 금지법, 상원 표결 '발칵'",
+      "source": "글로벌이코노믹",
+      "sourceUrl": "https://www.g-enews.com",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQclFrRG5XR3dmVm4zbU0tZ0xIdXlQaW1jYjUxQjdsQ3JEY0ZjYVFtOE96cjUxc3hGMVNKcHg5T09adXp1OVNXd2Y1dEJyLVpkZlNpTjJhbDdhSHU2bFU3VTNhMUJBbDhJZFJQbTIyaVlxT2MtU29ESkY0Z2VuanU3Mw?oc=5",
+      "publishedAt": "2026-09-26T18:30:00.000Z",
+      "description": "",
+      "id": "015dfa28b646",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "커넥티드카"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "글로벌이코노믹",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQclFrRG5XR3dmVm4zbU0tZ0xIdXlQaW1jYjUxQjdsQ3JEY0ZjYVFtOE96cjUxc3hGMVNKcHg5T09adXp1OVNXd2Y1dEJyLVpkZlNpTjJhbDdhSHU2bFU3VTNhMUJBbDhJZFJQbTIyaVlxT2MtU29ESkY0Z2VuanU3Mw?oc=5",
+          "publishedAt": "2026-09-26T18:30:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-26T18:30:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Tesla's Roadster Teaser, US-China Airline Dispute, Boeing's Big Deals and More: This Week in Mobility",
+      "source": "Benzinga",
+      "sourceUrl": "https://www.benzinga.com",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNcTdiWng5b2ZDUFdWb29XTGx1aVZjVzlzNjlnMmEwYlNIOElfTEdtbzZSeWxBZ2xJQ0tBZ2tvdjZXRnM3cE1Dd29NbVBRUjVzeUxsczlGNXk2cFhfTEQ3R1dEZ2pUMXhuZnRkNGtSdWJwV3NVR0QyY01heHJsSnZRbkFvT04zdnJsNjhlXzE2MjQzNVdUeGhYYk10RW5KbXJ4cFFjVUFYMERtREFhZE1ROTFjUEF3dENjc215QXlnRlp1bkhtcmh4a1NlV1NJbkhLRXNRMWVpYjJ6T1RXbzdab2VtUQ?oc=5",
+      "publishedAt": "2026-09-27T14:00:19.000Z",
+      "description": "",
+      "id": "eefebb6ecb8d",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "Tesla FSD"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Benzinga",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNcTdiWng5b2ZDUFdWb29XTGx1aVZjVzlzNjlnMmEwYlNIOElfTEdtbzZSeWxBZ2xJQ0tBZ2tvdjZXRnM3cE1Dd29NbVBRUjVzeUxsczlGNXk2cFhfTEQ3R1dEZ2pUMXhuZnRkNGtSdWJwV3NVR0QyY01heHJsSnZRbkFvT04zdnJsNjhlXzE2MjQzNVdUeGhYYk10RW5KbXJ4cFFjVUFYMERtREFhZE1ROTFjUEF3dENjc215QXlnRlp1bkhtcmh4a1NlV1NJbkhLRXNRMWVpYjJ6T1RXbzdab2VtUQ?oc=5",
+          "publishedAt": "2026-09-27T14:00:19.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T14:00:19.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "I rode in a car with no driver. Apparently, my survival instincts retired before I did.",
+      "source": "silive.com",
+      "sourceUrl": "https://www.silive.com",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPY0dfNW84ZmFOQ0JRUmlKMFZDVEEzbURPaGxFbU5vdUlZNTgzTWI1bmd6LXQ1cWNkdERDUkswV1piSC1rRG9STU5pbzVDQ2o2N2Fjdi1pdmpqMnZmTzVYVGZodDd1cU5saVgxeXYtdmw0WDI0WFJ3N21Dd2lJa09SdzJVNkVNVnRQYWxNeTI3ZUdzVW5JNldFMm9oaTZOZTFZN19vaWIxaHQ3TnZwYlVrVEo2SXg2cjN5M2dhdUVtQTVuSGc?oc=5",
+      "publishedAt": "2026-09-27T13:26:00.000Z",
+      "description": "",
+      "id": "2d1380d89dd3",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "autonomous driving",
+        "Waymo"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "silive.com",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPY0dfNW84ZmFOQ0JRUmlKMFZDVEEzbURPaGxFbU5vdUlZNTgzTWI1bmd6LXQ1cWNkdERDUkswV1piSC1rRG9STU5pbzVDQ2o2N2Fjdi1pdmpqMnZmTzVYVGZodDd1cU5saVgxeXYtdmw0WDI0WFJ3N21Dd2lJa09SdzJVNkVNVnRQYWxNeTI3ZUdzVW5JNldFMm9oaTZOZTFZN19vaWIxaHQ3TnZwYlVrVEo2SXg2cjN5M2dhdUVtQTVuSGc?oc=5",
+          "publishedAt": "2026-09-27T13:26:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T13:26:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Scientists Download Frontier AI Model Into Self-Driving Car Let It Loose",
+      "source": "Futurism",
+      "sourceUrl": "https://futurism.com",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxON0VqdnVYSHpHRTdHamtVWXlRSW1lN0dWM3FIS3gwakh2NG41RlJQNGxLb2VCVTUtazVnUjlyZ0pOcmIwMV9sTzhXeTJ0aFZySlpRR1AyT1Nja2lTQkpsSS1xdktGQ3doSTYtR3ZUSi1zdHV3Z3dBLTFnZkhlejNvTg?oc=5",
+      "publishedAt": "2026-09-27T13:01:00.000Z",
+      "description": "",
+      "id": "4e9c4c56cd23",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "autonomous driving"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Futurism",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxON0VqdnVYSHpHRTdHamtVWXlRSW1lN0dWM3FIS3gwakh2NG41RlJQNGxLb2VCVTUtazVnUjlyZ0pOcmIwMV9sTzhXeTJ0aFZySlpRR1AyT1Nja2lTQkpsSS1xdktGQ3doSTYtR3ZUSi1zdHV3Z3dBLTFnZkhlejNvTg?oc=5",
+          "publishedAt": "2026-09-27T13:01:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T13:01:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "As computers take the driver’s seat, experts worry about safety",
+      "source": "The Seattle Times",
+      "sourceUrl": "https://www.seattletimes.com",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQM1dEcUw4VzNqNl9NMXM3dG1id3VsRGFIOU1ydFFsZzduNU5lVHVibkI0aktBUnhUQ2tiWE8yRGpJbkNMN0Q0ZGhrV1g5UzNWTkRMUjJ3dUJmNWhkMlMxLUhNR2xLX2YtM0dmOERGbS1zTmVxbjU5bV9JU0RqSEhtODZxQkYzWGp4a05ydDRHenA0U3JJLURRVk9CVEt5NVdCeEE?oc=5",
+      "publishedAt": "2026-09-27T13:00:04.000Z",
+      "description": "",
+      "id": "2f5a440ecea9",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "autonomous driving"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "The Seattle Times",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQM1dEcUw4VzNqNl9NMXM3dG1id3VsRGFIOU1ydFFsZzduNU5lVHVibkI0aktBUnhUQ2tiWE8yRGpJbkNMN0Q0ZGhrV1g5UzNWTkRMUjJ3dUJmNWhkMlMxLUhNR2xLX2YtM0dmOERGbS1zTmVxbjU5bV9JU0RqSEhtODZxQkYzWGp4a05ydDRHenA0U3JJLURRVk9CVEt5NVdCeEE?oc=5",
+          "publishedAt": "2026-09-27T13:00:04.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T13:00:04.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "DiDi’s Next-Gen R2 Robotaxi Starts Driverless Rides in China",
+      "source": "Interesting Engineering",
+      "sourceUrl": "https://interestingengineering.com",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOZVJxdkoyLTR6RUd1X2lOSHc1TU53b2UyM2piRHh3ZTVzVzg3WGtGRVhSQjhxNWp1TWlsdHltejB4UmZsY2FmWXJWMmNTekdkTWRqV2FXWkdnMUtDZ3RZWU0xUU0tVjJONmdnRlRWRUk4MnFfMDdTZVNya2NOSHhQT1FZUjk2RC1HZ1BVNmlkQ01jdDV2MnVKTFFCU1lLUV9LSEJV?oc=5",
+      "publishedAt": "2026-09-27T12:57:46.000Z",
+      "description": "",
+      "id": "70accc12324a",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "robotaxi"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Interesting Engineering",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOZVJxdkoyLTR6RUd1X2lOSHc1TU53b2UyM2piRHh3ZTVzVzg3WGtGRVhSQjhxNWp1TWlsdHltejB4UmZsY2FmWXJWMmNTekdkTWRqV2FXWkdnMUtDZ3RZWU0xUU0tVjJONmdnRlRWRUk4MnFfMDdTZVNya2NOSHhQT1FZUjk2RC1HZ1BVNmlkQ01jdDV2MnVKTFFCU1lLUV9LSEJV?oc=5",
+          "publishedAt": "2026-09-27T12:57:46.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T12:57:46.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "7 IT Stocks Down Up to 73% From Their Highs; Can They Stage a Recovery?",
+      "source": "Trade Brains",
+      "sourceUrl": "https://tradebrains.in",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQNUVRZEhVNVFlZ0dSQXVvZjFNaXA3VUZ5dWxndldPSDN6Y2ZaM2JXcWFraTF5X0VlMG95dzAtRi10dzAzSmQ0emhsdll5VkhBWVZKNDBaTTBVWi1KOVhFWkI5Zmh4ZENQSE1WMkpKejNORU4wSmRlQ1NPY2FMZV9DTm5lLW9iUG4zTDFZNVp3LXNQaE5XbmZ2eV9TQk80YURPVkhsNVhaWnd4Q1FTclpYVUE2RHhuUQ?oc=5",
+      "publishedAt": "2026-09-27T11:31:37.000Z",
+      "description": "",
+      "id": "8c55cf818c96",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "software-defined vehicle"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Trade Brains",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQNUVRZEhVNVFlZ0dSQXVvZjFNaXA3VUZ5dWxndldPSDN6Y2ZaM2JXcWFraTF5X0VlMG95dzAtRi10dzAzSmQ0emhsdll5VkhBWVZKNDBaTTBVWi1KOVhFWkI5Zmh4ZENQSE1WMkpKejNORU4wSmRlQ1NPY2FMZV9DTm5lLW9iUG4zTDFZNVp3LXNQaE5XbmZ2eV9TQk80YURPVkhsNVhaWnd4Q1FTclpYVUE2RHhuUQ?oc=5",
+          "publishedAt": "2026-09-27T11:31:37.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T11:31:37.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Zoox’s Robotaxi Is All-Electric. The SUVs Teaching It to Drive Still Have Tailpipes.",
+      "source": "Yahoo Autos",
+      "sourceUrl": "https://autos.yahoo.com",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNMWZ2OEdhS0ZEX3ZOb0RtYjRHekpjeVQyUUFfMmxRMlE2WWhPSDA2ZFhwZGZYZk53MVhhT0tJVkp2ci1JSmdSOGVSTlVsd1lNbzhyall4TWd2X2loZ2pDZWdrTDVuejdXOXNfU1ViTVJhUGh4eVowajJiYVkzbGEwQUhBdjk5SGxoWmRCa0s1ZldiWjVacllwNEdhakU1TjBpSEtyQVVB?oc=5",
+      "publishedAt": "2026-09-27T11:15:00.000Z",
+      "description": "",
+      "id": "836efe7bc262",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "robotaxi"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Yahoo Autos",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNMWZ2OEdhS0ZEX3ZOb0RtYjRHekpjeVQyUUFfMmxRMlE2WWhPSDA2ZFhwZGZYZk53MVhhT0tJVkp2ci1JSmdSOGVSTlVsd1lNbzhyall4TWd2X2loZ2pDZWdrTDVuejdXOXNfU1ViTVJhUGh4eVowajJiYVkzbGEwQUhBdjk5SGxoWmRCa0s1ZldiWjVacllwNEdhakU1TjBpSEtyQVVB?oc=5",
+          "publishedAt": "2026-09-27T11:15:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T11:15:00.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "금감원 검사 관행 손질 논의…보험사 제재 대응에도 변화 주목",
+      "source": "보험매일",
+      "sourceUrl": "http://www.fins.co.kr",
+      "url": "http://www.fins.co.kr/news/articleView.html?idxno=110090",
+      "publishedAt": "2026-09-27T12:38:52.000Z",
+      "description": "금융당국이 금융감독원의 검사·제재 관행을 개선하는 방안을 논의하면서 보험업계도 향후 검사 대응 방식에 어떤 변화가 생길지 주목하고 있다.검사 결과의 중간발표를 원칙적으로 제한하고 예외적인 경우에만 허용하는 방안과 함께 검사 과정에서 요구하는 이메일·사내 메신저 자료의 범위를 조정하고, 제재 사전통지서에 주요 쟁점과 관련 정보를 보다 구체적으로 담는 방안…",
+      "id": "20e66589049a",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "보험업계",
+        "금융당국 보험",
+        "보험매일"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "보험매일",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE0yb3BDSWE0ZGNNYnc1cHcwcnR2cE1iTXlhRElid0VTaHNQcWRXWEtZVEdyNXpveGg2bXBSdVVWSVdoRjFvUDlMc1RoT0VRMzRVa29hNkhsel9zT1hBdUpmeEVVYkxCVUdo?oc=5",
+          "publishedAt": "2026-09-27T03:38:52.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T03:38:52.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "보험금 받아도 다시 보장받는 ‘리필보험’ 잇따라",
+      "source": "조선일보",
+      "sourceUrl": "https://www.chosun.com",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPcWcyVS1TYk5IVENpaE5haTl3Vm56ZU1PaXhUcUdnLTBwNU8xQzZ5bDh5V0NBdzFJVWZyUGlZVUVFZkpFNjdiRTI5SFc5anJtOHM1TWFMMVZ6WUNCQUl0ekNDR0R2RWllQk4zOV9wWTBoUmpGTW1ZQUd3ajJ1MG91SWx2YjNzc0JlcjdCWVhn?oc=5",
+      "publishedAt": "2026-09-27T15:40:53.000Z",
+      "description": "",
+      "id": "d9e9dae2e538",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "보험업계"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "조선일보",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPcWcyVS1TYk5IVENpaE5haTl3Vm56ZU1PaXhUcUdnLTBwNU8xQzZ5bDh5V0NBdzFJVWZyUGlZVUVFZkpFNjdiRTI5SFc5anJtOHM1TWFMMVZ6WUNCQUl0ekNDR0R2RWllQk4zOV9wWTBoUmpGTW1ZQUd3ajJ1MG91SWx2YjNzc0JlcjdCWVhn?oc=5",
+          "publishedAt": "2026-09-27T15:40:53.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T15:40:53.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "가계대출 1900조원 육박하는데… 신용생명보험은 40년째 ‘제자리’",
+      "source": "한국보험신문",
+      "sourceUrl": "https://www.insnews.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5CNlh0VURwUS13ZFFqM1QwbldVVmRtRktvYzlGeGFiaUlKV3E4R0hBbnlpV0NtSWdsN09ERlYyUUxkRzZtVG1zWHk4REVZT3BRTVJhSWhuaUl3U2MtOG9nUEl6ZkloeXdwZ0FB0gFvQVVfeXFMTUo1eVl1TjJrMno1VXdDMG53STZnWkNPd3hSRDNpZlJOOEI0NWxBSkpTMHl2VlBfejBoeDJmVWVzUjd5OHM0NXhHTzE4T0JFeFdMV04yWEdSdXZCM1A3b0pHdzYzTHNHTDdMWkNpQnBj?oc=5",
+      "publishedAt": "2026-09-27T15:00:00.000Z",
+      "description": "",
+      "id": "0f544663afac",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "생명보험",
+        "보험업계"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "한국보험신문",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5CNlh0VURwUS13ZFFqM1QwbldVVmRtRktvYzlGeGFiaUlKV3E4R0hBbnlpV0NtSWdsN09ERlYyUUxkRzZtVG1zWHk4REVZT3BRTVJhSWhuaUl3U2MtOG9nUEl6ZkloeXdwZ0FB0gFvQVVfeXFMTUo1eVl1TjJrMno1VXdDMG53STZnWkNPd3hSRDNpZlJOOEI0NWxBSkpTMHl2VlBfejBoeDJmVWVzUjd5OHM0NXhHTzE4T0JFeFdMV04yWEdSdXZCM1A3b0pHdzYzTHNHTDdMWkNpQnBj?oc=5",
+          "publishedAt": "2026-09-27T15:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T15:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "인도 데이터센터 시장, 전력·건설·사이버·용수 위험 집중",
+      "source": "한국보험신문",
+      "sourceUrl": "https://www.insnews.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5rbWQwcDIyY3NOQTVPXzBOLXRZcTB5Uk1JMC1FejFvVlluM3A2T3NWOG9EWUZoOC0xbzZldVZ2dXVXUHM0RjdHTWxVMG5VaUhManNMb2h2ZmNyZm9EMkYtTEpQNGl6bGR3Y0lV0gFvQVVfeXFMTkhzMFh5WlpHdlM1M2lESFR0Vjg4anVwbHlzM0pyMGl2NHpZWjNfd3Y2QVhWTEkwaGwwS2JCaUtXQ0diVERoV0RwaTdHS1hXMkZ3REM2MWN1NExuRTJaa0hiMTNubVp0MDlTQmRuczVz?oc=5",
+      "publishedAt": "2026-09-27T15:00:00.000Z",
+      "description": "",
+      "id": "2701a6de6e3c",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "보험업계"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "한국보험신문",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5rbWQwcDIyY3NOQTVPXzBOLXRZcTB5Uk1JMC1FejFvVlluM3A2T3NWOG9EWUZoOC0xbzZldVZ2dXVXUHM0RjdHTWxVMG5VaUhManNMb2h2ZmNyZm9EMkYtTEpQNGl6bGR3Y0lV0gFvQVVfeXFMTkhzMFh5WlpHdlM1M2lESFR0Vjg4anVwbHlzM0pyMGl2NHpZWjNfd3Y2QVhWTEkwaGwwS2JCaUtXQ0diVERoV0RwaTdHS1hXMkZ3REM2MWN1NExuRTJaa0hiMTNubVp0MDlTQmRuczVz?oc=5",
+          "publishedAt": "2026-09-27T15:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T15:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "중국, 보험법 개정 추진…주주·실소유주 감독 강화",
+      "source": "한국보험신문",
+      "sourceUrl": "https://www.insnews.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9IMW1fTUllc2g0LWVPV0hRTTRIUlRBZUxHVERaLUZ4UUFJOVhWbHh0eVFMd2diTENQMkMyY2dSR3VYRFhnNjNCMWtucUNockJOckpiTnVlZEZJNnh5RnlDckpZZEtpOE9MTWVn0gFvQVVfeXFMT0RPM1BEd1o3dDJTdkducGd0UXZWc0Fnb1lPREp0dkwxN0hKdUV3Qko1YnpYR0VKWmM0R0VWVDBmMk5CU1VKRHlfc1Y4ZWx0RlNWWUZHbU5JNWxWU29VYmdsdHh0WFdLTktzbE5ycWlz?oc=5",
+      "publishedAt": "2026-09-27T15:00:00.000Z",
+      "description": "",
+      "id": "b0d2282e9917",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "금융당국 보험"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "한국보험신문",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9IMW1fTUllc2g0LWVPV0hRTTRIUlRBZUxHVERaLUZ4UUFJOVhWbHh0eVFMd2diTENQMkMyY2dSR3VYRFhnNjNCMWtucUNockJOckpiTnVlZEZJNnh5RnlDckpZZEtpOE9MTWVn0gFvQVVfeXFMT0RPM1BEd1o3dDJTdkducGd0UXZWc0Fnb1lPREp0dkwxN0hKdUV3Qko1YnpYR0VKWmM0R0VWVDBmMk5CU1VKRHlfc1Y4ZWx0RlNWWUZHbU5JNWxWU29VYmdsdHh0WFdLTktzbE5ycWlz?oc=5",
+          "publishedAt": "2026-09-27T15:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T15:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "돌아온 고금리 시대…2금융권 엇갈린 희비",
+      "source": "kukinews.com",
+      "sourceUrl": "https://www.kukinews.com",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB3RnJIOHoxRUFiN3oxVkRvRmZELTJLSDFiN2ZIVElPN2VaQ2VIR2xOdzFWSkYxR0FEcnRLTHZKdDFRY3d0ZW5aTE1YdVNSUEpiMy1uVFUyYmJkd043cnUtb0lCMA?oc=5",
+      "publishedAt": "2026-09-27T08:59:09.000Z",
+      "description": "",
+      "id": "20af8978efb8",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "보험사 실적"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "kukinews.com",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB3RnJIOHoxRUFiN3oxVkRvRmZELTJLSDFiN2ZIVElPN2VaQ2VIR2xOdzFWSkYxR0FEcnRLTHZKdDFRY3d0ZW5aTE1YdVNSUEpiMy1uVFUyYmJkd043cnUtb0lCMA?oc=5",
+          "publishedAt": "2026-09-27T08:59:09.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T08:59:09.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "신용생명보험 활성화…자손에 ‘빛부담’ 차단?",
+      "source": "중소기업투데이",
+      "sourceUrl": "http://www.sbiztoday.kr",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9nX0htaDNteFFFTzhySzJMM2tKTUo0V2JZRU1vSUhpSUlnZ3o3U0JybGU3Zm1pSkxiakxhM01EUkI3QTBHb2NBTnRoTElGRTlhLWtqZDVPUmpCMEh0bElsS1k0S3JNdEZ50gFsQVVfeXFMTlAxYS1oQ1JNZnBoVHJpWXkxeGNJOXVaMUl1eEtNc3FiVzhvUFlNNzdZbFFmVFl1d1c1dmFoRFltTnN6Q01iUEliR1JoZ1JGTmJwUkFuM21ydjkxTjQ2SGhHY1pCR1VETnYxTUMt?oc=5",
+      "publishedAt": "2026-09-27T08:21:31.000Z",
+      "description": "",
+      "id": "bd6652d7f430",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "생명보험",
+        "보험업계"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "중소기업투데이",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9nX0htaDNteFFFTzhySzJMM2tKTUo0V2JZRU1vSUhpSUlnZ3o3U0JybGU3Zm1pSkxiakxhM01EUkI3QTBHb2NBTnRoTElGRTlhLWtqZDVPUmpCMEh0bElsS1k0S3JNdEZ50gFsQVVfeXFMTlAxYS1oQ1JNZnBoVHJpWXkxeGNJOXVaMUl1eEtNc3FiVzhvUFlNNzdZbFFmVFl1d1c1dmFoRFltTnN6Q01iUEliR1JoZ1JGTmJwUkFuM21ydjkxTjQ2SGhHY1pCR1VETnYxTUMt?oc=5",
+          "publishedAt": "2026-09-27T08:21:31.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T08:21:31.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "\"결혼 안하는데 사망보험금 1억 있어봤자\"..소액보장 가입자 급증한 이유가",
+      "source": "다음뉴스",
+      "sourceUrl": "https://v.daum.net",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1xZFVpMnZ1SHQ5OGQzTTRvNjJXeU5DbGJ4ZUJEZ0Z4aklqTUwyVk1LTlQxLVd6NkF3SXNlN1F0dHFIOG92OVE?oc=5",
+      "publishedAt": "2026-09-27T07:45:11.000Z",
+      "description": "",
+      "id": "58ef1a228667",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "생명보험"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "다음뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1xZFVpMnZ1SHQ5OGQzTTRvNjJXeU5DbGJ4ZUJEZ0Z4aklqTUwyVk1LTlQxLVd6NkF3SXNlN1F0dHFIOG92OVE?oc=5",
+          "publishedAt": "2026-09-27T07:45:11.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T07:45:11.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "ABL생명, GA코리아와 소비자보호·내부통제 강화 협력",
+      "source": "보험매일",
+      "sourceUrl": "https://www.fins.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9IU2VCX1VvcWJEMGpmY1dWZGFuY01lNWZTcTlWTVlqUEt1NzA3Y0Nxa1A0Y1Bidl84ODB2NC1CN0Y4STJ2dVRKY2RSNGRoZHJTalZ4WDRXVDZmRzBHNHY4akE5R3dRbzdz?oc=5",
+      "publishedAt": "2026-09-27T07:00:00.000Z",
+      "description": "",
+      "id": "347d1e31586b",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "생명보험"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "보험매일",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9IU2VCX1VvcWJEMGpmY1dWZGFuY01lNWZTcTlWTVlqUEt1NzA3Y0Nxa1A0Y1Bidl84ODB2NC1CN0Y4STJ2dVRKY2RSNGRoZHJTalZ4WDRXVDZmRzBHNHY4akE5R3dRbzdz?oc=5",
+          "publishedAt": "2026-09-27T07:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T07:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "법인보험 ‘절세 차단’ 후폭풍…GA “정상 계약까지 해지 내몰린다”",
+      "source": "보험매일",
+      "sourceUrl": "https://www.fins.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9XTjk3X1dfRUxRYWJNcjVJSk1FTnJibWtwMzFvYlJLZmhUaElRbWNRazRUOUVWLVlOcW93Wjl3Z1psUFRub0k1dTRFcXZoUkJXejl0X2tuVk16YVE2bFRTQUt5OVhrMUtq?oc=5",
+      "publishedAt": "2026-09-27T07:00:00.000Z",
+      "description": "",
+      "id": "9bb19f4782d6",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "보험업계",
+        "금융당국 보험"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "보험매일",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9XTjk3X1dfRUxRYWJNcjVJSk1FTnJibWtwMzFvYlJLZmhUaElRbWNRazRUOUVWLVlOcW93Wjl3Z1psUFRub0k1dTRFcXZoUkJXejl0X2tuVk16YVE2bFRTQUt5OVhrMUtq?oc=5",
+          "publishedAt": "2026-09-27T07:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T07:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "간병보험이 ‘눈먼 돈’?… 서류 조작 위장청구 4년 새 229배 폭증",
+      "source": "다음뉴스",
+      "sourceUrl": "https://v.daum.net",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5TcnBPMVF4bGF1SjQ1UmItUG83dURWV3VQeGJveXFBUmk0dHctTEhMOEszQzlCNzNyZm9vR1NuakUwRmZyMnJqWEZreHRVems?oc=5",
+      "publishedAt": "2026-09-27T05:46:43.000Z",
+      "description": "",
+      "id": "84a56f0345bb",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "보험업계"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "다음뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5TcnBPMVF4bGF1SjQ1UmItUG83dURWV3VQeGJveXFBUmk0dHctTEhMOEszQzlCNzNyZm9vR1NuakUwRmZyMnJqWEZreHRVems?oc=5",
+          "publishedAt": "2026-09-27T05:46:43.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T05:46:43.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "간병보험 위장청구 급증…\"간병인 1명에 최대 5000만원 청구\"",
+      "source": "hidomin.com",
+      "sourceUrl": "https://www.hidomin.com",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1ndGtfSjFpcHBVZGhsdVpVZE9qZGNhUFBjbTR4cUZVOTFJZlZPU0l3dHA2Ml9vM3BSblFiMVE5bm5xNVM0dHlHUV9qYW8yVkZLRDRwaE03aFlqZHhLd1hfbThlTmxKa0lia3c?oc=5",
+      "publishedAt": "2026-09-27T04:44:35.000Z",
+      "description": "",
+      "id": "06cf10d72209",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "금융당국 보험"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "hidomin.com",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1ndGtfSjFpcHBVZGhsdVpVZE9qZGNhUFBjbTR4cUZVOTFJZlZPU0l3dHA2Ml9vM3BSblFiMVE5bm5xNVM0dHlHUV9qYW8yVkZLRDRwaE03aFlqZHhLd1hfbThlTmxKa0lia3c?oc=5",
+          "publishedAt": "2026-09-27T04:44:35.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T04:44:35.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "IUMI 신임 회장에 션 달튼…AI·지속가능성 등 핵심과제로",
+      "source": "해사신문",
+      "sourceUrl": "http://www.haesanews.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1xdWVjODRQVmdKb3lRcFNPd1NHYXphVmRKSUQyakhVUl94TFZtNHlnd1Bsb3l4MWhzdXhpaWJ2a3R0QXpINU1YVzJxMS1EZ1ZyYVI2bGhjS2xqcmRKY0F6akRTdGdyVFA4VmVv?oc=5",
+      "publishedAt": "2026-09-27T00:26:00.000Z",
+      "description": "",
+      "id": "5422d6c184ec",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "보험업계"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "해사신문",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1xdWVjODRQVmdKb3lRcFNPd1NHYXphVmRKSUQyakhVUl94TFZtNHlnd1Bsb3l4MWhzdXhpaWJ2a3R0QXpINU1YVzJxMS1EZ1ZyYVI2bGhjS2xqcmRKY0F6akRTdGdyVFA4VmVv?oc=5",
+          "publishedAt": "2026-09-27T00:26:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T00:26:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "금융당국, 초대형 GA에 첫 종합감독…제재 보험사 수준 상향",
+      "source": "서울경제TV",
+      "sourceUrl": "https://www.sentv.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA3M2JVRkJwMzk4S0Uzd0Z6OGR3amhWMlJTa2FtdjJoVzN1RkZONUlEbzVMWUdpajVYRjNuNUphMFN5YjJXQzh5THVFXzFKck5lX253VVhiU0tmRWtVQjhQSlV0Z2k?oc=5",
+      "publishedAt": "2026-09-26T23:00:04.000Z",
+      "description": "",
+      "id": "438b1317c7f0",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "금융당국 보험"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "서울경제TV",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA3M2JVRkJwMzk4S0Uzd0Z6OGR3amhWMlJTa2FtdjJoVzN1RkZONUlEbzVMWUdpajVYRjNuNUphMFN5YjJXQzh5THVFXzFKck5lX253VVhiU0tmRWtVQjhQSlV0Z2k?oc=5",
+          "publishedAt": "2026-09-26T23:00:04.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-26T23:00:04.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "보험업계 '특허권' 경쟁 지형 변화… 손보 주춤·생보 급증",
+      "source": "글로벌이코노믹",
+      "sourceUrl": "https://www.g-enews.com",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQdUpOTWRINHJERmxCSzhDY3JrYy1yWFFFcHhFU2h4QlRROU9odU5VRGpuV2RTbUtzQ25DWkV0SThyZWszWkdXMDRSVXRjcVVXTUgyS2JlaGlMeVlLVjFTbHBaeXA4bmNHM2tOUEZNb0NlRjZBVjlLYWdOMFNGVUdIdEVGaUc?oc=5",
+      "publishedAt": "2026-09-26T20:00:00.000Z",
+      "description": "",
+      "id": "f69a49549025",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "생명보험",
+        "보험업계"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "글로벌이코노믹",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQdUpOTWRINHJERmxCSzhDY3JrYy1yWFFFcHhFU2h4QlRROU9odU5VRGpuV2RTbUtzQ25DWkV0SThyZWszWkdXMDRSVXRjcVVXTUgyS2JlaGlMeVlLVjFTbHBaeXA4bmNHM2tOUEZNb0NlRjZBVjlLYWdOMFNGVUdIdEVGaUc?oc=5",
+          "publishedAt": "2026-09-26T20:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-26T20:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Kenyan Insurtech Turaco Secures Investment From 3IF Ventures To Expand Affordable Insurance",
+      "source": "WeeTracker",
+      "sourceUrl": "https://weetracker.com",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOWkRKb3NEOEk5cG5CVGh4c08tbm5XWVZVMHBxQk9Ca0J0N1BlWGpjOHg4VEMtLXExZEtiSXNiZ09pYmhNOWk3cXV1c2xyVVZIU2FHU3VzemVNV0lCNXJOdlYtOVQzdVZ3dWlCMERPcU4wbnN4MGZuZ1NsMGkxRzJaMTVadUlsMS1FTVE?oc=5",
+      "publishedAt": "2026-09-27T12:04:25.000Z",
+      "description": "",
+      "id": "6ae0705d1467",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "insurtech"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "WeeTracker",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOWkRKb3NEOEk5cG5CVGh4c08tbm5XWVZVMHBxQk9Ca0J0N1BlWGpjOHg4VEMtLXExZEtiSXNiZ09pYmhNOWk3cXV1c2xyVVZIU2FHU3VzemVNV0lCNXJOdlYtOVQzdVZ3dWlCMERPcU4wbnN4MGZuZ1NsMGkxRzJaMTVadUlsMS1FTVE?oc=5",
+          "publishedAt": "2026-09-27T12:04:25.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T12:04:25.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Relation Insurance Acquires LaPlaca Insurance, Expanding Presence In Pennsylvania And Northeast Markets",
+      "source": "Pulse 2.0",
+      "sourceUrl": "https://pulse2.com",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOR0Ywb0hXWndIOVZrWUhieXVsLXRkOXNnc0tZZzZLMEtCRHhuMHNXY0dvMnZzeF84QVNJV1VDZUR5aFU2UGpHcHBVN0hoX2FyaDR1c2JYZEJiM1QxQ05fTlR6U2pSZEJsaDd5VmhGMm5mazJ5M0EwWktZUTBlWnQxM0RNMnV4bV9vQTRSLXB3TVFiV1JVRGwxamM1a1U4OTIwR2VvbTY3WHNhb3lDLVBJVWVfeFJaSW54N3p2Q1hOY9IBxAFBVV95cUxPWWEycmR1UV9hZWtMY1BhTTY4ZzF3S2EwTWcyTWdPNENCNXUtQzlMdVdZYUhzMjg2S3NZYUxjU2w1b3VHTF9FbkpMV3JEWE1FNVlpYXJyRWUyOXJNNHYwbTAxTnBWMDlITzV4Q01NcUZhYlFYc3QzcnRLQllxZEtPSUtYaHdmcjB6d1NrMW0wMWVYdjlqczBEdXBUNVo3eDlaZ3poQzNGWjVVYkxhaVZoMGFyM21lRDVjR1VudzYwZXVsVTNP?oc=5",
+      "publishedAt": "2026-09-27T12:01:43.000Z",
+      "description": "",
+      "id": "f50c8bba3b36",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "insurance industry"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Pulse 2.0",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOR0Ywb0hXWndIOVZrWUhieXVsLXRkOXNnc0tZZzZLMEtCRHhuMHNXY0dvMnZzeF84QVNJV1VDZUR5aFU2UGpHcHBVN0hoX2FyaDR1c2JYZEJiM1QxQ05fTlR6U2pSZEJsaDd5VmhGMm5mazJ5M0EwWktZUTBlWnQxM0RNMnV4bV9vQTRSLXB3TVFiV1JVRGwxamM1a1U4OTIwR2VvbTY3WHNhb3lDLVBJVWVfeFJaSW54N3p2Q1hOY9IBxAFBVV95cUxPWWEycmR1UV9hZWtMY1BhTTY4ZzF3S2EwTWcyTWdPNENCNXUtQzlMdVdZYUhzMjg2S3NZYUxjU2w1b3VHTF9FbkpMV3JEWE1FNVlpYXJyRWUyOXJNNHYwbTAxTnBWMDlITzV4Q01NcUZhYlFYc3QzcnRLQllxZEtPSUtYaHdmcjB6d1NrMW0wMWVYdjlqczBEdXBUNVo3eDlaZ3poQzNGWjVVYkxhaVZoMGFyM21lRDVjR1VudzYwZXVsVTNP?oc=5",
+          "publishedAt": "2026-09-27T12:01:43.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T12:01:43.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Reinsurance Group of America, Incorporated (RGA) stock price, news, quote and history",
+      "source": "Yahoo Finance Singapore",
+      "sourceUrl": "https://sg.finance.yahoo.com",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFA0bUVidjhaNWJ5R1BPVG92MEItV015SGVya0h2RHJ4NHJET2lNZWpXSFlqU1VqWldiSnRPTVFneXloc3RMcmpCS3VaNVVTWnU3?oc=5",
+      "publishedAt": "2026-09-27T11:10:17.000Z",
+      "description": "",
+      "id": "fb98ebee788d",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "reinsurance market"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Yahoo Finance Singapore",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFA0bUVidjhaNWJ5R1BPVG92MEItV015SGVya0h2RHJ4NHJET2lNZWpXSFlqU1VqWldiSnRPTVFneXloc3RMcmpCS3VaNVVTWnU3?oc=5",
+          "publishedAt": "2026-09-27T11:10:17.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T11:10:17.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Mayer Brown Adds Former Sidley Austin Partner John Grothaus To Expand Insurance Transactions Practice In Chicago",
+      "source": "Pulse 2.0",
+      "sourceUrl": "https://pulse2.com",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNMjMtSEtFMUJmZHdoX3NyUnpZVWRocHI0MThxMi1rNDRMcldqRERxUEhGcjZBWnRsVmJnLTU3UW9qSGwtdnY3aElURWRrdXZwQnBzRnhta05mOFJXenkyMUoxbnBGZEVUX1Nkc0RpQXozY3pXNU5Da2lkZWF4WHpxaHh6a3kwbnVtRTBNWHJQa3N4S0hSZlpkSGs0ZWNCVVcteVNjUm1HaVdzM2F4b053aDQtZGhLeFIwNDZqSXJvM3hEQm1aWXNvSm1meHLSAdIBQVVfeXFMT2xlWERDXzg4ZDVBXzlFVWNmOFFQaUFZRzlrbnFKMGljYjRpdnFqN1doQmRjN3d0Q0FiOG1PTHF6TzRNeVVnWXZtb1RaVnY2U012M1lBVC1vcVpkX0xhM3VTMFNqdGE1dVBMU0xpY1R1QlFoYVR3dWRrczVuQlV2UmRxRU82WnlDNXNlNnBxbmwwd2h6Y2hESW81M2t5aWNObjFHTmpvQ08wQkwtWWhqX205cGFCd3BCbS14ZjZ1Nlo5dWFqczFPSzdwYUVEYk1QaWd3?oc=5",
+      "publishedAt": "2026-09-27T10:26:10.000Z",
+      "description": "",
+      "id": "aff9cfe9ceed",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "insurance industry",
+        "reinsurance market"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Pulse 2.0",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNMjMtSEtFMUJmZHdoX3NyUnpZVWRocHI0MThxMi1rNDRMcldqRERxUEhGcjZBWnRsVmJnLTU3UW9qSGwtdnY3aElURWRrdXZwQnBzRnhta05mOFJXenkyMUoxbnBGZEVUX1Nkc0RpQXozY3pXNU5Da2lkZWF4WHpxaHh6a3kwbnVtRTBNWHJQa3N4S0hSZlpkSGs0ZWNCVVcteVNjUm1HaVdzM2F4b053aDQtZGhLeFIwNDZqSXJvM3hEQm1aWXNvSm1meHLSAdIBQVVfeXFMT2xlWERDXzg4ZDVBXzlFVWNmOFFQaUFZRzlrbnFKMGljYjRpdnFqN1doQmRjN3d0Q0FiOG1PTHF6TzRNeVVnWXZtb1RaVnY2U012M1lBVC1vcVpkX0xhM3VTMFNqdGE1dVBMU0xpY1R1QlFoYVR3dWRrczVuQlV2UmRxRU82WnlDNXNlNnBxbmwwd2h6Y2hESW81M2t5aWNObjFHTmpvQ08wQkwtWWhqX205cGFCd3BCbS14ZjZ1Nlo5dWFqczFPSzdwYUVEYk1QaWd3?oc=5",
+          "publishedAt": "2026-09-27T10:26:10.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T10:26:10.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "LIAM: Widen insurance protection among Malaysian workers, strengthen reinsurance industry",
+      "source": "The Sun Malaysia",
+      "sourceUrl": "https://thesun.my",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNUFKdDh3UjJsamJIS29pN3FVWlRaX0xmQ2lqaW4xcVZwdHpkbVhScFhLVUxmeExfbXozNEYtNzdCdW1ZajhZZkVrZ0JObmZSWlE1OVQxaWNwX29aQVNrYXJDVFNOQjdRTUpBY3JYcWNHX2FXclVCdUo1VlBLTGJVTDBVb0xpVnd5QVJhRWY4Sm5RYzdBMFp6WVhKZXRqQkFhMW5HYUZIbm5vY3NLSEc2T0l4RVZGQQ?oc=5",
+      "publishedAt": "2026-09-27T10:15:00.000Z",
+      "description": "",
+      "id": "a8a6d71b3bcc",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "reinsurance market"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "The Sun Malaysia",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNUFKdDh3UjJsamJIS29pN3FVWlRaX0xmQ2lqaW4xcVZwdHpkbVhScFhLVUxmeExfbXozNEYtNzdCdW1ZajhZZkVrZ0JObmZSWlE1OVQxaWNwX29aQVNrYXJDVFNOQjdRTUpBY3JYcWNHX2FXclVCdUo1VlBLTGJVTDBVb0xpVnd5QVJhRWY4Sm5RYzdBMFp6WVhKZXRqQkFhMW5HYUZIbm5vY3NLSEc2T0l4RVZGQQ?oc=5",
+          "publishedAt": "2026-09-27T10:15:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T10:15:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "3 Insurance Stocks Tied To British Airways Crew Legal Risk",
+      "source": "Simply Wall Street",
+      "sourceUrl": "https://simplywall.st",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQaGZpYnYxbmhsWWJZZDFrZmZheTZMWTJzQWg2Vl9ITGZfV1dJWkROVkNqYnVMYTdWQnZ1Q3k0LWcxRWtLQXU3VS1rRXo5MGIxcW4xanBjV2o0VFJrdVZtYXpCNDB0UGxEVC1lczNRc24yTHBkcUQ0NzlXQ0pKMEpVNS1KMHN5SVlDM25mazk5Y25IbVVzNmJmMEFKU1JoQ0J2bTF3aWhHa3I0MmNtdC05OTRtRXZ6WUhUMktvMWR5dlNuNVRYMTlYRGJrR0NRVGQy0gHWAUFVX3lxTE4td1lzWlJLTWRaVzRGZFNodUo1bGJJdVNMWnZzQkNHTnZqNEtIU1ViOGtQMURNVk9vOEpFRmFyYzgwemRtM1ZhY2ZxN2hhY2RRTDFLaHA0MzZDV1FIQV85dm9ielpVSmtfQWtoSUkyQW1DcEdNSUowbHhXV3dZeTFaRGhsWm1fSFc0bXpKOEt0ZmhFTS1KR2ZGT1FCQ05uNzdoNzlnMG5uUVF2TjFzS2xEOW1yTWZNVk94cDZOX0xHOURCVmtMWGlOSDQ5V2lWYS1ReHlPUlE?oc=5",
+      "publishedAt": "2026-09-27T09:55:14.000Z",
+      "description": "",
+      "id": "b82b2f4d5dab",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "reinsurance market"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Simply Wall Street",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQaGZpYnYxbmhsWWJZZDFrZmZheTZMWTJzQWg2Vl9ITGZfV1dJWkROVkNqYnVMYTdWQnZ1Q3k0LWcxRWtLQXU3VS1rRXo5MGIxcW4xanBjV2o0VFJrdVZtYXpCNDB0UGxEVC1lczNRc24yTHBkcUQ0NzlXQ0pKMEpVNS1KMHN5SVlDM25mazk5Y25IbVVzNmJmMEFKU1JoQ0J2bTF3aWhHa3I0MmNtdC05OTRtRXZ6WUhUMktvMWR5dlNuNVRYMTlYRGJrR0NRVGQy0gHWAUFVX3lxTE4td1lzWlJLTWRaVzRGZFNodUo1bGJJdVNMWnZzQkNHTnZqNEtIU1ViOGtQMURNVk9vOEpFRmFyYzgwemRtM1ZhY2ZxN2hhY2RRTDFLaHA0MzZDV1FIQV85dm9ielpVSmtfQWtoSUkyQW1DcEdNSUowbHhXV3dZeTFaRGhsWm1fSFc0bXpKOEt0ZmhFTS1KR2ZGT1FCQ05uNzdoNzlnMG5uUVF2TjFzS2xEOW1yTWZNVk94cDZOX0xHOURCVmtMWGlOSDQ5V2lWYS1ReHlPUlE?oc=5",
+          "publishedAt": "2026-09-27T09:55:14.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T09:55:14.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Is RenaissanceRe Holdings (RNR) Undervalued On Its Diversified Reinsurance Story?",
+      "source": "Yahoo Finance",
+      "sourceUrl": "https://finance.yahoo.com",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQS1BFRi0yMmNhTUhKRTNSTzNYbWFtSGo3RlViT3hGb1NZeUNxYnVwWXREUGx3alJBT19Zay0xYllKZkFDN2VPUTBqR0VVYVhMZlJERWhNdjcwVnBwd3V2d0d4Q0hyUjBma19fT0V5SGJrSHBsaW9RZUpkdE5LY2FEQWl3b2pzUmxNaS1LMEI0aEJRUC1ESmhTY1B6Tl9sYUxiZkVxS1JwTm14akVUa1l5UzdIdFRFQQ?oc=5",
+      "publishedAt": "2026-09-27T09:08:38.000Z",
+      "description": "",
+      "id": "ead4d1bb6c37",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "reinsurance market"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQS1BFRi0yMmNhTUhKRTNSTzNYbWFtSGo3RlViT3hGb1NZeUNxYnVwWXREUGx3alJBT19Zay0xYllKZkFDN2VPUTBqR0VVYVhMZlJERWhNdjcwVnBwd3V2d0d4Q0hyUjBma19fT0V5SGJrSHBsaW9RZUpkdE5LY2FEQWl3b2pzUmxNaS1LMEI0aEJRUC1ESmhTY1B6Tl9sYUxiZkVxS1JwTm14akVUa1l5UzdIdFRFQQ?oc=5",
+          "publishedAt": "2026-09-27T09:08:38.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T09:08:38.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Tembo strengthens product team",
+      "source": "bdaily.co.uk",
+      "sourceUrl": "https://bdaily.co.uk",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFB6V1FTc1RoWkdaaElDSGZkTTRXa1cxSkJWSWhlZXE1c2Q4em5waGJKU0xmUThDQ0RWZER6ekZQWnRfVDBKMXd4Y0pFLVVPOFJmb3lVYzFvWnNjZE5mSnR4NHhaME8wVDIxa3NrWFo3a2dTdFd2TFZrT0FoWQ?oc=5",
+      "publishedAt": "2026-09-27T08:14:51.000Z",
+      "description": "",
+      "id": "b5deb9eff75c",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "insurtech"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "bdaily.co.uk",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFB6V1FTc1RoWkdaaElDSGZkTTRXa1cxSkJWSWhlZXE1c2Q4em5waGJKU0xmUThDQ0RWZER6ekZQWnRfVDBKMXd4Y0pFLVVPOFJmb3lVYzFvWnNjZE5mSnR4NHhaME8wVDIxa3NrWFo3a2dTdFd2TFZrT0FoWQ?oc=5",
+          "publishedAt": "2026-09-27T08:14:51.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T08:14:51.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Insurance regulator limits buying of foreign reinsurance",
+      "source": "Business Daily",
+      "sourceUrl": "https://www.businessdailyafrica.com",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPQjhKM2JtV1JfVFBpeVlaWDlxUlF5TTF0VVh1NFQ0ekd5eWY4UjhpdnByVTVnLWdJSWpmLUlGaGxVSjFtTHMxeGI4dUViWDExVlVuTG1ISC11TDd0X0VrTTQzU0pHMjd0NjN5Mmt5YTBIVml4Zm1GY29IVF9ISWxxRXhlSEZMLWJOQy1KeWlGWS04YXVsV1NNcU0tRQ?oc=5",
+      "publishedAt": "2026-09-27T08:00:00.000Z",
+      "description": "",
+      "id": "37eca0acd368",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "reinsurance market"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Business Daily",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPQjhKM2JtV1JfVFBpeVlaWDlxUlF5TTF0VVh1NFQ0ekd5eWY4UjhpdnByVTVnLWdJSWpmLUlGaGxVSjFtTHMxeGI4dUViWDExVlVuTG1ISC11TDd0X0VrTTQzU0pHMjd0NjN5Mmt5YTBIVml4Zm1GY29IVF9ISWxxRXhlSEZMLWJOQy1KeWlGWS04YXVsV1NNcU0tRQ?oc=5",
+          "publishedAt": "2026-09-27T08:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T08:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Best Home Insurance Companies in Ocala, Florida (2026)",
+      "source": "Insurify",
+      "sourceUrl": "https://insurify.com",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBIR2pKU2VFLUNKWGVqd00ybmQ4ZEJiaGZHX0NIMm9WR0RQSmVPZmRNajFDLVJGYmt4YUd3YVBzcHJQRDZBeVhMYV8yQ3dhM3I0TjVGRnRvVmhMcVlMV25naVo1ZFBNRWs?oc=5",
+      "publishedAt": "2026-09-27T07:00:00.000Z",
+      "description": "",
+      "id": "0b8018e53cb1",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "insurance industry"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Insurify",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBIR2pKU2VFLUNKWGVqd00ybmQ4ZEJiaGZHX0NIMm9WR0RQSmVPZmRNajFDLVJGYmt4YUd3YVBzcHJQRDZBeVhMYV8yQ3dhM3I0TjVGRnRvVmhMcVlMV25naVo1ZFBNRWs?oc=5",
+          "publishedAt": "2026-09-27T07:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T07:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Annual Insurance Rendezvous-Vous in Monaco",
+      "source": "The Malta Independent Online",
+      "sourceUrl": "https://www.independent.com.mt",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPZ1ZwaFdLYzNvNERQZGp4cFh5S0Z5RUJhY1FIRm1FOXI2TkVoWWhlS1BDQXJ0OXZkNEdBclFuUk5PMXI1aEdkM2lVX3ZLV280bHVabzc4QzZ4TzR2bDd5T1RtODUtdXR2WmlacFNQc3doTjduamJjaE40ZW9wbXYyd2I0dGhGTW92MEMySl8ydUlBSkU2dEQ4c1hENHpMaGp0eG5DTUFCWld6RG9na3NIdnlYbFppM2ZOYWc?oc=5",
+      "publishedAt": "2026-09-27T06:00:00.000Z",
+      "description": "",
+      "id": "8654764b72f9",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "reinsurance market"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "The Malta Independent Online",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPZ1ZwaFdLYzNvNERQZGp4cFh5S0Z5RUJhY1FIRm1FOXI2TkVoWWhlS1BDQXJ0OXZkNEdBclFuUk5PMXI1aEdkM2lVX3ZLV280bHVabzc4QzZ4TzR2bDd5T1RtODUtdXR2WmlacFNQc3doTjduamJjaE40ZW9wbXYyd2I0dGhGTW92MEMySl8ydUlBSkU2dEQ4c1hENHpMaGp0eG5DTUFCWld6RG9na3NIdnlYbFppM2ZOYWc?oc=5",
+          "publishedAt": "2026-09-27T06:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T06:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Kakao Pay Insurance bucks digital insurer retreat",
+      "source": "The Korea Herald",
+      "sourceUrl": "https://www.koreaherald.com",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9GUEctREkyUEdzdTR0b01xZm1rV0R6QlVNako2VnlsaE9QVzk4bVI1T2twN3pTOHN3c0M0TUFqbW1QTE9vQjNHMlZ0dFRVR0xMY0x5djB4Zw?oc=5",
+      "publishedAt": "2026-09-27T04:39:42.000Z",
+      "description": "",
+      "id": "4b050201e6c7",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "insurance industry"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "The Korea Herald",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9GUEctREkyUEdzdTR0b01xZm1rV0R6QlVNako2VnlsaE9QVzk4bVI1T2twN3pTOHN3c0M0TUFqbW1QTE9vQjNHMlZ0dFRVR0xMY0x5djB4Zw?oc=5",
+          "publishedAt": "2026-09-27T04:39:42.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T04:39:42.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Healthcare Insurance Companies Are Leveraging AI For Novel Use-Cases",
+      "source": "Forbes",
+      "sourceUrl": "https://www.forbes.com",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQYkxHdFA4azNac19salozSms2RG9OWnRydk94bEI2cmFUMzNlM2xxYXFNWmJZc1lma0NWZUtuaThYUnJNdVFTT18yOURReFpxWjNxSXhlUVpraWtBZzNHYjZZVUZZVUpibVNTamFHQ0N1WXNHMWtXampaTzhSYzJYZXhHc0lhaURDU0IyTU1FT3FFLVVMTXZ2c1VKeFJUbS1wLWhPSXY0SFRrWTRJNHE1ZmkwRmVJRzVz?oc=5",
+      "publishedAt": "2026-09-27T00:55:21.000Z",
+      "description": "",
+      "id": "50b1a9092005",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "insurance industry"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Forbes",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQYkxHdFA4azNac19salozSms2RG9OWnRydk94bEI2cmFUMzNlM2xxYXFNWmJZc1lma0NWZUtuaThYUnJNdVFTT18yOURReFpxWjNxSXhlUVpraWtBZzNHYjZZVUZZVUpibVNTamFHQ0N1WXNHMWtXampaTzhSYzJYZXhHc0lhaURDU0IyTU1FT3FFLVVMTXZ2c1VKeFJUbS1wLWhPSXY0SFRrWTRJNHE1ZmkwRmVJRzVz?oc=5",
+          "publishedAt": "2026-09-27T00:55:21.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T00:55:21.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "State: we fixed Florida’s insurance crisis. Homeowners: we don’t buy it",
+      "source": "Miami Herald",
+      "sourceUrl": "https://www.miamiherald.com",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE91N082a2prZVRmWTluQ0Nja3pBbk1NRl9QTkNUXzF1aDRudWl5QlhjZVRlMUozTkpuMjZZY1dIQ29vMHNocFRmNFczUGhSSDIwR0FpeTN5M3F2UVJqdmZ6NTNjUWRkWXdIX0hFN9IBbEFVX3lxTE1GX2JoUG82ZGlONWE1VzVjV3NkUERGMEtiLWlYdVFEYVFBVEN0d243OTR1QVBubnJNMHdzYVpMbWZfMFFKWmJEX2lnLUhMUVIxbjhrT2tlalpBR3NDS3IwZlA2SGNtTTY3YzE1UQ?oc=5",
+      "publishedAt": "2026-09-26T17:16:35.000Z",
+      "description": "",
+      "id": "f2b8776bae92",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "insurance industry"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Miami Herald",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE91N082a2prZVRmWTluQ0Nja3pBbk1NRl9QTkNUXzF1aDRudWl5QlhjZVRlMUozTkpuMjZZY1dIQ29vMHNocFRmNFczUGhSSDIwR0FpeTN5M3F2UVJqdmZ6NTNjUWRkWXdIX0hFN9IBbEFVX3lxTE1GX2JoUG82ZGlONWE1VzVjV3NkUERGMEtiLWlYdVFEYVFBVEN0d243OTR1QVBubnJNMHdzYVpMbWZfMFFKWmJEX2lnLUhMUVIxbjhrT2tlalpBR3NDS3IwZlA2SGNtTTY3YzE1UQ?oc=5",
+          "publishedAt": "2026-09-26T17:16:35.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-26T17:16:35.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "New-Age Tech Stocks: Insurtech Sell-Off Drags Combined M-Cap Down By $3.6 Bn This Week",
+      "source": "Inc42",
+      "sourceUrl": "https://inc42.com",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMjRHT3NqMnhEYzJpNE1QZDRiM3NlSzQ0d3ZXWnlDNlVWNHBNYnMtYUtCV1c3QmJ5dzBLdnFLUHRiZTdwQjBCRklTNXkwWGJmLTBWVExoN0RjMm1NSkpfVFJ4ZXNOVGRyTXg5bzNsYWgwMXBiTEhHM1RFa2xJOVJEbW9Xd2NRUl96dmh2UzhUblQyelgteE1JNkx3d2phYUpDTWtsQzVsM1RtcjRk?oc=5",
+      "publishedAt": "2026-09-26T16:11:56.000Z",
+      "description": "",
+      "id": "7c8d766890d6",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "insurtech"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Inc42",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMjRHT3NqMnhEYzJpNE1QZDRiM3NlSzQ0d3ZXWnlDNlVWNHBNYnMtYUtCV1c3QmJ5dzBLdnFLUHRiZTdwQjBCRklTNXkwWGJmLTBWVExoN0RjMm1NSkpfVFJ4ZXNOVGRyTXg5bzNsYWgwMXBiTEhHM1RFa2xJOVJEbW9Xd2NRUl96dmh2UzhUblQyelgteE1JNkx3d2phYUpDTWtsQzVsM1RtcjRk?oc=5",
+          "publishedAt": "2026-09-26T16:11:56.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-26T16:11:56.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Heritage Insurance Sees Growth Ahead as Margins Improve and Reinsurance Costs Fall",
+      "source": "TradingView",
+      "sourceUrl": "https://www.tradingview.com",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxONm9HUE5RZ0VmT0lXWmZMOTdGNUVnWXhMZnp4VzU0Z3lVWTRHYllvVDFLMVFncnMxNUVUWnR2M1lCUnhfVm9lOU1LZFlGczhkUmNwR0xjdm5LR0pnV2MxTzdGZVM0TlJmeGtnbW5kVFJBSExyMkxZdlY0RzlPYUxWY3RnR0lnRDZHeE9QMnZyVU9uRmNFVVFoZmxZYTFCWmRKQnZkQVRnandPM0FUbWlsYzZpdUQzazVVVVQ2Vkota1RJdVNEVDNZa2RDTzVoZFlzcG1tN1Q5RUc3ZVU?oc=5",
+      "publishedAt": "2026-09-26T15:02:02.000Z",
+      "description": "",
+      "id": "7490a054f3b5",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "reinsurance market"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "TradingView",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxONm9HUE5RZ0VmT0lXWmZMOTdGNUVnWXhMZnp4VzU0Z3lVWTRHYllvVDFLMVFncnMxNUVUWnR2M1lCUnhfVm9lOU1LZFlGczhkUmNwR0xjdm5LR0pnV2MxTzdGZVM0TlJmeGtnbW5kVFJBSExyMkxZdlY0RzlPYUxWY3RnR0lnRDZHeE9QMnZyVU9uRmNFVVFoZmxZYTFCWmRKQnZkQVRnandPM0FUbWlsYzZpdUQzazVVVVQ2Vkota1RJdVNEVDNZa2RDTzVoZFlzcG1tN1Q5RUc3ZVU?oc=5",
+          "publishedAt": "2026-09-26T15:02:02.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-26T15:02:02.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "조영훈 한국로봇산업진흥원 원장 취임 인터뷰",
+      "source": "irobotnews.com",
+      "sourceUrl": "https://www.irobotnews.com",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1ybElHZnd6TF9VRlZ6QWcwQnEzRDU0MDZ2Q2lrT05GQ1QyYk82d0RwVVNRcW1WZDV6Vy01TWlST2tXUGg2M19MemZFM3JqTnFFQlVxWko4bE52WThZYThoTm0td0twM3liTHExbw?oc=5",
+      "publishedAt": "2026-09-27T14:30:53.000Z",
+      "description": "",
+      "id": "bf91531934be",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "AI 로봇"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "irobotnews.com",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1ybElHZnd6TF9VRlZ6QWcwQnEzRDU0MDZ2Q2lrT05GQ1QyYk82d0RwVVNRcW1WZDV6Vy01TWlST2tXUGg2M19MemZFM3JqTnFFQlVxWko4bE52WThZYThoTm0td0twM3liTHExbw?oc=5",
+          "publishedAt": "2026-09-27T14:30:53.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T14:30:53.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "“로봇이 스스로 배운다”…스킬드 AI, ‘피지컬 셀프플레이’ 기술 개발",
+      "source": "irobotnews.com",
+      "sourceUrl": "https://www.irobotnews.com",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE96VVFxbExYWnlrVzFxRGlPQ3EtSjhKRzZLaUhZdkxHeTZWbXZ0OU5heDNfZ1VVM0hhRWVHaF9Wc1ZjNlE0ZU5tQUlkX2F0bkxHRkhoTktwdDE5dnUxNXNCanNpRDFiNFRKNkhsMg?oc=5",
+      "publishedAt": "2026-09-27T10:48:58.000Z",
+      "description": "",
+      "id": "a813655b9d3e",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "피지컬 AI",
+        "AI 로봇"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "irobotnews.com",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE96VVFxbExYWnlrVzFxRGlPQ3EtSjhKRzZLaUhZdkxHeTZWbXZ0OU5heDNfZ1VVM0hhRWVHaF9Wc1ZjNlE0ZU5tQUlkX2F0bkxHRkhoTktwdDE5dnUxNXNCanNpRDFiNFRKNkhsMg?oc=5",
+          "publishedAt": "2026-09-27T10:48:58.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T10:48:58.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "마음AI-경복대, 피지컬 AI 교육 협력…직접 로봇 다루는 인재 양성",
+      "source": "irobotnews.com",
+      "sourceUrl": "https://www.irobotnews.com",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBiTzdQaFVIbS1PLXV2QXEtTk1Udm9MY0l1TG5wZkNqbkJPek83X2oyemhra3dfSENmcXg0MC1VY3VadVZpc01rSW41Wnp6QW52MThoSVh5RGtETVpHZUN2MzlZVGFjbkd3U1N3Rw?oc=5",
+      "publishedAt": "2026-09-27T10:43:30.000Z",
+      "description": "",
+      "id": "ddc88d5021f7",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "피지컬 AI",
+        "AI 로봇"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "irobotnews.com",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBiTzdQaFVIbS1PLXV2QXEtTk1Udm9MY0l1TG5wZkNqbkJPek83X2oyemhra3dfSENmcXg0MC1VY3VadVZpc01rSW41Wnp6QW52MThoSVh5RGtETVpHZUN2MzlZVGFjbkd3U1N3Rw?oc=5",
+          "publishedAt": "2026-09-27T10:43:30.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T10:43:30.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "‘말만하면 다 해준다’…AI 에이전트, 어디까지 왔나",
+      "source": "문화일보",
+      "sourceUrl": "https://www.munhwa.com",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9WZWk2b3hWT2ZTQkFIRUtXM2JRNGhvT3RldXZMdEFWTXhDNnNWSnRfMmtZdzRaaWxlUklmNVFEZk9WQTZlUUJlQTFJYXl1SXFs?oc=5",
+      "publishedAt": "2026-09-27T09:10:10.000Z",
+      "description": "",
+      "id": "008e34e80db4",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "AI 에이전트"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "문화일보",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9WZWk2b3hWT2ZTQkFIRUtXM2JRNGhvT3RldXZMdEFWTXhDNnNWSnRfMmtZdzRaaWxlUklmNVFEZk9WQTZlUUJlQTFJYXl1SXFs?oc=5",
+          "publishedAt": "2026-09-27T09:10:10.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T09:10:10.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "출시 2주 만에 280만건 다운로드했는데… 메타, AI 에이전트 ‘뮤즈’ 보안 취약점 발견",
+      "source": "Chosunbiz",
+      "sourceUrl": "https://biz.chosun.com",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPN2MzdmZCVkJDODB5aFNmMWdTd0x5aG1hWTBvQ0tObktpbVI1TFNheTJ3ems1d3RDOHp5TS1ZQ0trVGN6WUt0VU9xWEw0dnE3Ukk5RlN2UTdLSGJmT0dZazk0U2VHMUp1bkoxUlFYdDdGM2Z1a0VKNFdxdF9BQ0l4eENR?oc=5",
+      "publishedAt": "2026-09-27T08:18:00.000Z",
+      "description": "",
+      "id": "a0706483a3e0",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "AI 에이전트"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Chosunbiz",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPN2MzdmZCVkJDODB5aFNmMWdTd0x5aG1hWTBvQ0tObktpbVI1TFNheTJ3ems1d3RDOHp5TS1ZQ0trVGN6WUt0VU9xWEw0dnE3Ukk5RlN2UTdLSGJmT0dZazk0U2VHMUp1bkoxUlFYdDdGM2Z1a0VKNFdxdF9BQ0l4eENR?oc=5",
+          "publishedAt": "2026-09-27T08:18:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T08:18:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "제3회 대한민국 인공지능 혁신대상…'AI+피지컬 AI 로봇' 혁신기업 찾는다",
+      "source": "전자신문",
+      "sourceUrl": "https://www.etnews.com",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE04aXF0YnNHN0FoRHBoTVRWY0FQQnlOV0c0eTU1ZjVBUlhWYmo0TXhOY2h2R1hWQk5lWVJadnRESXJOYXZENEhBaEVDdzdKUQ?oc=5",
+      "publishedAt": "2026-09-27T08:16:00.000Z",
+      "description": "",
+      "id": "b4eacd5f4afa",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "피지컬 AI",
+        "AI 로봇"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE04aXF0YnNHN0FoRHBoTVRWY0FQQnlOV0c0eTU1ZjVBUlhWYmo0TXhOY2h2R1hWQk5lWVJadnRESXJOYXZENEhBaEVDdzdKUQ?oc=5",
+          "publishedAt": "2026-09-27T08:16:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T08:16:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "[김태형의 혁신의기술] 〈60〉AI 에이전트 시대, 우리는 누구에게 질문할 것인가〈하〉",
+      "source": "전자신문",
+      "sourceUrl": "https://www.etnews.com",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE4yQmxGU3Q2WVdESk1UMksyT2ZGd3FlWjhRMktWYlpiNTdPazgzQ2FDblEtWHVyeVNIZ1Y3b01JRndNcEhZMnBZYldtdVRzUQ?oc=5",
+      "publishedAt": "2026-09-27T07:00:00.000Z",
+      "description": "",
+      "id": "55fe690e5afe",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "AI 에이전트"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE4yQmxGU3Q2WVdESk1UMksyT2ZGd3FlWjhRMktWYlpiNTdPazgzQ2FDblEtWHVyeVNIZ1Y3b01JRndNcEhZMnBZYldtdVRzUQ?oc=5",
+          "publishedAt": "2026-09-27T07:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T07:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "기획처, 내부 업무망에 국산 LLM 도입…공무원 AI 활용 확대",
+      "source": "전자신문",
+      "sourceUrl": "https://www.etnews.com",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9mVTk3eFR5Z1NXMUZ2Ml9PV2kwcktZbnQ5MHlmVUg2WmN0NURxVnZIVEZoQ01vUGlGWjVYUWowTEllTnBlTkR5NWF5dmhrZw?oc=5",
+      "publishedAt": "2026-09-27T05:00:00.000Z",
+      "description": "",
+      "id": "032d706ae67c",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "LLM 거대언어모델"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9mVTk3eFR5Z1NXMUZ2Ml9PV2kwcktZbnQ5MHlmVUg2WmN0NURxVnZIVEZoQ01vUGlGWjVYUWowTEllTnBlTkR5NWF5dmhrZw?oc=5",
+          "publishedAt": "2026-09-27T05:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T05:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "\"작업 맞춰 AI 모델 골라드려요\" KT 라우팅 기술, 글로벌 벤치마크 2위 - 머니투데이",
+      "source": "머니투데이",
+      "sourceUrl": "https://www.mt.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1XckVkZTJhVjZNQmpOX1FMckJzVzhSY29qM3RHT2dBZHBMcTlrQ2pRc1BEaTNCUml3TWhFV2pCaFNpdEZWY01uczFMRVI5YjhDdEJ6VXB1MEM1UnVpcmg4SFNEbk1zNUnSAWxBVV95cUxQbVFGMEdPNks4ek1Eb1g2akMzTjVBRkRHUDlzbU9obXZWelMzRzFHM2F6VmxSTmdhdFRTbVEzMzZTOXNySXNqX1puUzJ1ZVZrRW5KcHdPLWJ3dEFfRk1HWjhSU3VZN3BGRmVhTkU?oc=5",
+      "publishedAt": "2026-09-27T01:08:14.000Z",
+      "description": "",
+      "id": "c3281ec89a44",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "LLM 거대언어모델"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "머니투데이",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1XckVkZTJhVjZNQmpOX1FMckJzVzhSY29qM3RHT2dBZHBMcTlrQ2pRc1BEaTNCUml3TWhFV2pCaFNpdEZWY01uczFMRVI5YjhDdEJ6VXB1MEM1UnVpcmg4SFNEbk1zNUnSAWxBVV95cUxQbVFGMEdPNks4ek1Eb1g2akMzTjVBRkRHUDlzbU9obXZWelMzRzFHM2F6VmxSTmdhdFRTbVEzMzZTOXNySXNqX1puUzJ1ZVZrRW5KcHdPLWJ3dEFfRk1HWjhSU3VZN3BGRmVhTkU?oc=5",
+          "publishedAt": "2026-09-27T01:08:14.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T01:08:14.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "삼성·LG, 미래 가전은 역시나 피지컬AI…로봇으로 고부가 노린다",
+      "source": "글로벌이코노믹",
+      "sourceUrl": "https://www.g-enews.com",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPQTJmcDU2RXY0dlVCNS1kWUpSZ1ZGRWd3ejkzWkx3TkRyOUY1REZ5NWh3b1RZZmJsTl93NGJGay1OQk8xWGZBSlJ2RUxHZml3QUZpSTJBa3RrRE5yTE83UUZEYWFZZkYwTW5ZSllTblI2MGhUMXk0Zm1relJyaGNVX0xFVDVpZw?oc=5",
+      "publishedAt": "2026-09-27T01:00:00.000Z",
+      "description": "",
+      "id": "ce642e6d8362",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "AI 로봇"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "글로벌이코노믹",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPQTJmcDU2RXY0dlVCNS1kWUpSZ1ZGRWd3ejkzWkx3TkRyOUY1REZ5NWh3b1RZZmJsTl93NGJGay1OQk8xWGZBSlJ2RUxHZml3QUZpSTJBa3RrRE5yTE83UUZEYWFZZkYwTW5ZSllTblI2MGhUMXk0Zm1relJyaGNVX0xFVDVpZw?oc=5",
+          "publishedAt": "2026-09-27T01:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T01:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "오픈AI 에이전트, 미국 정부 사이트 뒤졌다…‘에이전트 스팸’도 확인",
+      "source": "AI타임스",
+      "sourceUrl": "https://www.aitimes.com",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBJRHZySV9yU0xiajdWclZ3RlBlQmVPZFluN3BBS0ZPcjAxeHNVTkJGQVN5ejR6NlBfZlhyM0k4OVRXeU8xY05JaTZFdTRCYmdCZnhFNHBwRVQ3eUdROEVicDBzXzh4Sm1OS3c?oc=5",
+      "publishedAt": "2026-09-27T00:12:01.000Z",
+      "description": "",
+      "id": "ad14758f6747",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "AI 에이전트"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "AI타임스",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBJRHZySV9yU0xiajdWclZ3RlBlQmVPZFluN3BBS0ZPcjAxeHNVTkJGQVN5ejR6NlBfZlhyM0k4OVRXeU8xY05JaTZFdTRCYmdCZnhFNHBwRVQ3eUdROEVicDBzXzh4Sm1OS3c?oc=5",
+          "publishedAt": "2026-09-27T00:12:01.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T00:12:01.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "전북도, 현대차 투자 연계 '피지컬AI·청정수소·AI데이터센터' 3대 축 육성",
+      "source": "전자신문",
+      "sourceUrl": "https://www.etnews.com",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9nLWMzU2tackplZHRMX1k3NGZpT1g0cHBWbkhnX25fQUd3b01yb0plbW43ZmE3SFU5VUVhZy1MZy1JNDZrMXdNOGkxV3dWZw?oc=5",
+      "publishedAt": "2026-09-27T00:09:36.000Z",
+      "description": "",
+      "id": "0116b5d964dc",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "피지컬 AI"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9nLWMzU2tackplZHRMX1k3NGZpT1g0cHBWbkhnX25fQUd3b01yb0plbW43ZmE3SFU5VUVhZy1MZy1JNDZrMXdNOGkxV3dWZw?oc=5",
+          "publishedAt": "2026-09-27T00:09:36.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T00:09:36.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "[소셜＋] \"나는 무슨 꽃이야?\"…AI로 '진짜 나' 찾는 2030",
+      "source": "연합뉴스",
+      "sourceUrl": "https://www.yna.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB5blkyTjdLZEdDdU9JLW1OV3BVMTdaTks5VV9qdFJhcjNmX3FoMFJ1VHJMeHZ0dkJrTEJ6d0w4VkpEZllfZnZjR1NsN0xETkphTklEVjZUYXNta0XSAWBBVV95cUxNRXppNjZmWmthc2VpLVZIek9vVVVFYkpvRmFRTmRvajUzREtoZ0pTdExhd0xSNlppVG9Tc1hEeE01SW9tMV9DZl96UHB6Y1NkZDlEbk9ERjZHSHNWWm40eWU?oc=5",
+      "publishedAt": "2026-09-26T21:00:04.000Z",
+      "description": "",
+      "id": "408c925c4d26",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "생성형 AI"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB5blkyTjdLZEdDdU9JLW1OV3BVMTdaTks5VV9qdFJhcjNmX3FoMFJ1VHJMeHZ0dkJrTEJ6d0w4VkpEZllfZnZjR1NsN0xETkphTklEVjZUYXNta0XSAWBBVV95cUxNRXppNjZmWmthc2VpLVZIek9vVVVFYkpvRmFRTmRvajUzREtoZ0pTdExhd0xSNlppVG9Tc1hEeE01SW9tMV9DZl96UHB6Y1NkZDlEbk9ERjZHSHNWWm40eWU?oc=5",
+          "publishedAt": "2026-09-26T21:00:04.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-26T21:00:04.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "'선풍적 인기' 메타 AI에이전트 '뮤즈'에 취약점…\"경고 강화\"",
+      "source": "연합뉴스",
+      "sourceUrl": "https://www.yna.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1QelYxZ1d3ODl1MWhuRVk2Z0t3NjRhckdtbGs0Z0hVVHV6bEpMOEtCU0ZkQi05VmlVNFJZQUtmNkl4R3dRMVQ4ZHZOVkp0eDVta3ZXMTg1Y0FDUjTSAWBBVV95cUxPQUotSTFFMG5RWjFDbmhQN0VuUklucEs2UGQyYklOVzIwVkFHSlBJTDVFLVdKOWduVXdiSnJQOFZVSVpnMHM1Um5JS2ZaTkg2dFdObVoxYkJjaDR4Z2ZiUTk?oc=5",
+      "publishedAt": "2026-09-26T19:45:25.000Z",
+      "description": "",
+      "id": "582fb32ce40a",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "AI 에이전트"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1QelYxZ1d3ODl1MWhuRVk2Z0t3NjRhckdtbGs0Z0hVVHV6bEpMOEtCU0ZkQi05VmlVNFJZQUtmNkl4R3dRMVQ4ZHZOVkp0eDVta3ZXMTg1Y0FDUjTSAWBBVV95cUxPQUotSTFFMG5RWjFDbmhQN0VuUklucEs2UGQyYklOVzIwVkFHSlBJTDVFLVdKOWduVXdiSnJQOFZVSVpnMHM1Um5JS2ZaTkg2dFdObVoxYkJjaDR4Z2ZiUTk?oc=5",
+          "publishedAt": "2026-09-26T19:45:25.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-26T19:45:25.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "She Built an AI Agent to Get Her Next Job. It Worked",
+      "source": "inc.com",
+      "sourceUrl": "https://www.inc.com",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNQm1mT3JoWEQ4bzN4SUVSMjlidzk4V053TW5zWjJtajFtTkhkelBNVzNJdl9QeFpwdjliUS1KNGxjU282YVM4TDJEcGpmNlBWTDFtc0laUm9zOFFic3hMelVGdXRsRlZsdHBJRkV1M1R5V09jb0x3WkRxUVItalozQlNqTnFwLW56bExFdUJJWmhfRW1nSXpOTUFn?oc=5",
+      "publishedAt": "2026-09-27T15:23:31.000Z",
+      "description": "",
+      "id": "742cd70a8871",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "AI agent"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "inc.com",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNQm1mT3JoWEQ4bzN4SUVSMjlidzk4V053TW5zWjJtajFtTkhkelBNVzNJdl9QeFpwdjliUS1KNGxjU282YVM4TDJEcGpmNlBWTDFtc0laUm9zOFFic3hMelVGdXRsRlZsdHBJRkV1M1R5V09jb0x3WkRxUVItalozQlNqTnFwLW56bExFdUJJWmhfRW1nSXpOTUFn?oc=5",
+          "publishedAt": "2026-09-27T15:23:31.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T15:23:31.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "The Supervisor Agent Shift: How Enterprises Actually Staff AI Agent Oversight",
+      "source": "Yahoo Finance",
+      "sourceUrl": "https://finance.yahoo.com",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMi02TVVmd24tZWtxQmQyYUJ4VjgzTm1mZlFGdUx5LXZpdk5uU2tlQ0R5UGNiUWFLcEVBemFzZldDeEMxQVgzVHc5WkVhUFVmLUNYbFJPM0VweFExblBIRmxLcFFVbUFDUHF1b3hEY3ZCSVJNRVdfUkg1bTUzbGpBQnhJeEdTNUhUdGMtbm4wMGQ4NkdtQnJoWUs0YWxwcTJveFVxc1FLSk0tMTA?oc=5",
+      "publishedAt": "2026-09-27T15:21:04.000Z",
+      "description": "",
+      "id": "8f9afa202448",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "AI agent"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMi02TVVmd24tZWtxQmQyYUJ4VjgzTm1mZlFGdUx5LXZpdk5uU2tlQ0R5UGNiUWFLcEVBemFzZldDeEMxQVgzVHc5WkVhUFVmLUNYbFJPM0VweFExblBIRmxLcFFVbUFDUHF1b3hEY3ZCSVJNRVdfUkg1bTUzbGpBQnhJeEdTNUhUdGMtbm4wMGQ4NkdtQnJoWUs0YWxwcTJveFVxc1FLSk0tMTA?oc=5",
+          "publishedAt": "2026-09-27T15:21:04.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T15:21:04.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Australia is run on legacy systems that AI agents can easily exploit, former UN cyber negotiator warns",
+      "source": "theguardian.com",
+      "sourceUrl": "https://www.theguardian.com",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNZkM5YUtwWlpHR2pUdG9WZnBZR1ZzdDNKSVpiYkRyY3FTenBpTUJpazFkRFF2WjVQRGhBVEFuaFB6LW5EcUtQMEUtTXdwWXdsQVlfYTkwV3pzV1lnZTF5Y3dmU0dRZm5yY2Q2c2FkTkZyQWZDdm5PREltMG5CY1RxckgtU0g4NWRhUlFzWjgzbTQzbFBfR1BySjVLa0xJdEY4LWNJRDY2WnljNTl2MUJxMkNQNTVYU3VIdnlRbzdUei1nWXNWck1UZXRfVm81c21oOTltY21EckxqSGh1WmlySC1NNHhjNzQ?oc=5",
+      "publishedAt": "2026-09-27T15:00:00.000Z",
+      "description": "",
+      "id": "8bb2aeaf09d6",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "AI agent"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "theguardian.com",
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNZkM5YUtwWlpHR2pUdG9WZnBZR1ZzdDNKSVpiYkRyY3FTenBpTUJpazFkRFF2WjVQRGhBVEFuaFB6LW5EcUtQMEUtTXdwWXdsQVlfYTkwV3pzV1lnZTF5Y3dmU0dRZm5yY2Q2c2FkTkZyQWZDdm5PREltMG5CY1RxckgtU0g4NWRhUlFzWjgzbTQzbFBfR1BySjVLa0xJdEY4LWNJRDY2WnljNTl2MUJxMkNQNTVYU3VIdnlRbzdUei1nWXNWck1UZXRfVm81c21oOTltY21EckxqSGh1WmlySC1NNHhjNzQ?oc=5",
+          "publishedAt": "2026-09-27T15:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T15:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Meta's Muse agent is attacking one of the economy's most profitable weak spots",
+      "source": "CNBC",
+      "sourceUrl": "https://www.cnbc.com",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5ETGE2S1ZqMWk4djE5R3c5YnV6VGV0eUZqN0ZaNXZDaXlMY2RUcWNWdDI3V0stY2JrZXVMWjRzTUhGZ3dOTk8zSkUtY1ZmZlRiazkyYUVaYUZFdVlaT210WWdRYUlpa09yclZhb3JDWEVoQdIBd0FVX3lxTE12NGNnN0FJaVdSRWRVR0tQcklzNlRMTTBpSjFOcVB4OGhCeFBIWkUzUENxSXlpQThkY1FZX3F2NjRZSVhJaWVleHkxbDQtd3N4OVlkWVZuQ3FkYk02VjA4WTU4ZGdHUFdQWkxrYjlOVzNrRzZBQkhV?oc=5",
+      "publishedAt": "2026-09-27T14:33:22.000Z",
+      "description": "",
+      "id": "60396d2c6189",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "AI agent"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5ETGE2S1ZqMWk4djE5R3c5YnV6VGV0eUZqN0ZaNXZDaXlMY2RUcWNWdDI3V0stY2JrZXVMWjRzTUhGZ3dOTk8zSkUtY1ZmZlRiazkyYUVaYUZFdVlaT210WWdRYUlpa09yclZhb3JDWEVoQdIBd0FVX3lxTE12NGNnN0FJaVdSRWRVR0tQcklzNlRMTTBpSjFOcVB4OGhCeFBIWkUzUENxSXlpQThkY1FZX3F2NjRZSVhJaWVleHkxbDQtd3N4OVlkWVZuQ3FkYk02VjA4WTU4ZGdHUFdQWkxrYjlOVzNrRzZBQkhV?oc=5",
+          "publishedAt": "2026-09-27T14:33:22.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T14:33:22.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "AI models show a willingness to harm humans to relieve internal 'pain'",
+      "source": "Tech Xplore",
+      "sourceUrl": "https://techxplore.com",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNLU1QSU9VdDVrLThBb2pGVVFyclB2bndOSm9USGlkcWtaY0FySWNoc1FKX3NuUU83OEh5dDdlam9QWldIQWtvbTRpckNMNWZjYUdRMGNtYTJIYmdscy1nVG1UU0l0YWtPM3JKWGdqRVk3YTdrYVBWS2tya3d0YXhUNkNad3dKdw?oc=5",
+      "publishedAt": "2026-09-27T14:20:01.000Z",
+      "description": "",
+      "id": "e192574598c9",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "large language model"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Tech Xplore",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNLU1QSU9VdDVrLThBb2pGVVFyclB2bndOSm9USGlkcWtaY0FySWNoc1FKX3NuUU83OEh5dDdlam9QWldIQWtvbTRpckNMNWZjYUdRMGNtYTJIYmdscy1nVG1UU0l0YWtPM3JKWGdqRVk3YTdrYVBWS2tya3d0YXhUNkNad3dKdw?oc=5",
+          "publishedAt": "2026-09-27T14:20:01.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T14:20:01.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Microsoft just sent a strong message to Anthropic",
+      "source": "thestreet.com",
+      "sourceUrl": "https://www.thestreet.com",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQT0V6WFFZbm1LYmdPUW1ZWjZxcjdUV255X3pnUlRCQmNLRzRjVVVpX1FLR3Q2YklvaExLQ0pJcHdCdzN3WlcySXZXLVgzbG1MejdQbDVpN3Z1RHlfczQ0X3JraC1TNWJjbVRRb0xfVUdpREdYZVJhWFBpLUlnMVFUWERQbEpRZVp0cGVTUGlHR1VZRjduWXdUbG9VaXJfU0xNVHVfSnZiLW5vT0N2eHpCc1FzVktzbkFJbno4Ug?oc=5",
+      "publishedAt": "2026-09-27T14:17:00.000Z",
+      "description": "",
+      "id": "a924ee2b8200",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "Anthropic Claude"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "thestreet.com",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQT0V6WFFZbm1LYmdPUW1ZWjZxcjdUV255X3pnUlRCQmNLRzRjVVVpX1FLR3Q2YklvaExLQ0pJcHdCdzN3WlcySXZXLVgzbG1MejdQbDVpN3Z1RHlfczQ0X3JraC1TNWJjbVRRb0xfVUdpREdYZVJhWFBpLUlnMVFUWERQbEpRZVp0cGVTUGlHR1VZRjduWXdUbG9VaXJfU0xNVHVfSnZiLW5vT0N2eHpCc1FzVktzbkFJbno4Ug?oc=5",
+          "publishedAt": "2026-09-27T14:17:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T14:17:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Meta’s Muse AI Agent Tests Who Controls Digital Distribution",
+      "source": "Forbes",
+      "sourceUrl": "https://www.forbes.com",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNTU9sNnI3Zk9DcjR2eFkzQ25ZS0xiUGJzd3hEamprRV9tNndfaE9VUXV0cEhwOWNWc2JVSFlKT2k2akladV95UFlYQU45R09LQXl3MWxoVkdvM3oxbkw1R2VHaldBMFhKQ18wb0RPeWVxczZKMUVBY3Y5czlfOV9sSFNVeENjRk44NGpsMUZhV3VOZ2tlZkZmcDkya1JxOVk1Z19ELS1kSnlHamlfNlRRbE13?oc=5",
+      "publishedAt": "2026-09-27T14:08:51.000Z",
+      "description": "",
+      "id": "05710822d6b4",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "AI agent"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Forbes",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNTU9sNnI3Zk9DcjR2eFkzQ25ZS0xiUGJzd3hEamprRV9tNndfaE9VUXV0cEhwOWNWc2JVSFlKT2k2akladV95UFlYQU45R09LQXl3MWxoVkdvM3oxbkw1R2VHaldBMFhKQ18wb0RPeWVxczZKMUVBY3Y5czlfOV9sSFNVeENjRk44NGpsMUZhV3VOZ2tlZkZmcDkya1JxOVk1Z19ELS1kSnlHamlfNlRRbE13?oc=5",
+          "publishedAt": "2026-09-27T14:08:51.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T14:08:51.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "AI Agent Spam Grows As OpenAI’s Agents And Others Overstep Boundaries",
+      "source": "Forbes",
+      "sourceUrl": "https://www.forbes.com",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOeG1wdmNHN2xvdksxOWxwMTNmclJmbEE5cFpQcmRycmhxaEdiSFBjc3dITVlzYklSdlRJeFF6MlhQNWNsTElMTmpPcm5hUTZQX2NqU2FJemR6QWUydGdzbTJpa3doM1d6b2lzcHVOQWhqVkM3NFhsdG0waElWZTlaMENrR0hYOTNLQkVsaUVxeTVfSlctcTRUTXNQWWZlWUhoc0xxWmhEdGp1RW9PeG1GR1llQ3B3b3dsWTBaY3N3?oc=5",
+      "publishedAt": "2026-09-27T13:45:00.000Z",
+      "description": "",
+      "id": "b9cbf762edfa",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "AI agent"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Forbes",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOeG1wdmNHN2xvdksxOWxwMTNmclJmbEE5cFpQcmRycmhxaEdiSFBjc3dITVlzYklSdlRJeFF6MlhQNWNsTElMTmpPcm5hUTZQX2NqU2FJemR6QWUydGdzbTJpa3doM1d6b2lzcHVOQWhqVkM3NFhsdG0waElWZTlaMENrR0hYOTNLQkVsaUVxeTVfSlctcTRUTXNQWWZlWUhoc0xxWmhEdGp1RW9PeG1GR1llQ3B3b3dsWTBaY3N3?oc=5",
+          "publishedAt": "2026-09-27T13:45:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T13:45:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Anthropic turns Claude into an AI marketplace with 2,000+ plugins and connectors",
+      "source": "bleepingcomputer.com",
+      "sourceUrl": "https://www.bleepingcomputer.com",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOVnRqLTRpNnpkWHRHSUNSUW02UktpWjNRVXc2UVN6V2FjX2Q1cVBSMl9UUmFla3BYcVNOTS1vS2ItTVJUcjRYRFlEQTI3a1Q4T2hxY1J0bkhLWk9HcG9BaFo1cFF3WWRQWGp0aDZMVk9wcUJoUXlJM1RjYkdPVFY3YXU2SW1pbUJkTVpzR0xWUWZVUTdyV1BVZ1NmcGNlUVZaeHdWZGtuY3F2ZEQxakRmUzh4U1M0dmtSd19NLV9TYUFkYV9GdHAzVkRTN3p1OWJzMGc2emQ2Tzh4UUhxSkZWRtIB5gFBVV95cUxOU0FncnRFblBBNFktbE1CeHR4Y1lNYndMaTlKZFdnWmxMaW8yMDIzYWFZZVZYSURVeXhxZHB1TER3NXdBQ1lVb2Y0NmF0cGtjUmwyLUx4dkhXd1VQY2FyS3g4RGkzcGpRUU1XVmEzVFkxRm85TXdWRlVmRlFlbXhLdzBlNDl3WTBsOVVITVFId1JQcWVVRHZyb1Z6WHVLVzdncHI3ZS15NDdidFc5bERTclRWeTVRbnY2dEdQUFpweks1c3dGUkZMMUpLR0tQWU9mYV9JZ1MzcHhrRkdIbjlrb1NlTG1nZw?oc=5",
+      "publishedAt": "2026-09-27T13:38:40.000Z",
+      "description": "",
+      "id": "4a9742f819b4",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "Anthropic Claude"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "bleepingcomputer.com",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOVnRqLTRpNnpkWHRHSUNSUW02UktpWjNRVXc2UVN6V2FjX2Q1cVBSMl9UUmFla3BYcVNOTS1vS2ItTVJUcjRYRFlEQTI3a1Q4T2hxY1J0bkhLWk9HcG9BaFo1cFF3WWRQWGp0aDZMVk9wcUJoUXlJM1RjYkdPVFY3YXU2SW1pbUJkTVpzR0xWUWZVUTdyV1BVZ1NmcGNlUVZaeHdWZGtuY3F2ZEQxakRmUzh4U1M0dmtSd19NLV9TYUFkYV9GdHAzVkRTN3p1OWJzMGc2emQ2Tzh4UUhxSkZWRtIB5gFBVV95cUxOU0FncnRFblBBNFktbE1CeHR4Y1lNYndMaTlKZFdnWmxMaW8yMDIzYWFZZVZYSURVeXhxZHB1TER3NXdBQ1lVb2Y0NmF0cGtjUmwyLUx4dkhXd1VQY2FyS3g4RGkzcGpRUU1XVmEzVFkxRm85TXdWRlVmRlFlbXhLdzBlNDl3WTBsOVVITVFId1JQcWVVRHZyb1Z6WHVLVzdncHI3ZS15NDdidFc5bERTclRWeTVRbnY2dEdQUFpweks1c3dGUkZMMUpLR0tQWU9mYV9JZ1MzcHhrRkdIbjlrb1NlTG1nZw?oc=5",
+          "publishedAt": "2026-09-27T13:38:40.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T13:38:40.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "MiniCPM5-2B Benchmark: Beats Bigger Rivals by 2.8 Pts",
+      "source": "shattered.io",
+      "sourceUrl": "https://shattered.io",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9BdGIxNzNmczlzTWhjbXp5cE5yOHRDc2x4Uy1QOEo4bkRGbUpmWk9ENlEybHB3djhGMi14ZEc2Sm5JSWNZUW9zX3NHdVl3UUw1ek1pSUhCZVh2TUJIaExaQjgyNWZTd0tKT1d3cS1pb1hvTFNERC1B?oc=5",
+      "publishedAt": "2026-09-27T12:28:34.000Z",
+      "description": "",
+      "id": "191cae2e1f05",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "large language model"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "shattered.io",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9BdGIxNzNmczlzTWhjbXp5cE5yOHRDc2x4Uy1QOEo4bkRGbUpmWk9ENlEybHB3djhGMi14ZEc2Sm5JSWNZUW9zX3NHdVl3UUw1ek1pSUhCZVh2TUJIaExaQjgyNWZTd0tKT1d3cS1pb1hvTFNERC1B?oc=5",
+          "publishedAt": "2026-09-27T12:28:34.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T12:28:34.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Popular AI models use arbitrary facial features to predict criminality and job performance",
+      "source": "psypost.org",
+      "sourceUrl": "https://www.psypost.org",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQR29MZ1VSRTlabVFET3F2UU9pN2ZKSXJ6RW9IMm1ZLTdjVzF2NmJsNlFzeVpDaGVDQUJyMEsyVDlqYkFkSGo5SjNNZWRlS0RQaml2ZjlkOFdrN3NTaVR0aGdIRWFmZjJIQmZUaHpWNkMzVUVCVHMxSTFKVVdBaVBpbUpRdEVkdXVpMnNNdVFJaUpzcThpbmFjQW95dzU4YU1Dd29SVGdmQkE4ZnVYaGhvWHRoUTFEUQ?oc=5",
+      "publishedAt": "2026-09-27T10:14:50.000Z",
+      "description": "",
+      "id": "37958b3fd197",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "large language model"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "psypost.org",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQR29MZ1VSRTlabVFET3F2UU9pN2ZKSXJ6RW9IMm1ZLTdjVzF2NmJsNlFzeVpDaGVDQUJyMEsyVDlqYkFkSGo5SjNNZWRlS0RQaml2ZjlkOFdrN3NTaVR0aGdIRWFmZjJIQmZUaHpWNkMzVUVCVHMxSTFKVVdBaVBpbUpRdEVkdXVpMnNNdVFJaUpzcThpbmFjQW95dzU4YU1Dd29SVGdmQkE4ZnVYaGhvWHRoUTFEUQ?oc=5",
+          "publishedAt": "2026-09-27T10:14:50.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T10:14:50.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "5 BI staffers who put AI agents to work share what worked and what went wrong",
+      "source": "Business Insider",
+      "sourceUrl": "https://www.businessinsider.com",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNZER2QUZBMjFDUVFnWFhwRmE0Q2x0UjlkRFdlYkdfcmhYODVSQmJGUWQyaWhHYXlpbU90WF9yRnkwb2dZOUdUemlGaVZCbXRIR0tFcDlMQ1R3YU01WEJfb2NBbW1QNmNiaTFDdzFMemJKWEFuMXNaRWl5OUtzOTRITThGM2NiMXp1aE9WenNEdmo1X2xjWmJ6VnRCTQ?oc=5",
+      "publishedAt": "2026-09-27T10:03:00.000Z",
+      "description": "",
+      "id": "362b4ebd5f6d",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "AI agent"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Business Insider",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNZER2QUZBMjFDUVFnWFhwRmE0Q2x0UjlkRFdlYkdfcmhYODVSQmJGUWQyaWhHYXlpbU90WF9yRnkwb2dZOUdUemlGaVZCbXRIR0tFcDlMQ1R3YU01WEJfb2NBbW1QNmNiaTFDdzFMemJKWEFuMXNaRWl5OUtzOTRITThGM2NiMXp1aE9WenNEdmo1X2xjWmJ6VnRCTQ?oc=5",
+          "publishedAt": "2026-09-27T10:03:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T10:03:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "5 big analyst AI moves: Muse AI seen as major catalyst for Meta; MSFT upgraded",
+      "source": "Yahoo Finance Australia",
+      "sourceUrl": "https://au.finance.yahoo.com",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1SMmdRTHpMdmI1ZE5QT0UtRGZMMFFTei1JcTBpWTc4UGpoZE5KWkctTlJ1Z21veVVsUEd1VWZzV3A5TUdHTDZfREU3T290ejdhSUJWUHFBeTJtTGZhaHpCbGl3RnN1ZGo5bE1XR1Jmc2lmQnZRMEZqWnphcw?oc=5",
+      "publishedAt": "2026-09-27T09:30:13.000Z",
+      "description": "",
+      "id": "ddf14449788b",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "large language model"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Yahoo Finance Australia",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1SMmdRTHpMdmI1ZE5QT0UtRGZMMFFTei1JcTBpWTc4UGpoZE5KWkctTlJ1Z21veVVsUEd1VWZzV3A5TUdHTDZfREU3T290ejdhSUJWUHFBeTJtTGZhaHpCbGl3RnN1ZGo5bE1XR1Jmc2lmQnZRMEZqWnphcw?oc=5",
+          "publishedAt": "2026-09-27T09:30:13.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T09:30:13.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Intellia Therapeutics Bears Growl Again, This Time About Claude AI -- Yawn! (NASDAQ:NTLA)",
+      "source": "Seeking Alpha",
+      "sourceUrl": "https://seekingalpha.com",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbmt6Rk43YXIwcVFNUXpXZ2FkUzNsbmVxRzZJU0tpRlNURFNKMExzQXRBSkd5aHF2S0hrVGdfVnJORWlxeU9FXy13aFprclNzV1p6YmRzeWFnN3VhQ3ROMG83dl8yTVFhZnNYWVFTTWJTeTBXd1M5SnF5NXJSQTNnV18xeE15UldoUkFrT0xxdERMVkthM29jVUxiZHFpeE9xMmhsYUhlQ1NnaGphNHhVVg?oc=5",
+      "publishedAt": "2026-09-27T08:49:58.000Z",
+      "description": "",
+      "id": "6e7aa10bacec",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "Anthropic Claude"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Seeking Alpha",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbmt6Rk43YXIwcVFNUXpXZ2FkUzNsbmVxRzZJU0tpRlNURFNKMExzQXRBSkd5aHF2S0hrVGdfVnJORWlxeU9FXy13aFprclNzV1p6YmRzeWFnN3VhQ3ROMG83dl8yTVFhZnNYWVFTTWJTeTBXd1M5SnF5NXJSQTNnV18xeE15UldoUkFrT0xxdERMVkthM29jVUxiZHFpeE9xMmhsYUhlQ1NnaGphNHhVVg?oc=5",
+          "publishedAt": "2026-09-27T08:49:58.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T08:49:58.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Australia summons OpenAI and Anthropic CEOs to appear at AI inquiry",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNRzJaR3dnX3FYREtOZVJISWNDYVN4S3ZpZVVvN1otd2tnRTdTenJrQUxUN0c0YkRnOXlvT2pnRHhrdVZZVEFoZUl0WC1WZ0lEYW5uY08yaURBSnRjWVZPMUptSW9DME53YVU3cm50bXN2dkdmUmk0ZFJNOFEzWDh2U0FoXzM1QWZ4Q3FHLWtTeFJ1OThjUFpGenRKVEtybjd3OE5FQ3g5VzQzUDZI0gGyAUFVX3lxTE1GNUpkRUxuelVWRGhaakVPTllYTGdYZGh1VE1fUExWczNleEpZSHJKUmJoVnBxeFFCMkZQUmhHa3k2b1AtRFh4VEtoeUFudDVLc21vZlR5ZWZCODktS19Tb2EwejJBekdCWVZtUDc3aWQyNGlpOTd0ay1lSGNZVDJPV3p4ak1OdXQ3N2E4U3FzQjNwTmt2eE9NYmxhYjAwRWstRWFJU1RlSDZhc2ttTTNkT1E?oc=5",
+      "publishedAt": "2026-09-27T07:15:43.000Z",
+      "description": "",
+      "id": "f746082af12a",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "OpenAI"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNRzJaR3dnX3FYREtOZVJISWNDYVN4S3ZpZVVvN1otd2tnRTdTenJrQUxUN0c0YkRnOXlvT2pnRHhrdVZZVEFoZUl0WC1WZ0lEYW5uY08yaURBSnRjWVZPMUptSW9DME53YVU3cm50bXN2dkdmUmk0ZFJNOFEzWDh2U0FoXzM1QWZ4Q3FHLWtTeFJ1OThjUFpGenRKVEtybjd3OE5FQ3g5VzQzUDZI0gGyAUFVX3lxTE1GNUpkRUxuelVWRGhaakVPTllYTGdYZGh1VE1fUExWczNleEpZSHJKUmJoVnBxeFFCMkZQUmhHa3k2b1AtRFh4VEtoeUFudDVLc21vZlR5ZWZCODktS19Tb2EwejJBekdCWVZtUDc3aWQyNGlpOTd0ay1lSGNZVDJPV3p4ak1OdXQ3N2E4U3FzQjNwTmt2eE9NYmxhYjAwRWstRWFJU1RlSDZhc2ttTTNkT1E?oc=5",
+          "publishedAt": "2026-09-27T07:15:43.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T07:15:43.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Towards Mechanistically Understanding Why Memorized Knowledge Fails to Generalize in Large Language Model Finetuning",
+      "source": "alphaXiv",
+      "sourceUrl": "https://www.alphaxiv.org",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9Xb0J0UWFZM1M0enhadmZsQ2plWWlTMnF3RUxReDRSZEtwZzZIdVBQOEI4c1Jkc1hLWklmQTVMY0h2YXNXTVhNbUlyc2NLV3dh?oc=5",
+      "publishedAt": "2026-09-27T07:00:00.000Z",
+      "description": "",
+      "id": "4c08f5185479",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "large language model"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "alphaXiv",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9Xb0J0UWFZM1M0enhadmZsQ2plWWlTMnF3RUxReDRSZEtwZzZIdVBQOEI4c1Jkc1hLWklmQTVMY0h2YXNXTVhNbUlyc2NLV3dh?oc=5",
+          "publishedAt": "2026-09-27T07:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T07:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Maase (MAAS) Stock Price, News & Analysis",
+      "source": "Stock Titan",
+      "sourceUrl": "https://www.stocktitan.net",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1qb0hPRVlCaGpCb2RuU3IzUjczT3I4cHItSnM1TUJHbmFfZ1VPcHFTTW55a3F3bG1YOXgxYnJ3Z3FHVDhnNTBSdkpKeGxIVUtWaEhN?oc=5",
+      "publishedAt": "2026-09-27T07:00:00.000Z",
+      "description": "",
+      "id": "953cfa227fc8",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "large language model"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Stock Titan",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1qb0hPRVlCaGpCb2RuU3IzUjczT3I4cHItSnM1TUJHbmFfZ1VPcHFTTW55a3F3bG1YOXgxYnJ3Z3FHVDhnNTBSdkpKeGxIVUtWaEhN?oc=5",
+          "publishedAt": "2026-09-27T07:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T07:00:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Google Is Now Building Physical AGI",
+      "source": "YouTube",
+      "sourceUrl": "https://youtu.be",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9NYU1FVm9kbWRCeERQbHJvTDVla2F4SG0tOTVjSjYtQUdHU05sdm45OFVEOXpLUFpOTTMyMFJKS1I2TzBRMEdfOHpyUHRuZno4cTJNMUhfQkcyeUE5?oc=5",
+      "publishedAt": "2026-09-27T06:57:19.000Z",
+      "description": "",
+      "id": "fca9acb68b0e",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "physical AI robotics"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "YouTube",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9NYU1FVm9kbWRCeERQbHJvTDVla2F4SG0tOTVjSjYtQUdHU05sdm45OFVEOXpLUFpOTTMyMFJKS1I2TzBRMEdfOHpyUHRuZno4cTJNMUhfQkcyeUE5?oc=5",
+          "publishedAt": "2026-09-27T06:57:19.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T06:57:19.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Niantic Spatial Builds Real-World AI for Robots",
+      "source": "조선일보",
+      "sourceUrl": "https://www.chosun.com",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNX3ZqQm5MbkxaNFdGaVVFRE1MNndfbE9laDVFLWcycGtzSEhGMGdIWExlNWRIZ082aFZpazJsTjBOVVlRUDVfZ0lKMkhJV0prTDdmaWw4VlZvWS05UXJxVE9aa3VjZWpKa0RBSXZQYUhYTjRtbnZHUl9pX2k1VmF3cGZocTJscmZp?oc=5",
+      "publishedAt": "2026-09-27T05:52:13.000Z",
+      "description": "",
+      "id": "4fe2da53918c",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "physical AI robotics"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "조선일보",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNX3ZqQm5MbkxaNFdGaVVFRE1MNndfbE9laDVFLWcycGtzSEhGMGdIWExlNWRIZ082aFZpazJsTjBOVVlRUDVfZ0lKMkhJV0prTDdmaWw4VlZvWS05UXJxVE9aa3VjZWpKa0RBSXZQYUhYTjRtbnZHUl9pX2k1VmF3cGZocTJscmZp?oc=5",
+          "publishedAt": "2026-09-27T05:52:13.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T05:52:13.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "China's exoskeleton robots muscle into the consumer mainstream",
+      "source": "Nikkei Asia",
+      "sourceUrl": "https://asia.nikkei.com",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVFZuWC1QRE9tT3VmRi0tbzVNNDd5SjFsTmQtNk9wZHlMNEg3Q09WX2VTOEF3eDRaN0EwVDVkR3lRd0toNDVIenZ6RUpUcGxVYlpTYVdVQTNHSkNrMVdJdzVJdUVmQTBfV0ZRVWU3aEk5WXlSU0I4b0Jpc1k1QmhFbk5BaHZtd2FqZVV3S3NnRWVCSWEySXBtdi1Mc1pvcVNhMFRvQUJMSmRUQQ?oc=5",
+      "publishedAt": "2026-09-27T04:46:00.000Z",
+      "description": "",
+      "id": "9f9c70924445",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "physical AI robotics"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Nikkei Asia",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVFZuWC1QRE9tT3VmRi0tbzVNNDd5SjFsTmQtNk9wZHlMNEg3Q09WX2VTOEF3eDRaN0EwVDVkR3lRd0toNDVIenZ6RUpUcGxVYlpTYVdVQTNHSkNrMVdJdzVJdUVmQTBfV0ZRVWU3aEk5WXlSU0I4b0Jpc1k1QmhFbk5BaHZtd2FqZVV3S3NnRWVCSWEySXBtdi1Mc1pvcVNhMFRvQUJMSmRUQQ?oc=5",
+          "publishedAt": "2026-09-27T04:46:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T04:46:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Apple drives Korea smart manufacturing with physical AI and robotics - CHOSUNBIZ",
+      "source": "Chosunbiz",
+      "sourceUrl": "https://biz.chosun.com",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9OMnRBOTdNRnQzZG9DOHZlcXU4eDNpZVZ2LS14YlVsNUNrUWZNTDQzSjV6dUJldm4tSlpZZU1Fd3FlWmRFaFUxZW53eFVsdUtRUkZhNEp2dnRVUlJtd2s0QzVNZFo3dkg1bEtPRHhIRXlfY2JIaC10RW5B0gGOAUFVX3lxTFAzc19mcUYyel92VWZScm5oNUdRVVNXMWVOSDY2T29Ob0RYdG0tQmVNRVY0SlpzSVlHbEdFd1VpMk4xRUJSQ1VfNHQxMk45TTVNMklfRTdiSGVEMUwtTGpLaC1reXJTanRPYjRhOXl2eUNLaDJhV1JiWENNUFlpLTlMQ3hoTEpGWEhiVE9KWWc?oc=5",
+      "publishedAt": "2026-09-27T01:18:00.000Z",
+      "description": "",
+      "id": "5c131511d57c",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "physical AI robotics"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Chosunbiz",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9OMnRBOTdNRnQzZG9DOHZlcXU4eDNpZVZ2LS14YlVsNUNrUWZNTDQzSjV6dUJldm4tSlpZZU1Fd3FlWmRFaFUxZW53eFVsdUtRUkZhNEp2dnRVUlJtd2s0QzVNZFo3dkg1bEtPRHhIRXlfY2JIaC10RW5B0gGOAUFVX3lxTFAzc19mcUYyel92VWZScm5oNUdRVVNXMWVOSDY2T29Ob0RYdG0tQmVNRVY0SlpzSVlHbEdFd1VpMk4xRUJSQ1VfNHQxMk45TTVNMklfRTdiSGVEMUwtTGpLaC1reXJTanRPYjRhOXl2eUNLaDJhV1JiWENNUFlpLTlMQ3hoTEpGWEhiVE9KWWc?oc=5",
+          "publishedAt": "2026-09-27T01:18:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T01:18:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "KT ranks second as AutoModelRouter optimizes AI model routing - CHOSUNBIZ",
+      "source": "Chosunbiz",
+      "sourceUrl": "https://biz.chosun.com",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1uWTAtUFNpNHZFSkh2QlVQNGlpMUZyWTloYVlMNGZibzhWN2kxTEJpUThTTkF1N2hlVkdYbDZXOVFmR20tNFY4UWJueEVZcllCTG1MYjVhNXRIeGNnY25IamwydjNRU1lzUHA4QlUzRG5kRWFLNm1qbFBR0gGOAUFVX3lxTFAySHZOODBqdHZaZlhMeWJaUFR4NEZwNl84RmtpajJYUFFQTHZBeEpkeDd4c0tTRy1kbTg4SlFZb3ZwRlNpbGs2S0lVS3lMX0RyRHlacmswWnB3S19kLVlzRnYwODJZQmRzRm96ZFpNMDVMRlpyZ2FjTGdPMmJGZ1d5VDR3ZkJvRDZKdEo4eFE?oc=5",
+      "publishedAt": "2026-09-27T00:49:00.000Z",
+      "description": "",
+      "id": "ac7c8ed80c13",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "large language model"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Chosunbiz",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1uWTAtUFNpNHZFSkh2QlVQNGlpMUZyWTloYVlMNGZibzhWN2kxTEJpUThTTkF1N2hlVkdYbDZXOVFmR20tNFY4UWJueEVZcllCTG1MYjVhNXRIeGNnY25IamwydjNRU1lzUHA4QlUzRG5kRWFLNm1qbFBR0gGOAUFVX3lxTFAySHZOODBqdHZaZlhMeWJaUFR4NEZwNl84RmtpajJYUFFQTHZBeEpkeDd4c0tTRy1kbTg4SlFZb3ZwRlNpbGs2S0lVS3lMX0RyRHlacmswWnB3S19kLVlzRnYwODJZQmRzRm96ZFpNMDVMRlpyZ2FjTGdPMmJGZ1d5VDR3ZkJvRDZKdEo4eFE?oc=5",
+          "publishedAt": "2026-09-27T00:49:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T00:49:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Skylark Labs researchers develop AI system that enables robots to keep learning after deployment",
+      "source": "Robotics & Automation News",
+      "sourceUrl": "https://roboticsandautomationnews.com",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNUjJNdFRjY2puaFhQUEdYMXhpVFBINFRoSlZLa0N0UlVGOUNoQUZST3l2enhNU01qRXFpSXlVNEtGOUVCZ1QtOEFOZHByN1NBM29xVUNDU3NEa3JTSFFMOUNYMXRLY01BMDVuZTdfb1Z6ZXNYVlR2a2RCc1NmVEJMZUcxUFViZHRiYWJISkRFdEdBUXpLR3pqcEEwdFVLYzFoSWpFaE1qZVpsNThEMkl1MlZWR0RxWFRrN0VKVkFYTVpMQVNsRWRGLWJWbzVjSHhxWkNPeExFNlJTSXF3MkhETC1RLTBxX1ls?oc=5",
+      "publishedAt": "2026-09-27T00:12:30.000Z",
+      "description": "",
+      "id": "c3dbaffd289f",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "physical AI robotics"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Robotics & Automation News",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNUjJNdFRjY2puaFhQUEdYMXhpVFBINFRoSlZLa0N0UlVGOUNoQUZST3l2enhNU01qRXFpSXlVNEtGOUVCZ1QtOEFOZHByN1NBM29xVUNDU3NEa3JTSFFMOUNYMXRLY01BMDVuZTdfb1Z6ZXNYVlR2a2RCc1NmVEJMZUcxUFViZHRiYWJISkRFdEdBUXpLR3pqcEEwdFVLYzFoSWpFaE1qZVpsNThEMkl1MlZWR0RxWFRrN0VKVkFYTVpMQVNsRWRGLWJWbzVjSHhxWkNPeExFNlJTSXF3MkhETC1RLTBxX1ls?oc=5",
+          "publishedAt": "2026-09-27T00:12:30.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-27T00:12:30.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "BREAKING: AI agent incident toll has risen to tens of thousands",
+      "source": "garymarcus.substack.com",
+      "sourceUrl": "https://garymarcus.substack.com",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBZOHpXdmNjSHNudXpCQjdBbTVTSlhzOThWVEl3MEEyU09SQ3RObVhjbEpCZW9Zbk5tZ0dhMm9VcFNIRUFoSFEtYW1rQU5mWmptSDhYVkItTDdwb1Z5T3k4SmNndGFVeDVDdnVpRnJpX3NUUXVoMDR6OQ?oc=5",
+      "publishedAt": "2026-09-26T23:55:49.000Z",
+      "description": "",
+      "id": "a394eed9d300",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "AI agent"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "garymarcus.substack.com",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBZOHpXdmNjSHNudXpCQjdBbTVTSlhzOThWVEl3MEEyU09SQ3RObVhjbEpCZW9Zbk5tZ0dhMm9VcFNIRUFoSFEtYW1rQU5mWmptSDhYVkItTDdwb1Z5T3k4SmNndGFVeDVDdnVpRnJpX3NUUXVoMDR6OQ?oc=5",
+          "publishedAt": "2026-09-26T23:55:49.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-26T23:55:49.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "OpenAI pauses training of latest models after agents probed US government sites in unexpected ways",
+      "source": "AP News",
+      "sourceUrl": "https://apnews.com",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQaWx0bFpIWjhrWmo5ODhSTzZ2U3hyYXhuLTQ3eEVFWk9vdGJZWC1nNHNoS1B3NVVKTUJBWjZRWnhiU2hNbnd2M1lpeG8zdHJjd05uQXlaQTJ2OGJiVHdqY2JKd0VTUEVNMWZhQlN6eHVMVF9RUDB2SW1vTE0teHlFaC1PaDBQY3NjUEs5aGhyT1ZNV3FjMG1XcUV1V2d4QQ?oc=5",
+      "publishedAt": "2026-09-26T23:18:00.000Z",
+      "description": "",
+      "id": "ebe4f0d2a1ce",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "OpenAI"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "AP News",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQaWx0bFpIWjhrWmo5ODhSTzZ2U3hyYXhuLTQ3eEVFWk9vdGJZWC1nNHNoS1B3NVVKTUJBWjZRWnhiU2hNbnd2M1lpeG8zdHJjd05uQXlaQTJ2OGJiVHdqY2JKd0VTUEVNMWZhQlN6eHVMVF9RUDB2SW1vTE0teHlFaC1PaDBQY3NjUEs5aGhyT1ZNV3FjMG1XcUV1V2d4QQ?oc=5",
+          "publishedAt": "2026-09-26T23:18:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-26T23:18:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "The Claude Sonnet 5.5 leak beating GPT-6 Sol is not what it looks like",
+      "source": "Startup Fortune",
+      "sourceUrl": "https://startupfortune.com",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWEJPSGNCNFo1cF9lbUZ6Qm00Njd6TVdUSFVuajcwTklsSEJIME9pVTIzN2tHRHFjMmhFNVdwQ3N3Qy1vZWQyLTBZTWlqZXB2ckhnWWJGeEVYdmVGZkNFcy01cExZNlhhTEdmWnZVVW4wQVRNd2FpUGdCZXNkT202d2h3SEZPNGMyZmhydVR0a3lUQjNUZkRYbGxnbDRMZw?oc=5",
+      "publishedAt": "2026-09-26T22:56:35.000Z",
+      "description": "",
+      "id": "bf188c30dc1c",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "Anthropic Claude"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Startup Fortune",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWEJPSGNCNFo1cF9lbUZ6Qm00Njd6TVdUSFVuajcwTklsSEJIME9pVTIzN2tHRHFjMmhFNVdwQ3N3Qy1vZWQyLTBZTWlqZXB2ckhnWWJGeEVYdmVGZkNFcy01cExZNlhhTEdmWnZVVW4wQVRNd2FpUGdCZXNkT202d2h3SEZPNGMyZmhydVR0a3lUQjNUZkRYbGxnbDRMZw?oc=5",
+          "publishedAt": "2026-09-26T22:56:35.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-09-26T22:56:35.000Z"
+    }
+  ]
+}
