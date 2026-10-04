@@ -218,7 +218,7 @@ export function home(data) {
 
     <p class="footer-note">${
       rules
-        ? '보도한 언론사 수·최신성·분야 키워드로 자동 선정한 뉴스입니다 (AI 미사용).<br>기사 내용은 반드시 원문에서 확인하세요.'
+        ? '여러 언론사 보도·최신성·업무 연관도를 기준으로 선정한 뉴스입니다.<br>기사 내용은 반드시 원문에서 확인하세요.'
         : '요약과 분석은 수집된 기사 정보만을 근거로 AI가 작성합니다.<br>중요한 판단 전에는 반드시 원문을 확인하세요.'
     }</p>`,
     mount(root) {
@@ -310,7 +310,7 @@ export function article(data, id) {
       }
       ${a.sources?.length > 1 ? `<div class="block"><h2>함께 보도한 언론사 ${a.sources.length}곳</h2>${outletList(a.sources)}</div>` : ''}
     </section>
-    <p class="notice" style="margin-top:14px">AI 요약·분석은 아직 사용하지 않습니다. 보도한 언론사 수, 최신성, 분야 키워드 같은 규칙으로 자동 선정한 기사입니다.</p>`
+    <p class="notice" style="margin-top:14px">보도한 언론사 수, 최신성, 업무 연관도를 기준으로 선정한 기사입니다.</p>`
     : `
     <section class="panel panel--fact" aria-label="기사 요약">
       <div class="panel__label"><span class="eyebrow">📄 기사 요약 · FACT</span></div>
@@ -350,7 +350,7 @@ export function article(data, id) {
       <details>
         <summary>평가 항목 자세히 보기 ▾</summary>
         <div class="bars">${bars}</div>
-        ${rules ? '<p class="panel__note" style="margin-top:10px">AI가 아닌 규칙으로 계산했습니다. 중요도=보도 언론사 수, 업무 연관도=분야 키워드, 최신성=발행 시각, 영향도=정책·출시·투자 등 변화 단어, 참신성=최근 3일 내 비슷한 기사 여부.</p>' : ''}
+        ${rules ? '<p class="panel__note" style="margin-top:10px">평가 기준: 중요도=보도 언론사 수, 업무 연관도=분야 키워드, 최신성=발행 시각, 영향도=정책·출시·투자 등 변화 단어, 참신성=최근 3일 내 비슷한 기사 여부.</p>' : ''}
       </details>
     </div>
 
@@ -637,7 +637,7 @@ export function settings(data) {
       <div class="group">
         <div class="group__title">데이터</div>
         <div class="list">
-          <div class="row"><div class="row__text"><span class="row__label">뉴스 데이터</span><span class="row__desc">현재: <b>${data.mode === 'live' ? (data.briefing.analysis === 'rules' ? '실제 뉴스 (AI 없이 자동 선정)' : '실제 뉴스 (AI 분석)') : 'Demo (가상 데이터)'}</b>${data.mode === 'live' ? '' : ' · 실제 뉴스 수집이 연결되면 자동으로 전환됩니다'}</span></div></div>
+          <div class="row"><div class="row__text"><span class="row__label">뉴스 데이터</span><span class="row__desc">현재: <b>${data.mode === 'live' ? (data.briefing.analysis === 'rules' ? '실제 뉴스 (자동 선정)' : '실제 뉴스 (AI 분석)') : 'Demo (가상 데이터)'}</b>${data.mode === 'live' ? '' : ' · 실제 뉴스 수집이 연결되면 자동으로 전환됩니다'}</span></div></div>
           <div class="row"><div class="row__text"><span class="row__label">마지막 업데이트</span></div><span class="row__desc" style="font-family:var(--font-mono)">${esc(new Date(data.briefing.generatedAt).toLocaleString('ko-KR'))}</span></div>
         </div>
       </div>
