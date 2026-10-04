@@ -58,6 +58,7 @@ npm start
 | 명령 | 하는 일 |
 |---|---|
 | `npm test` | 화면 데이터·TOP 5·점수·트렌드·뉴스 수집기 자동 점검 |
+| `npm run validate` | 앱에 올라갈 데이터 점검 (빈 값·깨진 링크·중복). 매주 발행 전 자동 실행, 문제 있으면 배포 중단 |
 | `npm run collect` | 지금 바로 뉴스 수집 (네이버 키가 `.env`에 있으면 네이버도 포함) |
 | `npm run build:demo` | 가상 기사(`scripts/demo/articles.mjs`)와 가중치(`config/scoring.json`)로 Demo 데이터 다시 생성 |
 | `npm run build:preview` | 서버 없이 열리는 단일 파일 미리보기 `dist/preview.html` 생성 |
@@ -203,7 +204,7 @@ AI 비용 근거 (주 1회 기준): 분야별 후보 60건(총 240건)을 Haiku 
 | 휴대폰에서 주소가 안 열림 | PC와 같은 Wi-Fi인지, PC 방화벽이 Node.js 를 막지 않는지. 회사망이면 배포 주소 사용 |
 | 화면이 예전 그대로임 | 앱을 완전히 닫았다 다시 열기 (변경분은 다음 실행 때 반영). 그래도 같으면 브라우저 사이트 데이터 삭제 |
 | "뉴스 데이터를 불러오지 못했습니다" | 인터넷 연결 확인. 배포 시 Build output directory 가 `public` 인지 확인 |
-| 계속 DEMO 표시가 나옴 | 실데이터(`public/data/live/briefing.json`)가 아직 없거나 SETTINGS → 데이터가 `Demo 고정`인지 확인 |
+| 계속 DEMO 표시가 나옴 | 실데이터(`public/data/live/briefing.json`)가 배포되지 않은 경우입니다. Actions 탭에서 실행 기록 확인 |
 | (Phase 2~) 뉴스가 업데이트 안 됨 | GitHub 저장소 → **Actions** 탭에서 실패한 작업의 빨간 X 클릭 → 로그 확인. 대부분 API Key 누락·오타 |
 | (Phase 5~) 알림이 안 옴 | 휴대폰 설정에서 알림 허용 여부, iPhone은 홈 화면 앱으로 실행했는지 |
 
