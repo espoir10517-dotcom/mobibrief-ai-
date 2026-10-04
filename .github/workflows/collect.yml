@@ -1,14 +1,20 @@
-# 매일 뉴스 수집 → 오늘의 브리핑 생성 → 앱 반영
-# - 매일 오전 6시 30분(한국시간)에 자동 실행, Actions 탭에서 'Run workflow'로 직접 실행도 가능
-# - 결과는 data/collected/ 폴더에 날짜별로 저장됩니다
-# - ANTHROPIC_API_KEY 또는 OPENAI_API_KEY 비밀값이 있으면 AI가 평가·선정·요약, 없으면 규칙 기반 (AI 비용 0원)
+# 뉴스 수집(매일) → 주간 브리핑 발행(매주 월요일)
+# - 매일 오전 6시 30분(한국시간): 뉴스 수집만 (무료, AI 사용 안 함)
+# - 월요일 오전 6시 30분: 지난 7일치 뉴스로 분야별 TOP 10 선정·요약 → 앱에 반영
+# - Actions 탭 → '뉴스 수집 및 주간 브리핑' → Run workflow 로 직접 실행 가능 (발행 여부 선택)
+# - ANTHROPIC_API_KEY 또는 OPENAI_API_KEY 비밀값이 있으면 AI 편집, 없으면 규칙 기반
 
-name: 뉴스 수집 및 앱 업데이트
+name: 뉴스 수집 및 주간 브리핑
 
 on:
   workflow_dispatch:
+    inputs:
+      publish:
+        description: '지금 브리핑을 만들어 앱에 반영할까요? (false = 수집만)'
+        type: boolean
+        default: true
   schedule:
-    - cron: '30 21 * * *' # UTC 21:30 = 한국시간 06:30
+    - cron: '30 21 * * *' # UTC 21:30 = 한국시간 06:30 매일
 
 permissions:
   contents: write
@@ -18,9 +24,9 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  collect:
+  run:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v5
 
@@ -37,7 +43,21 @@ jobs:
           NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
           NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
 
-      - name: 오늘의 브리핑 만들기 (AI 키가 있으면 AI 편집, 없으면 규칙 기반)
+      - name: 발행일인지 확인 (한국시간 월요일 또는 직접 실행)
+        id: when
+        run: |
+          DOW=$(TZ=Asia/Seoul date +%u)
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "publish=${{ inputs.publish }}" >> "$GITHUB_OUTPUT"
+          elif [ "$DOW" = "1" ]; then
+            echo "publish=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "publish=false" >> "$GITHUB_OUTPUT"
+          fi
+          echo "한국시간 요일: $DOW (1=월요일)"
+
+      - name: 주간 브리핑 만들기 (AI 키가 있으면 AI 편집, 없으면 규칙 기반)
+        if: steps.when.outputs.publish == 'true'
         run: npm run build:briefing
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -55,6 +75,7 @@ jobs:
           git push
 
       - name: 앱에 반영 (GitHub Pages)
+        if: steps.when.outputs.publish == 'true'
         run: |
           git fetch origin gh-pages --depth=1
           git worktree add ../site origin/gh-pages

@@ -102,6 +102,21 @@ function topbar(title, actions = '') {
   </div>`;
 }
 
+// 발행 주기에 따른 문구 (주간 = '이번 주', 일간 = '오늘')
+export function periodOf(b) {
+  const weekly = b?.cadence === 'weekly';
+  return { weekly, P: weekly ? '이번 주' : '오늘', Pof: weekly ? '이번 주' : '오늘의' };
+}
+function shortDate(iso) {
+  const d = new Date(`${iso}T00:00:00`);
+  return Number.isFinite(d.getTime()) ? `${d.getMonth() + 1}.${d.getDate()}` : '';
+}
+function nextMonday(from) {
+  const d = new Date(from);
+  d.setDate(d.getDate() + (((8 - d.getDay()) % 7) || 7));
+  return d;
+}
+
 // ───────────────── HOME ─────────────────
 
 export function home(data) {
@@ -109,6 +124,8 @@ export function home(data) {
   const gen = new Date(b.generatedAt);
   const total = CATEGORY_ORDER.reduce((n, c) => n + topOf(data, c).length, 0);
   const rules = b.analysis === 'rules';
+  const { weekly, P, Pof } = periodOf(b);
+  const FIRST = 5; // 홈에서는 5위까지 먼저 보여주고 나머지는 펼치기
 
   const issues = (b.issues || [])
     .slice(0, 3)
@@ -134,7 +151,13 @@ export function home(data) {
         <h2 class="section__title">${CATEGORIES[c].emoji} ${esc(CATEGORIES[c].name)} <small>TOP ${list.length}</small></h2>
         <a class="section__more" href="#/category/${c}" data-nav="/category/${c}">전체보기</a>
       </div>
-      <div class="cards">${list.map((a) => card(a)).join('') || empty('📭', '오늘 선정된 뉴스가 없습니다', '')}</div>
+      <div class="cards">${list.slice(0, FIRST).map((a) => card(a)).join('') || empty('📭', `${P} 선정된 뉴스가 없습니다`, '')}</div>
+      ${
+        list.length > FIRST
+          ? `<div class="cards" id="more-${c}" hidden>${list.slice(FIRST).map((a) => card(a)).join('')}</div>
+      <button class="btn more-btn" type="button" data-more="${c}" aria-expanded="false" aria-controls="more-${c}">${FIRST + 1}~${list.length}위 더 보기</button>`
+          : ''
+      }
     </section>`;
   }).join('');
 
@@ -145,12 +168,24 @@ export function home(data) {
         <div class="brand">MobiBrief <span class="brand__ai">AI</span></div>
         <a class="icon-btn" href="#/search" data-nav="/search" aria-label="뉴스 검색">${ICON.search}</a>
       </div>
-      <p class="masthead__tagline">${rules ? '매일 아침 자동으로 골라주는 오늘의 핵심 뉴스' : 'AI가 골라주는 오늘의 핵심 뉴스'}</p>
-      <div class="masthead__date"><b>${esc(formatFullDate(new Date()))}</b><span>업데이트 ${esc(formatTime(gen))}${gen.toDateString() !== new Date().toDateString() ? ` (${esc(formatShortDate(gen))})` : ''}</span><span>핵심 뉴스 ${total}건</span></div>
+      <p class="masthead__tagline">${
+        weekly
+          ? rules
+            ? '매주 월요일 자동으로 골라주는 이번 주 핵심 뉴스'
+            : 'AI가 매주 골라주는 이번 주 핵심 뉴스'
+          : rules
+            ? '매일 아침 자동으로 골라주는 오늘의 핵심 뉴스'
+            : 'AI가 골라주는 오늘의 핵심 뉴스'
+      }</p>
+      ${
+        weekly && b.periodStart
+          ? `<div class="masthead__date"><b>${esc(shortDate(b.periodStart))} ~ ${esc(shortDate(b.periodEnd))} 주간 브리핑</b><span>업데이트 ${esc(formatShortDate(gen))} ${esc(formatTime(gen))}</span><span>다음 ${esc(formatShortDate(nextMonday(gen)))}</span><span>핵심 뉴스 ${total}건</span></div>`
+          : `<div class="masthead__date"><b>${esc(formatFullDate(new Date()))}</b><span>업데이트 ${esc(formatTime(gen))}${gen.toDateString() !== new Date().toDateString() ? ` (${esc(formatShortDate(gen))})` : ''}</span><span>핵심 뉴스 ${total}건</span></div>`
+      }
     </header>
 
-    <section class="brief" aria-label="${rules ? '오늘 가장 많이 보도된 뉴스' : '오늘의 AI 한 줄 브리핑'}">
-      <div class="eyebrow">${rules ? '✦ 오늘 가장 많이 보도된 뉴스' : '✦ 오늘의 AI 한 줄 브리핑'}</div>
+    <section class="brief" aria-label="${rules ? `${P} 가장 많이 보도된 뉴스` : `${Pof} AI 한 줄 브리핑`}">
+      <div class="eyebrow">${rules ? `✦ ${P} 가장 많이 보도된 뉴스` : `✦ ${Pof} AI 한 줄 브리핑`}</div>
       ${
         rules && b.issues?.[0]
           ? `<a class="brief__text brief__link" href="#/issue/${esc(b.issues[0].id)}" data-nav="/issue/${esc(b.issues[0].id)}">${esc(b.headline)}</a>`
@@ -158,13 +193,13 @@ export function home(data) {
       }
       ${b.headlineNote ? `<p class="brief__note">${esc(b.headlineNote)}</p>` : ''}
       <div>
-        <div class="brief__kw-label">오늘의 핵심 키워드</div>
+        <div class="brief__kw-label">${Pof} 핵심 키워드</div>
         <div class="chips">${(b.keywords || []).map((k) => `<a class="chip chip--hash" href="#/search?q=${encodeURIComponent(k)}" data-nav="/search?q=${encodeURIComponent(k)}">${esc(k)}</a>`).join('')}</div>
       </div>
     </section>
 
     <section class="section">
-      <div class="section__head"><h2 class="section__title">🔥 오늘 꼭 알아야 할 3가지</h2></div>
+      <div class="section__head"><h2 class="section__title">🔥 ${P} 꼭 알아야 할 3가지</h2></div>
       <div class="issues">${issues}</div>
     </section>
 
@@ -182,6 +217,20 @@ export function home(data) {
         : '요약과 분석은 수집된 기사 정보만을 근거로 AI가 작성합니다.<br>중요한 판단 전에는 반드시 원문을 확인하세요.'
     }</p>`,
     mount(root) {
+      root.querySelectorAll('[data-more]').forEach((btn) =>
+        btn.addEventListener('click', () => {
+          const box = root.querySelector(`#more-${btn.dataset.more}`);
+          const open = box.hidden;
+          box.hidden = !open;
+          btn.setAttribute('aria-expanded', String(open));
+          btn.textContent = open ? '접기' : btn.textContent.replace('접기', '');
+          if (!open) {
+            const n = box.children.length;
+            btn.textContent = `${FIRST + 1}~${FIRST + n}위 더 보기`;
+            root.querySelector(`#sec-${btn.dataset.more}`)?.scrollIntoView({ block: 'start' });
+          }
+        }),
+      );
       root.querySelectorAll('[data-jump]').forEach((el) =>
         el.addEventListener('click', (e) => {
           e.preventDefault();
@@ -209,11 +258,11 @@ export function category(data, cat) {
     <header class="page-head">
       <span class="eyebrow">${esc(CATEGORIES[current].en)}</span>
       <h1>${CATEGORIES[current].emoji} ${esc(CATEGORIES[current].name)}</h1>
-      <p>AI가 중요도·업무 연관도·최신성·영향도·참신성을 평가해 고른 오늘의 TOP 5</p>
+      <p>${data.briefing.analysis === 'rules' ? '보도 언론사 수·분야 키워드·최신성 등으로 자동 선정한' : 'AI가 중요도·업무 연관도·최신성·영향도·참신성을 평가해 고른'} ${periodOf(data.briefing).Pof} TOP ${top.length}</p>
     </header>
     <div class="chips" style="margin-bottom:6px">${tabs}</div>
     <section class="section cat-${current}" style="margin-top:16px">
-      <div class="cards">${top.map((a) => card(a)).join('') || empty('📭', '오늘 선정된 뉴스가 없습니다', '')}</div>
+      <div class="cards">${top.map((a) => card(a)).join('') || empty('📭', `${periodOf(data.briefing).P} 선정된 뉴스가 없습니다`, '')}</div>
     </section>
     ${
       others.length
@@ -323,7 +372,7 @@ export function issue(data, id) {
   return {
     title: it.title,
     html: `
-    ${topbar('오늘 꼭 알아야 할 3가지')}
+    ${topbar(`${periodOf(data.briefing).P} 꼭 알아야 할 3가지`)}
     <header class="page-head">
       <span class="eyebrow">ISSUE ${idx} / ${data.briefing.issues.length}</span>
       <h1 style="font-family:var(--font-serif)">${esc(it.title)}</h1>
@@ -571,7 +620,7 @@ export function settings(data) {
       <div class="group">
         <div class="group__title">알림</div>
         <div class="list">
-          <div class="row"><div class="row__text"><label class="row__label" for="sw-daily">정기 브리핑 알림</label><span class="row__desc">매일 정해진 시간에 오늘의 뉴스 도착 알림</span></div>${sw('sw-daily', 'dailyBrief')}</div>
+          <div class="row"><div class="row__text"><label class="row__label" for="sw-daily">정기 브리핑 알림</label><span class="row__desc">${periodOf(data.briefing).weekly ? '매주 월요일 정해진 시간에 이번 주 브리핑 도착 알림' : '매일 정해진 시간에 오늘의 뉴스 도착 알림'}</span></div>${sw('sw-daily', 'dailyBrief')}</div>
           <div class="row"><div class="row__text"><label class="row__label" for="daily-time">알림 시간</label></div><input class="input time-input" id="daily-time" type="time" value="${esc(s.dailyTime)}" ${s.dailyBrief ? '' : 'disabled'}></div>
           <div class="row"><div class="row__text"><label class="row__label" for="sw-breaking">중요 뉴스 알림</label><span class="row__desc">종합점수가 기준 이상인 새 뉴스가 나오면 알림 (같은 이슈는 한 번만)</span></div>${sw('sw-breaking', 'breakingAlert')}</div>
           <div class="row row--stack"><div class="row__text"><span class="row__label">중요 뉴스 기준 점수</span></div>${seg('breakingThreshold', [['80', '80점+'], ['85', '85점+'], ['90', '90점+']])}</div>

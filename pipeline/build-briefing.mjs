@@ -73,7 +73,7 @@ function mergeIssues(items) {
   });
 }
 
-function analyze(file, { compiled, criteria, prevTitles }) {
+function analyze(file, { compiled, criteria, prevTitles, recencyHours }) {
   const now = Date.parse(file.collectedAt);
   const tagged = [];
   for (const a of file.articles) {
@@ -86,7 +86,7 @@ function analyze(file, { compiled, criteria, prevTitles }) {
   const out = [];
   for (const a of mergeIssues(tagged)) {
     const isNew = !prevTitles.some((p) => jaccard(p, a._bg) >= 0.5);
-    const scores = scoreArticle(a, { hits: a._hits, compiled, now, isNew });
+    const scores = scoreArticle(a, { hits: a._hits, compiled, now, isNew, recencyHours });
     const desc = (a.description || '').trim();
     out.push({
       id: a.id,
@@ -154,18 +154,39 @@ export async function buildBriefing({ log = console.log, env = process.env, outD
 
   const latestKey = recent[recent.length - 1];
   const latest = files[latestKey];
-  const today = analyzed[latestKey];
+  const bcfg = scoring.briefing || { cadence: 'daily', windowDays: 1 };
+  const weekly = bcfg.cadence === 'weekly';
+  const topN = scoring.selection.topN || 5;
+  const recencyHours = weekly ? [24, 72, 120] : [6, 12, 24];
 
-  // 분야별 TOP 5 (점수 + 주제 다양성)
+  // 주간 발행: 최근 windowDays 일 동안 수집한 기사를 합쳐서 한 번에 분석 (같은 기사·같은 이슈는 묶음)
+  let today;
+  let periodStart = latest.date;
+  if (weekly) {
+    const endT = Date.parse(`${latest.date}T00:00:00Z`);
+    const inWindow = (f) => endT - Date.parse(`${files[f].date}T00:00:00Z`) < (bcfg.windowDays || 7) * 86400000;
+    const windowKeys = recent.filter(inWindow);
+    const beforeKeys = recent.filter((f) => !inWindow(f)).slice(-7);
+    periodStart = files[windowKeys[0]].date;
+    const byId = new Map();
+    for (const f of windowKeys) for (const a of files[f].articles) byId.set(a.id, a);
+    const prevTitles = beforeKeys.flatMap((f) => files[f].articles.map((a) => bigrams(normalizeTitle(a.title))));
+    today = analyze({ collectedAt: latest.collectedAt, articles: [...byId.values()] }, { compiled, criteria: scoring.criteria, prevTitles, recencyHours });
+    log(`🗓  주간 브리핑: ${periodStart} ~ ${latest.date} (${windowKeys.length}일치 수집분)`);
+  } else {
+    today = analyzed[latestKey];
+  }
+
+  // 분야별 TOP N (점수 + 주제 다양성)
   const categories = {};
   const chosen = new Map();
   for (const c of CATS) {
-    const top = diverseTop(today.filter((a) => a.category === c), scoring.selection.topN || 5);
+    const top = diverseTop(today.filter((a) => a.category === c), topN);
     categories[c] = top.map((a) => a.id);
     for (const a of top) chosen.set(a.id, a);
   }
 
-  // 오늘 꼭 알아야 할 3가지: 가장 많은 언론사가 보도한 이슈 (비슷한 주제는 하나만)
+  // 꼭 알아야 할 3가지: 가장 많은 언론사가 보도한 이슈 (비슷한 주제는 하나만)
   const byCoverage = [...today].sort((a, b) => b.coverage - a.coverage || b.total - a.total);
   const issueLeads = [];
   for (const a of byCoverage) {
@@ -192,7 +213,7 @@ export async function buildBriefing({ log = console.log, env = process.env, outD
     };
   });
 
-  // 오늘의 핵심 키워드: 오늘 기사에서 가장 많이 등장한 키워드 5개
+  // 핵심 키워드: 기간 내 기사에서 가장 많이 등장한 키워드 5개
   const kwCount = {};
   for (const a of today) for (const k of a.keywords) kwCount[k] = (kwCount[k] || 0) + 1;
   const keywords = Object.entries(kwCount)
@@ -207,6 +228,10 @@ export async function buildBriefing({ log = console.log, env = process.env, outD
     analysis: 'rules',
     generatedAt: latest.collectedAt,
     date: latest.date,
+    cadence: weekly ? 'weekly' : 'daily',
+    periodStart,
+    periodEnd: latest.date,
+    topN,
     headline: lead ? lead.title : '오늘 수집된 주요 뉴스가 없습니다.',
     headlineNote: lead ? lead.summary : '',
     keywords,
@@ -226,9 +251,12 @@ export async function buildBriefing({ log = console.log, env = process.env, outD
       const now = Date.parse(latest.collectedAt);
       const recencyOf = (a) => {
         const h = (now - Date.parse(a.publishedAt)) / 3600000;
-        return h <= 6 ? 100 : h <= 12 ? 90 : h <= 24 ? 75 : 60;
+        return h <= recencyHours[0] ? 100 : h <= recencyHours[1] ? 90 : h <= recencyHours[2] ? 75 : 60;
       };
-      aiResult = await aiBriefing({ today, client, editorial, criteria: scoring.criteria, cfg: aiCfg, recencyOf, log });
+      // 비용 제한: 분야별 규칙 점수 상위 후보만 AI 에게 보냄
+      const perCat = aiCfg.aiCandidatesPerCategory || 60;
+      const candidates = CATS.flatMap((c) => today.filter((a) => a.category === c).sort((a, b) => b.total - a.total).slice(0, perCat));
+      aiResult = await aiBriefing({ today: candidates, client, editorial, criteria: scoring.criteria, cfg: { ...aiCfg, topN }, recencyOf, period: weekly ? '이번 주' : '오늘', log });
       briefing = {
         ...briefing,
         analysis: 'ai',
@@ -257,7 +285,7 @@ export async function buildBriefing({ log = console.log, env = process.env, outD
 
   // 검색용 보관함: 최근 14일, 같은 기사는 가장 최근 것만
   const archiveMap = new Map();
-  for (const f of recent.slice(-14)) {
+  for (const f of recent.slice(-(bcfg.archiveDays || 14))) {
     for (const a of analyzed[f]) {
       const { scores, description, sources, ...light } = a;
       archiveMap.set(a.id, { ...light, oneLiner: light.oneLiner.slice(0, 90) });
@@ -271,6 +299,12 @@ export async function buildBriefing({ log = console.log, env = process.env, outD
     }
   }
 
+  // 보관함이 너무 커지지 않도록 점수 상위만 (휴대폰 데이터 절약)
+  if (archiveMap.size > (bcfg.archiveMaxArticles || 1500)) {
+    const keep = [...archiveMap.values()].sort((a, b) => (b.total || 0) - (a.total || 0)).slice(0, bcfg.archiveMaxArticles || 1500);
+    archiveMap.clear();
+    for (const a of keep) archiveMap.set(a.id, a);
+  }
   await mkdir(outDir, { recursive: true });
   await writeFile(path.join(outDir, 'briefing.json'), JSON.stringify(briefing));
   await writeFile(path.join(outDir, 'keyword-stats.json'), JSON.stringify({ schemaVersion: 1, mode: 'live', days }));

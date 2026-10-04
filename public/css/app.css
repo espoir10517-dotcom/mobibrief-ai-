@@ -640,3 +640,5 @@ select.input { appearance: none; background-image: linear-gradient(45deg, transp
 .outlets__name { font-weight: 600; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .outlets time { color: var(--ink-3); font-size: var(--fs-xs); font-variant-numeric: tabular-nums; }
 .outlets svg { width: 14px; height: 14px; fill: none; stroke: var(--ink-3); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+.more-btn { width: 100%; min-height: 44px; font-size: var(--fs-sm); color: var(--ink-2); }

@@ -59,7 +59,7 @@ function editorialAdjust(category, text, compiled) {
 
 const clamp = (v) => Math.max(0, Math.min(100, Math.round(v)));
 
-export function scoreArticle(a, { hits, compiled, now, isNew }) {
+export function scoreArticle(a, { hits, compiled, now, isNew, recencyHours = [6, 12, 24] }) {
   const own = hits[a.category] || [];
   const ageH = (now - Date.parse(a.publishedAt)) / 3600000;
   const text = `${a.title} ${a.description || ''}`;
@@ -69,7 +69,7 @@ export function scoreArticle(a, { hits, compiled, now, isNew }) {
     importance: clamp(coverageScore), // 여러 언론사가 보도할수록 중요한 이슈로 판단
     // 분야 키워드가 많을수록 높게. 한국어 기사 가산, 자동차보험·보험은 국내 제도 중심이라 해외 기사 감점
     relevance: clamp(40 + own.length * 18 + (a.lang === 'ko' ? 12 : DOMESTIC.has(a.category) ? -25 : 0) + editorialAdjust(a.category, text, compiled)),
-    recency: clamp(ageH <= 6 ? 100 : ageH <= 12 ? 90 : ageH <= 24 ? 75 : 60),
+    recency: clamp(ageH <= recencyHours[0] ? 100 : ageH <= recencyHours[1] ? 90 : ageH <= recencyHours[2] ? 75 : 60),
     impact: clamp(50 + impactHits * 12 + (a.coverage >= 3 ? 10 : 0)), // 정책·출시·투자 같은 변화 단어
     novelty: isNew ? 88 : 45, // 최근 3일 안에 비슷한 기사가 없었으면 새로운 이슈
   };

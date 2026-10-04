@@ -82,7 +82,8 @@ async function evaluate({ candidates, client, editorial, criteria, recencyOf, cf
 }
 
 // ───────── 2) 선정 ─────────
-async function edit({ evaluated, client, editorial, cfg, log }) {
+async function edit({ evaluated, client, editorial, cfg, log, period = '오늘' }) {
+  const topN = cfg.topN || 5;
   const pool = {};
   for (const c of CATS) {
     pool[c] = evaluated
@@ -93,11 +94,11 @@ async function edit({ evaluated, client, editorial, cfg, log }) {
   const system = `${editorial}
 
 ---
-너는 오늘 아침 브리핑의 편집장이다. 분야별 후보(점수순)에서:
-1. top: 분야별로 꼭 봐야 할 기사 5개를 고른다. **같은 사건·같은 발표를 다룬 기사는 하나만** 고른다. 후보가 5개보다 적으면 있는 만큼만.
-2. issues: 전체 후보 중 오늘 꼭 알아야 할 이슈 3개. title 은 이슈를 요약한 짧은 제목(25자 이내, 기사 제목 복사 금지), summary 는 1~2문장, articleIds 는 근거 기사 id(1~4개).
-3. headline: 오늘 전체 흐름을 1~2문장으로. 후보 제목·이유에 있는 내용만 사용.
-4. keywords: 오늘의 핵심 키워드 5개.
+너는 ${period} 브리핑의 편집장이다. 분야별 후보(점수순)에서:
+1. top: 분야별로 꼭 봐야 할 기사 ${topN}개를 중요한 순서대로 고른다. **같은 사건·같은 발표를 다룬 기사는 하나만** 고른다(날짜가 달라도 같은 사건이면 가장 내용이 충실한 하나). 후보가 ${topN}개보다 적으면 있는 만큼만.
+2. issues: 전체 후보 중 ${period} 꼭 알아야 할 이슈 3개. title 은 이슈를 요약한 짧은 제목(25자 이내, 기사 제목 복사 금지), summary 는 1~2문장, articleIds 는 근거 기사 id(1~4개).
+3. headline: ${period} 전체 흐름을 1~2문장으로. 후보 제목·이유에 있는 내용만 사용.
+4. keywords: ${period}의 핵심 키워드 5개.
 id 는 반드시 후보에 있는 것만 쓴다. JSON 만 출력:
 {"top":{"auto":["id"],"mobility":[],"insurance":[],"ai":[]},"issues":[{"title":"","summary":"","articleIds":[""]}],"headline":"","keywords":[""]}`;
   const user = JSON.stringify(
@@ -108,9 +109,9 @@ id 는 반드시 후보에 있는 것만 쓴다. JSON 만 출력:
 
   const top = {};
   for (const c of CATS) {
-    const ids = [...new Set((res.top?.[c] || []).filter((id) => pool[c].some((a) => a.id === id)))].slice(0, 5);
-    // AI 가 5개를 못 채우면 점수순으로 채움
-    for (const a of pool[c]) if (ids.length < 5 && !ids.includes(a.id)) ids.push(a.id);
+    const ids = [...new Set((res.top?.[c] || []).filter((id) => pool[c].some((a) => a.id === id)))].slice(0, topN);
+    // AI 가 다 못 채우면 점수순으로 채움
+    for (const a of pool[c]) if (ids.length < topN && !ids.includes(a.id)) ids.push(a.id);
     top[c] = ids;
   }
   const issues = (res.issues || [])
@@ -176,9 +177,9 @@ JSON 만 출력: {"items":[{"id":"","titleKo":"","oneLiner":"","summary3":[],"ke
   return out;
 }
 
-export async function aiBriefing({ today, client, editorial, criteria, cfg, recencyOf, log = console.log }) {
+export async function aiBriefing({ today, client, editorial, criteria, cfg, recencyOf, period = '오늘', log = console.log }) {
   const evaluated = await evaluate({ candidates: today, client, editorial, criteria, recencyOf, cfg, log });
-  const edited = await edit({ evaluated, client, editorial, cfg, log });
+  const edited = await edit({ evaluated, client, editorial, cfg, log, period });
   const byId = new Map(evaluated.map((a) => [a.id, a]));
   const chosenIds = [...new Set([...CATS.flatMap((c) => edited.top[c]), ...edited.issues.flatMap((i) => i.articleIds)])];
   const written = await write({ articles: chosenIds.map((id) => byId.get(id)), client, editorial, cfg, log });
