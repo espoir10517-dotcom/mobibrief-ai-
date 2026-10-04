@@ -3,6 +3,7 @@ import { topOf } from './data.js';
 import { computeTrends } from './core/trend.js';
 import * as store from './store.js';
 import { verifyAdminCode } from './admin.js';
+import { PUSH_API } from './config.js';
 
 // ───────────────── components ─────────────────
 
@@ -623,6 +624,7 @@ export function settings(data) {
         </div>
       </div>
 
+      ${PUSH_API ? `
       <div class="group">
         <div class="group__title">알림</div>
         <div class="list">
@@ -631,8 +633,8 @@ export function settings(data) {
           <div class="row"><div class="row__text"><label class="row__label" for="sw-breaking">중요 뉴스 알림</label><span class="row__desc">종합점수가 기준 이상인 새 뉴스가 나오면 알림 (같은 이슈는 한 번만)</span></div>${sw('sw-breaking', 'breakingAlert')}</div>
           <div class="row row--stack"><div class="row__text"><span class="row__label">중요 뉴스 기준 점수</span></div>${seg('breakingThreshold', [['80', '80점+'], ['85', '85점+'], ['90', '90점+']])}</div>
         </div>
-        <p class="notice">알림 설정은 저장됩니다. 실제 휴대폰 알림 발송은 앱을 인터넷에 배포하고 알림 서버를 연결하는 <b>Phase 5</b>에서 켜집니다. iPhone은 <b>홈 화면에 추가한 앱</b>에서만 알림을 받을 수 있습니다 (iOS 16.4 이상).</p>
       </div>
+      ` : ''}
 
       <div class="group">
         <div class="group__title">데이터</div>
@@ -698,7 +700,7 @@ ${store.isAdmin() ? `          <div class="row"><div class="row__text"><span cla
           ctx.toast(el.checked ? '알림을 켰습니다' : '알림을 껐습니다');
         }),
       );
-      root.querySelector('#daily-time').addEventListener('change', (e) => {
+      root.querySelector('#daily-time')?.addEventListener('change', (e) => {
         store.setSettings({ dailyTime: e.target.value || '08:00' });
         ctx.toast(`매일 ${e.target.value} 알림으로 저장했습니다`);
       });

@@ -3,7 +3,7 @@
 //   (예전 화면이 계속 보이는 문제를 막기 위해 브라우저 캐시도 매번 서버에 확인)
 // - Phase 5 에서 푸시 알림(push / notificationclick) 처리를 이 파일에 추가합니다.
 
-const VERSION = 'mobibrief-v0.4.1';
+const VERSION = 'mobibrief-v0.4.2';
 const SHELL = [
   './',
   './index.html',
@@ -14,6 +14,7 @@ const SHELL = [
   './js/store.js',
   './js/util.js',
   './js/admin.js',
+  './js/config.js',
   './js/core/trend.js',
   './js/core/select.js',
   './js/core/scoring.js',
