@@ -1,0 +1,31 @@
+# 주간 브리핑 알림 발송: 한국시간 월요일 07~22시 매시 정각
+# 각 사용자가 정한 시간에 맞춰 이번 주 브리핑 도착 알림을 1번 보냅니다.
+# (GitHub 사정으로 몇 분~수십 분 늦어질 수 있습니다)
+
+name: 주간 알림 발송
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 22,23 * * 0' # 한국시간 월요일 07·08시
+    - cron: '0 0-13 * * 1' # 한국시간 월요일 09~22시
+
+permissions:
+  contents: read
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: 알림 보내기
+        run: node scripts/send-push.mjs
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

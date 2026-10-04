@@ -12,12 +12,15 @@
     "collect": "node pipeline/collect.mjs",
     "build:demo": "node scripts/build-demo.mjs",
     "build:preview": "node scripts/build-preview.mjs",
-    "test": "node scripts/smoke-test.mjs && node scripts/test-pipeline.mjs && node scripts/test-ai.mjs",
+    "test": "node scripts/smoke-test.mjs && node scripts/test-pipeline.mjs && node scripts/test-ai.mjs && node scripts/test-push.mjs && node scripts/test-push-server.mjs",
     "test:pipeline": "node scripts/test-pipeline.mjs",
     "build:briefing": "node pipeline/build-briefing.mjs",
     "update": "node pipeline/collect.mjs && node pipeline/build-briefing.mjs",
     "test:ai": "node scripts/test-ai.mjs",
     "backfill": "node pipeline/backfill.mjs --days 7",
-    "validate": "node scripts/validate-live.mjs"
+    "validate": "node scripts/validate-live.mjs",
+    "test:push": "node scripts/test-push.mjs && node scripts/test-push-server.mjs",
+    "deploy:push": "node scripts/deploy-push.mjs",
+    "send:push": "node scripts/send-push.mjs"
   }
 }

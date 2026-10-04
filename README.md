@@ -151,7 +151,22 @@ AI 방식에서 하는 일:
 
 ## 6. 알림 설정 방법
 
-**현재 상태: 준비 중.** 알림 서버가 연결되기 전까지는 앱에서 알림 설정 화면을 숨겨 둡니다. 알림 서버(Cloudflare Workers, 무료)가 연결되면 `public/js/config.js` 의 `PUSH_API` 에 주소가 들어가고, SETTINGS 에 알림 켜기·시간 설정이 나타납니다.
+**구조:** 알림을 켠 휴대폰의 '알림 받을 주소'와 받을 시간만 Cloudflare Workers(무료)에 저장하고, 매주 월요일 GitHub Actions('주간 알림 발송')가 각자 정한 시간에 1번 보냅니다. 이름·연락처는 받지 않습니다.
+
+**처음 연결하기 (1회):**
+1. https://dash.cloudflare.com/sign-up 가입 (무료, 카드 불필요) → 왼쪽 메뉴 **Workers & Pages** 를 한 번 열기
+2. **Account ID** 복사 / My Profile → API Tokens → Create Token → **Edit Cloudflare Workers** 템플릿 → 토큰 복사
+3. GitHub 저장소 Settings → Secrets and variables → Actions 에 `CLOUDFLARE_ACCOUNT_ID`, `CLOUDFLARE_API_TOKEN` 등록
+4. Actions 탭 → **알림 서버 배포** → Run workflow → 끝나면 앱 SETTINGS 에 '알림' 항목이 나타납니다
+
+**사용자 안내:**
+- 앱 → SETTINGS → **주간 브리핑 알림** 켜기 → 휴대폰의 알림 허용 → **받을 시간**(월요일 오전 7시~오후 10시) 선택 → **시험 알림 보내기**로 확인
+- **Android:** Chrome 에서 바로 가능 (홈 화면 설치 권장)
+- **iPhone:** iOS 16.4 이상, **홈 화면에 추가한 앱**에서 켜야 받을 수 있습니다 (Safari 탭에서는 불가 — 애플 정책)
+- 새 브리핑이 발행되지 않은 주에는 알림을 보내지 않습니다. 같은 브리핑 알림은 한 번만 보냅니다.
+- GitHub 사정으로 정한 시간보다 몇 분~수십 분 늦게 도착할 수 있습니다.
+
+**비용:** 0원 (Cloudflare 무료 한도: 하루 요청 10만 건, 저장소 쓰기 1천 건 — 사용자 수백 명 규모에 충분)
 
 플랫폼별 제약:
 - **Android:** Chrome에서 웹 알림이 잘 동작합니다.
