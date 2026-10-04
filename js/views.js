@@ -599,6 +599,7 @@ export function search(data, params) {
 
 export function settings(data) {
   const s = store.getSettings();
+  if (s.theme !== 'dark') s.theme = 'light';
   const seg = (key, items) =>
     `<div class="seg" role="group">${items.map(([v, l]) => `<button type="button" data-set="${key}" data-val="${esc(v)}" class="${String(s[key]) === v ? 'is-active' : ''}">${esc(l)}</button>`).join('')}</div>`;
   const sw = (id, key) => `<label class="switch"><input type="checkbox" id="${id}" data-toggle="${key}" ${s[key] ? 'checked' : ''}><span></span></label>`;
@@ -614,7 +615,7 @@ export function settings(data) {
       <div class="group">
         <div class="group__title">화면</div>
         <div class="list">
-          <div class="row row--stack"><div class="row__text"><span class="row__label">테마</span></div>${seg('theme', [['system', '시스템'], ['light', '라이트'], ['dark', '다크']])}</div>
+          <div class="row row--stack"><div class="row__text"><span class="row__label">테마</span></div>${seg('theme', [['light', '라이트'], ['dark', '다크']])}</div>
         </div>
       </div>
 

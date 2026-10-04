@@ -52,8 +52,8 @@ function back() {
 
 function applyTheme() {
   const t = store.getSettings().theme;
-  if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
-  else document.documentElement.removeAttribute('data-theme');
+  // 라이트/다크 두 가지 (예전 '시스템' 설정은 라이트로)
+  document.documentElement.setAttribute('data-theme', t === 'dark' ? 'dark' : 'light');
   const bg = getComputedStyle(document.body).backgroundColor;
   document.querySelectorAll('meta[name="theme-color"]').forEach((m) => m.setAttribute('content', bg));
 }
@@ -224,5 +224,4 @@ async function start() {
   }
 }
 
-window.matchMedia?.('(prefers-color-scheme: dark)').addEventListener?.('change', applyTheme);
 start();
