@@ -1,9 +1,9 @@
 // MobiBrief AI 서비스 워커
-// - 앱 화면 파일: 캐시 우선 (오프라인에서도 앱이 열림)
-// - 뉴스 데이터(JSON): 네트워크 우선, 실패 시 마지막으로 받은 데이터
+// - 화면 파일·뉴스 데이터 모두: 인터넷이 되면 항상 최신 파일(네트워크 우선), 안 되면 마지막으로 받은 파일
+//   (예전 화면이 계속 보이는 문제를 막기 위해 브라우저 캐시도 매번 서버에 확인)
 // - Phase 5 에서 푸시 알림(push / notificationclick) 처리를 이 파일에 추가합니다.
 
-const VERSION = 'mobibrief-v0.4.0';
+const VERSION = 'mobibrief-v0.4.1';
 const SHELL = [
   './',
   './index.html',
@@ -22,7 +22,12 @@ const SHELL = [
 ];
 
 self.addEventListener('install', (e) => {
-  e.waitUntil(caches.open(VERSION).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting()));
+  e.waitUntil(
+    caches
+      .open(VERSION)
+      .then((c) => c.addAll(SHELL.map((u) => new Request(u, { cache: 'reload' }))))
+      .then(() => self.skipWaiting()),
+  );
 });
 
 self.addEventListener('activate', (e) => {
@@ -38,32 +43,21 @@ self.addEventListener('fetch', (e) => {
   const url = new URL(e.request.url);
   if (e.request.method !== 'GET' || url.origin !== location.origin) return;
 
-  if (url.pathname.includes('/data/')) {
-    e.respondWith(
-      fetch(e.request)
-        .then((res) => {
-          const copy = res.clone();
-          if (res.ok) caches.open(VERSION).then((c) => c.put(e.request, copy));
-          return res;
-        })
-        .catch(() => caches.match(e.request).then((r) => r || new Response('{}', { status: 504 }))),
-    );
-    return;
-  }
-
-  // 캐시된 화면을 바로 보여주고, 뒤에서 최신 파일로 갱신 (다음 실행 때 반영)
+  // 페이지 이동 요청은 옵션을 붙여 다시 만들 수 없어서 주소로 새 요청을 만듦
+  const fresh = e.request.mode === 'navigate' ? new Request(e.request.url, { cache: 'no-cache', credentials: 'same-origin' }) : new Request(e.request, { cache: 'no-cache' });
   e.respondWith(
-    caches.match(e.request).then((hit) => {
-      const net = fetch(e.request)
-        .then((res) => {
-          if (res.ok) {
-            const copy = res.clone();
-            caches.open(VERSION).then((c) => c.put(e.request, copy));
-          }
-          return res;
-        })
-        .catch(() => hit);
-      return hit || net;
-    }),
+    fetch(fresh)
+      .then((res) => {
+        if (res.ok) {
+          const copy = res.clone();
+          caches.open(VERSION).then((c) => c.put(e.request, copy));
+        }
+        return res;
+      })
+      .catch(() =>
+        caches
+          .match(e.request, { ignoreSearch: true })
+          .then((r) => r || (url.pathname.includes('/data/') ? new Response('{}', { status: 504 }) : caches.match('./index.html'))),
+      ),
   );
 });

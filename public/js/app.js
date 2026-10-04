@@ -208,7 +208,19 @@ async function start() {
     viewEl.innerHTML = `<div class="empty"><div class="empty__icon">⚠️</div><b>뉴스 데이터를 불러오지 못했습니다</b><p>인터넷 연결을 확인한 뒤 새로고침해 주세요.<br><small>${String(err.message || err).replace(/[<>&]/g, '')}</small></p></div>`;
   }
   if (!inline && 'serviceWorker' in navigator && location.protocol !== 'file:') {
-    navigator.serviceWorker.register('sw.js').catch((e) => console.warn('SW 등록 실패', e));
+    // 새 버전이 설치되면 한 번 자동 새로고침해서 바로 최신 화면을 보여줌
+    const hadController = Boolean(navigator.serviceWorker.controller);
+    let reloaded = false;
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      if (hadController && !reloaded) {
+        reloaded = true;
+        location.reload();
+      }
+    });
+    navigator.serviceWorker
+      .register('sw.js', { updateViaCache: 'none' })
+      .then((reg) => reg.update())
+      .catch((e) => console.warn('SW 등록 실패', e));
   }
 }
 
