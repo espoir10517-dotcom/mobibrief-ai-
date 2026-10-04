@@ -260,17 +260,18 @@ export function article(data, id) {
     : `
     <section class="panel panel--fact" aria-label="기사 요약">
       <div class="panel__label"><span class="eyebrow">📄 기사 요약 · FACT</span></div>
-      <p class="panel__note">원문 기사에 나온 내용만 정리했습니다.</p>
-      <div class="block"><h2>3줄 요약</h2><ol class="sum3">${li(a.summary3)}</ol></div>
-      <div class="block"><h2>핵심 내용</h2><ul class="points">${li(a.keyPoints)}</ul></div>
+      <p class="panel__note">${a.limitedInfo ? '이 기사는 제목·짧은 요약문만 제공되어 내용이 제한적입니다. 자세한 내용은 원문에서 확인하세요.' : '원문 기사에 나온 내용만 정리했습니다.'}</p>
+      ${a.summary3?.length ? `<div class="block"><h2>${a.summary3.length >= 3 ? '3줄 요약' : '요약'}</h2><ol class="sum3">${li(a.summary3)}</ol></div>` : ''}
+      ${a.keyPoints?.length ? `<div class="block"><h2>핵심 내용</h2><ul class="points">${li(a.keyPoints)}</ul></div>` : ''}
+      ${a.sources?.length > 1 ? `<div class="block"><h2>함께 보도한 언론사 ${a.sources.length}곳</h2>${outletList(a.sources)}</div>` : ''}
     </section>
 
     <section class="panel panel--ai" aria-label="AI 분석">
       <div class="panel__label"><span class="eyebrow">✦ AI 분석 · 해석과 전망</span></div>
       <p class="panel__note">AI의 해석입니다. 기사에서 확인되지 않은 사실은 포함하지 않도록 작성되며, 판단의 참고용으로만 활용하세요.</p>
-      <div class="block"><h2>왜 중요한가?</h2><p>${esc(a.whyImportant)}</p></div>
-      <div class="block"><h2>보험·모빌리티 관점</h2><p>${esc(a.perspective)}</p></div>
-      <div class="block"><h2>앞으로 볼 것</h2><ul class="points">${li(a.watchNext)}</ul></div>
+      ${a.whyImportant ? `<div class="block"><h2>왜 중요한가?</h2><p>${esc(a.whyImportant)}</p></div>` : ''}
+      ${a.perspective ? `<div class="block"><h2>보험·모빌리티 관점</h2><p>${esc(a.perspective)}</p></div>` : ''}
+      ${a.watchNext?.length ? `<div class="block"><h2>앞으로 볼 것</h2><ul class="points">${li(a.watchNext)}</ul></div>` : ''}
     </section>`;
 
   return {
@@ -604,7 +605,7 @@ export function settings(data) {
         <p class="notice">즐겨찾기·관심 키워드·설정은 이 휴대폰 안에만 저장되며 외부 서버나 AI로 전송되지 않습니다.</p>
       </div>
 
-      <p class="footer-note">MobiBrief AI · v0.2<br>공개 뉴스만 다루며, 기사 전문을 저장하지 않고 원문 링크로 연결합니다.</p>
+      <p class="footer-note">MobiBrief AI · v0.3<br>공개 뉴스만 다루며, 기사 전문을 저장하지 않고 원문 링크로 연결합니다.</p>
     </div>`,
     mount(root, ctx) {
       root.querySelectorAll('[data-set]').forEach((b) =>
