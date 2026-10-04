@@ -23,7 +23,7 @@ function write(key, value) {
 const KEYS = { saved: 'mb.saved', keywords: 'mb.keywords', settings: 'mb.settings', admin: 'mb.admin' };
 
 export const DEFAULT_SETTINGS = {
-  theme: 'system', // system | light | dark
+  theme: 'light', // light | dark
   dataMode: 'auto', // auto(실데이터 있으면 사용) | demo
   dailyBrief: true,
   dailyTime: '08:00',

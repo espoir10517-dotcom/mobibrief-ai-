@@ -1,6 +1,6 @@
 {
   "name": "mobibrief-ai",
-  "version": "0.3.0",
+  "version": "0.4.1",
   "private": true,
   "description": "MobiBrief AI — AI가 골라주는 오늘의 핵심 뉴스 (자동차보험·모빌리티·보험·AI 기술)",
   "type": "module",
@@ -16,6 +16,7 @@
     "test:pipeline": "node scripts/test-pipeline.mjs",
     "build:briefing": "node pipeline/build-briefing.mjs",
     "update": "node pipeline/collect.mjs && node pipeline/build-briefing.mjs",
-    "test:ai": "node scripts/test-ai.mjs"
+    "test:ai": "node scripts/test-ai.mjs",
+    "backfill": "node pipeline/backfill.mjs --days 7"
   }
 }

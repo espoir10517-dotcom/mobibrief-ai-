@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>MobiBrief AI</title>
   <meta name="description" content="AI가 골라주는 오늘의 핵심 뉴스 — 자동차보험·모빌리티·보험·AI 기술">
-  <meta name="theme-color" content="#F3F5F8" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0B1018" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#F3F5F8">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icons/icon-192.png" type="image/png">
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
@@ -26,7 +25,7 @@
     // 화면 깜빡임 없이 저장된 테마를 먼저 적용
     try {
       var s = JSON.parse(localStorage.getItem('mb.settings') || '{}');
-      if (s.theme === 'light' || s.theme === 'dark') document.documentElement.setAttribute('data-theme', s.theme);
+      document.documentElement.setAttribute('data-theme', s.theme === 'dark' ? 'dark' : 'light');
     } catch (e) {}
   </script>
 </head>

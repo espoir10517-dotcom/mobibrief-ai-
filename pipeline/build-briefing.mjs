@@ -277,7 +277,8 @@ export async function buildBriefing({ log = console.log, env = process.env, outD
   }
 
   // 키워드 통계 (날짜별 등장 기사 수)
-  const days = recent.map((f) => {
+  // 채워 넣은(backfill) 날짜는 수집 방식이 달라 추세 비교에서 제외
+  const days = recent.filter((f) => !files[f].backfill).map((f) => {
     const counts = {};
     for (const a of analyzed[f]) for (const k of a.keywords) counts[k] = (counts[k] || 0) + 1;
     return { date: files[f].date, counts };

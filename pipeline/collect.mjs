@@ -28,7 +28,9 @@ if (existsSync(envFile)) {
   }
 }
 
-export async function runCollect({ now = new Date(), log = console.log, outDir = path.join(root, 'data/collected') } = {}) {
+// 옵션 (지난 기사 채우기용): dateRange = 구글뉴스 날짜 지정, lookbackHours = 기간 덮어쓰기,
+// rssCache = 언론사 RSS 를 한 번만 받아 여러 날짜에 나눠 쓰기, backfill = true 면 latest.json 을 건드리지 않음
+export async function runCollect({ now = new Date(), log = console.log, outDir = path.join(root, 'data/collected'), dateRange, lookbackHours, rssCache, backfill = false, perQueryLimit } = {}) {
   const cfg = JSON.parse(await readFile(path.join(root, 'config/sources.json'), 'utf8'));
   const useNaver = naver.isConfigured();
   const compiled = compileDictionary(JSON.parse(await readFile(path.join(root, 'config/keywords.json'), 'utf8')));
@@ -39,15 +41,26 @@ export async function runCollect({ now = new Date(), log = console.log, outDir =
   const jobs = [];
   for (const [category, q] of Object.entries(cfg.categories)) {
     for (const query of q.ko || []) {
-      jobs.push({ category, query, run: () => google.collect(query, 'ko', cfg.perQueryLimit), provider: 'google' });
-      if (useNaver) jobs.push({ category, query, run: () => naver.collect(query, cfg.perQueryLimit), provider: 'naver' });
+      jobs.push({ category, query, run: () => google.collect(query, 'ko', perQueryLimit || cfg.perQueryLimit, dateRange), provider: 'google' });
+      if (useNaver && !dateRange) jobs.push({ category, query, run: () => naver.collect(query, cfg.perQueryLimit), provider: 'naver' });
     }
     for (const query of q.en || []) {
-      jobs.push({ category, query, run: () => google.collect(query, 'en', cfg.perQueryLimit), provider: 'google' });
+      jobs.push({ category, query, run: () => google.collect(query, 'en', perQueryLimit || cfg.perQueryLimit, dateRange), provider: 'google' });
     }
   }
   for (const feed of cfg.rssFeeds || []) {
-    jobs.push({ feed, query: feed.name, run: () => rss.collect(feed), provider: 'rss' });
+    jobs.push({
+      feed,
+      query: feed.name,
+      provider: 'rss',
+      run: async () => {
+        if (!rssCache) return rss.collect(feed);
+        if (!rssCache.has(feed.url)) rssCache.set(feed.url, rss.collect(feed).catch((e) => e));
+        const r = await rssCache.get(feed.url);
+        if (r instanceof Error) throw r;
+        return r;
+      },
+    });
   }
   log(`🔎 검색·피드 ${jobs.length}건 실행 (구글뉴스${useNaver ? ' + 네이버' : ', 네이버 키 없음 → 건너뜀'})`);
 
@@ -82,12 +95,12 @@ export async function runCollect({ now = new Date(), log = console.log, outDir =
         errors.push(`${job.provider} "${job.query}": ${e.message}`);
         if (job.provider === 'rss') feedResults.push({ name: job.feed.name, url: job.feed.url, ok: false, error: e.message });
       }
-      await sleep(250);
+      await sleep(dateRange ? 400 : 250);
     }
   }
   await Promise.all(Array.from({ length: CONCURRENCY }, worker));
 
-  const since = now.getTime() - cfg.lookbackHours * 3600000;
+  const since = now.getTime() - (lookbackHours || cfg.lookbackHours) * 3600000;
   const exclude = (cfg.excludeTitlePatterns || []).map((p) => (p.startsWith('(?i)') ? new RegExp(p.slice(4), 'i') : new RegExp(p)));
   const blockedSources = new Set((cfg.excludeSources || []).map((s) => s.toLowerCase()));
   const fresh = raw.filter(
@@ -117,6 +130,7 @@ export async function runCollect({ now = new Date(), log = console.log, outDir =
   const out = {
     schemaVersion: 1,
     date,
+    ...(backfill ? { backfill: true } : {}),
     collectedAt: now.toISOString(),
     stats: { searches: jobs.length, ...stats, raw: raw.length, fresh: fresh.length, clusters: clusters.length, candidates: articles.length, perCategory },
     errors: errors.slice(0, 30),
@@ -127,10 +141,10 @@ export async function runCollect({ now = new Date(), log = console.log, outDir =
   const dir = outDir;
   await mkdir(dir, { recursive: true });
   // 실행 기록은 항상 남기고(문제 확인용), 기사가 없으면 기존 결과를 덮어쓰지 않음
-  await writeFile(path.join(dir, 'last-run.json'), JSON.stringify({ date, collectedAt: out.collectedAt, stats: out.stats, errors: out.errors, feeds: feedResults }, null, 2));
+  if (!backfill) await writeFile(path.join(dir, 'last-run.json'), JSON.stringify({ date, collectedAt: out.collectedAt, stats: out.stats, errors: out.errors, feeds: feedResults }, null, 2));
   if (articles.length) {
     await writeFile(path.join(dir, `${date}.json`), JSON.stringify(out, null, 2));
-    await writeFile(path.join(dir, 'latest.json'), JSON.stringify(out, null, 2));
+    if (!backfill) await writeFile(path.join(dir, 'latest.json'), JSON.stringify(out, null, 2));
   }
 
   log(`📥 수집 ${raw.length}건 → 최근 ${cfg.lookbackHours}시간 ${fresh.length}건 → 중복 묶은 뒤 ${clusters.length}개 이슈`);

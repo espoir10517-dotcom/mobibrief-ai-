@@ -13,6 +13,10 @@ on:
         description: '지금 브리핑을 만들어 앱에 반영할까요? (false = 수집만)'
         type: boolean
         default: true
+      backfill_days:
+        description: '지난 며칠치 기사를 채워 넣을까요? (처음 시작할 때만, 0 = 안 함, 최대 14)'
+        type: string
+        default: '0'
   schedule:
     - cron: '30 21 * * *' # UTC 21:30 = 한국시간 06:30 매일
 
@@ -26,7 +30,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v5
 
@@ -42,6 +46,10 @@ jobs:
         env:
           NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
           NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+
+      - name: 지난 기사 채우기 (직접 실행 시 선택)
+        if: github.event_name == 'workflow_dispatch' && inputs.backfill_days != '0' && inputs.backfill_days != ''
+        run: node pipeline/backfill.mjs --days "${{ inputs.backfill_days }}"
 
       - name: 발행일인지 확인 (한국시간 월요일 또는 직접 실행)
         id: when

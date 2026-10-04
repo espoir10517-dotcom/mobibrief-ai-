@@ -11,8 +11,10 @@ const EDITIONS = {
   en: 'hl=en-US&gl=US&ceid=US:en',
 };
 
-export function buildUrl(query, lang) {
-  return `https://news.google.com/rss/search?q=${encodeURIComponent(`${query} when:2d`)}&${EDITIONS[lang]}`;
+// dateRange 를 주면 그 날짜의 기사만 검색 (지난 기사 채우기용): { after: 'YYYY-MM-DD', before: 'YYYY-MM-DD' }
+export function buildUrl(query, lang, dateRange) {
+  const q = dateRange ? `${query} after:${dateRange.after} before:${dateRange.before}` : `${query} when:2d`;
+  return `https://news.google.com/rss/search?q=${encodeURIComponent(q)}&${EDITIONS[lang]}`;
 }
 
 function tag(xml, name) {
@@ -49,7 +51,7 @@ export function parseRss(xml, { lang, query } = {}) {
   return items;
 }
 
-export async function collect(query, lang, limit = 20) {
-  const xml = await fetchText(buildUrl(query, lang));
+export async function collect(query, lang, limit = 20, dateRange) {
+  const xml = await fetchText(buildUrl(query, lang, dateRange));
   return parseRss(xml, { lang, query }).slice(0, limit);
 }
