@@ -148,14 +148,15 @@ function diverseTop(list, n) {
 
 // clientOverride: AI 호출 대신 미리 준비한 응답을 쓰는 클라이언트 (수동 실행·시험용)
 // dumpCandidates: AI 에게 보낼 후보 목록을 파일로 저장 (확인용)
-export async function buildBriefing({ log = console.log, env = process.env, outDir = path.join(root, 'public/data/live'), clientOverride, dumpCandidates } = {}) {
+export async function buildBriefing({ log = console.log, env = process.env, outDir = path.join(root, 'public/data/live'), clientOverride, dumpCandidates, asOf } = {}) {
   const scoring = await readJson(path.join(root, 'config/scoring.json'));
   const dict = await readJson(path.join(root, 'config/keywords.json'));
   const compiled = compileDictionary(dict);
   const sourcesCfg = await readJson(path.join(root, 'config/sources.json'));
   const exclude = (sourcesCfg.excludeTitlePatterns || []).map((p) => (p.startsWith('(?i)') ? new RegExp(p.slice(4), 'i') : new RegExp(p)));
   const dir = path.join(root, 'data/collected');
-  const dates = (await readdir(dir)).filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)).sort();
+  // asOf: 지난 주를 그때 기준으로 다시 만들 때 (그 날짜까지 수집분만 사용)
+  const dates = (await readdir(dir)).filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f) && (!asOf || f.slice(0, 10) <= asOf)).sort();
   if (!dates.length) throw new Error('수집된 데이터가 없습니다. 먼저 npm run collect 를 실행하세요.');
 
   const files = {};
@@ -173,6 +174,8 @@ export async function buildBriefing({ log = console.log, env = process.env, outD
 
   const latestKey = recent[recent.length - 1];
   const latest = files[latestKey];
+  // 기준 시각: 평소엔 수집 시각, asOf 면 다음 날(월요일) 06:30 발행 시각
+  const nowIso = asOf ? new Date(Date.parse(`${latest.date}T06:30:00+09:00`) + 86400000).toISOString() : latest.collectedAt;
   const bcfg = scoring.briefing || { cadence: 'daily', windowDays: 1 };
   const weekly = bcfg.cadence === 'weekly';
   const topN = scoring.selection.topN || 5;
@@ -190,7 +193,7 @@ export async function buildBriefing({ log = console.log, env = process.env, outD
     const byId = new Map();
     for (const f of windowKeys) for (const a of files[f].articles) byId.set(a.id, a);
     const prevTitles = beforeKeys.flatMap((f) => files[f].articles.map((a) => bigrams(normalizeTitle(a.title))));
-    today = analyze({ collectedAt: latest.collectedAt, articles: [...byId.values()] }, { compiled, criteria: scoring.criteria, prevTitles, recencyHours, exclude });
+    today = analyze({ collectedAt: nowIso, articles: [...byId.values()] }, { compiled, criteria: scoring.criteria, prevTitles, recencyHours, exclude });
     log(`🗓  주간 브리핑: ${periodStart} ~ ${latest.date} (${windowKeys.length}일치 수집분)`);
   } else {
     today = analyzed[latestKey];
@@ -245,7 +248,7 @@ export async function buildBriefing({ log = console.log, env = process.env, outD
     schemaVersion: 1,
     mode: 'live',
     analysis: 'rules',
-    generatedAt: latest.collectedAt,
+    generatedAt: nowIso,
     date: latest.date,
     cadence: weekly ? 'weekly' : 'daily',
     periodStart,
@@ -289,7 +292,7 @@ export async function buildBriefing({ log = console.log, env = process.env, outD
   if (client) {
     try {
       const editorial = await readFile(path.join(root, 'config/editorial.md'), 'utf8');
-      const now = Date.parse(latest.collectedAt);
+      const now = Date.parse(nowIso);
       const recencyOf = (a) => {
         const h = (now - Date.parse(a.publishedAt)) / 3600000;
         return h <= recencyHours[0] ? 100 : h <= recencyHours[1] ? 90 : h <= recencyHours[2] ? 75 : 60;

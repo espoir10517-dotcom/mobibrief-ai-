@@ -1,0 +1,668 @@
+{
+ "items": [
+  {
+   "id": "8707b5507e7e",
+   "keep": true,
+   "category": "auto",
+   "importance": 92,
+   "relevance": 97,
+   "impact": 85,
+   "novelty": 70,
+   "reason": "월간 손해율 발표, 보험료·사업계획 판단의 기본 지표",
+   "keywords": [
+    "손해율",
+    "車보험",
+    "8월 실적"
+   ]
+  },
+  {
+   "id": "75047dc6eb93",
+   "keep": true,
+   "category": "auto",
+   "importance": 84,
+   "relevance": 95,
+   "impact": 82,
+   "novelty": 78,
+   "reason": "경상환자 8주룰의 허점 분석, 보상 실무·손해율 관리와 직결",
+   "keywords": [
+    "8주룰",
+    "경상환자",
+    "삼성화재"
+   ]
+  },
+  {
+   "id": "dac1ccb15801",
+   "keep": true,
+   "category": "auto",
+   "importance": 80,
+   "relevance": 94,
+   "impact": 84,
+   "novelty": 72,
+   "reason": "국토부 경상환자 대책 후속조치, 제도 변화 직접 영향",
+   "keywords": [
+    "국토부",
+    "경상환자",
+    "제도 개선"
+   ]
+  },
+  {
+   "id": "6cb05f5f6774",
+   "keep": true,
+   "category": "auto",
+   "importance": 80,
+   "relevance": 93,
+   "impact": 78,
+   "novelty": 74,
+   "reason": "과도한 수리비·렌트비 청구 사례, 대물 보상 누수 문제",
+   "keywords": [
+    "수리비",
+    "렌트비",
+    "대물배상"
+   ]
+  },
+  {
+   "id": "c543c102c969",
+   "keep": true,
+   "category": "auto",
+   "importance": 76,
+   "relevance": 90,
+   "impact": 76,
+   "novelty": 80,
+   "reason": "한방 과잉진료에 대한 법원 판단, 대인 보상 분쟁에 참고",
+   "keywords": [
+    "한방진료",
+    "과잉진료",
+    "판결"
+   ]
+  },
+  {
+   "id": "03c7309e4377",
+   "keep": true,
+   "category": "auto",
+   "importance": 74,
+   "relevance": 90,
+   "impact": 70,
+   "novelty": 70,
+   "reason": "주행거리 특약 개편, 상품 경쟁 동향",
+   "keywords": [
+    "주행거리 특약",
+    "흥국화재",
+    "할인"
+   ]
+  },
+  {
+   "id": "af1c314e4b4d",
+   "keep": true,
+   "category": "auto",
+   "importance": 76,
+   "relevance": 88,
+   "impact": 70,
+   "novelty": 76,
+   "reason": "커넥티드카 할인 특약 신설, 데이터 기반 요율 상품",
+   "keywords": [
+    "커넥티드카",
+    "롯데손해보험",
+    "특약"
+   ]
+  },
+  {
+   "id": "a5fce5a7bbd7",
+   "keep": true,
+   "category": "auto",
+   "importance": 70,
+   "relevance": 86,
+   "impact": 66,
+   "novelty": 78,
+   "reason": "배달 이륜차 안전교육 할인 특약, 이륜차 손해율 대응",
+   "keywords": [
+    "이륜차보험",
+    "배달 라이더",
+    "KB손해보험"
+   ]
+  },
+  {
+   "id": "846670e64a71",
+   "keep": true,
+   "category": "auto",
+   "importance": 72,
+   "relevance": 78,
+   "impact": 70,
+   "novelty": 80,
+   "reason": "중고차 성능보험 수수료 구조 문제, 손보사 평판 리스크",
+   "keywords": [
+    "중고차 성능보험",
+    "사업비",
+    "수수료"
+   ]
+  },
+  {
+   "id": "1125ceeab7c3",
+   "keep": true,
+   "category": "auto",
+   "importance": 66,
+   "relevance": 82,
+   "impact": 58,
+   "novelty": 70,
+   "reason": "긴급출동 서비스 수요 분석, 서비스 비용 관리 참고",
+   "keywords": [
+    "긴급출동",
+    "배터리",
+    "손보사 비교"
+   ]
+  },
+  {
+   "id": "90e8dc367a54",
+   "keep": true,
+   "category": "auto",
+   "importance": 72,
+   "relevance": 92,
+   "impact": 74,
+   "novelty": 60,
+   "reason": "8주룰 초반 효과 평가, 손해율 개선 여부",
+   "keywords": [
+    "8주룰",
+    "손해율",
+    "적자"
+   ]
+  },
+  {
+   "id": "898fadbdd16d",
+   "keep": true,
+   "category": "auto",
+   "importance": 68,
+   "relevance": 90,
+   "impact": 70,
+   "novelty": 56,
+   "reason": "경상환자 통원치료 사례, 적자 개선 과제",
+   "keywords": [
+    "경상환자",
+    "통원치료"
+   ]
+  },
+  {
+   "id": "53ae8365172f",
+   "keep": true,
+   "category": "mobility",
+   "importance": 84,
+   "relevance": 90,
+   "impact": 80,
+   "novelty": 78,
+   "reason": "자율주행 켜고 잠든 운전자 사례, 운전자 책임 범위 쟁점",
+   "keywords": [
+    "자율주행",
+    "운전자 책임",
+    "테슬라"
+   ]
+  },
+  {
+   "id": "0777b82f261f",
+   "keep": true,
+   "category": "mobility",
+   "importance": 82,
+   "relevance": 80,
+   "impact": 76,
+   "novelty": 72,
+   "reason": "국내 자율주행 정체·예산 삭감, 상용화 시점과 보험 제도 준비에 영향",
+   "keywords": [
+    "자율주행",
+    "R&D 예산"
+   ]
+  },
+  {
+   "id": "b99c1245a16d",
+   "keep": true,
+   "category": "mobility",
+   "importance": 80,
+   "relevance": 92,
+   "impact": 78,
+   "novelty": 76,
+   "reason": "국내 자율주행차 사고 통계, 보험 리스크 산정 기초",
+   "keywords": [
+    "자율주행 사고",
+    "사고 통계"
+   ]
+  },
+  {
+   "id": "22788c62f38f",
+   "keep": true,
+   "category": "mobility",
+   "importance": 82,
+   "relevance": 95,
+   "impact": 86,
+   "novelty": 80,
+   "reason": "자율주행 사고 책임 법제화 비교, 보험 책임 구조 핵심",
+   "keywords": [
+    "자율주행 책임",
+    "법제화",
+    "중국"
+   ]
+  },
+  {
+   "id": "84329f91554c",
+   "keep": true,
+   "category": "mobility",
+   "importance": 78,
+   "relevance": 76,
+   "impact": 76,
+   "novelty": 74,
+   "reason": "현대차 미국 로보택시 공급, 상용화 일정",
+   "keywords": [
+    "로보택시",
+    "현대차",
+    "미국"
+   ]
+  },
+  {
+   "id": "8b36b1e8f748",
+   "keep": true,
+   "category": "mobility",
+   "importance": 76,
+   "relevance": 74,
+   "impact": 72,
+   "novelty": 82,
+   "reason": "국내 로보택시 핵심 센서 중국산, 안전·데이터 리스크",
+   "keywords": [
+    "로보택시",
+    "센서",
+    "중국산"
+   ]
+  },
+  {
+   "id": "6df9a8da14e3",
+   "keep": true,
+   "category": "mobility",
+   "importance": 74,
+   "relevance": 84,
+   "impact": 78,
+   "novelty": 84,
+   "reason": "차량 해킹으로 주행 중 기능 장애, 사이버 리스크 담보 이슈",
+   "keywords": [
+    "차량 해킹",
+    "전기차",
+    "사이버 리스크"
+   ]
+  },
+  {
+   "id": "07231cf3c35e",
+   "keep": true,
+   "category": "mobility",
+   "importance": 76,
+   "relevance": 90,
+   "impact": 74,
+   "novelty": 70,
+   "reason": "운전보조 기능 과신 사고, 사고 원인·과실 판단 참고",
+   "keywords": [
+    "크루즈",
+    "자율주행 과신",
+    "교통사고"
+   ]
+  },
+  {
+   "id": "9aeef7557b03",
+   "keep": true,
+   "category": "mobility",
+   "importance": 70,
+   "relevance": 80,
+   "impact": 72,
+   "novelty": 76,
+   "reason": "배터리 소유권 분리 규제, 차량가액·보상 구조에 영향",
+   "keywords": [
+    "배터리 소유권",
+    "전기차",
+    "규제"
+   ]
+  },
+  {
+   "id": "537b8ff8c261",
+   "keep": true,
+   "category": "mobility",
+   "importance": 72,
+   "relevance": 80,
+   "impact": 74,
+   "novelty": 78,
+   "reason": "미국 자율주행 안전성 평가 기준, 인증·책임 기준 참고",
+   "keywords": [
+    "자율주행 평가",
+    "미국"
+   ]
+  },
+  {
+   "id": "7b73b84c516c",
+   "keep": true,
+   "category": "mobility",
+   "importance": 66,
+   "relevance": 84,
+   "impact": 66,
+   "novelty": 60,
+   "reason": "자율주행 의존 운전자 처벌 사례",
+   "keywords": [
+    "자율주행",
+    "벌금"
+   ]
+  },
+  {
+   "id": "130e81bdee00",
+   "keep": true,
+   "category": "insurance",
+   "importance": 86,
+   "relevance": 78,
+   "impact": 84,
+   "novelty": 80,
+   "reason": "종신보험 판매 규제, 보험 영업 관행 변화",
+   "keywords": [
+    "700종신",
+    "종신보험",
+    "판매중지"
+   ]
+  },
+  {
+   "id": "438b1317c7f0",
+   "keep": true,
+   "category": "insurance",
+   "importance": 84,
+   "relevance": 82,
+   "impact": 84,
+   "novelty": 80,
+   "reason": "초대형 GA 첫 종합감독, 판매채널 규제 강화",
+   "keywords": [
+    "초대형 GA",
+    "종합감독",
+    "제재"
+   ]
+  },
+  {
+   "id": "6fabbf38c40e",
+   "keep": true,
+   "category": "insurance",
+   "importance": 82,
+   "relevance": 88,
+   "impact": 78,
+   "novelty": 78,
+   "reason": "손해보험 분쟁 신청 역대 최대, 보상·민원 관리 부담",
+   "keywords": [
+    "분쟁조정",
+    "손해보험",
+    "민원"
+   ]
+  },
+  {
+   "id": "67dac0804302",
+   "keep": true,
+   "category": "insurance",
+   "importance": 78,
+   "relevance": 86,
+   "impact": 76,
+   "novelty": 76,
+   "reason": "예별손보 지원 부담, 손보업계 비용 전가 우려",
+   "keywords": [
+    "예별손보",
+    "손보업계",
+    "지원"
+   ]
+  },
+  {
+   "id": "5e6e3b21f5f3",
+   "keep": true,
+   "category": "insurance",
+   "importance": 76,
+   "relevance": 72,
+   "impact": 74,
+   "novelty": 74,
+   "reason": "간병보험 합산한도 법제화, 판매 경쟁 제동",
+   "keywords": [
+    "간병보험",
+    "합산한도"
+   ]
+  },
+  {
+   "id": "3d5e1d4832d9",
+   "keep": true,
+   "category": "insurance",
+   "importance": 74,
+   "relevance": 76,
+   "impact": 72,
+   "novelty": 72,
+   "reason": "실손 비급여 개편 변수, 의료계 반발",
+   "keywords": [
+    "실손보험",
+    "비급여",
+    "관리급여"
+   ]
+  },
+  {
+   "id": "acecebf98fe8",
+   "keep": true,
+   "category": "insurance",
+   "importance": 72,
+   "relevance": 70,
+   "impact": 70,
+   "novelty": 74,
+   "reason": "디지털보험사 구도 변화",
+   "keywords": [
+    "디지털보험사",
+    "교보라이프플래닛",
+    "카카오페이손보"
+   ]
+  },
+  {
+   "id": "6e5864bd189e",
+   "keep": true,
+   "category": "insurance",
+   "importance": 72,
+   "relevance": 82,
+   "impact": 70,
+   "novelty": 70,
+   "reason": "손보사 실적 분석, 본업·투자 손익",
+   "keywords": [
+    "롯데손해보험",
+    "상반기 실적"
+   ]
+  },
+  {
+   "id": "c580ad2904e2",
+   "keep": true,
+   "category": "insurance",
+   "importance": 70,
+   "relevance": 76,
+   "impact": 72,
+   "novelty": 80,
+   "reason": "AI 데이터센터 보험 수요와 대형 손실 위험",
+   "keywords": [
+    "AI 데이터센터",
+    "기업보험",
+    "대형 손실"
+   ]
+  },
+  {
+   "id": "20e66589049a",
+   "keep": true,
+   "category": "insurance",
+   "importance": 72,
+   "relevance": 80,
+   "impact": 74,
+   "novelty": 72,
+   "reason": "금감원 검사·제재 관행 개선, 보험사 대응 방식 변화",
+   "keywords": [
+    "금감원",
+    "검사·제재",
+    "보험사"
+   ]
+  },
+  {
+   "id": "d15cb0ba969c",
+   "keep": true,
+   "category": "insurance",
+   "importance": 80,
+   "relevance": 74,
+   "impact": 80,
+   "novelty": 70,
+   "reason": "700종신 판매중지 권고 첫 보도",
+   "keywords": [
+    "700종신",
+    "판매중지"
+   ]
+  },
+  {
+   "id": "ac672c09e5d2",
+   "keep": true,
+   "category": "insurance",
+   "importance": 76,
+   "relevance": 78,
+   "impact": 78,
+   "novelty": 66,
+   "reason": "초대형 보험대리점 규제 착수",
+   "keywords": [
+    "초대형 GA",
+    "금융당국"
+   ]
+  },
+  {
+   "id": "4f2dde4e489d",
+   "keep": true,
+   "category": "ai",
+   "importance": 90,
+   "relevance": 78,
+   "impact": 82,
+   "novelty": 88,
+   "reason": "AI 에이전트 정보 유출 사고, 보험사 AI 도입 시 보안 기준",
+   "keywords": [
+    "오픈AI",
+    "AI 에이전트",
+    "정보 유출"
+   ]
+  },
+  {
+   "id": "49068477eadb",
+   "keep": true,
+   "category": "ai",
+   "importance": 84,
+   "relevance": 76,
+   "impact": 80,
+   "novelty": 86,
+   "reason": "통제 벗어난 AI 에이전트 해킹 추가 사례, 사이버 리스크",
+   "keywords": [
+    "AI 에이전트",
+    "해킹"
+   ]
+  },
+  {
+   "id": "8d2707ff58d2",
+   "keep": true,
+   "category": "ai",
+   "importance": 80,
+   "relevance": 62,
+   "impact": 72,
+   "novelty": 84,
+   "reason": "메타 AI 에이전트 뮤즈 공개·흥행",
+   "keywords": [
+    "메타",
+    "뮤즈",
+    "AI 에이전트"
+   ]
+  },
+  {
+   "id": "fd0f6e0c1d36",
+   "keep": true,
+   "category": "ai",
+   "importance": 80,
+   "relevance": 66,
+   "impact": 76,
+   "novelty": 84,
+   "reason": "MS 에이전트용 코파일럿 OS, 업무 환경 변화",
+   "keywords": [
+    "마이크로소프트",
+    "코파일럿",
+    "AI 에이전트"
+   ]
+  },
+  {
+   "id": "d5c330a26e59",
+   "keep": true,
+   "category": "ai",
+   "importance": 78,
+   "relevance": 70,
+   "impact": 78,
+   "novelty": 92,
+   "reason": "판단 전용 AI의 속도·비용 혁신, 심사·판정 자동화 가능성",
+   "keywords": [
+    "판단 전용 AI",
+    "추론 비용"
+   ]
+  },
+  {
+   "id": "c8da70d9cf0c",
+   "keep": true,
+   "category": "ai",
+   "importance": 74,
+   "relevance": 58,
+   "impact": 70,
+   "novelty": 86,
+   "reason": "딥시크 에이전트 학습 비용 절감 인프라",
+   "keywords": [
+    "딥시크",
+    "DSec",
+    "학습 비용"
+   ]
+  },
+  {
+   "id": "a813655b9d3e",
+   "keep": true,
+   "category": "ai",
+   "importance": 72,
+   "relevance": 56,
+   "impact": 70,
+   "novelty": 92,
+   "reason": "로봇 스스로 학습하는 셀프플레이 기술",
+   "keywords": [
+    "스킬드 AI",
+    "피지컬 AI",
+    "셀프플레이"
+   ]
+  },
+  {
+   "id": "792a22f1c2d6",
+   "keep": true,
+   "category": "ai",
+   "importance": 72,
+   "relevance": 54,
+   "impact": 66,
+   "novelty": 90,
+   "reason": "세계 최초 풀코스 마라톤 완주 로봇 설계 원리",
+   "keywords": [
+    "KAIST",
+    "휴머노이드",
+    "로봇"
+   ]
+  },
+  {
+   "id": "d346a73f95cb",
+   "keep": true,
+   "category": "ai",
+   "importance": 70,
+   "relevance": 54,
+   "impact": 68,
+   "novelty": 84,
+   "reason": "AI 에이전트가 로봇 개발에 참여하는 개발도구",
+   "keywords": [
+    "엔비디아",
+    "아이작 ROS",
+    "로봇 개발"
+   ]
+  },
+  {
+   "id": "32fded0b388e",
+   "keep": true,
+   "category": "ai",
+   "importance": 76,
+   "relevance": 90,
+   "impact": 76,
+   "novelty": 74,
+   "reason": "보험사 AI 전환 사례, 업무 적용 벤치마크",
+   "keywords": [
+    "현대해상",
+    "AI 보험사",
+    "업무 혁신"
+   ]
+  }
+ ]
+}

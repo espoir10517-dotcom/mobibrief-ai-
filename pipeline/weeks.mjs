@@ -1,6 +1,6 @@
 // 지난 주간 브리핑 보관
 // - 발행할 때마다 그 주 브리핑 전체를 weeks/<발행일>.json 으로 저장하고, 목록(weeks/index.json)을 갱신합니다.
-// - 같은 주(월~일, 한국시간)에 여러 번 발행하면 마지막 것만 남깁니다.
+// - 같은 기간(마지막 날이 속한 월~일 주)을 여러 번 발행하면 마지막 것만 남깁니다.
 // - 최근 keepWeeks 주만 보관하고, 오래된 파일은 지웁니다.
 
 import { readFile, writeFile, mkdir, readdir, unlink } from 'node:fs/promises';
@@ -19,7 +19,7 @@ function summaryOf(b) {
   for (const [c, ids] of Object.entries(b.categories || {})) counts[c] = ids.length;
   return {
     date: b.date,
-    week: weekOf(b.date),
+    week: weekOf(b.periodEnd || b.date), // 다룬 기간 기준 (일요일 수동 발행도 그 주로)
     periodStart: b.periodStart || b.date,
     periodEnd: b.periodEnd || b.date,
     generatedAt: b.generatedAt,
