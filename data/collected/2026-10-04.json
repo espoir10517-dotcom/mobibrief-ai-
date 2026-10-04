@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-04",
-  "collectedAt": "2026-10-04T08:32:04.599Z",
+  "collectedAt": "2026-10-04T08:36:40.594Z",
   "stats": {
     "searches": 60,
     "google": {
       "ok": 39,
       "fail": 0,
-      "items": 610
+      "items": 608
     },
     "naver": {
       "ok": 0,
@@ -16,14 +16,14 @@
       "enabled": false
     },
     "rss": {
-      "ok": 21,
-      "fail": 0,
-      "items": 1230,
-      "kept": 332
+      "ok": 19,
+      "fail": 2,
+      "items": 1118,
+      "kept": 319
     },
-    "raw": 942,
-    "fresh": 578,
-    "clusters": 434,
+    "raw": 927,
+    "fresh": 576,
+    "clusters": 431,
     "candidates": 160,
     "perCategory": {
       "auto": 40,
@@ -32,14 +32,17 @@
       "ai": 40
     }
   },
-  "errors": [],
+  "errors": [
+    "rss \"전자신문\": fetch failed",
+    "rss \"머니투데이\": fetch failed"
+  ],
   "feeds": [
     {
       "name": "한국경제 IT",
       "url": "https://www.hankyung.com/feed/it",
       "ok": true,
       "items": 50,
-      "kept": 12
+      "kept": 14
     },
     {
       "name": "한국경제 금융",
@@ -49,18 +52,18 @@
       "kept": 5
     },
     {
-      "name": "연합뉴스 경제",
-      "url": "https://www.yna.co.kr/rss/economy.xml",
-      "ok": true,
-      "items": 120,
-      "kept": 35
-    },
-    {
       "name": "연합뉴스 산업",
       "url": "https://www.yna.co.kr/rss/industry.xml",
       "ok": true,
       "items": 120,
       "kept": 32
+    },
+    {
+      "name": "연합뉴스 경제",
+      "url": "https://www.yna.co.kr/rss/economy.xml",
+      "ok": true,
+      "items": 120,
+      "kept": 35
     },
     {
       "name": "매일경제 기업",
@@ -70,25 +73,11 @@
       "kept": 16
     },
     {
-      "name": "매일경제 IT",
-      "url": "https://www.mk.co.kr/rss/50300009/",
-      "ok": true,
-      "items": 50,
-      "kept": 0
-    },
-    {
-      "name": "전자신문",
-      "url": "https://rss.etnews.com/Section901.xml",
-      "ok": true,
-      "items": 12,
-      "kept": 5
-    },
-    {
       "name": "매일경제 경제",
       "url": "https://www.mk.co.kr/rss/30100041/",
       "ok": true,
       "items": 50,
-      "kept": 19
+      "kept": 18
     },
     {
       "name": "조선일보 경제",
@@ -98,8 +87,22 @@
       "kept": 21
     },
     {
+      "name": "매일경제 IT",
+      "url": "https://www.mk.co.kr/rss/50300009/",
+      "ok": true,
+      "items": 50,
+      "kept": 0
+    },
+    {
       "name": "동아일보 경제",
       "url": "https://rss.donga.com/economy.xml",
+      "ok": true,
+      "items": 50,
+      "kept": 12
+    },
+    {
+      "name": "경향신문 경제",
+      "url": "https://www.khan.co.kr/rss/rssdata/economy_news.xml",
       "ok": true,
       "items": 50,
       "kept": 12
@@ -117,20 +120,6 @@
       "ok": true,
       "items": 48,
       "kept": 4
-    },
-    {
-      "name": "경향신문 경제",
-      "url": "https://www.khan.co.kr/rss/rssdata/economy_news.xml",
-      "ok": true,
-      "items": 50,
-      "kept": 12
-    },
-    {
-      "name": "머니투데이",
-      "url": "https://rss.mt.co.kr/mt_news.xml",
-      "ok": true,
-      "items": 100,
-      "kept": 8
     },
     {
       "name": "한국보험신문",
@@ -158,7 +147,7 @@
       "url": "https://www.insjournal.co.kr/rss/allArticle.xml",
       "ok": true,
       "items": 50,
-      "kept": 15
+      "kept": 14
     },
     {
       "name": "오토데일리",
@@ -168,6 +157,13 @@
       "kept": 21
     },
     {
+      "name": "모터그래프",
+      "url": "https://www.motorgraph.com/rss/allArticle.xml",
+      "ok": true,
+      "items": 50,
+      "kept": 9
+    },
+    {
       "name": "AI타임스",
       "url": "https://www.aitimes.com/rss/allArticle.xml",
       "ok": true,
@@ -175,11 +171,16 @@
       "kept": 36
     },
     {
-      "name": "모터그래프",
-      "url": "https://www.motorgraph.com/rss/allArticle.xml",
-      "ok": true,
-      "items": 50,
-      "kept": 9
+      "name": "전자신문",
+      "url": "https://rss.etnews.com/Section901.xml",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "name": "머니투데이",
+      "url": "https://rss.mt.co.kr/mt_news.xml",
+      "ok": false,
+      "error": "fetch failed"
     }
   ],
   "articles": [
@@ -234,7 +235,8 @@
       ],
       "matchedQueries": [
         "자동차보험",
-        "손해보험"
+        "손해보험",
+        "보험업계"
       ],
       "coverage": 2,
       "sources": [
@@ -320,8 +322,8 @@
         "auto"
       ],
       "matchedQueries": [
-        "자동차보험",
-        "자동차보험료"
+        "자동차보험료",
+        "자동차보험"
       ],
       "coverage": 1,
       "sources": [
@@ -483,8 +485,8 @@
         "auto"
       ],
       "matchedQueries": [
-        "자동차보험",
-        "자동차보험료"
+        "자동차보험료",
+        "자동차보험"
       ],
       "coverage": 1,
       "sources": [
@@ -594,8 +596,8 @@
         "auto"
       ],
       "matchedQueries": [
-        "자동차보험",
-        "자동차보험료"
+        "자동차보험료",
+        "자동차보험"
       ],
       "coverage": 1,
       "sources": [
@@ -758,8 +760,8 @@
         "auto"
       ],
       "matchedQueries": [
-        "자동차보험",
         "자동차보험료",
+        "자동차보험",
         "車보험"
       ],
       "coverage": 1,
@@ -1132,6 +1134,33 @@
     {
       "provider": "google-news",
       "lang": "en",
+      "title": "Here’s What Your First Full Year in the Villages Actually Costs - Month by Month",
+      "source": "aol.com",
+      "sourceUrl": "https://www.aol.com",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPMC1uZlRJMlBIQWlJNWhjcDRoRU90Vjc4aEpVellRLWlGNWJ1cXhLSGcyT0h6eXZzdFNrZ3g2NEF5a0d2VjNyNmJEY283WXBIRnQ0WDh4M2FVVEZkaHFOYTVsSnBfVU0tS0tYbjR3ejFnZTQwUVEtSTQtUUhaT2tTcDFJX24?oc=5",
+      "publishedAt": "2026-10-03T09:37:00.000Z",
+      "description": "",
+      "id": "4a83607f6a9f",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "auto insurance"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "aol.com",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPMC1uZlRJMlBIQWlJNWhjcDRoRU90Vjc4aEpVellRLWlGNWJ1cXhLSGcyT0h6eXZzdFNrZ3g2NEF5a0d2VjNyNmJEY283WXBIRnQ0WDh4M2FVVEZkaHFOYTVsSnBfVU0tS0tYbjR3ejFnZTQwUVEtSTQtUUhaT2tTcDFJX24?oc=5",
+          "publishedAt": "2026-10-03T09:37:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-03T09:37:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
       "title": "Pillion Rider Not Covered Under Act-Only Motor Insurance Policy Without Additional Premium: Tripura High...",
       "source": "Live Law",
       "sourceUrl": "https://www.livelaw.in",
@@ -1269,33 +1298,6 @@
       "firstSeenAt": "2026-10-03T01:34:49.000Z"
     },
     {
-      "provider": "google-news",
-      "lang": "en",
-      "title": "Minneapolis mayor, city council members clash over driverless robotaxis",
-      "source": "Yahoo",
-      "sourceUrl": "https://www.yahoo.com",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPQ2VSc0tCWnBlVlUxU1Qwc09MLTN6MGMyOGFOazJEbDVBNjhpUlQ2eHpmeVdXUEt0NmtaOENVVHR3UHZTYlFYbzR1azBsRGpsb2hfdzlMRnVxQ1dLN3FSTGNJYXB6TF9ZN3d5WHhnX1BxVmljTHlVODczMk9HSmtqeXJNNjdhUzJ1bG5Hdkc2cno1LWNfUC0wMDZLZk5JWkU?oc=5",
-      "publishedAt": "2026-10-03T01:07:00.000Z",
-      "description": "",
-      "id": "5effcf2b27a1",
-      "category": "auto",
-      "categoryHints": [
-        "auto"
-      ],
-      "matchedQueries": [
-        "autonomous vehicle liability insurance"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "Yahoo",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPQ2VSc0tCWnBlVlUxU1Qwc09MLTN6MGMyOGFOazJEbDVBNjhpUlQ2eHpmeVdXUEt0NmtaOENVVHR3UHZTYlFYbzR1azBsRGpsb2hfdzlMRnVxQ1dLN3FSTGNJYXB6TF9ZN3d5WHhnX1BxVmljTHlVODczMk9HSmtqeXJNNjdhUzJ1bG5Hdkc2cno1LWNfUC0wMDZLZk5JWkU?oc=5",
-          "publishedAt": "2026-10-03T01:07:00.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T01:07:00.000Z"
-    },
-    {
       "provider": "rss",
       "lang": "ko",
       "title": "“美 테슬라같은 자율주행 우린 언제쯤”…국내 3사 서비스 비교해보니",
@@ -1310,21 +1312,21 @@
         "mobility"
       ],
       "matchedQueries": [
-        "자율주행",
         "로보택시",
+        "자율주행",
         "매일경제 기업"
       ],
       "coverage": 2,
       "sources": [
         {
-          "name": "매일경제",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBuTWx6LXk4cFZxekFlbVgtMUVZSHphU3hfbWhhMWlSd0xRZEVtOUx3RHViXzBZU3NHRzlrMHZodXUwOC1ueGJWdGVfQVhCcnByTHdTdGdn?oc=5",
-          "publishedAt": "2026-10-03T04:49:37.000Z"
-        },
-        {
           "name": "다음뉴스",
           "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFA3VFp1VW5kMmtuekRfUUk3TmZHVVR5bERjV0tFTVlfYV9sUEQ3QzVRa0o3cnRaTVptTUEzVkpqc0o2aXhEWHc?oc=5",
           "publishedAt": "2026-10-03T04:51:02.000Z"
+        },
+        {
+          "name": "매일경제",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBuTWx6LXk4cFZxekFlbVgtMUVZSHphU3hfbWhhMWlSd0xRZEVtOUx3RHViXzBZU3NHRzlrMHZodXUwOC1ueGJWdGVfQVhCcnByTHdTdGdn?oc=5",
+          "publishedAt": "2026-10-03T04:49:37.000Z"
         }
       ],
       "firstSeenAt": "2026-10-03T04:49:37.000Z"
@@ -1453,60 +1455,6 @@
     {
       "provider": "rss",
       "lang": "ko",
-      "title": "“전기차만 타면 속이 '울렁', 안 하던 구토까지”… 유독 멀미 심한 이유는?",
-      "source": "전자신문",
-      "sourceUrl": "https://www.etnews.com",
-      "url": "https://www.etnews.com/20261004000011",
-      "publishedAt": "2026-10-04T07:30:00.000Z",
-      "description": "전기차를 탈 때 유독 멀미가 심해진다고 호소하는 승객들이 늘면서 그 원인에 관심이 쏠리고 있다. BBC는 2일(현지시간) 전기차 탑승객들 사이에서 일반 내연기관차보다 멀미를 더 심하게 느낀다는 사례가 잇따르고 있다고 보도했다. 다만 관련 연구가 아직 초기 단계에 머물고 있어 전문가들 사이에서도 전기차가 멀미를 더 유도하는지 여부와 이유에 대한 의견이 엇…",
-      "id": "c4905a1cd618",
-      "category": "mobility",
-      "categoryHints": [
-        "mobility"
-      ],
-      "matchedQueries": [
-        "전자신문"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "전자신문",
-          "url": "https://www.etnews.com/20261004000011",
-          "publishedAt": "2026-10-04T07:30:00.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-04T07:30:00.000Z"
-    },
-    {
-      "provider": "rss",
-      "lang": "ko",
-      "title": "'또 매진 잠실벌 인기 폭발!' 김도영 2번 KIA-홍창기 복귀 LG, 운명의 맞대결 '선발 라인업' 발표 [잠실 현장]",
-      "source": "머니투데이",
-      "sourceUrl": "https://www.mt.co.kr",
-      "url": "https://www.mt.co.kr/sports/2026/10/04/2026100413104265353",
-      "publishedAt": "2026-10-04T04:42:29.000Z",
-      "description": "LG 트윈스와 KIA 타이거즈가 운명의 맞대결을 벌이는 가운데, 선발 라인업이 공개됐다. LG는 4일 오후 2시 서울 잠실야구장에서 KIA를 상대로 2026 신한 SOL KBO 리그 정규시즌 홈 경기를 치른다. KIA는 전날(3일) 열린 LG와 맞대결에서 5-4로 승리, 기선 제압에 성공했다. 전날 승리로 리그 단독 4위 KIA는 3연패에서 탈출, 73…",
-      "id": "b6fc679bcae1",
-      "category": "mobility",
-      "categoryHints": [
-        "mobility"
-      ],
-      "matchedQueries": [
-        "머니투데이"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "머니투데이",
-          "url": "https://www.mt.co.kr/sports/2026/10/04/2026100413104265353",
-          "publishedAt": "2026-10-04T04:42:29.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-04T04:42:29.000Z"
-    },
-    {
-      "provider": "rss",
-      "lang": "ko",
       "title": "밀양시, 6일부터 택시 부제 전면 해제…전기차 증가 형평성 개선",
       "source": "연합뉴스",
       "sourceUrl": "https://www.yna.co.kr",
@@ -1615,33 +1563,6 @@
     {
       "provider": "rss",
       "lang": "ko",
-      "title": "수중 드론 116대 동시 자율주행…기네스 기록",
-      "source": "전자신문",
-      "sourceUrl": "https://www.etnews.com",
-      "url": "https://www.etnews.com/20261002000223",
-      "publishedAt": "2026-10-03T13:30:00.000Z",
-      "description": "수중 드론 116대가 사람의 조종 없이 동시에 움직이며 기네스 세계 기록을 세웠습니다. 중국 서북공업대와 현지 수중 로봇 업체는 수중 드론 'TH-618' 116대를 동시에 운용하는 시험에 성공했습니다. 이번 기록은 기네스 세계기록으로 공식 인증됐습니다. 드론들은 수영장에 투입된 뒤 완전 자율 모드로 전환돼 34분 동안 사전에 설정된 항로를 따라 500…",
-      "id": "432147b22bcd",
-      "category": "mobility",
-      "categoryHints": [
-        "mobility"
-      ],
-      "matchedQueries": [
-        "전자신문"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "전자신문",
-          "url": "https://www.etnews.com/20261002000223",
-          "publishedAt": "2026-10-03T13:30:00.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T13:30:00.000Z"
-    },
-    {
-      "provider": "rss",
-      "lang": "ko",
       "title": "\"보조배터리 왜 기내에 들고 타야 할까\"…항공기 반입 기준은[짤막영상]",
       "source": "뉴시스",
       "sourceUrl": "https://www.newsis.com",
@@ -1735,8 +1656,8 @@
         "mobility"
       ],
       "matchedQueries": [
-        "자율주행",
-        "로보택시"
+        "로보택시",
+        "자율주행"
       ],
       "coverage": 1,
       "sources": [
@@ -1898,8 +1819,8 @@
         "mobility"
       ],
       "matchedQueries": [
-        "자율주행",
-        "로보택시"
+        "로보택시",
+        "자율주행"
       ],
       "coverage": 1,
       "sources": [
@@ -2142,8 +2063,8 @@
         "mobility"
       ],
       "matchedQueries": [
-        "자율주행",
-        "로보택시"
+        "로보택시",
+        "자율주행"
       ],
       "coverage": 1,
       "sources": [
@@ -2399,6 +2320,87 @@
       "firstSeenAt": "2026-10-03T09:40:23.000Z"
     },
     {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "토토 블랙카우 게임 결과 내역 열람 기능 확인",
+      "source": "Calgary Roughnecks",
+      "sourceUrl": "https://calgaryroughnecks.com",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQcnQ4bzAtVjNpeTYzR19BenRBM040OVZObk04dWhNSjBSOUxOMGN5M0dpUG51MEg4THR1VE5aV3ZJZDFDaTlabk5KN01tQTNOakFRNV9tcVRSaXNzNlhsemlvdS1tWF9FUjNmRGYtUlo4eXhaREVGVV9XUElXN0RPSk5zODdiXzBIY3ZHaUlNMkwzc2xfbS1iTGRSNFNyMml0ZXpjTTFvMVRMTnRxSXh2czNvdU5OSUpmRlBfZ2RoU2JrajZNbzZneGxkUTBBc3RqR2hYMDgyMzVHLWdzZHJCdEI4Z1FIQW03eGJPT3V4ck1TXzlfci00bHNXaw?oc=5",
+      "publishedAt": "2026-10-03T09:10:40.000Z",
+      "description": "",
+      "id": "5f2d71e5c645",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "커넥티드카"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Calgary Roughnecks",
+          "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQcnQ4bzAtVjNpeTYzR19BenRBM040OVZObk04dWhNSjBSOUxOMGN5M0dpUG51MEg4THR1VE5aV3ZJZDFDaTlabk5KN01tQTNOakFRNV9tcVRSaXNzNlhsemlvdS1tWF9FUjNmRGYtUlo4eXhaREVGVV9XUElXN0RPSk5zODdiXzBIY3ZHaUlNMkwzc2xfbS1iTGRSNFNyMml0ZXpjTTFvMVRMTnRxSXh2czNvdU5OSUpmRlBfZ2RoU2JrajZNbzZneGxkUTBBc3RqR2hYMDgyMzVHLWdzZHJCdEI4Z1FIQW03eGJPT3V4ck1TXzlfci00bHNXaw?oc=5",
+          "publishedAt": "2026-10-03T09:10:40.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-03T09:10:40.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "「함께 크는 M.AX 프로젝트」로 미래차 생태계 구축 가속화",
+      "source": "커넥트이천",
+      "sourceUrl": "https://www.connecticheon.com",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1wMmI0b2dCY05acml5NFJFNDBnczgxS3VMNVpnUXNySmpQWE1aTEhkNnYwWnZ2WUdsSVBRTFBsbmZKNG1raVlSckRTcFFBUExia2I1R0hNcjNGakpIMnc?oc=5",
+      "publishedAt": "2026-10-03T08:40:27.000Z",
+      "description": "",
+      "id": "90e2b2403117",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "로보택시"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "커넥트이천",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1wMmI0b2dCY05acml5NFJFNDBnczgxS3VMNVpnUXNySmpQWE1aTEhkNnYwWnZ2WUdsSVBRTFBsbmZKNG1raVlSckRTcFFBUExia2I1R0hNcjNGakpIMnc?oc=5",
+          "publishedAt": "2026-10-03T08:40:27.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-03T08:40:27.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "어떤 심벌이 특별한지 찾는 스포츠 토토 라이브 차무식 화면 단서",
+      "source": "Calgary Roughnecks",
+      "sourceUrl": "https://calgaryroughnecks.com",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOMHcwY1NLeXpCTjJka19NVDZCX3E2M2gzTC04T1NLM3ZpU2V0VkRKTzBNUzl1Nk1kUXRpVGg3ZHNCWVI0YWpSVWxZUmZXTkk2T0Rnal82Nktpd0JMZ0R2eklFY1UxNEZBSXpmMmp2M3F3c0tIVVV4aGNqVXF1d3p6UE8wZHlXeHUxVm5LSEN2LTJqVmpHRmszYU02djFVNHVTUFlaMHFTd01naUhQNDdldUZRNXM?oc=5",
+      "publishedAt": "2026-10-03T08:31:48.000Z",
+      "description": "",
+      "id": "a74bca681e88",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "로보택시"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Calgary Roughnecks",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOMHcwY1NLeXpCTjJka19NVDZCX3E2M2gzTC04T1NLM3ZpU2V0VkRKTzBNUzl1Nk1kUXRpVGg3ZHNCWVI0YWpSVWxZUmZXTkk2T0Rnal82Nktpd0JMZ0R2eklFY1UxNEZBSXpmMmp2M3F3c0tIVVV4aGNqVXF1d3p6UE8wZHlXeHUxVm5LSEN2LTJqVmpHRmszYU02djFVNHVTUFlaMHFTd01naUhQNDdldUZRNXM?oc=5",
+          "publishedAt": "2026-10-03T08:31:48.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-03T08:31:48.000Z"
+    },
+    {
       "provider": "rss",
       "lang": "ko",
       "title": "[속보] 이억원 \"금융권 전체 침해사고 최고수준 경각심 필요\"",
@@ -2413,6 +2415,7 @@
         "insurance"
       ],
       "matchedQueries": [
+        "손해보험",
         "금융당국 보험",
         "연합뉴스 경제",
         "매일경제 경제"
@@ -2421,8 +2424,8 @@
       "sources": [
         {
           "name": "연합인포맥스",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9kcVhfaldBM3Z3ekhCcVZJZVp2SGgwN3F6MnZKTktoS2Y3R0d2Y3NHcnVTRzV1M0wweUgtblhMcDg0WmI0UnJ2LWdxMEVkeGJZMjZCc084MHV5bHdmN19vQi15enF4cTVYTDRkMDJZZDY?oc=5",
-          "publishedAt": "2026-10-04T05:26:32.000Z"
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA4ajdpbEMtWFh3MTdhbW5mTnlCZlVlZEZnb2tfR250QU53ZTBpbFJESmZZNjFyUGhZbE9NZUFvRGhQRW1zSHNMaThMU0g4Smt6OXNISXBHQzVVb2tJS1RjNXNyN01jNndialZBY0RfV2xCWDk4?oc=5",
+          "publishedAt": "2026-10-04T05:32:37.000Z"
         },
         {
           "name": "연합뉴스",
@@ -2440,40 +2443,6 @@
     {
       "provider": "rss",
       "lang": "ko",
-      "title": "[속보]이억원 \"AI 해킹공격 가능성…금융권 최고 수준 경각심 가져야\"",
-      "source": "머니투데이",
-      "sourceUrl": "https://www.mt.co.kr",
-      "url": "https://www.mt.co.kr/finance/2026/10/04/2026100414292790055",
-      "publishedAt": "2026-10-04T05:32:31.000Z",
-      "description": "4일 오후 금융위원회....",
-      "id": "f8952be1c386",
-      "category": "insurance",
-      "categoryHints": [
-        "insurance"
-      ],
-      "matchedQueries": [
-        "연합뉴스 경제",
-        "연합뉴스 산업",
-        "머니투데이"
-      ],
-      "coverage": 2,
-      "sources": [
-        {
-          "name": "연합뉴스",
-          "url": "https://www.yna.co.kr/view/AKR20261004024951002",
-          "publishedAt": "2026-10-04T06:00:25.000Z"
-        },
-        {
-          "name": "머니투데이",
-          "url": "https://www.mt.co.kr/finance/2026/10/04/2026100414292790055",
-          "publishedAt": "2026-10-04T05:32:31.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-04T05:32:31.000Z"
-    },
-    {
-      "provider": "rss",
-      "lang": "ko",
       "title": "[속보] 이억원 \"AI활용 해킹공격 가능성…민감정보 유출은 미확인\"",
       "source": "연합뉴스",
       "sourceUrl": "https://www.yna.co.kr",
@@ -2486,8 +2455,8 @@
         "insurance"
       ],
       "matchedQueries": [
-        "연합뉴스 경제",
         "연합뉴스 산업",
+        "연합뉴스 경제",
         "조선일보 경제"
       ],
       "coverage": 2,
@@ -2508,39 +2477,6 @@
     {
       "provider": "rss",
       "lang": "ko",
-      "title": "웰컴저축은행도 정보유출 확인…법인고객 정보 2천200건 추정",
-      "source": "연합뉴스",
-      "sourceUrl": "https://www.yna.co.kr",
-      "url": "https://www.yna.co.kr/view/AKR20261004022400002",
-      "publishedAt": "2026-10-04T04:56:20.000Z",
-      "description": "(서울=연합뉴스) 배영경 강류나 기자 = 해킹공격으로 인한 금융권 정보유출 피해가 잇달아 확인되는 가운데 웰컴저축은행에서도 법인고객 정보 유출 ...",
-      "id": "8bfc808dde3a",
-      "category": "insurance",
-      "categoryHints": [
-        "insurance"
-      ],
-      "matchedQueries": [
-        "연합뉴스 경제",
-        "머니투데이"
-      ],
-      "coverage": 2,
-      "sources": [
-        {
-          "name": "연합뉴스",
-          "url": "https://www.yna.co.kr/view/AKR20261004022400002",
-          "publishedAt": "2026-10-04T04:56:20.000Z"
-        },
-        {
-          "name": "머니투데이",
-          "url": "https://www.mt.co.kr/finance/2026/10/04/2026100415192079171",
-          "publishedAt": "2026-10-04T06:33:40.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-04T04:56:20.000Z"
-    },
-    {
-      "provider": "rss",
-      "lang": "ko",
       "title": "당국, '해킹피해' 2금융권 확산에 내일 全업권 긴급소집",
       "source": "연합뉴스",
       "sourceUrl": "https://www.yna.co.kr",
@@ -2553,8 +2489,8 @@
         "insurance"
       ],
       "matchedQueries": [
-        "연합뉴스 경제",
         "연합뉴스 산업",
+        "연합뉴스 경제",
         "조선일보 경제"
       ],
       "coverage": 2,
@@ -2717,8 +2653,8 @@
         "insurance"
       ],
       "matchedQueries": [
-        "연합뉴스 경제",
-        "연합뉴스 산업"
+        "연합뉴스 산업",
+        "연합뉴스 경제"
       ],
       "coverage": 1,
       "sources": [
@@ -2783,60 +2719,6 @@
         }
       ],
       "firstSeenAt": "2026-10-04T08:08:00.000Z"
-    },
-    {
-      "provider": "rss",
-      "lang": "ko",
-      "title": "가상자산·증권업계, 잇단 금융권 AI 해킹 사고에 보안 점검 나서",
-      "source": "머니투데이",
-      "sourceUrl": "https://www.mt.co.kr",
-      "url": "https://www.mt.co.kr/stock/2026/10/04/2026100416082465987",
-      "publishedAt": "2026-10-04T07:46:22.000Z",
-      "description": "은행과 저축은행, 캐피탈 등 금융권 전반에 사이버 해킹 사고가 잇따르면서 가상자산업계와 증권업계도 보안 태세를 재정비하는 것으로 확인됐다. 금융당국이 전 금융권 최고경영자(CEO)를 긴급 소집해 유사 사고가 발생하지 않도록 총력 대응할 것을 주문한 만큼 관련 업계에서도 사태를 예의주시하는 분위기다. 이재명 대통령 역시 금융기관 해킹 사고에 대해 철저한 …",
-      "id": "6e976331d46c",
-      "category": "insurance",
-      "categoryHints": [
-        "insurance"
-      ],
-      "matchedQueries": [
-        "머니투데이"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "머니투데이",
-          "url": "https://www.mt.co.kr/stock/2026/10/04/2026100416082465987",
-          "publishedAt": "2026-10-04T07:46:22.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-04T07:46:22.000Z"
-    },
-    {
-      "provider": "rss",
-      "lang": "ko",
-      "title": "AI로 고객정보 '조회해 긁는' 해킹…막아낸 금융사는 뭐가 달랐나",
-      "source": "머니투데이",
-      "sourceUrl": "https://www.mt.co.kr",
-      "url": "https://www.mt.co.kr/finance/2026/10/04/2026100416035928940",
-      "publishedAt": "2026-10-04T07:38:47.000Z",
-      "description": "최근 금융권을 덮친 해킹 공격은 DB(데이터베이스)를 직접 탈취하기보다 웹페이지나 서버에서 고객정보를 조회해 긁어가는 방식이었던 것으로 파악됐다. 수법이 유독 빠르고 반복적이어서 금융당국은 공격자가 AI(인공지능) 도구를 활용해 많은 양의 자동화된 공격을 해낸 것으로 보고 있다. 공격을 받고도 다중인증 체계를 갖추거나 알려진 취약점을 미리 보완한 금융회…",
-      "id": "b37cf0d8fb14",
-      "category": "insurance",
-      "categoryHints": [
-        "insurance"
-      ],
-      "matchedQueries": [
-        "머니투데이"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "머니투데이",
-          "url": "https://www.mt.co.kr/finance/2026/10/04/2026100416035928940",
-          "publishedAt": "2026-10-04T07:38:47.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-04T07:38:47.000Z"
     },
     {
       "provider": "rss",
@@ -2923,33 +2805,6 @@
     {
       "provider": "rss",
       "lang": "ko",
-      "title": "금융위, 7개 금융사 해킹 피해에 긴급회의…\"유사 사고 발생시 엄단\"",
-      "source": "머니투데이",
-      "sourceUrl": "https://www.mt.co.kr",
-      "url": "https://www.mt.co.kr/finance/2026/10/04/2026100413213585509",
-      "publishedAt": "2026-10-04T06:04:26.000Z",
-      "description": "은행과 저축은행, 캐피탈 등 주요 금융사에서 해킹 침해사고가 잇따르자 금융당국이 전 금융권 수장들을 긴급 소집했다. AI(인공지능)를 악용한 동시다발적 공격 가능성이 제기된 가운데, 금융당국은 이미 공유된 공격정보를 제대로 반영하지 않아 유사 사고가 발생하면 금융사에 엄정한 책임을 묻는다는 방침이다. 금융위원회는 4일 오후 이억원 금융위원장 주재로 '전…",
-      "id": "d864425a58d2",
-      "category": "insurance",
-      "categoryHints": [
-        "insurance"
-      ],
-      "matchedQueries": [
-        "머니투데이"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "머니투데이",
-          "url": "https://www.mt.co.kr/finance/2026/10/04/2026100413213585509",
-          "publishedAt": "2026-10-04T06:04:26.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-04T06:04:26.000Z"
-    },
-    {
-      "provider": "rss",
-      "lang": "ko",
       "title": "시중은행 해킹사고",
       "source": "매일경제",
       "sourceUrl": "https://www.mk.co.kr",
@@ -2977,56 +2832,57 @@
     {
       "provider": "rss",
       "lang": "ko",
-      "title": "금융위, 연쇄 해킹사태에 全금융권 소집…“유사 사고시 엄정 책임”",
-      "source": "전자신문",
-      "sourceUrl": "https://www.etnews.com",
-      "url": "https://www.etnews.com/20261004000019",
-      "publishedAt": "2026-10-04T05:25:18.000Z",
-      "description": "금융권에서 사이버 공격으로 인한 해킹 피해가 확산되면서 금융당국이 전 금융권 보안체계 전면 점검에 나섰다. 업무에 필수적인 경우를 제외한 외부접근을 원칙적으로 차단하고, 이미 공유된 공격정보에 대해선 유사 사고 발생 시 엄정하게 책임을 묻겠다는 방침이다. 4일 금융위원회는 정부서울청사에서 금융감독원과 함께 이억원 금융위원장 주재로 '전 금융권 긴급 점검…",
-      "id": "b1a5c222fde1",
+      "title": "이억원 \"AI활용 해킹 가능성…금융권 최고수준 경각심 가져야\"",
+      "source": "연합뉴스",
+      "sourceUrl": "https://www.yna.co.kr",
+      "url": "https://www.yna.co.kr/view/AKR20261004024900002",
+      "publishedAt": "2026-10-04T05:35:37.000Z",
+      "description": "(서울=연합뉴스) 배영경 강류나 기자 = 이억원 금융위원장은 4일 최근 금융권에서 발생한 해킹공격 정보유출 사태와 관련 \"인공지능(AI)를 활용...",
+      "id": "5f6db861ffd0",
       "category": "insurance",
       "categoryHints": [
         "insurance"
       ],
       "matchedQueries": [
-        "전자신문"
+        "연합뉴스 산업",
+        "연합뉴스 경제"
       ],
       "coverage": 1,
       "sources": [
         {
-          "name": "전자신문",
-          "url": "https://www.etnews.com/20261004000019",
-          "publishedAt": "2026-10-04T05:25:18.000Z"
+          "name": "연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20261004024951002",
+          "publishedAt": "2026-10-04T06:00:25.000Z"
         }
       ],
-      "firstSeenAt": "2026-10-04T05:25:18.000Z"
+      "firstSeenAt": "2026-10-04T05:35:37.000Z"
     },
     {
       "provider": "rss",
       "lang": "ko",
-      "title": "李 대통령, 금융권 개인정보 유출에 \"철저한 조사·대책 마련 지시\"",
-      "source": "머니투데이",
-      "sourceUrl": "https://www.mt.co.kr",
-      "url": "https://www.mt.co.kr/politics/2026/10/04/2026100413564981256",
-      "publishedAt": "2026-10-04T05:01:43.000Z",
-      "description": "이재명 대통령이 대형 시중은행을 비롯한 금융권에서 잇따라 발생한 개인정보 유출 사고와 관련해 철저한 조사와 대책 마련을 지시했다. 강유정 청와대 수석대변인은 4일 언론 공지를 통해 \"이 대통령이 최근 발생한 금융기관과 공공기관의 개인정보 유출 사고 및 대응 현황을 보고 받고 사안에 대한 엄중한 인식을 갖고 철저한 조사 및 대책 마련에 만전을 기할 것을 …",
-      "id": "f557e0242057",
+      "title": "웰컴저축은행도 정보유출 확인…법인고객 정보 2천200건 추정",
+      "source": "연합뉴스",
+      "sourceUrl": "https://www.yna.co.kr",
+      "url": "https://www.yna.co.kr/view/AKR20261004022400002",
+      "publishedAt": "2026-10-04T04:56:20.000Z",
+      "description": "(서울=연합뉴스) 배영경 강류나 기자 = 해킹공격으로 인한 금융권 정보유출 피해가 잇달아 확인되는 가운데 웰컴저축은행에서도 법인고객 정보 유출 ...",
+      "id": "8bfc808dde3a",
       "category": "insurance",
       "categoryHints": [
         "insurance"
       ],
       "matchedQueries": [
-        "머니투데이"
+        "연합뉴스 경제"
       ],
       "coverage": 1,
       "sources": [
         {
-          "name": "머니투데이",
-          "url": "https://www.mt.co.kr/politics/2026/10/04/2026100413564981256",
-          "publishedAt": "2026-10-04T05:01:43.000Z"
+          "name": "연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20261004022400002",
+          "publishedAt": "2026-10-04T04:56:20.000Z"
         }
       ],
-      "firstSeenAt": "2026-10-04T05:01:43.000Z"
+      "firstSeenAt": "2026-10-04T04:56:20.000Z"
     },
     {
       "provider": "rss",
@@ -3097,8 +2953,8 @@
         "insurance"
       ],
       "matchedQueries": [
-        "연합뉴스 경제",
-        "연합뉴스 산업"
+        "연합뉴스 산업",
+        "연합뉴스 경제"
       ],
       "coverage": 1,
       "sources": [
@@ -3423,8 +3279,8 @@
         "insurance"
       ],
       "matchedQueries": [
-        "연합뉴스 경제",
-        "연합뉴스 산업"
+        "연합뉴스 산업",
+        "연합뉴스 경제"
       ],
       "coverage": 1,
       "sources": [
@@ -3435,6 +3291,33 @@
         }
       ],
       "firstSeenAt": "2026-10-02T21:33:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "직원도 없는 유령 간병업체 … 보험금 청구용 '서류공장' 전락",
+      "source": "다음뉴스",
+      "sourceUrl": "https://v.daum.net",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE42ckUzSDNNRlNGc1RrUWZLY28xTGY2dTJHYXJ5a1QtekRJQW5rNVhLZDk1VEljdEUwd0RqZ2F5SlN6QVZ2QndzUW56aENobFU?oc=5",
+      "publishedAt": "2026-10-04T08:27:01.000Z",
+      "description": "",
+      "id": "d36fc134ff35",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "보험업계"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "다음뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE42ckUzSDNNRlNGc1RrUWZLY28xTGY2dTJHYXJ5a1QtekRJQW5rNVhLZDk1VEljdEUwd0RqZ2F5SlN6QVZ2QndzUW56aENobFU?oc=5",
+          "publishedAt": "2026-10-04T08:27:01.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-04T08:27:01.000Z"
     },
     {
       "provider": "google-news",
@@ -3543,6 +3426,116 @@
         }
       ],
       "firstSeenAt": "2026-10-04T05:44:08.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "금융권 잇단 해킹에 당국 ‘외부접점’ 전수점검…“소홀하면 엄정 책임”",
+      "source": "아시아투데이",
+      "sourceUrl": "http://www.asiatoday.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5jbmEwZVFmb2xSNVdieEoxUTVfMWM4aWJPYTFFWi1sVnhhMHplaEFvMDFuMXpsQ3VIOXNUN0wxQXQ5VlBLMnY5ZTNRTVVSbjhZdVhONlp3Y1BZaDFfQktna2U0UUx4OTRaeW9xVA?oc=5",
+      "publishedAt": "2026-10-04T05:36:47.000Z",
+      "description": "",
+      "id": "106bff486cdd",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "금융당국 보험"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "아시아투데이",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5jbmEwZVFmb2xSNVdieEoxUTVfMWM4aWJPYTFFWi1sVnhhMHplaEFvMDFuMXpsQ3VIOXNUN0wxQXQ5VlBLMnY5ZTNRTVVSbjhZdVhONlp3Y1BZaDFfQktna2U0UUx4OTRaeW9xVA?oc=5",
+          "publishedAt": "2026-10-04T05:36:47.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-04T05:36:47.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "10월3일까지 이즈보험 업데이트 사항 및 안내 | FC 커뮤니티 - is보험",
+      "source": "이즈보험",
+      "sourceUrl": "https://dazabi.com",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1SZTRiQU56al81bGVCemRmb0VfbTNaUkVEMVF6TEFqUFNoeFNXNVlzLTdERzF6eUI3R0hpSDE2VnEyeFA1X25DMFNiM1hFa0ltVlg4RlY3MVQtdS1EUHB5bQ?oc=5",
+      "publishedAt": "2026-10-04T05:05:17.000Z",
+      "description": "",
+      "id": "367dedd73302",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "생명보험"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "이즈보험",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1SZTRiQU56al81bGVCemRmb0VfbTNaUkVEMVF6TEFqUFNoeFNXNVlzLTdERzF6eUI3R0hpSDE2VnEyeFA1X25DMFNiM1hFa0ltVlg4RlY3MVQtdS1EUHB5bQ?oc=5",
+          "publishedAt": "2026-10-04T05:05:17.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-04T05:05:17.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "대만 보험업계, ‘상품 판매’ 넘어 ‘리스크 관리’로",
+      "source": "애플경제",
+      "sourceUrl": "http://www.applen.or.kr",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1tSUNuNVpCU2RCdG56SERCSjc0clVtZXpRNXZnU1NYOXRaLVJjU3o4VENuWGFZSGszdnE3dHRZTXRVWnFfT1hUZ043TVY2VGJ4dV8xMTZNRDFJODV0aFU4eHJkUDdOUnpM?oc=5",
+      "publishedAt": "2026-10-04T04:20:27.000Z",
+      "description": "",
+      "id": "253a2dc8339e",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "보험업계",
+        "금융당국 보험"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "애플경제",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1tSUNuNVpCU2RCdG56SERCSjc0clVtZXpRNXZnU1NYOXRaLVJjU3o4VENuWGFZSGszdnE3dHRZTXRVWnFfT1hUZ043TVY2VGJ4dV8xMTZNRDFJODV0aFU4eHJkUDdOUnpM?oc=5",
+          "publishedAt": "2026-10-04T04:20:27.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-04T04:20:27.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "다이이치생명그룹: 124년의 전통을 이어가며 미래를 만들어갑니다.",
+      "source": "vietnam.vn",
+      "sourceUrl": "https://www.vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNVGFPMTdaMTRRQklpZDkwQVVpdGtxbHJDSWF3eHhHVzFjWHBMb2VwVkE4UElUUWNxYlN3bE45cjdvTlUwN2hVenBRZ3M4WG8wMkdiZWhtNmhyRlZDdm8tSVE3dk1CV21FVUV1S196bnVhRzZES0JjeWJiT3J4c3pZaHNMREZyNEo2aU9mZEV0cnpVUnBp?oc=5",
+      "publishedAt": "2026-10-04T04:02:28.000Z",
+      "description": "",
+      "id": "adafe44dcd81",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "생명보험",
+        "보험업계"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "vietnam.vn",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNVGFPMTdaMTRRQklpZDkwQVVpdGtxbHJDSWF3eHhHVzFjWHBMb2VwVkE4UElUUWNxYlN3bE45cjdvTlUwN2hVenBRZ3M4WG8wMkdiZWhtNmhyRlZDdm8tSVE3dk1CV21FVUV1S196bnVhRzZES0JjeWJiT3J4c3pZaHNMREZyNEo2aU9mZEV0cnpVUnBp?oc=5",
+          "publishedAt": "2026-10-04T04:02:28.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-04T04:02:28.000Z"
     },
     {
       "provider": "google-news",
@@ -3719,6 +3712,7 @@
         "insurance"
       ],
       "matchedQueries": [
+        "피지컬 AI",
         "AI 로봇",
         "오토데일리"
       ],
@@ -3949,34 +3943,6 @@
     {
       "provider": "rss",
       "lang": "ko",
-      "title": "LG U+·구글, '제미나이' 활용한 크리에이터 AI 콘텐츠 제작 교육",
-      "source": "머니투데이",
-      "sourceUrl": "https://www.mt.co.kr",
-      "url": "https://www.mt.co.kr/tech/2026/10/04/2026100323082890713",
-      "publishedAt": "2026-10-04T04:42:08.000Z",
-      "description": "LG유플러스가 구글의 생성형 AI(인공지능) '제미나이'를 활용한 콘텐츠 제작 교육에 나섰다. 약 260명이 활동하며 누적 조회수 1억5000만회를 기록한 크리에이터 커뮤니티 'U+BOOSTUS(유플러스 부스터스)'의 콘텐츠 제작 과정에 AI 활용을 확대한다. LG유플러스는 U+BOOSTUS 우수 활동자 18명을 대상으로 서울 강남구 구글코리아 오피스에…",
-      "id": "6ecccd787c00",
-      "category": "ai",
-      "categoryHints": [
-        "ai"
-      ],
-      "matchedQueries": [
-        "생성형 AI",
-        "머니투데이"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "머니투데이",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE02eUJ6R3dOazlDS0pzNjE2T21sQjRadGRUWlVIMndsaVpKZ2lBbnBrY0NURHV5cDB3UFJ5cG53Mm9scThuaGRJc29odFhxSjRLN1V2bWM3OXJnX1o5RjJQSWRoWVRLLUEzM1ZFY9IBbEFVX3lxTE02eUJ6R3dOazlDS0pzNjE2T21sQjRadGRUWlVIMndsaVpKZ2lBbnBrY0NURHV5cDB3UFJ5cG53Mm9scThuaGRJc29odFhxSjRLN1V2bWM3OXJnX1o5RjJQSWRoWVRLLUEzM1ZFYw?oc=5",
-          "publishedAt": "2026-10-04T04:42:08.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-04T04:42:08.000Z"
-    },
-    {
-      "provider": "rss",
-      "lang": "ko",
       "title": "아이 활동 따라 변신…KIST '봇스퀘어' 로봇 디자인대회 최고상",
       "source": "연합뉴스",
       "sourceUrl": "https://www.yna.co.kr",
@@ -4071,8 +4037,8 @@
         "ai"
       ],
       "matchedQueries": [
-        "연합뉴스 경제",
-        "연합뉴스 산업"
+        "연합뉴스 산업",
+        "연합뉴스 경제"
       ],
       "coverage": 1,
       "sources": [
@@ -4291,8 +4257,8 @@
       ],
       "matchedQueries": [
         "AI 에이전트",
-        "연합뉴스 경제",
-        "연합뉴스 산업"
+        "연합뉴스 산업",
+        "연합뉴스 경제"
       ],
       "coverage": 1,
       "sources": [
@@ -4303,33 +4269,6 @@
         }
       ],
       "firstSeenAt": "2026-10-03T21:03:06.000Z"
-    },
-    {
-      "provider": "rss",
-      "lang": "ko",
-      "title": "계단까지 직접 올라 현관 앞 배송…'두 다리' 택배 로봇",
-      "source": "전자신문",
-      "sourceUrl": "https://www.etnews.com",
-      "url": "https://www.etnews.com/20261001000477",
-      "publishedAt": "2026-10-03T21:00:00.000Z",
-      "description": "바퀴로 달리다가 계단까지 올라 현관 앞에 택배를 가져다주는 배송 로봇이 실제 배송 시험에 들어갔습니다. 영국 택배업체 에브리는 일본 리파인드 로보틱스와 함께 유럽 최초로 두 다리형 배송 로봇 실증시험에 들어간다고 밝혔습니다. 이 로봇은 두 다리 끝에 바퀴가 달린 구조입니다. 평지에서는 바퀴로 이동하고 계단이나 울퉁불퉁한 지형에서는 다리를 이용해 장애물을…",
-      "id": "ed796a3c9b56",
-      "category": "ai",
-      "categoryHints": [
-        "ai"
-      ],
-      "matchedQueries": [
-        "전자신문"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "전자신문",
-          "url": "https://www.etnews.com/20261001000477",
-          "publishedAt": "2026-10-03T21:00:00.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T21:00:00.000Z"
     },
     {
       "provider": "rss",
@@ -4359,33 +4298,6 @@
         }
       ],
       "firstSeenAt": "2026-10-03T20:30:00.000Z"
-    },
-    {
-      "provider": "rss",
-      "lang": "ko",
-      "title": "“AI가 말하는 줄”…챗GPT 쓰더니 직장인 말투까지 변했다",
-      "source": "전자신문",
-      "sourceUrl": "https://www.etnews.com",
-      "url": "https://www.etnews.com/20261002000159",
-      "publishedAt": "2026-10-03T13:30:00.000Z",
-      "description": "사람들이 챗GPT와 클로드 같은 생성형 인공지능(AI)을 생활 속에서 활용하는 일이 늘면서 인간의 언어 습관에도 변화가 나타나고 있다는 주장이 나왔다. 지난 30일(현지시간) 월스트리트저널(WSJ)은 일상적인 대화나 업무 과정에서 AI 특유의 화법이 사람들의 표현 방식에 스며들고 있다고 전했다. 회의 발언부터 이메일, 메신저에 이르기까지 AI가 자주 사…",
-      "id": "6c2caee9aaa5",
-      "category": "ai",
-      "categoryHints": [
-        "ai"
-      ],
-      "matchedQueries": [
-        "전자신문"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "전자신문",
-          "url": "https://www.etnews.com/20261002000159",
-          "publishedAt": "2026-10-03T13:30:00.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T13:30:00.000Z"
     },
     {
       "provider": "rss",
@@ -4577,6 +4489,114 @@
       "firstSeenAt": "2026-10-02T22:00:04.000Z"
     },
     {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "'고성능' 업스테이지 AI, 높은 연산비용은 과제",
+      "source": "한국경제",
+      "sourceUrl": "https://www.hankyung.com",
+      "url": "https://www.hankyung.com/article/2026100426111",
+      "publishedAt": "2026-10-04T08:31:46.000Z",
+      "description": "",
+      "id": "1a932b789d99",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "한국경제 IT"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "한국경제",
+          "url": "https://www.hankyung.com/article/2026100426111",
+          "publishedAt": "2026-10-04T08:31:46.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-04T08:31:46.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "유재석인줄 알았는데…AI 무단복제 영상 주의",
+      "source": "한국경제",
+      "sourceUrl": "https://www.hankyung.com",
+      "url": "https://www.hankyung.com/article/2026100426081",
+      "publishedAt": "2026-10-04T08:30:54.000Z",
+      "description": "",
+      "id": "97453606d120",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "한국경제 IT"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "한국경제",
+          "url": "https://www.hankyung.com/article/2026100426081",
+          "publishedAt": "2026-10-04T08:30:54.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-04T08:30:54.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "\"구형 데이터센터서도 최신 AI 구동 가능하죠\"",
+      "source": "한국경제",
+      "sourceUrl": "https://www.hankyung.com",
+      "url": "https://www.hankyung.com/article/2026100426091",
+      "publishedAt": "2026-10-04T08:30:31.000Z",
+      "description": "",
+      "id": "feca415138a8",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "한국경제 IT"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "한국경제",
+          "url": "https://www.hankyung.com/article/2026100426091",
+          "publishedAt": "2026-10-04T08:30:31.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-04T08:30:31.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "안 뚫린 데가 없다… \"업무에 AI 도입 늘고 있는데\" 기업들 노심초사",
+      "source": "한국일보",
+      "sourceUrl": "https://www.hankookilbo.com",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5BYUwwZEd6T2RwamZ1OFktcXJOeDF5ZGtnWEtidEY1cmxQMUVIdlFua2djRl9MbkduaHRNVnZXUGMwTnM4cEdyTjVyR29hRHJyTWdNQ0VoRkFrMnJteDVReGVYbDhoX3JudmF2R0xB0gFzQVVfeXFMUGNXZjI0amV2YmFER2FPWEtOQm1hMncwRGNoWFBoSWlmbFVFeWZOZWRZWm1EMG1wd1dCT0VjMVloVjUyaDFIQXIxVzBOc3cxa2Vzd0hITEVGVWstMXhZNXZnZUQtaHNZTXlHT3Vpdm5wc1dJZw?oc=5",
+      "publishedAt": "2026-10-04T08:24:00.000Z",
+      "description": "",
+      "id": "f5ce4d0b41c5",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "AI 에이전트"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "한국일보",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5BYUwwZEd6T2RwamZ1OFktcXJOeDF5ZGtnWEtidEY1cmxQMUVIdlFua2djRl9MbkduaHRNVnZXUGMwTnM4cEdyTjVyR29hRHJyTWdNQ0VoRkFrMnJteDVReGVYbDhoX3JudmF2R0xB0gFzQVVfeXFMUGNXZjI0amV2YmFER2FPWEtOQm1hMncwRGNoWFBoSWlmbFVFeWZOZWRZWm1EMG1wd1dCT0VjMVloVjUyaDFIQXIxVzBOc3cxa2Vzd0hITEVGVWstMXhZNXZnZUQtaHNZTXlHT3Vpdm5wc1dJZw?oc=5",
+          "publishedAt": "2026-10-04T08:24:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-04T08:24:00.000Z"
+    },
+    {
       "provider": "google-news",
       "lang": "ko",
       "title": "서울연구원, AI·로봇 도시기술 협력 세미나 코엑스서 개최",
@@ -4683,33 +4703,6 @@
         }
       ],
       "firstSeenAt": "2026-10-04T07:08:57.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "ko",
-      "title": "\"매달 빠져나가는 AI값 잡아라\"…카드사, 새 고객 확보전",
-      "source": "파이낸셜뉴스",
-      "sourceUrl": "https://www.fnnews.com",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1nU0pwSEF1S21vdFp5RUdZOGZpbmZXMTVKT0ZCSFNXR184NXJQb19tcEFHa0hCckh6d1hDTnBXTlpjS21qQlVFQ0pQQXlYRFkxQXh3RUdLc3l2dw?oc=5",
-      "publishedAt": "2026-10-04T07:08:08.000Z",
-      "description": "",
-      "id": "30ad36eec5f8",
-      "category": "ai",
-      "categoryHints": [
-        "ai"
-      ],
-      "matchedQueries": [
-        "생성형 AI"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "파이낸셜뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1nU0pwSEF1S21vdFp5RUdZOGZpbmZXMTVKT0ZCSFNXR184NXJQb19tcEFHa0hCckh6d1hDTnBXTlpjS21qQlVFQ0pQQXlYRFkxQXh3RUdLc3l2dw?oc=5",
-          "publishedAt": "2026-10-04T07:08:08.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-04T07:08:08.000Z"
     }
   ]
 }
