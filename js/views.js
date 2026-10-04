@@ -2,6 +2,7 @@ import { CATEGORIES, CATEGORY_ORDER, esc, safeUrl, timeAgo, formatFullDate, form
 import { topOf } from './data.js';
 import { computeTrends } from './core/trend.js';
 import * as store from './store.js';
+import { verifyAdminCode } from './admin.js';
 
 // ───────────────── components ─────────────────
 
@@ -647,14 +648,32 @@ export function settings(data) {
       <div class="group">
         <div class="group__title">개인 데이터</div>
         <div class="list">
-          <div class="row"><div class="row__text"><span class="row__label">관심 키워드</span><span class="row__desc">${store.getKeywords().length}개 · MY NEWS 에서 관리</span></div><a class="section__more" href="#/my" data-nav="/my">관리 ›</a></div>
+${store.isAdmin() ? `          <div class="row"><div class="row__text"><span class="row__label">관심 키워드</span><span class="row__desc">${store.getKeywords().length}개 · MY NEWS 에서 관리</span></div><a class="section__more" href="#/my" data-nav="/my">관리 ›</a></div>` : ''}
           <div class="row"><div class="row__text"><span class="row__label">저장한 뉴스</span><span class="row__desc">${store.getSaved().length}건</span></div><a class="section__more" href="#/saved" data-nav="/saved">보기 ›</a></div>
           <button class="row row--btn row--danger" id="reset-btn" type="button">이 휴대폰의 저장 데이터 초기화</button>
         </div>
         <p class="notice">즐겨찾기·관심 키워드·설정은 이 휴대폰 안에만 저장되며 외부 서버나 AI로 전송되지 않습니다.</p>
       </div>
 
-      <p class="footer-note">MobiBrief AI · v0.3<br>공개 뉴스만 다루며, 기사 전문을 저장하지 않고 원문 링크로 연결합니다.</p>
+      ${
+        store.isAdmin()
+          ? `<div class="group">
+        <div class="group__title">관리자</div>
+        <div class="list">
+          <div class="row"><div class="row__text"><span class="row__label">관리자 모드 켜짐</span><span class="row__desc">이 휴대폰에서만 MY NEWS 탭이 보입니다</span></div></div>
+          <button class="row row--btn" id="admin-off" type="button">관리자 모드 끄기</button>
+        </div>
+      </div>`
+          : `<form class="group admin-form" id="admin-form" hidden autocomplete="off">
+        <div class="group__title">관리자 코드</div>
+        <div class="input-row">
+          <input class="input" id="admin-code" type="password" inputmode="numeric" placeholder="관리자 코드 입력" aria-label="관리자 코드">
+          <button class="btn btn--primary btn--sm" type="submit">확인</button>
+        </div>
+      </form>`
+      }
+
+      <p class="footer-note"><span id="version-tap">MobiBrief AI · v0.4</span><br>공개 뉴스만 다루며, 기사 전문을 저장하지 않고 원문 링크로 연결합니다.</p>
     </div>`,
     mount(root, ctx) {
       root.querySelectorAll('[data-set]').forEach((b) =>
@@ -682,6 +701,37 @@ export function settings(data) {
       root.querySelector('#daily-time').addEventListener('change', (e) => {
         store.setSettings({ dailyTime: e.target.value || '08:00' });
         ctx.toast(`매일 ${e.target.value} 알림으로 저장했습니다`);
+      });
+      // 관리자 모드: 버전 글자 5번 누르면 코드 입력칸 표시
+      let taps = 0;
+      let tapTimer;
+      root.querySelector('#version-tap')?.addEventListener('click', () => {
+        taps++;
+        clearTimeout(tapTimer);
+        tapTimer = setTimeout(() => (taps = 0), 2500);
+        const form = root.querySelector('#admin-form');
+        if (taps >= 5 && form) {
+          form.hidden = false;
+          root.querySelector('#admin-code').focus();
+          form.scrollIntoView({ block: 'center' });
+        }
+      });
+      root.querySelector('#admin-form')?.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const input = root.querySelector('#admin-code');
+        if (await verifyAdminCode(input.value)) {
+          store.setAdmin(true);
+          ctx.toast('관리자 모드를 켰습니다 · MY NEWS 탭이 보입니다');
+          ctx.rerender();
+        } else {
+          input.value = '';
+          ctx.toast('코드가 맞지 않습니다');
+        }
+      });
+      root.querySelector('#admin-off')?.addEventListener('click', () => {
+        store.setAdmin(false);
+        ctx.toast('관리자 모드를 껐습니다');
+        ctx.rerender();
       });
       const reset = root.querySelector('#reset-btn');
       reset.addEventListener('click', () => {

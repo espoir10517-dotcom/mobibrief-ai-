@@ -71,6 +71,8 @@ function route(path) {
     case 'issue':
       return { tab: 'home', view: views.issue(data, decodeURIComponent(arg || '')) };
     case 'my':
+      // MY NEWS 는 관리자 모드에서만
+      if (!store.isAdmin()) return { tab: 'home', view: views.home(data) };
       return { tab: 'my', view: views.my(data) };
     case 'saved':
       return { tab: 'saved', view: views.saved(data) };
@@ -101,6 +103,7 @@ function render({ restore = false, keepScroll = false } = {}) {
   const { tab, view } = route(path);
   renderedPath = path;
   banner.hidden = data.mode !== 'demo';
+  document.querySelectorAll('[data-admin-only]').forEach((el) => (el.hidden = !store.isAdmin()));
   document.body.classList.toggle('has-demo', data.mode === 'demo');
   viewEl.innerHTML = view.html;
   viewEl.classList.remove('fade-in');
