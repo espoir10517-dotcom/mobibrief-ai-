@@ -3,7 +3,6 @@
 // - Demo: data/demo/*.json (가상 기사 20건)
 // 설정의 '데이터 모드'가 auto 이면 실데이터가 있을 때 실데이터를, 없으면 Demo 를 보여줍니다.
 
-import { getSettings } from './store.js';
 import { dayKey } from './util.js';
 
 let cache = null;
@@ -32,7 +31,6 @@ function hydrateDemo(briefing, stats) {
 
 export async function loadData({ force = false } = {}) {
   if (cache && !force) return cache;
-  const settings = getSettings();
   const inline = typeof window !== 'undefined' ? window.__MOBIBRIEF_INLINE__ : null;
 
   let mode = 'demo';
@@ -43,7 +41,8 @@ export async function loadData({ force = false } = {}) {
   if (inline) {
     ({ briefing, stats } = hydrateDemo(inline.briefing, inline.stats));
   } else {
-    if (settings.dataMode !== 'demo') {
+    // 실제 뉴스가 있으면 항상 실제 뉴스 (없을 때만 Demo)
+    {
       try {
         briefing = await fetchJson('data/live/briefing.json');
         mode = 'live';

@@ -56,3 +56,12 @@ export function toIso(dateStr) {
   const t = Date.parse(dateStr);
   return Number.isFinite(t) ? new Date(t).toISOString() : null;
 }
+
+// 링크 정리: 공백·한글 등을 올바르게 인코딩 (언론사 RSS 링크에 공백이 들어 있는 경우가 있음)
+export function normalizeUrl(u) {
+  try {
+    return new URL(String(u).trim()).href;
+  } catch {
+    return '';
+  }
+}

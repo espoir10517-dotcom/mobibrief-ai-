@@ -17,6 +17,7 @@
     "build:briefing": "node pipeline/build-briefing.mjs",
     "update": "node pipeline/collect.mjs && node pipeline/build-briefing.mjs",
     "test:ai": "node scripts/test-ai.mjs",
-    "backfill": "node pipeline/backfill.mjs --days 7"
+    "backfill": "node pipeline/backfill.mjs --days 7",
+    "validate": "node scripts/validate-live.mjs"
   }
 }

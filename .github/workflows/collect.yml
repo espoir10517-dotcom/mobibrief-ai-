@@ -71,6 +71,10 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
+      - name: 발행 데이터 점검 (빈 값·깨진 링크·중복)
+        if: steps.when.outputs.publish == 'true'
+        run: npm run validate
+
       - name: 결과 저장
         if: always()
         run: |

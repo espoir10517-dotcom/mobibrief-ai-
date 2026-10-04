@@ -42,7 +42,11 @@ export function card(a, { showRank = true, showCat = false } = {}) {
       ${showCat ? `<div>${catLabel(a.category)}</div>` : ''}
       <h3 class="card__title">${esc(a.title)}</h3>
       <div class="card__meta">${metaLine(a)}</div>
-      ${a.oneLiner ? `<p class="card__one">${esc(a.oneLiner)}</p>` : ''}
+      ${
+        a.oneLiner
+          ? `<p class="card__one">${esc(a.oneLiner)}</p>`
+          : `<p class="card__one card__one--none">${a.coverage > 1 ? `${esc(a.coverage)}개 언론사 보도` : esc(a.source)} · 요약문이 제공되지 않은 기사예요. 원문에서 확인하세요.</p>`
+      }
     </a>
     <div class="card__foot">
       <div class="chips">${kws}</div>
@@ -633,7 +637,7 @@ export function settings(data) {
       <div class="group">
         <div class="group__title">데이터</div>
         <div class="list">
-          <div class="row row--stack"><div class="row__text"><span class="row__label">뉴스 데이터</span><span class="row__desc">현재: <b>${data.mode === 'live' ? (data.briefing.analysis === 'rules' ? '실제 뉴스 (AI 없이 자동 선정)' : '실제 뉴스 (AI 분석)') : 'Demo (가상 데이터)'}</b>${data.mode === 'live' ? '' : ' · 실제 뉴스 수집이 연결되면 자동으로 전환됩니다'}</span></div>${seg('dataMode', [['auto', '자동'], ['demo', 'Demo 고정']])}</div>
+          <div class="row"><div class="row__text"><span class="row__label">뉴스 데이터</span><span class="row__desc">현재: <b>${data.mode === 'live' ? (data.briefing.analysis === 'rules' ? '실제 뉴스 (AI 없이 자동 선정)' : '실제 뉴스 (AI 분석)') : 'Demo (가상 데이터)'}</b>${data.mode === 'live' ? '' : ' · 실제 뉴스 수집이 연결되면 자동으로 전환됩니다'}</span></div></div>
           <div class="row"><div class="row__text"><span class="row__label">마지막 업데이트</span></div><span class="row__desc" style="font-family:var(--font-mono)">${esc(new Date(data.briefing.generatedAt).toLocaleString('ko-KR'))}</span></div>
         </div>
       </div>
@@ -684,11 +688,6 @@ ${store.isAdmin() ? `          <div class="row"><div class="row__text"><span cla
           if (key === 'breakingThreshold') val = Number(val);
           store.setSettings({ [key]: val });
           if (key === 'theme') ctx.applyTheme();
-          if (key === 'dataMode') {
-            await ctx.reload();
-            ctx.toast(val === 'demo' ? 'Demo 데이터로 전환했습니다' : '데이터 모드: 자동');
-            return;
-          }
           root.querySelectorAll(`[data-set="${key}"]`).forEach((x) => x.classList.toggle('is-active', x === b));
         }),
       );

@@ -68,7 +68,8 @@ export function scoreArticle(a, { hits, compiled, now, isNew, recencyHours = [6,
   return {
     importance: clamp(coverageScore), // 여러 언론사가 보도할수록 중요한 이슈로 판단
     // 분야 키워드가 많을수록 높게. 한국어 기사 가산, 자동차보험·보험은 국내 제도 중심이라 해외 기사 감점
-    relevance: clamp(40 + own.length * 18 + (a.lang === 'ko' ? 12 : DOMESTIC.has(a.category) ? -25 : 0) + editorialAdjust(a.category, text, compiled)),
+    // 요약문이 있는 기사는 독자가 내용을 바로 알 수 있으므로 가산
+    relevance: clamp(40 + own.length * 18 + (a.lang === 'ko' ? 12 : DOMESTIC.has(a.category) ? -25 : 0) + (a.description ? 8 : 0) + editorialAdjust(a.category, text, compiled)),
     recency: clamp(ageH <= recencyHours[0] ? 100 : ageH <= recencyHours[1] ? 90 : ageH <= recencyHours[2] ? 75 : 60),
     impact: clamp(50 + impactHits * 12 + (a.coverage >= 3 ? 10 : 0)), // 정책·출시·투자 같은 변화 단어
     novelty: isNew ? 88 : 45, // 최근 3일 안에 비슷한 기사가 없었으면 새로운 이슈

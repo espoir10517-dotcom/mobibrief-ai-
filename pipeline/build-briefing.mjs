@@ -11,13 +11,15 @@ import { fileURLToPath } from 'node:url';
 import { totalScore } from '../public/js/core/scoring.js';
 import { similarity } from '../public/js/core/select.js';
 import { compileDictionary, relevantHits, scoreArticle } from './rules.mjs';
-import { normalizeTitle, bigrams, jaccard } from './lib/text.mjs';
+import { normalizeTitle, bigrams, jaccard, normalizeUrl } from './lib/text.mjs';
 import { createClient } from './ai/client.mjs';
 import { aiBriefing } from './ai/editor.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const readJson = async (p) => JSON.parse(await readFile(p, 'utf8'));
 const CATS = ['auto', 'mobility', 'insurance', 'ai'];
+// 너무 넓어서 '핵심 키워드'로는 의미가 없는 말 (기사 분류에는 계속 사용)
+const GENERIC = new Set(['AI']);
 
 function pickCategory(a, hits) {
   if (hits[a.category]?.length) return a.category;
@@ -79,8 +81,11 @@ function mergeIssues(items) {
 function analyze(file, { compiled, criteria, prevTitles, recencyHours, exclude = [] }) {
   const now = Date.parse(file.collectedAt);
   const tagged = [];
-  for (const a of file.articles) {
+  for (let a of file.articles) {
     if (exclude.some((re) => re.test(a.title))) continue; // 제외 규칙은 이미 수집된 기사에도 적용
+    const url = normalizeUrl(a.url);
+    if (!url) continue;
+    a = { ...a, url, sources: (a.sources || []).map((x) => ({ ...x, url: normalizeUrl(x.url) })).filter((x) => x.url) };
     const hits = relevantHits(a.title, a.description, compiled);
     const category = pickCategory(a, hits);
     if (!category) continue;
@@ -223,7 +228,7 @@ export async function buildBriefing({ log = console.log, env = process.env, outD
 
   // 핵심 키워드: 기간 내 기사에서 가장 많이 등장한 키워드 5개
   const kwCount = {};
-  for (const a of today) for (const k of a.keywords) kwCount[k] = (kwCount[k] || 0) + 1;
+  for (const a of today) for (const k of a.keywords) if (!GENERIC.has(k)) kwCount[k] = (kwCount[k] || 0) + 1;
   const keywords = Object.entries(kwCount)
     .sort((a, b) => b[1] - a[1])
     .slice(0, 5)
@@ -285,12 +290,32 @@ export async function buildBriefing({ log = console.log, env = process.env, outD
   }
 
   // 키워드 통계 (날짜별 등장 기사 수)
-  // 채워 넣은(backfill) 날짜는 수집 방식이 달라 추세 비교에서 제외
-  const days = recent.filter((f) => !files[f].backfill).map((f) => {
-    const counts = {};
-    for (const a of analyzed[f]) for (const k of a.keywords) counts[k] = (counts[k] || 0) + 1;
-    return { date: files[f].date, counts };
-  });
+  // ───────── HOT TOPIC 통계 ─────────
+  // 매일 수집과 지난 기사 채우기가 같은 기준이 되도록 '구글뉴스 검색으로 들어온 기사'만,
+  // 파일이 아니라 '기사 발행일(한국시간)' 기준으로 셉니다. 같은 기사는 한 번만.
+  // 아직 하루가 끝나지 않은 마지막 수집일은 숫자가 적게 나오므로 제외합니다.
+  const googleQueries = new Set(Object.values(sourcesCfg.categories).flatMap((q) => [...(q.ko || []), ...(q.en || [])]));
+  const seenTitles = new Set();
+  const byDay = {};
+  for (const f of recent) {
+    for (const a of files[f].articles) {
+      if (!(a.matchedQueries || []).some((q) => googleQueries.has(q))) continue;
+      if (exclude.some((re) => re.test(a.title))) continue;
+      const key = normalizeTitle(a.title);
+      if (seenTitles.has(key)) continue;
+      seenTitles.add(key);
+      const day = new Date(Date.parse(a.publishedAt) + 9 * 3600000).toISOString().slice(0, 10);
+      if (day >= latest.date || day < files[recent[0]].date) continue;
+      const hits = relevantHits(a.title, a.description, compiled);
+      const kws = new Set(Object.values(hits).flat().filter((k) => !GENERIC.has(k)));
+      if (!kws.size) continue;
+      byDay[day] = byDay[day] || {};
+      for (const k of kws) byDay[day][k] = (byDay[day][k] || 0) + 1;
+    }
+  }
+  const days = Object.keys(byDay)
+    .sort()
+    .map((date) => ({ date, counts: byDay[date] }));
 
   // 검색용 보관함: 최근 14일, 같은 기사는 가장 최근 것만
   const archiveMap = new Map();

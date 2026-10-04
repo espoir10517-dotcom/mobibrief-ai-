@@ -1,8 +1,8 @@
 {
-  "_comment": "분야별 뉴스 검색어. ko=한국어(구글뉴스 한국판 + 네이버), en=영어(구글뉴스 미국판). 검색어를 추가/삭제하면 다음 수집부터 반영됩니다. 검색어가 늘어도 AI 비용은 maxCandidatesPerCategory 로 제한됩니다.",
+  "_comment": "분야별 뉴스 검색어. ko=한국어(구글뉴스 한국판 + 네이버), en=영어(구글뉴스 미국판). 검색어를 추가/삭제하면 다음 수집부터 반영됩니다. 검색어가 늘어도 AI 비용은 config/ai.json 의 aiCandidatesPerCategory 로 제한됩니다.",
   "lookbackHours": 36,
   "perQueryLimit": 20,
-  "maxCandidatesPerCategory": 40,
+  "maxCandidatesPerCategory": 60,
   "duplicateTitleSimilarity": 0.5,
   "categories": {
     "auto": {

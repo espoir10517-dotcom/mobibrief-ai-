@@ -4,7 +4,7 @@
 // 키워드 사전(config/keywords.json)에 해당하는 기사만 남깁니다(collect.mjs 에서 처리).
 
 import { fetchText } from '../lib/http.mjs';
-import { decodeEntities, stripHtml, toIso } from '../lib/text.mjs';
+import { decodeEntities, stripHtml, toIso, normalizeUrl } from '../lib/text.mjs';
 
 function tag(xml, name) {
   const m = xml.match(new RegExp(`<${name}(?:\\s[^>]*)?>([\\s\\S]*?)</${name}>`, 'i'));
@@ -37,7 +37,7 @@ export function parseFeed(xml, feed = {}) {
           return '';
         }
       })(),
-      url: link.trim(),
+      url: normalizeUrl(link),
       publishedAt,
       // 피드가 제공하는 요약문 앞부분만 저장 (기사 전문 저장 안 함)
       description: desc.length > 200 ? `${desc.slice(0, 198)}…` : desc,

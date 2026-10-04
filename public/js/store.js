@@ -24,7 +24,6 @@ const KEYS = { saved: 'mb.saved', keywords: 'mb.keywords', settings: 'mb.setting
 
 export const DEFAULT_SETTINGS = {
   theme: 'light', // light | dark
-  dataMode: 'auto', // auto(실데이터 있으면 사용) | demo
   dailyBrief: true,
   dailyTime: '08:00',
   breakingAlert: false,
