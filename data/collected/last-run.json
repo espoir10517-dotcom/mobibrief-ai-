@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-04",
+  "collectedAt": "2026-10-04T08:00:27.754Z",
+  "stats": {
+    "searches": 39,
+    "google": {
+      "ok": 39,
+      "fail": 0,
+      "items": 615
+    },
+    "naver": {
+      "ok": 0,
+      "fail": 0,
+      "items": 0,
+      "enabled": false
+    },
+    "raw": 615,
+    "fresh": 417,
+    "clusters": 358,
+    "candidates": 160,
+    "perCategory": {
+      "auto": 40,
+      "mobility": 40,
+      "insurance": 40,
+      "ai": 40
+    }
+  },
+  "errors": []
+}
