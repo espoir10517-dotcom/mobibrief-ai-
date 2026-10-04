@@ -80,7 +80,11 @@
     "(?i)shares (bought|sold|acquired) by",
     "(?i)\\bstock (gains|falls|rises|drops)\\b",
     "\\$[A-Z]{2,5}\\b",
-    "(?i)price target"
+    "(?i)price target",
+    "시장 규모",
+    "(?i)market size",
+    "(?i)\\bbest\\b.*\\binsurance\\b",
+    "(?i)insurance quotes?"
   ],
   "excludeSources": [
     "MarketBeat",

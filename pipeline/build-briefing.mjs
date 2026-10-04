@@ -44,14 +44,17 @@ function sameIssue(a, b) {
   if (a.category !== b.category) return false;
   const sim = jaccard(a._bg, b._bg);
   if (sim >= 0.35) return true;
-  // 주요 키워드 하나 이상 + 고유 단어 2개 이상 겹치면 같은 이슈 (예: 'LG유플러스, 구글…크리에이터' / 'LG U+·구글…크리에이터')
-  const sharedKw = a.keywords.some((k) => k !== 'AI' && b.keywords.includes(k));
+  // 주간 데이터는 비슷한 주제의 다른 기사가 많아서, 같은 사건으로 볼 근거를 더 엄격하게 요구
+  const specific = (k) => k !== 'AI';
+  const sharedKw = a.keywords.filter((k) => specific(k) && b.keywords.includes(k)).length;
   let shared = 0;
   for (const w of a._words) if (b._words.has(w)) shared++;
-  if (sharedKw && shared >= 2) return true;
-  const ka = [...a.keywords].sort().join('|');
-  const kb = [...b.keywords].sort().join('|');
-  return a.keywords.length >= 2 && ka === kb && sim >= 0.12;
+  // 날짜가 3일 넘게 떨어진 기사는 제목이 아주 비슷할 때만 같은 사건
+  const days = Math.abs(Date.parse(a.publishedAt) - Date.parse(b.publishedAt)) / 86400000;
+  if (days > 3) return false;
+  if (sharedKw >= 1 && shared >= 3) return true;
+  if (sharedKw >= 1 && shared >= 2 && sim >= 0.2) return true;
+  return false;
 }
 
 function mergeIssues(items) {
@@ -73,10 +76,11 @@ function mergeIssues(items) {
   });
 }
 
-function analyze(file, { compiled, criteria, prevTitles, recencyHours }) {
+function analyze(file, { compiled, criteria, prevTitles, recencyHours, exclude = [] }) {
   const now = Date.parse(file.collectedAt);
   const tagged = [];
   for (const a of file.articles) {
+    if (exclude.some((re) => re.test(a.title))) continue; // 제외 규칙은 이미 수집된 기사에도 적용
     const hits = relevantHits(a.title, a.description, compiled);
     const category = pickCategory(a, hits);
     if (!category) continue;
@@ -85,6 +89,8 @@ function analyze(file, { compiled, criteria, prevTitles, recencyHours }) {
   }
   const out = [];
   for (const a of mergeIssues(tagged)) {
+    // 자동차보험·보험은 국내 제도 중심: 한 곳만 보도한 해외 기사는 제외
+    if ((a.category === 'auto' || a.category === 'insurance') && a.lang !== 'ko' && (a.coverage || 1) < 2) continue;
     const isNew = !prevTitles.some((p) => jaccard(p, a._bg) >= 0.5);
     const scores = scoreArticle(a, { hits: a._hits, compiled, now, isNew, recencyHours });
     const desc = (a.description || '').trim();
@@ -135,6 +141,8 @@ export async function buildBriefing({ log = console.log, env = process.env, outD
   const scoring = await readJson(path.join(root, 'config/scoring.json'));
   const dict = await readJson(path.join(root, 'config/keywords.json'));
   const compiled = compileDictionary(dict);
+  const sourcesCfg = await readJson(path.join(root, 'config/sources.json'));
+  const exclude = (sourcesCfg.excludeTitlePatterns || []).map((p) => (p.startsWith('(?i)') ? new RegExp(p.slice(4), 'i') : new RegExp(p)));
   const dir = path.join(root, 'data/collected');
   const dates = (await readdir(dir)).filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)).sort();
   if (!dates.length) throw new Error('수집된 데이터가 없습니다. 먼저 npm run collect 를 실행하세요.');
@@ -149,7 +157,7 @@ export async function buildBriefing({ log = console.log, env = process.env, outD
     const prevTitles = recent
       .slice(Math.max(0, i - 3), i)
       .flatMap((f) => files[f].articles.map((a) => bigrams(normalizeTitle(a.title))));
-    analyzed[recent[i]] = analyze(files[recent[i]], { compiled, criteria: scoring.criteria, prevTitles });
+    analyzed[recent[i]] = analyze(files[recent[i]], { compiled, criteria: scoring.criteria, prevTitles, exclude });
   }
 
   const latestKey = recent[recent.length - 1];
@@ -171,7 +179,7 @@ export async function buildBriefing({ log = console.log, env = process.env, outD
     const byId = new Map();
     for (const f of windowKeys) for (const a of files[f].articles) byId.set(a.id, a);
     const prevTitles = beforeKeys.flatMap((f) => files[f].articles.map((a) => bigrams(normalizeTitle(a.title))));
-    today = analyze({ collectedAt: latest.collectedAt, articles: [...byId.values()] }, { compiled, criteria: scoring.criteria, prevTitles, recencyHours });
+    today = analyze({ collectedAt: latest.collectedAt, articles: [...byId.values()] }, { compiled, criteria: scoring.criteria, prevTitles, recencyHours, exclude });
     log(`🗓  주간 브리핑: ${periodStart} ~ ${latest.date} (${windowKeys.length}일치 수집분)`);
   } else {
     today = analyzed[latestKey];
