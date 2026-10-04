@@ -1,0 +1,20 @@
+{
+  "_comment": "AI 설정. 키(ANTHROPIC_API_KEY 또는 OPENAI_API_KEY)가 GitHub 비밀값에 있으면 AI 방식, 없으면 규칙 방식으로 자동 동작합니다. provider: auto(키 있는 쪽) | anthropic | openai",
+  "provider": "auto",
+  "anthropic": {
+    "fastModel": "claude-haiku-4-5-20251001",
+    "deepModel": "claude-haiku-4-5-20251001",
+    "_prices": "100만 토큰당 달러 [입력, 출력]. 비용 기록용 추정치이며 실제 청구는 콘솔 기준.",
+    "prices": { "claude-haiku-4-5-20251001": [1, 5], "claude-sonnet-5-5": [2, 10] }
+  },
+  "openai": {
+    "fastModel": "gpt-5.4-mini",
+    "deepModel": "gpt-5.4-mini",
+    "prices": {}
+  },
+  "evaluateBatchSize": 30,
+  "editorCandidatesPerCategory": 12,
+  "writeBatchSize": 5,
+  "maxCallsPerRun": 25,
+  "maxCostPerRunUSD": 0.6
+}

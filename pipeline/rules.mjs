@@ -16,7 +16,12 @@ export function compileDictionary(dict) {
     }));
   }
   const impact = (dict.impactTerms || []).map((a) => (isAscii(a) ? new RegExp(`\\b${esc(a)}\\b`, 'i') : new RegExp(esc(a))));
-  return { cats, impact };
+  const toRe = (a) => (isAscii(a) && /^[A-Za-z0-9 -]+$/.test(a) ? new RegExp(`(^|[^A-Za-z0-9])${esc(a)}($|[^A-Za-z0-9])`, 'i') : new RegExp(esc(a), 'i'));
+  const editorial = {};
+  for (const [k, v] of Object.entries(dict.editorial || {})) {
+    editorial[k] = { boost: (v.boost || []).map(toRe), penalty: (v.penalty || []).map(toRe) };
+  }
+  return { cats, impact, editorial };
 }
 
 export function matchTerms(text, compiled) {
@@ -42,6 +47,16 @@ export function relevantHits(title, description, compiled) {
   return out;
 }
 
+// 편집 기준(config/editorial.md)을 흉내 낸 가감점: 우대 단어 +8씩(최대 +24), 감점 단어 -15씩
+function editorialAdjust(category, text, compiled) {
+  const ed = compiled.editorial || {};
+  const cat = ed[category] || { boost: [], penalty: [] };
+  const g = ed.global || { boost: [], penalty: [] };
+  const boost = cat.boost.filter((re) => re.test(text)).length;
+  const penalty = [...cat.penalty, ...g.penalty].filter((re) => re.test(text)).length;
+  return Math.min(24, boost * 8) - penalty * 15;
+}
+
 const clamp = (v) => Math.max(0, Math.min(100, Math.round(v)));
 
 export function scoreArticle(a, { hits, compiled, now, isNew }) {
@@ -53,7 +68,7 @@ export function scoreArticle(a, { hits, compiled, now, isNew }) {
   return {
     importance: clamp(coverageScore), // 여러 언론사가 보도할수록 중요한 이슈로 판단
     // 분야 키워드가 많을수록 높게. 한국어 기사 가산, 자동차보험·보험은 국내 제도 중심이라 해외 기사 감점
-    relevance: clamp(40 + own.length * 18 + (a.lang === 'ko' ? 12 : DOMESTIC.has(a.category) ? -12 : 0)),
+    relevance: clamp(40 + own.length * 18 + (a.lang === 'ko' ? 12 : DOMESTIC.has(a.category) ? -25 : 0) + editorialAdjust(a.category, text, compiled)),
     recency: clamp(ageH <= 6 ? 100 : ageH <= 12 ? 90 : ageH <= 24 ? 75 : 60),
     impact: clamp(50 + impactHits * 12 + (a.coverage >= 3 ? 10 : 0)), // 정책·출시·투자 같은 변화 단어
     novelty: isNew ? 88 : 45, // 최근 3일 안에 비슷한 기사가 없었으면 새로운 이슈

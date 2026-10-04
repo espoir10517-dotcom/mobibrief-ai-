@@ -12,6 +12,8 @@ import { totalScore } from '../public/js/core/scoring.js';
 import { similarity } from '../public/js/core/select.js';
 import { compileDictionary, relevantHits, scoreArticle } from './rules.mjs';
 import { normalizeTitle, bigrams, jaccard } from './lib/text.mjs';
+import { createClient } from './ai/client.mjs';
+import { aiBriefing } from './ai/editor.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const readJson = async (p) => JSON.parse(await readFile(p, 'utf8'));
@@ -129,7 +131,7 @@ function diverseTop(list, n) {
   return picked.sort((a, b) => b.total - a.total).map((a, i) => ({ ...a, rank: i + 1 }));
 }
 
-export async function buildBriefing({ log = console.log } = {}) {
+export async function buildBriefing({ log = console.log, env = process.env, outDir = path.join(root, 'public/data/live') } = {}) {
   const scoring = await readJson(path.join(root, 'config/scoring.json'));
   const dict = await readJson(path.join(root, 'config/keywords.json'));
   const compiled = compileDictionary(dict);
@@ -199,7 +201,7 @@ export async function buildBriefing({ log = console.log } = {}) {
     .map(([k]) => k);
 
   const lead = issues[0];
-  const briefing = {
+  let briefing = {
     schemaVersion: 1,
     mode: 'live',
     analysis: 'rules',
@@ -213,6 +215,38 @@ export async function buildBriefing({ log = console.log } = {}) {
     categories,
     articles: [...chosen.values()],
   };
+
+  // ───────── AI 키가 있으면 AI 편집국 방식으로 교체 (실패하면 위의 규칙 방식 결과를 그대로 사용) ─────────
+  let aiResult = null;
+  const aiCfg = await readJson(path.join(root, 'config/ai.json'));
+  const client = createClient(aiCfg, env, { log });
+  if (client) {
+    try {
+      const editorial = await readFile(path.join(root, 'config/editorial.md'), 'utf8');
+      const now = Date.parse(latest.collectedAt);
+      const recencyOf = (a) => {
+        const h = (now - Date.parse(a.publishedAt)) / 3600000;
+        return h <= 6 ? 100 : h <= 12 ? 90 : h <= 24 ? 75 : 60;
+      };
+      aiResult = await aiBriefing({ today, client, editorial, criteria: scoring.criteria, cfg: aiCfg, recencyOf, log });
+      briefing = {
+        ...briefing,
+        analysis: 'ai',
+        headline: aiResult.headline || briefing.headline,
+        headlineNote: '',
+        keywords: aiResult.keywords.length ? aiResult.keywords : briefing.keywords,
+        issues: aiResult.issues.length ? aiResult.issues : briefing.issues,
+        categories: aiResult.categories,
+        articles: aiResult.articles,
+        ai: { provider: client.provider, calls: client.usage.calls, inputTokens: client.usage.input, outputTokens: client.usage.output, estCostUSD: Number(client.usage.costUSD.toFixed(4)) },
+      };
+      log(`💰 AI 사용량: 호출 ${client.usage.calls}회 · 입력 ${client.usage.input} / 출력 ${client.usage.output} 토큰 · 약 $${client.usage.costUSD.toFixed(3)}`);
+    } catch (e) {
+      log(`⚠️ AI 처리 실패 → 규칙 방식으로 대신 발행합니다: ${e.message}`);
+      briefing.aiError = String(e.message).slice(0, 200);
+      if (client.usage.calls) briefing.ai = { provider: client.provider, calls: client.usage.calls, estCostUSD: Number(client.usage.costUSD.toFixed(4)) };
+    }
+  }
 
   // 키워드 통계 (날짜별 등장 기사 수)
   const days = recent.map((f) => {
@@ -229,16 +263,22 @@ export async function buildBriefing({ log = console.log } = {}) {
       archiveMap.set(a.id, { ...light, oneLiner: light.oneLiner.slice(0, 90) });
     }
   }
+  // AI 결과가 있으면: 오늘 기사 중 AI가 걸러낸 기사는 보관함에서 빼고, 선정 기사는 AI 제목·요약으로 교체
+  if (aiResult) {
+    for (const e of aiResult.evaluated) if (!e.keep) archiveMap.delete(e.id);
+    for (const a of aiResult.articles) {
+      archiveMap.set(a.id, { id: a.id, category: a.category, title: a.title, originalTitle: a.originalTitle, source: a.source, url: a.url, publishedAt: a.publishedAt, lang: a.lang, coverage: a.coverage, keywords: a.keywords, total: a.total, oneLiner: (a.oneLiner || '').slice(0, 90), analysis: a.analysis });
+    }
+  }
 
-  const outDir = path.join(root, 'public/data/live');
   await mkdir(outDir, { recursive: true });
   await writeFile(path.join(outDir, 'briefing.json'), JSON.stringify(briefing));
   await writeFile(path.join(outDir, 'keyword-stats.json'), JSON.stringify({ schemaVersion: 1, mode: 'live', days }));
   await writeFile(path.join(outDir, 'archive.json'), JSON.stringify({ schemaVersion: 1, articles: [...archiveMap.values()] }));
 
-  log(`📰 ${latest.date} 브리핑: 관련 기사 ${today.length}건 중 TOP ${CATS.map((c) => `${c} ${categories[c].length}`).join(' · ')}`);
-  log(`🔥 핵심 이슈: ${issues.map((i) => i.title.slice(0, 30)).join(' / ')}`);
-  log(`🏷  핵심 키워드: ${keywords.join(', ')}`);
+  log(`📰 ${latest.date} 브리핑 (${briefing.analysis === 'ai' ? 'AI 편집' : '규칙 기반'}): 후보 ${today.length}건 중 TOP ${CATS.map((c) => `${c} ${briefing.categories[c].length}`).join(' · ')}`);
+  log(`🔥 핵심 이슈: ${briefing.issues.map((i) => i.title.slice(0, 30)).join(' / ')}`);
+  log(`🏷  핵심 키워드: ${briefing.keywords.join(', ')}`);
   log(`🗄  보관함 ${archiveMap.size}건 · 키워드 통계 ${days.length}일`);
   return briefing;
 }
