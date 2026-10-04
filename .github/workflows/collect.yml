@@ -1,9 +1,9 @@
-# 매일 뉴스 수집 (Phase 2)
+# 매일 뉴스 수집 → 오늘의 브리핑 생성 → 앱 반영
 # - 매일 오전 6시 30분(한국시간)에 자동 실행, Actions 탭에서 'Run workflow'로 직접 실행도 가능
 # - 결과는 data/collected/ 폴더에 날짜별로 저장됩니다
-# - Phase 3~4에서 AI 분석과 앱 데이터 갱신 단계가 이 작업에 추가됩니다
+# - 현재는 AI 없이 규칙 기반으로 TOP 5를 고릅니다 (AI 비용 0원)
 
-name: 뉴스 수집
+name: 뉴스 수집 및 앱 업데이트
 
 on:
   workflow_dispatch:
@@ -31,19 +31,34 @@ jobs:
       - name: 점검
         run: npm test
 
-      - name: 뉴스 수집
+      - name: 뉴스 수집 및 앱 업데이트
         run: npm run collect
         env:
           NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
           NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+
+      - name: 오늘의 브리핑 만들기 (AI 없이 규칙 기반)
+        run: npm run build:briefing
 
       - name: 결과 저장
         if: always()
         run: |
           git config user.name "mobibrief-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/collected
+          git add data/collected public/data/live
           if git diff --cached --quiet; then echo "변경 없음"; exit 0; fi
-          git commit -m "뉴스 수집 $(TZ=Asia/Seoul date +%F)"
+          git commit -m "뉴스 업데이트 $(TZ=Asia/Seoul date +%F)"
           git pull --rebase
           git push
+
+      - name: 앱에 반영 (GitHub Pages)
+        run: |
+          git fetch origin gh-pages --depth=1
+          git worktree add ../site origin/gh-pages
+          rsync -a --delete --exclude .git public/ ../site/
+          touch ../site/.nojekyll
+          cd ../site
+          git add -A
+          if git diff --cached --quiet; then echo "변경 없음"; exit 0; fi
+          git commit -m "앱 업데이트 $(TZ=Asia/Seoul date '+%F %H:%M')"
+          git push origin HEAD:gh-pages

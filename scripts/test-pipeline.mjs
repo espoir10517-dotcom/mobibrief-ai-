@@ -73,5 +73,13 @@ ok(saved.articles.length === out.articles.length && saved.date === '2026-10-04',
 ok(saved.articles.every((a) => a.title && a.source && a.url && a.publishedAt && a.category), '저장 항목: 제목·언론사·발행시각·링크·분야');
 ok(!JSON.stringify(saved).includes('NAVER_CLIENT'), '결과 파일에 API 키 없음');
 
+// 규칙 기반 분류: 영어 약어는 단어 단위로만 인식
+const { compileDictionary, matchTerms } = await import('../pipeline/rules.mjs');
+const dict = JSON.parse(await readFile(path.join(root, 'config/keywords.json'), 'utf8'));
+const cd = compileDictionary(dict);
+ok(matchTerms('New EV subsidy announced', cd).mobility.includes('전기차'), "영어 'EV' 단어 인식");
+ok(!matchTerms('Every driver should check', cd).mobility.includes('전기차'), "'Every' 안의 ev 는 인식하지 않음");
+ok(matchTerms('車보험 손해율 상승', cd).auto.includes('손해율'), '한국어 키워드 인식');
+
 console.log(fails ? `\n❌ ${fails}개 항목 실패\n` : '\n🎉 수집기 점검 통과\n');
 process.exit(fails ? 1 : 0);

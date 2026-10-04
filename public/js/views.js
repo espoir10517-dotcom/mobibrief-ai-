@@ -10,6 +10,18 @@ function catLabel(cat) {
   return c ? `<span class="cat-label cat-${cat}"><span class="cat-dot"></span>${esc(c.name)}</span>` : '';
 }
 
+const isRules = (a) => a?.analysis === 'rules';
+
+function outletList(sources = []) {
+  if (!sources.length) return '';
+  return `<ul class="outlets">${sources
+    .map(
+      (s) =>
+        `<li><a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener noreferrer"><span class="outlets__name">${esc(s.name)}</span><time datetime="${esc(s.publishedAt)}">${esc(timeAgo(s.publishedAt))}</time>${ICON.ext}</a></li>`,
+    )
+    .join('')}</ul>`;
+}
+
 function sampleTag(a) {
   return a.isSample ? '<span class="tag-sample">SAMPLE</span>' : '';
 }
@@ -29,11 +41,11 @@ export function card(a, { showRank = true, showCat = false } = {}) {
       ${showCat ? `<div>${catLabel(a.category)}</div>` : ''}
       <h3 class="card__title">${esc(a.title)}</h3>
       <div class="card__meta">${metaLine(a)}</div>
-      <p class="card__one">${esc(a.oneLiner)}</p>
+      ${a.oneLiner ? `<p class="card__one">${esc(a.oneLiner)}</p>` : ''}
     </a>
     <div class="card__foot">
       <div class="chips">${kws}</div>
-      <span class="score">AI 중요도 <b>${esc(a.total)}</b></span>
+      <span class="score">${isRules(a) ? '중요도' : 'AI 중요도'} <b>${esc(a.total)}</b></span>
     </div>
     <button class="card__star icon-btn ${saved ? 'is-on' : ''}" data-star="${esc(a.id)}" aria-pressed="${saved}" aria-label="${saved ? '저장 취소' : '저장하기'}">${ICON.star}</button>
   </article>`;
@@ -96,6 +108,7 @@ export function home(data) {
   const b = data.briefing;
   const gen = new Date(b.generatedAt);
   const total = CATEGORY_ORDER.reduce((n, c) => n + topOf(data, c).length, 0);
+  const rules = b.analysis === 'rules';
 
   const issues = (b.issues || [])
     .slice(0, 3)
@@ -132,13 +145,18 @@ export function home(data) {
         <div class="brand">MobiBrief <span class="brand__ai">AI</span></div>
         <a class="icon-btn" href="#/search" data-nav="/search" aria-label="뉴스 검색">${ICON.search}</a>
       </div>
-      <p class="masthead__tagline">AI가 골라주는 오늘의 핵심 뉴스</p>
+      <p class="masthead__tagline">${rules ? '매일 아침 자동으로 골라주는 오늘의 핵심 뉴스' : 'AI가 골라주는 오늘의 핵심 뉴스'}</p>
       <div class="masthead__date"><b>${esc(formatFullDate(new Date()))}</b><span>업데이트 ${esc(formatTime(gen))}${gen.toDateString() !== new Date().toDateString() ? ` (${esc(formatShortDate(gen))})` : ''}</span><span>핵심 뉴스 ${total}건</span></div>
     </header>
 
-    <section class="brief" aria-label="오늘의 AI 한 줄 브리핑">
-      <div class="eyebrow">✦ 오늘의 AI 한 줄 브리핑</div>
-      <p class="brief__text">${esc(b.headline)}</p>
+    <section class="brief" aria-label="${rules ? '오늘 가장 많이 보도된 뉴스' : '오늘의 AI 한 줄 브리핑'}">
+      <div class="eyebrow">${rules ? '✦ 오늘 가장 많이 보도된 뉴스' : '✦ 오늘의 AI 한 줄 브리핑'}</div>
+      ${
+        rules && b.issues?.[0]
+          ? `<a class="brief__text brief__link" href="#/issue/${esc(b.issues[0].id)}" data-nav="/issue/${esc(b.issues[0].id)}">${esc(b.headline)}</a>`
+          : `<p class="brief__text">${esc(b.headline)}</p>`
+      }
+      ${b.headlineNote ? `<p class="brief__note">${esc(b.headlineNote)}</p>` : ''}
       <div>
         <div class="brief__kw-label">오늘의 핵심 키워드</div>
         <div class="chips">${(b.keywords || []).map((k) => `<a class="chip chip--hash" href="#/search?q=${encodeURIComponent(k)}" data-nav="/search?q=${encodeURIComponent(k)}">${esc(k)}</a>`).join('')}</div>
@@ -158,7 +176,11 @@ export function home(data) {
       ${trendBlock(data.stats)}
     </section>
 
-    <p class="footer-note">요약과 분석은 수집된 기사 정보만을 근거로 AI가 작성합니다.<br>중요한 판단 전에는 반드시 원문을 확인하세요.</p>`,
+    <p class="footer-note">${
+      rules
+        ? '보도한 언론사 수·최신성·분야 키워드로 자동 선정한 뉴스입니다 (AI 미사용).<br>기사 내용은 반드시 원문에서 확인하세요.'
+        : '요약과 분석은 수집된 기사 정보만을 근거로 AI가 작성합니다.<br>중요한 판단 전에는 반드시 원문을 확인하세요.'
+    }</p>`,
     mount(root) {
       root.querySelectorAll('[data-jump]').forEach((el) =>
         el.addEventListener('click', (e) => {
@@ -222,6 +244,34 @@ export function article(data, id) {
   const li = (arr) => (arr || []).map((x) => `<li>${esc(x)}</li>`).join('');
   const url = safeUrl(a.url);
   const coverage = a.coverage > 1 ? `같은 이슈를 ${a.coverage}개 매체가 보도했습니다.` : '단일 매체 보도입니다. 다른 출처로 교차 확인이 필요할 수 있습니다.';
+  const rules = isRules(a);
+  const bodyHtml = rules
+    ? `
+    <section class="panel panel--fact" aria-label="기사 정보">
+      <div class="panel__label"><span class="eyebrow">📄 기사 정보 · FACT</span></div>
+      ${
+        a.description
+          ? `<div class="block"><h2>검색 결과 요약</h2><p>${esc(a.description)}</p><p class="panel__note">뉴스 검색 서비스가 제공한 요약문입니다.</p></div>`
+          : '<p class="panel__note">이 기사는 제목과 출처만 제공됩니다. 내용은 원문에서 확인하세요.</p>'
+      }
+      ${a.sources?.length > 1 ? `<div class="block"><h2>함께 보도한 언론사 ${a.sources.length}곳</h2>${outletList(a.sources)}</div>` : ''}
+    </section>
+    <p class="notice" style="margin-top:14px">AI 요약·분석은 아직 사용하지 않습니다. 보도한 언론사 수, 최신성, 분야 키워드 같은 규칙으로 자동 선정한 기사입니다.</p>`
+    : `
+    <section class="panel panel--fact" aria-label="기사 요약">
+      <div class="panel__label"><span class="eyebrow">📄 기사 요약 · FACT</span></div>
+      <p class="panel__note">원문 기사에 나온 내용만 정리했습니다.</p>
+      <div class="block"><h2>3줄 요약</h2><ol class="sum3">${li(a.summary3)}</ol></div>
+      <div class="block"><h2>핵심 내용</h2><ul class="points">${li(a.keyPoints)}</ul></div>
+    </section>
+
+    <section class="panel panel--ai" aria-label="AI 분석">
+      <div class="panel__label"><span class="eyebrow">✦ AI 분석 · 해석과 전망</span></div>
+      <p class="panel__note">AI의 해석입니다. 기사에서 확인되지 않은 사실은 포함하지 않도록 작성되며, 판단의 참고용으로만 활용하세요.</p>
+      <div class="block"><h2>왜 중요한가?</h2><p>${esc(a.whyImportant)}</p></div>
+      <div class="block"><h2>보험·모빌리티 관점</h2><p>${esc(a.perspective)}</p></div>
+      <div class="block"><h2>앞으로 볼 것</h2><ul class="points">${li(a.watchNext)}</ul></div>
+    </section>`;
 
   return {
     title: a.title,
@@ -239,29 +289,17 @@ export function article(data, id) {
 
     <div class="scorebox">
       <div class="scorebox__head">
-        <span class="eyebrow">AI 종합점수</span>
+        <span class="eyebrow">${rules ? '자동 중요도 점수' : 'AI 종합점수'}</span>
         <span class="scorebox__total">${esc(a.total)}<small>/100</small></span>
       </div>
       <details>
         <summary>평가 항목 자세히 보기 ▾</summary>
         <div class="bars">${bars}</div>
+        ${rules ? '<p class="panel__note" style="margin-top:10px">AI가 아닌 규칙으로 계산했습니다. 중요도=보도 언론사 수, 업무 연관도=분야 키워드, 최신성=발행 시각, 영향도=정책·출시·투자 등 변화 단어, 참신성=최근 3일 내 비슷한 기사 여부.</p>' : ''}
       </details>
     </div>
 
-    <section class="panel panel--fact" aria-label="기사 요약">
-      <div class="panel__label"><span class="eyebrow">📄 기사 요약 · FACT</span></div>
-      <p class="panel__note">원문 기사에 나온 내용만 정리했습니다.</p>
-      <div class="block"><h2>3줄 요약</h2><ol class="sum3">${li(a.summary3)}</ol></div>
-      <div class="block"><h2>핵심 내용</h2><ul class="points">${li(a.keyPoints)}</ul></div>
-    </section>
-
-    <section class="panel panel--ai" aria-label="AI 분석">
-      <div class="panel__label"><span class="eyebrow">✦ AI 분석 · 해석과 전망</span></div>
-      <p class="panel__note">AI의 해석입니다. 기사에서 확인되지 않은 사실은 포함하지 않도록 작성되며, 판단의 참고용으로만 활용하세요.</p>
-      <div class="block"><h2>왜 중요한가?</h2><p>${esc(a.whyImportant)}</p></div>
-      <div class="block"><h2>보험·모빌리티 관점</h2><p>${esc(a.perspective)}</p></div>
-      <div class="block"><h2>앞으로 볼 것</h2><ul class="points">${li(a.watchNext)}</ul></div>
-    </section>
+    ${bodyHtml}
 
     <section class="source-box" aria-label="원문">
       <a class="btn btn--primary" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${ICON.ext} 원문 보기 · ${esc(a.source)}</a>
@@ -289,11 +327,19 @@ export function issue(data, id) {
       <span class="eyebrow">ISSUE ${idx} / ${data.briefing.issues.length}</span>
       <h1 style="font-family:var(--font-serif)">${esc(it.title)}</h1>
     </header>
-    <section class="panel panel--ai" style="margin-top:0">
+    ${
+      data.briefing.analysis === 'rules'
+        ? `<section class="panel panel--fact" style="margin-top:0">
+      <div class="panel__label"><span class="eyebrow">📊 보도 현황 · 자동 집계</span></div>
+      <p>${esc(it.summary)}</p>
+      ${outletList(it.sources || [])}
+    </section>`
+        : `<section class="panel panel--ai" style="margin-top:0">
       <div class="panel__label"><span class="eyebrow">✦ AI 종합 분석</span></div>
       <p>${esc(it.summary)}</p>
       <p class="panel__note">아래 관련 기사 ${list.length}건을 근거로 작성되었습니다.</p>
-    </section>
+    </section>`
+    }
     <section class="section"><div class="section__head"><h2 class="section__title">관련 뉴스</h2></div>
       <div class="cards">${list.map((a) => card(a, { showRank: false, showCat: true })).join('')}</div>
     </section>`,
@@ -535,7 +581,7 @@ export function settings(data) {
       <div class="group">
         <div class="group__title">데이터</div>
         <div class="list">
-          <div class="row row--stack"><div class="row__text"><span class="row__label">뉴스 데이터</span><span class="row__desc">현재: <b>${data.mode === 'live' ? '실제 뉴스' : 'Demo (가상 데이터)'}</b>${data.mode === 'live' ? '' : ' · 실제 뉴스 수집이 연결되면 자동으로 전환됩니다'}</span></div>${seg('dataMode', [['auto', '자동'], ['demo', 'Demo 고정']])}</div>
+          <div class="row row--stack"><div class="row__text"><span class="row__label">뉴스 데이터</span><span class="row__desc">현재: <b>${data.mode === 'live' ? (data.briefing.analysis === 'rules' ? '실제 뉴스 (AI 없이 자동 선정)' : '실제 뉴스 (AI 분석)') : 'Demo (가상 데이터)'}</b>${data.mode === 'live' ? '' : ' · 실제 뉴스 수집이 연결되면 자동으로 전환됩니다'}</span></div>${seg('dataMode', [['auto', '자동'], ['demo', 'Demo 고정']])}</div>
           <div class="row"><div class="row__text"><span class="row__label">마지막 업데이트</span></div><span class="row__desc" style="font-family:var(--font-mono)">${esc(new Date(data.briefing.generatedAt).toLocaleString('ko-KR'))}</span></div>
         </div>
       </div>
@@ -558,7 +604,7 @@ export function settings(data) {
         <p class="notice">즐겨찾기·관심 키워드·설정은 이 휴대폰 안에만 저장되며 외부 서버나 AI로 전송되지 않습니다.</p>
       </div>
 
-      <p class="footer-note">MobiBrief AI · v0.1 (Phase 1)<br>공개 뉴스만 다루며, 기사 전문을 저장하지 않고 원문 링크로 연결합니다.</p>
+      <p class="footer-note">MobiBrief AI · v0.2<br>공개 뉴스만 다루며, 기사 전문을 저장하지 않고 원문 링크로 연결합니다.</p>
     </div>`,
     mount(root, ctx) {
       root.querySelectorAll('[data-set]').forEach((b) =>

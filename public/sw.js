@@ -3,7 +3,7 @@
 // - 뉴스 데이터(JSON): 네트워크 우선, 실패 시 마지막으로 받은 데이터
 // - Phase 5 에서 푸시 알림(push / notificationclick) 처리를 이 파일에 추가합니다.
 
-const VERSION = 'mobibrief-v0.1.0';
+const VERSION = 'mobibrief-v0.2.0';
 const SHELL = [
   './',
   './index.html',

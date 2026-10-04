@@ -13,6 +13,8 @@
     "build:demo": "node scripts/build-demo.mjs",
     "build:preview": "node scripts/build-preview.mjs",
     "test": "node scripts/smoke-test.mjs && node scripts/test-pipeline.mjs",
-    "test:pipeline": "node scripts/test-pipeline.mjs"
+    "test:pipeline": "node scripts/test-pipeline.mjs",
+    "build:briefing": "node pipeline/build-briefing.mjs",
+    "update": "node pipeline/collect.mjs && node pipeline/build-briefing.mjs"
   }
 }

@@ -160,7 +160,8 @@ document.addEventListener('click', async (e) => {
 
 async function shareArticle(a) {
   const prefix = a.isSample ? '[샘플·가상 기사] ' : '';
-  const text = `${prefix}${a.title}\n\nAI 한 줄 요약: ${a.oneLiner}`;
+  const summary = a.oneLiner ? `\n\n${a.analysis === 'rules' ? '요약' : 'AI 한 줄 요약'}: ${a.oneLiner}` : '';
+  const text = `${prefix}${a.title}${summary}`;
   const payload = { title: `${prefix}${a.title}`, text, url: a.url };
   try {
     if (navigator.share) {
