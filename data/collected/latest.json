@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-04",
-  "collectedAt": "2026-10-04T08:17:30.979Z",
+  "collectedAt": "2026-10-04T08:32:04.599Z",
   "stats": {
     "searches": 60,
     "google": {
       "ok": 39,
       "fail": 0,
-      "items": 611
+      "items": 610
     },
     "naver": {
       "ok": 0,
@@ -19,11 +19,11 @@
       "ok": 21,
       "fail": 0,
       "items": 1230,
-      "kept": 333
+      "kept": 332
     },
-    "raw": 944,
-    "fresh": 580,
-    "clusters": 438,
+    "raw": 942,
+    "fresh": 578,
+    "clusters": 434,
     "candidates": 160,
     "perCategory": {
       "auto": 40,
@@ -70,13 +70,6 @@
       "kept": 16
     },
     {
-      "name": "매일경제 경제",
-      "url": "https://www.mk.co.kr/rss/30100041/",
-      "ok": true,
-      "items": 50,
-      "kept": 19
-    },
-    {
       "name": "매일경제 IT",
       "url": "https://www.mk.co.kr/rss/50300009/",
       "ok": true,
@@ -91,29 +84,22 @@
       "kept": 5
     },
     {
+      "name": "매일경제 경제",
+      "url": "https://www.mk.co.kr/rss/30100041/",
+      "ok": true,
+      "items": 50,
+      "kept": 19
+    },
+    {
       "name": "조선일보 경제",
       "url": "https://www.chosun.com/arc/outboundfeeds/rss/category/economy/?outputType=xml",
       "ok": true,
       "items": 100,
-      "kept": 20
-    },
-    {
-      "name": "뉴시스 경제",
-      "url": "https://newsis.com/RSS/economy.xml",
-      "ok": true,
-      "items": 48,
-      "kept": 4
+      "kept": 21
     },
     {
       "name": "동아일보 경제",
       "url": "https://rss.donga.com/economy.xml",
-      "ok": true,
-      "items": 50,
-      "kept": 13
-    },
-    {
-      "name": "경향신문 경제",
-      "url": "https://www.khan.co.kr/rss/rssdata/economy_news.xml",
       "ok": true,
       "items": 50,
       "kept": 12
@@ -126,11 +112,25 @@
       "kept": 14
     },
     {
+      "name": "뉴시스 경제",
+      "url": "https://newsis.com/RSS/economy.xml",
+      "ok": true,
+      "items": 48,
+      "kept": 4
+    },
+    {
+      "name": "경향신문 경제",
+      "url": "https://www.khan.co.kr/rss/rssdata/economy_news.xml",
+      "ok": true,
+      "items": 50,
+      "kept": 12
+    },
+    {
       "name": "머니투데이",
       "url": "https://rss.mt.co.kr/mt_news.xml",
       "ok": true,
       "items": 100,
-      "kept": 9
+      "kept": 8
     },
     {
       "name": "한국보험신문",
@@ -154,20 +154,6 @@
       "kept": 13
     },
     {
-      "name": "오토데일리",
-      "url": "https://www.autodaily.co.kr/rss/allArticle.xml",
-      "ok": true,
-      "items": 50,
-      "kept": 21
-    },
-    {
-      "name": "모터그래프",
-      "url": "https://www.motorgraph.com/rss/allArticle.xml",
-      "ok": true,
-      "items": 50,
-      "kept": 9
-    },
-    {
       "name": "보험저널",
       "url": "https://www.insjournal.co.kr/rss/allArticle.xml",
       "ok": true,
@@ -175,11 +161,25 @@
       "kept": 15
     },
     {
+      "name": "오토데일리",
+      "url": "https://www.autodaily.co.kr/rss/allArticle.xml",
+      "ok": true,
+      "items": 50,
+      "kept": 21
+    },
+    {
       "name": "AI타임스",
       "url": "https://www.aitimes.com/rss/allArticle.xml",
       "ok": true,
       "items": 50,
       "kept": 36
+    },
+    {
+      "name": "모터그래프",
+      "url": "https://www.motorgraph.com/rss/allArticle.xml",
+      "ok": true,
+      "items": 50,
+      "kept": 9
     }
   ],
   "articles": [
@@ -471,6 +471,34 @@
     {
       "provider": "google-news",
       "lang": "ko",
+      "title": "LG에너지솔루션, 미국 인디고 테크놀로지와 MOU 체결",
+      "source": "다나와 자동차",
+      "sourceUrl": "https://mauto.danawa.com",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBEekd1WDF6QTlnWkszLXRnNEFkM1VoVnBVQlRfb3MzQWgzSUhPcmlOTlZ6R2l2ZV9INDJyQmRBVVdQUTY4ZXdMYTFNT2hxaFVGVEQ4VXhVOVlBRjAyc1J1Mk5QdU5FWi15UUJVM01pNTN2RXo5OVBHT2JyZw?oc=5",
+      "publishedAt": "2026-10-03T09:01:13.000Z",
+      "description": "",
+      "id": "81ab39cd431c",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "자동차보험",
+        "자동차보험료"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "다나와 자동차",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBEekd1WDF6QTlnWkszLXRnNEFkM1VoVnBVQlRfb3MzQWgzSUhPcmlOTlZ6R2l2ZV9INDJyQmRBVVdQUTY4ZXdMYTFNT2hxaFVGVEQ4VXhVOVlBRjAyc1J1Mk5QdU5FWi15UUJVM01pNTN2RXo5OVBHT2JyZw?oc=5",
+          "publishedAt": "2026-10-03T09:01:13.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-03T09:01:13.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
       "title": "[포커스] 신계약 줄어도 수익성 오른 현대해상, '무해지' 60%대 육박",
       "source": "오늘경제",
       "sourceUrl": "https://www.startuptoday.co.kr",
@@ -605,34 +633,6 @@
         }
       ],
       "firstSeenAt": "2026-10-03T06:40:28.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "ko",
-      "title": "르노코리아, 플래그십 전시장 ‘르노 동래’ 개소",
-      "source": "다나와 자동차",
-      "sourceUrl": "https://mauto.danawa.com",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBzQlUtamNaQ0IxZG0wTnhiZjdsWVRSWjNaVHdQbmw1Qnl6REsydXBBeEFCUEpGSW5lSk02di1qNXZuWmowNnRoSTBTVkZoVGFYZHRqTFVZMGRVUkQwaUlpT2ZUal9WMU91dl9wQ0xMS3N3d2s2WFYyTi1OUQ?oc=5",
-      "publishedAt": "2026-10-03T05:45:09.000Z",
-      "description": "",
-      "id": "f9db0e8bf72c",
-      "category": "auto",
-      "categoryHints": [
-        "auto"
-      ],
-      "matchedQueries": [
-        "자동차보험",
-        "자동차보험료"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "다나와 자동차",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBzQlUtamNaQ0IxZG0wTnhiZjdsWVRSWjNaVHdQbmw1Qnl6REsydXBBeEFCUEpGSW5lSk02di1qNXZuWmowNnRoSTBTVkZoVGFYZHRqTFVZMGRVUkQwaUlpT2ZUal9WMU91dl9wQ0xMS3N3d2s2WFYyTi1OUQ?oc=5",
-          "publishedAt": "2026-10-03T05:45:09.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T05:45:09.000Z"
     },
     {
       "provider": "google-news",
@@ -1296,6 +1296,40 @@
       "firstSeenAt": "2026-10-03T01:07:00.000Z"
     },
     {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "“美 테슬라같은 자율주행 우린 언제쯤”…국내 3사 서비스 비교해보니",
+      "source": "매일경제",
+      "sourceUrl": "https://www.mk.co.kr",
+      "url": "https://www.mk.co.kr/news/business/12167768",
+      "publishedAt": "2026-10-03T04:49:37.000Z",
+      "description": "SWM, 강남서 로보택시 서비스 A2Z, 자율주행 셔틀 상용화 라이드플럭스, 자율주행트럭 돌입국내 자율주행 기업들이 기술력을 고도화하면서 실제 승객과 화물을 운송하는 자율주행 서..",
+      "id": "7d978e6b7eb1",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "자율주행",
+        "로보택시",
+        "매일경제 기업"
+      ],
+      "coverage": 2,
+      "sources": [
+        {
+          "name": "매일경제",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBuTWx6LXk4cFZxekFlbVgtMUVZSHphU3hfbWhhMWlSd0xRZEVtOUx3RHViXzBZU3NHRzlrMHZodXUwOC1ueGJWdGVfQVhCcnByTHdTdGdn?oc=5",
+          "publishedAt": "2026-10-03T04:49:37.000Z"
+        },
+        {
+          "name": "다음뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFA3VFp1VW5kMmtuekRfUUk3TmZHVVR5bERjV0tFTVlfYV9sUEQ3QzVRa0o3cnRaTVptTUEzVkpqc0o2aXhEWHc?oc=5",
+          "publishedAt": "2026-10-03T04:51:02.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-03T04:49:37.000Z"
+    },
+    {
       "provider": "google-news",
       "lang": "en",
       "title": "Elon Musk say Tesla is working to prevent robotaxis from running over gray cats on the road",
@@ -1343,14 +1377,13 @@
         "mobility"
       ],
       "matchedQueries": [
-        "robotaxi",
         "autonomous driving",
         "Waymo"
       ],
       "coverage": 2,
       "sources": [
         {
-          "name": "mashable.com",
+          "name": "Mashable",
           "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPblpMZUNYcmctTEJOOUVKT21YdEFDZ2FnNDdqX1FHOVpFY283ODV1ZlNaLTBqRkMybDhfNjJ3UVlFVlpSa1pkYlpQdkNIdUQxSGdUZGo4ZG00SVZnRF9kMGRmUmVJLWpNRXpaTm9WR3BCZTBjYndOQ2g3QVpsaHRfenVyVUhhSVlFOEZqSEF3?oc=5",
           "publishedAt": "2026-10-04T03:45:00.000Z"
         },
@@ -1361,6 +1394,34 @@
         }
       ],
       "firstSeenAt": "2026-10-03T15:35:46.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "아일랜드, 주택용 태양광·배터리 지원 확대…국내는 마을 단위 실증",
+      "source": "AI타임스",
+      "sourceUrl": "https://www.aitimes.com",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215871",
+      "publishedAt": "2026-10-04T09:30:00.000Z",
+      "description": "아일랜드가 주택용 태양광 보조금 대상을 확대하고 가정용 배터리 지원을 신설한다. 태양광 설치비 지원에 저장장치를 더해 낮에 생산한 전기를 저녁에도 활용하도록 한다는 계획이다.아일랜드 기후에너지환경부는 지난달 29일(현지시간) 가정용 배터리에 600유로(약 92만원)를 지원하는 에너지 지원 확대 방안을 발표했다. 지속가능에너지청(SEAI)이 운영하는 관련…",
+      "id": "d17f5dc3e928",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility",
+        "ai"
+      ],
+      "matchedQueries": [
+        "AI타임스"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "AI타임스",
+          "url": "https://www.aitimes.com/news/articleView.html?idxno=215871",
+          "publishedAt": "2026-10-04T09:30:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-04T09:30:00.000Z"
     },
     {
       "provider": "rss",
@@ -1581,35 +1642,6 @@
     {
       "provider": "rss",
       "lang": "ko",
-      "title": "“美 테슬라같은 자율주행 우린 언제쯤”…국내 3사 서비스 비교해보니",
-      "source": "매일경제",
-      "sourceUrl": "https://www.mk.co.kr",
-      "url": "https://www.mk.co.kr/news/business/12167768",
-      "publishedAt": "2026-10-03T04:49:37.000Z",
-      "description": "SWM, 강남서 로보택시 서비스 A2Z, 자율주행 셔틀 상용화 라이드플럭스, 자율주행트럭 돌입국내 자율주행 기업들이 기술력을 고도화하면서 실제 승객과 화물을 운송하는 자율주행 서..",
-      "id": "7d978e6b7eb1",
-      "category": "mobility",
-      "categoryHints": [
-        "mobility"
-      ],
-      "matchedQueries": [
-        "로보택시",
-        "자율주행",
-        "매일경제 기업"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "매일경제",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBuTWx6LXk4cFZxekFlbVgtMUVZSHphU3hfbWhhMWlSd0xRZEVtOUx3RHViXzBZU3NHRzlrMHZodXUwOC1ueGJWdGVfQVhCcnByTHdTdGdn?oc=5",
-          "publishedAt": "2026-10-03T04:49:37.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T04:49:37.000Z"
-    },
-    {
-      "provider": "rss",
-      "lang": "ko",
       "title": "\"보조배터리 왜 기내에 들고 타야 할까\"…항공기 반입 기준은[짤막영상]",
       "source": "뉴시스",
       "sourceUrl": "https://www.newsis.com",
@@ -1703,8 +1735,8 @@
         "mobility"
       ],
       "matchedQueries": [
-        "로보택시",
-        "자율주행"
+        "자율주행",
+        "로보택시"
       ],
       "coverage": 1,
       "sources": [
@@ -1854,29 +1886,30 @@
     {
       "provider": "google-news",
       "lang": "ko",
-      "title": "전기차 라인을 에너지저장장치로 전환…배터리 시험대",
-      "source": "연합뉴스TV",
-      "sourceUrl": "https://www.yonhapnewstv.co.kr",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1MRDNEaElGMGtJS2ttejllQnpaMEhvRWxpYUJ2eUFXN3BZNnhLcTNnTEdIb3FEcHpIVHhZNnlXb0ZOQTVWVmlFNWRVdEo2Zl9mdGlCZ1V3Vm5CYVc1am1La3dRclNZNDQ?oc=5",
-      "publishedAt": "2026-10-04T01:22:00.000Z",
+      "title": "테슬라 무인택시, 밤길 주행이 최대 과제…머스크 “어두운 곳의 작은 동물까지 잡아내야”",
+      "source": "제민일보",
+      "sourceUrl": "https://www.jemin.com",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE13OUVaTTBQOUZ0UUJUcXN6WWs3R3ZFMlYxRnpvcWhjelFfZ0lLR293QXpab2ZjNnNKWWdpNlB6OVBIaTNOa2o2T1o2RHpBeHJzQmQyY3pucVN2MWRuaUNKMklFM1VDUkE?oc=5",
+      "publishedAt": "2026-10-04T01:15:10.000Z",
       "description": "",
-      "id": "c2dbcc451605",
+      "id": "54e80aeafd75",
       "category": "mobility",
       "categoryHints": [
         "mobility"
       ],
       "matchedQueries": [
-        "전기차 정책"
+        "자율주행",
+        "로보택시"
       ],
       "coverage": 1,
       "sources": [
         {
-          "name": "연합뉴스TV",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1MRDNEaElGMGtJS2ttejllQnpaMEhvRWxpYUJ2eUFXN3BZNnhLcTNnTEdIb3FEcHpIVHhZNnlXb0ZOQTVWVmlFNWRVdEo2Zl9mdGlCZ1V3Vm5CYVc1am1La3dRclNZNDQ?oc=5",
-          "publishedAt": "2026-10-04T01:22:00.000Z"
+          "name": "제민일보",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE13OUVaTTBQOUZ0UUJUcXN6WWs3R3ZFMlYxRnpvcWhjelFfZ0lLR293QXpab2ZjNnNKWWdpNlB6OVBIaTNOa2o2T1o2RHpBeHJzQmQyY3pucVN2MWRuaUNKMklFM1VDUkE?oc=5",
+          "publishedAt": "2026-10-04T01:15:10.000Z"
         }
       ],
-      "firstSeenAt": "2026-10-04T01:22:00.000Z"
+      "firstSeenAt": "2026-10-04T01:15:10.000Z"
     },
     {
       "provider": "google-news",
@@ -2109,8 +2142,8 @@
         "mobility"
       ],
       "matchedQueries": [
-        "로보택시",
-        "자율주행"
+        "자율주행",
+        "로보택시"
       ],
       "coverage": 1,
       "sources": [
@@ -2148,33 +2181,6 @@
         }
       ],
       "firstSeenAt": "2026-10-03T17:13:06.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "ko",
-      "title": "처음 누르는 버튼부터 익히는 도박 일본 만화",
-      "source": "Calgary Roughnecks",
-      "sourceUrl": "https://calgaryroughnecks.com",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPbEJPdXVNWmNDYS1CR3dVN3VvbUtndkFkQ20zRjVqa1N0WVZfTUFJVWtFeEFfQjltZ3JkWGNQTWo5aUhqR19sZmV1UDVuamNNcnF2SnpxQTdDM3lTVzlIeFhNZnhTRlJRVVVfNnpSdFZsYnlfNzRpbnkxcjZEMXM2LXlLSXpGWjE2UlFta2JBellfMGxuYnlYM3FYbW1uY1hQbUpLQk5KV0dCYjYyY2lMalBELXFmeGxZZEdMNm90VUU?oc=5",
-      "publishedAt": "2026-10-03T14:41:40.000Z",
-      "description": "",
-      "id": "abc4eeeb6159",
-      "category": "mobility",
-      "categoryHints": [
-        "mobility"
-      ],
-      "matchedQueries": [
-        "로보택시"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "Calgary Roughnecks",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPbEJPdXVNWmNDYS1CR3dVN3VvbUtndkFkQ20zRjVqa1N0WVZfTUFJVWtFeEFfQjltZ3JkWGNQTWo5aUhqR19sZmV1UDVuamNNcnF2SnpxQTdDM3lTVzlIeFhNZnhTRlJRVVVfNnpSdFZsYnlfNzRpbnkxcjZEMXM2LXlLSXpGWjE2UlFta2JBellfMGxuYnlYM3FYbW1uY1hQbUpLQk5KV0dCYjYyY2lMalBELXFmeGxZZEdMNm90VUU?oc=5",
-          "publishedAt": "2026-10-03T14:41:40.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T14:41:40.000Z"
     },
     {
       "provider": "google-news",
@@ -2723,6 +2729,33 @@
         }
       ],
       "firstSeenAt": "2026-10-04T08:12:27.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "금융사 연쇄 해킹서 동일 IP·수법 발견... AI 활용 정황도(종합)",
+      "source": "조선일보",
+      "sourceUrl": "https://www.chosun.com",
+      "url": "https://www.chosun.com/economy/stock-finance/2026/10/04/GY4DSZRZGBRDIY3GGA2WMMZXGU/",
+      "publishedAt": "2026-10-04T08:11:43.000Z",
+      "description": "금융사 7곳에서 발생한 해킹 사고에서 동일하거나 유사한 공격 정황이 4일 확인됐다. 특히 은행권 공격에 사용된 인터넷주소(IP)에서는 인공지능(AI) 기반 침투 도구의 흔적도 발견돼 수사에 나섰다. 이날 금융당국에 따르면 침해 사고가 확인된 곳은 신한·KB국민·하나·BNK부산은행과 예가람·웰컴저축은행, 현대캐피탈 등 7곳이다. 시중은행을 공격한 IP와 저",
+      "id": "a49c37ee525d",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "조선일보 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "조선일보",
+          "url": "https://www.chosun.com/economy/stock-finance/2026/10/04/GY4DSZRZGBRDIY3GGA2WMMZXGU/",
+          "publishedAt": "2026-10-04T08:11:43.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-04T08:11:43.000Z"
     },
     {
       "provider": "rss",
@@ -3406,6 +3439,33 @@
     {
       "provider": "google-news",
       "lang": "ko",
+      "title": "[긴급] 금융당국, 잇단 금융권 침해사고에 긴급회의…“대응 소홀로 재발하면 엄중 책임”",
+      "source": "데일리시큐",
+      "sourceUrl": "https://www.dailysecu.com",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE96dGEzNHZHZXZPbFoxTVUxRFVBY0t6UW5ESUU1RE15a18zZHR5VlowOXlsYzFqSEZ5T0hfNjdTdUg4cmYtZ0ZDdG9vV1l6X0FCM3VZWGNjTUY5cmh1SUJWTWNyNExqeGdnc0Vuaw?oc=5",
+      "publishedAt": "2026-10-04T08:17:01.000Z",
+      "description": "",
+      "id": "89140efc6bd8",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "금융당국 보험"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "데일리시큐",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE96dGEzNHZHZXZPbFoxTVUxRFVBY0t6UW5ESUU1RE15a18zZHR5VlowOXlsYzFqSEZ5T0hfNjdTdUg4cmYtZ0ZDdG9vV1l6X0FCM3VZWGNjTUY5cmh1SUJWTWNyNExqeGdnc0Vuaw?oc=5",
+          "publishedAt": "2026-10-04T08:17:01.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-04T08:17:01.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
       "title": "금융권 해킹 확산에 정부 긴급 대응…이억원 “유사 사고 땐 엄정 책임”",
       "source": "intn.co.kr",
       "sourceUrl": "https://www.intn.co.kr",
@@ -3487,60 +3547,6 @@
     {
       "provider": "google-news",
       "lang": "ko",
-      "title": "금융권 잇단 해킹에 당국 ‘외부접점’ 전수점검…“소홀하면 엄정 책임”",
-      "source": "아시아투데이",
-      "sourceUrl": "http://www.asiatoday.co.kr",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5jbmEwZVFmb2xSNVdieEoxUTVfMWM4aWJPYTFFWi1sVnhhMHplaEFvMDFuMXpsQ3VIOXNUN0wxQXQ5VlBLMnY5ZTNRTVVSbjhZdVhONlp3Y1BZaDFfQktna2U0UUx4OTRaeW9xVA?oc=5",
-      "publishedAt": "2026-10-04T05:36:47.000Z",
-      "description": "",
-      "id": "106bff486cdd",
-      "category": "insurance",
-      "categoryHints": [
-        "insurance"
-      ],
-      "matchedQueries": [
-        "금융당국 보험"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "아시아투데이",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5jbmEwZVFmb2xSNVdieEoxUTVfMWM4aWJPYTFFWi1sVnhhMHplaEFvMDFuMXpsQ3VIOXNUN0wxQXQ5VlBLMnY5ZTNRTVVSbjhZdVhONlp3Y1BZaDFfQktna2U0UUx4OTRaeW9xVA?oc=5",
-          "publishedAt": "2026-10-04T05:36:47.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-04T05:36:47.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "ko",
-      "title": "10월3일까지 이즈보험 업데이트 사항 및 안내 | FC 커뮤니티 - is보험",
-      "source": "이즈보험",
-      "sourceUrl": "https://dazabi.com",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1SZTRiQU56al81bGVCemRmb0VfbTNaUkVEMVF6TEFqUFNoeFNXNVlzLTdERzF6eUI3R0hpSDE2VnEyeFA1X25DMFNiM1hFa0ltVlg4RlY3MVQtdS1EUHB5bQ?oc=5",
-      "publishedAt": "2026-10-04T05:05:17.000Z",
-      "description": "",
-      "id": "367dedd73302",
-      "category": "insurance",
-      "categoryHints": [
-        "insurance"
-      ],
-      "matchedQueries": [
-        "생명보험"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "이즈보험",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1SZTRiQU56al81bGVCemRmb0VfbTNaUkVEMVF6TEFqUFNoeFNXNVlzLTdERzF6eUI3R0hpSDE2VnEyeFA1X25DMFNiM1hFa0ltVlg4RlY3MVQtdS1EUHB5bQ?oc=5",
-          "publishedAt": "2026-10-04T05:05:17.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-04T05:05:17.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "ko",
       "title": "LG유플러스, 구글과 손잡고 크리에이터에 생성형 AI 교육 … 콘텐츠 경쟁력 강화",
       "source": "워크투데이",
       "sourceUrl": "http://www.worktoday.co.kr",
@@ -3558,7 +3564,7 @@
       "coverage": 4,
       "sources": [
         {
-          "name": "businesspost.co.kr",
+          "name": "비즈니스포스트",
           "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5ySjBIWEVaWFVrMGpXQ1dxQUNaZFJmMlQ1LU9Gay1FNG9vVEJ2LWpMazlHZE5HMDdNcS1OcnBhRWZ3bXFxQUx3QlpKdmtMR2FYTFBjRmtVd2hMenRnNzhKS21taFZLOXl3c3VCc09hNUx2V2s?oc=5",
           "publishedAt": "2026-10-04T04:59:44.000Z"
         },
@@ -3658,6 +3664,43 @@
         }
       ],
       "firstSeenAt": "2026-10-02T22:00:35.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "“The time for trial and error is over”: OpenAI safety researcher quits, says company culture is broken",
+      "source": "calcalistech.com",
+      "sourceUrl": "https://www.calcalistech.com",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5qY0hScFdXVWhVMnFRbVZ2bFVUYzMyOEp0djRNMkZUQ2REbDZRM0RLUXN6ODZYSS1CWExYZmp0bzctUTZEMjFGU0tBLXJyNUszVGVuOEtSdW9BUWZrdHZZNFR2OHhJQjQ?oc=5",
+      "publishedAt": "2026-10-03T19:25:00.000Z",
+      "description": "",
+      "id": "e95b27428232",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "OpenAI"
+      ],
+      "coverage": 3,
+      "sources": [
+        {
+          "name": "Reuters",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPanBnbDA2SnluX0swT1ZpQ212VUNKRHh1T3d2Tmt0VDBieEtFVmh6blFFZEVCZlFLbjd4TnNYRnhacmtoSEdRTTFsbVdQN3RjRW5BTVd2NkJwdkdmcHNBa2czV3BZc19MYnJ1dkFvTkh1YXZQQkw1Zmtma2Y4Qm10RzlIUlhJS1ZSUHJnVVdTNlk1djVnNndqNXJBZ29hcEVJUmdkZTNWcklGWEF4TGtuZw?oc=5",
+          "publishedAt": "2026-10-03T19:27:17.000Z"
+        },
+        {
+          "name": "Latest news from Azerbaijan",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOTTRNc0dpbkNGYVJRUl9NdDM2YTdwdVdPSGxOZ2p5eTNkLVBlZjVBUlJqazlBRGQ0eHJUSWxEUFVSallmTUM0dXVibkxfOElELXRXb3RWRW16MXk1cV92dVphWldIWnJVeV94RjJXV1FBUXphMDdrSEU4MHlZTHNSbElPZzh4bHNUMGVPamloLTU?oc=5",
+          "publishedAt": "2026-10-04T07:45:45.000Z"
+        },
+        {
+          "name": "calcalistech.com",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5qY0hScFdXVWhVMnFRbVZ2bFVUYzMyOEp0djRNMkZUQ2REbDZRM0RLUXN6ODZYSS1CWExYZmp0bzctUTZEMjFGU0tBLXJyNUszVGVuOEtSdW9BUWZrdHZZNFR2OHhJQjQ?oc=5",
+          "publishedAt": "2026-10-03T19:25:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-03T19:25:00.000Z"
     },
     {
       "provider": "rss",
@@ -3763,61 +3806,34 @@
     {
       "provider": "google-news",
       "lang": "en",
-      "title": "“The time for trial and error is over”: OpenAI safety researcher quits, says company culture is broken",
-      "source": "calcalistech.com",
-      "sourceUrl": "https://www.calcalistech.com",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5qY0hScFdXVWhVMnFRbVZ2bFVUYzMyOEp0djRNMkZUQ2REbDZRM0RLUXN6ODZYSS1CWExYZmp0bzctUTZEMjFGU0tBLXJyNUszVGVuOEtSdW9BUWZrdHZZNFR2OHhJQjQ?oc=5",
-      "publishedAt": "2026-10-03T19:25:00.000Z",
+      "title": "Anthropic to invest $100 million to train AI engineer talent",
+      "source": "CNBC",
+      "sourceUrl": "https://www.cnbc.com",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNc0VyVzRrRmNEN2NIRVpSUlRjLW41RDlOdFlzOUtDV0tvQ1ZjVGJOUXMwaFVaZGNWbXJMaVVhODdzcUZKY0dYdk9PQm9xOUQ5LW9hVFdwZDlUcmNSWkhsUG1FcmxuSS1zcmltN3Vnc0ZPRnBCNU52cW0yUWNreTY0eGVrZDZVRVhiczNjR1I2emc1dHVxOTJGa3l4alfSAaIBQVVfeXFMTWRBZndla2REclF0bUR3dTdZcWs2ZEdqLXdwNHEya1BSeXRNZXVEUWE1VkdCWUFQcFJWSk5Ec1U0QnF6VEhDQTlQRlUzTDhCc3ZONHE1SEVOMmVtTFNOM2laLXRKQnRWRkhjQk5ObzJSeERNZFBsQ1pjaEpiUFQzbk5Ga202WUVDMmNZZVhFRWNkRGx6aDRYMXY0b2c2QzFFSFpn?oc=5",
+      "publishedAt": "2026-10-02T21:03:06.000Z",
       "description": "",
-      "id": "e95b27428232",
+      "id": "c097d9a855ff",
       "category": "ai",
       "categoryHints": [
         "ai"
       ],
       "matchedQueries": [
-        "OpenAI"
+        "Anthropic Claude"
       ],
       "coverage": 2,
       "sources": [
         {
-          "name": "Reuters",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPanBnbDA2SnluX0swT1ZpQ212VUNKRHh1T3d2Tmt0VDBieEtFVmh6blFFZEVCZlFLbjd4TnNYRnhacmtoSEdRTTFsbVdQN3RjRW5BTVd2NkJwdkdmcHNBa2czV3BZc19MYnJ1dkFvTkh1YXZQQkw1Zmtma2Y4Qm10RzlIUlhJS1ZSUHJnVVdTNlk1djVnNndqNXJBZ29hcEVJUmdkZTNWcklGWEF4TGtuZw?oc=5",
-          "publishedAt": "2026-10-03T19:27:17.000Z"
+          "name": "CNBC",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNc0VyVzRrRmNEN2NIRVpSUlRjLW41RDlOdFlzOUtDV0tvQ1ZjVGJOUXMwaFVaZGNWbXJMaVVhODdzcUZKY0dYdk9PQm9xOUQ5LW9hVFdwZDlUcmNSWkhsUG1FcmxuSS1zcmltN3Vnc0ZPRnBCNU52cW0yUWNreTY0eGVrZDZVRVhiczNjR1I2emc1dHVxOTJGa3l4alfSAaIBQVVfeXFMTWRBZndla2REclF0bUR3dTdZcWs2ZEdqLXdwNHEya1BSeXRNZXVEUWE1VkdCWUFQcFJWSk5Ec1U0QnF6VEhDQTlQRlUzTDhCc3ZONHE1SEVOMmVtTFNOM2laLXRKQnRWRkhjQk5ObzJSeERNZFBsQ1pjaEpiUFQzbk5Ga202WUVDMmNZZVhFRWNkRGx6aDRYMXY0b2c2QzFFSFpn?oc=5",
+          "publishedAt": "2026-10-02T21:03:06.000Z"
         },
         {
-          "name": "calcalistech.com",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5qY0hScFdXVWhVMnFRbVZ2bFVUYzMyOEp0djRNMkZUQ2REbDZRM0RLUXN6ODZYSS1CWExYZmp0bzctUTZEMjFGU0tBLXJyNUszVGVuOEtSdW9BUWZrdHZZNFR2OHhJQjQ?oc=5",
-          "publishedAt": "2026-10-03T19:25:00.000Z"
+          "name": "StoryBoard 18",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQQng4bmlyN0MwWUZmTWtxbGNObXZWWG1wbjBDUVFwZ093OHVMTmd0eF9vZUNOVDN6aVF0TXNJd0J4dUduMHJPSXFyRmFlRkVJLUVWT2c0ZDd0OFlWRGpSTDZoQUxMOFRucGJNTVFJbGpMeW1EdGVpNDdyZFUyYk1NdFQ3R0hDc2JiVC1Vb1h3a1g0ZXJ2WXZSb0V6WWRpUUlBMnFycjVPUlJ4YnFSd3EwUUg1OGdTYjc4T1N3Y0ZXbnZYUdIBwgFBVV95cUxQQng4bmlyN0MwWUZmTWtxbGNObXZWWG1wbjBDUVFwZ093OHVMTmd0eF9vZUNOVDN6aVF0TXNJd0J4dUduMHJPSXFyRmFlRkVJLUVWT2c0ZDd0OFlWRGpSTDZoQUxMOFRucGJNTVFJbGpMeW1EdGVpNDdyZFUyYk1NdFQ3R0hDc2JiVC1Vb1h3a1g0ZXJ2WXZSb0V6WWRpUUlBMnFycjVPUlJ4YnFSd3EwUUg1OGdTYjc4T1N3Y0ZXbnZYUQ?oc=5",
+          "publishedAt": "2026-10-04T08:16:01.000Z"
         }
       ],
-      "firstSeenAt": "2026-10-03T19:25:00.000Z"
-    },
-    {
-      "provider": "rss",
-      "lang": "ko",
-      "title": "태양광 발전량·전력가격 예측하는 AI…일본 ESS 충·방전 자동화",
-      "source": "AI타임스",
-      "sourceUrl": "https://www.aitimes.com",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=215870",
-      "publishedAt": "2026-10-04T09:10:00.000Z",
-      "description": "일본의 기존 태양광발전소에 AI로 운영하는 에너지저장장치(ESS)가 추가됐다. 출력제어로 활용하지 못하던 전기를 저장하고, 발전량과 전력가격 예측을 바탕으로 공급 시점을 조절하는 방식이다. 태양광 설비를 늘리는 대신 저장장치와 운영 기술로 생산한 전력의 활용도를 높이려는 사업이다.도쿄센추리는 1일(현지시간) 그룹사 교세라TCL솔라가 운영하는 후쿠오카현 …",
-      "id": "1d546333ffdb",
-      "category": "ai",
-      "categoryHints": [
-        "ai"
-      ],
-      "matchedQueries": [
-        "AI타임스"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "AI타임스",
-          "url": "https://www.aitimes.com/news/articleView.html?idxno=215870",
-          "publishedAt": "2026-10-04T09:10:00.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-04T09:10:00.000Z"
+      "firstSeenAt": "2026-10-02T21:03:06.000Z"
     },
     {
       "provider": "rss",
@@ -4563,6 +4579,33 @@
     {
       "provider": "google-news",
       "lang": "ko",
+      "title": "서울연구원, AI·로봇 도시기술 협력 세미나 코엑스서 개최",
+      "source": "gukjenews.com",
+      "sourceUrl": "https://www.gukjenews.com",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9vZnNzYU9xRUt4MXVaWGFsNFJyeWxnT0Q2cmJOYjRwcGlkTHJSUG9RN2Yta1YtUWt0ckJNUGEzMDNudkdhYVdhd0tDenotcUpBTUxRdW5SWE1zdlpNZGZyTWZmUGF2ejNkMjJPMDdR?oc=5",
+      "publishedAt": "2026-10-04T08:16:41.000Z",
+      "description": "",
+      "id": "701f2ec75b62",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "AI 로봇"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "gukjenews.com",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9vZnNzYU9xRUt4MXVaWGFsNFJyeWxnT0Q2cmJOYjRwcGlkTHJSUG9RN2Yta1YtUWt0ckJNUGEzMDNudkdhYVdhd0tDenotcUpBTUxRdW5SWE1zdlpNZGZyTWZmUGF2ejNkMjJPMDdR?oc=5",
+          "publishedAt": "2026-10-04T08:16:41.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-04T08:16:41.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
       "title": "평택시, 생성형 AI 영상 제작 교육…농업인 디지털 역량 강화",
       "source": "뉴스핌",
       "sourceUrl": "https://www.newspim.com",
@@ -4667,33 +4710,6 @@
         }
       ],
       "firstSeenAt": "2026-10-04T07:08:08.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "ko",
-      "title": "사람에게 배우는 로봇…中 도시들 휴머노이드 속도전",
-      "source": "연합뉴스TV",
-      "sourceUrl": "https://www.yonhapnewstv.co.kr",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE8yZE5qbHZ3Y1J3dlRUdjRDemxhMS1hTTI1dmxIaGVIbkllcWI5WnB1SG5jUnFtNmhQTGp4ZHNPeWJNNmswMncxUWpkbUEzcUNNdllJcXpqVXdNSEFRUmJFWEgwNHB6d1k?oc=5",
-      "publishedAt": "2026-10-04T07:07:00.000Z",
-      "description": "",
-      "id": "187d35c50a16",
-      "category": "ai",
-      "categoryHints": [
-        "ai"
-      ],
-      "matchedQueries": [
-        "AI 로봇"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "연합뉴스TV",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE8yZE5qbHZ3Y1J3dlRUdjRDemxhMS1hTTI1dmxIaGVIbkllcWI5WnB1SG5jUnFtNmhQTGp4ZHNPeWJNNmswMncxUWpkbUEzcUNNdllJcXpqVXdNSEFRUmJFWEgwNHB6d1k?oc=5",
-          "publishedAt": "2026-10-04T07:07:00.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-04T07:07:00.000Z"
     }
   ]
 }
