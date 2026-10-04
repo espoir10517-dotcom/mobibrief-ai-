@@ -34,13 +34,14 @@ function metaLine(a) {
   return `${esc(a.source)} · <time datetime="${esc(a.publishedAt)}">${esc(timeAgo(a.publishedAt))}</time> ${lang} ${sampleTag(a)}`;
 }
 
-export function card(a, { showRank = true, showCat = false } = {}) {
+export function card(a, { showRank = true, showCat = false, suffix = '' } = {}) {
   const saved = store.isSaved(a.id);
+  const href = `/article/${esc(a.id)}${esc(suffix)}`;
   const kws = (a.keywords || []).slice(0, 3).map((k) => `<span class="chip chip--sm chip--hash">${esc(k)}</span>`).join('');
   return `
   <article class="card cat-${esc(a.category)} ${showRank && a.rank ? '' : 'card--norank'}">
-    ${showRank && a.rank ? `<a class="card__rank" href="#/article/${esc(a.id)}" data-nav="/article/${esc(a.id)}" aria-hidden="true" tabindex="-1">${a.rank}</a>` : ''}
-    <a href="#/article/${esc(a.id)}" data-nav="/article/${esc(a.id)}" style="display:grid;gap:4px;min-width:0">
+    ${showRank && a.rank ? `<a class="card__rank" href="#${href}" data-nav="${href}" aria-hidden="true" tabindex="-1">${a.rank}</a>` : ''}
+    <a href="#${href}" data-nav="${href}" style="display:grid;gap:4px;min-width:0">
       ${showCat ? `<div>${catLabel(a.category)}</div>` : ''}
       <h3 class="card__title">${esc(a.title)}</h3>
       <div class="card__meta">${metaLine(a)}</div>
@@ -124,6 +125,61 @@ function nextMonday(from) {
   return d;
 }
 
+
+// ───────── 브리핑 공통 조각 (이번 주 홈 · 지난 브리핑 화면이 같이 사용) ─────────
+const FIRST = 5; // 5위까지 먼저 보여주고 나머지는 펼치기
+
+function issuesHtml(b, suffix = '') {
+  return (b.issues || [])
+    .slice(0, 3)
+    .map((it, i) => {
+      const href = `/issue/${esc(it.id)}${esc(suffix)}`;
+      return `
+      <a class="issue" href="#${href}" data-nav="${href}">
+        <span class="issue__num">${i + 1}</span>
+        <span><span class="issue__title">${esc(it.title)}</span><span class="issue__meta" style="display:block">관련 뉴스 ${it.articleIds.length}건</span></span>
+        ${ICON.chev}
+      </a>`;
+    })
+    .join('');
+}
+
+function sectionsHtml(data, P, { suffix = '', more = true } = {}) {
+  return CATEGORY_ORDER.map((c) => {
+    const list = topOf(data, c);
+    return `
+    <section class="section cat-section cat-${c}" id="sec-${c}">
+      <div class="section__head">
+        <h2 class="section__title">${CATEGORIES[c].emoji} ${esc(CATEGORIES[c].name)} <small>TOP ${list.length}</small></h2>
+        ${more ? `<a class="section__more" href="#/category/${c}" data-nav="/category/${c}">전체보기</a>` : ''}
+      </div>
+      <div class="cards">${list.slice(0, FIRST).map((a) => card(a, { suffix })).join('') || empty('📭', `${P} 선정된 뉴스가 없습니다`, '')}</div>
+      ${
+        list.length > FIRST
+          ? `<div class="cards" id="more-${c}" hidden>${list.slice(FIRST).map((a) => card(a, { suffix })).join('')}</div>
+      <button class="btn more-btn" type="button" data-more="${c}" aria-expanded="false" aria-controls="more-${c}">${FIRST + 1}~${list.length}위 더 보기</button>`
+          : ''
+      }
+    </section>`;
+  }).join('');
+}
+
+function mountMore(root) {
+  root.querySelectorAll('[data-more]').forEach((btn) =>
+    btn.addEventListener('click', () => {
+      const box = root.querySelector(`#more-${btn.dataset.more}`);
+      const open = box.hidden;
+      box.hidden = !open;
+      btn.setAttribute('aria-expanded', String(open));
+      if (open) btn.textContent = '접기';
+      else {
+        btn.textContent = `${FIRST + 1}~${FIRST + box.children.length}위 더 보기`;
+        root.querySelector(`#sec-${btn.dataset.more}`)?.scrollIntoView({ block: 'start' });
+      }
+    }),
+  );
+}
+
 // ───────────────── HOME ─────────────────
 
 export function home(data) {
@@ -132,41 +188,14 @@ export function home(data) {
   const total = CATEGORY_ORDER.reduce((n, c) => n + topOf(data, c).length, 0);
   const rules = b.analysis === 'rules';
   const { weekly, P, Pof } = periodOf(b);
-  const FIRST = 5; // 홈에서는 5위까지 먼저 보여주고 나머지는 펼치기
 
-  const issues = (b.issues || [])
-    .slice(0, 3)
-    .map(
-      (it, i) => `
-      <a class="issue" href="#/issue/${esc(it.id)}" data-nav="/issue/${esc(it.id)}">
-        <span class="issue__num">${i + 1}</span>
-        <span><span class="issue__title">${esc(it.title)}</span><span class="issue__meta" style="display:block">관련 뉴스 ${it.articleIds.length}건</span></span>
-        ${ICON.chev}
-      </a>`,
-    )
-    .join('');
+  const issues = issuesHtml(b);
 
   const jump = CATEGORY_ORDER.map(
     (c) => `<a class="chip cat-${c}" href="#sec-${c}" data-jump="${c}"><span class="cat-dot"></span>${esc(CATEGORIES[c].name)}</a>`,
   ).join('');
 
-  const sections = CATEGORY_ORDER.map((c) => {
-    const list = topOf(data, c);
-    return `
-    <section class="section cat-section cat-${c}" id="sec-${c}">
-      <div class="section__head">
-        <h2 class="section__title">${CATEGORIES[c].emoji} ${esc(CATEGORIES[c].name)} <small>TOP ${list.length}</small></h2>
-        <a class="section__more" href="#/category/${c}" data-nav="/category/${c}">전체보기</a>
-      </div>
-      <div class="cards">${list.slice(0, FIRST).map((a) => card(a)).join('') || empty('📭', `${P} 선정된 뉴스가 없습니다`, '')}</div>
-      ${
-        list.length > FIRST
-          ? `<div class="cards" id="more-${c}" hidden>${list.slice(FIRST).map((a) => card(a)).join('')}</div>
-      <button class="btn more-btn" type="button" data-more="${c}" aria-expanded="false" aria-controls="more-${c}">${FIRST + 1}~${list.length}위 더 보기</button>`
-          : ''
-      }
-    </section>`;
-  }).join('');
+  const sections = sectionsHtml(data, P);
 
   return {
     html: `
@@ -186,7 +215,7 @@ export function home(data) {
       }</p>
       ${
         weekly && b.periodStart
-          ? `<div class="masthead__date"><b>${esc(shortDate(b.periodStart))} ~ ${esc(shortDate(b.periodEnd))} 주간 브리핑</b><span>업데이트 ${esc(formatShortDate(gen))} ${esc(formatTime(gen))}</span><span>다음 ${esc(formatShortDate(nextMonday(new Date(Math.max(Date.now(), gen.getTime())))))}</span><span>핵심 뉴스 ${total}건</span></div>`
+          ? `<div class="masthead__date"><b>${esc(shortDate(b.periodStart))} ~ ${esc(shortDate(b.periodEnd))} 주간 브리핑</b><span>업데이트 ${esc(formatShortDate(gen))} ${esc(formatTime(gen))}</span><span>다음 ${esc(formatShortDate(nextMonday(new Date(Math.max(Date.now(), gen.getTime())))))}</span><span>핵심 뉴스 ${total}건</span><a class="masthead__past" href="#/weeks" data-nav="/weeks">지난 브리핑 ›</a></div>`
           : `<div class="masthead__date"><b>${esc(formatFullDate(new Date()))}</b><span>업데이트 ${esc(formatTime(gen))}${gen.toDateString() !== new Date().toDateString() ? ` (${esc(formatShortDate(gen))})` : ''}</span><span>핵심 뉴스 ${total}건</span></div>`
       }
       ${
@@ -223,26 +252,19 @@ export function home(data) {
       ${trendBlock(data.stats)}
     </section>
 
+    ${
+      weekly
+        ? `<section class="section"><a class="row-link" href="#/weeks" data-nav="/weeks"><span><b>📚 지난 주간 브리핑</b><small>지난주들의 TOP 10·핵심 이슈를 다시 볼 수 있어요</small></span>${ICON.chev}</a></section>`
+        : ''
+    }
+
     <p class="footer-note">${
       rules
         ? '여러 언론사 보도·최신성·업무 연관도를 기준으로 선정한 뉴스입니다.<br>기사 내용은 반드시 원문에서 확인하세요.'
         : '요약과 분석은 수집된 기사 정보만을 근거로 AI가 작성합니다.<br>중요한 판단 전에는 반드시 원문을 확인하세요.'
     }</p>`,
     mount(root) {
-      root.querySelectorAll('[data-more]').forEach((btn) =>
-        btn.addEventListener('click', () => {
-          const box = root.querySelector(`#more-${btn.dataset.more}`);
-          const open = box.hidden;
-          box.hidden = !open;
-          btn.setAttribute('aria-expanded', String(open));
-          btn.textContent = open ? '접기' : btn.textContent.replace('접기', '');
-          if (!open) {
-            const n = box.children.length;
-            btn.textContent = `${FIRST + 1}~${FIRST + n}위 더 보기`;
-            root.querySelector(`#sec-${btn.dataset.more}`)?.scrollIntoView({ block: 'start' });
-          }
-        }),
-      );
+      mountMore(root);
       root.querySelectorAll('[data-jump]').forEach((el) =>
         el.addEventListener('click', (e) => {
           e.preventDefault();
@@ -381,10 +403,12 @@ export function issue(data, id) {
   if (!it) return { html: topbar('이슈') + empty('🔎', '이슈를 찾을 수 없습니다', '') };
   const idx = data.briefing.issues.indexOf(it) + 1;
   const list = it.articleIds.map((x) => data.byId.get(x)).filter(Boolean);
+  const suffix = data.week ? `?w=${data.week}` : '';
+  const label = data.week ? `${weekRange(data.briefing)} 꼭 알아야 할 3가지` : `${periodOf(data.briefing).P} 꼭 알아야 할 3가지`;
   return {
     title: it.title,
     html: `
-    ${topbar(`${periodOf(data.briefing).P} 꼭 알아야 할 3가지`)}
+    ${topbar(label)}
     <header class="page-head">
       <span class="eyebrow">ISSUE ${idx} / ${data.briefing.issues.length}</span>
       <h1 style="font-family:var(--font-serif)">${esc(it.title)}</h1>
@@ -403,8 +427,100 @@ export function issue(data, id) {
     </section>`
     }
     <section class="section"><div class="section__head"><h2 class="section__title">관련 뉴스</h2></div>
-      <div class="cards">${list.map((a) => card(a, { showRank: false, showCat: true })).join('')}</div>
+      <div class="cards">${list.map((a) => card(a, { showRank: false, showCat: true, suffix })).join('')}</div>
     </section>`,
+  };
+}
+
+
+// ───────────────── 지난 주간 브리핑 ─────────────────
+
+function weekRange(b) {
+  return `${shortDate(b.periodStart || b.date)} ~ ${shortDate(b.periodEnd || b.date)}`;
+}
+
+export function loading(title) {
+  return { title, html: `${topbar(title)}<div class="empty"><div class="spinner" aria-hidden="true"></div><p>불러오는 중…</p></div>` };
+}
+
+export function loadFailed(title) {
+  return { title, html: topbar(title) + empty('📡', '불러오지 못했습니다', '인터넷 연결을 확인한 뒤 다시 열어 주세요.') };
+}
+
+export function weeks(data, list) {
+  const cur = data.briefing?.date;
+  const items = list
+    .map((w) => {
+      const isCur = w.date === cur;
+      const href = isCur ? '/home' : `/week/${w.date}`;
+      const n = Object.values(w.counts || {}).reduce((x, y) => x + y, 0);
+      return `
+      <a class="week-item" href="#${href}" data-nav="${href}">
+        <div class="week-item__head">
+          <b>${esc(shortDate(w.periodStart))} ~ ${esc(shortDate(w.periodEnd))}</b>
+          ${isCur ? '<span class="week-item__now">이번 주</span>' : ''}
+          <span class="week-item__meta">${w.analysis === 'ai' ? 'AI 편집' : '자동 선정'} · ${n}건</span>
+        </div>
+        ${w.headline ? `<p class="week-item__headline">${esc(w.headline)}</p>` : ''}
+        ${w.issues?.length ? `<ol class="week-item__issues">${w.issues.map((t) => `<li>${esc(t)}</li>`).join('')}</ol>` : ''}
+      </a>`;
+    })
+    .join('');
+  const onlyCurrent = list.length <= 1;
+  return {
+    title: '지난 브리핑',
+    html: `
+    ${topbar('지난 주간 브리핑')}
+    <header class="page-head">
+      <span class="eyebrow">ARCHIVE</span>
+      <h1>📚 지난 주간 브리핑</h1>
+      <p>매주 월요일 발행된 브리핑을 최근 1년치까지 다시 볼 수 있어요.</p>
+    </header>
+    <div class="weeks">${items || ''}</div>
+    ${onlyCurrent ? '<p class="footer-note">지난 브리핑은 다음 주 월요일부터 여기에 하나씩 쌓여요.</p>' : ''}`,
+  };
+}
+
+export function week(wdata) {
+  const b = wdata.briefing;
+  const gen = new Date(b.generatedAt);
+  const rules = b.analysis === 'rules';
+  const suffix = `?w=${wdata.week}`;
+  const total = CATEGORY_ORDER.reduce((n, c) => n + topOf(wdata, c).length, 0);
+  return {
+    title: `${weekRange(b)} 브리핑`,
+    html: `
+    ${topbar('지난 주간 브리핑')}
+    <header class="page-head">
+      <span class="eyebrow">WEEKLY BRIEFING</span>
+      <h1>${esc(weekRange(b))} 주간 브리핑</h1>
+      <p>발행 ${esc(formatShortDate(gen))} · ${rules ? '자동 선정' : 'AI 편집'} · 핵심 뉴스 ${total}건</p>
+    </header>
+
+    <section class="brief">
+      <div class="eyebrow">${rules ? '✦ 가장 많이 보도된 뉴스' : '✦ AI 한 줄 브리핑'}</div>
+      <p class="brief__text">${esc(b.headline || '')}</p>
+      ${
+        b.keywords?.length
+          ? `<div><div class="brief__kw-label">핵심 키워드</div><div class="chips">${b.keywords.map((k) => `<a class="chip chip--hash" href="#/search?q=${encodeURIComponent(k)}" data-nav="/search?q=${encodeURIComponent(k)}">${esc(k)}</a>`).join('')}</div></div>`
+          : ''
+      }
+    </section>
+
+    ${
+      b.issues?.length
+        ? `<section class="section"><div class="section__head"><h2 class="section__title">🔥 꼭 알아야 할 3가지</h2></div><div class="issues">${issuesHtml(b, suffix)}</div></section>`
+        : ''
+    }
+
+    ${sectionsHtml(wdata, '이 주에', { suffix, more: false })}
+
+    <p class="footer-note">${
+      rules ? '여러 언론사 보도·최신성·업무 연관도를 기준으로 선정한 뉴스입니다.' : '요약과 분석은 수집된 기사 정보만을 근거로 AI가 작성했습니다.'
+    }<br>지난 기사는 원문 링크가 바뀌었을 수 있어요.</p>`,
+    mount(root) {
+      mountMore(root);
+    },
   };
 }
 
@@ -686,7 +802,7 @@ ${store.isAdmin() ? `          <div class="row"><div class="row__text"><span cla
       </form>`
       }
 
-      <p class="footer-note"><span id="version-tap">MobiBrief AI · v0.5</span><br>공개 뉴스만 다루며, 기사 전문을 저장하지 않고 원문 링크로 연결합니다.</p>
+      <p class="footer-note"><span id="version-tap">MobiBrief AI · v0.6</span><br>공개 뉴스만 다루며, 기사 전문을 저장하지 않고 원문 링크로 연결합니다.</p>
     </div>`,
     mount(root, ctx) {
       root.querySelectorAll('[data-set]').forEach((b) =>
