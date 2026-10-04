@@ -1,4 +1,4 @@
-import { loadData } from './data.js';
+import { loadData, loadWeeks, weeksCached, loadWeek, weekCached, findArticle } from './data.js';
 import * as views from './views.js';
 import * as store from './store.js';
 import { toast } from './util.js';
@@ -59,18 +59,54 @@ function applyTheme() {
   document.querySelectorAll('meta[name="theme-color"]').forEach((m) => m.setAttribute('content', bg));
 }
 
+// 지난 브리핑처럼 따로 받아야 하는 데이터: 먼저 '불러오는 중' 화면 → 받은 뒤 다시 그리기
+function lazy(tab, title, load) {
+  const pathAtStart = currentPath();
+  return {
+    tab,
+    view: {
+      ...views.loading(title),
+      mount(root) {
+        load()
+          .then(() => {
+            if (currentPath() === pathAtStart) render();
+          })
+          .catch(() => {
+            if (currentPath() === pathAtStart) root.innerHTML = views.loadFailed(title).html;
+          });
+      },
+    },
+  };
+}
+
 function route(path) {
   const [p, qs = ''] = path.split('?');
   const params = new URLSearchParams(qs);
   const seg = p.split('/').filter(Boolean);
   const [name, arg] = seg;
+  // ?w=날짜 : 지난 주 브리핑 안의 기사·이슈
+  const w = params.get('w');
+  const scoped = w && w !== data.briefing.date ? weekCached(w) : data;
+  if (w && w !== data.briefing.date && !scoped) return lazy(name === 'issue' ? 'home' : null, '지난 브리핑', () => loadWeek(data, w));
   switch (name) {
+    case 'weeks': {
+      const list = weeksCached();
+      if (!list) return lazy('home', '지난 브리핑', loadWeeks);
+      return { tab: 'home', view: views.weeks(data, list) };
+    }
+    case 'week': {
+      const d = decodeURIComponent(arg || '');
+      if (d === data.briefing.date) return { tab: 'home', view: views.home(data) };
+      const wd = weekCached(d);
+      if (!wd) return lazy('home', '지난 브리핑', () => loadWeek(data, d));
+      return { tab: 'home', view: views.week(wd) };
+    }
     case 'category':
       return { tab: 'category', view: views.category(data, arg || 'auto') };
     case 'article':
-      return { tab: null, view: views.article(data, decodeURIComponent(arg || '')) };
+      return { tab: null, view: views.article(scoped, decodeURIComponent(arg || '')) };
     case 'issue':
-      return { tab: 'home', view: views.issue(data, decodeURIComponent(arg || '')) };
+      return { tab: 'home', view: views.issue(scoped, decodeURIComponent(arg || '')) };
     case 'my':
       // MY NEWS 는 관리자 모드에서만
       if (!store.isAdmin()) return { tab: 'home', view: views.home(data) };
@@ -127,7 +163,7 @@ document.addEventListener('click', async (e) => {
   if (star) {
     e.preventDefault();
     const id = star.dataset.star;
-    const a = data.byId.get(id) || store.getSaved().find((s) => s.id === id);
+    const a = findArticle(data, id) || store.getSaved().find((s) => s.id === id);
     if (!a) return;
     const on = store.toggleSaved(a);
     document.querySelectorAll(`[data-star="${CSS.escape(id)}"]`).forEach((el) => {
@@ -142,7 +178,7 @@ document.addEventListener('click', async (e) => {
   }
   if (share) {
     e.preventDefault();
-    const a = data.byId.get(share.dataset.share) || store.getSaved().find((s) => s.id === share.dataset.share);
+    const a = findArticle(data, share.dataset.share) || store.getSaved().find((s) => s.id === share.dataset.share);
     if (a) shareArticle(a);
     return;
   }

@@ -6,6 +6,7 @@
 //       public/data/live/keyword-stats.json  날짜별 키워드 등장 수 (HOT TOPIC 용)
 
 import { readFile, writeFile, readdir, mkdir } from 'node:fs/promises';
+import { saveWeek } from './weeks.mjs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { totalScore } from '../public/js/core/scoring.js';
@@ -271,6 +272,7 @@ export async function buildBriefing({ log = console.log, env = process.env, outD
       const ageDays = (Date.now() - Date.parse(prev.generatedAt)) / 86400000;
       if (prev.analysis === 'ai' && ageDays < 6) {
         log('ℹ️  AI 키가 없어 이번에는 새로 발행하지 않고, 이번 주에 만든 AI 브리핑을 유지합니다. (수집은 계속됩니다)');
+        if (prev.date) await saveWeek(outDir, prev, { keepWeeks: bcfg.historyWeeks || 52 });
         return prev;
       }
     } catch {
@@ -382,6 +384,8 @@ export async function buildBriefing({ log = console.log, env = process.env, outD
   await writeFile(path.join(outDir, 'briefing.json'), JSON.stringify(briefing));
   await writeFile(path.join(outDir, 'keyword-stats.json'), JSON.stringify({ schemaVersion: 1, mode: 'live', days }));
   await writeFile(path.join(outDir, 'archive.json'), JSON.stringify({ schemaVersion: 1, articles: [...archiveMap.values()] }));
+  // 지난 주간 브리핑 보관 (앱의 '지난 브리핑'에서 다시 보기)
+  await saveWeek(outDir, briefing, { keepWeeks: bcfg.historyWeeks || 52 });
 
   log(`📰 ${latest.date} 브리핑 (${briefing.analysis === 'ai' ? 'AI 편집' : '규칙 기반'}): 후보 ${today.length}건 중 TOP ${CATS.map((c) => `${c} ${briefing.categories[c].length}`).join(' · ')}`);
   log(`🔥 핵심 이슈: ${briefing.issues.map((i) => i.title.slice(0, 30)).join(' / ')}`);

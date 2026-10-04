@@ -48,6 +48,7 @@
     "cadence": "weekly",
     "windowDays": 7,
     "archiveDays": 28,
-    "archiveMaxArticles": 1500
+    "archiveMaxArticles": 1500,
+    "historyWeeks": 52
   }
 }

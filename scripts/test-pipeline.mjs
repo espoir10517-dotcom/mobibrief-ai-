@@ -96,5 +96,24 @@ globalThis.fetch = async () => new Response(new Uint8Array([0xc7, 0xd1, 0xb1, 0x
 ok((await fetchText('https://x.example')) === '한글', 'EUC-KR 인코딩 피드 한글 변환');
 globalThis.fetch = saveFetch;
 
+// 지난 주간 브리핑 보관
+{
+  const { saveWeek, weekOf } = await import('../pipeline/weeks.mjs');
+  const { readdir: rd, readFile: rf } = await import('node:fs/promises');
+  ok(weekOf('2026-10-04') === '2026-09-28' && weekOf('2026-10-05') === '2026-10-05' && weekOf('2026-10-11') === '2026-10-05', '주 계산: 월~일 한 주');
+  const out = await mkdtemp(path.join(tmpdir(), 'mb-weeks-'));
+  const mk = (date) => ({ date, periodStart: date, periodEnd: date, generatedAt: `${date}T00:00:00Z`, analysis: 'ai', headline: date, issues: [{ title: 'i' }], categories: { auto: ['a'] }, articles: [{ id: 'a' }], ai: { costUSD: 1 } });
+  await saveWeek(out, mk('2026-10-04'));
+  await saveWeek(out, mk('2026-10-12'));
+  await saveWeek(out, mk('2026-10-13')); // 같은 주 재발행 → 교체
+  const idx = JSON.parse(await rf(path.join(out, 'weeks/index.json'), 'utf8')).weeks;
+  ok(idx.map((w) => w.date).join() === '2026-10-13,2026-10-04', '같은 주에 다시 발행하면 마지막 것만 남김 · 최신순');
+  ok(!(await rd(path.join(out, 'weeks'))).includes('2026-10-12.json'), '교체된 주의 파일은 정리');
+  ok(!('ai' in JSON.parse(await rf(path.join(out, 'weeks/2026-10-13.json'), 'utf8'))), '보관본에 AI 사용량 기록 제외');
+  for (const d of ['2026-10-19', '2026-10-26']) await saveWeek(out, mk(d), { keepWeeks: 3 });
+  const idx2 = JSON.parse(await rf(path.join(out, 'weeks/index.json'), 'utf8')).weeks;
+  ok(idx2.length === 3 && !(await rd(path.join(out, 'weeks'))).includes('2026-10-04.json'), '보관 기간 지난 주는 자동 삭제');
+}
+
 console.log(fails ? `\n❌ ${fails}개 항목 실패\n` : '\n🎉 수집기 점검 통과\n');
 process.exit(fails ? 1 : 0);

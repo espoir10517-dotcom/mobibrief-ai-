@@ -78,3 +78,38 @@ export async function loadData({ force = false } = {}) {
 export function topOf(data, cat) {
   return (data.briefing.categories?.[cat] || []).map((id) => data.byId.get(id)).filter(Boolean);
 }
+
+// ───────── 지난 주간 브리핑 (필요할 때만 불러오기) ─────────
+let weeksIndex = null;
+const weekCache = new Map();
+
+export const weeksCached = () => weeksIndex;
+export async function loadWeeks() {
+  if (weeksIndex) return weeksIndex;
+  try {
+    weeksIndex = (await fetchJson('data/live/weeks/index.json')).weeks || [];
+  } catch {
+    weeksIndex = [];
+  }
+  return weeksIndex;
+}
+
+// 그 주 화면용 데이터: 기사·순위는 그 주 것을 쓰고, 없는 기사만 현재 데이터에서 찾음
+export const weekCached = (date) => weekCache.get(date) || null;
+export async function loadWeek(base, date) {
+  if (weekCache.has(date)) return weekCache.get(date);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) throw new Error('잘못된 주');
+  const wb = await fetchJson(`data/live/weeks/${date}.json`);
+  const byId = new Map(base.byId);
+  for (const a of wb.articles || []) byId.set(a.id, a);
+  const view = { ...base, briefing: wb, articles: wb.articles || [], byId, week: date };
+  weekCache.set(date, view);
+  return view;
+}
+
+// 저장·공유할 때: 현재 데이터에 없으면 열어 본 지난 브리핑에서 찾기
+export function findArticle(base, id) {
+  if (base?.byId.has(id)) return base.byId.get(id);
+  for (const v of weekCache.values()) if (v.byId.has(id)) return v.byId.get(id);
+  return null;
+}

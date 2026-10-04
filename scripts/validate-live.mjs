@@ -72,8 +72,27 @@ for (const a of archive.articles || []) {
 if (!aIds.size) err('검색 보관함이 비어 있음');
 if (!(stats.days || []).length) warn('HOT TOPIC 통계가 비어 있음');
 
+// 지난 주간 브리핑 목록: 이번 주가 들어 있고, 목록의 파일이 모두 있어야 함
+let weekCount = 0;
+try {
+  const wi = await read('weeks/index.json');
+  weekCount = wi.weeks.length;
+  if (!wi.weeks.some((w) => w.date === b.date)) err('지난 브리핑 목록에 이번 주 브리핑이 없음');
+  for (const w of wi.weeks) {
+    try {
+      const wb = await read(`weeks/${w.date}.json`);
+      const ids = new Set((wb.articles || []).map((a) => a.id));
+      for (const c of Object.values(wb.categories || {})) for (const id of c) if (!ids.has(id)) err(`지난 브리핑 ${w.date}: TOP 기사 ${id} 없음`);
+    } catch {
+      err(`지난 브리핑 파일 없음: weeks/${w.date}.json`);
+    }
+  }
+} catch {
+  err('지난 브리핑 목록(weeks/index.json)이 없음');
+}
+
 console.log(`\n발행 데이터 점검 (${b.periodStart || b.date} ~ ${b.periodEnd || b.date}, ${b.analysis === 'ai' ? 'AI' : '규칙'} 방식)`);
-console.log(`  TOP 기사 ${topTotal}건 · 요약문 있음 ${withSummary}건 · 보관함 ${aIds.size}건 · 통계 ${stats.days.length}일`);
+console.log(`  TOP 기사 ${topTotal}건 · 요약문 있음 ${withSummary}건 · 보관함 ${aIds.size}건 · 통계 ${stats.days.length}일 · 지난 브리핑 ${weekCount}주`);
 for (const w of warns) console.log(`  ⚠️  ${w}`);
 for (const e of errors) console.log(`  ❌ ${e}`);
 console.log(errors.length ? `\n❌ 치명적 문제 ${errors.length}건 — 배포하지 않습니다\n` : '\n✅ 배포 가능\n');

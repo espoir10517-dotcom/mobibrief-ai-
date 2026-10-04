@@ -3,7 +3,7 @@
 //   (예전 화면이 계속 보이는 문제를 막기 위해 브라우저 캐시도 매번 서버에 확인)
 // - 주간 브리핑 알림(push) 표시와, 알림을 누르면 앱 열기
 
-const VERSION = 'mobibrief-v0.5.2';
+const VERSION = 'mobibrief-v0.6.0';
 const SHELL = [
   './',
   './index.html',

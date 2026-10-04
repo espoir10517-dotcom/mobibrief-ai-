@@ -649,3 +649,36 @@ select.input { appearance: none; background-image: linear-gradient(45deg, transp
 .card__one--none { color: var(--ink-3); font-size: var(--fs-xs); }
 .row--btn:disabled { color: var(--ink-3); cursor: default; }
 .masthead__stale { margin-top: 8px; font-size: var(--fs-xs); color: var(--demo); background: var(--demo-soft); border-radius: 8px; padding: 6px 10px; }
+
+/* ───────── 지난 주간 브리핑 ───────── */
+.masthead__past { color: var(--accent); font-weight: 700; margin-left: auto; }
+.row-link {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.row-link b { display: block; font-size: var(--fs-base); }
+.row-link small { display: block; color: var(--ink-3); font-size: var(--fs-xs); margin-top: 3px; }
+.weeks { display: grid; gap: 12px; margin-top: 8px; }
+.week-item {
+  display: grid;
+  gap: 8px;
+  padding: 16px;
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.week-item__head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px; font-variant-numeric: tabular-nums; }
+.week-item__head b { font-family: var(--font-serif); font-size: 1.1rem; }
+.week-item__now { font-size: var(--fs-xs); font-weight: 700; color: #fff; background: var(--accent); padding: 2px 7px; border-radius: 999px; }
+.week-item__meta { font-size: var(--fs-xs); color: var(--ink-3); margin-left: auto; }
+.week-item__headline { color: var(--ink-2); font-size: var(--fs-sm); line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.week-item__issues { margin: 0; padding-left: 20px; list-style: decimal; font-size: var(--fs-sm); color: var(--ink); display: grid; gap: 2px; }
+.week-item__issues li::marker { color: var(--accent); font-weight: 700; }
+.spinner { width: 28px; height: 28px; border-radius: 50%; border: 3px solid var(--line); border-top-color: var(--accent); animation: spin .8s linear infinite; margin: 0 auto; }
+@keyframes spin { to { transform: rotate(360deg); } }
