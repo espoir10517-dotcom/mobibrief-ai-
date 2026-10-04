@@ -1,12 +1,12 @@
 {
   "date": "2026-10-04",
-  "collectedAt": "2026-10-04T08:00:27.754Z",
+  "collectedAt": "2026-10-04T08:11:06.149Z",
   "stats": {
     "searches": 39,
     "google": {
       "ok": 39,
       "fail": 0,
-      "items": 615
+      "items": 612
     },
     "naver": {
       "ok": 0,
@@ -14,8 +14,8 @@
       "items": 0,
       "enabled": false
     },
-    "raw": 615,
-    "fresh": 417,
+    "raw": 612,
+    "fresh": 421,
     "clusters": 358,
     "candidates": 160,
     "perCategory": {

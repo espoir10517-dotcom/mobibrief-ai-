@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-04",
-  "collectedAt": "2026-10-04T08:00:27.754Z",
+  "collectedAt": "2026-10-04T08:11:06.149Z",
   "stats": {
     "searches": 39,
     "google": {
       "ok": 39,
       "fail": 0,
-      "items": 615
+      "items": 612
     },
     "naver": {
       "ok": 0,
@@ -15,8 +15,8 @@
       "items": 0,
       "enabled": false
     },
-    "raw": 615,
-    "fresh": 417,
+    "raw": 612,
+    "fresh": 421,
     "clusters": 358,
     "candidates": 160,
     "perCategory": {
@@ -158,8 +158,8 @@
         "auto"
       ],
       "matchedQueries": [
-        "자동차보험료",
-        "자동차보험"
+        "자동차보험",
+        "자동차보험료"
       ],
       "coverage": 1,
       "sources": [
@@ -528,33 +528,6 @@
     },
     {
       "provider": "google-news",
-      "lang": "en",
-      "title": "Bombay High Court Allows Insurance Company's Appeal in Motor Accident Claim Case Due to Lack of Negligence Proof. Claimants Failed to Establish Rash and Negligent Driving by Truck Driver, Resulting in Setting Aside of Tribunal's Award.",
-      "source": "Lawtext",
-      "sourceUrl": "https://lawtext.in",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1YLUNhXzBBS2dXX3A1V3ZPbmVhdkpINDhXWUlyeFU2QmVlVzFwV2JiWHo3X0NfeXlZZEZ2NGpKT1VVUW9rYzFjbjlTWThNdlBTc1JqQjM2QTU3VU5fS1hhQ3Qta1RHdw?oc=5",
-      "publishedAt": "2026-10-03T10:49:28.000Z",
-      "description": "",
-      "id": "c81445107592",
-      "category": "auto",
-      "categoryHints": [
-        "auto"
-      ],
-      "matchedQueries": [
-        "motor insurance claims"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "Lawtext",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1YLUNhXzBBS2dXX3A1V3ZPbmVhdkpINDhXWUlyeFU2QmVlVzFwV2JiWHo3X0NfeXlZZEZ2NGpKT1VVUW9rYzFjbjlTWThNdlBTc1JqQjM2QTU3VU5fS1hhQ3Qta1RHdw?oc=5",
-          "publishedAt": "2026-10-03T10:49:28.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T10:49:28.000Z"
-    },
-    {
-      "provider": "google-news",
       "lang": "ko",
       "title": "靑 5인·김승원·김형근이 불러낸 음주운전 페널티 제도화 [시사뒷담]",
       "source": "매일신문",
@@ -732,8 +705,8 @@
         "auto"
       ],
       "matchedQueries": [
-        "자동차보험료",
-        "자동차보험"
+        "자동차보험",
+        "자동차보험료"
       ],
       "coverage": 1,
       "sources": [
@@ -920,11 +893,13 @@
       "id": "a46966e8611e",
       "category": "auto",
       "categoryHints": [
-        "auto"
+        "auto",
+        "insurance"
       ],
       "matchedQueries": [
         "auto insurance",
-        "motor insurance claims"
+        "motor insurance claims",
+        "insurance industry"
       ],
       "coverage": 1,
       "sources": [
@@ -965,6 +940,33 @@
     },
     {
       "provider": "google-news",
+      "lang": "en",
+      "title": "Bombay High Court Upholds Motor Accident Victim’s Claim for Balance Repair Costs, Rejecting Insurer’s Full and Final Settlement Defense. Court Finds No Evidence of Settlement and Holds Tortfeasor Liable for Unrecovered Damages Under Motor Vehicles",
+      "source": "Lawtext",
+      "sourceUrl": "https://lawtext.in",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9TZENrcllLNUtSS0N1Rndmb3UtandiUjZwVzcxWlN3MmlPcTJ0TzFWcElSQV9UOEdFV0dfZ29BbkZlS1k0RDlJcV8zeGllZDR6VDZiTHFpSllXbkRfNU9PVzlvVWRBaE5z?oc=5",
+      "publishedAt": "2026-10-03T02:25:00.000Z",
+      "description": "",
+      "id": "0972d338afe4",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "motor insurance claims"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Lawtext",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9TZENrcllLNUtSS0N1Rndmb3UtandiUjZwVzcxWlN3MmlPcTJ0TzFWcElSQV9UOEdFV0dfZ29BbkZlS1k0RDlJcV8zeGllZDR6VDZiTHFpSllXbkRfNU9PVzlvVWRBaE5z?oc=5",
+          "publishedAt": "2026-10-03T02:25:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-03T02:25:00.000Z"
+    },
+    {
+      "provider": "google-news",
       "lang": "ko",
       "title": "캐나다 | 이비 수상 \"연 100~200달러 차량부담금 없던 일로\"",
       "source": "밴쿠버 중앙일보",
@@ -993,33 +995,6 @@
     {
       "provider": "google-news",
       "lang": "en",
-      "title": "The Personal beats driver's bid for 14-hour psychological assessment",
-      "source": "insurancebusinessmag.com",
-      "sourceUrl": "https://www.insurancebusinessmag.com",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOZzZFNktScVNZS3h3VEYzbFpxS1phS3FmbmVyc21PNkttNGlERG9xNlRhajlEOTc1d0tIUnZJLUJ5STF4VlA5RlE1aXFvTWt5ZzFXb0c1djdRclJ6LWN0TmJtSW5pcG9jN0x3VDVKRGRiWkJtTE9Yd0dXU1pJSktkb2VfVVY1WGRSdUZhY0pFdkdHYVJ5RDJFTHV0R3F6YWxPYXUyMXlBU0tsMGZZdDA0dGZOQUd0NmZCVDJkdlI3WGRGXzFlZWpJWVpGSjh1NVAwd1FRYg?oc=5",
-      "publishedAt": "2026-10-03T02:12:45.000Z",
-      "description": "",
-      "id": "982b9c9c7c12",
-      "category": "auto",
-      "categoryHints": [
-        "auto"
-      ],
-      "matchedQueries": [
-        "motor insurance claims"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "insurancebusinessmag.com",
-          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOZzZFNktScVNZS3h3VEYzbFpxS1phS3FmbmVyc21PNkttNGlERG9xNlRhajlEOTc1d0tIUnZJLUJ5STF4VlA5RlE1aXFvTWt5ZzFXb0c1djdRclJ6LWN0TmJtSW5pcG9jN0x3VDVKRGRiWkJtTE9Yd0dXU1pJSktkb2VfVVY1WGRSdUZhY0pFdkdHYVJ5RDJFTHV0R3F6YWxPYXUyMXlBU0tsMGZZdDA0dGZOQUd0NmZCVDJkdlI3WGRGXzFlZWpJWVpGSjh1NVAwd1FRYg?oc=5",
-          "publishedAt": "2026-10-03T02:12:45.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T02:12:45.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "en",
       "title": "What happens when a fake auto policy ends in a real claim",
       "source": "Canadian Underwriter",
       "sourceUrl": "https://canadianunderwriter.ca",
@@ -1032,6 +1007,7 @@
         "auto"
       ],
       "matchedQueries": [
+        "auto insurance",
         "motor insurance claims"
       ],
       "coverage": 1,
@@ -1043,6 +1019,33 @@
         }
       ],
       "firstSeenAt": "2026-10-03T01:34:49.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "High Court of Gujarat Dismisses Insurance Company's Appeal in Motor Accident Claim — No Contributory Negligence Found. Tribunal's Award of Rs.39,80,000/- Upheld as Findings Were Based on Evidence and Not Perverse Under Section 173 of Motor Vehi",
+      "source": "Lawtext",
+      "sourceUrl": "https://lawtext.in",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1YekxTT2N0TW93TUd5bW1GeGJDNG93TmQ3cFF0WnRhZjZNWGM4R2NOUnVJU2NuSFFfTmc4N3ktNXZWbEhpVU52c3Z4aE9rMWxwUTVRUDFiNmRqM0JiaWdGWTdGc0QwQQ?oc=5",
+      "publishedAt": "2026-10-03T01:24:54.000Z",
+      "description": "",
+      "id": "b1287986c1b9",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "motor insurance claims"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "Lawtext",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1YekxTT2N0TW93TUd5bW1GeGJDNG93TmQ3cFF0WnRhZjZNWGM4R2NOUnVJU2NuSFFfTmc4N3ktNXZWbEhpVU52c3Z4aE9rMWxwUTVRUDFiNmRqM0JiaWdGWTdGc0QwQQ?oc=5",
+          "publishedAt": "2026-10-03T01:24:54.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-03T01:24:54.000Z"
     },
     {
       "provider": "google-news",
@@ -1129,7 +1132,7 @@
       "provider": "google-news",
       "lang": "en",
       "title": "California announces AV regulation, fines for robotaxis that impede emergency responders",
-      "source": "sea.mashable.com",
+      "source": "Mashable SEA",
       "sourceUrl": "https://sea.mashable.com",
       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNeHNFOWFucGcyZTdBOUR3cWVLYkNHQmdsbU5DQXE2eGlIX1RQNkZ6SGdUbUMxbjhDYmU0eUtIRUZlM1RmQ2R2RWlWS2ZnTnhWWl9FTGNiTzl2OVZrUmw2ZU01bDNxQ0pFOV94cHBKN2NDb1VEZkxxUXltTkVPclg3TlJYelJCR2QwRVNDWEVoWjlPVGRVeTRvT2d1ZmdBX2JWSGQ3Und1ZEtxUXlMRHQxVTJRSjdvaU1fS29wUHRMc3dqd05VRmxvUkpqSGdsUQ?oc=5",
       "publishedAt": "2026-10-03T15:35:46.000Z",
@@ -1141,8 +1144,8 @@
       ],
       "matchedQueries": [
         "robotaxi",
-        "autonomous driving",
-        "Waymo"
+        "Waymo",
+        "autonomous driving"
       ],
       "coverage": 2,
       "sources": [
@@ -1152,7 +1155,7 @@
           "publishedAt": "2026-10-04T03:45:00.000Z"
         },
         {
-          "name": "sea.mashable.com",
+          "name": "Mashable SEA",
           "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNeHNFOWFucGcyZTdBOUR3cWVLYkNHQmdsbU5DQXE2eGlIX1RQNkZ6SGdUbUMxbjhDYmU0eUtIRUZlM1RmQ2R2RWlWS2ZnTnhWWl9FTGNiTzl2OVZrUmw2ZU01bDNxQ0pFOV94cHBKN2NDb1VEZkxxUXltTkVPclg3TlJYelJCR2QwRVNDWEVoWjlPVGRVeTRvT2d1ZmdBX2JWSGQ3Und1ZEtxUXlMRHQxVTJRSjdvaU1fS29wUHRMc3dqd05VRmxvUkpqSGdsUQ?oc=5",
           "publishedAt": "2026-10-03T15:35:46.000Z"
         }
@@ -1163,12 +1166,12 @@
       "provider": "google-news",
       "lang": "en",
       "title": "Tesla's FSD 14.3.10 hits downtown rush hour, and 'hurry mode' stays surprisingly patient",
-      "source": "Trending Now Sustainable Construction",
-      "sourceUrl": "https://www.sustainableconstruction-now.com",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQUVR0eDJFYVQzT3pva1R6RWEwaFlNbURqTHZNcU5lTko2b2Q1ZFA4NUFjam1uU0xvTEJRU1dXRjRCYk5RdlRrRENkQlRNcmhXRUd1NGt5dXdib21xWG9NdHBucjNtcmg3VFoxTWFUVmxFR2hveVhxenJlUHk3X2FaQmJWMmVUeC1DOHhoZFdzZ214UWtkemhaVFNfR3JEam84X0xDWmtxb1dpLWhlbXFqcEYySkNUYTBnQlhrb0dmZnJ5TkdseFM5ajBpSFJ6MGE4bHQzdUZxQnVPVzA?oc=5",
-      "publishedAt": "2026-10-04T07:51:09.000Z",
+      "source": "The Cool Down",
+      "sourceUrl": "https://www.thecooldown.com",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNeTVBNXEwX21nMFotQmh6Ri0wQnFpOEtfRFNqaVQ2aFlYbzdrbEhTa09WTTU4RUVMRjRhQ0t6ZDN1ME91aUt0S1lKeV9xWFVIRzQzOVJUNng1Y3dPSURRcFBfS3ZENUNVMDhGcmZzekJiNXZTeGU0N0tDR1J0T3FxdQ?oc=5",
+      "publishedAt": "2026-10-03T10:17:00.000Z",
       "description": "",
-      "id": "46b7b74adca6",
+      "id": "f7f97fa7920a",
       "category": "mobility",
       "categoryHints": [
         "mobility"
@@ -1176,15 +1179,53 @@
       "matchedQueries": [
         "Tesla FSD"
       ],
-      "coverage": 1,
+      "coverage": 2,
       "sources": [
         {
           "name": "Trending Now Sustainable Construction",
           "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQUVR0eDJFYVQzT3pva1R6RWEwaFlNbURqTHZNcU5lTko2b2Q1ZFA4NUFjam1uU0xvTEJRU1dXRjRCYk5RdlRrRENkQlRNcmhXRUd1NGt5dXdib21xWG9NdHBucjNtcmg3VFoxTWFUVmxFR2hveVhxenJlUHk3X2FaQmJWMmVUeC1DOHhoZFdzZ214UWtkemhaVFNfR3JEam84X0xDWmtxb1dpLWhlbXFqcEYySkNUYTBnQlhrb0dmZnJ5TkdseFM5ajBpSFJ6MGE4bHQzdUZxQnVPVzA?oc=5",
           "publishedAt": "2026-10-04T07:51:09.000Z"
+        },
+        {
+          "name": "The Cool Down",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNeTVBNXEwX21nMFotQmh6Ri0wQnFpOEtfRFNqaVQ2aFlYbzdrbEhTa09WTTU4RUVMRjRhQ0t6ZDN1ME91aUt0S1lKeV9xWFVIRzQzOVJUNng1Y3dPSURRcFBfS3ZENUNVMDhGcmZzekJiNXZTeGU0N0tDR1J0T3FxdQ?oc=5",
+          "publishedAt": "2026-10-03T10:17:00.000Z"
         }
       ],
-      "firstSeenAt": "2026-10-04T07:51:09.000Z"
+      "firstSeenAt": "2026-10-03T10:17:00.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "ko",
+      "title": "“美 테슬라같은 자율주행 우린 언제쯤”…국내 3사 서비스 비교해보니",
+      "source": "매일경제",
+      "sourceUrl": "https://www.mk.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBuTWx6LXk4cFZxekFlbVgtMUVZSHphU3hfbWhhMWlSd0xRZEVtOUx3RHViXzBZU3NHRzlrMHZodXUwOC1ueGJWdGVfQVhCcnByTHdTdGdn?oc=5",
+      "publishedAt": "2026-10-03T04:49:37.000Z",
+      "description": "",
+      "id": "acf18870bc5a",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "자율주행",
+        "로보택시"
+      ],
+      "coverage": 2,
+      "sources": [
+        {
+          "name": "매일경제",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBuTWx6LXk4cFZxekFlbVgtMUVZSHphU3hfbWhhMWlSd0xRZEVtOUx3RHViXzBZU3NHRzlrMHZodXUwOC1ueGJWdGVfQVhCcnByTHdTdGdn?oc=5",
+          "publishedAt": "2026-10-03T04:49:37.000Z"
+        },
+        {
+          "name": "다음뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFA3VFp1VW5kMmtuekRfUUk3TmZHVVR5bERjV0tFTVlfYV9sUEQ3QzVRa0o3cnRaTVptTUEzVkpqc0o2aXhEWHc?oc=5",
+          "publishedAt": "2026-10-03T04:51:02.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-03T04:49:37.000Z"
     },
     {
       "provider": "google-news",
@@ -1228,8 +1269,8 @@
         "mobility"
       ],
       "matchedQueries": [
-        "로보택시",
-        "자율주행"
+        "자율주행",
+        "로보택시"
       ],
       "coverage": 1,
       "sources": [
@@ -1267,6 +1308,33 @@
         }
       ],
       "firstSeenAt": "2026-10-04T06:33:22.000Z"
+    },
+    {
+      "provider": "google-news",
+      "lang": "en",
+      "title": "Automakers ramp up production, dealer stocks to meet festive demand",
+      "source": "auto.economictimes.indiatimes.com",
+      "sourceUrl": "https://auto.economictimes.indiatimes.com",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOQlI4ZHROa2YyUXktb1RwQUFOQjljWXU4aGN3VkFVZFl0bW1MQUlPWmhlRWhZWnhXOHBiaF9TbVRaYlB4eEtteTJlbEdlcno5Njk2Q1B4RThPcTNqZFRPWXZPV090QWJQRlJ1WHRRWUdQYTluQTI4UnRNRi02Q0FIQUhmc3ltRUp2V2N5ZUFZSlVsbnozbUx2ODREOTRCeDFaUFROYUtZZ1J0Q21KQ3hmYUkzR1NXZU5YYlZZMElKM2lfWnNUUlNtMDlrNEZZZWctWWfSAdIBQVVfeXFMTkJSOGR0TmtmMlF5LW9UcEFBTkI5Y1l1OGhjd1ZBVWRZdG1tTEFJT1poZUVoWVp4VzhwYmhfU21UWmJQeHhLbXkyZWxHZXJ6OTY5NkNQeEU4T3EzamRUT1l2T1dPdEFiUEZSdVh0UVlHUGE5bkEyOFJ0TUYtNkNBSEFIZnN5bUVKdldjeWVBWUpVbG56M21Mdjg0RDk0QngxWlBUTmFLWWdSdENtSkN4ZmFJM0dTV2VOWGJWWTBJSjNpX1pzVFJTbTA5azRGWWVnLVln?oc=5",
+      "publishedAt": "2026-10-04T06:06:43.000Z",
+      "description": "",
+      "id": "6f220f671d34",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "software-defined vehicle"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "auto.economictimes.indiatimes.com",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOQlI4ZHROa2YyUXktb1RwQUFOQjljWXU4aGN3VkFVZFl0bW1MQUlPWmhlRWhZWnhXOHBiaF9TbVRaYlB4eEtteTJlbEdlcno5Njk2Q1B4RThPcTNqZFRPWXZPV090QWJQRlJ1WHRRWUdQYTluQTI4UnRNRi02Q0FIQUhmc3ltRUp2V2N5ZUFZSlVsbnozbUx2ODREOTRCeDFaUFROYUtZZ1J0Q21KQ3hmYUkzR1NXZU5YYlZZMElKM2lfWnNUUlNtMDlrNEZZZWctWWfSAdIBQVVfeXFMTkJSOGR0TmtmMlF5LW9UcEFBTkI5Y1l1OGhjd1ZBVWRZdG1tTEFJT1poZUVoWVp4VzhwYmhfU21UWmJQeHhLbXkyZWxHZXJ6OTY5NkNQeEU4T3EzamRUT1l2T1dPdEFiUEZSdVh0UVlHUGE5bkEyOFJ0TUYtNkNBSEFIZnN5bUVKdldjeWVBWUpVbG56M21Mdjg0RDk0QngxWlBUTmFLWWdSdENtSkN4ZmFJM0dTV2VOWGJWWTBJSjNpX1pzVFJTbTA5azRGWWVnLVln?oc=5",
+          "publishedAt": "2026-10-04T06:06:43.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-04T06:06:43.000Z"
     },
     {
       "provider": "google-news",
@@ -1473,8 +1541,8 @@
         "mobility"
       ],
       "matchedQueries": [
-        "autonomous driving",
-        "Tesla FSD"
+        "Tesla FSD",
+        "autonomous driving"
       ],
       "coverage": 1,
       "sources": [
@@ -1542,9 +1610,36 @@
     },
     {
       "provider": "google-news",
+      "lang": "ko",
+      "title": "전기차 라인을 에너지저장장치로 전환…배터리 시험대",
+      "source": "연합뉴스TV",
+      "sourceUrl": "https://www.yonhapnewstv.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1MRDNEaElGMGtJS2ttejllQnpaMEhvRWxpYUJ2eUFXN3BZNnhLcTNnTEdIb3FEcHpIVHhZNnlXb0ZOQTVWVmlFNWRVdEo2Zl9mdGlCZ1V3Vm5CYVc1am1La3dRclNZNDQ?oc=5",
+      "publishedAt": "2026-10-04T01:22:00.000Z",
+      "description": "",
+      "id": "c2dbcc451605",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "전기차 정책"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "연합뉴스TV",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1MRDNEaElGMGtJS2ttejllQnpaMEhvRWxpYUJ2eUFXN3BZNnhLcTNnTEdIb3FEcHpIVHhZNnlXb0ZOQTVWVmlFNWRVdEo2Zl9mdGlCZ1V3Vm5CYVc1am1La3dRclNZNDQ?oc=5",
+          "publishedAt": "2026-10-04T01:22:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-10-04T01:22:00.000Z"
+    },
+    {
+      "provider": "google-news",
       "lang": "en",
       "title": "Tesla's Cybercab Hits an NHTSA Probe Just Hours Into Its Austin Launch",
-      "source": "Startup Fortune",
+      "source": "startupfortune.com",
       "sourceUrl": "https://startupfortune.com",
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOMkZDMGJqYmpUZjZLQTA1eUoydE42VlF0NUttVlJSZkxFb1RDZm8xT2lJUkw4czVaVUpQWFBJcVNnUE5oYUlOR2V1V01oaDJtcTAxdVB3S0xVbFVQZkJqUlZqRjkwNVh6eEFxZWcyeFBfSXZQU3pIU2ZtMnZ6cTRJRnhwbUNwTWtiQlhYWTZuekdzOGc5Q0FkRmhpRjN6UQ?oc=5",
       "publishedAt": "2026-10-04T01:17:11.000Z",
@@ -1560,7 +1655,7 @@
       "coverage": 1,
       "sources": [
         {
-          "name": "Startup Fortune",
+          "name": "startupfortune.com",
           "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOMkZDMGJqYmpUZjZLQTA1eUoydE42VlF0NUttVlJSZkxFb1RDZm8xT2lJUkw4czVaVUpQWFBJcVNnUE5oYUlOR2V1V01oaDJtcTAxdVB3S0xVbFVQZkJqUlZqRjkwNVh6eEFxZWcyeFBfSXZQU3pIU2ZtMnZ6cTRJRnhwbUNwTWtiQlhYWTZuekdzOGc5Q0FkRmhpRjN6UQ?oc=5",
           "publishedAt": "2026-10-04T01:17:11.000Z"
         }
@@ -1571,7 +1666,7 @@
       "provider": "google-news",
       "lang": "ko",
       "title": "테슬라 무인택시, 밤길 주행이 최대 과제…머스크 “어두운 곳의 작은 동물까지 잡아내야”",
-      "source": "jemin.com",
+      "source": "제민일보",
       "sourceUrl": "https://www.jemin.com",
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE13OUVaTTBQOUZ0UUJUcXN6WWs3R3ZFMlYxRnpvcWhjelFfZ0lLR293QXpab2ZjNnNKWWdpNlB6OVBIaTNOa2o2T1o2RHpBeHJzQmQyY3pucVN2MWRuaUNKMklFM1VDUkE?oc=5",
       "publishedAt": "2026-10-04T01:15:10.000Z",
@@ -1582,13 +1677,13 @@
         "mobility"
       ],
       "matchedQueries": [
-        "로보택시",
-        "자율주행"
+        "자율주행",
+        "로보택시"
       ],
       "coverage": 1,
       "sources": [
         {
-          "name": "jemin.com",
+          "name": "제민일보",
           "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE13OUVaTTBQOUZ0UUJUcXN6WWs3R3ZFMlYxRnpvcWhjelFfZ0lLR293QXpab2ZjNnNKWWdpNlB6OVBIaTNOa2o2T1o2RHpBeHJzQmQyY3pucVN2MWRuaUNKMklFM1VDUkE?oc=5",
           "publishedAt": "2026-10-04T01:15:10.000Z"
         }
@@ -1800,7 +1895,8 @@
         "mobility"
       ],
       "matchedQueries": [
-        "autonomous driving"
+        "autonomous driving",
+        "software-defined vehicle"
       ],
       "coverage": 1,
       "sources": [
@@ -2086,35 +2182,8 @@
     {
       "provider": "google-news",
       "lang": "en",
-      "title": "Volkswagen Delays Ontario Battery Plant",
-      "source": "insideevs.com",
-      "sourceUrl": "https://insideevs.com",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9McW9iV3ZiWGdrdE5JdW9oOHlYdDFSMmlXQm5Zd1V3OXN4Nzh4TkhWY2ZHVklsM0pzSUNiMW54SGRUSTcyT1pIY285NzUtdlJrSGpOUXpEc3AxSndGc2NteThqU1MzNENVNnhiQ2tQM1lzenc?oc=5",
-      "publishedAt": "2026-10-03T20:48:05.000Z",
-      "description": "",
-      "id": "efcb9774dcc0",
-      "category": "mobility",
-      "categoryHints": [
-        "mobility"
-      ],
-      "matchedQueries": [
-        "software-defined vehicle"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "insideevs.com",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9McW9iV3ZiWGdrdE5JdW9oOHlYdDFSMmlXQm5Zd1V3OXN4Nzh4TkhWY2ZHVklsM0pzSUNiMW54SGRUSTcyT1pIY285NzUtdlJrSGpOUXpEc3AxSndGc2NteThqU1MzNENVNnhiQ2tQM1lzenc?oc=5",
-          "publishedAt": "2026-10-03T20:48:05.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T20:48:05.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "en",
       "title": "I Had High Expectations For The Rivian R2. It Still Blew Me Away",
-      "source": "insideevs.com",
+      "source": "InsideEVs",
       "sourceUrl": "https://insideevs.com",
       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBQRDFhLUlnMlQwR1R5NGl1ZWd0NEptWUI3Q21MMS1GT1ZIQ1RIWjN1Wkh2ZTQtZ2x0dU1VZUdxQ1BxOS0wUnlTdjFrdC1US2N4YS05TDRkSGIwajFIRFVzOGlJZFpENmdUZDRtMGdJWEVyUmQ5?oc=5",
       "publishedAt": "2026-10-03T20:47:48.000Z",
@@ -2130,7 +2199,7 @@
       "coverage": 1,
       "sources": [
         {
-          "name": "insideevs.com",
+          "name": "InsideEVs",
           "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBQRDFhLUlnMlQwR1R5NGl1ZWd0NEptWUI3Q21MMS1GT1ZIQ1RIWjN1Wkh2ZTQtZ2x0dU1VZUdxQ1BxOS0wUnlTdjFrdC1US2N4YS05TDRkSGIwajFIRFVzOGlJZFpENmdUZDRtMGdJWEVyUmQ5?oc=5",
           "publishedAt": "2026-10-03T20:47:48.000Z"
         }
@@ -2163,60 +2232,6 @@
         }
       ],
       "firstSeenAt": "2026-10-03T20:33:00.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "en",
-      "title": "Jermaine Dupri Compares Touring Artists With No Hits to Waymo Passengers: 'Music Is the Driver'",
-      "source": "Complex",
-      "sourceUrl": "https://www.complex.com",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOQm1UQVNqUENnS0hGbWF0aU1fTkxDZHpHM0tRSndrYTZIV2tpZ2t0R1RNeE5UYmtNekt3RTNCUmNqMnB3bWJobkNONGc5b2phSUtCLUhRcmZoWDBuNFVjdjJFY09IZEI2eWdlNGVvd01ETE00amN5dTFiUWNfX3IyTk1IcXNzeTBmaG9QZWxnVEFjZmQwYWQwYw?oc=5",
-      "publishedAt": "2026-10-03T20:22:43.000Z",
-      "description": "",
-      "id": "068f5058c9ac",
-      "category": "mobility",
-      "categoryHints": [
-        "mobility"
-      ],
-      "matchedQueries": [
-        "Waymo"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "Complex",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOQm1UQVNqUENnS0hGbWF0aU1fTkxDZHpHM0tRSndrYTZIV2tpZ2t0R1RNeE5UYmtNekt3RTNCUmNqMnB3bWJobkNONGc5b2phSUtCLUhRcmZoWDBuNFVjdjJFY09IZEI2eWdlNGVvd01ETE00amN5dTFiUWNfX3IyTk1IcXNzeTBmaG9QZWxnVEFjZmQwYWQwYw?oc=5",
-          "publishedAt": "2026-10-03T20:22:43.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T20:22:43.000Z"
-    },
-    {
-      "provider": "google-news",
-      "lang": "en",
-      "title": "The Waymo-Cat-tastrophe and a “yeah, but” gift for MPD: A Message from Council Member Elizabeth Shaffer",
-      "source": "Minneapolis Times",
-      "sourceUrl": "https://minneapolistimes.com",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQTENqMFl4UnhUZUJRWlBRaWE4OWRyTnNvazlGVFBqd2x1N0FDRjl2OUpqdERBQ29fNkV2TFhpTkM4U2tXZXRyTVFabTNLMEVkSXREcklnMTctSUkwTFZBVXZsTjFYVkVGbVdyNWtKOUxWb2RTZ29XWDNsVE5oblZ1V1hUX0hqM2J5amo1RkNMUGlMVlBDcUxiOEhQcWVCRi1CR19UTVNfX2FBOHR5V3IxVUxPaDByc1BObUpJS0kxWWpMZ3ByRXp2Sw?oc=5",
-      "publishedAt": "2026-10-03T20:14:20.000Z",
-      "description": "",
-      "id": "5b873b68330e",
-      "category": "mobility",
-      "categoryHints": [
-        "mobility"
-      ],
-      "matchedQueries": [
-        "Waymo"
-      ],
-      "coverage": 1,
-      "sources": [
-        {
-          "name": "Minneapolis Times",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQTENqMFl4UnhUZUJRWlBRaWE4OWRyTnNvazlGVFBqd2x1N0FDRjl2OUpqdERBQ29fNkV2TFhpTkM4U2tXZXRyTVFabTNLMEVkSXREcklnMTctSUkwTFZBVXZsTjFYVkVGbVdyNWtKOUxWb2RTZ29XWDNsVE5oblZ1V1hUX0hqM2J5amo1RkNMUGlMVlBDcUxiOEhQcWVCRi1CR19UTVNfX2FBOHR5V3IxVUxPaDByc1BObUpJS0kxWWpMZ3ByRXp2Sw?oc=5",
-          "publishedAt": "2026-10-03T20:14:20.000Z"
-        }
-      ],
-      "firstSeenAt": "2026-10-03T20:14:20.000Z"
     },
     {
       "provider": "google-news",
@@ -2839,6 +2854,7 @@
         "insurance"
       ],
       "matchedQueries": [
+        "손해보험",
         "생명보험"
       ],
       "coverage": 1,
@@ -2978,8 +2994,8 @@
       ],
       "matchedQueries": [
         "자동차보험 손해율",
-        "자동차보험료",
         "자동차보험",
+        "자동차보험료",
         "보험업계",
         "커넥티드카",
         "손해보험"
@@ -3293,30 +3309,30 @@
     },
     {
       "provider": "google-news",
-      "lang": "en",
-      "title": "Chubb appoints Paul Jones as Head of Accident & Health, EMEA",
-      "source": "Beinsure",
-      "sourceUrl": "https://beinsure.com",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQQ0t3UDlMVVp6Q01qN0dfazJvVV9Ic1Y5SVh6dy1GYmdzX3pkMGdTdE5tVWRXM2g1Z3M1Zzl6aHpLMlJrN0VCV3ZpVDZLRGNMOU5CVUVLU1ZXMWo1Wll3N3ExRVhkYl9RbjVIdmtkMUdfZ3RwVHQzUm05SjJndUtnTUlGUGwwWGh6MGFMNw?oc=5",
-      "publishedAt": "2026-10-03T12:27:40.000Z",
+      "lang": "ko",
+      "title": "‘해킹 비상’ 금융당국, 4일 全업권 긴급소집",
+      "source": "다음뉴스",
+      "sourceUrl": "https://v.daum.net",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9peWVobkQ5aHM3Z0tWQUhYVm9VRXR2OXhnWDlxaU5URHAyd0tUQkx1dFFzVFNPVUg0S1Q4aDNyVlhUUzRzcE1yY3A2RmFXb0ZmeVZxZA?oc=5",
+      "publishedAt": "2026-10-03T12:17:14.000Z",
       "description": "",
-      "id": "3cff2ed33aa7",
+      "id": "57078c6356cc",
       "category": "insurance",
       "categoryHints": [
         "insurance"
       ],
       "matchedQueries": [
-        "insurtech"
+        "금융당국 보험"
       ],
       "coverage": 1,
       "sources": [
         {
-          "name": "Beinsure",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQQ0t3UDlMVVp6Q01qN0dfazJvVV9Ic1Y5SVh6dy1GYmdzX3pkMGdTdE5tVWRXM2g1Z3M1Zzl6aHpLMlJrN0VCV3ZpVDZLRGNMOU5CVUVLU1ZXMWo1Wll3N3ExRVhkYl9RbjVIdmtkMUdfZ3RwVHQzUm05SjJndUtnTUlGUGwwWGh6MGFMNw?oc=5",
-          "publishedAt": "2026-10-03T12:27:40.000Z"
+          "name": "다음뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9peWVobkQ5aHM3Z0tWQUhYVm9VRXR2OXhnWDlxaU5URHAyd0tUQkx1dFFzVFNPVUg0S1Q4aDNyVlhUUzRzcE1yY3A2RmFXb0ZmeVZxZA?oc=5",
+          "publishedAt": "2026-10-03T12:17:14.000Z"
         }
       ],
-      "firstSeenAt": "2026-10-03T12:27:40.000Z"
+      "firstSeenAt": "2026-10-03T12:17:14.000Z"
     },
     {
       "provider": "google-news",
@@ -3915,7 +3931,7 @@
       "provider": "google-news",
       "lang": "en",
       "title": "How to Price an AI Agent When It Fails a Task Halfway Through",
-      "source": "Startup Fortune",
+      "source": "startupfortune.com",
       "sourceUrl": "https://startupfortune.com",
       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNYmdJMEE2bWl1NGVmTzd4Qjl1OWtDRHp5LWF4MExuVVExcm15Nkwwb0otVEtCSDFtaUR6dUJuZnFXU3JMTnhINmlqeXVqMDgtTzAwOE1pVXB2V2hCem5pSXZDUklQQU5nT3hJQVdtdmg0NzNhaDRFaDVSeWQ5bEpuMEhJWlhObnotQU5sWmJUVTZWNlE?oc=5",
       "publishedAt": "2026-10-04T05:23:30.000Z",
@@ -3931,7 +3947,7 @@
       "coverage": 1,
       "sources": [
         {
-          "name": "Startup Fortune",
+          "name": "startupfortune.com",
           "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNYmdJMEE2bWl1NGVmTzd4Qjl1OWtDRHp5LWF4MExuVVExcm15Nkwwb0otVEtCSDFtaUR6dUJuZnFXU3JMTnhINmlqeXVqMDgtTzAwOE1pVXB2V2hCem5pSXZDUklQQU5nT3hJQVdtdmg0NzNhaDRFaDVSeWQ5bEpuMEhJWlhObnotQU5sWmJUVTZWNlE?oc=5",
           "publishedAt": "2026-10-04T05:23:30.000Z"
         }
@@ -4294,7 +4310,7 @@
       "provider": "google-news",
       "lang": "en",
       "title": "Anthropic’s ‘Mythos’ AI proves that obsessing over AGI is folly",
-      "source": "fastcompany.com",
+      "source": "Fast Company",
       "sourceUrl": "https://www.fastcompany.com",
       "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1XWjduOWdKX0dQOEtDRktWNTJQMDVlVk84LUtCQjRMeDZjcjFxV3ZzdzkxOHVCY1VQaVNXYnhDMk1ueUg2a2N6Rzh6bUVVREFkOUNmTDNYelhTSDFMcTRoMTJNck5jdVNZQkhoVi1kMHVteTgxaDVTNGtR?oc=5",
       "publishedAt": "2026-10-04T04:15:36.000Z",
@@ -4310,7 +4326,7 @@
       "coverage": 1,
       "sources": [
         {
-          "name": "fastcompany.com",
+          "name": "Fast Company",
           "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1XWjduOWdKX0dQOEtDRktWNTJQMDVlVk84LUtCQjRMeDZjcjFxV3ZzdzkxOHVCY1VQaVNXYnhDMk1ueUg2a2N6Rzh6bUVVREFkOUNmTDNYelhTSDFMcTRoMTJNck5jdVNZQkhoVi1kMHVteTgxaDVTNGtR?oc=5",
           "publishedAt": "2026-10-04T04:15:36.000Z"
         }
