@@ -6,21 +6,85 @@
   "duplicateTitleSimilarity": 0.5,
   "categories": {
     "auto": {
-      "ko": ["자동차보험", "자동차보험 손해율", "자동차보험료", "교통사고 보험사기", "자율주행 사고 책임", "車보험"],
-      "en": ["auto insurance", "motor insurance claims", "autonomous vehicle liability insurance"]
+      "ko": [
+        "자동차보험",
+        "자동차보험 손해율",
+        "자동차보험료",
+        "교통사고 보험사기",
+        "자율주행 사고 책임",
+        "車보험"
+      ],
+      "en": [
+        "auto insurance",
+        "motor insurance claims",
+        "autonomous vehicle liability insurance"
+      ]
     },
     "mobility": {
-      "ko": ["자율주행", "로보택시", "전기차 정책", "소프트웨어 중심 자동차 SDV", "도심항공교통 UAM", "커넥티드카"],
-      "en": ["robotaxi", "autonomous driving", "Waymo", "Tesla FSD", "software-defined vehicle"]
+      "ko": [
+        "자율주행",
+        "로보택시",
+        "전기차 정책",
+        "소프트웨어 중심 자동차 SDV",
+        "도심항공교통 UAM",
+        "커넥티드카"
+      ],
+      "en": [
+        "robotaxi",
+        "autonomous driving",
+        "Waymo",
+        "Tesla FSD",
+        "software-defined vehicle"
+      ]
     },
     "insurance": {
-      "ko": ["손해보험", "생명보험", "보험업계", "금융당국 보험", "인슈어테크", "보험사 실적"],
-      "en": ["insurance industry", "insurtech", "reinsurance market"]
+      "ko": [
+        "손해보험",
+        "생명보험",
+        "보험업계",
+        "금융당국 보험",
+        "인슈어테크",
+        "보험사 실적"
+      ],
+      "en": [
+        "insurance industry",
+        "insurtech",
+        "reinsurance market"
+      ]
     },
     "ai": {
-      "ko": ["생성형 AI", "AI 에이전트", "LLM 거대언어모델", "피지컬 AI", "AI 로봇"],
-      "en": ["AI agent", "large language model", "physical AI robotics", "OpenAI", "Anthropic Claude"]
+      "ko": [
+        "생성형 AI",
+        "AI 에이전트",
+        "LLM 거대언어모델",
+        "피지컬 AI",
+        "AI 로봇"
+      ],
+      "en": [
+        "AI agent",
+        "large language model",
+        "physical AI robotics",
+        "OpenAI",
+        "Anthropic Claude"
+      ]
     }
   },
-  "excludeTitlePatterns": ["\\[포토\\]", "\\[사진\\]", "\\[인사\\]", "\\[부고\\]", "\\[게시판\\]", "\\[오늘의 운세\\]", "\\[표\\]"]
+  "excludeTitlePatterns": [
+    "\\[포토\\]",
+    "\\[사진\\]",
+    "\\[인사\\]",
+    "\\[부고\\]",
+    "\\[게시판\\]",
+    "\\[오늘의 운세\\]",
+    "\\[표\\]",
+    "(?i)shares (bought|sold|acquired) by",
+    "(?i)\\bstock (gains|falls|rises|drops)\\b",
+    "\\$[A-Z]{2,5}\\b",
+    "(?i)price target"
+  ],
+  "excludeSources": [
+    "MarketBeat",
+    "AD HOC NEWS"
+  ],
+  "_excludeSources": "품질이 낮거나 주가 자동기사 위주인 출처. 언론사 이름 그대로 적으면 해당 출처 기사는 수집하지 않습니다."
 }

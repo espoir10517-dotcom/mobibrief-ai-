@@ -65,9 +65,10 @@ export async function runCollect({ now = new Date(), log = console.log, outDir =
   await Promise.all(Array.from({ length: CONCURRENCY }, worker));
 
   const since = now.getTime() - cfg.lookbackHours * 3600000;
-  const exclude = (cfg.excludeTitlePatterns || []).map((p) => new RegExp(p));
+  const exclude = (cfg.excludeTitlePatterns || []).map((p) => (p.startsWith('(?i)') ? new RegExp(p.slice(4), 'i') : new RegExp(p)));
+  const blockedSources = new Set((cfg.excludeSources || []).map((s) => s.toLowerCase()));
   const fresh = raw.filter(
-    (it) => Date.parse(it.publishedAt) >= since && Date.parse(it.publishedAt) <= now.getTime() + 3600000 && !exclude.some((re) => re.test(it.title)),
+    (it) => Date.parse(it.publishedAt) >= since && Date.parse(it.publishedAt) <= now.getTime() + 3600000 && !exclude.some((re) => re.test(it.title)) && !blockedSources.has(String(it.source).toLowerCase()),
   );
   const clusters = dedupe(fresh, { threshold: cfg.duplicateTitleSimilarity });
 

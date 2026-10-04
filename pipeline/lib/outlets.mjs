@@ -3,6 +3,8 @@
 // 목록에 없는 곳은 도메인 이름을 그대로 보여줍니다. 필요하면 여기에 추가하세요.
 
 const OUTLETS = {
+  'v.daum.net': '다음뉴스',
+  'daum.net': '다음뉴스',
   'chosun.com': '조선일보',
   'joongang.co.kr': '중앙일보',
   'donga.com': '동아일보',

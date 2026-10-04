@@ -2,8 +2,8 @@
 
 **AI가 골라주는 오늘의 핵심 뉴스** — 자동차보험 · 모빌리티 · 보험 · AI 기술 분야별 TOP 5를 매일 아침 휴대폰으로.
 
-> 현재 단계: **Phase 1 완료** (모바일 화면 + Demo Mode)
-> 지금 보이는 기사 20건은 모두 **가상(SAMPLE) 데이터**입니다. 실제 뉴스 수집은 Phase 2부터 연결됩니다.
+> 현재 단계: **Phase 2 완료** (실제 뉴스 수집이 매일 자동으로 쌓이는 중)
+> 앱 화면에는 아직 **가상(SAMPLE) 데이터**가 보입니다. AI 평가·요약(Phase 3)이 연결되면 실제 뉴스로 자동 전환됩니다.
 
 ---
 
@@ -57,7 +57,8 @@ npm start
 
 | 명령 | 하는 일 |
 |---|---|
-| `npm test` | 데이터 형식·TOP 5·점수 계산·트렌드 계산 자동 점검 |
+| `npm test` | 화면 데이터·TOP 5·점수·트렌드·뉴스 수집기 자동 점검 |
+| `npm run collect` | 지금 바로 뉴스 수집 (네이버 키가 `.env`에 있으면 네이버도 포함) |
 | `npm run build:demo` | 가상 기사(`scripts/demo/articles.mjs`)와 가중치(`config/scoring.json`)로 Demo 데이터 다시 생성 |
 | `npm run build:preview` | 서버 없이 열리는 단일 파일 미리보기 `dist/preview.html` 생성 |
 
@@ -105,6 +106,12 @@ Phase 1은 **키 없이** 동작합니다. 아래 키는 해당 Phase를 시작�
 6. **결과 저장** — `public/data/live/` 에 JSON 저장 → 앱이 자동으로 실데이터로 전환
 
 평가 기준과 가중치는 `config/scoring.json` 에서 바꿀 수 있습니다.
+
+**검색어·제외 규칙 바꾸기:** `config/sources.json` 에서 분야별 검색어(ko=한국어, en=영어), 제외할 제목 패턴(`[포토]`, `[인사]` 등), 제외할 출처를 고칠 수 있습니다. 분야별로 AI에 넘기는 후보는 최대 40건(`maxCandidatesPerCategory`)이라 검색어를 늘려도 AI 비용은 그대로입니다.
+
+**수집 결과 확인:** GitHub 저장소 → `data/collected/` 폴더에 날짜별 파일이 쌓입니다. 실행 기록은 저장소 → **Actions** 탭 → '뉴스 수집'에서 볼 수 있고, **Run workflow** 버튼으로 바로 실행할 수도 있습니다.
+
+참고: Google News RSS 는 개인·비상업적 이용을 전제로 제공됩니다. 이 앱은 제목·언론사·링크만 보여주고 원문으로 연결하는 방식으로 사용합니다.
 
 ## 6. 알림 설정 방법
 
@@ -181,7 +188,7 @@ mobibrief-ai/
 ## 진행 단계
 
 - [x] **Phase 1** 모바일 UI + Demo Mode + 기본 화면 (검색·관심 키워드·즐겨찾기·트렌드·공유·다크모드 포함)
-- [ ] Phase 2 실제 뉴스 수집 (Google News RSS + 네이버 API, 중복 묶기)
+- [x] **Phase 2** 실제 뉴스 수집 (Google News RSS 한/영 + 네이버 API, 중복 묶기, 매일 06:30 자동 수집 → `data/collected/`)
 - [ ] Phase 3 AI 분류·평가·요약 (Claude API, 근거 검증)
 - [ ] Phase 4 매일 자동 업데이트 + TOP 5 선정 (GitHub Actions)
 - [ ] Phase 5 PWA 알림 (Web Push + 텔레그램 대안)

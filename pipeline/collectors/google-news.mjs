@@ -4,6 +4,7 @@
 
 import { fetchText } from '../lib/http.mjs';
 import { decodeEntities, stripHtml, toIso } from '../lib/text.mjs';
+import { outletFromUrl } from '../lib/outlets.mjs';
 
 const EDITIONS = {
   ko: 'hl=ko&gl=KR&ceid=KR:ko',
@@ -37,7 +38,8 @@ export function parseRss(xml, { lang, query } = {}) {
       lang,
       query,
       title: stripHtml(title),
-      source: source || 'Google News',
+      // 구글이 언론사 이름 대신 도메인(v.daum.net 등)을 주는 경우 이름 표로 변환
+      source: /^[\w-]+(\.[\w-]+)+$/.test(source) ? outletFromUrl(`https://${source}`) : source || 'Google News',
       sourceUrl,
       url: link,
       publishedAt,
