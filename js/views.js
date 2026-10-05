@@ -772,10 +772,10 @@ export function settings(data) {
           ${
             isStandalone
               ? '<div class="row"><div class="row__text"><span class="row__label">✅ 홈 화면 앱으로 실행 중</span></div></div>'
-              : `${window.__mbInstall ? '<div class="row"><div class="row__text"><span class="row__label">이 휴대폰에 바로 설치</span><span class="row__desc">버튼 한 번으로 홈 화면에 앱 아이콘이 생겨요</span></div><button class="btn btn--primary" type="button" id="install-btn" style="white-space:nowrap;flex:none">📲 설치</button></div>' : ''}
+              : `${window.__mbInstall ? '<div class="row"><div class="row__text"><span class="row__label">이 휴대폰에 바로 설치</span><span class="row__desc">버튼 한 번으로 앱 아이콘이 생겨요</span></div><button class="btn btn--primary" type="button" id="install-btn" style="white-space:nowrap;flex:none">📲 설치</button></div>' : ''}
           <div class="row row--stack"><div class="row__text"><span class="row__label">휴대폰 홈 화면에 추가하기</span>
           <span class="row__desc install-steps"><b>iPhone (Safari)</b> 아래쪽 공유 버튼(□↑) → ‘홈 화면에 추가’ → ‘추가’<br>
-          <b>Android (Chrome)</b> 주소창 오른쪽 ⋮ → ‘설치 및 바로가기 만들기’ → ‘설치’<br><span class="install-steps__sub">메뉴 이름이 ‘홈 화면에 추가’ 또는 ‘앱 설치’로 보이는 버전도 있어요</span><br>
+          <b>Android (Chrome)</b> 주소창 오른쪽 ⋮ → ‘설치 및 바로가기 만들기’ → ‘설치’<br><span class="install-steps__sub">※ 메뉴 이름이 ‘홈 화면에 추가’ 또는 ‘앱 설치’로 보이는 버전도 있어요</span><br>
           <b>삼성 인터넷</b> 아래쪽 ≡ → ‘현재 페이지 추가’ → ‘홈 화면’<br>
           <b>카카오톡에서 열었다면</b> 오른쪽 ⋮ → ‘다른 브라우저로 열기’를 먼저 눌러 주세요</span></div></div>`
           }
