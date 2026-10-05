@@ -122,6 +122,17 @@ function route(path) {
   }
 }
 
+// 안드로이드 Chrome: '앱 설치' 버튼용 (브라우저가 설치 가능하다고 알려줄 때만)
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  window.__mbInstall = e;
+  if (currentPath() === '/settings') render({ keepScroll: true });
+});
+window.addEventListener('appinstalled', () => {
+  window.__mbInstall = null;
+  if (currentPath() === '/settings') render({ keepScroll: true });
+});
+
 const ctx = {
   navigate,
   toast,

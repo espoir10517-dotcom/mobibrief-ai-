@@ -769,8 +769,16 @@ export function settings(data) {
       <div class="group">
         <div class="group__title">앱 설치</div>
         <div class="list">
-          <div class="row row--stack"><div class="row__text"><span class="row__label">${isStandalone ? '✅ 홈 화면 앱으로 실행 중' : '휴대폰 홈 화면에 추가하기'}</span>
-          <span class="row__desc"><b>iPhone</b> Safari 하단 공유 버튼 → ‘홈 화면에 추가’<br><b>Android</b> Chrome 오른쪽 위 ⋮ → ‘앱 설치’ 또는 ‘홈 화면에 추가’</span></div></div>
+          ${
+            isStandalone
+              ? '<div class="row"><div class="row__text"><span class="row__label">✅ 홈 화면 앱으로 실행 중</span></div></div>'
+              : `${window.__mbInstall ? '<div class="row"><div class="row__text"><span class="row__label">이 휴대폰에 바로 설치</span><span class="row__desc">버튼 한 번으로 홈 화면에 앱 아이콘이 생겨요</span></div><button class="btn btn--primary" type="button" id="install-btn" style="white-space:nowrap;flex:none">📲 설치</button></div>' : ''}
+          <div class="row row--stack"><div class="row__text"><span class="row__label">휴대폰 홈 화면에 추가하기</span>
+          <span class="row__desc install-steps"><b>iPhone (Safari)</b> 아래쪽 공유 버튼(□↑) → ‘홈 화면에 추가’ → ‘추가’<br>
+          <b>Android (Chrome)</b> 주소창 오른쪽 ⋮ → ‘설치 및 바로가기 만들기’ → ‘설치’<br><span class="install-steps__sub">메뉴 이름이 ‘홈 화면에 추가’ 또는 ‘앱 설치’로 보이는 버전도 있어요</span><br>
+          <b>삼성 인터넷</b> 아래쪽 ≡ → ‘현재 페이지 추가’ → ‘홈 화면’<br>
+          <b>카카오톡에서 열었다면</b> 오른쪽 ⋮ → ‘다른 브라우저로 열기’를 먼저 눌러 주세요</span></div></div>`
+          }
         </div>
       </div>
 
@@ -805,6 +813,15 @@ ${store.isAdmin() ? `          <div class="row"><div class="row__text"><span cla
       <p class="footer-note"><span id="version-tap">MobiBrief AI · v0.6</span><br>공개 뉴스만 다루며, 기사 전문을 저장하지 않고 원문 링크로 연결합니다.</p>
     </div>`,
     mount(root, ctx) {
+      root.querySelector('#install-btn')?.addEventListener('click', async () => {
+        const ev = window.__mbInstall;
+        if (!ev) return;
+        ev.prompt();
+        const { outcome } = await ev.userChoice.catch(() => ({}));
+        window.__mbInstall = null;
+        if (outcome === 'accepted') ctx.toast('홈 화면에 설치했어요');
+        ctx.rerender();
+      });
       root.querySelectorAll('[data-set]').forEach((b) =>
         b.addEventListener('click', async () => {
           const key = b.dataset.set;
