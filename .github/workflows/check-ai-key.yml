@@ -1,0 +1,23 @@
+# AI 키 점검: 등록한 AI 키가 제대로 동작하는지 짧은 요청 1번으로 확인 (브리핑은 바뀌지 않음)
+name: AI 키 점검
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: AI 키 점검
+        run: node scripts/check-ai-key.mjs
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
