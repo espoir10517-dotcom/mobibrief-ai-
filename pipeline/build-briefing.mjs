@@ -366,7 +366,7 @@ export async function buildBriefing({ log = console.log, env = process.env, outD
   const keepSince = Date.now() - (bcfg.archiveDays || 28) * 86400000;
   try {
     const prevArchive = JSON.parse(await readFile(path.join(outDir, 'archive.json'), 'utf8'));
-    for (const a of prevArchive.articles || []) if (a.analysis === 'ai' && a.summary3?.length && Date.parse(a.publishedAt) >= keepSince) archiveMap.set(a.id, a);
+    for (const a of prevArchive.articles || []) if (a.analysis === 'ai' && a.summary3?.length && Date.parse(a.publishedAt) >= keepSince && !exclude.some((re) => re.test(a.title))) archiveMap.set(a.id, a);
   } catch {
     /* 첫 실행 */
   }

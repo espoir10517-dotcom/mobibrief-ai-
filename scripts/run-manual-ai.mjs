@@ -2,6 +2,7 @@
 // 운영 파이프라인(검증·근거 확인 포함)을 그대로 거쳐 브리핑을 만듭니다.
 // 실행:
 //   node scripts/run-manual-ai.mjs                     → 이번 주 브리핑 (data/manual-ai/*.json)
+//   node scripts/run-manual-ai.mjs --as-of 2026-10-04  → 이번 주 브리핑을 그 날짜까지의 수집분으로 다시 만들기 (수정 반영용)
 //   node scripts/run-manual-ai.mjs --week 2026-09-27   → 지난 주 브리핑 (data/manual-ai/2026-09-27/*.json)
 //      그 날짜까지의 7일치로 그 주 월요일에 발행했던 것처럼 만들어 '지난 브리핑'과 검색 보관함에만 넣습니다.
 //      (지금 앱에 보이는 이번 주 브리핑은 건드리지 않음)
@@ -40,8 +41,10 @@ const client = {
   },
 };
 
+const ai = process.argv.indexOf('--as-of');
+const asOf = ai > 0 ? process.argv[ai + 1] : undefined;
 if (!week) {
-  const b = await buildBriefing({ clientOverride: client });
+  const b = await buildBriefing({ clientOverride: client, asOf, env: {} });
   console.log(`\n✅ 발행 데이터 생성: ${b.analysis} · TOP ${Object.values(b.categories).map((x) => x.length).join('/')} · 기사 ${b.articles.length}건`);
 } else {
   const live = path.join(root, 'public/data/live');

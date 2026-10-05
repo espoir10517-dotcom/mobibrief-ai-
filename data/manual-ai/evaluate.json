@@ -92,7 +92,7 @@
   },
   {
    "id": "ef9928c12e63",
-   "keep": true,
+   "keep": false,
    "category": "auto",
    "importance": 80,
    "relevance": 90,
@@ -154,15 +154,15 @@
    "id": "cc560c46434f",
    "keep": true,
    "category": "auto",
-   "importance": 70,
-   "relevance": 86,
-   "impact": 60,
-   "novelty": 76,
-   "reason": "배달 라이더 전용 이륜차보험, 신상품 동향",
+   "importance": 74,
+   "relevance": 90,
+   "impact": 66,
+   "novelty": 82,
+   "reason": "배달 플랫폼과 연계한 라이더 전용 이륜차보험 신상품, 이륜차 상품 경쟁 동향",
    "keywords": [
     "이륜차보험",
-    "배달라이더",
-    "하나손보"
+    "배달 라이더",
+    "하나손해보험"
    ]
   },
   {
