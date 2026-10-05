@@ -1,0 +1,53 @@
+# 앱 화면만 반영 (뉴스 수집·AI 편집 없이 public/ 폴더만 GitHub Pages 에 올림)
+# - 앱 코드(화면·디자인)가 바뀌어 main 에 올라오면 자동 실행
+# - Actions 탭 → '앱 반영' → Run workflow 로 직접 실행도 가능
+# AI 비용이 들지 않고, 이번 주 브리핑 내용은 바뀌지 않습니다.
+
+name: 앱 반영
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'public/js/**'
+      - 'public/css/**'
+      - 'public/index.html'
+      - 'public/sw.js'
+      - 'public/manifest.webmanifest'
+      - 'public/icons/**'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-news
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: 점검
+        run: npm test && npm run validate
+
+      - name: 앱에 반영 (GitHub Pages)
+        run: |
+          git config user.name "mobibrief-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin gh-pages --depth=1
+          git worktree add ../site origin/gh-pages
+          rsync -a --delete --exclude .git public/ ../site/
+          touch ../site/.nojekyll
+          cd ../site
+          git add -A
+          if git diff --cached --quiet; then echo "변경 없음"; exit 0; fi
+          git commit -m "앱 화면 업데이트 $(TZ=Asia/Seoul date '+%F %H:%M')"
+          git push origin HEAD:gh-pages
