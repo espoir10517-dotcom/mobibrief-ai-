@@ -36,7 +36,18 @@ export async function sendWeekly({ env = process.env, now = new Date(), log = co
     log('ℹ️  Cloudflare 비밀값이 없어 알림을 보내지 않습니다.');
     return { sent: 0, skipped: 'no-config' };
   }
-  const b = briefing || JSON.parse(await readFile(path.join(root, 'public/data/live/briefing.json'), 'utf8'));
+  // 실제 앱에 올라가 있는 브리핑 기준으로 보냄 (발행 점검에서 막혀 앱에 반영되지 않은 브리핑으로 알림이 가지 않도록)
+  let b = briefing;
+  if (!b) {
+    try {
+      const r = await fetchImpl(`${APP_URL}data/live/briefing.json?t=${now.getTime()}`, { cache: 'no-store' });
+      if (!r.ok) throw new Error(String(r.status));
+      b = await r.json();
+    } catch (e) {
+      log(`⚠️  앱의 브리핑을 확인하지 못해 이번에는 보내지 않습니다 (${e.message}).`);
+      return { sent: 0, skipped: 'app-unreachable' };
+    }
+  }
   const kst = new Date(now.getTime() + 9 * 3600000);
   const hour = env.FORCE_HOUR ? Number(env.FORCE_HOUR) : kst.getUTCHours();
   // 이번 주 브리핑인지 확인: 발행된 지 30시간 이내

@@ -35,7 +35,7 @@ function evaluatePrompt(editorial) {
 ---
 너는 위 독자를 위한 뉴스 편집자다. 주어진 기사 목록을 하나씩 평가하라.
 각 기사에 대해:
-- keep: 위 기준에서 독자에게 보여줄 가치가 있으면 true, '걸러낼 뉴스'에 해당하거나 분야와 무관하면 false
+- keep: '걸러낼 뉴스'에 해당하거나 4개 분야와 무관할 때만 false. 덜 중요하거나 새롭지 않은 기사는 keep:true 로 두고 점수를 낮게 매겨라 (분야마다 매주 10건을 골라야 하므로 너무 많이 버리지 마라)
 - category: auto | mobility | insurance | ai 중 가장 알맞은 분야 (hint 는 참고만)
 - importance, relevance, impact, novelty: 0~100 정수
   · importance: 산업적으로 얼마나 중요한가 (여러 언론사 보도 = coverage 가 크면 참고)
@@ -85,11 +85,23 @@ async function evaluate({ candidates, client, editorial, criteria, recencyOf, cf
 async function edit({ evaluated, client, editorial, cfg, log, period = '오늘' }) {
   const topN = cfg.topN || 5;
   const pool = {};
+  const per = cfg.editorCandidatesPerCategory || 12;
   for (const c of CATS) {
     pool[c] = evaluated
       .filter((a) => a.keep && a.category === c)
       .sort((a, b) => b.total - a.total)
-      .slice(0, cfg.editorCandidatesPerCategory || 12);
+      .slice(0, per);
+    // AI 가 너무 많이 걸러내 후보가 모자라면, 걸러낸 기사 중 그 분야 점수 상위로 채움 (분야가 비어 발행이 멈추지 않도록)
+    const available = evaluated.filter((a) => a.category === c).length;
+    if (pool[c].length < topN && available >= topN * 2) {
+      const extra = evaluated
+        .filter((a) => !a.keep && a.category === c)
+        .sort((a, b) => b.total - a.total)
+        .slice(0, Math.min(per, topN * 2) - pool[c].length);
+      for (const a of extra) a.keep = true;
+      if (extra.length) log(`   ${CAT_NAME[c]}: 통과 후보가 ${pool[c].length}건뿐이라 점수 상위 ${extra.length}건을 후보에 추가`);
+      pool[c] = [...pool[c], ...extra];
+    }
   }
   const system = `${editorial}
 

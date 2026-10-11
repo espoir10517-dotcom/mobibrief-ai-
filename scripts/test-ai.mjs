@@ -91,6 +91,22 @@ const m1 = res.articles.find((a) => a.id === 'm1');
 ok(m1.limitedInfo === true, '요약문 없는 기사는 정보 제한 표시');
 ok(client.usage.calls === calls.evaluate + calls.edit + calls.write && client.usage.costUSD > 0, `사용량·예상 비용 기록 ($${client.usage.costUSD.toFixed(4)})`);
 
+// AI 가 한 분야를 거의 다 걸러냈을 때: 점수 상위로 채워 분야가 비지 않음 (10.12 실제 사례 재현)
+{
+  const many = Array.from({ length: 24 }, (_, i) => mk(`z${i}`, 'ai', `AI 기술 기사 ${i}`, '요약'));
+  const strict = {
+    provider: 'test', usage: { calls: 0, input: 0, output: 0, costUSD: 0 },
+    async callJson({ system, user }) {
+      const batch = JSON.parse(user);
+      if (system.includes('평가하라')) return { items: batch.map((a, i) => ({ id: a.id, keep: false, category: 'ai', importance: 50 + i, relevance: 50, impact: 50, novelty: 50, reason: '', keywords: [] })) };
+      if (system.includes('편집장')) return { top: { ai: [] }, issues: [], headline: 'h', keywords: [] };
+      return { items: batch.map((a) => ({ id: a.id, oneLiner: '요약', summary3: ['요약'], keyPoints: [], whyImportant: '', perspective: '', watchNext: [] })) };
+    },
+  };
+  const r2 = await aiBriefing({ today: many, client: strict, editorial: '편집 기준', criteria, cfg: { evaluateBatchSize: 30, editorCandidatesPerCategory: 25, writeBatchSize: 5, topN: 10 }, recencyOf: () => 90, log: () => {} });
+  ok(r2.categories.ai.length === 10, `AI 가 전부 걸러내도 분야 TOP 10 채움 (${r2.categories.ai.length}건)`);
+}
+
 // 키가 틀렸을 때: 재시도 없이 실패 → 규칙 방식으로 대신 발행
 globalThis.fetch = async () => new Response('{"error":"invalid x-api-key"}', { status: 401 });
 const { buildBriefing } = await import('../pipeline/build-briefing.mjs');
