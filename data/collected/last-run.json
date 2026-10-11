@@ -1,12 +1,12 @@
 {
-  "date": "2026-10-11",
-  "collectedAt": "2026-10-10T21:41:14.629Z",
+  "date": "2026-10-12",
+  "collectedAt": "2026-10-11T21:42:28.512Z",
   "stats": {
     "searches": 44,
     "google": {
       "ok": 23,
       "fail": 0,
-      "items": 336
+      "items": 324
     },
     "naver": {
       "ok": 0,
@@ -15,24 +15,25 @@
       "enabled": false
     },
     "rss": {
-      "ok": 20,
-      "fail": 1,
-      "items": 1200,
-      "kept": 488
+      "ok": 19,
+      "fail": 2,
+      "items": 1108,
+      "kept": 489
     },
-    "raw": 824,
-    "fresh": 333,
-    "clusters": 217,
-    "candidates": 189,
+    "raw": 813,
+    "fresh": 445,
+    "clusters": 298,
+    "candidates": 217,
     "perCategory": {
-      "auto": 22,
-      "mobility": 52,
-      "insurance": 55,
+      "auto": 37,
+      "mobility": 60,
+      "insurance": 60,
       "ai": 60
     }
   },
   "errors": [
-    "rss \"전자신문\": fetch failed"
+    "rss \"전자신문\": fetch failed",
+    "rss \"머니투데이\": fetch failed"
   ],
   "feeds": [
     {
@@ -40,42 +41,35 @@
       "url": "https://www.hankyung.com/feed/finance",
       "ok": true,
       "items": 50,
-      "kept": 16
+      "kept": 12
     },
     {
       "name": "한국경제 IT",
       "url": "https://www.hankyung.com/feed/it",
       "ok": true,
       "items": 50,
-      "kept": 7
+      "kept": 16
     },
     {
       "name": "연합뉴스 산업",
       "url": "https://www.yna.co.kr/rss/industry.xml",
       "ok": true,
       "items": 120,
-      "kept": 12
+      "kept": 22
     },
     {
       "name": "연합뉴스 경제",
       "url": "https://www.yna.co.kr/rss/economy.xml",
       "ok": true,
       "items": 120,
-      "kept": 10
+      "kept": 9
     },
     {
       "name": "매일경제 기업",
       "url": "https://www.mk.co.kr/rss/50100032/",
       "ok": true,
       "items": 50,
-      "kept": 13
-    },
-    {
-      "name": "매일경제 경제",
-      "url": "https://www.mk.co.kr/rss/30100041/",
-      "ok": true,
-      "items": 50,
-      "kept": 12
+      "kept": 10
     },
     {
       "name": "매일경제 IT",
@@ -85,39 +79,46 @@
       "kept": 0
     },
     {
+      "name": "매일경제 경제",
+      "url": "https://www.mk.co.kr/rss/30100041/",
+      "ok": true,
+      "items": 50,
+      "kept": 7
+    },
+    {
       "name": "조선일보 경제",
       "url": "https://www.chosun.com/arc/outboundfeeds/rss/category/economy/?outputType=xml",
       "ok": true,
       "items": 100,
-      "kept": 23
+      "kept": 19
     },
     {
       "name": "동아일보 경제",
       "url": "https://rss.donga.com/economy.xml",
       "ok": true,
       "items": 50,
-      "kept": 10
+      "kept": 12
     },
     {
       "name": "경향신문 경제",
       "url": "https://www.khan.co.kr/rss/rssdata/economy_news.xml",
       "ok": true,
       "items": 50,
-      "kept": 13
-    },
-    {
-      "name": "뉴시스 경제",
-      "url": "https://newsis.com/RSS/economy.xml",
-      "ok": true,
-      "items": 30,
-      "kept": 4
+      "kept": 17
     },
     {
       "name": "지디넷코리아",
       "url": "https://feeds.feedburner.com/zdkorea",
       "ok": true,
       "items": 30,
-      "kept": 13
+      "kept": 15
+    },
+    {
+      "name": "뉴시스 경제",
+      "url": "https://newsis.com/RSS/economy.xml",
+      "ok": true,
+      "items": 38,
+      "kept": 0
     },
     {
       "name": "한국보험신문",
@@ -127,13 +128,6 @@
       "kept": 50
     },
     {
-      "name": "머니투데이",
-      "url": "https://rss.mt.co.kr/mt_news.xml",
-      "ok": true,
-      "items": 100,
-      "kept": 5
-    },
-    {
       "name": "보험매일",
       "url": "https://www.fins.co.kr/rss/allArticle.xml",
       "ok": true,
@@ -141,15 +135,15 @@
       "kept": 50
     },
     {
-      "name": "보험저널",
-      "url": "https://www.insjournal.co.kr/rss/allArticle.xml",
+      "name": "대한금융신문",
+      "url": "https://www.kbanker.co.kr/rss/allArticle.xml",
       "ok": true,
       "items": 50,
       "kept": 50
     },
     {
-      "name": "대한금융신문",
-      "url": "https://www.kbanker.co.kr/rss/allArticle.xml",
+      "name": "보험저널",
+      "url": "https://www.insjournal.co.kr/rss/allArticle.xml",
       "ok": true,
       "items": 50,
       "kept": 50
@@ -178,6 +172,12 @@
     {
       "name": "전자신문",
       "url": "https://rss.etnews.com/Section901.xml",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "name": "머니투데이",
+      "url": "https://rss.mt.co.kr/mt_news.xml",
       "ok": false,
       "error": "fetch failed"
     }
