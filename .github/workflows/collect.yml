@@ -98,3 +98,16 @@ jobs:
           if git diff --cached --quiet; then echo "변경 없음"; exit 0; fi
           git commit -m "앱 업데이트 $(TZ=Asia/Seoul date '+%F %H:%M')"
           git push origin HEAD:gh-pages
+
+      # 월요일 자동 발행이 늦게 끝난 경우: 받을 시간이 이미 지난 사람에게 바로 알림 (다음 정각까지 기다리지 않음)
+      # - 자동(예약) 실행일 때만. 직접 실행으로 주중에 다시 발행해도 알림은 보내지 않음
+      # - 같은 브리핑은 한 사람에게 한 번만 (매시 정각 발송 작업과 중복 없음)
+      - name: 알림 보내기 (발행 직후)
+        if: steps.when.outputs.publish == 'true' && github.event_name == 'schedule'
+        continue-on-error: true
+        run: |
+          sleep 90  # 앱 주소에 새 브리핑이 반영될 시간
+          node scripts/send-push.mjs
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
