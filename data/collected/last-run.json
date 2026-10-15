@@ -1,12 +1,12 @@
 {
-  "date": "2026-10-15",
-  "collectedAt": "2026-10-14T21:57:17.423Z",
+  "date": "2026-10-16",
+  "collectedAt": "2026-10-15T21:56:00.384Z",
   "stats": {
     "searches": 44,
     "google": {
       "ok": 23,
       "fail": 0,
-      "items": 401
+      "items": 403
     },
     "naver": {
       "ok": 0,
@@ -15,33 +15,30 @@
       "enabled": false
     },
     "rss": {
-      "ok": 19,
-      "fail": 2,
-      "items": 1220,
+      "ok": 21,
+      "fail": 0,
+      "items": 1300,
       "kept": 491
     },
-    "raw": 892,
-    "fresh": 634,
-    "clusters": 369,
-    "candidates": 221,
+    "raw": 894,
+    "fresh": 654,
+    "clusters": 402,
+    "candidates": 237,
     "perCategory": {
-      "auto": 41,
+      "auto": 57,
       "mobility": 60,
       "insurance": 60,
       "ai": 60
     }
   },
-  "errors": [
-    "rss \"전자신문\": fetch failed",
-    "rss \"동아일보 경제\": fetch failed"
-  ],
+  "errors": [],
   "feeds": [
     {
       "name": "한국경제 금융",
       "url": "https://www.hankyung.com/feed/finance",
       "ok": true,
       "items": 50,
-      "kept": 4
+      "kept": 8
     },
     {
       "name": "한국경제 IT",
@@ -51,32 +48,39 @@
       "kept": 14
     },
     {
-      "name": "연합뉴스 산업",
-      "url": "https://www.yna.co.kr/rss/industry.xml",
-      "ok": true,
-      "items": 120,
-      "kept": 13
-    },
-    {
       "name": "연합뉴스 경제",
       "url": "https://www.yna.co.kr/rss/economy.xml",
       "ok": true,
       "items": 120,
-      "kept": 10
+      "kept": 8
+    },
+    {
+      "name": "연합뉴스 산업",
+      "url": "https://www.yna.co.kr/rss/industry.xml",
+      "ok": true,
+      "items": 120,
+      "kept": 20
     },
     {
       "name": "매일경제 IT",
       "url": "https://www.mk.co.kr/rss/50300009/",
       "ok": true,
       "items": 50,
-      "kept": 2
+      "kept": 0
     },
     {
-      "name": "매일경제 기업",
-      "url": "https://www.mk.co.kr/rss/50100032/",
+      "name": "매일경제 경제",
+      "url": "https://www.mk.co.kr/rss/30100041/",
       "ok": true,
       "items": 50,
-      "kept": 13
+      "kept": 5
+    },
+    {
+      "name": "전자신문",
+      "url": "https://rss.etnews.com/Section901.xml",
+      "ok": true,
+      "items": 30,
+      "kept": 9
     },
     {
       "name": "조선일보 경제",
@@ -86,32 +90,46 @@
       "kept": 21
     },
     {
-      "name": "매일경제 경제",
-      "url": "https://www.mk.co.kr/rss/30100041/",
+      "name": "매일경제 기업",
+      "url": "https://www.mk.co.kr/rss/50100032/",
       "ok": true,
       "items": 50,
-      "kept": 12
+      "kept": 14
     },
     {
-      "name": "경향신문 경제",
-      "url": "https://www.khan.co.kr/rss/rssdata/economy_news.xml",
+      "name": "동아일보 경제",
+      "url": "https://rss.donga.com/economy.xml",
       "ok": true,
       "items": 50,
-      "kept": 15
+      "kept": 8
     },
     {
       "name": "뉴시스 경제",
       "url": "https://newsis.com/RSS/economy.xml",
       "ok": true,
       "items": 100,
-      "kept": 14
+      "kept": 11
     },
     {
       "name": "지디넷코리아",
       "url": "https://feeds.feedburner.com/zdkorea",
       "ok": true,
       "items": 30,
-      "kept": 11
+      "kept": 3
+    },
+    {
+      "name": "경향신문 경제",
+      "url": "https://www.khan.co.kr/rss/rssdata/economy_news.xml",
+      "ok": true,
+      "items": 50,
+      "kept": 7
+    },
+    {
+      "name": "머니투데이",
+      "url": "https://rss.mt.co.kr/mt_news.xml",
+      "ok": true,
+      "items": 100,
+      "kept": 13
     },
     {
       "name": "한국보험신문",
@@ -119,13 +137,6 @@
       "ok": true,
       "items": 50,
       "kept": 50
-    },
-    {
-      "name": "머니투데이",
-      "url": "https://rss.mt.co.kr/mt_news.xml",
-      "ok": true,
-      "items": 100,
-      "kept": 12
     },
     {
       "name": "보험매일",
@@ -168,18 +179,6 @@
       "ok": true,
       "items": 50,
       "kept": 50
-    },
-    {
-      "name": "전자신문",
-      "url": "https://rss.etnews.com/Section901.xml",
-      "ok": false,
-      "error": "fetch failed"
-    },
-    {
-      "name": "동아일보 경제",
-      "url": "https://rss.donga.com/economy.xml",
-      "ok": false,
-      "error": "fetch failed"
     }
   ]
 }
