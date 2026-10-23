@@ -1,12 +1,12 @@
 {
-  "date": "2026-10-23",
-  "collectedAt": "2026-10-22T21:58:00.878Z",
+  "date": "2026-10-24",
+  "collectedAt": "2026-10-23T21:57:11.622Z",
   "stats": {
     "searches": 44,
     "google": {
       "ok": 23,
       "fail": 0,
-      "items": 408
+      "items": 427
     },
     "naver": {
       "ok": 0,
@@ -18,14 +18,14 @@
       "ok": 21,
       "fail": 0,
       "items": 1300,
-      "kept": 497
+      "kept": 509
     },
-    "raw": 905,
-    "fresh": 678,
-    "clusters": 377,
-    "candidates": 228,
+    "raw": 936,
+    "fresh": 652,
+    "clusters": 342,
+    "candidates": 237,
     "perCategory": {
-      "auto": 48,
+      "auto": 57,
       "mobility": 60,
       "insurance": 60,
       "ai": 60
@@ -41,53 +41,46 @@
       "kept": 6
     },
     {
-      "name": "한국경제 IT",
-      "url": "https://www.hankyung.com/feed/it",
-      "ok": true,
-      "items": 50,
-      "kept": 15
-    },
-    {
       "name": "연합뉴스 경제",
       "url": "https://www.yna.co.kr/rss/economy.xml",
       "ok": true,
       "items": 120,
-      "kept": 7
+      "kept": 14
+    },
+    {
+      "name": "한국경제 IT",
+      "url": "https://www.hankyung.com/feed/it",
+      "ok": true,
+      "items": 50,
+      "kept": 13
     },
     {
       "name": "연합뉴스 산업",
       "url": "https://www.yna.co.kr/rss/industry.xml",
       "ok": true,
       "items": 120,
-      "kept": 20
-    },
-    {
-      "name": "매일경제 경제",
-      "url": "https://www.mk.co.kr/rss/30100041/",
-      "ok": true,
-      "items": 50,
-      "kept": 8
+      "kept": 17
     },
     {
       "name": "매일경제 기업",
       "url": "https://www.mk.co.kr/rss/50100032/",
       "ok": true,
       "items": 50,
-      "kept": 15
+      "kept": 14
+    },
+    {
+      "name": "매일경제 경제",
+      "url": "https://www.mk.co.kr/rss/30100041/",
+      "ok": true,
+      "items": 50,
+      "kept": 9
     },
     {
       "name": "매일경제 IT",
       "url": "https://www.mk.co.kr/rss/50300009/",
       "ok": true,
       "items": 50,
-      "kept": 1
-    },
-    {
-      "name": "조선일보 경제",
-      "url": "https://www.chosun.com/arc/outboundfeeds/rss/category/economy/?outputType=xml",
-      "ok": true,
-      "items": 100,
-      "kept": 19
+      "kept": 2
     },
     {
       "name": "전자신문",
@@ -97,39 +90,39 @@
       "kept": 9
     },
     {
+      "name": "조선일보 경제",
+      "url": "https://www.chosun.com/arc/outboundfeeds/rss/category/economy/?outputType=xml",
+      "ok": true,
+      "items": 100,
+      "kept": 17
+    },
+    {
       "name": "동아일보 경제",
       "url": "https://rss.donga.com/economy.xml",
       "ok": true,
       "items": 50,
-      "kept": 5
-    },
-    {
-      "name": "지디넷코리아",
-      "url": "https://feeds.feedburner.com/zdkorea",
-      "ok": true,
-      "items": 30,
-      "kept": 10
+      "kept": 12
     },
     {
       "name": "경향신문 경제",
       "url": "https://www.khan.co.kr/rss/rssdata/economy_news.xml",
       "ok": true,
       "items": 50,
-      "kept": 11
+      "kept": 10
     },
     {
       "name": "뉴시스 경제",
       "url": "https://newsis.com/RSS/economy.xml",
       "ok": true,
       "items": 100,
-      "kept": 11
+      "kept": 12
     },
     {
-      "name": "머니투데이",
-      "url": "https://rss.mt.co.kr/mt_news.xml",
+      "name": "지디넷코리아",
+      "url": "https://feeds.feedburner.com/zdkorea",
       "ok": true,
-      "items": 100,
-      "kept": 10
+      "items": 30,
+      "kept": 15
     },
     {
       "name": "한국보험신문",
@@ -137,6 +130,13 @@
       "ok": true,
       "items": 50,
       "kept": 50
+    },
+    {
+      "name": "머니투데이",
+      "url": "https://rss.mt.co.kr/mt_news.xml",
+      "ok": true,
+      "items": 100,
+      "kept": 9
     },
     {
       "name": "보험매일",
@@ -167,15 +167,15 @@
       "kept": 50
     },
     {
-      "name": "모터그래프",
-      "url": "https://www.motorgraph.com/rss/allArticle.xml",
+      "name": "AI타임스",
+      "url": "https://www.aitimes.com/rss/allArticle.xml",
       "ok": true,
       "items": 50,
       "kept": 50
     },
     {
-      "name": "AI타임스",
-      "url": "https://www.aitimes.com/rss/allArticle.xml",
+      "name": "모터그래프",
+      "url": "https://www.motorgraph.com/rss/allArticle.xml",
       "ok": true,
       "items": 50,
       "kept": 50
