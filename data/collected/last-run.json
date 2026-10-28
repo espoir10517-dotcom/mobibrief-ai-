@@ -1,12 +1,12 @@
 {
-  "date": "2026-10-28",
-  "collectedAt": "2026-10-27T22:00:26.112Z",
+  "date": "2026-10-29",
+  "collectedAt": "2026-10-28T22:07:05.830Z",
   "stats": {
     "searches": 44,
     "google": {
       "ok": 23,
       "fail": 0,
-      "items": 434
+      "items": 425
     },
     "naver": {
       "ok": 0,
@@ -18,14 +18,14 @@
       "ok": 21,
       "fail": 0,
       "items": 1300,
-      "kept": 526
+      "kept": 497
     },
-    "raw": 960,
-    "fresh": 740,
-    "clusters": 443,
-    "candidates": 240,
+    "raw": 922,
+    "fresh": 659,
+    "clusters": 386,
+    "candidates": 225,
     "perCategory": {
-      "auto": 60,
+      "auto": 45,
       "mobility": 60,
       "insurance": 60,
       "ai": 60
@@ -38,21 +38,21 @@
       "url": "https://www.hankyung.com/feed/finance",
       "ok": true,
       "items": 50,
-      "kept": 11
+      "kept": 8
     },
     {
       "name": "한국경제 IT",
       "url": "https://www.hankyung.com/feed/it",
       "ok": true,
       "items": 50,
-      "kept": 14
+      "kept": 12
     },
     {
       "name": "연합뉴스 경제",
       "url": "https://www.yna.co.kr/rss/economy.xml",
       "ok": true,
       "items": 120,
-      "kept": 14
+      "kept": 17
     },
     {
       "name": "연합뉴스 산업",
@@ -66,21 +66,7 @@
       "url": "https://www.mk.co.kr/rss/50100032/",
       "ok": true,
       "items": 50,
-      "kept": 13
-    },
-    {
-      "name": "매일경제 IT",
-      "url": "https://www.mk.co.kr/rss/50300009/",
-      "ok": true,
-      "items": 50,
-      "kept": 0
-    },
-    {
-      "name": "전자신문",
-      "url": "https://rss.etnews.com/Section901.xml",
-      "ok": true,
-      "items": 30,
-      "kept": 16
+      "kept": 8
     },
     {
       "name": "매일경제 경제",
@@ -90,39 +76,60 @@
       "kept": 7
     },
     {
-      "name": "동아일보 경제",
-      "url": "https://rss.donga.com/economy.xml",
-      "ok": true,
-      "items": 50,
-      "kept": 9
-    },
-    {
       "name": "조선일보 경제",
       "url": "https://www.chosun.com/arc/outboundfeeds/rss/category/economy/?outputType=xml",
       "ok": true,
       "items": 100,
-      "kept": 23
+      "kept": 20
     },
     {
-      "name": "뉴시스 경제",
-      "url": "https://newsis.com/RSS/economy.xml",
+      "name": "전자신문",
+      "url": "https://rss.etnews.com/Section901.xml",
       "ok": true,
-      "items": 100,
-      "kept": 14
+      "items": 30,
+      "kept": 9
     },
     {
-      "name": "경향신문 경제",
-      "url": "https://www.khan.co.kr/rss/rssdata/economy_news.xml",
+      "name": "매일경제 IT",
+      "url": "https://www.mk.co.kr/rss/50300009/",
       "ok": true,
       "items": 50,
-      "kept": 16
+      "kept": 0
+    },
+    {
+      "name": "동아일보 경제",
+      "url": "https://rss.donga.com/economy.xml",
+      "ok": true,
+      "items": 50,
+      "kept": 11
     },
     {
       "name": "지디넷코리아",
       "url": "https://feeds.feedburner.com/zdkorea",
       "ok": true,
       "items": 30,
-      "kept": 6
+      "kept": 11
+    },
+    {
+      "name": "경향신문 경제",
+      "url": "https://www.khan.co.kr/rss/rssdata/economy_news.xml",
+      "ok": true,
+      "items": 50,
+      "kept": 13
+    },
+    {
+      "name": "뉴시스 경제",
+      "url": "https://newsis.com/RSS/economy.xml",
+      "ok": true,
+      "items": 100,
+      "kept": 9
+    },
+    {
+      "name": "머니투데이",
+      "url": "https://rss.mt.co.kr/mt_news.xml",
+      "ok": true,
+      "items": 100,
+      "kept": 7
     },
     {
       "name": "한국보험신문",
@@ -132,22 +139,15 @@
       "kept": 50
     },
     {
-      "name": "머니투데이",
-      "url": "https://rss.mt.co.kr/mt_news.xml",
-      "ok": true,
-      "items": 100,
-      "kept": 18
-    },
-    {
-      "name": "보험매일",
-      "url": "https://www.fins.co.kr/rss/allArticle.xml",
+      "name": "대한금융신문",
+      "url": "https://www.kbanker.co.kr/rss/allArticle.xml",
       "ok": true,
       "items": 50,
       "kept": 50
     },
     {
-      "name": "대한금융신문",
-      "url": "https://www.kbanker.co.kr/rss/allArticle.xml",
+      "name": "보험매일",
+      "url": "https://www.fins.co.kr/rss/allArticle.xml",
       "ok": true,
       "items": 50,
       "kept": 50
