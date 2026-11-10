@@ -1,12 +1,12 @@
 {
-  "date": "2026-11-09",
-  "collectedAt": "2026-11-09T01:05:43.030Z",
+  "date": "2026-11-10",
+  "collectedAt": "2026-11-10T03:41:55.397Z",
   "stats": {
     "searches": 44,
     "google": {
       "ok": 23,
       "fail": 0,
-      "items": 374
+      "items": 429
     },
     "naver": {
       "ok": 0,
@@ -17,15 +17,15 @@
     "rss": {
       "ok": 21,
       "fail": 0,
-      "items": 1258,
-      "kept": 500
+      "items": 1300,
+      "kept": 541
     },
-    "raw": 874,
-    "fresh": 535,
-    "clusters": 349,
-    "candidates": 238,
+    "raw": 970,
+    "fresh": 751,
+    "clusters": 476,
+    "candidates": 240,
     "perCategory": {
-      "auto": 58,
+      "auto": 60,
       "mobility": 60,
       "insurance": 60,
       "ai": 60
@@ -38,35 +38,35 @@
       "url": "https://www.hankyung.com/feed/finance",
       "ok": true,
       "items": 50,
-      "kept": 6
+      "kept": 10
     },
     {
       "name": "한국경제 IT",
       "url": "https://www.hankyung.com/feed/it",
       "ok": true,
       "items": 50,
-      "kept": 13
-    },
-    {
-      "name": "연합뉴스 경제",
-      "url": "https://www.yna.co.kr/rss/economy.xml",
-      "ok": true,
-      "items": 120,
-      "kept": 9
+      "kept": 20
     },
     {
       "name": "연합뉴스 산업",
       "url": "https://www.yna.co.kr/rss/industry.xml",
       "ok": true,
       "items": 120,
-      "kept": 17
+      "kept": 20
+    },
+    {
+      "name": "연합뉴스 경제",
+      "url": "https://www.yna.co.kr/rss/economy.xml",
+      "ok": true,
+      "items": 120,
+      "kept": 8
     },
     {
       "name": "매일경제 기업",
       "url": "https://www.mk.co.kr/rss/50100032/",
       "ok": true,
       "items": 50,
-      "kept": 10
+      "kept": 16
     },
     {
       "name": "매일경제 경제",
@@ -87,14 +87,21 @@
       "url": "https://rss.etnews.com/Section901.xml",
       "ok": true,
       "items": 30,
-      "kept": 8
+      "kept": 13
     },
     {
       "name": "조선일보 경제",
       "url": "https://www.chosun.com/arc/outboundfeeds/rss/category/economy/?outputType=xml",
       "ok": true,
       "items": 100,
-      "kept": 18
+      "kept": 19
+    },
+    {
+      "name": "경향신문 경제",
+      "url": "https://www.khan.co.kr/rss/rssdata/economy_news.xml",
+      "ok": true,
+      "items": 50,
+      "kept": 12
     },
     {
       "name": "동아일보 경제",
@@ -104,25 +111,18 @@
       "kept": 15
     },
     {
-      "name": "경향신문 경제",
-      "url": "https://www.khan.co.kr/rss/rssdata/economy_news.xml",
+      "name": "뉴시스 경제",
+      "url": "https://newsis.com/RSS/economy.xml",
       "ok": true,
-      "items": 50,
-      "kept": 15
+      "items": 100,
+      "kept": 19
     },
     {
       "name": "지디넷코리아",
       "url": "https://feeds.feedburner.com/zdkorea",
       "ok": true,
       "items": 30,
-      "kept": 11
-    },
-    {
-      "name": "뉴시스 경제",
-      "url": "https://newsis.com/RSS/economy.xml",
-      "ok": true,
-      "items": 58,
-      "kept": 3
+      "kept": 14
     },
     {
       "name": "한국보험신문",
