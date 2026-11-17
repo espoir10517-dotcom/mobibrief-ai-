@@ -1,0 +1,2866 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-17",
+  "collectedAt": "2026-11-17T04:04:26.662Z",
+  "stats": {
+    "searches": 44,
+    "google": {
+      "ok": 0,
+      "fail": 23,
+      "items": 0
+    },
+    "naver": {
+      "ok": 0,
+      "fail": 0,
+      "items": 0,
+      "enabled": false
+    },
+    "rss": {
+      "ok": 18,
+      "fail": 3,
+      "items": 1150,
+      "kept": 504
+    },
+    "raw": 504,
+    "fresh": 322,
+    "clusters": 139,
+    "candidates": 97,
+    "perCategory": {
+      "auto": 3,
+      "mobility": 17,
+      "insurance": 17,
+      "ai": 60
+    }
+  },
+  "errors": [
+    "google \"자동차보험 손해율\": HTTP 503",
+    "google \"교통사고 보험사기\": HTTP 503",
+    "google \"자동차보험\": HTTP 503",
+    "google \"자동차보험료\": HTTP 503",
+    "google \"자율주행\": HTTP 429",
+    "google \"車보험\": HTTP 503",
+    "google \"자율주행 사고 책임\": HTTP 503",
+    "google \"로보택시\": HTTP 503",
+    "google \"소프트웨어 중심 자동차 SDV\": HTTP 429",
+    "google \"전기차 정책\": HTTP 503",
+    "google \"도심항공교통 UAM\": HTTP 503",
+    "google \"커넥티드카\": HTTP 503",
+    "google \"생명보험\": HTTP 429",
+    "google \"금융당국 보험\": HTTP 429",
+    "google \"손해보험\": HTTP 503",
+    "google \"보험업계\": HTTP 503",
+    "google \"인슈어테크\": HTTP 503",
+    "google \"보험사 실적\": HTTP 503",
+    "google \"생성형 AI\": HTTP 503",
+    "google \"AI 에이전트\": HTTP 429",
+    "rss \"한국경제 금융\": HTTP 403",
+    "rss \"한국경제 IT\": HTTP 403",
+    "google \"피지컬 AI\": HTTP 503",
+    "google \"LLM 거대언어모델\": HTTP 503",
+    "google \"AI 로봇\": HTTP 503",
+    "rss \"동아일보 경제\": fetch failed"
+  ],
+  "feeds": [
+    {
+      "name": "연합뉴스 경제",
+      "url": "https://www.yna.co.kr/rss/economy.xml",
+      "ok": true,
+      "items": 120,
+      "kept": 15
+    },
+    {
+      "name": "연합뉴스 산업",
+      "url": "https://www.yna.co.kr/rss/industry.xml",
+      "ok": true,
+      "items": 120,
+      "kept": 19
+    },
+    {
+      "name": "한국경제 금융",
+      "url": "https://www.hankyung.com/feed/finance",
+      "ok": false,
+      "error": "HTTP 403"
+    },
+    {
+      "name": "한국경제 IT",
+      "url": "https://www.hankyung.com/feed/it",
+      "ok": false,
+      "error": "HTTP 403"
+    },
+    {
+      "name": "매일경제 경제",
+      "url": "https://www.mk.co.kr/rss/30100041/",
+      "ok": true,
+      "items": 50,
+      "kept": 7
+    },
+    {
+      "name": "매일경제 기업",
+      "url": "https://www.mk.co.kr/rss/50100032/",
+      "ok": true,
+      "items": 50,
+      "kept": 9
+    },
+    {
+      "name": "매일경제 IT",
+      "url": "https://www.mk.co.kr/rss/50300009/",
+      "ok": true,
+      "items": 50,
+      "kept": 2
+    },
+    {
+      "name": "전자신문",
+      "url": "https://rss.etnews.com/Section901.xml",
+      "ok": true,
+      "items": 30,
+      "kept": 13
+    },
+    {
+      "name": "조선일보 경제",
+      "url": "https://www.chosun.com/arc/outboundfeeds/rss/category/economy/?outputType=xml",
+      "ok": true,
+      "items": 100,
+      "kept": 25
+    },
+    {
+      "name": "경향신문 경제",
+      "url": "https://www.khan.co.kr/rss/rssdata/economy_news.xml",
+      "ok": true,
+      "items": 50,
+      "kept": 11
+    },
+    {
+      "name": "머니투데이",
+      "url": "https://rss.mt.co.kr/mt_news.xml",
+      "ok": true,
+      "items": 100,
+      "kept": 18
+    },
+    {
+      "name": "지디넷코리아",
+      "url": "https://feeds.feedburner.com/zdkorea",
+      "ok": true,
+      "items": 30,
+      "kept": 12
+    },
+    {
+      "name": "한국보험신문",
+      "url": "https://www.insnews.co.kr/rss/allArticle.xml",
+      "ok": true,
+      "items": 50,
+      "kept": 50
+    },
+    {
+      "name": "보험매일",
+      "url": "https://www.fins.co.kr/rss/allArticle.xml",
+      "ok": true,
+      "items": 50,
+      "kept": 50
+    },
+    {
+      "name": "대한금융신문",
+      "url": "https://www.kbanker.co.kr/rss/allArticle.xml",
+      "ok": true,
+      "items": 50,
+      "kept": 50
+    },
+    {
+      "name": "보험저널",
+      "url": "https://www.insjournal.co.kr/rss/allArticle.xml",
+      "ok": true,
+      "items": 50,
+      "kept": 50
+    },
+    {
+      "name": "오토데일리",
+      "url": "https://www.autodaily.co.kr/rss/allArticle.xml",
+      "ok": true,
+      "items": 50,
+      "kept": 50
+    },
+    {
+      "name": "AI타임스",
+      "url": "https://www.aitimes.com/rss/allArticle.xml",
+      "ok": true,
+      "items": 50,
+      "kept": 50
+    },
+    {
+      "name": "모터그래프",
+      "url": "https://www.motorgraph.com/rss/allArticle.xml",
+      "ok": true,
+      "items": 50,
+      "kept": 50
+    },
+    {
+      "name": "뉴시스 경제",
+      "url": "https://newsis.com/RSS/economy.xml",
+      "ok": true,
+      "items": 100,
+      "kept": 23
+    },
+    {
+      "name": "동아일보 경제",
+      "url": "https://rss.donga.com/economy.xml",
+      "ok": false,
+      "error": "fetch failed"
+    }
+  ],
+  "articles": [
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "쿠팡 겨냥한 생활물류법, 택배사에 불똥… ‘보험료 300억’ 폭탄 맞나",
+      "source": "조선일보",
+      "sourceUrl": "https://www.chosun.com",
+      "url": "https://www.chosun.com/economy/industry-company/2026/11/17/GMYGKYRYGQYTEYJVGMYGGNJTGE/",
+      "publishedAt": "2026-11-17T01:30:50.000Z",
+      "description": "더불어민주당이 ‘생활물류서비스산업발전법(생활물류법)’ 개정안을 이번 정기국회 내에 처리하겠다는 방침을 밝히면서 택배업계에 비상이 걸렸다. 주요 택배업체들은 현재 택배기사의 산업재해·고용보험료를 절반씩 내주고 있는데, 아예 전액을 지원하라는 내용이 법안에 포함됐기 때문이다. 이렇게 되면 주요 택배업체는 연간 적게는 100억원대, 많게는 300억원대의 추가 비",
+      "id": "e99282eb9d8e",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "조선일보 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "조선일보",
+          "url": "https://www.chosun.com/economy/industry-company/2026/11/17/GMYGKYRYGQYTEYJVGMYGGNJTGE/",
+          "publishedAt": "2026-11-17T01:30:50.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:30:50.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "해경청, 드론보험 보장 강화…기체손해 보장, 보험료 3배→11배",
+      "source": "연합뉴스",
+      "sourceUrl": "https://www.yna.co.kr",
+      "url": "https://www.yna.co.kr/view/AKR20261117047500065",
+      "publishedAt": "2026-11-17T01:00:01.000Z",
+      "description": "(인천=연합뉴스) 강종구 기자 = 해양경찰청은 국가기관 최초로 최저가 낙찰방식 대신 협상에 의한 보험계약 방식을 적용해 드론 보험 보장체계를 강...",
+      "id": "12f7a1e10651",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "연합뉴스 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20261117047500065",
+          "publishedAt": "2026-11-17T01:00:01.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:00:01.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "“살짝 ‘콩’ 자부담금 빼줘, 흠집도 덤으로”…사고 줄어도 내 보험료 뛴 이유",
+      "source": "매일경제",
+      "sourceUrl": "https://www.mk.co.kr",
+      "url": "https://www.mk.co.kr/news/economy/12210899",
+      "publishedAt": "2026-11-17T00:42:35.000Z",
+      "description": "차보험 6년만 적자 하반기도 우려 일부 정비업체 과잉청구 등 영향“사고 난 김에 기존 흠집까지 한 번에 손봐 드릴게요. 자기부담금도 보험 처리로 슬쩍 빼드리겠습니다.” 일부 자동차..",
+      "id": "213738e87036",
+      "category": "auto",
+      "categoryHints": [
+        "auto"
+      ],
+      "matchedQueries": [
+        "매일경제 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "매일경제",
+          "url": "https://www.mk.co.kr/news/economy/12210899",
+          "publishedAt": "2026-11-17T00:42:35.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T00:42:35.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "KAIST \"배터리 첨가제 때문에 배터리 수명 주는 원인 찾아\"",
+      "source": "연합뉴스",
+      "sourceUrl": "https://www.yna.co.kr",
+      "url": "https://www.yna.co.kr/view/AKR20261117077200063",
+      "publishedAt": "2026-11-17T02:13:41.000Z",
+      "description": "(대전=연합뉴스) 김준호 기자 = 한국과학기술원(KAIST)은 생명화학공학과 최남순·신소재공학과 서동화 교수 연구팀이 리튬이온 배터리에서 기존 ...",
+      "id": "82d1a25448ac",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "연합뉴스 산업"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20261117077200063",
+          "publishedAt": "2026-11-17T02:13:41.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T02:13:41.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "산업부, 아프리카와 자원·인프라·통상협력 확대 논의",
+      "source": "뉴시스",
+      "sourceUrl": "https://www.newsis.com",
+      "url": "https://www.newsis.com/view/NISX20261117_0003870748",
+      "publishedAt": "2026-11-17T02:00:00.000Z",
+      "description": "[세종=뉴시스]김동현 기자 = 정부가 아프리카와 자원, 인프라, 통상협력 확대를 추진한다. 한국수출입은행 해외경제연구소가 발간한 '아프리카 지역 핵심광물 부존 현황 및 시사점' 보고서에 따르면 아프리카에는 전기차 배터리 생산을 위한 4대 광물인 코발트, 니켈, 리튬, 흑연이 다수 매장돼 있다. 리튬의 경우 콩고민주공화국(DR콩고), 짐바브웨와 나미비아 …",
+      "id": "17e960a542ce",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "뉴시스 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "뉴시스",
+          "url": "https://www.newsis.com/view/NISX20261117_0003870748",
+          "publishedAt": "2026-11-17T02:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T02:00:00.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "기아대책, 이주배경청년 활동가 양성 지원사업 실시",
+      "source": "연합뉴스",
+      "sourceUrl": "https://www.yna.co.kr",
+      "url": "https://www.yna.co.kr/view/AKR20261117068900371",
+      "publishedAt": "2026-11-17T01:40:06.000Z",
+      "description": "(서울=연합뉴스) 정아란 기자 = 구호개발 비정부기구(NGO)인 희망친구 기아대책은 이주배경청년 활동가 양성 사업인 '브릿지 빌더'를 시작했다고...",
+      "id": "3a82097b517e",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "연합뉴스 산업"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20261117068900371",
+          "publishedAt": "2026-11-17T01:40:06.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:40:06.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "中 전기차 수출 '세계 4위·아시아 1위' 된 한국…국회, 국내생산세액공제 추가 '본격 논의'",
+      "source": "전자신문",
+      "sourceUrl": "https://www.etnews.com",
+      "url": "https://www.etnews.com/20261117000130",
+      "publishedAt": "2026-11-17T01:23:32.000Z",
+      "description": "중국의 과잉생산 물량이 국내로 대거 유입되면서 한국이 중국산 전기차의 아시아 최대이자, 세계 4위 수출 시장으로 부상했다. 국내 자동차 산업의 생산 기반이 위협받고 있다는 위기감이 커지는 가운데, 이달 국회 세법 심사에서 전기차를 '국내생산세액공제' 대상에 추가하는 방안이 본격 논의될 것으로 예상된다. 한국무역협회에 따르면 올해 9월까지 중국이 한국으로…",
+      "id": "27ff4aca69e5",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "전자신문"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "전자신문",
+          "url": "https://www.etnews.com/20261117000130",
+          "publishedAt": "2026-11-17T01:23:32.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:23:32.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "SK이노, 에너지·사회 문제 해결하는 AI스타트업 키운다",
+      "source": "조선일보",
+      "sourceUrl": "https://www.chosun.com",
+      "url": "https://www.chosun.com/economy/industry-company/2026/11/17/G4YWEODEHEYDEZTFGYYTMYZZMU/",
+      "publishedAt": "2026-11-17T01:02:00.000Z",
+      "description": "SK그룹의 에너지·화학·배터리 중심 기업인 SK이노베이션이 인공지능(AI) 기술로 에너지·사회문제 해결에 기여하는 스타트업을 선정해 성장을 지원하는 ‘AI 임팩트 솔루션 데이 2026′을 개최했다고 17일 밝혔다. 특수교육 및 장애인 운송 등 복지분야, 희귀질환 치료, 에너지 절감 등 영역에 기여할 만한 기술을 가진 기업을 발굴하고 지속적으로 육성해 사업",
+      "id": "47d69f4b5885",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "조선일보 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "조선일보",
+          "url": "https://www.chosun.com/economy/industry-company/2026/11/17/G4YWEODEHEYDEZTFGYYTMYZZMU/",
+          "publishedAt": "2026-11-17T01:02:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:02:00.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "우리금융 내부통제 또 '구멍'⋯임종룡 회장 직속 조직서 4억원대 부정 사용",
+      "source": "오토데일리",
+      "sourceUrl": "https://www.autodaily.co.kr",
+      "url": "https://www.autodaily.co.kr/news/articleView.html?idxno=602146",
+      "publishedAt": "2026-11-16T18:25:43.000Z",
+      "description": "[엠투데이 이상원기자] 우리금융그룹 임종룡 회장 직속 조직에서 4억원대 법인카드 부정 사용 사건이 발생, 올초 연임에 성공한 임회장의 경영관리 능력이 다시 도마에 올랐다.특히 금융사고 예방과 조직문화 혁신을 위해 출범시킨 조직에서 수개월간 거액의 상품권 구매와 법인카드 결제 취소가 반복, 충격을 주고 있다.16일 금융권에 따르면 우리금융지주 기업문화리더…",
+      "topical": true,
+      "id": "deee37e308fb",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility",
+        "ai"
+      ],
+      "matchedQueries": [
+        "오토데일리"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "오토데일리",
+          "url": "https://www.autodaily.co.kr/news/articleView.html?idxno=602146",
+          "publishedAt": "2026-11-16T18:25:43.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-16T18:25:43.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "프리미엄 SUV, 더 뉴 메르세데스-벤츠 GLE, GLE 쿠페, GLS 출시",
+      "source": "모터그래프",
+      "sourceUrl": "https://www.motorgraph.com",
+      "url": "https://www.motorgraph.com/news/articleView.html?idxno=44956",
+      "publishedAt": "2026-11-16T17:05:12.000Z",
+      "description": "메르세데스-벤츠 코리아가 프리미엄 SUV 모델 GLE와 GLE 쿠페, 플래그십 SUV 모델 GLS의 부분변경 더 뉴 메르세데스-벤츠 GLE(이하 GLE), 더 뉴 메르세데스-벤츠 GLE 쿠페(이하 GLE 쿠페) 및 더 뉴 메르세데스-벤츠 GLS(이하 GLS)를 공식 출시한다.이번에 선보이는 모델들은 메르세데스-벤츠 SUV 고유의 디자인 철학을 현대적으로…",
+      "topical": true,
+      "id": "adfdd3859d2d",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "모터그래프"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "모터그래프",
+          "url": "https://www.motorgraph.com/news/articleView.html?idxno=44956",
+          "publishedAt": "2026-11-16T17:05:12.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-16T17:05:12.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "벤츠, 내년 하반기 도심 자율주행 '레벨2++' 한국 도입…선탑재 차량은 OTA로 업그레이드",
+      "source": "전자신문",
+      "sourceUrl": "https://www.etnews.com",
+      "url": "https://www.etnews.com/20261116000124",
+      "publishedAt": "2026-11-16T14:00:00.000Z",
+      "description": "메르세데스-벤츠가 도심과 고속도로 전 구간에서 출발지부터 목적지까지 이동을 지원하는 차세대 '레벨 2++'급 주행보조 시스템 'MB 드라이브 어시스트 프로'를 내년 하반기 한국 시장에 선보인다. 국내 출시된 더 뉴 S-클래스와 더 뉴 GLC·GLE·GLS 등 필수 하드웨어가 선탑재된 모델은 내년 무선 소프트웨어 업데이트(OTA)로 기능을 추가할 수 있다…",
+      "id": "4610c92234ff",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "전자신문"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "전자신문",
+          "url": "https://www.etnews.com/20261116000124",
+          "publishedAt": "2026-11-16T14:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-16T14:00:00.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "거세진 中 저가공세에 … 정부, 전기차 세액공제 이달말 결론",
+      "source": "매일경제",
+      "sourceUrl": "https://www.mk.co.kr",
+      "url": "https://www.mk.co.kr/news/economy/12210200",
+      "publishedAt": "2026-11-16T08:39:11.000Z",
+      "description": "정부가 중국 전기차 업체 BYD의 저가 공세에 맞서 전기차 국내생산촉진세제 도입을 검토하고 나섰다. 이달 말 국회 조세소위원회에서 전기차 생산촉진세제 도입안 윤곽이 나오고, 이르면..",
+      "id": "99db5cccc485",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "매일경제 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "매일경제",
+          "url": "https://www.mk.co.kr/news/economy/12210200",
+          "publishedAt": "2026-11-16T08:39:11.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-16T08:39:11.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "현대차 '세이프티 컬처 위크'",
+      "source": "매일경제",
+      "sourceUrl": "https://www.mk.co.kr",
+      "url": "https://www.mk.co.kr/news/business/12210135",
+      "publishedAt": "2026-11-16T08:22:01.000Z",
+      "description": "현대자동차가 지난 9~13일 전사 임직원을 대상으로 하반기 안전 캠페인 '세이프티 컬처 위크'를 실시했다고 16일 밝혔다. 세이프티 컬처 위크는 임직원의 안전의식을 높이고 안전문화..",
+      "id": "94c3dcd859fb",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "매일경제 기업"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "매일경제",
+          "url": "https://www.mk.co.kr/news/business/12210135",
+          "publishedAt": "2026-11-16T08:22:01.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-16T08:22:01.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "인천공항 항공기 이동지역 '자율주행' 허용…2030년 상용화",
+      "source": "뉴시스",
+      "sourceUrl": "https://www.newsis.com",
+      "url": "https://www.newsis.com/view/NISX20261116_0003870042",
+      "publishedAt": "2026-11-16T07:45:20.000Z",
+      "description": "[서울=뉴시스] 변해정 기자 = 인천공항 항공기 이동 지역에서 자율주행 차량이 다닐 수 있게 됐다. 인천국제공항공사는 '항공기 이동지역 자율주행차량 운행기준'을 제정해 지난달 20일부터 시행 중이라고 16일 밝혔다. 이 기준은 국제민간항공기구(ICAO)의 항공안전관리시스템(SMS) 상의 원칙을 바탕으로 정부 및 관계기관 협의를 거쳐 마련한 것이다. 싱가…",
+      "id": "910f2cd5f100",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "뉴시스 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "뉴시스",
+          "url": "https://www.newsis.com/view/NISX20261116_0003870042",
+          "publishedAt": "2026-11-16T07:45:20.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-16T07:45:20.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "현대차, ‘안전문화 주간’ 운영… 골든벨 울렸다",
+      "source": "매일경제",
+      "sourceUrl": "https://www.mk.co.kr",
+      "url": "https://www.mk.co.kr/news/business/12209905",
+      "publishedAt": "2026-11-16T05:39:16.000Z",
+      "description": "하반기 ‘세이프티 컬처 위크’ 울산·전주·아산 공장 참여 안전 브랜드 ‘바로제로’ 방송 4대 활동으로 안전문화 체득화현대자동차는 지난 9∼13일 전사 임직원을 대상으로 하반기 안전..",
+      "id": "4b6940403d10",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "매일경제 기업"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "매일경제",
+          "url": "https://www.mk.co.kr/news/business/12209905",
+          "publishedAt": "2026-11-16T05:39:16.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-16T05:39:16.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "삼성SDI, 미국 주피터파워에 ESS용 LFP 배터리 16GWh 공급",
+      "source": "경향신문",
+      "sourceUrl": "https://www.khan.co.kr",
+      "url": "https://www.khan.co.kr/article/202611161404001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=economy_news",
+      "publishedAt": "2026-11-16T05:04:00.000Z",
+      "description": "2029년부터 3년간…누적 27GWh·수조원 규모인디애나 SPE 공장서 생산…탈중국 공급망 내세워삼성SDI의 LFP 배터리가 탑재된 ESS 솔루션 ‘SBB(Samsung Battery Box)’. 삼성SDI 제공삼성SDI가 미국에서 수조원 규모의 에너지저장장치(ESS)용 리튬인산철(LFP) 배터리 공급 계약을 따냈다. 미국 현지 공장에서 LFP 배터리 …",
+      "id": "37f4a93b2be3",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "경향신문 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "경향신문",
+          "url": "https://www.khan.co.kr/article/202611161404001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=economy_news",
+          "publishedAt": "2026-11-16T05:04:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-16T05:04:00.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "GPS 끊기고 안개 껴도 스스로 자율주행… 국산 드론 시각혁명 개척한 네오와이즈",
+      "source": "매일경제",
+      "sourceUrl": "https://www.mk.co.kr",
+      "url": "https://www.mk.co.kr/news/business/12209824",
+      "publishedAt": "2026-11-16T02:42:19.000Z",
+      "description": "[2026 판교 창업존 입주기업 인터뷰 ⑧ 네오와이즈(Neowise)신동혁 대표] 사진 한 장으로 3차원 트윈 실시간 변환… 라이다 의존 낮추고 연산 속도 향상 ‘듀얼 유즈’ 전략..",
+      "id": "6eecee4d4499",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "매일경제 기업"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "매일경제",
+          "url": "https://www.mk.co.kr/news/business/12209824",
+          "publishedAt": "2026-11-16T02:42:19.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-16T02:42:19.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "반도체는 호남으로, 자율차는 광주로…30일부터 도시단위 실증시험",
+      "source": "매일경제",
+      "sourceUrl": "https://www.mk.co.kr",
+      "url": "https://www.mk.co.kr/news/economy/12209545",
+      "publishedAt": "2026-11-15T21:04:54.000Z",
+      "description": "국토부·현대차, 30일 첫 운행 도시단위 자율주행 실증 본격화국내 최초 도시 단위 자율주행 실증사업이 오는 30일 전남광주에서 시작된다. 차량 개조와 임시운행허가가 계획대로 진행되..",
+      "id": "aecdb72d2daa",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "매일경제 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "매일경제",
+          "url": "https://www.mk.co.kr/news/economy/12209545",
+          "publishedAt": "2026-11-15T21:04:54.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-15T21:04:54.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "‘파업 여파’ 현대차 국내 공장 가동률 94%로 하락…車 가격은 3% 안팎 올라",
+      "source": "조선일보",
+      "sourceUrl": "https://www.chosun.com",
+      "url": "https://www.chosun.com/economy/auto/2026/11/17/UKLLWAF4RJAM7GK5ENF72JI6RI/",
+      "publishedAt": "2026-11-17T01:07:32.000Z",
+      "description": "",
+      "id": "4eb69f753dbc",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "조선일보 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "조선일보",
+          "url": "https://www.chosun.com/economy/auto/2026/11/17/UKLLWAF4RJAM7GK5ENF72JI6RI/",
+          "publishedAt": "2026-11-17T01:07:32.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:07:32.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "삼성SDI, 美서 수조원 규모 ESS용 배터리 수주",
+      "source": "조선일보",
+      "sourceUrl": "https://www.chosun.com",
+      "url": "https://www.chosun.com/economy/industry-company/2026/11/17/5ZRBD6EIMFC5JCTRYWDTUVIG5M/",
+      "publishedAt": "2026-11-16T15:32:00.000Z",
+      "description": "",
+      "id": "5adba107528e",
+      "category": "mobility",
+      "categoryHints": [
+        "mobility"
+      ],
+      "matchedQueries": [
+        "조선일보 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "조선일보",
+          "url": "https://www.chosun.com/economy/industry-company/2026/11/17/5ZRBD6EIMFC5JCTRYWDTUVIG5M/",
+          "publishedAt": "2026-11-16T15:32:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-16T15:32:00.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "금감원, '불법리베이트' 한국보험금융에 등록취소 사전통지",
+      "source": "연합뉴스",
+      "sourceUrl": "https://www.yna.co.kr",
+      "url": "https://www.yna.co.kr/view/AKR20261116171100002",
+      "publishedAt": "2026-11-16T10:40:55.000Z",
+      "description": "(서울=연합뉴스) 강수련 기자 = 금융감독원이 불법 리베이트 등 혐의를 받는 법인보험대리점(GA) 한국보험금융에 등록취소를 사전 통지한 것으로 ...",
+      "topical": true,
+      "id": "8dd2fad361d7",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance",
+        "ai",
+        "auto"
+      ],
+      "matchedQueries": [
+        "연합뉴스 경제",
+        "보험매일"
+      ],
+      "coverage": 2,
+      "sources": [
+        {
+          "name": "연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20261116171100002",
+          "publishedAt": "2026-11-16T10:40:55.000Z"
+        },
+        {
+          "name": "보험매일",
+          "url": "http://www.fins.co.kr/news/articleView.html?idxno=110578",
+          "publishedAt": "2026-11-16T20:44:19.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-16T10:40:55.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "금융위, '5극3특' 중기 보증부대출 지자체 공모…내년 1월까지",
+      "source": "연합뉴스",
+      "sourceUrl": "https://www.yna.co.kr",
+      "url": "https://www.yna.co.kr/view/AKR20261117086500002",
+      "publishedAt": "2026-11-17T03:00:00.000Z",
+      "description": "(서울=연합뉴스) 강수련 기자 = 금융위원회가 '5극 3특'(5개 초광역권·3개 특별자치도) 지역 핵심 중소·중견기업 보증부대출 사업의 지방자치...",
+      "id": "cbc00d4fed75",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "연합뉴스 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20261117086500002",
+          "publishedAt": "2026-11-17T03:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T03:00:00.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "[AI프리즘] 구글 \"사람 개입 없는 AI 자율 해킹 공격 첫 확인\"",
+      "source": "연합뉴스",
+      "sourceUrl": "https://www.yna.co.kr",
+      "url": "https://www.yna.co.kr/view/AKR20261117083800017",
+      "publishedAt": "2026-11-17T02:43:36.000Z",
+      "description": "(서울=연합뉴스) 권하영 기자 = 인공지능(AI)이 사람의 개입 없이 소프트웨어 취약점을 찾아내고 공격 코드까지 개발하는 완전 자율형 사이버 공...",
+      "id": "378a64d4c8dc",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "연합뉴스 산업"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20261117083800017",
+          "publishedAt": "2026-11-17T02:43:36.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T02:43:36.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "'LH 보험 입찰 담합' 혐의 보험사들, 대법서 무죄 확정",
+      "source": "머니투데이",
+      "sourceUrl": "https://www.mt.co.kr",
+      "url": "https://www.mt.co.kr/finance/2026/11/17/2026111710360824254",
+      "publishedAt": "2026-11-17T02:08:31.000Z",
+      "description": "삼성화재·한화손보·메리츠화재 등 입찰 담합 혐의 약 4년 만에 최종 무죄 결론 한국토지주택공사(LH)가 발주한 보험계약 입찰에서 손해보험사들이 담합했다는 의혹에 대해 최종 무죄 판결이 나왔다. 공정거래위원회가 무리한 제재를 하고 있는 게 아니냐는 지적이 나온다. 17일 금융권에 따르면 한화손해보험 등 주요 손해보험사들은 3분기 보고서를 통해 지난 12일…",
+      "id": "7757bca12882",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "머니투데이"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "머니투데이",
+          "url": "https://www.mt.co.kr/finance/2026/11/17/2026111710360824254",
+          "publishedAt": "2026-11-17T02:08:31.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T02:08:31.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "'AI 무장' 중국 연계 해킹조직, 한국 외교 조직까지 노렸다",
+      "source": "연합뉴스",
+      "sourceUrl": "https://www.yna.co.kr",
+      "url": "https://www.yna.co.kr/view/AKR20261117076500017",
+      "publishedAt": "2026-11-17T02:06:22.000Z",
+      "description": "(서울=연합뉴스) 권하영 기자 = 중국 연계 해킹 조직이 인공지능(AI) 기반 침투 도구를 활용해 전 세계 정부 기관과 기업을 공격한 가운데, ...",
+      "id": "9e38e785f071",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "연합뉴스 산업"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20261117076500017",
+          "publishedAt": "2026-11-17T02:06:22.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T02:06:22.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "금감원 \"보안 취약점 발견 땐 즉시 서비스 중단\"…전금·온투업 274곳 소집",
+      "source": "머니투데이",
+      "sourceUrl": "https://www.mt.co.kr",
+      "url": "https://www.mt.co.kr/finance/2026/11/17/2026111709333345402",
+      "publishedAt": "2026-11-17T02:04:45.000Z",
+      "description": "금융감독원이 전자금융업자와 온라인투자연계금융업자(온투업자) 274곳을 대상으로 침해사고 대응 강화에 나섰다. 외부접점에서 고객의 금전 피해나 개인정보 유출로 이어질 수 있는 중대한 보안 취약점이 발견되면 즉시 서비스를 중단하고 외부접점을 차단하도록 했다. 전수점검 이후 침해사고가 발생할 경우 기존 점검의 적정성까지 따져 책임을 물을 방침이다. 금감원은 …",
+      "id": "4394a6ee1c49",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "머니투데이"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "머니투데이",
+          "url": "https://www.mt.co.kr/finance/2026/11/17/2026111709333345402",
+          "publishedAt": "2026-11-17T02:04:45.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T02:04:45.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "메가MGC커피 고객 30명 개인정보 유출",
+      "source": "조선일보",
+      "sourceUrl": "https://www.chosun.com",
+      "url": "https://www.chosun.com/economy/market_trend/2026/11/17/MNSDOOLEMY2GEYLGHE4GEYTBHE/",
+      "publishedAt": "2026-11-17T01:21:43.000Z",
+      "description": "메가MGC커피 고객 30명의 개인정보가 유출됐다. 메가커피의 고객 상담 업무를 위탁받은 업체 메타엠의 서버가 외부 공격을 받은 탓이다. 17일 메가MGC커피에 따르면 메타엠 서버는 지난 12일 미상의 공격을 받았으며, 메가커피는 지난 15일 메타엠으로부터 개인정보 유출 사실을 통보받았다. 현재까지 유출이 확인된 고객은 30명이다. 추가 유출 가능성도 조사하",
+      "id": "4080d03456a0",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "조선일보 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "조선일보",
+          "url": "https://www.chosun.com/economy/market_trend/2026/11/17/MNSDOOLEMY2GEYLGHE4GEYTBHE/",
+          "publishedAt": "2026-11-17T01:21:43.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:21:43.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "금감원, 전금·온투업 침해 점검 강조…\"점검후 사고 땐 책임\"",
+      "source": "연합뉴스",
+      "sourceUrl": "https://www.yna.co.kr",
+      "url": "https://www.yna.co.kr/view/AKR20261117045400002",
+      "publishedAt": "2026-11-17T01:00:01.000Z",
+      "description": "(서울=연합뉴스) 강수련 기자 = 금융감독원은 17일 전자금융업자와 온라인투자연계금융업자에 최근 침해사고와 관련해 외부접점을 집중 점검하도록 당...",
+      "id": "f8f683ab28fe",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "연합뉴스 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20261117045400002",
+          "publishedAt": "2026-11-17T01:00:01.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:00:01.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "코인 거래소 줄줄이 해킹… “외부 수탁사·업무망 관리 강화해야”",
+      "source": "조선일보",
+      "sourceUrl": "https://www.chosun.com",
+      "url": "https://www.chosun.com/economy/stock-finance/2026/11/17/MUZTMYZVMM4DENLCMNQTIMTDGU/",
+      "publishedAt": "2026-11-17T01:00:00.000Z",
+      "description": "국내 가상 자산 거래소에서 보안 사고가 잇따르며 이용자 불안이 커지고 있다. ‘무사고 12년’을 강조하던 코인원마저 고객 개인 정보 유출 피해를 겪으면서, 거래소 전반의 보안 관리 체계를 점검해야 한다는 지적이 나온다. 17일 가상 자산 업계에 따르면, 코인원은 지난 12일 고객 상담 위탁 업체 ‘메타엠’ 서버가 외부 공격을 받아 고객 정보가 유출됐다는 공",
+      "id": "40d9d1be73c3",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "조선일보 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "조선일보",
+          "url": "https://www.chosun.com/economy/stock-finance/2026/11/17/MUZTMYZVMM4DENLCMNQTIMTDGU/",
+          "publishedAt": "2026-11-17T01:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:00:00.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "지점 줄이고 출장소 늘리는 은행…금융당국, 점포폐쇄 실태 살핀다",
+      "source": "매일경제",
+      "sourceUrl": "https://www.mk.co.kr",
+      "url": "https://www.mk.co.kr/news/economy/12210895",
+      "publishedAt": "2026-11-17T00:38:26.000Z",
+      "description": "지점수 줄고 출장소 증가 추세 은행, 인력·임대료 등 비용 절감 금감원 “폐쇄절차 준수 여부 점검”금융당국이 은행들의 점포폐쇄 현황 점검에 나선다. 점포폐쇄 절차를 강화한 이후 은..",
+      "id": "aaa33bf4fc8d",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "매일경제 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "매일경제",
+          "url": "https://www.mk.co.kr/news/economy/12210895",
+          "publishedAt": "2026-11-17T00:38:26.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T00:38:26.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "전자금융업, 상반기 매출 6조3000억원…PG 매출 7000억원 늘어 성장 견인",
+      "source": "전자신문",
+      "sourceUrl": "https://www.etnews.com",
+      "url": "https://www.etnews.com/20261116000396",
+      "publishedAt": "2026-11-16T21:00:00.000Z",
+      "description": "올해 상반기 전자금융업 매출이 6조3000억원으로 전년 동기보다 14.5% 증가했다. 전체 매출 증가분 8000억원 가운데 7000억원이 전자지급결제대행업(PG)에서 나왔다. 17일 금융감독원이 발표한 '2026년 상반기 전자금융업 영업실적'에 따르면 6월 말 전자금융업 등록 회사는 242개사로 지난해 말보다 1개사 늘었다. 영업실적은 증권사·보험사 등…",
+      "id": "08cd6f49077b",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "전자신문"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "전자신문",
+          "url": "https://www.etnews.com/20261116000396",
+          "publishedAt": "2026-11-16T21:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-16T21:00:00.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "롯데손보, 보험영업 흑자에도 투자손실 확대… 누적 순손실 1122억원",
+      "source": "한국보험신문",
+      "sourceUrl": "https://www.insnews.co.kr",
+      "url": "https://www.insnews.co.kr/news/articleView.html?idxno=93871",
+      "publishedAt": "2026-11-16T18:38:52.000Z",
+      "description": "롯데손해보험이 장기보험 중심으로 보험영업 흑자를 이어갔지만, 투자손익 악화로 올해 3분기 누적 당기순손익은 적자로 돌아섰다.16일 롯데손해보험(이하 롯데손보)이 공시한 2026년 3분기 분기보고서에 따르면 1~9월 누적 당기순손실은 1122억원으로 전년 동기 990억원 순이익에서 적자 전환했다. 누적 영업손익도 지난해 같은 기간 1293억원 이익에서 올…",
+      "topical": true,
+      "id": "28ec2ab6b4f2",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance",
+        "ai",
+        "auto"
+      ],
+      "matchedQueries": [
+        "한국보험신문"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "한국보험신문",
+          "url": "https://www.insnews.co.kr/news/articleView.html?idxno=93871",
+          "publishedAt": "2026-11-16T18:38:52.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-16T18:38:52.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "BNK경남은행, 퇴직연금 DB형 수익률 은행권 2위",
+      "source": "대한금융신문",
+      "sourceUrl": "https://www.kbanker.co.kr",
+      "url": "https://www.kbanker.co.kr/news/articleView.html?idxno=226453",
+      "publishedAt": "2026-11-16T17:39:18.000Z",
+      "description": "BNK경남은행이 퇴직연금 운용 수익률에서 우수한 성과를 거두며 고객들의 안정적인 노후 준비와 체계적인 자산관리 지원에 힘쓰고 있다.BNK경남은행은 2026년 3분기 퇴직연금 DB형 원리금비보장 상품의 직전 1년 수익률이 22.49%를 기록하며 은행권 2위를 달성했다고 16일 밝혔다.특히 BNK경남은행은 지난해 4분기 1위를 기록한 이후 올해 상반기 내내…",
+      "topical": true,
+      "id": "6da08a1bef04",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance",
+        "ai"
+      ],
+      "matchedQueries": [
+        "대한금융신문"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "대한금융신문",
+          "url": "https://www.kbanker.co.kr/news/articleView.html?idxno=226453",
+          "publishedAt": "2026-11-16T17:39:18.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-16T17:39:18.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "‘덩치’와 생산성은 달랐다…초대형 GA 설계사 규모 톱5, ‘인당 수수료’ 순위는 딴판",
+      "source": "보험저널",
+      "sourceUrl": "https://www.insjournal.co.kr",
+      "url": "https://www.insjournal.co.kr/news/articleView.html?idxno=33933",
+      "publishedAt": "2026-11-16T15:51:24.000Z",
+      "description": "설계사 수로 대표되는 외형 순위와 설계사 1인당 수수료 생산성 순위가 크게 엇갈렸다. 2026년 상반기 초대형 GA의 조직효율을 분석한 결과, 설계사 규모 상위 5개사 가운데 인당 수수료가 1,000만원을 넘긴 곳은 없었다. 오히려 설계사 3,000~6,000명 규모의 GA 3곳이 인당 월평균 수수료 1,000만원을 넘어서며 외형 상위권 GA들을 앞섰다…",
+      "topical": true,
+      "id": "ba88b4718f6d",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance",
+        "auto"
+      ],
+      "matchedQueries": [
+        "보험저널"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "보험저널",
+          "url": "https://www.insjournal.co.kr/news/articleView.html?idxno=33933",
+          "publishedAt": "2026-11-16T15:51:24.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-16T15:51:24.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "랩어카운트 주의보…금감원, 분쟁사례 공개·특정 종목 90% 이상 집중투자 민원도",
+      "source": "매일경제",
+      "sourceUrl": "https://www.mk.co.kr",
+      "url": "https://www.mk.co.kr/news/economy/12210241",
+      "publishedAt": "2026-11-16T08:56:40.000Z",
+      "description": "증권사에 주식 운용을 맡기는 랩어카운트에서 특정 종목에 투자금의 90% 이상이 집중돼 손실이 발생했다는 민원이 제기됐다. 금융감독원은 최근 증시 변동성이 확대되면서 랩어카운트 관련..",
+      "id": "e0611bd43f96",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "매일경제 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "매일경제",
+          "url": "https://www.mk.co.kr/news/economy/12210241",
+          "publishedAt": "2026-11-16T08:56:40.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-16T08:56:40.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "금융위 “금융보안원 해킹사고 깊은 유감…재발 방지 대책 마련하라”",
+      "source": "매일경제",
+      "sourceUrl": "https://www.mk.co.kr",
+      "url": "https://www.mk.co.kr/news/economy/12209724",
+      "publishedAt": "2026-11-16T01:40:52.000Z",
+      "description": "금융권 정보보안을 담당하는 금융보안원에서 해킹 사고가 발생한 것에 대해 금융당국이 깊은 유감을 표명하며 철저한 재발 방지 대책을 주문했다. 16일 신진창 금융위원회 부위원장은 이세..",
+      "id": "d52a2c7a7ebd",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "매일경제 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "매일경제",
+          "url": "https://www.mk.co.kr/news/economy/12209724",
+          "publishedAt": "2026-11-16T01:40:52.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-16T01:40:52.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "AI가 취약점 찾고 공격까지…구글 “사람 없는 자율형 해킹 현실화”",
+      "source": "조선일보",
+      "sourceUrl": "https://www.chosun.com",
+      "url": "https://www.chosun.com/economy/tech_it/2026/11/17/K762DO3D4JHWTHOU5DAKLKVDB4/",
+      "publishedAt": "2026-11-17T01:07:03.000Z",
+      "description": "",
+      "id": "fff415c3f960",
+      "category": "insurance",
+      "categoryHints": [
+        "insurance"
+      ],
+      "matchedQueries": [
+        "조선일보 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "조선일보",
+          "url": "https://www.chosun.com/economy/tech_it/2026/11/17/K762DO3D4JHWTHOU5DAKLKVDB4/",
+          "publishedAt": "2026-11-17T01:07:03.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:07:03.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "‘AI 커닝 장비’ 사용법까지 SNS에 확산… 정부, 유통 방지 나선다",
+      "source": "조선일보",
+      "sourceUrl": "https://www.chosun.com",
+      "url": "https://www.chosun.com/economy/tech_it/2026/11/17/GRSTCNBRMQ3TAYJRG5RDEZRRMI/",
+      "publishedAt": "2026-11-17T02:13:29.000Z",
+      "description": "초소형 카메라와 이어폰 등을 이용한 시험 부정행위 우려가 커지자, 방송미디어통신위원회가 온라인에서 부정행위를 조장하는 정보의 유통 방지에 나선다. 방미통위는 초소형 카메라 등이 시험 부정행위에 악용돼 시험의 공정성과 신뢰를 훼손할 수 있다는 우려에 공감한다며, 온라인에서 부정행위를 조장하는 정보가 유통되지 않도록 관계 기관과 협력하겠다고 17일 밝혔다.",
+      "id": "5a01b2d1de8c",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "연합뉴스 산업",
+        "조선일보 경제"
+      ],
+      "coverage": 2,
+      "sources": [
+        {
+          "name": "연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20261116170051017",
+          "publishedAt": "2026-11-17T02:56:33.000Z"
+        },
+        {
+          "name": "조선일보",
+          "url": "https://www.chosun.com/economy/tech_it/2026/11/17/GRSTCNBRMQ3TAYJRG5RDEZRRMI/",
+          "publishedAt": "2026-11-17T02:13:29.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T02:13:29.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "세무사 시험 AI 부정행위에 정부 “최근 3~5년 합격자 성적 재점검”",
+      "source": "경향신문",
+      "sourceUrl": "https://www.khan.co.kr",
+      "url": "https://www.khan.co.kr/article/202611161622001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=economy_news",
+      "publishedAt": "2026-11-16T07:22:00.000Z",
+      "description": "2027학년도 대학수학능력시험을 앞두고 인공지능(AI)이 탑재된 스마트안경을 이용한 부정행위에 대한 경각심이 높아지고 있는 15일 서울 한 가전 매장에서 한 시민이 안경을 사용해 보고 있다. 2026.11.15 한수빈 기자정부가 최근 3~5년간 세무사 시험 최종합격자의 성적을 재점검키로 했다. 부정행위를 한 올해 세무사 수석 합격생의 시험 무효 처분 절…",
+      "id": "1d448b3d235f",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "전자신문",
+        "경향신문 경제"
+      ],
+      "coverage": 2,
+      "sources": [
+        {
+          "name": "전자신문",
+          "url": "https://www.etnews.com/20261116000519",
+          "publishedAt": "2026-11-16T08:43:40.000Z"
+        },
+        {
+          "name": "경향신문",
+          "url": "https://www.khan.co.kr/article/202611161622001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=economy_news",
+          "publishedAt": "2026-11-16T07:22:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-16T07:22:00.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "메디인테크, 338억 규모 시리즈C 투자 유치 순항…수술로봇 시장 공략",
+      "source": "머니투데이",
+      "sourceUrl": "https://www.mt.co.kr",
+      "url": "https://www.mt.co.kr/future/2026/11/17/2026111709431653407",
+      "publishedAt": "2026-11-17T04:00:00.000Z",
+      "description": "[이 기사에 나온 스타트업에 대한 보다 다양한 기업정보는 유니콘팩토리 빅데이터 플랫폼 '데이터랩'에서 볼 수 있습니다.] 의료로봇 스타트업 메디인테크(MedInTech)가 338억원 규모의 시리즈C 투자를 유치했다고 17일 밝혔다. 회사는 현재 시리즈C 라운드 추가 투자 논의를 지속하고 있으며, 이번 투자금을 바탕으로 AI(인공지능) 로봇내시경의 제품 …",
+      "id": "db3b90292467",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "머니투데이"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "머니투데이",
+          "url": "https://www.mt.co.kr/future/2026/11/17/2026111709431653407",
+          "publishedAt": "2026-11-17T04:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T04:00:00.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "엔비디아 실적에 쏠리는 눈…日닛케이 1.18%↓[Asia오전]",
+      "source": "머니투데이",
+      "sourceUrl": "https://www.mt.co.kr",
+      "url": "https://www.mt.co.kr/world/2026/11/17/2026111711160448034",
+      "publishedAt": "2026-11-17T03:40:31.000Z",
+      "description": "17일 오전 아시아 주요 증시는 일제히 하락세다. 일본 도쿄증시의 닛케이225지수는 전일 대비 1.18% 떨어진 5만8956.67에 오전 거래를 마쳤다. 간밤 뉴욕증시에서 나스닥지수가 2.5% 급락하면서 아시아 증시에서도 기술주 하락세가 두드러진다. 일본 증시에선 반도체 장비업체인 어드반테스트가 5.2% 내렸고 소프트뱅크그룹도 5.7% 미끄러졌다. 미국…",
+      "id": "d6485be34584",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "머니투데이"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "머니투데이",
+          "url": "https://www.mt.co.kr/world/2026/11/17/2026111711160448034",
+          "publishedAt": "2026-11-17T03:40:31.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T03:40:31.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "'AI 치팅' 우려 계속 나왔지만…장비·인력 예산 반영은 없었다",
+      "source": "뉴시스",
+      "sourceUrl": "https://www.newsis.com",
+      "url": "https://www.newsis.com/view/NISX20261117_0003870985",
+      "publishedAt": "2026-11-17T03:05:26.000Z",
+      "description": "[세종=뉴시스] 안호균 기자 = 세무사 시험 부정행위 사건으로 국가자격시험 관리·감독의 취약성이 여실히 드러났지만, 내년 한국산업인력공단 예산에는 인공지능(AI) 부정에 대응할 장비·인력을 확충하는 항목이 전혀 반영돼 있지 않은 것으로 나타났다. 지난 7월 관계부처 합동으로 AI 기기를 이용한 시험 부정행위 대응 방안을 협의했음에도 정작 예산안을 편성할…",
+      "id": "34c7154a4177",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "뉴시스 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "뉴시스",
+          "url": "https://www.newsis.com/view/NISX20261117_0003870985",
+          "publishedAt": "2026-11-17T03:05:26.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T03:05:26.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "올해 1∼3분기 벤처투자 12조6천억원…\"역대 최대 실적 달성\"",
+      "source": "연합뉴스",
+      "sourceUrl": "https://www.yna.co.kr",
+      "url": "https://www.yna.co.kr/view/AKR20261117045600030",
+      "publishedAt": "2026-11-17T03:00:11.000Z",
+      "description": "(서울=연합뉴스) 이상서 기자 = 인공지능(AI) 반도체와 로봇 등 관련 분야의 대형투자에 힘입어 올해 1∼3분기 신규 벤처투자액이 12조6천억...",
+      "id": "c90ef92cf43a",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "연합뉴스 산업"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20261117045600030",
+          "publishedAt": "2026-11-17T03:00:11.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T03:00:11.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "한은 \"AI로 아낀 업무시간 2.4배로…생산성 효과는 제한적\"",
+      "source": "연합뉴스",
+      "sourceUrl": "https://www.yna.co.kr",
+      "url": "https://www.yna.co.kr/view/AKR20261117075000002",
+      "publishedAt": "2026-11-17T03:00:05.000Z",
+      "description": "(서울=연합뉴스) 이도흔 기자 = 생성형 인공지능(AI) 활용이 늘어나며 업무시간을 아낄 수 있게 됐지만 이것이 실제 산출이나 품질 개선으로 이...",
+      "id": "d56f1239ae3c",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "연합뉴스 경제",
+        "연합뉴스 산업"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20261117075000002",
+          "publishedAt": "2026-11-17T03:00:05.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T03:00:05.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "[ETRI, 출연연 전략연구사업 앞장]AI, 차세대 통신 중심 R&R 재정립...전략연구사업 수행 근간 마련",
+      "source": "전자신문",
+      "sourceUrl": "https://www.etnews.com",
+      "url": "https://www.etnews.com/20261117000002",
+      "publishedAt": "2026-11-17T03:00:00.000Z",
+      "description": "한국전자통신연구원(ETRI)은 전략연구사업 중심의 연구개발(R&D) 체계 변화와 아울러 기관의 '역할과 책임'(R&R)도 재정립한다. AI와 차세대 통신 인프라, 첨단 디지털 기술 중심의 새로운 국가 임무를 보다 잘 수행하기 위한 체질 변화다. R&R로 R&D 수행 체계를 강화해, 전략연구사업에 따른 성과 창출을 뒷받침한다. 새로운 R&R 상 상위역할은…",
+      "id": "61ebb3c7ff77",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "전자신문"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "전자신문",
+          "url": "https://www.etnews.com/20261117000002",
+          "publishedAt": "2026-11-17T03:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T03:00:00.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "한은 “AI 도입으로 업무시간 주 3.7시간 단축… 생산성 개선은 부족”",
+      "source": "조선일보",
+      "sourceUrl": "https://www.chosun.com",
+      "url": "https://www.chosun.com/economy/economy_general/2026/11/17/MNTDKMTCME2GGMZUHE2TEOBUG4/",
+      "publishedAt": "2026-11-17T03:00:00.000Z",
+      "description": "근로자가 인공지능(AI)을 활용해 업무 시간을 주 3.7시간 단축했다는 한국은행 분석 결과가 17일 나왔다. 다만 한국은행은 줄어든 업무 시간이 생산성 증대로 이어지지는 못했다고 봤다. 한국은행이 이날 발표한 ‘AI 확산과 생산성 효과 : 더 널리, 더 효율적으로, 그러나 아직 얕게’라는 제목의 보고서에 따르면, AI를 활용한 근로자의 평균 업무 시간 절감",
+      "id": "57d1af356491",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "조선일보 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "조선일보",
+          "url": "https://www.chosun.com/economy/economy_general/2026/11/17/MNTDKMTCME2GGMZUHE2TEOBUG4/",
+          "publishedAt": "2026-11-17T03:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T03:00:00.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "올해 1~3분기 벤처투자 12.6조원 ‘역대 최대’···AI 대형 투자가 이끌어",
+      "source": "경향신문",
+      "sourceUrl": "https://www.khan.co.kr",
+      "url": "https://www.khan.co.kr/article/202611171200001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=economy_news",
+      "publishedAt": "2026-11-17T03:00:00.000Z",
+      "description": "지난 11일 서울 용산구 그랜드 하얏트 서울에서 열린 ‘딥 다이브 인투 2026’에서 이소영 중소벤처기업부 장관이 인사말을 하고 있다. 연합뉴스올해 1~3분기 국내 신규 벤처투자액이 12조6000억원을 넘어 같은 기간 기준 역대 최대치를 기록했다. 반도체·로봇 등 인공지능(AI) 관련 분야에 대한 대형 투자가 실적 확대를 이끌었다. 신규 벤처펀드 결성액…",
+      "id": "cbad767360c5",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "경향신문 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "경향신문",
+          "url": "https://www.khan.co.kr/article/202611171200001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=economy_news",
+          "publishedAt": "2026-11-17T03:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T03:00:00.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "아이벡스, CJ제일제당 식품공정 '피지컬 AI' 기술 적용 총괄 과제 맡았다",
+      "source": "머니투데이",
+      "sourceUrl": "https://www.mt.co.kr",
+      "url": "https://www.mt.co.kr/future/2026/11/17/2026111709364832272",
+      "publishedAt": "2026-11-17T03:00:00.000Z",
+      "description": "[이 기사에 나온 스타트업에 대한 보다 다양한 기업정보는 유니콘팩토리 빅데이터 플랫폼 ‘데이터랩’에서 볼 수 있습니다.] 아이벡스가 CJ제일제당 식품 제조공정에 AI 비전·로봇 기반의 피지컬 AI 기술을 적용한다고 17일 밝혔다. 아이벡스는 산업통상자원부 AI(인공지능) 팩토리 지원사업의 주관기관으로 참여해 식음료(F&B) 업종에 특화된 공정 과정 구축…",
+      "id": "badf17bb78a7",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "머니투데이"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "머니투데이",
+          "url": "https://www.mt.co.kr/future/2026/11/17/2026111709364832272",
+          "publishedAt": "2026-11-17T03:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T03:00:00.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "생성형 AI에 연간 2.8조원 쓴 근로자들…\"핵심업무 활용은 제한적\"",
+      "source": "머니투데이",
+      "sourceUrl": "https://www.mt.co.kr",
+      "url": "https://www.mt.co.kr/economy/2026/11/17/2026111710283729820",
+      "publishedAt": "2026-11-17T03:00:00.000Z",
+      "description": "생성형 AI(인공지능)를 업무에 활용하는 근로자가 빠르게 늘고 있는 가운데 실제 핵심 업무에서의 활용은 여전히 제한적이라는 한국은행의 분석이 나왔다. 한은의 표현대로라면 널리 효율적으로 쓰고 있지만, 얕게 쓰고 있다는 의미다. 한은은 17일 'BOK 이슈노트 : AI 확산과 생산성 효과' 보고서를 발표하고 이같이 밝혔다. 이번 연구 결과는 올해 8~9월…",
+      "id": "ca1e219fe49e",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "머니투데이"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "머니투데이",
+          "url": "https://www.mt.co.kr/economy/2026/11/17/2026111710283729820",
+          "publishedAt": "2026-11-17T03:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T03:00:00.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "젠슨 황 스캔들 후폭풍···미, 중국의 AI 반도체 원격 이용까지 통제",
+      "source": "경향신문",
+      "sourceUrl": "https://www.khan.co.kr",
+      "url": "https://www.khan.co.kr/article/202611171149001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=economy_news",
+      "publishedAt": "2026-11-17T02:49:00.000Z",
+      "description": "젠슨 황 전 엔비디아 CEO와 앨리스 황. 로이터연합뉴스미국 정부가 첨단 인공지능(AI) 반도체에 대한 중국 기업의 원격 접근을 통제하기로 했다. 중국 밖 데이터센터에 설치된 엔비디아 등의 반도체를 인터넷으로 이용하는 이른바 ‘클라우드 우회로’까지 미국 정부의 허가 대상으로 삼은 것이다.미 상무부 산하 산업안보국(BIS)은 16일(현지시간) 보도자료를 …",
+      "id": "838c3bc5f81f",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "경향신문 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "경향신문",
+          "url": "https://www.khan.co.kr/article/202611171149001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=economy_news",
+          "publishedAt": "2026-11-17T02:49:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T02:49:00.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "한국어촌어항공단, 수산교육포털 AI 챗봇 도입…편의성 '↑쑥'",
+      "source": "머니투데이",
+      "sourceUrl": "https://www.mt.co.kr",
+      "url": "https://www.mt.co.kr/economy/2026/11/17/2026111711325655233",
+      "publishedAt": "2026-11-17T02:48:51.000Z",
+      "description": "한국어촌어항공단(공단)은 수산공익직불제 교육 대상자의 정보 이용 편의성을 높이기 위해 수산교육포털에 생성형 인공지능(AI) 챗봇 서비스를 도입해 운영한다고 17일 밝혔다. 공단은 해양수산부로부터 수산공익직불제 교육을 위탁받아 운영하고 있다. 수산공익직불제 교육은 수산공익직불금 대상자에게 수산업·어촌의 공익적 기능과 어업인의 역할, 직불금 지급에 따른 준…",
+      "id": "3b441afdbea5",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "머니투데이"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "머니투데이",
+          "url": "https://www.mt.co.kr/economy/2026/11/17/2026111711325655233",
+          "publishedAt": "2026-11-17T02:48:51.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T02:48:51.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "장성 종오리 농장서 H5형 AI 항원…오리 농장·차량 24시간 이동중지",
+      "source": "뉴시스",
+      "sourceUrl": "https://www.newsis.com",
+      "url": "https://www.newsis.com/view/NISX20261117_0003871296",
+      "publishedAt": "2026-11-17T02:35:39.000Z",
+      "description": "[세종=뉴시스]임소현 기자 = 전남광주통합특별시 장성군의 종오리 농장에서 H5형 조류인플루엔자(AI) 항원이 검출됐다. 방역당국은 고병원성 여부를 확인하는 한편 인근 지역과 같은 계열사의 오리 농장·시설·차량 등에 24시간 일시이동중지 명령을 내렸다. 고병원성 조류인플루엔자 중앙사고수습본부는 17일 종오리 약 1만 마리를 사육하는 장성 농장에서 H5형 …",
+      "id": "553d988539fe",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "뉴시스 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "뉴시스",
+          "url": "https://www.newsis.com/view/NISX20261117_0003871296",
+          "publishedAt": "2026-11-17T02:35:39.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T02:35:39.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "예고된 'AI 부정행위'…수능 코앞에 두고 정부 대책 우왕좌왕",
+      "source": "연합뉴스",
+      "sourceUrl": "https://www.yna.co.kr",
+      "url": "https://www.yna.co.kr/view/AKR20261117073100530",
+      "publishedAt": "2026-11-17T02:33:52.000Z",
+      "description": "(서울=연합뉴스) 노재현 기자 = 2027학년도 대학수학능력시험(수능)이 이틀 앞으로 다가온 가운데 인공지능(AI)을 활용한 부정행위에 대한 정...",
+      "id": "844b31ee0538",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "연합뉴스 산업"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20261117073100530",
+          "publishedAt": "2026-11-17T02:33:52.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T02:33:52.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "공소청, 전국청에 'AI 이용 부정행위 사범' 엄정 대응 지시",
+      "source": "머니투데이",
+      "sourceUrl": "https://www.mt.co.kr",
+      "url": "https://www.mt.co.kr/society/2026/11/17/2026111711232285826",
+      "publishedAt": "2026-11-17T02:33:33.000Z",
+      "description": "공소청이 인공지능(AI) 등이 장착된 스마트기기를 이용해 시험에서 부정행위를 저지르는 사범에 대한 엄정 대응에 나선다. 공소청은 17일 \"전국청에 최근 수험생들의 공정한 경쟁을 저해하고 시험관리 업무에 심각한 지장을 초래하는 '스마트기기 이용 시험 부정행위 사범'에 대한 엄정지시를 전파했다\"고 밝혔다. 구체적으로 생성형 AI, 스마트안경, 초소용 카메라…",
+      "id": "3135267283ab",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "머니투데이"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "머니투데이",
+          "url": "https://www.mt.co.kr/society/2026/11/17/2026111711232285826",
+          "publishedAt": "2026-11-17T02:33:33.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T02:33:33.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "\"AI 붐, 이미 버블...2028년 美 대선 전 터져 침체\" 전문가 섬뜩 경고",
+      "source": "머니투데이",
+      "sourceUrl": "https://www.mt.co.kr",
+      "url": "https://www.mt.co.kr/world/2026/11/17/2026111710482789742",
+      "publishedAt": "2026-11-17T02:31:35.000Z",
+      "description": "겐슬러 전 SEC 위원장 \"순환 금융·부외 금융 때문에 가늠 어려워\" \"첫 도미노는 네오클라우드\" 게리 겐슬러 전 미국 증권거래위원회(SEC) 위원장이 인공지능(AI) 붐이 이미 버블이며 2028년 미 대선 이전에 꺼져 경기침체를 부를 가능성이 크다고 경고했다. 겐슬러 전 위원장은 16일(현지시간) CNN과의 인터뷰에서 AI 인프라 구축에 연간 8000…",
+      "id": "b19e99e29749",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "머니투데이"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "머니투데이",
+          "url": "https://www.mt.co.kr/world/2026/11/17/2026111710482789742",
+          "publishedAt": "2026-11-17T02:31:35.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T02:31:35.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "뤼튼, 애플 심사 강화에 韓·日 'AI 채팅 앱' 성인 등급 상향",
+      "source": "전자신문",
+      "sourceUrl": "https://www.etnews.com",
+      "url": "https://www.etnews.com/20261117000200",
+      "publishedAt": "2026-11-17T02:30:10.000Z",
+      "description": "뤼튼테크놀로지스가 애플의 앱스토어 연령 기준 강화에 대응해 한국·일본에서 운영하는 인공지능(AI) 채팅 앱 '크랙'과 '캬라푸'의 iOS 이용 연령을 성인 등급으로 상향한다. 17일 업계에 따르면 뤼튼테크놀로지스는 수일 내 국내 AI 채팅 앱 '크랙'의 iOS 이용 연령 등급을 기존 만 15세 이상에서 만 18세 이상 성인 등급으로 변경할 예정이다. 지…",
+      "id": "35b913422280",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "전자신문"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "전자신문",
+          "url": "https://www.etnews.com/20261117000200",
+          "publishedAt": "2026-11-17T02:30:10.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T02:30:10.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "카카오뱅크 \"AI 목표적금, 출시 한 달 만에 누적 10만좌\"",
+      "source": "연합뉴스",
+      "sourceUrl": "https://www.yna.co.kr",
+      "url": "https://www.yna.co.kr/view/AKR20261117076900002",
+      "publishedAt": "2026-11-17T02:29:58.000Z",
+      "description": "(서울=연합뉴스) 이도흔 기자 = 카카오뱅크[323410]는 지난달 출시한 'AI 목표적금'이 한 달 만에 누적 10만좌 넘게 개설됐다고 17일...",
+      "id": "09c10ac93dce",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "연합뉴스 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20261117076900002",
+          "publishedAt": "2026-11-17T02:29:58.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T02:29:58.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "[오늘 이 종목] 북미 휴머노이드 첫 공급 '삼현' · AI 보안 트렌드 '클라우드플레어'",
+      "source": "머니투데이",
+      "sourceUrl": "https://www.mt.co.kr",
+      "url": "https://www.mt.co.kr/stock/2026/11/17/2026111711167086122",
+      "publishedAt": "2026-11-17T02:27:30.000Z",
+      "description": "주가라는 숫자 이면에 숨겨진 재료와 실적, 차트를 분석해 기업의 숨은 가치를 발굴하는 에 유영화 KB증권 디지털콘텐츠팀 차장이 출연했다. 유 차장은 최근 5천피 부근의 변동성 장세 속 바닥 테스트 국면을 짚어내며, 북미 휴머노이드 시장에 첫발을 디딘 삼현과 AI 에이전트 확산의 수혜를 입는 클라우드플레어를 집중 조명했다. 이번 방송에서는 로봇용 일체형 …",
+      "id": "8e3e087c91c0",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "머니투데이"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "머니투데이",
+          "url": "https://www.mt.co.kr/stock/2026/11/17/2026111711167086122",
+          "publishedAt": "2026-11-17T02:27:30.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T02:27:30.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "앤트로픽, 주요지수 편입 늦어질 듯…\"패시브 자금 25조 유입 추산\"",
+      "source": "머니투데이",
+      "sourceUrl": "https://www.mt.co.kr",
+      "url": "https://www.mt.co.kr/world/2026/11/17/2026111709444891073",
+      "publishedAt": "2026-11-17T02:27:14.000Z",
+      "description": "인공지능(AI) 모델 클로드 개발사 앤트로픽이 19일(현지시간) 나스닥에 상장하면 한 달여 동안 패시브 펀드에서 25조원 넘는 자금이 유입될 것이라는 분석이 나왔다. 다만 주요 벤치마크 지수에 편입되기까지는 스페이스X보다 시간이 더 걸릴 것으로 예상된다. 16일(현지시간) 블룸버그통신에 따르면 FTSE러셀은 앤트로픽이 예정대로 19일 거래를 시작하고 조…",
+      "id": "7d0a2625eb59",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "머니투데이"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "머니투데이",
+          "url": "https://www.mt.co.kr/world/2026/11/17/2026111709444891073",
+          "publishedAt": "2026-11-17T02:27:14.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T02:27:14.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "5000선 사수 중인 코스피…엔비디아가 구원투수 될까?",
+      "source": "머니투데이",
+      "sourceUrl": "https://www.mt.co.kr",
+      "url": "https://www.mt.co.kr/stock/2026/11/17/2026111711123736734",
+      "publishedAt": "2026-11-17T02:24:11.000Z",
+      "description": "[오늘의 포인트] 엔비디아 실적 발표를 앞두고 코스피가 5000선에서 공방 중이다. 젠슨 황 전 엔비디아 CEO(최고경영자) 사임 여파와 AI(인공지능) 투자 위축 우려로 투자심리가 악화한 상황에서 엔비디아의 실적 발표가 코스피 향방의 분수령이 될 것으로 보인다. 17일 오전 11시11분 현재 코스피는 전 거래일 대비 59.04포인트(1.15%) 내린 …",
+      "id": "4eb988a51098",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "머니투데이"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "머니투데이",
+          "url": "https://www.mt.co.kr/stock/2026/11/17/2026111711123736734",
+          "publishedAt": "2026-11-17T02:24:11.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T02:24:11.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "전북도, 정부 박람회서 '자체 개발 AI' 선보인다",
+      "source": "연합뉴스",
+      "sourceUrl": "https://www.yna.co.kr",
+      "url": "https://www.yna.co.kr/view/AKR20261117078200055",
+      "publishedAt": "2026-11-17T02:20:49.000Z",
+      "description": "(전주=연합뉴스) 임채두 기자 = 전북특별자치도는 오는 25∼27일 경기 고양시 킨텍스에서 열리는 '2026 대한민국 정부혁신 박람회'에 참가해...",
+      "id": "990496ca58d1",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "연합뉴스 산업"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20261117078200055",
+          "publishedAt": "2026-11-17T02:20:49.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T02:20:49.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "\"AI 기술로 도로결빙 탐지·재난 대응\"…대전시, 성과 공유회",
+      "source": "연합뉴스",
+      "sourceUrl": "https://www.yna.co.kr",
+      "url": "https://www.yna.co.kr/view/AKR20261117079600063",
+      "publishedAt": "2026-11-17T02:19:47.000Z",
+      "description": "(대전=연합뉴스) 박주영 기자 = 대전시는 17일 유성구 대덕커넥트라운지에서 인공지능(AI)과 첨단기술을 활용해 지역 사회문제를 해결한 성과를 ...",
+      "id": "8726c3a58c7b",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "연합뉴스 산업"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20261117079600063",
+          "publishedAt": "2026-11-17T02:19:47.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T02:19:47.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "AI가 차량·금융상품 추천…우리금융캐피탈 서비스 12월 출시",
+      "source": "연합뉴스",
+      "sourceUrl": "https://www.yna.co.kr",
+      "url": "https://www.yna.co.kr/view/AKR20261117075200002",
+      "publishedAt": "2026-11-17T02:06:27.000Z",
+      "description": "(서울=연합뉴스) 이도흔 기자 = 우리금융캐피탈은 자체 개발한 특허 기술을 적용해 인공지능(AI)이 고객에게 차량과 금융상품을 함께 추천하는 서...",
+      "id": "c1439949da75",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "연합뉴스 경제",
+        "연합뉴스 산업"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20261117075200002",
+          "publishedAt": "2026-11-17T02:06:27.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T02:06:27.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "AI부정행위 우려 속 70년째 양심 지킨 '무감독 시험'",
+      "source": "연합뉴스",
+      "sourceUrl": "https://www.yna.co.kr",
+      "url": "https://www.yna.co.kr/view/AKR20261117074100065",
+      "publishedAt": "2026-11-17T02:01:43.000Z",
+      "description": "(인천=연합뉴스) 김상연 기자 = 인공지능(AI)을 활용한 부정행위의 파장이 커지는 상황에서 인천 제물포고등학교가 70년째 유지 중인 '무감독 ...",
+      "id": "3df4e4bb714e",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "연합뉴스 산업"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20261117074100065",
+          "publishedAt": "2026-11-17T02:01:43.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T02:01:43.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "靑, 수능 앞두고 ‘AI 악용 부정행위 비상대책 TF’ 가동",
+      "source": "조선일보",
+      "sourceUrl": "https://www.chosun.com",
+      "url": "https://www.chosun.com/economy/economy_general/2026/11/17/GVRTSNJYGI2GKMJWMJRDOMZRHA/",
+      "publishedAt": "2026-11-17T02:01:26.000Z",
+      "description": "오는 19일 대학수학능력시험(수능)을 앞두고 인공지능(AI)을 활용한 시험 부정행위에 대한 우려가 고조되는 가운데 청와대가 ‘비상대응 태스크포스(TF)’를 가동했다. 17일 청와대에 따르면, 임광현 대통령 비서실장을 주축으로 ‘AI와 첨단장비를 활용한 수능 부정행위 비상대책 TF’가 구성됐다. 지난 16일 수석·비서관 대책회의를 열어 대응에 들어간 것으로",
+      "id": "3fe50f7e8865",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "조선일보 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "조선일보",
+          "url": "https://www.chosun.com/economy/economy_general/2026/11/17/GVRTSNJYGI2GKMJWMJRDOMZRHA/",
+          "publishedAt": "2026-11-17T02:01:26.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T02:01:26.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "[단독] KT, '모두의 AI' 서비스명은 '이음큐브'?…상표 출원",
+      "source": "머니투데이",
+      "sourceUrl": "https://www.mt.co.kr",
+      "url": "https://www.mt.co.kr/tech/2026/11/17/2026111710085774046",
+      "publishedAt": "2026-11-17T02:00:00.000Z",
+      "description": "KT가 정부의 전 국민 AI(인공지능) 서비스 '모두의 AI' 정식 출시를 앞두고 '이음큐브'를 상표로 출원했다. 상표 정보에 명시된 지정상품군이 '모두의 AI' 사업계획과 유사하다는 점에서 관련 앱이나 서비스의 명칭으로 사용될 가능성이 제기된다. 17일 특허청 KIPRIS(특허정보검색서비스)에 따르면 KT는 지난 13일 '이음큐브' 상표를 출원했다. …",
+      "id": "05e53dfec09f",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "머니투데이"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "머니투데이",
+          "url": "https://www.mt.co.kr/tech/2026/11/17/2026111710085774046",
+          "publishedAt": "2026-11-17T02:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T02:00:00.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "밀 이삭 언제 나올까? AI에 물었더니 오차 단 하루…우리 밀 품종 개발 '새 시대'",
+      "source": "머니투데이",
+      "sourceUrl": "https://www.mt.co.kr",
+      "url": "https://www.mt.co.kr/economy/2026/11/17/2026111706094433064",
+      "publishedAt": "2026-11-17T02:00:00.000Z",
+      "description": "농진청, '금강밀' 유전체 완전 해독…한국형 밀 유전자 지도 확보 어린 밀 DNA로 이삭 나올 시기 예측…품종 개발 시간·비용 절감 기대 밀을 직접 키우지 않고도 유전정보만으로 이삭이 언제 나올지 미리 알 수 있는 길이 열렸다. 인공지능(AI)이 밀의 유전정보를 분석해 이삭이 나오는 시기를 평균 하루 정도의 오차로 예측하는 기술이 개발됐다. 경험과 현장…",
+      "id": "d019e778ecdb",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "머니투데이"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "머니투데이",
+          "url": "https://www.mt.co.kr/economy/2026/11/17/2026111706094433064",
+          "publishedAt": "2026-11-17T02:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T02:00:00.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "靑, AI 부정행위 비상대책 TF 가동…수능일까지 '비상근무'",
+      "source": "머니투데이",
+      "sourceUrl": "https://www.mt.co.kr",
+      "url": "https://www.mt.co.kr/politics/2026/11/17/2026111710541450116",
+      "publishedAt": "2026-11-17T01:57:56.000Z",
+      "description": "[the300] 청와대가 오는 19일 대학수학능력시험을 앞두고 인공지능(AI) 악용 부정행위 대응을 위한 비상대책 TF(태스크포스) 가동에 들어갔다. 17일 청와대에 따르면 임광현 대통령비서실장은 최근 수능의 공정한 관리를 위해 청와대 내 'AI 악용 부정행위 비상대응 TF'를 구성하고 전날 대책회의를 진행했다. 임 실장이 주축이 된 TF에는 관계 수석…",
+      "id": "a0e635442c0a",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "머니투데이"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "머니투데이",
+          "url": "https://www.mt.co.kr/politics/2026/11/17/2026111710541450116",
+          "publishedAt": "2026-11-17T01:57:56.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:57:56.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "장성 종오리 농장서 AI 항원 확인…고병원성 여부 검사",
+      "source": "연합뉴스",
+      "sourceUrl": "https://www.yna.co.kr",
+      "url": "https://www.yna.co.kr/view/AKR20261117073800030",
+      "publishedAt": "2026-11-17T01:55:53.000Z",
+      "description": "(서울=연합뉴스) 한주홍 기자 = 고병원성 조류인플루엔자(AI) 중앙사고수습본부는 17일 전남광주통합특별시 장성군의 종오리 농장(1만마리 사육)...",
+      "id": "a490c9c62f9f",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "연합뉴스 경제",
+        "연합뉴스 산업"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20261117073800030",
+          "publishedAt": "2026-11-17T01:55:53.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:55:53.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "관세사 수석도 AI 의혹?...\"축하 행사도 안 나와\" 의문 제기된 이유",
+      "source": "머니투데이",
+      "sourceUrl": "https://www.mt.co.kr",
+      "url": "https://www.mt.co.kr/society/2026/11/17/2026111710354490457",
+      "publishedAt": "2026-11-17T01:50:57.000Z",
+      "description": "세무사 시험 수석 합격자가 AI를 이용해 부정행위한 사실이 알려지면서 올해 치러진 관세사 시험에서도 부정행위 의혹이 제기되고 있다. 17일 온라인 수험생 커뮤니티 등에서는 올해 관세사 시험에서 통상 한 해 1~2명에 그쳤던 생동차 합격자가 10명에 달했다는 주장이 나오고 있다. 생동차는 첫 시험 응시 연도에 1차와 2차 시험을 모두 통과한 경우를 말한다…",
+      "id": "f28955e1de99",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "머니투데이"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "머니투데이",
+          "url": "https://www.mt.co.kr/society/2026/11/17/2026111710354490457",
+          "publishedAt": "2026-11-17T01:50:57.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:50:57.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "\"돈 쏟아부은 AI, 이제 성과 내놔라\"…내년에 시장 판도 확 바뀐다",
+      "source": "지디넷코리아",
+      "sourceUrl": "https://zdnet.co.kr",
+      "url": "https://zdnet.co.kr/view/?no=20261117105056",
+      "publishedAt": "2026-11-17T01:50:56.000Z",
+      "description": "[지디넷코리아]인공지능(AI)에 대한 막대한 투자가 실제 사업 성과로 이어지는지를 검증하려는 움직임이 내년부터 본격화될 전망이다. AI 에이전트가 기업 업무를 직접 수행하는 사례가 늘면서 투자 수익성뿐 아니라 의사결정에 대한 책임과 신뢰성도 주요 평가 기준으로 떠오를 것으로 예상된다.17일 글로벌 데이터·AI 기업 SAS가 발표한 '2027년 AI 전망…",
+      "id": "bd68632adef0",
+      "category": "ai",
+      "categoryHints": [
+        "ai",
+        "mobility"
+      ],
+      "matchedQueries": [
+        "지디넷코리아"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "지디넷코리아",
+          "url": "https://zdnet.co.kr/view/?no=20261117105056",
+          "publishedAt": "2026-11-17T01:50:56.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:50:56.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "[영상] \"책임질 것\" 허리 숙인 'AI커닝' 세무사 수석…'혼자 했나' 묻자",
+      "source": "연합뉴스",
+      "sourceUrl": "https://www.yna.co.kr",
+      "url": "https://www.yna.co.kr/view/AKR20261117069000704",
+      "publishedAt": "2026-11-17T01:50:55.000Z",
+      "description": "(서울=연합뉴스) 초소형 카메라 등 장비와 AI를 이용해 제63회 세무사 시험에서 부정행위를 저질렀다고 자수한 수석 합격자 한 모(34) 씨가 ...",
+      "id": "03ab0508a2bb",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "연합뉴스 산업"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20261117069000704",
+          "publishedAt": "2026-11-17T01:50:55.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:50:55.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "\"수능 AI 스마트안경 단속에 수험생 보호 대책도 필요\"",
+      "source": "연합뉴스",
+      "sourceUrl": "https://www.yna.co.kr",
+      "url": "https://www.yna.co.kr/view/AKR20261117070400063",
+      "publishedAt": "2026-11-17T01:46:44.000Z",
+      "description": "(홍성=연합뉴스) 김준범 기자 = 대학수학능력시험(수능)을 앞두고 인공지능(AI) 스마트안경을 이용한 부정행위 단속 과정에서 일반 안경을 착용한...",
+      "id": "e66b682f3d99",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "연합뉴스 산업"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20261117070400063",
+          "publishedAt": "2026-11-17T01:46:44.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:46:44.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "연천군 '대한민국소통어워즈' AI 브랜드 대상 수상",
+      "source": "연합뉴스",
+      "sourceUrl": "https://www.yna.co.kr",
+      "url": "https://www.yna.co.kr/view/AKR20261117070000060",
+      "publishedAt": "2026-11-17T01:45:45.000Z",
+      "description": "(연천=연합뉴스) 노승혁 기자 = 경기 연천군은 '제19회 대한민국소통어워즈 시상식'에서 인공지능(AI) 브랜드 대상 수상기관으로 선정됐다고 1...",
+      "id": "19d9f2c15ede",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "연합뉴스 산업"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20261117070000060",
+          "publishedAt": "2026-11-17T01:45:45.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:45:45.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "젠슨황·앤트로픽·금리…'삼중고'에 짓눌린 코스피",
+      "source": "연합뉴스",
+      "sourceUrl": "https://www.yna.co.kr",
+      "url": "https://www.yna.co.kr/view/AKR20261117065400008",
+      "publishedAt": "2026-11-17T01:41:20.000Z",
+      "description": "(서울=연합뉴스) 임은진 기자 = 젠슨 황 스캔들, 앤트로픽 상장, 미국 국채 금리.",
+      "id": "de2878b4f65a",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "연합뉴스 경제",
+        "연합뉴스 산업"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20261117065400008",
+          "publishedAt": "2026-11-17T01:41:20.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:41:20.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "미 연준 \"대형은행 AI 위험노출액 1조달러\"…손실확산 경고",
+      "source": "연합뉴스",
+      "sourceUrl": "https://www.yna.co.kr",
+      "url": "https://www.yna.co.kr/view/AKR20261117064100009",
+      "publishedAt": "2026-11-17T01:39:14.000Z",
+      "description": "(서울=연합뉴스) 임화섭 기자 = 미국 연방준비제도(연준)가 최근 '금융 안정 보고서'에서 미국 대형 은행의 인공지능(AI) 관련 위험노출액(익...",
+      "id": "ccb9a4e87092",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "연합뉴스 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20261117064100009",
+          "publishedAt": "2026-11-17T01:39:14.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:39:14.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "與 “AI 부정행위 응시 제한 강화, 올해 수능 소급 적용 여부도 논의 중”",
+      "source": "조선일보",
+      "sourceUrl": "https://www.chosun.com",
+      "url": "https://www.chosun.com/economy/economy_general/2026/11/17/GE3GKM3CGQZDCMZTMMYDMZBTGI/",
+      "publishedAt": "2026-11-17T01:37:13.000Z",
+      "description": "더불어민주당이 인공지능(AI)을 활용한 시험 부정행위와 관련해 응시 제한 기간을 최대 10년으로 확대하는 방안을 검토하는 가운데, 오는 19일 치러지는 2027학년도 대학수학능력시험(수능) 적용 여부를 국회 교육위원회에서 논의하고 있다고 17일 밝혔다. 김성회 민주당 원내대변인은 이날 원내대책회의 직후 기자들과 만나 응시 제한 강화 규정의 소급 적용 여부",
+      "id": "b0ef908eca56",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "조선일보 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "조선일보",
+          "url": "https://www.chosun.com/economy/economy_general/2026/11/17/GE3GKM3CGQZDCMZTMMYDMZBTGI/",
+          "publishedAt": "2026-11-17T01:37:13.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:37:13.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "트럼프, 엔비디아 주식 '최대 830억원 규모' 보유… 中 스파이설엔 “입증 안 됐다”",
+      "source": "전자신문",
+      "sourceUrl": "https://www.etnews.com",
+      "url": "https://www.etnews.com/20261117000121",
+      "publishedAt": "2026-11-17T01:30:00.000Z",
+      "description": "도널드 트럼프 미국 대통령이 최대 6200만달러(약 830억원) 규모의 엔비디아 주식을 보유한 것으로 추정되면서 이해충돌 논란이 불거지고 있다. 젠슨 황 전 엔비디아 최고경영자(CEO)가 중국 스파이 의혹을 받는 여성과의 불륜으로 사임한 가운데, 트럼프 행정부가 추진해 온 대중국 반도체 수출 규제 완화 정책에도 관심이 쏠리고 있다. 16일(현지시간) 미…",
+      "id": "c5998d8100d7",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "전자신문"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "전자신문",
+          "url": "https://www.etnews.com/20261117000121",
+          "publishedAt": "2026-11-17T01:30:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:30:00.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "‘AI 커닝’에 은행도 비상… 안경 전수검사·전파차단기 검토",
+      "source": "조선일보",
+      "sourceUrl": "https://www.chosun.com",
+      "url": "https://www.chosun.com/economy/stock-finance/2026/11/17/GU2TSMTGMQYWGYJZMU2TIMDCGQ/",
+      "publishedAt": "2026-11-17T01:30:00.000Z",
+      "description": "인공지능(AI·Artificial Intelligence)과 스마트글라스 등 전자기기를 활용한 시험 부정행위가 잇따르면서 은행권이 신입 행원 채용 필기시험 관리에 촉각을 곤두세우고 있다. 주요 은행들은 응시자의 전자기기 반납을 의무화하고 안경 착용자를 전수 검사하는 등 부정 행위 차단에 나섰다. 17일 금융권에 따르면, 주요 은행은 신입 행원 채용 과정에서",
+      "id": "a22196d2cc61",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "조선일보 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "조선일보",
+          "url": "https://www.chosun.com/economy/stock-finance/2026/11/17/GU2TSMTGMQYWGYJZMU2TIMDCGQ/",
+          "publishedAt": "2026-11-17T01:30:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:30:00.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "AWS, 개발 프로세스별로 업무 전담하는 AI 에이전트 ‘키로 봇’ 출시",
+      "source": "조선일보",
+      "sourceUrl": "https://www.chosun.com",
+      "url": "https://www.chosun.com/economy/tech_it/2026/11/17/GUZWCNZXGNTDAODDGM3DSNZYMU/",
+      "publishedAt": "2026-11-17T01:29:24.000Z",
+      "description": "아마존웹서비스(AWS)는 인공지능(AI) 에이전트 기반 개발 워크스페이스 ‘키로 크루(Kiro Crew)’에서 ‘키로 봇(Kiro bots)’을 정식 출시했다고 17일 밝혔다. 키로 봇은 소프트웨어 개발 과정 중 특정 부분을 전담하는 장기 실행(long-running) 에이전트다. 개발자는 개발 프로세스를 여러 역할로 나누고 각 역할을 봇에 맡긴 뒤, 결과",
+      "id": "4c94f66284b5",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "조선일보 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "조선일보",
+          "url": "https://www.chosun.com/economy/tech_it/2026/11/17/GUZWCNZXGNTDAODDGM3DSNZYMU/",
+          "publishedAt": "2026-11-17T01:29:24.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:29:24.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "김민석, 'AI커닝 난 못잡을 것 같다' 최교진에 \"답변 정정했어야\"(종합)",
+      "source": "연합뉴스",
+      "sourceUrl": "https://www.yna.co.kr",
+      "url": "https://www.yna.co.kr/view/AKR20261117024251001",
+      "publishedAt": "2026-11-17T01:28:55.000Z",
+      "description": "(서울=연합뉴스) 최평천 기자 = 더불어민주당 김민석 대표는 17일 대학수학능력시험(수능·19일)을 앞두고 인공지능(AI)을 활용한 시험 부정행...",
+      "id": "c6aa1839d3c6",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "연합뉴스 산업"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20261117024251001",
+          "publishedAt": "2026-11-17T01:28:55.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:28:55.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "젠슨 황 두둔한 트럼프…'불륜 의혹' 보고에도 엔비디아 주식 거래 계속",
+      "source": "머니투데이",
+      "sourceUrl": "https://www.mt.co.kr",
+      "url": "https://www.mt.co.kr/world/2026/11/17/2026111709003791195",
+      "publishedAt": "2026-11-17T01:27:38.000Z",
+      "description": "황 방중 동행 직후 매도…백악관 \"독립 자문역이 운용\" 젠슨 황 전 엔비디아 최고경영자(CEO)를 두둔해온 도널드 트럼프 미국 대통령의 투자 계좌가 엔비디아 주식을 최소 103차례 사고판 것으로 나타났다. 황 전 CEO가 중국 스파이로 의심받는 여성과 불륜을 했다는 의혹을 보고 받은 이후에도 거래를 이어갔다. 16일(현지시간) 미 방송 CNBC는 8월까…",
+      "id": "3f0d3745ffd1",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "머니투데이"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "머니투데이",
+          "url": "https://www.mt.co.kr/world/2026/11/17/2026111709003791195",
+          "publishedAt": "2026-11-17T01:27:38.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:27:38.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "엔화, 美 AI 관련주 약세에 달러 매도로 1달러=159엔대 중반 상승 출발",
+      "source": "뉴시스",
+      "sourceUrl": "https://www.newsis.com",
+      "url": "https://www.newsis.com/view/NISX20261117_0003871124",
+      "publishedAt": "2026-11-17T01:26:19.000Z",
+      "description": "[서울=뉴시스]이재준 기자 = 엔화 환율은 17일 전날 뉴욕 증시에서 반도체 등 인공지능(AI) 관련주가 약세를 보이면서 투자 운용 리스크 심리 후퇴로 포지션 조정 엔 매수, 달러 매도가 유입해 1달러=159엔대 중반으로 소폭 올라 시작했다. 도쿄 외환시장에서 엔화 환율은 이날 오전 8시30분 시점에 1달러=159.45~159.47엔으로 전일 오후 5시…",
+      "id": "0d772b2f3998",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "뉴시스 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "뉴시스",
+          "url": "https://www.newsis.com/view/NISX20261117_0003871124",
+          "publishedAt": "2026-11-17T01:26:19.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:26:19.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "이노뎁, 실적 턴어라운드 시작됐다… 피지컬 AI 사업 기대감↑",
+      "source": "머니투데이",
+      "sourceUrl": "https://www.mt.co.kr",
+      "url": "https://www.mt.co.kr/stock/2026/11/17/2026111710033278865",
+      "publishedAt": "2026-11-17T01:25:45.000Z",
+      "description": "독립리서치 밸류파인더는 17일 이노뎁에 대해 실적 흑자전환 임박과 AI 관제시장의 확대, 피지컬 AI(인공지능) 사업 기대감이 고조된다고 평가했다. 투자의견과 목표주가는 밝히지 않았다. 지후 밸류파인더 연구원은 \"이노뎁은 공공 부문 유지보수 매출 확대와 비용 구조 개선에 힘입어 3분기 별도 기준 영업이익 흑자 전환을 달성했다\"고 평가했다. 이노뎁은 3분…",
+      "id": "5886373fd496",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "머니투데이"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "머니투데이",
+          "url": "https://www.mt.co.kr/stock/2026/11/17/2026111710033278865",
+          "publishedAt": "2026-11-17T01:25:45.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:25:45.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "학습 없어도 ‘척척’ 해내는 휴머노이드… “로봇 AI 기술 또 진화했다”",
+      "source": "조선일보",
+      "sourceUrl": "https://www.chosun.com",
+      "url": "https://www.chosun.com/economy/industry-company/2026/11/17/GMYWEYJTGE3TQY3EGNTGIMRYGI/",
+      "publishedAt": "2026-11-17T01:25:02.000Z",
+      "description": "국내외 휴머노이드 경쟁이 확대되는 가운데 로봇 성능을 높이는 기반 기술도 고도화되고 있다. 휴머노이드가 학습해야 하는 데이터량을 줄이거나 로봇의 지능 수준을 높이는 기술이 잇따라 나오면서다. 업계에서는 관련 기술들이 고도화되면서 휴머노이드 경쟁도 한층 심화될 것으로 전망하고 있다. 17일 로봇업계에 따르면, 미 빅테크 기업 엔비디아는 이달 새로운 로봇 범",
+      "id": "bd6cb0afed17",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "조선일보 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "조선일보",
+          "url": "https://www.chosun.com/economy/industry-company/2026/11/17/GMYWEYJTGE3TQY3EGNTGIMRYGI/",
+          "publishedAt": "2026-11-17T01:25:02.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:25:02.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "고금리에 타법인 투자 줄인 30대 그룹, AI는 늘렸다…최근 2년반 동안 1조 넘게 쏟아부어",
+      "source": "경향신문",
+      "sourceUrl": "https://www.khan.co.kr",
+      "url": "https://www.khan.co.kr/article/202611171016001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=economy_news",
+      "publishedAt": "2026-11-17T01:16:00.000Z",
+      "description": "올 상반기 출자액 중 AI 비중 27.4% ‘최고’LG 누적 1위…업스테이지에 투자 절반 쏠려서울 강남역 일대. 조태형 기자국내 30대 그룹 계열사가 다른 회사 법인 지분투자는 줄이면서도 인공지능(AI) 분야 투자는 확대한 것으로 나타났다. 최근 2년 반 동안 1조원 넘게 쏟아부었다.17일 기업분석연구소 리더스인덱스가 매출 상위 500대 기업 중 반기보…",
+      "id": "f68ef04879d4",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "경향신문 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "경향신문",
+          "url": "https://www.khan.co.kr/article/202611171016001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=economy_news",
+          "publishedAt": "2026-11-17T01:16:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:16:00.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "구글 “AI가 스스로 취약점 찾아 공격 코드 만든 첫 사례 포착”",
+      "source": "조선일보",
+      "sourceUrl": "https://www.chosun.com",
+      "url": "https://www.chosun.com/economy/tech_it/2026/11/17/G43TKMJYHE4WCZDEGU4WGNBWGQ/",
+      "publishedAt": "2026-11-17T01:04:54.000Z",
+      "description": "해커들이 인공지능(AI) 에이전트를 악용해 보안 패치를 분석한 뒤 이를 실제 작동하는 취약점 공격 코드(exploit)로 만들어 대규모 자동화 공격을 수행하기 시작한 것으로 나타났다. AI가 사람의 개입 없이 스스로 취약점을 찾아 공격 코드를 개발하면서 해킹 속도가 더 빨라지고 있다는 분석이 나온다. 구글 위협 인텔리전스 그룹(GTIG)과 맨디언트는 17일",
+      "id": "afba328be894",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "조선일보 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "조선일보",
+          "url": "https://www.chosun.com/economy/tech_it/2026/11/17/G43TKMJYHE4WCZDEGU4WGNBWGQ/",
+          "publishedAt": "2026-11-17T01:04:54.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:04:54.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "삼성전자, 초중교 교실 찾아가는 AI 수업에 ‘갤럭시 XR’ 도입",
+      "source": "조선일보",
+      "sourceUrl": "https://www.chosun.com",
+      "url": "https://www.chosun.com/economy/tech_it/2026/11/17/MI4DQNRWGQZDIMRWGY2WCMJXHA/",
+      "publishedAt": "2026-11-17T01:01:33.000Z",
+      "description": "삼성전자는 ‘갤럭시 인공지능(AI) 클래스’에 ‘갤럭시 XR’을 활용한 과정을 추가해 교실 속 AI 경험을 확대한다고 17일 밝혔다. 갤럭시 AI 클래스는 전문·보조 강사가 학교를 찾아가 초등학교 고학년과 중학생에게 갤럭시 기기로 AI를 배우는 기회를 제공하는 프로그램이다. 지난해 1월 시작했다. 삼성전자는 지난 16일부터 갤럭시 AI 클래스에 갤럭시 X",
+      "id": "b4c36e405ee8",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "조선일보 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "조선일보",
+          "url": "https://www.chosun.com/economy/tech_it/2026/11/17/MI4DQNRWGQZDIMRWGY2WCMJXHA/",
+          "publishedAt": "2026-11-17T01:01:33.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:01:33.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "AI가 집 안 환경 맞추고, 공간 자유자재로… GS건설, 미래형 ‘자이’ 공개",
+      "source": "조선일보",
+      "sourceUrl": "https://www.chosun.com",
+      "url": "https://www.chosun.com/economy/real_estate/2026/11/17/GYZGCYLGME2GKNRTMM3GKNLFME/",
+      "publishedAt": "2026-11-17T01:00:17.000Z",
+      "description": "GS건설이 인공지능(AI)으로 거주자의 생활을 이해해 집 안 환경을 스스로 조절하고, 생애주기에 맞춰 내부 공간을 자유자재로 바꿀 수 있는 미래형 ‘자이(Xi)’의 청사진을 공개했다. GS건설은 지난 16일 서울 삼성동 웨스틴 서울 파르나스에서 자이 미래전략 발표회를 열고 AI, 공간 혁신, 기후 대응 기술을 접목한 미래 주거상품을 선보였다. ◆ 천장 모션",
+      "id": "1030bde5a8da",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "조선일보 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "조선일보",
+          "url": "https://www.chosun.com/economy/real_estate/2026/11/17/GYZGCYLGME2GKNRTMM3GKNLFME/",
+          "publishedAt": "2026-11-17T01:00:17.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:00:17.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "진화하는 아파트…GS건설 \"내년 자이에 AI홈 LV.3 도입\"",
+      "source": "뉴시스",
+      "sourceUrl": "https://www.newsis.com",
+      "url": "https://www.newsis.com/view/NISX20261117_0003870747",
+      "publishedAt": "2026-11-17T01:00:00.000Z",
+      "description": "[서울=뉴시스]이연희 기자 = GS건설이 기후변화, 인공지능(AI)에 대응해 주거브랜드 자이(XI)의 중장기 비전 '비욘드 리빙(BEYOND LIVING)'을 공개했다. 내년 하반기 분양하는 자이 아파트에는 모션센서와 음성인식비서가 탑재된 'AI홈'이 적용된다. 거주자 생활방식에 따라 공간을 유연하게 바꿀 수 있는 'IX플랫폼'과 폭염, 폭우 등에 대응…",
+      "id": "8a46f0a7b7d7",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "뉴시스 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "뉴시스",
+          "url": "https://www.newsis.com/view/NISX20261117_0003870747",
+          "publishedAt": "2026-11-17T01:00:00.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T01:00:00.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "IMF총재 \"세계경제, AI '외발'로 지탱…1조 달러 '순환금융' 뇌관\"",
+      "source": "뉴시스",
+      "sourceUrl": "https://www.newsis.com",
+      "url": "https://www.newsis.com/view/NISX20261117_0003870834",
+      "publishedAt": "2026-11-17T00:55:24.000Z",
+      "description": "[서울=뉴시스]신정원 기자 = 세계 경제가 인공지능(AI)이라는 '외발'로 지탱되고 있으며, AI 투자가 흔들릴 경우 글로벌 금융 시장 위축으로 이어질 수 있다고 국제통화기금(IMF) 수장이 경고했다. 크리스탈리나 게오르기에바 IMF 총재는 16일(현지 시간) 필리핀 동남아시아국가연합(ASEAN) 정상회의를 계기로 미 경제 매체 CNBC와 가진 인터뷰에…",
+      "id": "709d00fa66c7",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "뉴시스 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "뉴시스",
+          "url": "https://www.newsis.com/view/NISX20261117_0003870834",
+          "publishedAt": "2026-11-17T00:55:24.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T00:55:24.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "엠로, 전력 인프라 기업에 AI 에이전트 공급…“구매 업무 시간 50% 단축”",
+      "source": "조선일보",
+      "sourceUrl": "https://www.chosun.com",
+      "url": "https://www.chosun.com/economy/tech_it/2026/11/17/HEZWKMZTMI2DCNLCMNSGCNTGMI/",
+      "publishedAt": "2026-11-17T00:52:28.000Z",
+      "description": "인공지능(AI) 기반 공급망관리 소프트웨어 기업 엠로는 국내 전력·통신 인프라 솔루션 기업 A사에 구매 자동화 AI 에이전트를 공급했다고 17일 밝혔다. 이번 프로젝트는 설비 유지보수에 필요한 소모품과 교체용 부품 등 소액 구매 업무를 AI 에이전트로 자동화하는 것이 핵심이다. 기존에는 구매 담당자가 견적요청서(RFQ) 발송부터 견적 접수·검토, 협력사 선",
+      "id": "534e97fc1a78",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "조선일보 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "조선일보",
+          "url": "https://www.chosun.com/economy/tech_it/2026/11/17/HEZWKMZTMI2DCNLCMNSGCNTGMI/",
+          "publishedAt": "2026-11-17T00:52:28.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T00:52:28.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "美 AI·반도체주 급락에 日 증시도 흔들…닛케이 0.61%↓",
+      "source": "뉴시스",
+      "sourceUrl": "https://www.newsis.com",
+      "url": "https://www.newsis.com/view/NISX20261117_0003870860",
+      "publishedAt": "2026-11-17T00:52:26.000Z",
+      "description": "[서울=뉴시스]문은주 기자 = 17일 일본 도쿄증시에서 닛케이225지수(닛케이평균주가)가 하락세로 출발했다. 니혼게이자이신문에 따르면 이날 닛케이225지수는 전날 종가 대비 366.22포인트(0.61%) 내린 5만9295.80에 거래를 시작했다. 장 초반부터 도쿄증시의 주요 지수는 약세를 보이고 있다. 간밤 미국 증시에서 인공지능(AI)·반도체 관련주가…",
+      "id": "61771cc66da0",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "뉴시스 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "뉴시스",
+          "url": "https://www.newsis.com/view/NISX20261117_0003870860",
+          "publishedAt": "2026-11-17T00:52:26.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T00:52:26.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "'AI 커닝' 세무사 수석, 경찰 출석해 허리 숙여 사과…\"책임질 것\"",
+      "source": "뉴시스",
+      "sourceUrl": "https://www.newsis.com",
+      "url": "https://www.newsis.com/view/NISX20261117_0003870948",
+      "publishedAt": "2026-11-17T00:45:06.000Z",
+      "description": "[서울=뉴시스]신유림 기자 = 생성형 인공지능(AI)을 이용한 부정행위를 인정하고 경찰에 자수한 제63회 세무사 자격시험 수석 합격자가 경찰에 처음으로 출석했다. 서울경찰청 광역수사단 공공범죄수사대는 16일 오전 한원석씨를 피의자 신분으로 불러 조사 중이다. 이날 오전 9시17분께 서울 마포구 광수단 청사에 도착한 한씨는 자수를 결심한 계기를 묻는 취재…",
+      "id": "f4386f3c9264",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "뉴시스 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "뉴시스",
+          "url": "https://www.newsis.com/view/NISX20261117_0003870948",
+          "publishedAt": "2026-11-17T00:45:06.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T00:45:06.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "반도체·AI 효과…SK에코플랜트 3분기 영업익 작년보다 405% 늘어",
+      "source": "뉴시스",
+      "sourceUrl": "https://www.newsis.com",
+      "url": "https://www.newsis.com/view/NISX20261117_0003870895",
+      "publishedAt": "2026-11-17T00:31:31.000Z",
+      "description": "[서울=뉴시스]정유선 기자 = SK에코플랜트는 올해 3분기 연결기준 매출액은 5조8988억원, 영업이익은 7946억원을 기록했다고 지난 16일 공시했다. 매출은 지난해 동기 대비 약 82%, 영업이익은 약 405% 증가했다. 반도체 생산 인프라 구축부터 소재·가스 공급, 메모리 반도체 생산·유통까지 인공지능(AI) 인프라 관련 사업 전반의 실적이 반영되…",
+      "id": "a01702691594",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "뉴시스 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "뉴시스",
+          "url": "https://www.newsis.com/view/NISX20261117_0003870895",
+          "publishedAt": "2026-11-17T00:31:31.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T00:31:31.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "[속보]'AI 부정행위' 세무사 수석, 경찰 출석…피의자 전환",
+      "source": "뉴시스",
+      "sourceUrl": "https://www.newsis.com",
+      "url": "https://www.newsis.com/view/NISX20261117_0003870779",
+      "publishedAt": "2026-11-17T00:17:48.000Z",
+      "description": "후속기사가 이어집니다",
+      "id": "4b8e9953d73f",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "뉴시스 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "뉴시스",
+          "url": "https://www.newsis.com/view/NISX20261117_0003870779",
+          "publishedAt": "2026-11-17T00:17:48.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T00:17:48.000Z"
+    },
+    {
+      "provider": "rss",
+      "lang": "ko",
+      "title": "'AI시대 풀어야 할 의제는'…녹서에 담을 질문 국민에게 받는다",
+      "source": "연합뉴스",
+      "sourceUrl": "https://www.yna.co.kr",
+      "url": "https://www.yna.co.kr/view/AKR20261116148300530",
+      "publishedAt": "2026-11-17T00:00:07.000Z",
+      "description": "(서울=연합뉴스) 한혜원 기자 = 고용노동부는 '인공지능(AI) 시대 새로운 사회계약을 위한 녹서'에 담을 질문을 국민이 자유롭게 제안하는 온라...",
+      "id": "e8cc3d06d1d3",
+      "category": "ai",
+      "categoryHints": [
+        "ai"
+      ],
+      "matchedQueries": [
+        "연합뉴스 경제"
+      ],
+      "coverage": 1,
+      "sources": [
+        {
+          "name": "연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20261116148300530",
+          "publishedAt": "2026-11-17T00:00:07.000Z"
+        }
+      ],
+      "firstSeenAt": "2026-11-17T00:00:07.000Z"
+    }
+  ]
+}
